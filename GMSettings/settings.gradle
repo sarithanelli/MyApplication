@@ -1,0 +1,1 @@
+include ':app', ':settingsservice', ':settingsservice', ':gmrecyclerview-release', ':gmsettings-api-0.1.0'

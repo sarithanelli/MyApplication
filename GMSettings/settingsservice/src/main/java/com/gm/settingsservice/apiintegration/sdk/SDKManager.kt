@@ -335,8 +335,7 @@ class SDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHandle
 
 
     override fun initListeners() {
-       settingsManager.initListeners()
-
+        settingsManager.initListeners()
     }
 
     private var mSupportedLanguageKeys: ArrayList<Int>? = null

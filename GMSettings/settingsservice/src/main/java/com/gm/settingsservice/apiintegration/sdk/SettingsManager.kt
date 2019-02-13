@@ -1,7 +1,10 @@
 package com.gm.settingsservice.apiintegration.sdk
 
 
+import com.gm.settings.entities.vehiclesettings.ClimateAndAirQuality
+import com.gm.settings.entities.vehiclesettings.PowerDoorLocks
 import com.gm.settings.entities.vehiclesettings.SportMode
+import com.gm.settings.entities.vehiclesettings.VehicleSettings
 import com.gm.settingsservice.apiintegration.SystemListener
 import com.gm.settingsservice.models.*
 import com.gm.settingsservice.utils.AppSignal
@@ -22,7 +25,9 @@ import com.gm.settingsservice.utils.Constants.SETTINGS_VEHICLE_DRIVINGMODE_SUSPE
 import com.gm.settingsservice.utils.Constants.SETTINGS_VEHICLE_DRIVINGMODE_TRANSIT
 import com.gm.settingsservice.utils.Log
 import com.gm.settingsservice.utils.Signals
+import gm.provider.GMDataAnalytics
 import gm.vehicle.Customization
+import gm.vehicle.DrivingMode
 import javax.inject.Inject
 
 
@@ -35,6 +40,8 @@ class SettingsManager @Inject constructor(val systemListener: SystemListener, va
 
 
     fun initListeners() {
+
+       ClimateAndAirQuality.AUTO_DEFOG.ordinal
         mCustomization.setOnPerformanceModeMainMenuTypeChangedListener(SettingsListenerManager(mCustomization, this, Constants.SETTINGS_MAINMENU_TYPE))
         mCustomization.setOnSoundPerformanceModeCustomizationCurrentSettingValueChangedListener(SettingsListenerManager(mCustomization, this, Constants.SETTINGS_VEHICLE_DRIVINGMODE_ENGINE_SOUND))
         mCustomization.setOnDriverSeatPerformanceModeCustomizationCurrentSettingValueChangedListener(SettingsListenerManager(mCustomization, this, Constants.SETTINGS_VEHICLE_SPORTMODE_DRIVERSEAT))

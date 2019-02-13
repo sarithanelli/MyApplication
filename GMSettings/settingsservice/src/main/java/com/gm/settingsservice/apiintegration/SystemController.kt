@@ -16,7 +16,7 @@ import javax.inject.Inject
  *
  * Created by GM on 3/9/2018.
  */
-class SystemController @Inject constructor(val sdkManager: Lazy<GMSDKManager>, val simulationManager: Lazy<SimulationManager>,val gmSdkManager : Lazy<GMSDKManager>){
+class SystemController @Inject constructor(val sdkManager: Lazy<SDKManager>, val simulationManager: Lazy<SimulationManager>,val gmSdkManager : Lazy<GMSDKManager>){
 
     private var manager: IManager
 
@@ -27,8 +27,7 @@ class SystemController @Inject constructor(val sdkManager: Lazy<GMSDKManager>, v
     fun getSourceManager(): IManager {
         manager = when {
             isSDKAvailable() -> {
-             //   sdkManager.get()
-                gmSdkManager.get()
+                sdkManager.get()
             }
             else -> simulationManager.get()
         }

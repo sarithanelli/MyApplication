@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'org.jetbrains.dokka'
+apply plugin: "kotlin-allopen"
+apply from: '../buildsystem/android_commons.gradle'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.gm.settingsapp"
+        minSdkVersion 23
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0.3"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    dokka { outputFormat = 'html'
+        outputDirectory = "$buildDir/javadoc"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    dataBinding {
+        enabled = true
+    }
+
+    signingConfigs {
+        platform {
+            storeFile file("../certs/platform.keystore")
+            storePassword 'GeneralMotors'
+            keyAlias 'platform'
+            keyPassword 'GeneralMotors'
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.platform
+            zipAlignEnabled true
+        }
+        debug {
+            debuggable true
+            signingConfig signingConfigs.platform
+            zipAlignEnabled true
+            testCoverageEnabled = true
+        }
+    }
+    buildToolsVersion = '28.0.3'
+
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha2'
+    implementation project(path: ':settingsservice')
+
+    implementation 'com.google.android.material:material:1.1.0-alpha01'
+    implementation project(path: ':gmrecyclerview-release')
+    testImplementation 'com.nhaarman:mockito-kotlin-kt1.1:1.5.0'
+    testImplementation 'org.json:json:20140107'
+
+
+}

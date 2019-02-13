@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<lint>
+   <issue id="ClickableViewAccessibility" severity="warning" />
+    <issue id="KeyboardInaccessibleWidget" severity="error" />
+    <issue id="BatteryLife" severity="error" />
+    <issue id="Registered" severity="error" />
+    <issue id="DuplicateIncludedIds" severity="error" />
+    <issue id="SdCardPath" severity="error" />
+
+    <issue id="SuspiciousImport" severity="error" />
+    <issue id="CutPasteId" severity="error" />
+    <issue id="CommitPrefEdits" severity="error" />
+    <issue id="UnknownIdInLayout" severity="error" />
+    <issue id="ScrollViewSize" severity="error" />
+
+    <issue id="ScrollViewCount" severity="error" />
+    <issue id="ShowToast" severity="error" />
+    <issue id="PxUsage" severity="error" />
+    <issue id="Deprecated" severity="error" />
+    <issue id="SpUsage" severity="error" />
+
+    <issue id="AppCompatMethod" severity="error" />
+    <issue id="TooDeepLayout" severity="error" />
+    <issue id="DrawAllocation" severity="error" />
+    <issue id="StaticFieldLeak" severity="error" />
+    <issue id="ViewHolder" severity="error" />
+
+    <issue id="HandlerLeak" severity="error" />
+    <issue id="UseSparseArrays" severity="error" />
+</lint>

@@ -44,7 +44,7 @@ import javax.inject.Inject
  *  these funcs usually start after proxy constructor func in CAMFMProxy.cpp
  *  This should exclude all the functions under RecvData func, as the func in RecvData only corresponds to RES functions
  */
-class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHandler, val systemListener: SystemListener, val  utility: Utility, val gmsettingsManager: GMSettingsManager, val vehicleAudioManager: dagger.Lazy<VehicleAudioManager>, val context: Context, val mCustomization : Customization, val supportedLanguageListData: Lazy<SupportedLanguageListData>): IManager, ApplicationsState.Callbacks {
+class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHandler, val systemListener: SystemListener, val  utility: Utility, val settingsManager: SettingsManager, val vehicleAudioManager: dagger.Lazy<VehicleAudioManager>, val context: Context, val mCustomization : Customization, val supportedLanguageListData: Lazy<SupportedLanguageListData>): IManager, ApplicationsState.Callbacks {
 
     override fun onSETTINGS_MANAGE_SET_FAV() {
         systemListener.onSETTINGS_MANAGE_RES_FAV()
@@ -335,8 +335,7 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
 
 
     override fun initListeners() {
-       // settingsManager.initListeners()
-        gmsettingsManager.initListeners()
+        settingsManager.initListeners()
     }
 
     private var mSupportedLanguageKeys: ArrayList<Int>? = null
