@@ -1,0 +1,10 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="@dimen/search_layout_edittext_crossbutton_size"
+    android:height="@dimen/search_layout_edittext_crossbutton_size"
+    android:viewportWidth="24.0"
+    android:viewportHeight="24.0">
+    <path
+        android:pathData="M5.3 5l14 14m0-14l-14 14"
+        android:strokeWidth="1"
+        android:strokeColor="@android:color/black" />
+</vector>

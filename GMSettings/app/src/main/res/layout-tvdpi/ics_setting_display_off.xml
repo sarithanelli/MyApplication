@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data class="Settingsdisplayoffactivitybinding">
+
+        <import type="android.view.View" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+
+        <import type="com.gm.settingsservice.models.eSettingsDisplayStatus" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/displayoff"
+        style="?attr/settings_constraintlayout"
+        android:onClick="@{(view)-> clickHandler.onItemClickHandler(view,eSettingsDisplayStatus.SETTINGS_DISPLAY_STATUS_ON)}">
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
+

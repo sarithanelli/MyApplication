@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data class="SettingsSearchButton">
+
+        <import type="android.view.View" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+
+        <import type="com.gm.settingsservice.models.eSettingsTimeDisplayFormat" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout style="?attr/settings_layout_bg_style">
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Layout_Match_Wrap"
+            app:cardElevation="8dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/search_bar_layout"
+                style="@style/Layout_Match_Match"
+                android:background="@drawable/bg_small">
+
+                <ImageButton
+                    android:id="@+id/back_button_id"
+                    style="@style/search_cross_buton_width_height"
+                    android:layout_marginStart="@dimen/search_layout_marginstart_end"
+                    android:layout_marginTop="@dimen/search_layout_marginbottom"
+                    android:layout_marginBottom="@dimen/search_layout_marginbottom"
+                    android:background="@drawable/ic_btn_close_pressed"
+                    android:onClick="@{clickHandler::onClickHandler}"
+                    android:tag="eScreenClose"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/search_popup_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginEnd="180dp"
+                    android:background="@android:color/transparent"
+                    android:drawableRight="@drawable/ic_search_edittext_close"
+                    android:hint="Keywords Search..."
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="#22282F"
+                    android:textColorHint="@color/hint_text_color"
+                    android:textCursorDrawable="@drawable/edit_text_curser"
+                    android:textSize="@dimen/metadataTextSize1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/microphone_button_id"
+                    app:layout_constraintStart_toEndOf="@+id/back_button_id"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/microphone_button_id"
+                    style="@style/search_microphone_buton_width_height"
+                    android:layout_marginTop="@dimen/search_layout_marginbottom"
+                    android:layout_marginEnd="@dimen/search_layout_marginstart_end"
+                    android:layout_marginBottom="@dimen/search_layout_marginbottom"
+                    android:background="@drawable/icn_microphone_gmc_rect"
+                    android:onClick="@{clickHandler::onClickHandler}"
+                    android:tag="eScreenClose"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    bind:ignore="ContentDescription" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

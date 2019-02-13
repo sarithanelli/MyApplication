@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data class="VehicleAutoModeCustomizationActivityBinding">
+
+        <import type="android.view.View" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+
+    </data>
+
+
+    <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        android:id="@+id/system_sounds_maxstartvol_imglayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        bind:layoutDirection="@{dataPoolHandler.settingsConfiguration}"
+        bind:skewValue="@{dataPoolHandler.isSkewEnabled}">
+
+        <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+            android:id="@+id/skewConstraintLayout2"
+            style="?attr/settings_set_audio_favorites_skewConstraintLayout_no_bg_match"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
+
+            <include
+                android:id="@+id/topbar_settings_system"
+                style="@style/Layout_Match_Wrap"
+                layout="@layout/uil_ta_hc_topbar_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.8"
+                bind:clickHandler="@{clickHandler}"
+                bind:dataPoolHandler="@{dataPoolHandler}" />
+        </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_begin"
+            style="?attr/settings_set_audio_favorites_guideline_vertical"
+            app:layout_constraintGuide_percent="0.2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            style="?attr/settings_wrap_wrap_style"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.65" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline1"
+            style="?attr/settings_wrap_wrap_style"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.98" />
+
+        <com.gm.uisdk.views.GMRecyclerView
+            android:id="@+id/recycler_view_settings_engine_sound_view"
+            style="@style/recycler_view_scroll_color"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbarFadeDuration="0"
+            android:scrollbars="vertical"
+            app:fastScrollArrowRadius="@integer/fastScrollArrowRadius"
+            app:fastScrollType="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintHeight_percent="1"
+            app:layout_constraintHorizontal_bias="0.26"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical_begin"
+            app:layout_constraintTop_toBottomOf="@id/skewConstraintLayout2"
+            app:layout_constraintWidth_percent="0.25"
+            bind:childLayout="@{@layout/uil_settings_list_row_auto_mode_customization}"
+            bind:items="@{dataPoolHandler.SETTINGS_AUTO_MODE_CUSTOMAIZATION}">
+
+        </com.gm.uisdk.views.GMRecyclerView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            style="?attr/settings_wrap_wrap_style"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.98" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            style="?attr/settings_scroll_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.35"
+            app:layout_constraintHorizontal_bias="0.16"
+            app:layout_constraintStart_toEndOf="@+id/recycler_view_settings_engine_sound_view"
+            app:layout_constraintTop_toBottomOf="@+id/skewConstraintLayout2"
+            app:layout_constraintWidth_percent="0.22">
+
+            <com.gm.settingsapp.ui.customview.SkewTextView
+                android:id="@+id/ui_settings_drivingmode_enginesound_text"
+                style="?attr/settings_time_date_scroll_view_text"
+                android:layout_gravity="center_vertical"
+                android:text="@{dataPoolHandler.SETTINGS_AUTO_MODE}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
+
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/img_settings_vehicle_driving_mode"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/img_engine_sound"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintHorizontal_bias="0.15"
+            app:layout_constraintStart_toEndOf="@+id/recycler_view_settings_engine_sound_view"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView"
+            app:layout_constraintVertical_bias="0.26999998"
+            app:layout_constraintWidth_percent="0.2" />
+    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+
+
+</layout>
+
+

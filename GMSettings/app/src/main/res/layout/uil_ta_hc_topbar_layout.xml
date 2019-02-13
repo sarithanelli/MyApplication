@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/uil_ta_hc_topbar_layout"
+        style="?attr/settings_constraintlayout_bg">
+
+        <ImageButton
+            android:id="@+id/btn_id_hc_backarrow"
+            style="?attr/settings_button_backarrow"
+            android:onClick="@{clickHandler::onClickHandler}"
+            android:tag="eScreenBack"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.92"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.12"
+            app:srcCompat="@drawable/icn_back_gmc_rect"
+            bind:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/txt_id_ta_wizard_trailer_name_hc_title"
+            style="?attr/settings_text_title"
+            android:text="@{dataPoolHandler.SETTINGS_HEADERTITLE_NAME}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_id_hc_backarrow"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageButton
+            android:id="@+id/btn_id_hc_close"
+            style="?attr/settings_button_search"
+            android:onClick="@{clickHandler::onClickHandler}"
+            android:tag="ePhoneLaunch"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.92"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.12"
+            app:srcCompat="@drawable/icn_search_gmc_rect"
+            bind:ignore="ContentDescription" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
+
+
+
+
+

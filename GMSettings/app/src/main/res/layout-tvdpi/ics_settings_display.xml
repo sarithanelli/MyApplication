@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data class="Settingsdisplayactivitybinding">
+
+        <import type="android.view.View" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+    </data>
+
+    <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        style="?attr/settings_layout_bg_style"
+        app:layout_constraintStart_toStartOf="parent"
+        bind:skewValue="@{dataPoolHandler.isSkewEnabled}">
+
+        <include
+            android:id="@+id/topbar_settings_system"
+            style="?attr/settings_match_wrap_style"
+            layout="@layout/uil_ta_hc_topbar_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/settings_system_recycler_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.8"
+            bind:clickHandler="@{clickHandler}"
+            bind:dataPoolHandler="@{dataPoolHandler}" />
+
+        <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+            style="?attr/settings_skewlayout_bg"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topbar_settings_system"
+            bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_text_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.25" />
+
+            <com.gm.uisdk.views.GMRecyclerView
+                android:id="@+id/settings_system_recycler_view"
+                style="?attr/settings_recyclerview"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:scrollbarFadeDuration="0"
+                android:scrollbarThumbVertical="@color/black"
+                android:scrollbarTrackVertical="@color/light_grey"
+                android:scrollbars="vertical"
+                app:fastScrollArrowRadius="@integer/fastScrollArrowRadius"
+                app:fastScrollType="0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/guideline_middle"
+                app:layout_constraintStart_toEndOf="@id/guideline_text_start"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.23"
+                bind:childLayout="@{@layout/uil_settings_list_row_display}"
+                bind:items="@{dataPoolHandler.SETTINGS_DISPLAY_MENU}">
+
+            </com.gm.uisdk.views.GMRecyclerView>
+
+        </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+
+        <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+            style="?attr/settings_skewlayout_bg"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topbar_settings_system"
+            app:layout_constraintVertical_bias="0.0"
+            bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_middle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.27" />
+
+            <com.gm.uisdk.views.GMRecyclerView
+                android:id="@+id/settings_system_recycler_view_right"
+                style="@style/recycler_view_scroll_color"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:scrollbarFadeDuration="0"
+                android:scrollbars="vertical"
+                app:fastScrollArrowRadius="@integer/fastScrollArrowRadius"
+                app:fastScrollType="0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.43"
+                app:layout_constraintStart_toEndOf="@id/guideline_middle"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.25"
+                bind:childLayout="@{@layout/uil_settings_list_display}"
+                bind:items="@{dataPoolHandler.SETTINGS_DISPLAY_CADILLAC_SECOND_MENU}">
+
+            </com.gm.uisdk.views.GMRecyclerView>
+
+        </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+
+    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+
+</layout>

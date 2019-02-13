@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data class="SettingsHomeActivityBinding">
+
+        <import type="android.view.View" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+    </data>
+
+    <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        style="?attr/settings_language_skewlayout_style"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        bind:layoutDirection="@{dataPoolHandler.settingsConfiguration}"
+        bind:skewValue="@{dataPoolHandler.isSkewEnabled()}"
+        bind:slopedAngle="@{dataPoolHandler.SKEW_ANGLE_8}">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/asd"
+            style="?attr/settings_main_skewlayout_style"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.097">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lv_tabs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                bind:tabChildLayout="@{@layout/uil_settings_list_row_tab}"
+                bind:tabItems="@{dataPoolHandler.SETTINGS_MAINVIEWPAGER_TITLES}" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/homeviewPager"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline_main"
+            app:layout_constraintTop_toTopOf="parent"
+            bind:pagerItems="@{dataPoolHandler.homeScreenData}" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.27" />
+
+    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+
+</layout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data class="SettingsEraseBinding">
+
+        <import type="android.view.View" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+    </data>
+
+    <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        android:id="@+id/factory_settings_erase_loading_layout_id"
+        style="?attr/settings_layout_bg_style"
+
+        app:layout_constraintStart_toStartOf="parent"
+        bind:skewValue="@{dataPoolHandler.isSkewEnabled}">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:indeterminateTint="@color/alert_text_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.30"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.30" />
+    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+</layout>

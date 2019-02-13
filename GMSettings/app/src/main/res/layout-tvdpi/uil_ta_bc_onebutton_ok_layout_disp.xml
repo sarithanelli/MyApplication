@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/Layout_Match_Match"
+        android:background="@android:color/transparent">
+
+        <com.gm.settingsapp.ui.customview.SkewMaterialButton
+            android:id="@+id/btn_id_ta_bc_advance_done_twobutton_advance"
+            style="@style/btn_retry"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/gmsansui_medium"
+            android:onClick="@{clickHandler::onClickHandler}"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:tag="eButtonOk"
+            android:text="Ok"
+            android:textColor="@color/btn_text_color"
+            android:textSize="@dimen/List_primary_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:rippleColor="@color/ripple_color"
+            bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

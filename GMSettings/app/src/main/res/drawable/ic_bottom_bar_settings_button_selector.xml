@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:autoMirrored="true">
+
+    <item android:drawable="@drawable/icn_settings_active_gmc_rect" android:state_checked="true" />
+    <item android:drawable="@drawable/icn_settings_pressed_gmc_rect" android:state_pressed="true" />
+    <item android:drawable="@drawable/icn_settings_pressed_gmc_rect"/>
+
+</selector>

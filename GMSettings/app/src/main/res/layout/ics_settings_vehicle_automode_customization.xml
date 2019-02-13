@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data class="VehicleAutoModeCustomizationActivityBinding">
+
+        <import type="android.view.View" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+
+    </data>
+
+    <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        style="?attr/settings_time_date_time_zone_layout"
+        bind:layoutDirection="@{dataPoolHandler.settingsConfiguration}"
+        bind:skewValue="@{dataPoolHandler.isSkewEnabled}"
+        bind:slopedAngle="@{dataPoolHandler.SKEW_ANGLE_8}">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/settings_vehicle_engine_sound"
+            style="?attr/settings_time_date_card"
+            app:cardElevation="@dimen/settings_card_time_date_card_elevation">
+
+            <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+                style="?attr/settings_time_date_match_wrap_style"
+                bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
+
+                <include
+                    android:id="@+id/tabLayout"
+                    style="?attr/settings_match_wrap_style"
+                    layout="@layout/uil_ta_hc_topbar_layout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    bind:clickHandler="@{clickHandler}"
+                    bind:dataPoolHandler="@{dataPoolHandler}" />
+            </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            style="?attr/settings_wrap_wrap_style"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.6" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline1"
+            style="?attr/settings_wrap_wrap_style"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.98" />
+
+        <com.gm.uisdk.views.GMRecyclerView
+            android:id="@+id/recycler_view_settings_engine_sound_view"
+            style="?attr/settings_time_date_time_zone_recycler"
+            app:fastScrollArrowRadius="@integer/fastScrollArrowRadius"
+            app:fastScrollBarBgColor="@android:color/transparent"
+            app:fastScrollBarWidth="@integer/fastScrollBarWidth"
+            app:fastScrollDividerColor="@android:color/transparent"
+            app:fastScrollThumbColor="@color/thumb_color"
+            app:fastScrollTrackColor="@color/track_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/settings_vehicle_engine_sound"
+            bind:childLayout="@{@layout/uil_settings_list_row_auto_mode_customization}"
+            bind:items="@{dataPoolHandler.SETTINGS_AUTO_MODE_CUSTOMAIZATION}">
+
+        </com.gm.uisdk.views.GMRecyclerView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            style="?attr/settings_wrap_wrap_style"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.98" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            style="?attr/settings_scroll_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="@+id/guideline1"
+            app:layout_constraintHeight_percent="0.25"
+            app:layout_constraintStart_toEndOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/settings_vehicle_engine_sound"
+            app:layout_constraintWidth_percent="0.36">
+
+            <com.gm.settingsapp.ui.customview.SkewTextView
+                android:id="@+id/ui_settings_drivingmode_enginesound_text"
+                style="?attr/settings_time_date_scroll_view_text"
+                android:layout_gravity="center_vertical"
+                android:text="@{dataPoolHandler.SETTINGS_AUTO_MODE}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
+
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/img_settings_vehicle_driving_mode"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/img_engine_sound"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintEnd_toEndOf="@+id/guideline1"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView" />
+    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+
+</layout>
+
+

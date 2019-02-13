@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gm_cyan_green">#1CBFB7</color>
+    <color name="background_light_brilliant_red">#fd3838</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#888888</color>
+    <color name="light_grey">#bababa</color>
+    <color name="blue">#487ef4</color>
+    <color name="red">#ee1f25</color>
+    <color name="yellow">#FFC200</color>
+    <color name="toolbar_bg">@color/white</color>
+    <color name="np_unselect_color">#979a9b</color>
+    <color name="np_select_color">#000000</color>
+    <color name="textview_color">#000000</color>
+    <color name="btn_text_color">#000000</color>
+    <color name="rb_text_color">#000000</color>
+    <color name="hint_text_color">#999999</color>
+    <color name="skew_bg">#000000</color>
+    <color name="layout_bg">#000000</color>
+    <color name="skew_white_bg">#ffffff</color>
+    <color name="secondary_color">#333333</color>
+    <color name="picker_grey">#797979</color>
+
+    <color name="thumb_color">#000000</color>
+    <color name="track_color">#bababa</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="third_tier_body_text">#dcb776</color>
+
+    <color name="list_selector_axure">#40085dfa</color>
+
+
+
+</resources>

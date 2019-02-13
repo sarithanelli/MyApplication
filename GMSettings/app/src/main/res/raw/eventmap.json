@@ -1,0 +1,602 @@
+{
+  "eScreenBack": {
+    "eventType": "navigate",
+    "eventName": "evG_Back",
+    "activityName": "",
+    "isProcess": "false"
+  },
+  "eScreenClose": {
+    "eventType": "navigate",
+    "eventName": "evG_Close",
+    "activityName": "",
+    "isProcess": "false"
+  },
+  "eLanguage": {
+    "eventType": "navigate",
+    "eventName": "onSETTINGS_REQ_GETSUPPORTEDLANGUAGES",
+    "activityName": "SettingsLanguagesActivity",
+    "isProcess": "true"
+  },
+  "eSetFavorites": {
+    "eventType": "navigate",
+    "eventName": "onSETTINGS_MANAGE_SET_FAV",
+    "activityName": "SettingsManageFavoritesActivity",
+    "isProcess": "true"
+  },
+  "eDisplayScreen": {
+    "eventType": "navigate",
+    "eventName": "onSETTINGS_REQ_SETDISPLAYSTATUS",
+    "activityName": "",
+    "isProcess": "true"
+  },
+  "eTimeDate": {
+    "eventType": "navigate",
+    "eventName": "onSETTINGS_REQ_TIMEDATE",
+    "activityName": "SettingsTimeDateActivity",
+    "isProcess": "true"
+  },
+  "eLanguageRow": {
+    "eventType": "process",
+    "eventName": "onSETTINGS_REQ_SETLANGUAGE",
+    "activityName": "SettingsLanguagesActivity",
+    "isProcess": "true"
+  },
+  "eSetTimeDate": {
+    "eventType": "navigate",
+    "eventName": "onSETTINGS_REQ_TIMEORDATE",
+    "activityName": "SettingsSetTimeDateActivity",
+    "isProcess": "true"
+  },
+  "eOnOffSelection": {
+    "eventType": "navigate",
+    "eventName": "evG_automaticTimeDate",
+    "activityName": "SettingsTimeDateOnOffActivity",
+    "isProcess": "false"
+  },
+  "onButton": {
+    "eventType": "process",
+    "eventName": "onSETTINGS_REQ_SETTIMEDISPLAYFORMAT",
+    "activityName": "SettingsOnOffActivity",
+    "isProcess": "true"
+  },
+  "offButton": {
+    "eventType": "process",
+    "eventName": "onSETTINGS_REQ_SETTIMEDISPLAYFORMAT",
+    "activityName": "SettingsOnOffActivity",
+    "isProcess": "true"
+  },
+  "eAutomaticTimeZone": {
+    "eventType": "navigate",
+    "eventName": "evG_AutomaticTimeZone",
+    "activityName": "SettingsAutomaticTimeZoneActivity",
+    "isProcess": "false"
+  },
+  "eTimeZone": {
+    "eventType": "navigate",
+    "eventName": "onSETTINGS_REQ_TIMEZONE",
+    "activityName": "SettingsTimeZoneActivity",
+    "isProcess": "false"
+  },
+  "eScreenRecreate": {
+    "eventType": "navigate",
+    "eventName": "evG_Recreate",
+    "activityName": "",
+    "isProcess": "false"
+  },
+  "eUse24hourOnOffButton": {
+    "eventType": "process",
+    "eventName": "onSETTINGS_REQ_SETTIMEDISPLAYFORMAT",
+    "activityName": "SettingsOnOffActivity",
+    "isProcess": "true"
+  },
+  "eTimeZoneRow": {
+    "eventType": "process",
+    "eventName": "onSETTINGS_REQ_SETTIMEZONE",
+    "activityName": "SettingsTimeZoneActivity",
+    "isProcess": "true"
+  },
+  "eAutomaticTimeDateUpdate": {
+    "eventType": "process",
+    "eventName": "onSETTINGS_REQ_SETAUTOTIMEDATEUPDATESETTING",
+    "activityName": "SettingsOnOffActivity",
+    "isProcess": "true"
+  },
+  "eSetTime": {
+    "eventType": "navigate",
+    "eventName": "evG_setTime",
+    "activityName": "SettingsSetTimeActivity",
+    "isProcess": "false"
+  },
+  "eSetDate": {
+    "eventType": "navigate",
+    "eventName": "evG_setDate",
+    "activityName": "SettingsSetDateActivity",
+    "isProcess": "false"
+  },
+  "eScreenDisplay": {
+    "eventType": "navigate",
+    "eventName": "onSETTINGS_REQ_DISPLAY",
+    "activityName": "SettingsDisplayActivity",
+    "isProcess": "true"
+  },
+  "eScreenSound": {
+    "eventType": "navigate",
+    "eventName": "onSETTINGS_REQ_SOUND_MENU",
+    "activityName": "SettingsSoundsActivity",
+    "isProcess": "true"
+  },
+  "eMaxSoundVol": {
+    "eventType": "navigate",
+    "eventName": "onSETTINGS_REQ_GETMAXSTARTUPVOLUME",
+    "activityName": "SettingsSoundsMaxVolumeActivity",
+    "isProcess": "true"
+  },
+  "eCueSoundVol": {
+    "eventType": "navigate",
+    "eventName": "onSETTINGS_REQ_GETAUDIOCUES",
+    "activityName": "SettingsSoundsAudioCueVolActivity",
+    "isProcess": "true"
+  },
+  "eCueSoundVolOnOff": {
+    "eventType": "navigate",
+    "eventName": "onSETTINGS_REQ_GETAUDIBLETOUCHFEEDBACK3",
+    "activityName": "SettingsOnOffActivitySounds",
+    "isProcess": "true"
+  },
+  "eSoundPopup": {
+    "eventType": "navigate",
+    "eventName": "evG_Sound_popup",
+    "activityName": "SettingsSoundsPopupCueActivity",
+    "isProcess": "false"
+  },
+  "eMode": {
+    "eventType": "navigate",
+    "eventName": "evG_Mode",
+    "activityName": "SettingsDisplayModeActivity",
+    "isProcess": "false"
+  },
+  "eDisplayOff": {
+    "eventType": "navigate",
+    "eventName": "onSETTINGS_REQ_SETDISPLAYSTATUS",
+    "activityName": "DisplayOffActivity",
+    "isProcess": "true"
+  },
+  "eCancelBtn": {
+    "eventType": "navigate",
+    "eventName": "evG_calibrationfailurepopup",
+    "activityName": "SettingsCalibrationFailureActivity",
+    "isProcess": "false"
+  },
+  "eButtonOk": {
+    "eventType": "navigate",
+    "eventName": "onSETTINGS_REQ_DISPLAY",
+    "activityName": "SettingsDisplayActivity",
+    "isProcess": "false"
+  },
+  "eDisplayCadillac": {
+    "eventType": "process",
+    "eventName": "onSETTINGS_REQ_DISPLAY_CADILLAC",
+    "activityName": "SettingsDisplayActivity",
+    "isProcess": "true"
+  },
+  "eCalibrate": {
+    "eventType": "navigate",
+    "eventName": "onSETTINGS_REQ_CALIBRATION",
+    "activityName": "SettingsCalibrationActivity",
+    "isProcess": "true"
+  },
+  "eSearch": {
+    "eventType": "navigate",
+    "eventName": "evG_Search",
+    "activityName": "SettingsSearchButtonActivity",
+    "isProcess": "false"
+  },
+  "eFavList": {
+    "eventType": "navigate",
+    "eventName": "onSETTINGS_REQ_CONTAINER_LIST",
+    "activityName": "SettingsFavoritesActivity",
+    "isProcess": "true"
+  },
+  "eManageFavorites": {
+    "eventType": "navigate",
+    "eventName": "evG_FavListScreen",
+    "activityName": "com.gm.favoriteapp.action.evG_FavListScreen",
+    "isProcess": "false"
+  },
+  "eWifiNetworks": {
+    "eventType": "navigate",
+    "eventName": "evG_Networks",
+    "activityName": "com.gm.connectionwifi.action.evG_Networks",
+    "isProcess": "false"
+  },
+  "eWifiHotspot": {
+    "eventType": "navigate",
+    "eventName": "evG_WiFiHotspot",
+    "activityName": "com.gm.connectionwifi.action.evG_WiFiHotspot",
+    "isProcess": "false"
+  },
+  "eConDevice": {
+    "eventType": "navigate",
+    "eventName": "evG_Bluetooth",
+    "activityName": "com.gm.connectionwifi.action.evG_Bluetooth",
+    "isProcess": "false"
+  },
+  "ePrivacy": {
+    "eventType": "navigate",
+    "eventName": "evG_Privacy",
+    "activityName": "SettingsManageFavoritesActivity",
+    "isProcess": "false"
+  },
+  "eSetNumberofFavorite": {
+    "eventType": "navigate",
+    "eventName": "onFAVORITE_REQ_GETAUDIOFAVORITECOUNT",
+    "activityName": "SettingsManageFavoritesActivity",
+    "isProcess": "true"
+  },
+  "eSetNumberFavorite": {
+    "eventType": "process",
+    "eventName": "onFAVORITE_REQ_SETAUDIOFAVORITECOUNT",
+    "activityName": "SettingsFavoritesActivity",
+    "isProcess": "true"
+  },
+  "e24HourFormat": {
+    "eventType": "process",
+    "eventName": "onSETTINGS_REQ_SETTIMEDISPLAYFORMAT",
+    "activityName": "SettingsTimeDateOnOffActivity",
+    "isProcess": "true"
+  },
+  "eAutoUpdateTimeDate": {
+    "eventType": "process",
+    "eventName": "onSETTINGS_REQ_SETAUTOTIMEDATEUPDATESETTING",
+    "activityName": "SettingsTimeDateOnOffActivity",
+    "isProcess": "true"
+  },
+  "eConfiguration": {
+    "eventType": "navigate",
+    "eventName": "evG_Configuration",
+    "activityName": "ConfigurationActivity",
+    "isProcess": "false"
+  },
+  "eModeType": {
+    "eventType": "process",
+    "eventName": "onSETTINGS_REQ_SETDISPLAYMODETYPE",
+    "activityName": "SettingsDisplayModeActivity",
+    "isProcess": "true"
+  },
+  "ePhoneLaunch": {
+    "eventType": "navigate",
+    "eventName": "onSETTINGS_PHONE_REQ",
+    "activityName": "SettingsModeActivity",
+    "isProcess": "false"
+  },
+  "eReturnToFactory": {
+    "eventType": "navigate",
+    "eventName": "onSETTINGS_RETURNTOFACTORY",
+    "activityName": "SettingsReturnToFactoryActivity",
+    "isProcess": "false"
+  },
+  "eResetVehicle": {
+    "eventType": "navigate",
+    "eventName": "onSETTINGS_REQ_RESETVEHICLESETTINGS",
+    "activityName": "SettingsFactoryPopupActivity",
+    "isProcess": "false"
+  },
+  "eRetry": {
+    "eventType": "navigate",
+    "eventName": "evG_Retry",
+    "activityName": "SettingsFactoryRetryActivity",
+    "isProcess": "false"
+  },
+  "eErase": {
+    "eventType": "navigate",
+    "eventName": "evG_Erase",
+    "activityName": "SettingsEraseSettingsPopupActivity",
+    "isProcess": "false"
+  },
+  "eEraseLoad": {
+    "eventType": "navigate",
+    "eventName": "evG_Erase_Load",
+    "activityName": "SettingsEraseLoadingActivity",
+    "isProcess": "false"
+  },
+  "eClearApp": {
+    "eventType": "navigate",
+    "eventName": "evG_Clear_App",
+    "activityName": "SettingsClearDefaultPopupActivity",
+    "isProcess": "false"
+  },
+  "eDriveMode": {
+    "eventType": "navigate",
+    "eventName": "onSETTINGS_REQ_DRIVINGMODELIST",
+    "activityName": "SettingsDrivingModeActivity",
+    "isProcess": "false"
+  },
+  "ESettingsSteeringCustomization": {
+    "eventType": "navigate",
+    "eventName": "evG_Engine",
+    "activityName": "SettingsVehicleDriveModeEngineActivity",
+    "isProcess": "false"
+  },
+  "eDriveModeSteering": {
+    "eventType": "navigate",
+    "eventName": "evG_Steering",
+    "activityName": "SettingsDriveModeSteeringActivity",
+    "isProcess": "false"
+  },
+  "eDriveModeSuspension": {
+    "eventType": "navigate",
+    "eventName": "evG_Suspension",
+    "activityName": "SettingsDrivingModeSuspensionActivity",
+    "isProcess": "false"
+  },
+  "eDriveModeTraction": {
+    "eventType": "navigate",
+    "eventName": "evG_Traction",
+    "activityName": "SettingsDrivingModeTractionActivity",
+    "isProcess": "false"
+  },
+  "eDriveModeEngine": {
+    "eventType": "navigate",
+    "eventName": "evG_Engine",
+    "activityName": "SettingsDriveModeSteeringActivity",
+    "isProcess": "false"
+  },
+  "eEngineSoundType": {
+    "eventType": "process",
+    "eventName": "onSETTINGS_REQ_SETENGINESOUNDTYPE",
+    "activityName": "SettingsVehicleDriveModeEngineActivity",
+    "isProcess": "true"
+  },
+  "eSteeringType": {
+    "eventType": "process",
+    "eventName": "onSETTINGS_REQ_SETSTEERINGTYPE",
+    "activityName": "SettingsDriveModeSteeringActivity",
+    "isProcess": "true"
+  },
+  "eSuspensionType": {
+    "eventType": "process",
+    "eventName": "onSETTINGS_REQ_SETSUSPENSIONTYPE",
+    "activityName": "SettingsDrivingModeSuspensionActivity",
+    "isProcess": "true"
+  },
+  "eTractionType": {
+    "eventType": "process",
+    "eventName": "onSETTINGS_REQ_SETTRACTIONTYPE",
+    "activityName": "SettingsDrivingModeTractionActivity",
+    "isProcess": "true"
+  },
+  "eRunningApps": {
+    "eventType": "navigate",
+    "eventName": "onSETTINGS_REQ_GET_RUNNING_APPLICATIONLIST",
+    "activityName": "RunningAppsSettingsActivity",
+    "isProcess": "true"
+  },
+  "eRunningPopup": {
+    "eventType": "navigate",
+    "eventName": "onSETTINGS_REQ_GET_RUNNINGAPPSTOP_POS",
+    "activityName": "RunningsAppsPopupSettingsActivity",
+    "isProcess": "true"
+  },
+  "eKillRunApp": {
+    "eventType": "process",
+    "eventName": "onSETTINGS_REQ_GET_CONFIRM_FORCESTOP",
+    "activityName": "RunningAppsSettingsActivity",
+    "isProcess": "true"
+  },
+  "eClimate": {
+    "eventType": "navigate",
+    "eventName": "onSETTINGS_REQ_CLIMATE_MENU_LIST",
+    "activityName": "SettingsClimateActivity",
+    "isProcess": "true"
+  },
+  "eAirQuality": {
+    "eventType": "navigate",
+    "eventName": "evG_AirQuality",
+    "activityName": "AirQualitySensorSettingsActivity",
+    "isProcess": "false"
+  },
+  "eAirQualitySensor": {
+    "eventType": "process",
+    "eventName": "onCUSTOMIZATIONECC_REQ_SETAIRQUALITYSENSORSETTING",
+    "activityName": "AirQualitySensorSettingsActivity",
+    "isProcess": "true"
+  },
+  "eAutoFanSpeed": {
+    "eventType": "navigate",
+    "eventName": "evG_AutoFanSpeed",
+    "activityName": "AutoFanSpeedActivity",
+    "isProcess": "false"
+  },
+  "eAutoAirDistribution": {
+    "eventType": "navigate",
+    "eventName": "evG_AutoAirDistribuion",
+    "activityName": "AutoAirDistributionActivity",
+    "isProcess": "false"
+  },
+  "eAutoFanSpeedValue": {
+    "eventType": "process",
+    "eventName": "onCUSTOMIZATIONECC_REQ_SETAUTOFANSETTING",
+    "activityName": "AutoFanSpeedActivity",
+    "isProcess": "true"
+  },
+  "eAutoAirDistributionValue": {
+    "eventType": "process",
+    "eventName": "onCUSTOMIZATIONECC_REQ_SETAUTOAIRDISTRSETTINGS",
+    "activityName": "AutoAirDistributionActivity",
+    "isProcess": "true"
+  },
+  "ePollutionControl": {
+    "eventType": "process",
+    "eventName": "onCUSTOMIZATIONECC_REQ_SETPOLLUTIONCONTROLSETTINGS",
+    "activityName": "AutoAirDistributionActivity",
+    "isProcess": "true"
+  },
+  "eAutoCooledSeats": {
+    "eventType": "process",
+    "eventName": "onCUSTOMIZATIONECC_REQ_SETAUTOCOOLSEATSSETTING",
+    "activityName": "AutoAirDistributionActivity",
+    "isProcess": "true"
+  },
+  "eAutoHeatedSeats": {
+    "eventType": "process",
+    "eventName": "onCUSTOMIZATIONECC_REQ_SETAUTOHEATEDSEATSSETTING",
+    "activityName": "AutoAirDistributionActivity",
+    "isProcess": "true"
+  },
+  "eAutoDefog": {
+    "eventType": "process",
+    "eventName": "onCUSTOMIZATIONECC_REQ_SETAUTODEFOGSETTING",
+    "activityName": "AutoAirDistributionActivity",
+    "isProcess": "true"
+  },
+  "eAutoRearDefog": {
+    "eventType": "process",
+    "eventName": "",
+    "activityName": "AutoAirDistributionActivity",
+    "isProcess": "true"
+  },
+  "eElevatedIdle": {
+    "eventType": "process",
+    "eventName": "",
+    "activityName": "AutoAirDistributionActivity",
+    "isProcess": "true"
+  },
+  "eIonizer": {
+    "eventType": "process",
+    "eventName": "onCUSTOMIZATIONECC_REQ_SETIONIZERSETTINGS",
+    "activityName": "AutoAirDistributionActivity",
+    "isProcess": "true"
+  },
+  "eClimateOnOf": {
+    "eventType": "navigate",
+    "eventName": "onSETTINGS_REQ_CLIMATE_INNER",
+    "activityName": "SettingsClimateOnOffActivity",
+    "isProcess": "true"
+  },
+  "eAudio": {
+    "eventType": "navigate",
+    "eventName": "evGAudio",
+    "activityName": "com.gm.audioapp.action.evG_AudioSettings",
+    "isProcess": "false"
+  },
+  "eNavigation": {
+    "eventType": "navigate",
+    "eventName": "evG_Navigation",
+    "activityName": "com.gm.navigation.action",
+    "isProcess": "false"
+  },
+  "eAppsOnOff": {
+    "eventType": "navigate",
+    "eventName": "onSETTINGS_REQ_APPS_INNER",
+    "activityName": "SettingsAppsOnOffActivity",
+    "isProcess": "true"
+  },
+  "eAndroidAuto": {
+    "eventType": "process",
+    "eventName": "onDEVICEPROJECTION_REQ_SETGOOGLEAUTOLINKENABLE",
+    "activityName": "SettingsHomeActivity",
+    "isProcess": "true"
+  },
+  "eAppleCarPLay": {
+    "eventType": "process",
+    "eventName": "onDEVICEPROJECTION_REQ_SETAPPLECARPLAYENABLE",
+    "activityName": "SettingsHomeActivity",
+    "isProcess": "true"
+  },
+  "eApps": {
+    "eventType": "process",
+    "eventName": "onSETTINGS_APPS_REQ_DATA",
+    "activityName": "AutoAirDistributionActivity",
+    "isProcess": "true"
+  },
+  "eSportModeCustomization": {
+    "eventType": "navigate",
+    "eventName": "eSportModeCustomization",
+    "activityName": "SettingsSportModeCustomizationActivity",
+    "isProcess": "false"
+  },
+  "eSportModeCustomizationOnOff": {
+    "eventType": "navigate",
+    "eventName": "onSETTINGS_REQ_SPORTMODESETTINGS",
+    "activityName": "SettingsSportModeCustomizationOnOffActivity",
+    "isProcess": "true"
+  },
+  "eSportModeCustomizationToggleOnOffSteering": {
+    "eventType": "process",
+    "eventName": "onSETTINGS_REQ_SPORTMODESTEERINGSETTINGS",
+    "activityName": "SettingsSportModeCustomizationOnOffActivity",
+    "isProcess": "true"
+  },
+  "eSportModeCustomizationToggleOnOffDisplay": {
+    "eventType": "process",
+    "eventName": "onSETTINGS_REQ_SPORTMODEDISPLAYSETTINGS",
+    "activityName": "SettingsSportModeCustomizationOnOffActivity",
+    "isProcess": "true"
+  },
+  "eSportModeCustomizationToggleOnOffSuspension": {
+    "eventType": "process",
+    "eventName": "onSETTINGS_REQ_SPORTMODESUSPENSIONSETTINGS",
+    "activityName": "SettingsSportModeCustomizationOnOffActivity",
+    "isProcess": "true"
+  },
+  "eSportModeCustomizationToggleOnOffTraction": {
+    "eventType": "process",
+    "eventName": "onSETTINGS_REQ_SPORTMODETRACTIONSETTINGS",
+    "activityName": "SettingsSportModeCustomizationOnOffActivity",
+    "isProcess": "true"
+  },
+  "eSportModeCustomizationToggleOnOffDriverSeat": {
+    "eventType": "process",
+    "eventName": "onSETTINGS_REQ_SPORTMODEDRIVERSEATSETTINGS",
+    "activityName": "SettingsSportModeCustomizationOnOffActivity",
+    "isProcess": "true"
+  },
+  "eSportModeCustomizationToggleOnOffPassengerSeat": {
+    "eventType": "process",
+    "eventName": "onSETTINGS_REQ_SPORTMODEPASSENGERSEATSETTINGS",
+    "activityName": "SettingsSportModeCustomizationOnOffActivity",
+    "isProcess": "true"
+  },
+  "eSportModeCustomizationToggleOnOffAdaptiveCruiseControl": {
+    "eventType": "process",
+    "eventName": "onSETTINGS_REQ_SPORTMODEADAPTIVECRUISECONTROLSETTINGS",
+    "activityName": "SettingsSportModeCustomizationOnOffActivity",
+    "isProcess": "true"
+  },
+  "eAutoModeCustomization": {
+    "eventType": "navigate",
+    "eventName": "eAutoModeCustomization",
+    "activityName": "SettingsAutoModeCustomizationActivity",
+    "isProcess": "false"
+  },
+  "eAbout": {
+    "eventType": "navigate",
+    "eventName": "evG_about",
+    "activityName": "AboutSettingsLauncherActivity",
+    "isProcess": "false"
+  },
+  "eBuildNumber": {
+    "eventType": "navigate",
+    "eventName": "onSETTINGS_REQ_BUILDNUMBER",
+    "activityName": "SettingsAboutBuildNumberActivity",
+    "isProcess": "true"
+  },
+  "eBuildClick": {
+    "eventType": "process",
+    "eventName": "onSETTINGS_REQ_BUILDCLICK",
+    "activityName": "SettingsAboutBuildNumberActivity",
+    "isProcess": "true"
+  },
+  "eDeviceRegistration": {
+    "eventType": "navigate",
+    "eventName": "eDeviceRegistration",
+    "activityName": "SettingsAboutDeviceRegistrationActivity",
+    "isProcess": "false"
+  },
+  "eOpenSource": {
+    "eventType": "navigate",
+    "eventName": "onSETTINGS_REQ_OPENSOURCE",
+    "activityName": "HTMLViewerActivity",
+    "isProcess": "true"
+  }
+}

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SettingsService</string>
+
+    <string name="shared_pref_language_key" translatable="false">language_key</string>
+    <string name="shared_pref_mode" translatable="false">mode</string>
+    <string name="shared_pref_language_key_config" translatable="false">language_key_config</string>
+
+
+    <string name="language_type" translatable="false">en</string>
+    <string name="shared_pref_skew_state_key" translatable="false">skew_state_key</string>
+
+    <string name="language_english_us">English US</string>
+    <string name="language_german">German</string>
+    <string name="language_italian">Italian</string>
+    <string name="language_swedish">Swedish</string>
+    <string name="language_na_french">Français Canadien</string>
+    <string name="language_na_spanish">Español Latino</string>
+    <string name="language_uk_english">UK English</string>
+    <string name="language_spanish">Spanish</string>
+
+    <string name="shared_pref_lang_state" translatable="false">language_state</string>
+
+
+
+</resources>

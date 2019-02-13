@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="obj"
+            type="com.gm.settingsservice.models.DisplayModel" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <import type="com.gm.settingsservice.models.eSettingsDisplayStatus" />
+
+    </data>
+
+    <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        style="?attr/settings_skewlayout"
+        android:onClick="@{(view)-> clickHandler.onItemClickHandler(view,(obj.reference==dataPoolHandler.settingsDisplayOff)? eSettingsDisplayStatus.SETTINGS_DISPLAY_STATUS_OFF : obj)}"
+        bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
+
+        <TextView
+            android:id="@+id/txt_settings_system_speech"
+            style="?attr/settings_layout_text"
+            android:text="@{obj.primaryData}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_settings_system_speech_secondary"
+            style="?attr/settings_layout_text_secondary"
+            android:text="@{obj.secondaryData}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_settings_system_speech" />
+
+        <ImageView
+            android:id="@+id/img_sub_list_header"
+            style="?attr/settings_imageview"
+            android:visibility="@{obj.isTogglevisible? View.VISIBLE : View.INVISIBLE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/connections_phone_toggle_btn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ToggleButton
+            android:id="@+id/connections_phone_toggle_btn"
+            style="?attr/settings_radiobutton"
+            android:checked="@{obj.toggleState}"
+            android:visibility="@{obj.isTogglevisible? View.VISIBLE : View.INVISIBLE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="12:12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+</layout>

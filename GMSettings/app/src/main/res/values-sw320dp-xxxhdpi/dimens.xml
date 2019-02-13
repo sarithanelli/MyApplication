@@ -1,0 +1,42 @@
+<resources>
+
+    <dimen name="radiogroup_margin_start">140dp</dimen>
+    <dimen name="radiobutton_padding_top" >30dp</dimen>
+    <dimen name="skewtext_padding_left" >30dp</dimen>
+    <dimen name="skewtext_padding" >30dp</dimen>
+    <!--Toggle button width and height-->
+    <dimen name="toggle_btn_width">145dp</dimen>
+    <dimen name="toggle_btn_height">55dp</dimen>
+    <!--Settings_system_speech_prompt_radio_buttons-->
+    <!--Settings voice text padding-->
+    <!--system_sounds_sizes-->
+    <dimen name="system_progressbar_width">1050dp</dimen>
+    <dimen name="system_margin_top_button">45dp</dimen>
+    <item name="system_sounds_guidline" format="float" type="integer">0.6</item>
+    <dimen name="system_sounds_scrollbar_width">0dp</dimen>
+    <dimen name="system__sound_progresssbar_maxmin_height">20dip</dimen>
+    <dimen name="text_secondary_size_sounds_popup">20sp</dimen>
+    <!--search button layout sizes-->
+    <dimen name="search_layout_edittext_crossbutton_size">35dp</dimen>
+    <dimen name="crossbutton_width_height">35dp</dimen>
+    <dimen name="microphone_width">60dp</dimen>
+    <dimen name="microphone__height">84dp</dimen>
+    <dimen name="search_layout_marginbottom">10dp</dimen>
+    <dimen name="search_layout_marginstart_end">20dp</dimen>
+    <!--phone text padding-->
+    <dimen name="phone_txt_padding_start">30dp</dimen>
+    <!--Top Bar Image width and height-->
+    <dimen name="txt_padding">15dp</dimen>
+    <dimen name="timedate_textview_second_size">14sp</dimen><!--
+    &lt;!&ndash;Top Bar Image width and height&ndash;&gt;
+    <dimen name="img_btn_back_width">53dp</dimen>
+    <dimen name="img_btn_back_height">75dp</dimen>
+    <dimen name="img_back_margin_start">30dp</dimen>
+    <dimen name="txt_padding">20dp</dimen>
+-->
+    <!--Select Time zone-->
+    <dimen name="time_image_width">590dp</dimen>
+    <dimen name="time_image_height">380dp</dimen>
+    <dimen name="system_language_buttons_padding">27dp</dimen>
+
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <data class="ActivityThemeBinding">
+
+        <import type="android.view.View" />
+
+        <import type="com.gm.settingsservice.models.eLHD_RHD_RTL" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+
+    </data>
+
+    <ScrollView
+        style="@style/Layout_Match_Match"
+        android:background="@drawable/img_settings_bg"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/themesView"
+                style="@style/text_material_headline_config"
+                android:text="Themes Mode"
+                app:layout_constraintBottom_toTopOf="@+id/ThemeRadioGroup"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/ThemeRadioGroup"
+                style="@style/Layout_Wrap_Wrap"
+                android:onCheckedChanged="@{clickHandler::onRadioChanged}"
+                app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/themesView">
+
+                <RadioButton
+                    android:id="@+id/SpriteEnable"
+                    style="@style/text_material_subheading_light"
+                    android:buttonTint="@color/gm_cyan_green"
+                    android:checked="@{dataPoolHandler.themeType.get() ==true ? false: true}"
+                    android:padding="10dp"
+                    android:text="Axure" />
+
+                <RadioButton
+                    android:id="@+id/AzureEnable"
+                    style="@style/text_material_subheading_light"
+                    android:buttonTint="@color/gm_cyan_green"
+                    android:checked="@{dataPoolHandler.themeType.get() ==false ? false: true}"
+                    android:padding="10dp"
+                    android:text="Sprite" />
+
+
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/imageButton2"
+                style="@style/text_material_subheading_light"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/submitbutton_marginTop"
+                android:background="@android:color/holo_blue_dark"
+                android:onClick="@{clickHandler::onClickHandler}"
+                android:tag="eSubmit"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ThemeRadioGroup" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</layout>

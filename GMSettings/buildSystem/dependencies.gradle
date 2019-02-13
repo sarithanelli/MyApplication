@@ -1,0 +1,72 @@
+ext {
+    //
+    // ===== Versions =====
+    //
+
+    //Annotation processor dependencies
+    daggerVersion = '2.19'
+    espressoVersion = '3.1.0'
+    junitVersion = '4.12'
+    appCompactVesion="1.0.2"
+    constraintVersion="2.0.0-alpha2"
+    materialDesignVersion="1.1.0-alpha01"
+
+    //Functional/end-to-end testing dependencies
+    testRunnerVersion = '1.1.0'
+
+    //
+    // ===== Libraries =====
+    //
+
+
+    junit = "junit:junit:${junitVersion}"
+    daggerCompiler = "com.google.dagger:dagger-compiler:${daggerVersion}"
+    testRunner = "androidx.test:runner:${testRunnerVersion}"
+    espressoCore = "androidx.test.espresso:espresso-core:${espressoVersion}"
+    appCompat = "androidx.appcompat:appcompat:${appCompactVesion}"
+    kotlinLib= "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlin_version}"
+    constraint="androidx.constraintlayout:constraintlayout:${constraintVersion}"
+    materialDesign= "com.google.android.material:material:${materialDesignVersion}"
+    daggerSupport="com.google.dagger:dagger-android-support:${daggerVersion}"
+    dagger="com.google.dagger:dagger:${daggerVersion}"
+    daggerAndroid="com.google.dagger:dagger-android:${daggerVersion}"
+    daggerProcessor="com.google.dagger:dagger-android-processor:${daggerVersion}"
+
+
+    //
+    // ===== Modules =====
+    //
+    app = [
+            [configuration: "implementation", dependency: appCompat],
+            [configuration: "implementation", dependency: kotlinLib],
+            [configuration: "implementation", dependency: constraint],
+            [configuration: "implementation", dependency: materialDesign],
+    ]
+
+    settingsservice = [
+
+            [configuration: "implementation", dependency: appCompat],
+            [configuration: "implementation", dependency: kotlinLib],
+            [configuration: "implementation", dependency: constraint],
+            [configuration: "implementation", dependency: materialDesign],
+    ]
+
+        //Imported in all modules
+    unitTestsDependencies = [
+            [configuration: "testImplementation", dependency: junit],
+    ]
+
+    //Importend in app module only
+    instrumentationTestsDependencies = [
+            [configuration: "androidTestImplementation", dependency: espressoCore],
+            [configuration: "androidTestImplementation", dependency: testRunner],
+    ]
+
+    dagger=[
+            [configuration: "implementation", dependency: daggerAndroid],
+            [configuration: "implementation", dependency: dagger],
+            [configuration: "implementation", dependency: daggerSupport],
+            [configuration: "annotationProcessor", dependency: daggerCompiler],
+            [configuration: "annotationProcessor", dependency: daggerProcessor],
+    ]
+}

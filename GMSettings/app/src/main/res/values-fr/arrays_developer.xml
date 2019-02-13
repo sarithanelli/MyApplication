@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Titles for logd limit size selection preference. [CHAR LIMIT=14] -->
+    <string-array name="select_logd_size_titles">
+        <item>64 ko</item>
+        <item>256 ko</item>
+        <item>1 Mo</item>
+        <item>4 Mo</item>
+        <item>16 Mo</item>
+    </string-array>
+
+    <!-- Titles for logd limit size lowram selection preference. [CHAR LIMIT=14] -->
+    <string-array name="select_logd_size_lowram_titles">
+        <item>64 ko</item>
+        <item>256 ko</item>
+        <item>1 Mo</item>
+    </string-array>
+
+    <!-- Values for logd limit size selection preference. -->
+    <string-array name="select_logd_size_values" translatable="false">
+        <item>65536</item>
+        <item>262144</item>
+        <item>1048576</item>
+        <item>4194304</item>
+        <item>16777216</item>
+    </string-array>
+
+    <!-- Summaries for logd limit size selection preference. [CHAR LIMIT=30] -->
+    <string-array name="select_logd_size_summaries">
+        <item>1 ko/tampon journal</item>
+        <item>256 Ko/tampon journal</item>
+        <item>1 Mo/tampon journal</item>
+        <item>4 Mo/tampon journal</item>
+        <item>16 Mo/tampon journal</item>
+    </string-array>
+
+    <!-- Titles for HDCP checking preference. [CHAR LIMIT=35] -->
+    <string-array name="hdcp_checking_titles">
+        <item>Ne jamais vérifier</item>
+        <item>Vérifier le contenu GDN uniquement</item>
+        <item>Toujours vérifier</item>
+    </string-array>
+
+    <!-- Values for HDCP checking preference. -->
+    <string-array name="hdcp_checking_values" translatable="false">
+        <item>never</item>
+        <item>drm-only</item>
+        <item>always</item>
+    </string-array>
+
+    <!-- Summaries for HDCP checking preference. [CHAR LIMIT=100] -->
+    <string-array name="hdcp_checking_summaries">
+        <item>Ne jamais utiliser la vérification HDCP</item>
+        <item>Utiliser la vérification HDCP uniquement pour le contenu GDN</item>
+        <item>Toujours utiliser la vérification HDCP</item>
+    </string-array>
+
+    <!-- Titles for window animation scale preference. [CHAR LIMIT=35] -->
+    <string-array name="window_animation_scale_entries">
+        <item>Animation désactivée</item>
+        <item>Échelle d\'animation 0,5x</item>
+        <item>Échelle d\'animation 1x</item>
+        <item>Échelle d\'animation 1,5x</item>
+        <item>Échelle d\'animation 2x</item>
+        <item>Échelle d\'animation 5x</item>
+        <item>Échelle d\'animation 10x</item>
+    </string-array>
+
+    <!-- Values for window animation scale preference. -->
+    <string-array name="window_animation_scale_values" translatable="false">
+        <item>0</item>
+        <item>.5</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+
+    <!-- Titles for transition animation scale preference. [CHAR LIMIT=35] -->
+    <string-array name="transition_animation_scale_entries">
+        <item>Animation désactivée</item>
+        <item>Échelle d\'animation 0,5x</item>
+        <item>Échelle d\'animation 1x</item>
+        <item>Échelle d\'animation 1,5x</item>
+        <item>Échelle d\'animation 2x</item>
+        <item>Échelle d\'animation 5x</item>
+        <item>Échelle d\'animation 10x</item>
+    </string-array>
+
+    <!-- Values for transition animation scale preference. -->
+    <string-array name="transition_animation_scale_values" translatable="false">
+        <item>0</item>
+        <item>.5</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+
+    <!-- Titles for animator duration scale preference. [CHAR LIMIT=35] -->
+    <string-array name="animator_duration_scale_entries">
+        <item>Animation désactivée</item>
+        <item>Échelle d\'animation 0,5x</item>
+        <item>Échelle d\'animation 1x</item>
+        <item>Échelle d\'animation 1,5x</item>
+        <item>Échelle d\'animation 2x</item>
+        <item>Échelle d\'animation 5x</item>
+        <item>Échelle d\'animation 10x</item>
+    </string-array>
+
+    <!-- Values for animator duration scale preference. -->
+    <string-array name="animator_duration_scale_values" translatable="false">
+        <item>0</item>
+        <item>.5</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+
+    <!-- Titles for overlay display devices preference. [CHAR LIMIT=35] -->
+    <string-array name="overlay_display_devices_entries">
+        <item>Aucun</item>
+        <item>720 x 480 mdpi</item>
+        <item>720 x 480 mdpi (sécurisé)</item>
+        <item>1 280 x 720 tvdpi</item>
+        <item>1 280 x 720 tvdpi (sécurisé)</item>
+        <item>1 920 x 1 080 xhdpi</item>
+        <item>1 920 x 1 080 xhdpi (sécurisé)</item>
+        <item>1 280 x 720 tvdpi et 1 920 x1 080 xhdpi</item>
+    </string-array>
+
+    <!-- Values for overlay display devices preference. -->
+    <string-array name="overlay_display_devices_values" translatable="false">
+        <item></item>
+        <item>720x480/160</item>
+        <item>720x480/160,secure</item>
+        <item>1280x720/213</item>
+        <item>1280x720/213,secure</item>
+        <item>1920x1080/320</item>
+        <item>1920x1080/320,secure</item>
+        <item>1280x720/213;1920x1080/320</item>
+    </string-array>
+
+    <!-- Titles for debug overdraw preference. [CHAR LIMIT=50] -->
+    <string-array name="debug_hw_overdraw_entries">
+        <item>Désactivé</item>
+        <item>Afficher les zones de conflit</item>
+        <item>Afficher les zones de deutéranomalie</item>
+    </string-array>
+
+    <!-- Values for debug overdraw preference. -->
+    <string-array name="debug_hw_overdraw_values" translatable="false">
+        <item>false</item>
+        <item>show</item>
+        <item>show_deuteranomaly</item>
+    </string-array>
+
+    <!-- Titles for non-rectangular clipping preference. [CHAR LIMIT=35] -->
+    <string-array name="show_non_rect_clip_entries">
+        <item>Désactivé</item>
+        <item>Dessiner zone de découpage non rectangulaire en bleu</item>
+        <item>Surligner en vert les commandes de dessin testées</item>
+    </string-array>
+
+    <!-- Values for non-rectangular clipping preference. -->
+    <string-array name="show_non_rect_clip_values" translatable="false">
+        <item>hide</item>
+        <item>region</item>
+        <item>highlight</item>
+    </string-array>
+
+    <!-- Titles for frame time tracking preference. [CHAR LIMIT=35] -->
+    <string-array name="track_frame_time_entries">
+        <item>Désactivé</item>
+        <item>À l\'écran sous forme de barres</item>
+        <item>Dans adb shell dumpsys gfxinfo</item>
+    </string-array>
+
+    <!-- Values for frame time tracking preference. -->
+    <string-array name="track_frame_time_values" translatable="false">
+        <item>false</item>
+        <item>visual_bars</item>
+        <item>true</item>
+    </string-array>
+
+    <!-- Display color space adjustment modes for developers -->
+    <string-array name="simulate_color_space_entries" translatable="false">
+        <item>@string/daltonizer_mode_disabled</item>
+        <item>@string/daltonizer_mode_monochromacy</item>
+        <item>@string/daltonizer_mode_deuteranomaly</item>
+        <item>@string/daltonizer_mode_protanomaly</item>
+        <item>@string/daltonizer_mode_tritanomaly</item>
+    </string-array>
+
+    <!-- Values for display color space adjustment modes for developers -->
+    <string-array name="simulate_color_space_values" translatable="false">
+        <item>-1</item>
+        <item>0</item>
+        <item>2</item>
+        <item>1</item>
+        <item>3</item>
+    </string-array>
+
+    <!-- Titles for OpenGL traces preference. [CHAR LIMIT=35] -->
+    <string-array name="enable_opengl_traces_entries">
+        <item>Aucun</item>
+        <item>Logcat</item>
+        <item>Systrace (graphismes)</item>
+        <item>Appeler une pile sur glGetError</item>
+    </string-array>
+
+    <!-- Values for OpenGL traces preference. -->
+    <string-array name="enable_opengl_traces_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>systrace</item>
+        <item>error</item>
+    </string-array>
+
+    <!-- Titles for app process limit preference. [CHAR LIMIT=35] -->
+    <string-array name="app_process_limit_entries">
+        <item>"Limite standard"</item>
+        <item>"Aucun processus en arrière-plan"</item>
+        <item>"Un processus maximum"</item>
+        <item>"Deux processus maximum"</item>
+        <item>"Trois processus maximum"</item>
+        <item>"Quatre processus maximum"</item>
+    </string-array>
+
+    <!-- Values for app process limit preference. -->
+    <string-array name="app_process_limit_values" translatable="false">
+        <item>-1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <!-- Process stats memory use details: labels for memory states -->
+    <string-array name="proc_stats_memory_states">
+        <item>Normale</item>
+        <item>Modérée</item>
+        <item>Faible</item>
+        <item>Critique</item>
+    </string-array>
+
+    <!-- Process stats memory use details: labels for process -->
+    <string-array name="proc_stats_process_states">
+        <item>Persistent</item>
+        <item>Top activity</item>
+        <item>Important (foreground)</item>
+        <item>Important (background)</item>
+        <item>Backup</item>
+        <item>Heavy weight</item>
+        <item>Service (running)</item>
+        <item>Service (restarting)</item>
+        <item>Receiver</item>
+        <item>Home</item>
+        <item>Last activity</item>
+        <item>Cached (activity)</item>
+        <item>Cached (activity client)</item>
+        <item>Cached (empty)</item>
+    </string-array>
+
+    <!-- [CHAR LIMIT=30] Labels for memory states -->
+    <string-array name="ram_states">
+        <item>normal</item>
+        <item>modéré</item>
+        <item>faible</item>
+        <item>critique</item>
+    </string-array>
+
+</resources>

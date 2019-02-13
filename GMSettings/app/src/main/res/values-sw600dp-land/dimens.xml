@@ -1,0 +1,113 @@
+<resources>
+
+    <dimen name="metadataTextSize1">35sp</dimen>
+    <dimen name="carousalText2">32sp</dimen>
+    <dimen name="themeTitle">40sp</dimen>
+
+    <!--Settings_Running_apps-->
+
+    <dimen name="running_apps_padding_end">0dp</dimen>
+    <dimen name="running_apps_row_height">90dp</dimen>
+    <item name="settings_running_apps_guideline" format="float" type="integer">0.255</item>
+    <item name="settings_running_apps_guideline_end" format="float" type="integer">0.985</item>
+    <item name="settings_running_apps_guideline_rhd" format="float" type="integer">0.015</item>
+    <item name="settings_running_apps_guideline__rhd_end" format="float" type="integer">0.77</item>
+    <item name="settings_running_apps_text_weight_one" format="float" type="integer">0.20</item>
+    <item name="settings_running_apps_seekbar_weight" format="float" type="integer">0.6</item>
+    <item name="settings_running_apps_text_weight_two" format="float" type="integer">0.18</item>
+
+    <dimen name="List_primary_text">21sp</dimen>
+    <!-- The radius of the pill. This number should be half the value of
+         car_preset_number_bg_height. -->
+    <dimen name="row_height">108dp</dimen>
+
+    <!-- The length of time it takes the radio preset list to animate a slide up or down. -->
+
+    <!-- The delay before the start of a slide up animation on the preset list. -->
+
+    <dimen name="lens_header_height">112dp</dimen>
+    <dimen name="car_radio_fab_size">100dp</dimen>
+    <dimen name="car_radio_fab_padding">30dp</dimen>
+    <integer name="sloped_angle_skew_0">0</integer>
+    <integer name="sloped_angle_skew_15">15</integer>
+    <integer name="sloped_angle_skew_9">9</integer>
+    <integer name="sloped_angle_skew_8">8</integer>
+
+    <dimen name="stream_card_keyline_1">20dp</dimen>
+    <dimen name="stream_card_keyline_2">8dp</dimen>
+
+    <dimen name="text_hmimediumstyle">50sp</dimen>
+    <dimen name="text_hmitextlargestyle">25sp</dimen>
+
+    <dimen name="text_settings_text_padding">18dp</dimen>
+
+    <dimen name="text_settings_zero">0dp</dimen>
+
+    <dimen name="system_sounds_maxstart_imageview_margintop">170dp</dimen>
+    <!--for language screen-->
+    <!--RTC TID:24797 OLD VALUE 922dp-->
+    <!--RTC TID:24797 OLD VALUE 30dp-->
+    <!--RTC TID:24797 OLD VALUE 725dp-->
+    <dimen name="text_secondary_size">27sp</dimen>
+
+    <dimen name="radiogroup_margin_start">140dp</dimen>
+    <dimen name="radiobutton_padding_top" >20dp</dimen>
+    <dimen name="skewtext_padding_left" >53dp</dimen>
+
+    <dimen name="skewtext_padding" >30dp</dimen>
+    <!--settings_list_row_timedate-->
+    <dimen name="recyclerview_margintop">100dp</dimen>
+    <!--Time date recycler view -->
+
+
+    <dimen name="guideline_percent">0.23</dimen>
+    <integer name="fastScrollBarWidth">15</integer>
+    <integer name="fastScrollArrowRadius">90</integer>
+    <dimen name="language_textview_padding">17dp</dimen>
+    <!--Toggle button width and height-->
+    <dimen name="toggle_btn_width">100dp</dimen>
+    <dimen name="toggle_btn_height">40dp</dimen>
+    <!-- <float name="settime_guideline_horizontal_set_time_date_top">0.25</float>-->
+    <!--<float name="settime_guideline_horizontalal_set_time_date_bottom">0.85</float>-->
+    <!--Toggle button width and height-->
+    <dimen name="automatictimezone_text_size">25sp</dimen>
+    <!--Settings_system_speech_prompt_radio_buttons-->
+    <dimen name="onoff_text_size">25sp</dimen>
+    <!--Settings voice text padding-->
+    <!--system_sounds_sizes-->
+    <dimen name="system_progressbar_width">500dp</dimen>
+    <dimen name="system_margin_top_button">20dp</dimen>
+    <item name="system_sounds_guidline" format="float" type="integer">0.6</item>
+    <item name="system_sounds_guidline_for_buttons" format="float" type="integer">0.32</item>
+    <dimen name="system_margin_start_end_button">30dp</dimen>
+    <dimen name="system__sound_progresssbar_maxmin_height">20dip</dimen>
+    <!--BUttons Padding-->
+    <dimen name="two_button_layout_button_padding">10dp</dimen>
+    <!--Top Bar Image width and height-->
+    <!--Calibration width height-->
+    <dimen name="calibartion_width_height">90dp</dimen>
+
+    <dimen name="system_sound_car_image_width">320dp</dimen>
+    <dimen name="system_sound_car_image_height">150dp</dimen>
+    <item name="system_sound_car_bias" type="integer" format="float">0.6</item>
+
+    <dimen name="system_sound_car_image_padding_end">15dp</dimen>
+    <!--topbar layout sizes-->
+    <!--search button layout sizes-->
+    <dimen name="search_layout_edittext_crossbutton_size">35dp</dimen>
+    <dimen name="crossbutton_width_height">35dp</dimen>
+    <dimen name="microphone_width">40dp</dimen>
+    <dimen name="microphone__height">54dp</dimen>
+    <dimen name="search_layout_marginbottom">10dp</dimen>
+    <dimen name="search_layout_marginstart_end">30dp</dimen>
+   <!-- &lt;!&ndash;Top Bar Image width and height&ndash;&gt;
+    <dimen name="img_btn_back_width">20dp</dimen>
+    <dimen name="img_btn_back_height">35dp</dimen>
+    <dimen name="img_back_margin_start">15dp</dimen>-->
+    <dimen name="txt_padding">10dp</dimen>
+    <!--Select Time zone-->
+    <dimen name="time_image_width">590dp</dimen>
+    <dimen name="time_image_height">380dp</dimen>
+    <dimen name="system_language_buttons_padding">23dp</dimen>
+    <dimen name="textview_padding">4dp</dimen>
+</resources>

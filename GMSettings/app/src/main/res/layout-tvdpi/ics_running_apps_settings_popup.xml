@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data class="RunningPopupSettingsBinding">
+
+        <import type="android.view.View" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+    </data>
+
+    <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        android:id="@+id/voice_recognition_layout_id"
+        style="?attr/settings_layout_bg_style"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        bind:skewValue="@{dataPoolHandler.isSkewEnabled}">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circular_close_selector_themeb"
+            android:onClick="@{clickHandler::onClickHandler}"
+            android:tag="eScreenBack"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.01" />
+
+        <com.gm.settingsapp.ui.customview.SkewTextView
+            android:id="@+id/factory_settings_popup_txt"
+            style="?attr/settings_calibrate_text"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/gmsansui_regular"
+            android:gravity="center_vertical"
+            android:text="Warning"
+            android:textSize="@dimen/Popup_text_cadillac"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintHorizontal_bias="0.34"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.14"
+            app:layout_constraintWidth_percent="0.35"
+            bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
+
+        <com.gm.settingsapp.ui.customview.SkewTextView
+            android:id="@+id/factory_settings_popup_text"
+            style="?attr/settings_calibrate_text"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/gmsansui_light"
+            android:gravity="center_vertical"
+            android:text="@string/settings_android_force_stop"
+            android:textSize="@dimen/Popup_text_cadillac_secondary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintHorizontal_bias="0.34"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.45"
+            app:layout_constraintWidth_percent="0.35"
+            bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
+
+        <com.gm.settingsapp.ui.customview.SkewMaterialButton
+            android:id="@+id/btn_id_ta_bc_advance_done_twobutton_advance"
+            style="@style/btn_retry"
+            android:fontFamily="@font/gmsansui_light"
+            android:onClick="@{clickHandler::onClickHandler}"
+            android:padding="@dimen/two_button_layout_button_padding"
+            android:tag="eKillRunApp"
+            android:text="@string/cm_try_pairing"
+            android:textColor="@color/text_selector"
+            android:textSize="@dimen/Popup_text_cadillac_buttons"
+            app:backgroundTint="@android:color/transparent"
+            app:cornerRadius="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_id_ta_bc_advance_done_twobutton_advance1_clr_data"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@id/guideline_button_start"
+            app:layout_constraintWidth_percent="0.15"
+            app:rippleColor="@color/ripple_color"
+            app:strokeColor="@color/stroke_color"
+            app:strokeWidth="1dp"
+            app:textAllCaps="false"
+            bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
+
+        <com.gm.settingsapp.ui.customview.SkewMaterialButton
+            android:id="@+id/btn_id_ta_bc_advance_done_twobutton_advance1_clr_data"
+            style="@style/btn_retry"
+            android:fontFamily="@font/gmsansui_light"
+            android:onClick="@{clickHandler::onClickHandler}"
+            android:padding="@dimen/two_button_layout_button_padding"
+            android:tag="eScreenBack"
+            android:text="@string/ui_cancel"
+            android:textColor="@color/text_selector"
+            android:textSize="@dimen/Popup_text_cadillac_buttons"
+            app:backgroundTint="@android:color/transparent"
+            app:cornerRadius="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_button_end"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@+id/btn_id_ta_bc_advance_done_twobutton_advance"
+            app:layout_constraintWidth_percent="0.15"
+            app:rippleColor="@color/ripple_color"
+            app:strokeColor="@color/stroke_color"
+            app:strokeWidth="1dp"
+            app:textAllCaps="false"
+            bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_button_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.15" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_button_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.65" />
+    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+
+</layout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+    </data>
+
+    <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        style="@style/Layout_Match_Wrap"
+        android:layout_height="wrap_content"
+        android:background="#333333"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/id_txt_device_name"
+            style="@style/txt_device_name_detail"
+            android:layout_marginStart="8dp"
+            android:fontFamily="GMGlobalSans ExtraLight"
+            android:maxLength="8"
+            android:singleLine="true"
+            android:text="iPhone X"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/txt_topbar_devicename"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/id_phone_outgoingphone_cellsignalstrength"
+            android:layout_width="@dimen/img_cellsignalstrength_height"
+            android:layout_height="@dimen/img_cellsignalstrength_height"
+            android:layout_marginStart="25dp"
+            android:src="@drawable/icn_bluetooth_signal_strength3_gmc_rect"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/id_txt_device_name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/id_phone_outgoingphone_cellstateofcharge"
+            android:layout_width="@dimen/img_cellsignalstrength_width"
+            android:layout_height="@dimen/img_cellsignalstrength_height"
+            android:layout_marginBottom="@dimen/setting_topbar_marginbottom"
+            android:src="@drawable/icn_battery_full_gmc_rect"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/id_phone_outgoingphone_cellsignalstrength"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/txt_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gmsansui_light"
+            android:gravity="center_horizontal"
+            android:maxLength="8"
+            android:text="Jane Doe "
+            android:textColor="#ffffff"
+            android:textSize="@dimen/txt_topbar_username"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gmsansui_light"
+            android:maxLength="8"
+            android:padding="20dp"
+            android:src="@drawable/icn_profile_icon_gmc_rect"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/txt_topbar_username"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txt_user_name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/gmsansui_light"
+            android:text="11:30"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/txt_topbar_time"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+
+</layout>

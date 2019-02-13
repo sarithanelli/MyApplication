@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data class="TimeZonetActivityBinding">
+
+        <import type="android.view.View" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+    </data>
+
+    <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        style="?attr/settings_time_date_time_zone_layout"
+        android:background="@drawable/img_settings_bg"
+        bind:layoutDirection="@{dataPoolHandler.settingsConfiguration}"
+        bind:skewValue="@{dataPoolHandler.isSkewEnabled}"
+        bind:slopedAngle="@{dataPoolHandler.SKEW_ANGLE_8}">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/settings_on_off_time_zone"
+            style="?attr/settings_time_date_card"
+            app:cardElevation="@dimen/settings_card_time_date_card_elevation">
+
+            <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+                style="?attr/settings_time_date_match_wrap_style"
+                bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
+
+                <include
+                    android:id="@+id/tabLayout"
+                    style="?attr/settings_match_wrap_style"
+                    layout="@layout/uil_ta_hc_topbar_layout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    bind:clickHandler="@{clickHandler}"
+                    bind:dataPoolHandler="@{dataPoolHandler}" />
+            </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            style="?attr/settings_wrap_wrap_style"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.6" />
+
+        <com.gm.uisdk.views.GMRecyclerView
+            android:id="@+id/recycler_view_settings_language_view"
+            style="?attr/settings_time_date_time_zone_recycler"
+            android:tag=""
+            app:fastScrollArrowRadius="@integer/fastScrollArrowRadius"
+            app:fastScrollBarBgColor="@android:color/transparent"
+            app:fastScrollBarWidth="@integer/fastScrollBarWidth"
+            app:fastScrollDividerColor="@android:color/transparent"
+            app:fastScrollThumbColor="@color/thumb_color"
+            app:fastScrollTrackColor="@color/track_color"
+            app:fastScrollType="@{dataPoolHandler.SETTINGS_TIMEZONE_VALUES.size() > 6 ? 1 : 0}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/settings_on_off_time_zone"
+            bind:childLayout="@{@layout/uil_settings_list_row_timezone}"
+            bind:items="@{dataPoolHandler.SETTINGS_TIMEZONE_VALUES}">
+
+        </com.gm.uisdk.views.GMRecyclerView>
+
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            style="?attr/settings_scroll_view"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/img_settings_display"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.3"
+            app:layout_constraintStart_toEndOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/settings_on_off_time_zone"
+            app:layout_constraintWidth_percent="0.34">
+
+            <com.gm.settingsapp.ui.customview.SkewTextView
+                android:id="@+id/ui_settings_information_text"
+                style="?attr/text_material_content_text"
+                android:fontFamily="@font/gmsansui_regular"
+                android:textSize="@dimen/List_Secondary_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
+
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/img_settings_display"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/img_auto_time"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintStart_toEndOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+            app:layout_constraintWidth_percent="0.34" />
+
+    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+
+
+</layout>
+
+

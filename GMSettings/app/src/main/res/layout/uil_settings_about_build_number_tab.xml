@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data class="AboutBuildNumberBinding">
+
+        <import type="android.view.View" />
+
+        <variable
+            name="obj"
+            type="String" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+    </data>
+
+
+    <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        android:id="@+id/ics_ta_settings_system_view"
+        style="?attr/settings_fragment_list_row_layout"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_settings_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        bind:layoutDirection="@{dataPoolHandler.settingsConfiguration}"
+        bind:skewValue="@{dataPoolHandler.isSkewEnabled}">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            app:cardElevation="8dp">
+
+            <include
+                layout="@layout/uil_ta_hc_topbar_layout"
+                android:background="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                bind:clickHandler="@{clickHandler}"
+                bind:dataPoolHandler="@{dataPoolHandler}" />
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <TextView
+            android:id="@+id/txt_build_number"
+            style="?attr/settings_favorites_list_row_text"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="@string/build_number"
+            android:textColor="@color/yellow"
+            android:textStyle="bold"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/topbar"
+            app:layout_constraintWidth_percent="0.2" />
+
+        <TextView
+            android:id="@+id/txt_build_number_info"
+            style="?attr/settings_favorites_list_row_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:onClick="@{clickHandler::onClickHandler}"
+            android:padding="0dp"
+            android:tag="eBuildClick"
+            android:text="@string/build_number_static"
+            app:layout_constraintBottom_toTopOf="@+id/txt_build_number_info1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/txt_build_number"
+            app:layout_constraintWidth_percent="0.85" />
+
+        <TextView
+            android:id="@+id/txt_build_number_info1"
+            style="?attr/settings_favorites_list_row_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:padding="0dp"
+            android:text="Feb 7,2018"
+            app:layout_constraintBottom_toTopOf="@+id/txt_update_history"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/txt_build_number_info"
+            app:layout_constraintWidth_percent="0.85" />
+
+        <TextView
+            android:id="@+id/txt_update_history"
+            style="?attr/settings_favorites_list_row_text"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="bottom"
+            android:padding="0dp"
+            android:text="@string/updater_update_history"
+            android:textColor="@color/yellow"
+            android:textStyle="bold"
+            app:layout_constraintHeight_percent="0.15"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/txt_build_number_info1"
+            app:layout_constraintWidth_percent="0.3" />
+
+    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+</layout>

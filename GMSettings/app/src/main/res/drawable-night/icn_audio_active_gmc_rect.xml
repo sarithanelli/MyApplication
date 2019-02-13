@@ -1,0 +1,9 @@
+<vector android:autoMirrored="true" android:height="94dp"
+    android:viewportHeight="94" android:viewportWidth="94"
+    android:width="94dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#FFFFFF" android:pathData="M33.5,72.5c-0.6,0 -1.2,-0.5 -1.2,-1.2V59.5c0,-0.5 0.3,-0.9 0.7,-1.1l10.2,-4V20.5l6,4.3l0,10.8l0,4.7l0,26.2l-15.5,6.1L33.5,72.5z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M44.3,22.5l4,2.9v7.5l0,0l0,2.8l0,0l0,4.7l0,25.5l-14.7,5.8c0,0 0,0 -0.1,0c-0.1,0 -0.2,-0.1 -0.2,-0.2V59.5c0,-0.1 0,-0.1 0.1,-0.2l10.8,-4.2c0.1,0 0.1,-0.1 0.1,-0.2V22.5M42.3,18.6v3.9v31.3l-9.6,3.8c-0.8,0.3 -1.4,1.1 -1.4,2v11.9c0,1.2 1,2.2 2.2,2.2c0.3,0 0.5,-0.1 0.8,-0.2l14.7,-5.8l1.3,-0.5l0,-1.4l0,-25.5l0,-4.7l0,0l0,0l0,-2.7l0,0v-7.5v-1l-0.8,-0.6l-4,-2.9L42.3,18.6L42.3,18.6z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M52.8,37.4l0,-9.9l8.9,6.4l0,9.5z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M53.8,29.4l6.9,5v7.1l-6.9,-4.7V29.4M51.8,25.5v3.9v7.4v1.1l0.9,0.6l6.9,4.7l3.1,2.1v-3.8v-7.1v-1l-0.8,-0.6l-6.9,-5L51.8,25.5L51.8,25.5z"/>
+
+</vector>

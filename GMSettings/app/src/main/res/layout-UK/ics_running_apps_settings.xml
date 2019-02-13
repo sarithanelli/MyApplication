@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data class="SettingsRunningAppsActivitybinding">
+
+        <import type="android.view.View" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ics_ta_settings_view"
+        style="?attr/settings_layout_bg_style"
+        bind:layoutDirection="@{dataPoolHandler.settingsConfiguration}">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/settings_favorates_materialcardview_id"
+            style="?attr/settings_language_card_style"
+            app:cardElevation="8dp">
+
+            <com.gm.settingsapp.ui.customview.SkewConstraintLayout style="?attr/settings_language_skewlayout_style">
+
+                <include
+                    android:id="@+id/topbar_settings_system"
+                    style="@style/Layout_Match_Wrap"
+                    layout="@layout/uil_ta_hc_topbar_layout"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintBottom_toTopOf="@+id/progressbar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    bind:clickHandler="@{clickHandler}"
+                    bind:dataPoolHandler="@{dataPoolHandler}" />
+
+            </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.gm.uisdk.views.GMRecyclerView
+            android:id="@+id/recycler_view_settings_runningapps"
+            style="?attr/settings_sounds_recyclerview"
+            app:fastScrollArrowRadius="@integer/fastScrollArrowRadius"
+            app:fastScrollBarBgColor="@android:color/transparent"
+            app:fastScrollBarWidth="@integer/fastScrollBarWidth"
+            app:fastScrollDividerColor="@android:color/transparent"
+            app:fastScrollThumbColor="@color/thumb_color"
+            app:fastScrollTrackColor="@color/track_color"
+            app:fastScrollType="@{dataPoolHandler.SETTINGS_RUNNINGAPPS_INFORMATION.size() > 6 ? 1 : 0}"
+            app:layout_constraintBottom_toTopOf="@id/progressbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/settings_favorates_materialcardview_id"
+            bind:childLayout="@{@layout/uil_running_apps_settings_list_row}"
+            bind:items="@{dataPoolHandler.SETTINGS_RUNNINGAPPS_INFORMATION}">
+
+        </com.gm.uisdk.views.GMRecyclerView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_progress"
+            style="@style/settings_layout_guideline_horizontal_azure"
+            app:layout_constraintGuide_percent="@integer/settings_running_apps_guideline_progress" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/progressbar"
+            style="@style/settings_favorites_no_bg_main_azure"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/row_height"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/recycler_view_settings_runningapps">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_vertical"
+                style="@style/settings_layout_guideline_vertical_azure"
+                app:layout_constraintGuide_percent="@integer/settings_running_apps_guideline_rhd" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_vertical_end"
+                style="@style/settings_layout_guideline_vertical_azure"
+                app:layout_constraintGuide_percent="@integer/settings_running_apps_guideline__rhd_end" />
+
+            <SeekBar
+                android:id="@+id/pgbar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:maxHeight="@dimen/system__sound_progresssbar_maxmin_height"
+                android:minHeight="@dimen/system__sound_progresssbar_maxmin_height"
+                android:paddingStart="50dp"
+                android:paddingEnd="50dp"
+                android:progress="@{dataPoolHandler.SETTINGS_RUNNING_PROGRESSBAR_VALUE}"
+                android:progressDrawable="@drawable/custom_progress"
+                android:thumb="@drawable/ic_volume_indicator"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/pgtv2"
+                app:layout_constraintHorizontal_weight="@integer/settings_running_apps_seekbar_weight"
+                app:layout_constraintStart_toEndOf="@+id/pgtv1"
+                app:layout_constraintTop_toTopOf="parent"
+                bind:seekbarTouch="@{1}" />
+
+            <TextView
+                android:id="@+id/pgtv1"
+                style="?attr/settings_time_date_primary_txt"
+                android:layout_width="0dp"
+                android:text="@{String.format(@string/settings_used_space,dataPoolHandler.SETTINGS_RUNNING_USEDMEMORY_SIZE)}"
+                android:textColor="@color/yellow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/pgbar"
+                app:layout_constraintHorizontal_weight="@integer/settings_running_apps_text_weight_one"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/pgtv2"
+                style="?attr/settings_time_date_primary_txt"
+                android:layout_width="0dp"
+                android:text="@{String.format(@string/settings_remaining_space,dataPoolHandler.SETTINGS_RUNNING_AVAILABLE_SIZE)}"
+                android:textColor="@color/yellow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/guideline_vertical_end"
+                app:layout_constraintHorizontal_weight="@integer/settings_running_apps_text_weight_two"
+                app:layout_constraintStart_toEndOf="@+id/pgbar"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

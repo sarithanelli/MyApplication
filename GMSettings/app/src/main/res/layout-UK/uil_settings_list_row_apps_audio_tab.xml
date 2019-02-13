@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <variable
+            name="obj"
+            type="com.gm.settingsservice.models.AudioModeModel" />
+
+    </data>
+
+    <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        android:id="@+id/ics_ta_settings_system_view"
+        style="?attr/settings_time_date_uil_layout"
+        android:focusable="true"
+        android:onClick="@{(view) -> clickHandler.onItemClickHandler(view)}"
+        android:tag="@{position == 2 ? `eManageFavorites`: position == 3 ?`eSetNumberofFavorite`:``}"
+        bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
+
+        <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+            android:id="@+id/settings_time_constraint_layout_id"
+            style="?attr/settings_time_date_uil_secondary"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <TextView
+                android:id="@+id/ics_ta_settings_primary_text"
+                style="?attr/settings_time_date_primary_txt"
+                android:text="@{obj.primaryData}"
+                app:layout_constraintBottom_toTopOf="@+id/ics_ta_settings_secondary_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ics_ta_settings_secondary_text"
+                style="?attr/settings_time_date_secondary_txt"
+                android:text="@{obj.secondaryData}"
+                android:visibility="@{obj.secondaryState? View.VISIBLE : View.INVISIBLE}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ics_ta_settings_primary_text" />
+
+            <ImageView
+                android:id="@+id/img_sub_list_header"
+                style="?attr/settings_time_date_image"
+                android:visibility="@{obj.isToggleVisible? View.VISIBLE : View.INVISIBLE}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/switch_id_ta_settings_view"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ToggleButton
+                android:id="@+id/switch_id_ta_settings_view"
+                style="?attr/settings_time_date_tab_toggle_button"
+                android:onClick="@{(view) -> clickHandler.onItemClickHandler(view,obj)}"
+                android:visibility="@{obj.isToggleVisible? View.VISIBLE : View.INVISIBLE}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="10:10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+
+
+    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+
+</layout>

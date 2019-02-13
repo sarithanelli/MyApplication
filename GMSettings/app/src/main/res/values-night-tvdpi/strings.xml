@@ -1,0 +1,2110 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  Copyright (C) GM Global Technology Operations LLC 2018.
+  All Rights Reserved.
+  GM Confidential Restricted.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Version : Settings_values_en_rUS_02_01 -->
+    <string name="ui_warning_long">Warning</string>
+    <string name="settings_30_seconds">30 Seconds</string>
+    <string name="settings_60_seconds">60 Seconds</string>
+    <string name="settings_120_seconds">120 Seconds</string>
+    <string name="settings_about">About</string>
+    <string name="settings_abs_active">Antilock Brake System Active:</string>
+    <string name="settings_adaptive_cruise_go_notifier_big">Adaptive Cruise Go Notifier</string>
+    <string name="settings_adaptive_cruise_go_notifier_short">Adaptive Cruise Go Notifier</string>
+    <string name="settings_adaptive_forward_lighting_big">Advanced Forward Lighting</string>
+    <string name="settings_adaptive_forward_lighting_short">Advanced Forward Lighting</string>
+    <string name="settings_air_quality_sensor">Air Quality Sensor</string>
+    <string name="settings_alert_big">Alert</string>
+    <string name="settings_alert_small">Alert</string>
+    <string name="settings_alert_brake">Alert and Brake</string>
+    <string name="settings_alert_brake_steer">Alert, Brake, and Steer</string>
+    <string name="settings_alert_type">Alert Type</string>
+    <string name="ui_audio">Audio</string>
+    <string name="ui_audio_long1">Audio</string>
+    <string name="ui_off">Off</string>
+    <string name="ui_low">Low</string>
+    <string name="ui_medium">Medium</string>
+    <string name="ui_medium_small">Medium</string>
+    <string name="ui_high">High</string>
+    <string name="ui_on">On</string>
+    <string name="ui_pm">PM</string>
+    <string name="ui_switch_user">Switch User</string>
+    <string name="ui_on_big">On</string>
+    <string name="ui_erase">Erase</string>
+    <string name="ui_reset">Reset</string>
+    <string name="ui_kb">KB</string>
+    <string name="ui_mb">MB</string>
+    <string name="ui_gb_big">GB</string>
+    <string name="ui_off_big">Off</string>
+    <string name="settings_apple_carplay">Apple CarPlay</string>
+    <string name="settings_android_auto">Android Auto</string>
+    <string name="settings_mirrorlink">MirrorLink</string>
+    <string name="settings_engine_sound_management_short">Engine Sound Management</string>
+    <string name="settings_audio_cues_menu_option_off">Startup Sounds Option Off</string>
+    <string name="settings_audio_cues_shutdown_menu_option_off">Startup &#47; Shutdown Sounds Option Off</string>
+    <string name="settings_audio_cues_menu_option_off_content">The Startup Sounds are currently set to Off.\nTurn Startup Sounds On to adjust the volume setting for these sounds.</string>
+    <string name="settings_audio_cues_shutdown_menu_option_off_content">The Startup &#47; Shutdown Sounds are currently set to Off.\nTurn Startup &#47; Shutdown Sounds On to adjust the volume setting for these sounds.</string>
+    <string name="settings_disabled">Disabled</string>
+    <string name="settings_rear_mimic_front">Mimic Front</string> <!-- Fixed 30862 -->
+    <string name="settings_rear_last_known">Last Known</string> <!-- 30862 -->
+    <string name="settings_confidence_threshold">Confirm More / Less</string>
+    <string name="settings_confirm_more">Confirm More</string>
+    <string name="settings_confirm_less_big">Confirm Less</string>
+    <string name="settings_confirm_less_small">Confirm Less</string>
+    <string name="settings_climate_air_quality">Climate and Air Quality</string>
+    <string name="settings_climate_app">Climate</string>
+    <string name="settings_collision_detection_systems">Collision / Detection Systems</string>
+    <string name="settings_comfort_convenience">Comfort and Convenience</string>
+    <string name="settings_lighting">Lighting</string>
+    <string name="settings_lighting_long">Lighting</string>
+    <string name="settings_left_hand_traffic">Left Hand Traffic</string>
+    <string name="settings_power_door_locks">Power Door Locks</string>
+    <string name="settings_remote_lock_unlock_start_short">Remote Lock, Unlock, and Start</string>
+    <string name="settings_driving_mode_big">Driving Mode</string>
+    <string name="settings_sport_mode_customization">Sport Mode Customization</string>
+    <string name="settings_auto_mode_customization">Auto Mode Customization</string>
+    <string name="settings_teen_driver">Teen Driver</string>
+    <string name="settings_valet_mode">Valet Mode</string>
+    <string name="settings_vehicle_locator_lights_big">Vehicle Locator Lights</string>
+    <string name="settings_vehicle_locator_lights_short">Vehicle Locator Lights</string>
+    <string name="settings_exit_lighting">Exit Lighting</string>
+    <string name="settings_auto_high_beam">Auto High Beam</string>
+    <string name="settings_adaptive_high_beam">Adaptive High Beam</string>
+    <string name="settings_smart_high_beam_assist_short">Automatic High Beam Assist</string>
+    <string name="settings_auto_high_beam_small">IntelliBeam</string>
+    <string name="settings_intelligent_light_distribution_small">Adaptive Forward Lighting</string>
+    <string name="settings_return_to_factory_settings">Return to Factory Settings</string>
+    <string name="settings_view_report_card">View Report Card</string>
+    <string name="settings_report_card">Report Card</string>
+    <string name="settings_change_pin">Change PIN</string>
+    <string name="settings_key_registration">Setup Keys</string>
+    <string name="settings_audio_volume_limit">Audio Volume Limit</string>
+    <string name="settings_set_audio_volume_limit">Set Audio Volume Limit</string>
+    <string name="settings_chime_volume">Chime Volume</string>
+    <string name="settings_teen_driver_speed_limiter">Teen Driver Speed Limiter</string>
+    <string name="settings_set_teen_driver_speed_warning">Set Teen Driver Speed Warning</string>
+
+    <string name="settings_language_small">Language</string>
+    <string name="settings_sounds_big">Sounds</string>
+    <string name="settings_sounds_small">Sounds</string>
+    <string name="settings_maximum_startup_volume">Maximum Startup Volume</string>
+    <string name="settings_audible_touch_feedback_short">Audible Touch Feedback</string>
+    <string name="settings_audio_feedback_speed">Audio Feedback Speed</string>
+    <string name="settings_slow">Slow</string>
+    <string name="settings_fast">Fast</string>
+    <string name="settings_mode">Mode</string>
+    <string name="settings_proximity_sensing">Proximity Sensing</string>
+    <string name="settings_auto_small">Auto</string>
+    <string name="settings_auto_big">Auto</string>
+    <string name="settings_calibrate_touchscreen">Calibrate Touchscreen</string>
+    <string name="settings_turn_display_off">Turn Display Off</string>
+    <string name="settings_warning_content1">You are about to reset all vehicle settings for the current user.</string>
+    <string name="settings_interactive_prompts">Friendly Prompts</string>
+    <string name="settings_setting_unavailable_content">The vehicle must be turned on to access this setting.</string>
+    <string name="settings_setting_unavailable">Setting Unavailable</string>
+    <string name="settings_incorrect_code">Incorrect Code</string>
+    <string name="settings_voice_recognition_feedback_unavailable_content">The selected language does not support Voice Recognition and Audio Feedback. Choose a different language to enable Voice Recognition and Audio Feedback.</string>
+    <string name="settings_voice_recognition_unavailable_content">The selected language does not support Voice Recognition. Choose a different language to enable Voice Recognition.</string>
+    <string name="settings_voice_recognition_unavailable">Voice Recognition Unavailable</string>
+    <string name="settings_voice_recognition_feedback_unavailable">Voice Recognition / Feedback Unavailable</string>
+    <string name="settings_touchscreen_calibration_successful_content">Your new calibration has been saved.</string>
+    <string name="settings_touchscreen_calibration_successful">Touchscreen Calibration Successful</string>
+    <string name="settings_touchscreen_calibration_failed_big">Touchscreen Calibration Failed</string>
+    <string name="settings_touchscreen_calibration_failed_content">Your touchscreen calibration has not been saved. You must press the dot on the screen to complete the touchscreen calibration.</string>
+    <string name="settings_warning_content">You are about to erase app data settings, user profiles, and personal data in the vehicle including Navigation and Phone data.</string>
+    <string name="settings_warning_content2">You are about to reset all of your radio system and application preference settings for the current user.</string>
+    <string name="settings_lock_codes_do_not_match">Lock Codes Do Not Match</string>
+    <string name="settings_lock_codes_do_not_match_content">The lock codes that you entered do not match. Press Retry and re-enter lock code to place your system into Valet Mode.</string>
+    <string name="settings_four_digit_lock_code_required">Four Digit Lock Code Required</string>
+    <string name="settings_four_digit_lock_code_required_content">The lock code must be 4 digits. Press Retry and enter the digits you set when placing the system into Valet Mode.</string>
+    <string name="settings_valet_mode_unlock">Valet Mode – Enter Code to Unlock</string>
+    <string name="settings_set_teen_driver_enter_a_4_digit_pin">Teen Driver – Set 4 Digit PIN</string>
+    <string name="settings_incorrect_code_content">The code you have entered is incorrect. Enter the digits you set when placing the system into Valet Mode.</string>
+    <string name="settings_re_enter_pin_then_press_set">Teen Driver – Confirm PIN</string>
+    <string name="settings_teen_driver_information">Teen Driver Information</string>
+    <string name="settings_teen_driver_information_content">Teen Driver Mode allows you to assign keys with customizable restrictions. Refer to your Owner\'s Manual for details.</string>
+    <string name="settings_four_digit_pin_required">Four Digit PIN Required</string>
+    <string name="settings_four_digit_pin_required_content">The PIN must be 4 digits.</string>
+    <string name="settings_teen_driver_mode_set_content">Teen Driver PIN successfully set.</string>
+    <string name="settings_pin_does_not_match">PIN Does Not Match</string>
+    <string name="settings_pin_does_not_match_content">The PIN that you entered does not match.</string>
+    <string name="settings_teen_driver_mode_not_set_content">You may retry entering the PIN to set Teen Driver Mode.</string>
+    <string name="settings_unregister_teen_driver_key_content">You are about to remove the current Teen Driver Key.</string>
+    <string name="settings_unregister_teen_driver_key">Remove Teen Driver Key</string>
+    <string name="settings_key_unregistered_confirmation">Key Removed</string>
+    <string name="settings_register_teen_driver_key">Add Teen Driver Key</string>
+    <string name="settings_register_teen_driver_key_content">You are about to add the current key as a Teen Driver Key.</string>
+    <string name="settings_key_unregistered_confirmation_content">The current key has been successfully removed as a Teen Driver key. When used, no Teen Driver restrictions will be applied.</string>
+    <string name="settings_key_registered_confirmation_content">The current key has been successfully added as a Teen Driver key. When used, Teen Driver restrictions will be applied.</string>
+    <string name="settings_key_registered_confirmation">Key Added</string>
+    <string name="settings_keyless_registration">Keyless Setup</string>
+    <string name="settings_keyless_registration_MY21">Setup Keys</string>
+    <string name="settings_keyless_registration_retry_MY21">Key Not Detected</string>
+    <string name="settings_keyless_registration_content">Place the remote transmitter you want to add or remove in the registration pocket.</string>
+    <string name="settings_keyless_registration_content_MY21">First, place your key in the transmitter pocket and then press OK. See the Owner\'s manunal for pocket location.</string>
+    <string name="settings_keyless_registration_retry_content_MY21">No key was detected. First, place the key in the transmitter pocket and then select Retry.</string>
+    <string name="settings_teen_driver_clear_all_keys_pin">Teen Driver – Clear All Keys and PIN</string>
+    <string name="settings_fasten_seatbelts_content">Teen Driver active. Audio is muted until all seat belts are fastened.</string>
+    <string name="settings_fasten_seatbelts">Fasten Seat belts</string>
+    <string name="settings_report_card_reset">Clear Report Card</string>
+    <string name="settings_report_card_reset_content">You are about to clear all the Report Card values.</string>
+    <string name="settings_clear_all_teen_keys_pin_failed_content">Select Clear All Teen Keys and PIN from the menu to retry.</string>
+    <string name="settings_clear_all_teen_keys_pin_success">Clear All Teen Keys and PIN Success</string>
+    <string name="settings_clear_all_teen_keys_pin_success_content">All keys and PIN were successfully cleared.</string>
+    <string name="settings_clear_all_teen_keys_pin_failed">Clear All Teen Keys and PIN Failed</string>
+    <string name="settings_teen_driver_clear_all_keys_pin_content">You have selected to clear all your Teen Driver keys and PIN.</string>
+    <string name="settings_forgot_code">Forgot Code</string>
+    <string name="settings_unable_to_send_code">Unable to Send Code</string>
+    <string name="settings_enter_pin">Enter PIN</string>
+    <string name="settings_unregister">Remove</string>
+    <string name="settings_downloaded">Downloaded</string>
+
+
+    <string name="settings_display_big">Display</string>
+    <string name="settings_favorites_big">Favorites</string>
+    <string name="settings_updates">Updates</string>
+    <string name="ui_preferences">Preferences</string>
+    <string name="settings_running_applications">Running Applications</string>
+    <string name="ui_navigation_short">Navigation</string>
+    <string name="settings_manage_settings">Manage Settings</string>
+    <string name="settings_manage_settings_big">Manage Settings</string>
+    <string name="settings_prompttype_big">Prompt Length</string>
+    <string name="settings_short">Short</string>
+    <string name="settings_auto">Auto</string>
+    <string name="settings_auto_mode_selector">Auto (Mode Selector)</string>
+    <string name="settings_drivingmode_stealth">Stealth</string>
+    <string name="settings_drivingmode_city">City</string>
+    <string name="settings_traction_big">Traction</string>
+    <string name="settings_traction_snow_ice_weather">Snow / Ice / Weather</string>
+    <string name="settings_traction_eco">Eco</string>
+    <string name="settings_traction_assist_off">Traction Assist Off</string>
+    <string name="settings_steering">Steering</string>
+    <string name="settings_remote_start_auto_cool_seats_long">Remote Start Auto Cool Seats</string>
+    <string name="settings_remote_start_auto_heat_seats_long">Remote Start Auto Heat Seats</string>
+    <string name="settings_left_or_right_hand_traffic">Left or Right Hand Traffic</string>
+    <string name="settings_right_hand_traffic">Right Hand Traffic</string>
+    <string name="settings_traffic_automatic_gps">Automatic (Navigation Based)</string>
+    <string name="settings_auto_high_beam_normal_sensitivity">Normal Sensitivity</string>
+    <string name="settings_normal_sensitivity_small">Normal Sensitivity</string>
+    <string name="settings_auto_adaptive_forward_lighting_corner_curve_lighting">Curve Lighting</string>
+    <string name="settings_intelligent_light_distribution_big">Adaptive Forward Lighting</string>
+    <string name="settings_auto_adaptive_forward_lighting_gps_assistance">Navigation Based Lighting</string>
+    <string name="settings_auto_mode_customizations">Auto Mode Customization</string>
+    <string name="settings_sport_sensitive">Sport Sensitive</string>
+    <string name="settings_comfort_sensitive">Comfort Sensitive</string>
+    <string name="settings_sport_comfort_sensitive">Sport / Comfort Sensitive</string>
+    <string name="settings_sport_comfort_less_sensitive">Sport / Comfort Less Sensitive</string>
+    <string name="settings_auto_adjustment_off">Auto Adjustment Off</string>
+    <string name="settings_auto_tour_off">Auto Tour Off</string>
+    <string name="settings_handsfree_liftgate_control">Handsfree  Liftgate/Trunk Control</string>
+    <string name="settings_handsfree_liftgate_control_content">Hands-free Liftgate/Trunk Control specifies the behavior of the automated Liftgate/Trunk. \nSelect On - Open and Close to enable hands-free open and closing capability. \nSelect On-Open Only to prevent the liftgate from being closed using the hands-free operation.</string> <!-- Fixed 30737 -->
+    <string name="settings_on_open_and_close">On – Open and Close</string>
+    <string name="settings_on_open_only">On – Open Only</string>
+    <string name="settings_reverse_tilt_mirror">Reverse Tilt Mirror</string>
+    <string name="settings_on_driver_passenger">On – Driver and Passenger</string>
+    <string name="settings_on_driver_passenger_small">On – Driver and Passenger</string>
+    <string name="settings_on_driver">On – Driver</string>
+    <string name="settings_on_passenger">On – Passenger</string>
+    <string name="settings_easy_exit_steering_column">Easy Exit Steering Column</string>
+    <string name="settings_on_column_in">On – Column In</string>
+    <string name="settings_on_column_up">On – Column Up</string>
+    <string name="settings_on_column_in_up">On – Column In and Up</string>
+    <string name="settings_auto_memory_recall">Auto Memory Recall</string>
+    <string name="settings_on_driver_door_open">On – Driver Door Open</string>
+    <!-- modified madhu -->
+    <string name="ui_normal">Normal</string>
+    <string name="settings_display_mode_day">Day</string>
+    <string name="settings_display_mode_night">Night</string>
+    <string name="settings_passive_door_lock_big">Passive Door Lock</string>
+    <string name="settings_on_with_horn_chirp">On with Horn Chirp</string>
+    <string name="settings_auto_fan_max_speed">Auto Fan Speed</string>
+    <string name="settings_low_sensitivity">Low Sensitivity</string>
+    <string name="settings_high_sensitivity">High Sensitivity</string>
+    <string name="settings_beeps_long">Beeps</string>
+    <string name="settings_beeps_short">Beeps</string>
+    <string name="settings_safety_alert_seat">Safety Alert Seat</string>
+    <string name="settings_front_pedestrian_detection">Front Pedestrian Detection</string>
+    <string name="settings_intersection_stop_alert">Intersection Stop Alert</string>
+    <string name="settings_rear_pedestrian_detection">Rear Pedestrian Detection</string>
+    <string name="settings_auto_door_unlock">Auto Door Unlock</string>
+    <string name="settings_auto_door_unlock_short">Auto Door Unlock</string>
+    <string name="settings_teen_driver_speed_warning_off">Teen Driver Speed Warning Off</string>
+    <string name="settings_teen_driver_speed_warning_off_content">The Teen Driver Speed Warning option is currently Off. Turn it On before setting the speed.</string>
+    <string name="ui_enter_long">Enter</string>
+    <string name="settings_unlock">Unlock</string>
+    <string name="settings_lock">Lock</string>
+    <string name="settings_valet_mode_enter_code_to_lock">Valet Mode – Enter Code to Lock</string>
+    <string name="settings_reenter_lock_code_then_press_lock">Confirm Lock Code</string>
+    <string name="settings_lock_code_recovery">Lock Code Recovery</string>
+    <string name="settings_lock_code_recovery_content1">Connecting to phone.</string>
+    <string name="settings_lock_code_recovery_content2">Sending text message with unlock code.</string>
+    <string name="settings_touch_the_white_dot_to_calibrate">Touch the dot to calibrate.</string>
+    <string name="settings_vehicle_settings_reset">Vehicle Settings Reset</string>
+    <string name="settings_vehicle_settings_reset_content">Your vehicle settings were successfully reset.</string>
+    <string name="settings_prompttype_small">Prompt Length</string>
+    <string name="settings_informative">Informative</string>
+    <string name="settings_daytime_tail_lights">Daytime Tail Lights</string>
+    <string name="settings_unlocked_door_anti_lock_out">Open Door Anti Lock Out</string>
+    <string name="settings_auto_door_lock_long">Auto Door Lock</string>
+    <string name="settings_delayed_door_lock">Delayed Door Lock</string>
+    <string name="settings_remote_unlock_light_feedback_big">Remote Unlock Light Feedback</string>
+    <string name="settings_flash_lights">Flash Lights</string>
+    <string name="settings_remote_door_unlock_big">Remote Door Unlock</string>
+    <string name="settings_all_doors_small">All Doors</string>
+    <string name="settings_all_doors_big">All Doors</string>
+    <string name="settings_driver_door">Driver Door</string>
+    <string name="settings_relock_remotely_unlocked_doors_big">Relock Remotely Unlocked Doors</string>
+    <string name="settings_remote_start_big">Remote Start</string>
+    <string name="settings_remote_window_operation_big">Remote Window Operation</string>
+    <string name="settings_passive_door_unlock_big">Passive Door Unlock</string>
+    <string name="settings_driver_door_only">Driver Door Only</string>
+    <string name="settings_remote_left_in_vehicle_alert">Remote Left in Vehicle Alert</string>
+    <string name="settings_sliding_door_selection">Sliding Door Selection</string>
+    <string name="settings_courtesy_big">Courtesy</string>
+    <string name="settings_courtesy_small">Courtesy</string>
+    <string name="ui_security_short">Security</string>
+    <string name="settings_sliding_door_selection_content">This setting specifies how the Sliding Door Courtesy or Security.</string>
+    <string name="settings_audible_touch_feedback_large">Audible Touch Feedback</string>
+    <string name="settings_voice_command_help_display">Tutorial Mode</string>
+    <string name="settings_easy_exit_driver_seat">Easy Exit Driver Seat</string>
+    <string name="settings_rear_seat_reminder">Rear Seat Reminder</string>
+    <string name="settings_sport_steering_big">Sport Steering</string>
+    <string name="settings_sport_display_big">Sport Display</string>
+    <string name="settings_sport_suspension_big">Sport Suspension</string>
+    <string name="settings_sport_awd_big">Sport AWD</string>
+    <string name="settings_sport_driver_seat_big">Sport Driver Seat</string>
+    <string name="settings_sport_passenger_seat_big">Sport Passenger Seat</string>
+    <string name="settings_sport_adaptive_cruise_control_big">Sport Adaptive Cruise Control</string>
+    <string name="settings_pollution_control">Pollution Control</string>
+    <string name="settings_auto_cooled_seats_big">Auto Cooled Seats</string>
+    <string name="settings_auto_heated_seats_big">Auto Heated Seats</string>
+    <string name="settings_rear_zone_temp_big">Rear Climate On Startup</string>
+    <string name="settings_auto_defog_big">Auto Defog</string>
+    <string name="settings_auto_rear_defog">Auto Rear Defog</string>
+    <string name="settings_auto_rear_defog_content">Auto Rear Defog turns on the rear window defogger based on temperature and humidity conditions.</string>
+    <string name="settings_engine_assisted_heating_big">Engine Assisted Heating</string>
+    <string name="settings_deferred">Deferred</string>
+    <string name="settings_auto_air_distribution_big">Auto Air Distribution</string>
+    <string name="settings_direct_airflow_big">Direct Airflow</string>
+    <string name="settings_direct_normalflow">Normal Airflow</string>
+    <string name="settings_diffuse_airflow_small">Diffuse Airflow</string>
+    <string name="settings_diffuse_airflow">Diffuse Airflow</string>
+    <string name="settings_oscillating_airflow">Oscillating Airflow</string>
+    <string name="settings_engine_assisted_heating_plugged_in_big">Engine Assisted Heating Plugged In</string> <!-- Fixed 20057 -->
+    <string name="settings_pedestrian_friendly_alert_big">Pedestrian Friendly Alert</string>
+    <string name="settings_connected_vehicle_braking_alerts">Connected Vehicle Braking Alert</string>
+    <string name="settings_traffic_and_roadside_information">Traffic and Roadside Information</string>
+    <string name="settings_drowsy_driver_alert_big">Drowsy Driver Alert</string>
+    <string name="settings_side_blind_zone_alert_big">Side Blind Zone Alert</string>
+    <string name="settings_lane_change_alert_big">Lane Change Alert</string>
+    <string name="settings_lane_change_alert_small">Lane Change Alert</string>
+    <string name="settings_seat_belt_tightening_big">Seat Belt Tightening</string>
+    <string name="settings_park_assist_big">Park Assist</string>
+    <string name="settings_on_with_towbar">On with Towbar</string>
+    <string name="settings_park_assist_towbar">Park Assist Towbar</string>
+    <string name="settings_off_not_attached">Off – Not Attached</string>
+    <string name="settings_off_not_attached_small">Off – Not Attached</string>
+    <string name="settings_on_attached">On – Attached</string>
+    <string name="settings_rear_camera_park_assist_symbols_big">Rear Camera Park Assist Symbols</string>
+    <string name="settings_rear_cross_traffic_alerts">Rear Cross Traffic Alert</string>
+    <string name="settings_easy_exit_options_big">Easy Exit Options</string>
+    <string name="settings_auto_mirror_folding">Auto Mirror Folding</string>
+    <string name="settings_personalization_by_driver_big">Personalization by Driver</string>
+    <string name="settings_auto_wipe_in_reverse_gear_big">Auto Wipe in Reverse Gear</string>
+    <string name="settings_rain_sense_wipers_big">Rain Sense Wipers</string>
+    <string name="settings_enabled_big">Enabled</string>
+    <string name="settings_enabled_small">Enabled</string>
+    <string name="settings_remote_lock_feedback_big">Remote Lock Feedback</string>
+    <string name="settings_lights_horn">Lights and Horn</string>
+    <string name="settings_lights_only">Lights Only</string>
+    <string name="settings_horn_only">Horn Only</string>
+    <string name="settings_suspension">Suspension</string>
+    <string name="settings_auto_mode_selector_long">Auto (Mode Selector)</string>
+    <string name="settings_tour">Tour</string>
+    <string name="settings_sport">Sport</string>
+    <string name="settings_track">Track</string>
+    <string name="settings_forward_collision_system_big">Forward Collision System</string>
+    <string name="settings_clear_all_teen_keys_and_pin">Clear All Teen Keys and PIN</string>
+    <string name="settings_teen_driver_speed_warning_big">Teen Driver Speed Warning</string>
+    <string name="settings_set_teen_driver_speed_warning_big">Set Teen Driver Speed Warning</string>
+    <string name="settings_engine_sound_management">Engine Sound</string>
+    <string name="settings_displays_short">Displays</string>
+    <string name="settings_climate_and_air_quality">Climate and Air Quality</string>
+    <string name="settings_pollution_control_long">Pollution Control</string>
+    <string name="settings_auto_defog_short">Auto Defog</string>
+    <string name="settings_auto_rear_defog_short">Auto Rear Defog</string>
+    <string name="settings_auto_air_distribution_short">Auto Air Distribution</string>
+    <string name="settings_engine_assisted_heating_short">Engine Assisted Heating</string>
+    <string name="settings_engine_assisted_heating_plugged_in_short">Engine Assisted Heating Plugged In</string> <!-- 20057 -->
+    <string name="settings_auto_cooled_seats_short">Auto Cooled Seats</string>
+    <string name="settings_auto_heated_seats_short">Auto Heated Seats</string>
+    <string name="settings_rear_zone_temp_short">Rear Climate On Startup</string>
+    <string name="settings_rear_off">Rear Off</string>
+    <string name="settings_collision_detection_system">Collision / Detection Systems</string>
+    <string name="settings_pedestrian_friendly_alert_short">Pedestrian Friendly Alert</string>
+    <string name="settings_forward_collision_system_short">Forward Collision System</string>
+    <string name="settings_connected_vehicle_braking">Connected Vehicle Braking Alert</string>
+    <string name="settings_rear_off_big">Off</string>    <!-- Fixed 30862 -->
+    <string name="settings_drowsy_driver_alert_short">Drowsy Driver Alert</string>
+    <string name="settings_side_blind_zone_alert_short">Side Blind Zone Alert</string>
+    <string name="settings_seat_belt_tightening_short">Seat Belt Tightening</string>
+    <string name="settings_park_assist_short">Park Assist</string>
+    <string name="settings_park_assist_towbar_short">Park Assist Towbar</string>
+    <string name="settings_rear_camera_park_assist_symbols_short">Rear Camera Park Assist Symbols</string>
+    <string name="settings_rear_cross_traffic_alert_long">Rear Cross Traffic Alert</string>
+    <string name="settings_comfort_and_convenience">Comfort and Convenience</string>
+    <string name="settings_easy_exit_driver_seat_long">Easy Exit Driver Seat</string>
+    <string name="settings_easy_exit_options_short">Easy Exit Options</string>
+    <string name="settings_auto_mirror_folding_short">Auto Mirror Folding</string>
+    <string name="settings_personalization_by_driver_short">Personalization by Driver</string>
+    <string name="settings_rain_sense_wipers_short">Rain Sense Wipers</string>
+    <string name="settings_auto_wipe_in_reverse_gear_short">Auto Wipe in Reverse Gear</string>
+    <string name="settings_automatic_vehicle_hold_short">Automatic Vehicle Hold</string>
+    <string name="settings_unlocked_door_anti_lock_out_short">Open Door Anti Lock Out</string>
+    <string name="settings_auto_door_lock">Auto Door Lock</string>
+    <string name="settings_delayed_door_lock_short">Delayed Door Lock</string>
+    <string name="settings_remote_lock_unlock_start">Remote Lock, Unlock, and Start</string>
+    <string name="settings_remote_unlock_light_feedback_short">Remote Unlock Light Feedback</string>
+    <string name="settings_remote_lock_feedback_short">Remote Lock Feedback</string>
+    <string name="settings_remote_door_unlock_short">Remote Door Unlock</string>
+    <string name="settings_relock_remotely_unlocked_doors_short">Relock Remotely Unlocked Doors</string>
+    <string name="settings_remote_start_short">Remote Start</string>
+    <string name="settings_remote_start_auto_cool_seats">Remote Start Auto Cool Seats</string>
+    <string name="settings_remote_start_auto_heat_seats">Remote Start Auto Heat Seats</string>
+    <string name="settings_remote_window_operation_short">Remote Window Operation</string>
+    <string name="settings_passive_door_unlock_short">Passive Door Unlock</string>
+    <string name="settings_passive_door_lock_short">Passive Door Lock</string>
+    <string name="settings_remote_left_in_vehicle_alert_short">Remote Left in Vehicle Alert</string>
+    <string name="settings_sliding_door_selection_long">Sliding Door Selection</string>
+    <string name="settings_power_door_locks_long">Power Door Locks</string>
+    <string name="settings_sport_mode_customization_long">Sport Mode Customization</string>
+    <string name="settings_sport_steering_short">Sport Steering</string>
+    <string name="settings_sport_displays_short">Sport Display</string>
+    <string name="settings_sport_suspension_short">Sport Suspension</string>
+    <string name="settings_sport_awd_short">Sport AWD</string>
+    <string name="settings_sport_driver_seat_short">Sport Driver Seat</string>
+    <string name="settings_sport_passenger_seat_short">Sport Passenger Seat</string>
+    <string name="settings_sport_adaptive_cruise_control_short">Sport Adaptive Cruise Control</string>
+    <string name="settings_reset_to_factory_settings">Return to Factory Settings</string>
+    <string name="settings_reset_vehicle_settings">Reset Vehicle Settings</string>
+    <string name="settings_reset_radio_system_settings">Reset Radio System Settings</string>
+    <string name="ui_stop_short">Stop</string>
+    <string name="settings_running_applications_large">Running Applications</string>
+    <string name="ui_phone_big1">Phone</string>
+    <string name="ui_navigation_big">Navigation</string>
+
+
+    <string name="settings_teendriver_vol">Audio Volume – Teen Driver</string>
+    <string name="settings_teendriver_vol_max">Maximum</string>
+    <string name="settings_distance_driven">Distance Driven:</string>
+    <string name="settings_maximum_speed">Maximum Speed:</string>
+    <string name="settings_overspeed_warnings">Overspeed Warnings:</string>
+    <string name="settings_wide_open_throttle">Wide Open Throttle:</string>
+    <string name="settings_forward_collision_alerts">Forward Collision Alerts:</string>
+    <string name="settings_lane_departure_warnings">Lane Departure Warnings:</string>
+    <string name="settings_traction_control">Traction Control:</string>
+    <string name="settings_stability_control">Stability Control:</string>
+    <string name="settings_tailing_alerts">Tailgating Alerts:</string>
+    <string name="settings_drowsy_driver_alerts">Drowsy Driver Alerts:</string>
+    <string name="settings_maximum_speed_in_number">%1$s MPH</string>
+    <string name="settings_touchscreen_calibration">Touchscreen Calibration</string>
+    <string name="settings_teen_driver_pin_not_set">Teen Driver PIN Not Set</string>
+    <string name="settings_private_data_erased">Settings and Personal Data Erased</string>
+    <string name="settings_teen_driver_pin_set">Teen Driver PIN Set</string>
+    <string name="ui_devices_small">Phones</string>
+
+    <string name="ui_lte">LTE</string>
+    <string name="settings_long_and_auto_park_brake_on">Long and Auto Park Brake On</string>
+    <string name="settings_smart_high_beam_assist_long">Automatic High Beam Assist</string>
+    <string name="settings_auto_high_beam_short">IntelliBeam</string>
+    <string name="settings_adaptive_high_beam_short">Glare Free High Beam</string>
+    <string name="settings_manage_favorites_long">Manage Favorites</string>
+    <string name="settings_set_number_of_audio_favorites">Set Number of Audio Favorites</string>
+    <string name="settings_traction_long">Traction</string>
+    <string name="settings_teen_driver_speed_limiter_med_28">Teen Driver Speed Limiter</string>
+    <string name="settings_teen_driver_audio_volume_limit_med_28">Audio Volume Limit</string>
+    <string name="ui_am">AM</string>
+    <string name="settings_teen_driver_speed_warning">Teen Driver Speed Warning</string>
+    <string name="settings_ride_height">Ride Height</string>
+    <string name="settings_ride_height_location">Location Based Auto Lift</string>
+    <!-- <string name="settings_ride_height_content">This setting allows you to save a location to automatically lift the vehicle next time the vehicle reaches that location</string> -->
+    <string name="settings_remote_access_list_divider">Devices Permissions</string>
+
+    <!-- Deprecated Strings -->
+    <string name="settings_system_reset">System Reset</string> <!-- Deprecated -->
+    <string name="settings_system_reset_content">Your system was successfully reset.</string> <!-- Deprecated -->
+    <string name="ui_low_small">Low</string> <!-- Deprecated -->
+    <!-- <string name="settings_register">Setup</string> -->
+    <!-- Deprecated -->
+    <string name="settings_factory_data_reset">Factory Data Reset</string> <!-- Deprecated -->
+    <string name="settings_set_pin_hint_text">1234</string> <!-- Deprecated -->
+
+
+    <!-- <string name="settings_unverified">– unverified</string> -->
+    <!-- Deprecated -->
+    <!-- <string name="settings_not_signed_in">Not signed in</string> -->
+    <!-- Deprecated -->
+    <!-- <string name="setting_favorite_set_num_of_audio_fav_content">This setting allows you to select how many favorites pages can be viewed from the audio application. The auto setting will automatically adjust this number based on the number of favorites you have saved.</string> -->
+    <!-- Depricated -->
+    <!-- <string name="settings_vehicle_software">Vehicle Software</string> -->
+    <!-- Deprecated -->
+
+
+    <!-- Strings already delivered to Harman -->
+    <string name="settings_private_data_cleared_content">Your app data settings, user profiles, and personal data have been successfully erased from the system.</string>
+    <!-- It was in the strings listed above just cut pasted it here -->
+    <string name="settings_distance_driven_in_number">%1$s miles</string>
+    <!-- It was in the strings listed above just cut pasted it here -->
+    <string name="settings_set">Set</string>
+    <!-- It was in the strings listed above just cut pasted it here -->
+    <string name="ui_mph">MPH</string>
+    <!-- It was in the strings listed above just cut pasted it here -->
+    <string name="settings_time_date_small">Time / Date</string>
+    <!-- It was in the strings listed above just cut pasted it here -->
+    <string name="settings_android_force_stop">If you force stop an app, it may misbehave.</string>
+    <!-- Addtional Request by Harman -->
+    <string name="settings_unable_to_compute_package_size">Unable to compute package size.</string>
+    <!-- Additional Request by Harman -->
+    <!-- Strings added on 5/27/2015 -->
+    <!-- june release added strings madhu -->
+    <string name="settings_enter_teen_driver_enter_4_digit_pin">Teen Driver – Enter 4 Digit PIN</string>
+    <string name="settings_add">Add</string>
+    <string name="settings_clear">Clear</string>
+    <string name="settings_relock">Relock</string>
+    <string name="settings_erase_settings_and_personal_data">Erase Settings and Personal Data</string>
+    <string name="settings_clear_default_applications">Clear Default Applications</string>
+    <string name="settings_clear_default_applications_long">Clear Default Applications</string>
+    <string name="settings_clear_defaults_apps_popup_content">This will reset preferred applications that have been set to open when selecting a function. No application data will be lost. Press Clear to continue.</string>
+    <string name="settings_application_defaults_cleared">Application Defaults Cleared</string>
+    <string name="ui_ok_long">OK</string>
+    <string name="ui_ok_short">OK</string>
+    <string name="ui_retry_short">Retry</string>
+
+    <string name="settings_privacy_small">Privacy</string>
+    <string name="settings_location_services">Location Services</string>
+    <string name="settings_data_services">Data Services</string>
+    <string name="settings_location_services_short">Location Services</string>
+    <string name="settings_data_services_short">Data Services</string>
+    <string name="settings_valet_mode_released">Valet Mode Unlocked</string>
+    <string name="settings_valet_mode_released_content">Valet Mode successfully unlocked.</string>
+    <string name="settings_used_space">%1$s Used</string>
+    <string name="settings_remaining_space">%1$s Free</string>
+    <!-- Strings Added based on Strings_May_07_2015.xlsx -->
+    <string name="ui_settings">Settings</string>
+    <!-- This should be the app name on home screen -->
+    <string name="framework_feature_not_available">Feature unavailable while driving.</string>
+    <!-- Strings Added based on Strings_augest_21_2015.xlsx madhu -->
+    <string name="settings_ionizer">Ionizer</string>
+    <string name="settings_unable_to_send_code_content1">Check the following items and try again: \n– Previously connected phone is in the vehicle \n– Phone has Bluetooth enabled \n– Phone has text message memory available</string>
+    <string name="settings_surround_view_lighting">Surround View Lighting</string>
+    <string name="settings_remote_removed_from_vehicle_alert">Remote Removed From Vehicle Alert</string>
+    <!-- new strings added based on my19 -->
+    <string name="settings_onStar_vehicle_hotspot">%1$s Vehicle Hotspot</string>
+    <string name="settings_backup_settings_to_usb">Backup Settings To USB</string>
+    <string name="settings_restore_settings_from_usb">Restore Settings From USB</string>
+    <string name="ui_confirm">Confirm</string>
+    <string name="ui_clear">Clear</string>
+    <string name="settings_confirm_content">Your changes have not been specified. Press the Apply Changes button to confirm changes.</string>
+    <string name="ui_apply_changes">Apply Changes</string>
+    <string name="settings_keyless_setup_content">First, place your key in the registration pocket and then press OK. See Owner’s Manual for pocket location.</string>
+    <string name="settings_keyless_setup">Keyless Setup</string>
+    <string name="settings_collections">Collections</string>
+    <string name="settings_devices_remote_access">Device Remote Access</string>
+    <string name="settings_touchpad">Touchpad</string>
+    <string name="settings_energy">Energy</string>
+    <string name="settings_power_take_off">Power Take-Off</string>
+    <string name="settings_seating_position">Seating Position</string>
+    <string name="settings_powertrain">Powertrain</string>
+    <string name="settings_brake_pedal_feel">Brake Pedal Feel</string>
+    <string name="settings_traction_and_stability_control">Traction and Stability Control</string>
+    <string name="settings_motorized_seatbelts">Motorized Seatbelts</string>
+    <string name="settings_active_aero">Active Aero</string>
+    <string name="settings_personal_driving_mode_big">Personal Driving Mode</string>
+    <string name="settings_power_take_off_big">Power Take-Off</string>
+    <string name="settings_siriusxm_explicit_content_filter">SiriusXM Explicit Content Filter</string>
+    <string name="settings_voice_recognition_sharing">Voice Recognition Sharing </string>
+    <string name="settings_types">Types</string>
+    <string name="settings_used_by_applications">Used by Applications</string>
+    <string name="permission_allowed_by_apps_title">Apps Allowing %1$s</string>
+    <string name="settings_ambient_lighting">Ambient Lighting</string>
+    <string name="settings_surround_view_lighting_small">Surround View Lighting</string>
+    <string name="settings_brake_pedal_feel_big">Brake Pedal Feel</string>
+    <string name="settings_active_aero_big">Active Aero</string>
+    <string name="settings_weather">Weather</string>
+    <string name="settings_snow_ice">Snow/Ice</string>
+    <string name="settings_powertrain_long">Powertrain</string>
+    <string name="settings_customdrivingmode_tcs_esc_on_big">TCS &amp; ESC On</string>
+
+    <!-- new strings added by sai for my19 package -->
+    <string name="settings_key_not_detected">Key Not Detected</string>
+    <string name="settings_key_not_detected_content">No remote key was detected. First, place the key in the registration pocket and then select Retry.</string>
+    <string name="settings_mode_change_applied">Mode Change Applied</string>
+    <string name="settings_mode_change_not_applied">Mode Change Not Applied</string>
+    <string name="settings_demo_mode_unavailable">Demo Mode Unavailable</string>
+    <string name="settings_demo_mode">Demo Mode</string>
+    <string name="settings_demo_mode_unavailable_content">The Demo Mode feature is unavailable while driving.</string>
+    <string name="settings_mode_unavailable">Mode Unavailable</string>
+    <string name="settings_mode_unavailable_content">Extended mode is unavailable when the vehicle is in gear. Place the vehicle in Neutral or Park.</string>
+    <string name="settings_custommode_mode_unavailable_content">System unable to change to the selected setting values.</string>
+    <string name="settings_communicationloss">Loss of Communication</string>
+    <string name="settings_communicationloss_content">Feature unavailable due to loss of communication between modules.</string>
+    <string name="settings_settingrestored">Settings Restored</string>
+    <string name="settings_settingrestored_content">The user settings have been successfully restored.</string>
+    <string name="settings_restorefailed">Restore Failed</string>
+    <string name="settings_restorefailed_content">Please insert USB device containing the settings restore file %1$s to begin process.</string>
+    <string name="settings_insufficient_battery">Insufficient Battery</string>
+    <string name="settings_insufficient_battery_content">The settings cannot be restored when the battery is low. Charge the battery by running the vehicle or connect to a charger. You may then retry restoring the settings.</string>
+    <string name="settings_settings_backup">Settings Backup</string>
+    <string name="settings_settings_backup_content">Insert USB device to save user settings.</string>
+    <string name="settings_settings_multipleusb_backup_content">Multiple USB devices present. Please remove all but one USB device in order to save user settings.</string>
+    <string name="settings_settings_backup_error">Settings Backup Error</string>
+    <string name="settings_settings_backup_error_content">There was an error writing to the USB device. Please insert USB device with sufficient free space and check that it is not write protected.</string>
+    <string name="settings_settings_backup_error2_content">There was an error saving the user settings. Please retry. If errors continue, please visit your dealer.</string>
+    <string name="settings_settings_backup_success">Settings Backup Success</string>
+    <string name="settings_settings_backup_success_content">The user settings have been saved successfully.</string>
+    <string name="settings_ionizer_small">Ionizer</string>
+    <string name="settings_touchpad_big">Touchpad</string>
+    <string name="settings_up_down_invert_big">Up / Down Invert</string>
+    <string name="settings_left_right_invert_big">Left / Right Invert</string>
+    <string name="settings_tap_to_enter_big">Tap to Enter</string>
+    <string name="settings_cursor_tracking_speed_big">Cursor Tracking Speed</string>
+    <string name="settings_gesture_indication_big">Gesture Indication</string>
+    <string name="settings_haptic_Feedback">Haptic Feedback</string>
+    <string name="settings_touchpad_surface_big">Touchpad Surface</string>
+    <string name="settings_go_notifier">Go Notifier</string>
+    <string name="settings_auto_collision_preparation">Auto Collision Preparation</string>
+    <string name="settings_automatic_running_boards">Automatic Running Boards</string>
+    <string name="settings_automatic_entry_egress_assist">Automatic Entry/Egress Assist</string>
+    <string name="settings_handsfree_liftgate_trunk_control">Handsfree Liftgate/Trunk Control</string>
+    <string name="settings_remote_mirror_folding_short">Remote Mirror Folding</string>
+    <string name="settings_remote_removed_from_vehicle_alert_short">Remote Removed From Vehicle Alert</string>
+    <string name="settings_location_based_charging_big">Location Based Charging</string>
+    <string name="settings_energy_summary_pop_up_big">Energy Summary Pop-up</string>
+    <string name="settings_charge_status_feedback_big">Charge Status Feedback</string>
+    <string name="settings_charge_cord_theft_alert_big">Charge Cord Theft Alert</string>
+    <string name="settings_charge_power_loss_alert_big">Charge Power Loss Alert</string>
+    <string name="settings_hybrid_eco_indicator_big">Hybrid ECO Indicator</string>
+    <string name="settings_seating_position_long">Seating Position</string>
+    <string name="settings_ride_height_long">Ride Height</string>
+    <string name="settings_energy_long">Energy</string>
+    <string name="settings_location_based_auto_lift_big">Location Based Auto Lift</string>
+    <string name="settings_seat_entry_memory_big">Seat Entry Memory</string>
+    <string name="settings_seat_exit_memory">Seat Exit Memory</string>
+    <string name="settings_teen_driver_entry_screen">Teen Driver Entry Screen</string>
+    <string name="settings_cursor_tracking_speed">Cursor Tracking Speed</string>
+    <string name="settings_faster">Faster</string>
+    <string name="settings_normal">Normal</string>
+    <string name="settings_slower">Slower</string>
+    <string name="settings_enabled">Enabled</string>
+    <string name="settings_information">Information</string>
+    <string name="settings_gesture_indication">Gesture Indication</string>
+    <string name="settings_touchpad_surface">Touchpad Surface</string>
+    <string name="settings_up_down_invert">Up / Down Invert</string>
+    <string name="settings_default">Default</string>
+    <string name="settings_inverted">Inverted</string>
+    <string name="settings_left_right_invert">Left / Right Invert</string>
+    <string name="settings_tap_to_enter">Tap to Enter</string>
+    <string name="settings_location_based_charging">Location Based Charging</string>
+    <string name="settings_set_location">Set Location</string>
+    <string name="settings_energy_summary_pop_up">Energy Summary Pop-up</string>
+    <string name="settings_charge_status_feedback">Charge Status Feedback</string>
+    <string name="settings_charge_cord_theft_alert">Charge Cord Theft Alert</string>
+    <string name="settings_charge_power_loss_alert">Charge Power Loss Alert</string>
+    <string name="settings_hybrid_eco_indicator">Hybrid ECO Indicator</string>
+    <string name="settings_hybrid_eco_indicator_content">This setting indicates when you are driving in a manner that conserves fuel.</string>
+    <string name="settings_location_based_auto_lift">Location Based Auto Lift</string>
+    <string name="settings_remote_mirror_folding">Remote Mirror Folding</string>
+    <string name="settings_seat_entry_memory">Seat Entry Memory</string>
+    <string name="settings_offroad">Offroad</string>
+    <string name="settings_tow_haul">Tow/Haul</string>
+    <string name="settings_customdrivingmode_lowered_big">Lowered</string>
+    <string name="settings_raised">Raised</string>
+    <string name="settings_automatic_running_boards_long">Automatic Running Boards</string>
+    <string name="settings_handsfree_liftgate_trunk_control_long">Handsfree Liftgate/Trunk Control</string>
+    <string name="settings_extended">Extended</string>
+
+    <!-- Strings need to discuss with aparna -->
+    <string name="settings_customdrivingmode_stealth">Stealth</string>
+    <string name="settings_customdrivingmode_eco">Eco</string>
+    <string name="settings_customdrivingmode_touring">Touring</string>
+    <string name="settings_customdrivingmode_tour">Tour</string>
+    <string name="settings_customdrivingmode_snow_ice_weather">Snow / Ice / Weather</string>
+    <string name="settings_customdrivingmode_normal">Normal</string>
+    <string name="settings_customdrivingmode_tcs_esc_on">TCS &amp; ESC On</string>
+    <string name="settings_customdrivingmode_lowered">Lowered</string>
+    <string name="settings_standby_speed">Standby Speed</string>
+    <string name="settings_set_1_speed">Set 1 Speed</string>
+    <string name="settings_set_2_speed">Set 2 Speed</string>
+    <string name="settings_tap_step_speed">Tap Step Speed</string>
+    <string name="settings_shutdown_time">Shutdown Time</string>
+    <string name="settings_900_rmp_small">900 RPM</string>
+    <string name="settings_1100_rmp_small">1100 RPM</string>
+    <string name="settings_2000_rmp_small">2000 RPM</string>
+    <string name="settings_5_rmp_small">5 RPM</string>
+    <string name="settings_10_minutes_small">10 Minutes</string>
+    <string name="settings_5_rmp">5 RPM</string>
+    <string name="settings_10_rmp">10 RPM</string>
+    <string name="settings_25_rmp">25 RPM</string>
+    <string name="settings_50_rmp">50 RPM</string>
+    <string name="settings_100_rmp">100 RPM</string>
+    <string name="settings_250_rmp">250 RPM</string>
+    <string name="settings_500_rmp">500 RPM</string>
+    <string name="settings_standby_speed_long">Standby Speed</string>
+    <string name="settings_tap_step_speed_long">Tap Step Speed</string>
+    <string name="settings_shutdown_time_long">Shutdown Time</string>
+    <string name="settings_set_1_speed_long">Set 1 Speed</string>
+    <string name="settings_set_2_speed_long">Set 2 Speed</string>
+    <string name="settings_900_rmp">900 RPM</string>
+    <string name="settings_1000_rmp">1000 RPM</string>
+    <string name="settings_1100_rmp">1100 RPM</string>
+    <string name="settings_1200_rmp">1200 RPM</string>
+    <string name="settings_1300_rmp">1300 RPM</string>
+    <string name="settings_1400_rmp">1400 RPM</string>
+    <string name="settings_1500_rmp">1500 RPM</string>
+    <string name="settings_1600_rmp">1600 RPM</string>
+    <string name="settings_1700_rmp">1700 RPM</string>
+    <string name="settings_1800_rmp">1800 RPM</string>
+    <string name="settings_1900_rmp">1900 RPM</string>
+    <string name="settings_2000_rmp">2000 RPM</string>
+    <string name="settings_2100_rmp">2100 RPM</string>
+    <string name="settings_2200_rmp">2200 RPM</string>
+    <string name="settings_2300_rmp">2300 RPM</string>
+    <string name="settings_2400_rmp">2400 RPM</string>
+    <string name="settings_2500_rmp">2500 RPM</string>
+    <string name="settings_2600_rmp">2600 RPM</string>
+    <string name="settings_2700_rmp">2700 RPM</string>
+    <string name="settings_2800_rmp">2800 RPM</string>
+    <string name="settings_2900_rmp">2900 RPM</string>
+    <string name="settings_3000_rmp">3000 RPM</string>
+    <string name="settings_3100_rmp">3100 RPM</string>
+    <string name="settings_10_minutes">10 Minutes</string>
+    <string name="settings_30_minutes">30 Minutes</string>
+    <string name="settings_1_dot_5_hours">1.5 Hours</string>
+    <string name="settings_2_dot_5_hours">2.5 Hours</string>
+    <string name="settings_3_dot_5_hours">3.5 Hours</string>
+    <string name="settings_4_dot_5_hours">4.5 Hours</string>
+    <string name="settings_5_dot_5_hours">5.5 Hours</string>
+    <string name="settings_6_dot_5_hours">6.5 Hours</string>
+    <string name="settings_7_dot_5_hours">7.5 Hours</string>
+    <string name="settings_2_hours">2 Hours</string>
+    <string name="settings_3_hours">3 Hours</string>
+    <string name="settings_4_hours">4 Hours</string>
+    <string name="settings_5_hours">5 Hours</string>
+    <string name="settings_6_hours">6 Hours</string>
+    <string name="settings_7_hours">7 Hours</string>
+    <string name="settings_ambient_lighting_information">Ambient Lighting Information</string>
+    <string name="settings_ambient_lighting_information_content_themea">This application allows you to select a color for the ambient lighting in your vehicle. Select from the grid to change the lighting to your desired color.\n\n This feature can be turned off by using the on/off toggle button.\n\n The Link to Drive Mode option will change the Ambient Lighting to match the color being used in the instrument cluster based on the setting of the Drive Mode button.\n\n Demo mode will cycle the ambient lighting through all the available colors. This is only available when the vehicle is parked.</string>
+    <!-- String value updated -->
+    <string name="settings_speech">Voice</string>
+    <string name="settings_on_at_ignition_on">On - At Ignition</string>
+    <!-- <string name="settings_vehicle_locator_lights_content1">This setting flashes the headlamps of your vehicle when you press the unlock button on your vehicle key.</string> -->
+    <string name="settings_forward_collision_avoidance_braking">Forward Automatic Braking:</string>
+    <string name="settings_rear_collision_avoidance_braking">Reverse Automatic Braking:</string>
+    <string name="settings_distance_above_speed">Distance Above Speed:</string>
+    <string name="settings_distance_unbuckled">Distance Unbuckled:</string>
+    <string name="settings_colon">:</string>
+    <string name="settings_restore_settings_from_usb_big">Restore Settings From USB</string>
+    <string name="settings_restore_settings_from_usb_big_content">Do not remove USB drive until restore has been completed. You may power down the vehicle and resume later at any time.</string>
+    <string name="settings_backup_in_progress">Backup in progress…</string>
+    <!-- 30-AUG-2016 -->
+    <string name="settings_rear_seat_audio_controls">Rear Seat Audio Controls</string>
+    <string name="settings_personal_driving_mode">MyMode</string>
+    <string name="settings_video">Video</string>
+    <string name="settings_set_date_content">Set Date allows you to manually set the date. Use the controls to adjust the date.</string>
+    <string name="settings_set_teen_driver_speed_warning_content">Set Teen Driver Speed Warning specifies a speed limit for displaying a speed warning for Teen Drivers. The speed can be specified between %1$s and %2$s.</string>
+    <string name="settings_maximum_startup_volume_content">Maximum Startup Volume limits the volume of audio sources when you start your vehicle.</string>
+    <string name="settings_set_audio_cue_volume">Startup Audio Volume</string>
+    <string name="settings_set_audio_cue_shutdown_volume">Startup &#47; Shutdown Audio Volume</string>
+    <string name="settings_set_audio_cue_volume_content">Startup Audio Volume controls the volume of infotainment system start-up sounds.</string>
+    <string name="settings_set_audio_cue_shutdown_volume_content">Startup &#47; Shutdown Audio Volume controls the volume of infotainment system start-up and shut-down sounds.</string>
+    <string name="settings_chime_volume_content">Chime Volume sets the volume level for in-vehicle chimes such as door ajar or headlamps left on.</string>
+    <string name="settings_set_audio_volume_limit_content">Set Audio Volume Limit specifies the maximum allowable audio volume for Teen Drivers.</string>
+    <string name="settings_allow_prompt_interruptions">Allow Prompt Interruptions</string>
+    <string name="settings_engine_sound">Engine Sound</string>
+    <string name="settings_awd_optimization">AWD Optimization</string>
+    <string name="settings_video_voice_over">Video Voice Over</string>
+    <!-- Updated Strings -->
+    <string name="settings_step_speed_traction_content">AWD Optimization specifices All wheel drive calibrations for specific driving conditions or style to improve vehicle performance. \nSelect Auto to link AWD to the Drive Mode selector.</string>
+    <string name="settings_step_speed_drivingmode_content">Adjusts engine sound character.</string>
+    <string name="settings_timezone_content">Select Time Zone allows you to manually select the time zone. Use the controls to adjust the time.</string>
+    <string name="settings_drivingmode_display_content">Display adjusts the appearance of the instrument cluster. Each specific drive condition or driving style has a complimentary cluster appearance. \nSelect Auto to link the Display to the Drive Mode selector.</string>
+    <string name="settings_reverse_tilt_mirror_content">Reverse Tilt Mirror tilts one or both of the side-view mirrors down when the vehicle is shifted into Reverse. This improves the visibility of the ground near the rear wheels and is useful when parking next to a curb.</string>
+    <string name="settings_reverse_tilt_mirror2_content">Reverse Tilt Mirror tilts the side-view mirrors down when the vehicle is shifted into Reverse. This improves the visibility of the ground near the rear wheels and is useful when parking next to a curb. </string>
+    <string name="settings_auto_memory_recall_content">Auto Memory Recall adjusts the driver seat, steering column, pedal, and outside mirror positions. \nSelect On - Driver Door Open to recall the positions when the driver door opens. \nSelect On - At Ignition to recall the positions when the ignition is turned on. \nAuto Memory positions are dependent on which Remote Keyless Entry transmitter is used to unlock and start the vehicle.</string>
+    <string name="settings_traffic_content">Left or Right Hand Traffic specifies the behavior of the Advanced Forward Lighting feature based on which side of the road the vehicle normally drives on.\nSelect Automatic (Navigation Based) to automatically adjust this setting based on detected vehicle location.</string><!-- Modified:19-jun-18 Old Value:Left or Right Hand Traffic specifies the behavior of the Adaptive Forward Lighting feature based on which side of the road the vehicle normally drives on.\nSelect Automatic (GPS) to automatically adjust this setting based on detected vehicle location. -->
+    <string name="settings_auto_high_beam_content">Auto High Beam automatically turns the high beams On or Off based on surrounding traffic.\nLow Sensitivity reduces the amount of the time that high beams are automatically adjusted.</string>
+    <string name="settings_auto_adaptive_high_beam_content">Adaptive High Beam automatically adjusts high beams to direct light away from oncoming vehicles.\nLow Sensitivity reduces the amount of the time that high beams are automatically adjusted.</string>
+    <string name="settings_adaptive_forward_lighting_content">Advanced Forward Lighting automatically adjusts the headlights based on driving conditions.</string><!-- Modified:19-jun-18 Old Value:Adaptive Forward Lighting automatically adjusts the headlights based on driving conditions. -->
+    <string name="settings_adaptive_forward_lighting_content_1">Advanced Forward Lighting automatically adjusts headlights at corners and curves to provide greater road illumination.</string>  <!-- Modified:19-jun-18 Old Value:Adaptive Forward Lighting automatically adjusts headlights at corners and curves to provide greater road illumination. -->
+    <string name="settings_auto_memory_recall_content_1">Auto memory Recall adjusts the driver seat, steering column, pedal, and outside mirror positions when you press the seat memory buttons or turn on the ignition.</string>
+    <string name="settings_traffic_content_1">Left or Right Hand Traffic specifies the behavior of the Advanced Forward Lighting feature based on which side of the road the vehicle drives on.</string><!-- Modified:19-jun-18 Old Value: Left or Right Hand Traffic specifies the behavior of the Adaptive Forward Lighting feature based on which side of the road the vehicle drives on. -->
+    <string name="settings_auto_high_beam_content_1">Auto High Beam specifies if the vehicle\'s high beams automatically turn On or Off based on surrounding traffic.</string>
+    <string name="settings_auto_adaptive_high_beam_content_1">Adaptive High Beam automatically adjusts high beams to direct light away from oncoming vehicles.</string>
+    <string name="settings_tap_step_speed_content">Tap Step Speed defines the increments for adjusting the motor speed. \nUse the Set + and Res - steering wheel buttons to adjust the speed up or down by the selected increments. \nPower Take-Off allows the vehicle to power an attached piece of equipment, such as an air compressor or winch.</string>
+    <string name="settings_auto_air_distribution2_content">Auto Air Distribution controls the way air flows in the vehicle when using Auto Climate Control. Direct Airflow results in more air being directed toward the occupants. Diffuse Airflow results in less. Oscillating varies between direct and diffuse airflow</string>
+    <string name="settings_standby_speed_content">Standby Speed specifies the initial speed to engage the Power Take-Off feature. This speed isn\'t needed to continue using the feature once it has been engaged. Power Take-Off allows the vehicle to power an attached piece of equipment, such as an air compressor or winch.</string>
+    <string name="settings_set_1_speed_content">Set 1 Speed specifies the lower set of speeds the motor can run at while using Power Take-Off. \nPower Take-Off allows the vehicle to power an attached piece of equipment, such as an air compressor or winch.</string>
+    <string name="settings_set_2_speed_content">Set 2 Speed specifies the upper set of speeds the motor can run at while using Power Take-Off. \nPower Take-Off allows the vehicle to power an attached piece of equipment, such as an air compressor or winch.</string>
+    <string name="settings_shutdown_time_content">Shut Down Time sets the amount of time the vehicle engine will continue to run while using Power Take-Off. \nPower Take-Off allows the vehicle to power an attached piece of equipment, such as an air compressor or winch, using its engine.</string>
+    <string name="settings_automatic_entry_egress_assist_content">Automatic Entry/Egress Assist specifies if the vehicle will automatically lower to make it easier to enter or exit the vehicle.</string>
+    <string name="settings_automatic_running_boards_content">Automatic Running Boards adjusts the position of the running boards on the vehicle. \nSelect On to automatically retract the running boards when the vehicle doors close or the vehicle is moving. \nSelect Extended to keep the running board out; the vehicle must be in Park or Neutral to select and use this mode.</string>
+    <string name="settings_automatic_running_boards_content_1">Automatic Running Boards adjusts the position of the running boards on the vehicle. \nSelect On to automatically retract the running boards when the vehicle doors close or the vehicle is moving.</string>
+    <string name="settings_handsfree_liftgate_trunk_control_content">Hands-free Liftgate/Trunk Control specifies the behavior of the automated Liftgate/Trunk. \nSelect On - Open and Close to enable hands-free open and closing capability. \nSelect On-Open Only to prevent the liftgate from being closed using the hands-free operation.</string>
+    <string name="settings_language_content">Language indicates the language displayed in the instrument cluster and radio displays. %1$s</string>
+    <string name="settings_passive_door_lock_content">Passive Door Lock specifies if the vehicle will automatically lock, or lock and alert you after all the doors are closed, and you walk away from the vehicle with the Remote Keyless Entry transmitter.</string>
+    <string name="settings_auto_fan_max_speed_content">Auto Fan Speed controls the amount of airflow in the cabin (Low, Medium, or High) when climate control is set to Auto. Higher fan speeds result in faster temperature adjustments but may result in more in-cabin noise.</string> <!-- Fixed 30920 -->
+    <string name="settings_air_quality_sensor_content">Air Quality Sensor turns on Recirculation Mode based on detected outside air quality conditions. \nRecirculation Mode conditions and circulates cabin air rather than using outside air.</string>
+    <string name="settings_alert_type_content">Alert Type refers to the type of alert you will receive from driver assistance systems to help you avoid crashes, either Beeps or Safety Alert Seat vibration pulses.</string>
+    <string name="settings_front_pedestrian_detection_content">Front Pedestrian Detection alerts you when a collision is imminent with a pedestrian detected directly ahead and, if necessary, automatically applies the brakes to help reduce the collision\'s severity or avoid the collision.</string><!-- Fixed 30899 -->
+    <string name="settings_auto_door_unlock_content">Auto door Unlock specifies which, if any, doors will automatically unlock when the vehicle is shifted into park.</string>
+    <string name="settings_gesture_indication_content">Gesture Indication lets you use various hand gestures to over the touchpad to interact with the display screen.</string>
+    <string name="settings_touchpad_surface_content">Touchpad Surface turns the touchpad controller On or Off.</string>
+    <string name="settings_vehicle_locator_lights_content">Vehicle Locator Lights briefly turns on the exterior lights when you press the unlock button on the Remote Keyless Transmitter.</string>
+    <string name="settings_daytime_tail_lights_content">Daytime Tail Lights turns on the tail lights during daytime driving to improve the visibility of the vehicle to other drivers.</string> <!-- Fixed 26197 -->
+    <string name="settings_unlocked_door_anti_lock_out_content">Open Door Anti Lock Out prevents the vehicle from being locked while a door is open.</string>
+    <string name="settings_auto_door_lock_content">Auto Door Lock automatically locks doors when the vehicle is shifted out of Park, or when the vehicle starts moving.</string>
+    <string name="settings_auto_door_lock_content_1">Auto Door Lock automatically locks doors when the vehicle starts moving.</string>
+    <string name="settings_delayed_door_lock_content">Delayed Door Lock will lock the vehicle a short time after all doors are closed.</string>
+    <string name="settings_remote_unlock_light_feedback_content">Remote Unlock Light Feedback provides confirmation that the vehicle is unlocked. Select Flash Lights to flash the exterior lamps when you remotely unlock the vehicle.</string>
+    <string name="settings_remote_door_unlock_content">Remote Door Unlock adjusts which door is unlocked when pressing the unlock button once on the Remote Keyless Entry transmitter.</string>
+    <string name="settings_relock_remotely_unlocked_doors_content">Relock Remotely Unlocked Doors secures the vehicle if doors are not opened within 30 seconds of using the Remote Keyless Entry transmitter to unlock doors.</string>
+    <string name="settings_remote_start_content">Remote Start allows you to start the vehicle from a remote distance by pressing the Remote Start button on the Keyless Entry transmitter.</string>
+    <string name="settings_remote_window_operation_content">Remote Window Operation allows you to open or close the windows remotely.</string>
+    <string name="settings_passive_door_unlock_content">Passive Door Unlock specifies which doors unlock when you use the button on the driver door handle to unlock the vehicle. Selecting Off will turn off passive door unlocking for all doors.</string>
+    <string name="settings_remote_left_in_vehicle_alert_content">Remote Left in Vehicle Alert alerts you when the Remote Keyless Entry transmitter is left in the vehicle and the vehicle is not running.</string>
+    <string name="settings_automatic_time_date_content">Automatic Time and Date uses GPS, RDS, and cellular network signals to keep the system time and date current. Select Off to manually set time and date.</string>
+    <string name="settings_automatic_time_zone_content">Automatic Time Zone updates the system time zone based on vehicle location. Select Off to manually select the time zone.</string>
+
+    <!-- Story 40874 Start of Temporary Strings -->
+    <string name="settings_trailering">Trailering</string>
+    <string name="settings_side_trailer_camera">Side Trailer Cameras</string>
+    <string name="settings_trailer_length_overlay">Trailer Length Overlay</string>
+    <string name="settings_jack_knife_alerts">Jack-Knife Alerts</string>
+    <string name="settings_cargo_camera_lighting">Cargo Bed Camera Lighting</string>
+    <string name="settings_side_trailer_camera_content">Side Trailer Cameras specifies if using the
+        turn signal during a lane change will also display an applicable sideview of your trailer and
+        vehicle. This allows you to see the area to the side of the vehicle and trailer that may
+        otherwise be obscured.
+    </string>
+    <string name="settings_trailer_length_overlay_content">Trailer Length Overlay specifies if
+        guidelines corresponding to the length of the trailer are shown when the side trailer camera
+        is active. Set Trailer Length thru the trailer application.
+    </string>
+    <string name="settings_jack_knife_alerts_content">Jack-Knife Alerts specifies if alerts occur
+        while you are backing up and your trailer is about to jack-knife.
+    </string>
+    <string name="settings_cargo_camera_lighting_content">Cargo Bed Camera Lighting specifies if the
+        truck bed rail lights are turned on when the cargo bed camera is active.
+    </string>
+    <!-- Story 40874 End of Temporary Strings -->
+
+    <string name="settings_use_24_hr_format_content">24-hour Format changes the time display to a 24-hour clock format. For example, 7:00pm displays as 19:00 when On.</string>
+    <string name="settings_audio_cues">Startup Sounds</string>
+    <string name="settings_audio_cues_shutdown">Startup &#47; Shutdown Sounds</string>
+    <string name="settings_audio_cues_content">Startup sounds specifies if sounds play when your infotainment system starts up.</string>
+    <string name="settings_audio_cues_shutdown_content">Startup &#47; Shutdown sounds specifies if sounds play when your infotainment system starts up or shuts down.</string>
+    <string name="settings_audible_touch_feedback_medium_content">Audible Touch Feedback specifies if sounds play when you press the touchscreen or a physical control on the radio faceplate.</string>
+    <string name="settings_rear_seat_reminder_content">Rear Seat Reminder displays an alert in the instrument cluster when an infant or large object may have been left in the vehicle.</string>
+    <string name="settings_sport_steering_content">Sport Steering stiffens the steering feel while in Sport Mode.</string>
+    <string name="settings_pollution_control_content">Pollution Control turns on Recirculation Mode at low vehicle speeds such as heavy traffic. This helps improve air quality by circulating interior air rather than using outside air.</string><!-- CR 1529732 --><!-- Pollution Control automatically turns on Recirculation Mode at low vehicle speeds. This helps to reduce poor air quality inside the vehicle in certain driving conditions such as heavy traffic. Recirculation Mode conditions and circulates cabin air rather than using outside air. -->
+    <string name="settings_auto_heated_seats_content">Auto Heated Seats automatically turn on seat heating at vehicle start up when the cabin temperature is significantly cooler than desired.</string>
+    <string name="settings_auto_cooled_seats_content">Auto Cooled Seats automatically turn on seat cooling at vehicle start up when the cabin temperature is significantly warmer than desired.</string>
+    <string name="settings_auto_defog_content">Auto Defog automatically directs air to the windshield to assist in defogging, based on temperature and humidity conditions.</string>
+    <string name="settings_rear_zone_temp_content">Rear Climate On startup controls the rear climate system behavior at vehicle startup.\nMimic Front syncs the rear settings with the front driver climate settings.\nLast Known retains the rear climate settings from the prior trip.</string> <!-- Fixed 30861 -->
+    <string name="settings_auto_air_distribution_content">Auto Air Distribution controls the way air flows in the vehicle when using Auto Climate Control. Direct Airflow results in more air being directed toward the occupants. Diffuse Airflow results in less.</string>
+    <string name="settings_ionizer_content">The Ionizer improves air quality by reducing smells and airborne dust particles within the vehicle.</string><!-- CR 1529732 --><!-- Ionizer helps neutralize smells and particles inside of the vehicle cabin. -->
+    <string name="settings_engine_assisted_heating_content">Engine Assisted Heating uses the gasoline engine to assist in heating the cabin of the vehicle. The engine starts to save battery power when On.\nUse Deferred to turn on the engine only in extremely cold conditions.</string>
+    <string name="settings_pedestrian_friendly_alert_content">Pedestrian Friendly Alert plays a sound outside of your vehicle when travelling at low speeds to help pedestrians hear you.</string> <!-- Fixed 30872 -->
+    <string name="settings_connected_vehicle_braking_alerts_content">Connected Vehicle Braking Alert notifies you if Vehicle-to-Vehicle (V2V) connected vehicles in front of you suddenly brake, giving you more time to react.</string>
+    <string name="settings_traffic_and_roadside_information_content">Connected Vehicle Traffic and Roadside Information specifies if connected vehicles or devices ahead of you share traffic conditions or events that could affect your travel.</string>
+    <string name="settings_drowsy_driver_alert_content">Drowsy Driver Alert notifies you when your driving behavior suggests that you are too tired to drive.</string>
+    <string name="settings_adaptive_cruise_go_notifier_content">Adaptive Cruise Go Notifier alerts you when Adaptive Cruise Control brings the vehicle to a complete stop behind another stopping vehicle and that vehicle begins moving again.</string>
+    <string name="settings_side_blind_zone_alert_content">Side Blind Zone Alert provides side mirror alerts to help you avoid crashing into a moving vehicle detected in your side-blind spot (or zone) during a lane-change maneuver.</string> <!-- Fixed 30914 -->
+    <string name="settings_lane_change_alert_content">Lane Change Alert provides side-mirror alerts to help you avoid crashing into a moving vehicle detected in their side blind spot (or zone) or a vehicle that is rapidly approaching your side blind spot during a lane-change maneuver.</string>
+    <string name="settings_seat_belt_tightening_content">Seat Belt Tightening automatically adjusts your seat belts to a snug fit when buckled. The seat belts tighten when you first buckle up and during rough driving or road conditions.</string>
+    <string name="settings_park_assist_content">Park Assist can alert you to objects near your vehicle during low speed maneuvers to avoid or reduce the severity of a collision.</string>
+    <string name="settings_park_assist_towbar_content">Parking Assist Towbar specifies if Park Assist will work properly when a small item, such as a hitch ball, is attached to the vehicle hitch.</string>
+    <string name="settings_rear_camera_park_assist_symbols_content">Rear Camera Parking Assist Symbols are warning icons displayed on the camera view when the Parking Assist System detects an object.</string>
+    <string name="settings_rear_cross_traffic_alerts_content">Rear Cross Traffic Alert can alert you to traffic approaching from the rear left or rear right of your vehicle during low speed backing maneuvers.</string>
+    <string name="settings_easy_exit_driver_seat_content">Easy Exit Driver Seat adjusts the driver seat when you press the easy exit button or turn off and exit the vehicle.</string>
+    <string name="settings_easy_exit_options_content">Easy Exit Options specifies if pressing the Easy Exit button will move the driver seat rearward when exiting the vehicle.</string>
+    <string name="settings_auto_mirror_folding_content">Auto Mirror Folding allows the outside mirrors to be folded in by pressing the Remote Keyless Entry transmitter lock button for about 1 second. Pressing unlock on the remote unfolds the mirrors.</string> <!-- Fixed 26199 -->
+    <string name="settings_personalization_by_driver_content">Personalization by Driver updates your personal vehicle settings based on the key being used.</string>
+    <string name="settings_rain_sense_wipers_content">Rain Sense Wipers automatically turn on the windshield wipers when moisture is detected and the wiper switch is in the intermittent mode. Rain sensitivity can be adjusted by rotating the intermittent wiper control.</string> <!-- Fixed 30944 -->
+    <string name="settings_auto_wipe_in_reverse_gear_content">Auto Wipe in Reverse Gear automatically turns on the rear window wiper when the vehicle is in Reverse and moisture is detected.</string>
+    <string name="settings_exit_lighting_content">Exit Lighting specifies how long the exterior lamps stay on when you exit the vehicle and it is dark outside.</string>
+    <!--<string name="settings_forward_collision_system_content">Forward Collision System can alert you to a potential crash with a detected vehicle ahead and, if you haven’t already, it can apply brakes %1$s to help reduce a collision’s severity.</string> --> <!-- 30875,44968 -->
+    <string name="settings_surround_view_lighting_content">Surround View Lighting turns on vehicle side lights to improve image quality when using the Surround View camera system.</string>
+    <string name="settings_remote_removed_from_vehicle_alert_content">Remote Removed From Vehicle Alert warns you by beeping the horn 3 times if you exit the a running vehicle with the Remote Keyless Entry transmitter.</string>
+    <string name="settings_tap_to_enter_content">Tap to Enter allows you to tap the touchpad to make a selection. This lets you skip pushing a button or touching the screen.</string>
+    <string name="settings_haptic_feedback_content">Haptic Feedback lets you feel vibrations in the touchpad when you interact with buttons or links on the display screen.</string>
+    <string name="settings_location_based_charging_content">Location Based Charging configures the charge settings for your electric vehicle based on its geographic location.</string>
+    <string name="settings_energy_summary_pop_up_content">Energy Summary Pop-up displays a summary of your battery and fuel usage since your last full charge before you exit the vehicle.</string>
+    <string name="settings_charge_status_feedback_content">Charge Status Feedback provides an audible and/or visual indication outside the vehicle while charging.</string>
+    <string name="settings_charge_cord_theft_alert_content">Charge Cord Theft Alert warns you if your charge cord may have been stolen by flashing your vehicle\'s lights and honking its horn.</string>
+    <string name="settings_charge_power_loss_alert_content">Charge Power Loss Alert warns you that your vehicle is no longer charging by flashing your vehicle\'s lights and honking its horn.</string>
+    <string name="settings_location_based_auto_lift_content">Location Based Auto Lift Changes the vehicle ride height based on GPS location. \nUse the Navigation system to specify locations where ride height should changed.</string>
+
+    <!-- updated strings on 5th_oct_2016 -->
+    <string name="settings_antilock_brake_system_active">Antilock Brake System Active:</string>
+    <string name="settings_lane_keep_assist_alerts">Lane Keep Assist Alerts:</string>
+    <string name="settings_this_vehicle_is_recording_content">This Vehicle is Recording Audio and Video</string>
+    <string name="settings_brake_response">Brake Response</string>
+    <string name="settings_competition_mode">Competition Mode</string>
+    <string name="ui_warning_long_hd">WARNING</string>
+    <string name="settings_link_to_drive_mode">Link to\nDrive Mode</string>
+    <string name="settings_set_time_content">Set Time allows you to manually set the time. Use the controls to adjust the time.</string>
+
+    <!-- New Strings added -->
+    <string name="settings_off">OFF</string>
+    <string name="settings_step_speed_traction_content_mode">AWD Optimization specifices All Wheel Drive calibrations for specific driving conditions or style to improve vehicle performance while in  %1$s.</string>
+    <string name="settings_step_speed_drivingmode_content_1">Engine Sound actively adjusts the sound of the engine to best match intended driving conditions or style while in %1$s.</string>
+    <string name="settings_on">On</string>
+    <string name="settings_step_speed_drivingmode_content_2">Engine Sound actively adjusts the sound of the engine to best match intended driving conditions or style while in %1$s.</string>
+    <string name="settings_reduced">Reduced</string>
+    <string name="settings_standard">Standard</string>
+    <string name="settings_enhanced">Enhanced</string>
+    <string name="settings_performance">Performance</string>
+    <string name="settings_steering_content_1">Steering adjusts how the steering feels to best match intended driving conditions or style while in %1$s.</string>
+    <string name="settings_suspension_content_1">Suspension adjusts damper and/or spring rates for specific driving conditions or style while in %1$s.</string>
+    <string name="settings_brake_pedal_feel_content_1">Brake Response adjusts the brake pedal response for specific driving conditions or style while in %1$s.</string>
+    <string name="settings_ride_height_content_1">Ride Height specifies which vehicle ride height to use while in %1$s.</string>
+
+    <!-- updated Strings -->
+    <string name="settings_elevated_idle_short">Rapid Heat - Elevated Idle</string>
+    <string name="settings_auto_mode_customizations_content">Auto Mode Customization controls Drive Modes based on your driving style. It can automatically switch the vehicle into or between Sport, Comfort, and Tour settings.</string>
+    <string name="settings_steering_content">Adjusts steering effort to best match intended driving conditions or preference.</string>
+
+    <string name="settings_smart_high_beam_assist_content">Automatic High Beam Assist specifies how the headlights adjust based on driving conditions.\nSelect IntelliBeam to automatically switch to High Beam if no oncoming traffic is detected.\nSelect Glare Free High Beam to leave high beams on at all times and automatically change the direction of the light to avoid glare based on the traffic and environment.</string>
+    <string name="settings_mode_content">This setting adjusts the appearance of the navigation map view and any downloaded apps optimized for day or night time conditions. Set to Auto for the display to automatically adjust based on bright/dark conditions.</string> <!-- Fixed 31243 -->
+    <string name="settings_cursor_tracking_speed_content">Cursor Tracking Speed controls how fast the cursor and highlight move around the screen. You can speed up or slow down the touchpad\'s response to your movements.</string>
+    <string name="settings_ride_height_content">Ride Height specifies which vehicle ride height to use in this mode.\nChanging the ride height can impact ground clearance, fuel economy, and entry/exit of vehicle.</string>
+    <string name="settings_powertrain_content">Powertrain optimizes the characteristics of the throttle pedal, throttle response, engine and gear shifting for specific driving conditions or style while in %1$s.</string>
+    <string name="settings_traction_and_stability_control_long">Competition Mode</string>
+    <string name="settings_competitive_mode">Competitive Driving Mode - Active Handling Off</string>
+    <string name="settings_ptm_mode_1">PTM Mode 1 - Wet Track: %1$s On</string>
+    <string name="settings_ptm_mode_2">PTM Mode 2 - Dry Track: %1$s On</string>
+    <string name="settings_ptm_mode_3">PTM Mode 3 - Dry Track +: %1$s Off</string>
+    <string name="settings_ptm_mode_4">PTM Mode 4 - Dry Track +: %1$s Off</string>
+    <string name="settings_ptm_mode_5">PTM Mode 5 - Race %1$s Off</string>
+    <string name="settings_traction_and_stability_control_content">Competition Mode adjusts key vehicle characteristics such as, active handling, and electronic stability control to improve vehicle performance on race tracks. Performance Traction Management (PTM) is intended for track use only and integrates the Traction Control, StabiliTrak, and Magnetic Ride Control systems to provide improved and consistent performance when cornering. The amount of available engine power is based on the mode selected, track conditions, driver skill, and the radius of each corner. Active Handling Controls (Traction Control and Electronic Stability Control) are reduced or turned off in performance Traction Modes (PTM) (1-5). This setting only applies while in Custom Drive Mode.</string>
+    <string name="settings_easy_exit_steering_column_content">Easy Exit Steering Column specifies if, and how, the steering column moves when you press the easy exit button or exit the vehicle. </string>
+    <string name="settings_auto_cool_seats_content">Remote Start Auto Cooled Seats automatically turns on cooled seats when using the Remote Start function on warm days.</string>
+    <string name="settings_auto_heat_seats_content">Remote Start Auto Heated Seats automatically turns on heated seats when using the Remote Start function on cold days.</string>
+    <string name="settings_intersection_stop_alert_content">Intersection Stop Alert can alert you when you are about to drive through a red light or when you enter an intersection and the vehicle detects a potential crash.</string>
+    <string name="settings_intersection_stop_alert_content_2">Intersection Stop Alert can alert you when you are about to drive through a red light or when you enter an intersection and the vehicle detects a potential crash. It can prevent or reduce the severity of a crash by helping you brake.</string>
+    <string name="settings_rear_pedestrian_detection_content">Rear Pedestrian Detection alerts you while in reverse gear when a collision is imminent with a pedestrian detected directly behind and, if necessary, automatically applies the brakes to help reduce the collision’s severity or avoid the collision.</string>
+    <string name="settings_rear_pedestrian_detection_content_2">Rear Pedestrian Detection alerts you while in reverse gear when a collision is imminent with a pedestrian detected directly behind to help reduce the collision’s severity or avoid the collision.</string>
+    <string name="settings_proximity_sensing_content">Proximity Sensing controls the display of buttons in the map view. When On, buttons appear only when you move your hand toward the touchscreen. Select Off to keep the buttons visible at all times.</string>
+    <string name="settings_sport_display_content">Sport Display adjusts the appearance of the instrument cluster to a sport themed display while in Sport Mode.</string>
+    <string name="settings_sport_suspension_content">Sport Suspension stiffens the suspension feel while in Sport Mode.</string>
+    <string name="settings_sport_awd_content">Sport AWD optimizes All wheel drive calibrations to improve vehicle performance while in Sport Mode.</string>
+    <string name="settings_sport_driver_seat_content">Sport Driver Seat adjusts the driver seat bolsters for increased lateral support while in Sport Mode.</string>
+    <string name="settings_sport_passenger_seat_content">Sport Passenger Seat adjusts the passenger seat bolsters for increased lateral support while in Sport Mode.</string>
+    <string name="settings_sport_adaptive_cruise_control_content">Sport Adaptive Cruise Control enables enhanced dynamic behavior of adaptive cruise control mode while in Sport Mode.</string>
+    <string name="settings_elevated_idle_content">Rapid Heat - Elevated Idle increases the engine idle speed to heat the cabin of the vehicle faster.</string>
+    <string name="settings_elevated_idle_big">Rapid Heat -Elevated Idle</string>
+    <string name="settings_engine_assisted_heating_plugged_in_content">Engine Assisted Heating Plugged In uses the gasoline engine to assist in heating the cabin of the vehicle while it is charging. The engine starts to save battery power when On.</string>
+    <string name="settings_automatic_vehicle_hold_long">Extended Hill Start Assist</string>
+    <string name="settings_long_and_auto_park_brake_on_short">Extended Hold</string>
+    <string name="settings_short_and_auto_park_brake_off">Standard Hold</string>
+    <string name="settings_teen_driver_speed_warning_content">Teen Driver Speed Warning warns you when a Teen Driver exceeds the specified maximum speed.\nSet the speed warning threshold under Set Teen Driver Speed Warning.</string>
+    <string name="settings_teen_driver_speed_limiter_content">Teen Driver Speed Limiter restricts the vehicle to a maximum speed of %1$d MPH/ %2$d km/h for Teen Drivers.</string>
+    <string name="settings_privacy_location_services_content">Location Services allows apps and services to identify your vehicle location for improved performance. You can turn location services Off to keep this information private. Emergency services are not affected in Off mode.</string>
+    <string name="settings_data_services_content">Data Services allow apps to use your data plan for downloads and streaming. You can turn data sharing Off to prevent data use. Emergency services are not affected in Off mode.</string>
+    <string name="settings_video_voice_content">Video Voice Over specifies if visually impaired users will receive audio feedback for video playback and when navigating the rear seat entertainment system.</string>
+    <string name="settings_prompt_interruptions_content">Allow Prompt Interruptions controls if you can speak voice commands before voice prompts finish. You can turn this On if you usually know the command you want to speak and don\'t need to hear the full prompt. This feature may result in accidental interruptions caused by background noise or talking.</string>
+    <string name="settings_rear_seat_audio_content">Rear Seat Audio Controls turns the 2nd-row audio controls On or Off.</string>
+    <string name="settings_siriusxm_explicit_content_filter_content">SiriusXM Explicit Content Filter prevents Teen drivers from accessing explicit content channels.</string>
+    <string name="settings_remote_mirror_folding_content">Remote Mirror Folding allows the outside mirrors to be folded in by pressing the Remote Keyless Entry transmitter lock button for about 1 second. Pressing unlock on the remote unfolds the mirrors.</string>
+    <string name="settings_remote_mirror_folding_content_gb">Remote Mirror Folding adjusts the outside mirrors when locking and unlocking the vehicle. Press the lock button on the key or on the door handle to fold the mirrors in. Press the unlock button on the key or door handle to unfold the mirrors. Mirrors will not unfold using the unlock buttons if they were folded in using the interior mirror switch.</string>
+    <string name="settings_seat_entry_memory_content">This setting recalls positions for the driver seat and steering column, outside mirrors, and pedals (if equipped) of memory button 1 or 2 when the ignition is turned on. If the previously stored positions are not recalled, try using the other remote.</string>
+    <string name="settings_seat_Exit_memory_content">This setting recalls positions for the driver seat and steering column, outside mirrors, and pedals (if equipped) of the exit memory button when the ignition is turned off and the driver door is opened.</string>
+    <string name="settings_ambient_lighting_information_content_themeb">This application allows you to select a color for the ambient lighting in your vehicle.\nSelect from the grid to change the lighting to your desired color. \n\nThis feature can be turned off by using the on/off toggle button. \n\nThe Link to Drive Mode option will change the Ambient Lighting to match the color being used in the instrument cluster based on the setting of the Drive Mode button. \n\nDemo mode will cycle the ambient lighting through all the available colors. This is only available when the vehicle is parked. \n\nBrightness can be adjusted from low to medium to high by using the icons at the bottom of the screen.</string>
+    <string name="settings_direct_airflow">Direct Airflow</string>
+    <string name="settings_suspension_content">Adjusts damper level for specific driving conditions or preference.</string>
+    <string name="settings_brake_pedal_feel_content">Brake Response adjusts the brake pedal response for specific driving conditions or style while in %1$s.</string>
+    <string name="settings_active_aero_content_1">Active Aero specifies which active aeroynamics setting is used while in %1$s. \nEach setting adjusts the rear wing/spoiler and other aerodynamic elements to optimize vehicle performance for specific conditions or driving style.</string>
+    <string name="settings_active_aero_content">Active Aero specifies which active aeroynamics setting is used while in %1$s. \nEach setting adjusts the rear wing/spoiler and other aerodynamic elements to optimize vehicle performance for specific conditions or driving style.</string>
+    <string name="settings_teen_driver_audio_volume_limit_content">Audio Volume Limit specifies if audio sound is limited for Teen Drivers. Adjust the maximum volume under the Set Audio Volume Limit setting.</string>
+    <string name="settings_left_right_invert_content">Left / Right Invert specifies on-screen behavior in response to the horizontal movement of your fingers on the Touchpad.\nSelect Default to have the screen behavior match finger movement on the Touchpad. \nSelect Inverted to have screen behavior behave opposite.</string>
+    <string name="settings_up_down_invert_content">Up / Down Invert specifies on-screen behavior in response to the vertical movement of your fingers on the Touchpad.\nSelect Default to have the screen behavior match finger movement on the Touchpad. \nSelect Inverted to have screen behavior behave opposite.</string>
+    <string name="settings_automatic_vehicle_hold_content">Extended Hill Start Assist prevents your vehicle from rolling backward on a steep hill if the brake pedal is not depressed.\nStandard hold keeps the vehicle stationary for about 3 seconds. Extended hold works for up to 5 minutes, and may also automatically apply the parking brake.</string>
+    <string name="settings_remote_lock_feedback_content">Remote Lock Feedback provides confirmation that the Remote Keyless Entry transmitter locked the vehicle. Select Lights and Horn to flash the exterior lamps and honk the horn when you lock the vehicle using the remote.</string>
+    <string name="settings_vehicle_locator_lights_content1">Vehicle Locator Lights briefly turns on the exterior lights when you press the unlock button on the Remote Keyless Transmitter.</string>
+    <!-- New Strings -->
+    <string name="settings_voice_recognition_sharing_content">Voice Recognition Sharing sends your voice sessions to a cloud-based voice recognition system. You can turn this off to prevent the system from sharing and recording your voice. This may limit the system\'s ability to understand you and may disable some features.</string>
+    <string name="settings_suspension_content_pmode">Suspension adjusts damper and/or spring rates for specific driving conditions or style while in %1$s.</string>
+    <string name="settings_unverified">&#8211; unverified</string>
+    <string name="settings_not_signed_in">Not Signed In</string>
+    <string name="settings_vehicle_software">Vehicle Software</string>
+    <string name="ui_profile">Profile</string>
+    <string name="settings_extended_hill_start_assist">Extended Hill Start Assist</string>
+    <string name="settings_extended_hold">Extended Hold</string>
+    <string name="settings_standard_hold">Standard Hold</string>
+    <string name="settings_erase_all_private_data">Erase Settings and Personal Data</string>
+    <string name="settings_relock_with_four_numbers">Relock</string>
+    <string name="settings_teen_mode_unlock">Teen Mode - Enter Code to Unlock</string>
+    <string name="audio_no_content_available_short">no content available</string>
+    <string name="cm_enable_disable_android_auto_settings_content">Android Auto allows you to interact directly with your phone on the radio screen. This feature must be enabled both here and on the connected phone. You can access the feature by pressing the Android Auto icon on the home screen, or by a long press of the Voice button on the steering wheel.</string>
+    <string name="cm_available_wifi_networks">Available Wi-Fi Networks</string>
+    <string name="cm_phone_view_vehiclephonename_big">%1$s Phone</string>
+    <string name="cm_password_confirmation_content_lig_28_629_114">Would you like to save changes?</string>
+    <string name="cm_discard">Discard</string>
+    <string name="ui_off_short">Off –</string>
+    <string name="settings_mode_content_nonnav">This setting adjusts the appearance of any downloaded apps optimized for day or night time conditions. Set to Auto for the display to automatically adjust based on bright/dark conditions.</string>
+    <string name="cm_device_may_be_disconnected">Connect a new phone?\n\n%1$s may be disconnected, moving any active calls to the handset.</string>
+    <string name="build_number">Build Number</string>
+    <string name="cm_switch_device_may_disconnect">%1$s may be disconnected, moving any active calls to the handset.</string>
+    <string name="cm_wifi_password_incorrect">Password Incorrect</string>
+    <string name="cm_wifi_error_forget_network">Switch to the Guest profile in the Users app to forget Wi-Fi Networks.</string>
+    <!-- Legal String which should be shown on the Open Source Software screen -->
+    <string name="terms_english_license_text">The English version of this license is the official and legally binding version; all other versions are provided solely for comprehension and customer satisfaction purposes.</string>
+    <string name="cm_on">On –</string>
+    <string name="updater_install_percent">~ %1$s Complete</string>
+    <!-- Added from dynamic file -->
+    <string name="autohighbeam_list">Off</string>
+    <string name="ui_kb_long">KB</string>
+    <string name="ui_mb_long">MB</string>
+    <string name="ui_gb_long">GB</string>
+    <string name="settings_desc_not_available">This setting description is not available while driving.</string>
+    <string name="cm_local_only">Local Only</string>
+    <string name="settings_voice_allow_prompt_interruptions_content">Allow Prompt Interruptions controls if you can speak voice commands before voice prompts finish. You can turn this On if you usually know the command you want to speak and don\'t need to hear the full prompt. This feature may result in accidental interruptions caused by background noise or talking.</string>
+    <string name="settings_voice_allow_prompt_interruptions">Allow Prompt Interruptions</string>
+    <string name="settings_rear_seat_audio_controls_content">This setting turns the 2nd row audio controls On or Off.</string>
+    <string name="settings_forward_collision_system_content_1">This setting controls the vehicle response when detecting a vehicle ahead of you. It can prevent or reduce the severity of a crash by providing alerts, or helping you brake %1$s.</string>
+    <string name="settings_advanced_range_estimation">Advanced Range Estimation</string>
+    <string name="settings_advanced_range_estimation_content">Advanced Range Estimation uses historical energy usage based on time of day, season, and climate control settings to prove a more accurate estimated battery range.</string>
+    <string name="cm_min_characters">Minimum 8 Characters</string>
+    <!-- OTA String -->
+    <string name="settings_important_notice">Important Notice</string>
+    <string name="settings_important_notice_ota_content">Update may take up to %1$d mins. Park in a secure location.\nYour vehicle will be disabled, cannot be driven, and features like door locks, windows and chimes may not work.\nIf you leave the vehicle, do not lock occupants inside.</string>
+    <string name="settings_trailer_light_test">Trailer Light Test</string>
+    <string name="settings_automatic_timezone_unavailable_content_rds">The Automatic Time Zone feature is unavailable because RDS information is unavailable.</string>
+
+    <!-- Connection Manager Strings -->
+    <string name="cm_connected_caps_long">Connected</string>
+    <string name="cm_not_connected_caps">Not Connected</string>
+    <string name="cm_wifi_services_onstar_hotspot_big">Wi-Fi Services and %1$s Hotspot</string>
+    <string name="cm_add_other_network">Add Other Network</string>
+    <string name="cm_open_network">Open Network</string>
+    <string name="cm_wifi_network_settings">Wi-Fi Network Settings</string>
+    <string name="cm_select_a_wifi_network">Select a Wi-Fi Network</string>
+    <string name="cm_available_long">Available</string>
+    <string name="cm_connect_android_auto_device_to_usb">Connect Android Auto Phone to USB</string>
+    <string name="cm_enable_carplay_content">Once this feature is enabled, a phone may launch Apple CarPlay when connected to USB.</string>
+    <string name="cm_enable_apple_carplay">Enable Apple CarPlay</string> <!-- Value changed from "Enable Apple CarPlay" to "Apple CarPlay" as per Assembla 881 -->
+    <string name="cm_connect_android_auto_device_to_usb_content">Preferred for better connection.\nMay also enable future wireless connections.</string>
+    <string name="cm_connect_apple_carplay_device_to_usb">Connect Apple CarPlay Phone to USB</string>
+    <string name="ui_add_device">Add Phone</string>
+    <string name="ui_devices_long">Phones</string>
+    <string name="ui_wifi_networks_long">Wi-Fi Networks</string>
+    <string name="ui_wifi_networks">Available Wi-Fi Networks</string>
+    <string name="cm_no_network_connected">No Network Connected</string>
+    <string name="cm_devicename">Phone Name</string>
+    <string name="ui_disconnect">Disconnect</string>
+    <string name="cm_connecting_over_wifi">Connecting Over Wi-Fi</string>
+    <string name="cm_join_network">Join Network</string>
+    <string name="cm_network_name">Network Name</string>
+    <string name="ui_password">Password</string>
+    <string name="cm_security_type">Security Type</string>
+    <string name="cm_favorite_network">Favorite Network</string>
+    <string name="cm_forget_network">Forget Network</string>
+    <string name="cm_favorite_network_content">Connect to this Network First</string>
+    <string name="cm_automatic_updates">Automatic Downloads</string>
+    <string name="cm_phone_favorite_long">First to Connect</string>
+    <string name="cm_device_not_found">Phone Not Found</string>
+    <string name="cm_device_not_found_content">Could not connect to the selected phone.\nPlease check phone\'s connection settings.</string>
+    <string name="cm_disconnect_device_big">Disconnect Device</string> <!-- Fixed 19041 -->
+    <string name="cm_disconnect_device_small">Disconnect Phone</string>
+    <string name="cm_disconnect_device_content">Are you sure you want to disconnect this device from the Wi-Fi Hotspot?</string>
+    <string name="cm_disconnect_device_content2">Are you sure you want to disconnect this phone?\nActive calls on this phone may be moved to the handset.</string> <!-- Fixed 20054 -->
+    <string name="cm_forget_device_content">Are you sure? This phone will be removed from the Phones list and no longer automatically connect.</string>
+    <string name="cm_forgetting_wifi_network_content">Are you sure? This network will be removed from Wi-Fi Networks list and no longer automatically connect.</string>
+    <string name="cm_paired_device_limit_reached">Paired Phone Limit Reached</string>
+    <string name="cm_paired_device_limit_content">The device below will be removed from the Phones list in order to pair your new phone.</string>
+    <string name="cm_couldnot_connect_to_selected_wifi_network">Could not connect to the selected Wi-Fi Network.</string>
+    <string name="cm_wifi_network_connection_error">Wi-Fi Network Connection Error</string>
+    <string name="cm_enable_wireless_screen_sharing_big">Enable Wireless Screen Sharing</string>
+    <string name="cm_enable_wireless_screen_sharing_small">Enable Wireless Screen Sharing</string>
+    <string name="cm_enable_wireless_screen_sharing_content">Older devices cannot connect to the Wireless Network while Wireless Screen Sharing is enabled.</string>
+    <string name="ui_enable">Enable</string>
+    <string name="ui_disable">Disable</string>
+    <string name="cm_disable_wireless_screen_sharing_big">Disable Wireless Screen Sharing</string>
+    <string name="cm_disable_wireless_screen_sharing_small">Disable Wireless Screen Sharing</string>
+    <string name="cm_disable_wireless_screen_sharing_content">Connect device by USB to use Screen Sharing.</string>
+    <string name="cm_onstar_vehicle_hotspot">Wi-Fi Hotspot</string>
+    <string name="cm_steps_to_pair_device">Steps to Pair Phone</string>
+    <string name="cm_bluetooth_help_content">1. Turn phone on.\n2. Open Settings, select Bluetooth.\n3. Set Bluetooth to on.\n4. Select vehicle name %1$s.</string>
+    <string name="cm_gal_connection_over_wifi_popup_content1">1. Turn phone on.\n2. Open Settings, select Wi-Fi.\n3. Set Wi-Fi to on.\n4. Select &#8211; %1$s.\n5. Enter the code shown on the vehicle screen.</string>
+    <string name="cm_pairing_device">Pairing Phone</string>
+    <string name="cm_searching_for_device">Searching for Phone</string>
+    <string name="cm_pair_bluetooth_device">Pair Bluetooth Phone</string>
+    <string name="cm_pair_bluetooth_device_content">Select the vehicle name shown below from your phone\'s Bluetooth Settings list.</string>
+    <string name="cm_pair_bluetooth_nfc_device_content">Hold phone near NFC sensor or select the vehicle name shown below from your phone\'s Bluetooth Settings list.</string>
+    <string name="cm_confirm_bluetooth_pairing">Confirm Bluetooth Pairing</string>
+    <string name="cm_confirm_bluetooth_pairing_content">Is this the code shown on your phone?</string>
+    <string name="cm_connect_apple_carplay_device_usb_content">Plug in supported phone to launch Apple CarPlay.</string>
+    <string name="cm_enable_android_auto">Android Auto</string> <!-- Value changed from "Enable Android Auto" to "Android Auto" as per Assembla 881 -->
+    <string name="cm_enable_android_auto_content">Once this feature is enabled, a phone may launch Android Auto when connected to USB.</string>
+    <string name="cm_wireless_screen_sharing">Wireless Screen Sharing</string>
+    <string name="cm_wireless_screen_sharing_content1">USB connection for Apple CarPlay or Android Auto. Most phones and devices can connect to the Wi-Fi hotspot to share its data.</string>
+    <string name="cm_wireless_screen_sharing_content2">Wireless and USB connection for Apple CarPlay or Android Auto. Disables the Wi-Fi hotspot for older phones and devices.</string>
+    <string name="cm_wireless_network_big">Wi-Fi Services</string>
+    <!--<string name="cm_wireless_network_long">Wi-Fi Services</string>
+    <string name="cm_wireless_network_off">Wi-Fi Hotspot Off</string>
+    <string name="cm_wireless_network_content1">Devices can use the Wi-Fi Hotspot.</string>
+    <string name="cm_wireless_network_content2">the Wi-Fi Hotspot is off. Devices cannot connect.</string> -->
+    <string name="cm_advanced_wifi_services">Advanced Wi-Fi Services</string>
+    <!--<string name="cm_wireless_access_onstar_hotspot">Wireless Access to &#8211; %1$s Hotspot</string>  -->
+    <string name="cm_share_hotspot_data_big">Share Hotspot Data</string>
+    <string name="cm_share_hotspot_data_small">Share Hotspot Data</string>
+    <string name="cm_sharing_data_connected_devices_long">Sharing Data with Connected Devices</string>
+    <string name="cm_share_hotspot_data_content1">Devices can use the Wi-Fi hotspot and its data.</string>
+    <string name="cm_share_hotspot_data_content2">Devices can use the Wi-Fi hotspot but not its data.</string>
+    <string name="cm_not_currently_sharing_data_connected_devices">Not Sharing Data with Connected Devices</string>
+    <string name="cm_wireless_network_info">Older devices cannot connect when Wireless Screen Sharing is enabled. Open Advanced Wi-Fi Services to change.</string>
+    <string name="cm_connected_to_usb">Connected to USB</string>
+    <string name="cm_wifi_services">Wi-Fi Services</string>
+    <string name="cm_connected_devices">Connected Devices</string>
+    <string name="cm_connected_devices_long">Connected Devices</string>
+    <string name="cm_data_subscription_status">Data Subscription Status</string>
+    <string name="cm_advanced">Advanced</string>
+    <string name="cm_advanced_wifi_services_settings">Advanced Wi-Fi Services Settings</string>
+    <string name="cm_vehicle_hotspot_on_qn">Wi-Fi Hotspot On</string>
+    <string name="cm_vehicle_hotspot_off_qn">Wi-Fi Hotspot Off</string>
+    <string name="cm_wifi_name">Wi-Fi Name</string>
+    <string name="cm_wifi_password">Wi-Fi Password</string>
+    <string name="ui_save_small">Save</string>
+    <string name="ui_confirm_short">Confirm</string>
+    <string name="cm_enter_network_password">network password</string>
+    <string name="cm_enter_network_name">network name</string>
+    <string name="cm_outgoing_and_incoming_calls_bluetooth">Outgoing and Incoming Calls</string>
+    <string name="cm_android_auto_usb">Android Auto &#8211; %1$s</string>
+    <string name="cm_apple_carplay_wifi">Apple Carplay &#8211; %1$s</string>
+    <string name="cm_first_to_connect_current_favorite_long">First to connect. Current Favorite – %1$s.</string>
+    <string name="cm_pairing_device_content">Pairing with %1$s.</string>
+    <string name="cm_bluetooth_device_name">Phone Name</string>
+    <string name="cm_enter_password">Enter Password &#8211; %1$s</string>
+    <string name="cm_wifiname_vehicle_wifi_name">Wi-Fi Name</string>
+    <string name="cm_vehicle_wifi_name_password">Wi-Fi Password</string>
+    <string name="cm_favorite_phone_content">Favorite Phone &#8211; %1$s</string>
+    <string name="cm_device_disconnected_qn">Phone Disconnected – %1$s</string>
+    <string name="cm_device_forgotten_qn">Phone Forgotten – %1$s</string>
+    <string name="cm_bluetooth_battery_low">Battery Low – %1$s</string>
+    <string name="cm_wifi_connected_qn">Wi-Fi Network Connected &#8211; %1$s</string>
+    <string name="cm_wifi_disconnected_qn">Wi-Fi Network Disconnected &#8211; %1$s</string>
+    <string name="cm_wifi_forgotten_qn">Wi-Fi Network Forgotten &#8211; %1$s</string>
+    <string name="cm_favorite_network_qn">Favorite Network &#8211; %1$s</string>
+    <string name="cm_connected_to_vehicle_hotspot_qn">%1$s Connected to Vehicle Hotspot</string>
+    <string name="cm_rename_your_vehicle_wireless_network_reg_21_763_29">Change Vehicle Wi-Fi Name (must be 1-24 characters)</string>
+    <string name="cm_set_change_your_vehiclewifipassword_reg_21_763_29">Change Vehicle Wi-Fi Password (must be 8-24 characters)</string>
+    <string name="cm_wireless_network_wss_enabled_content">Devices can use the Wi-Fi hotspot and connect wirelessly to screen sharing applications.</string>
+    <string name="cm_wireless_access_to_device_lig_21_681_29">Wireless Access to &#8211; %1$s</string>
+    <string name="cm_data_services_declined_reg_28_690_38">Data Services Disabled</string>
+    <string name="cm_deactivated_lig_21_503_29">Deactivated</string>
+    <string name="cm_help">Help</string>
+    <string name="cm_help_lig_28">Help</string>
+    <string name="cm_bt_help">Bluetooth Help</string>
+    <string name="cm_incoming_calls_only">Incoming Calls Only</string><!-- Fixed 19925 -->
+
+    <!-- plural Strings -->
+    <plurals name="cm_incoming_calls_min_remaining">
+
+        <!-- Deprecated -->
+        <item quantity="zero">Incoming Calls &#8211; %1$d Minutes Remaining</item>
+        <item quantity="one">Incoming Calls &#8211; %1$d Minute Remaining</item>
+        <item quantity="two">Incoming Calls &#8211; %1$d Minutes Remaining</item>
+        <item quantity="few">Incoming Calls &#8211; %1$d Minutes Remaining</item>
+        <item quantity="many">Incoming Calls &#8211; %1$d Minutes Remaining</item>
+        <item quantity="other">Incoming Calls &#8211; %1$d Minutes Remaining</item>
+    </plurals>
+    <plurals name="cm_two_devices_connected_to_wireless_network">
+        <item quantity="zero">%1$d Devices Connected to Wireless Network</item>
+        <item quantity="one">%1$d Device Connected to Wireless Network</item>
+        <item quantity="two">%1$d Devices Connected to Wireless Network</item>
+        <item quantity="few">%1$d Devices Connected to Wireless Network</item>
+        <item quantity="many">%1$d Devices Connected to Wireless Network</item>
+        <item quantity="other">%1$d Devices Connected to Wireless Network</item>
+    </plurals>
+    <plurals name="cm_no_min_available">
+        <item quantity="zero">%1$d mins Available</item>
+        <item quantity="one">%1$d min Available</item>
+        <item quantity="two">%1$d mins Available</item>
+        <item quantity="few">%1$d mins Available</item>
+        <item quantity="many">%1$d mins Available</item>
+        <item quantity="other">%1$d mins Available</item>
+    </plurals>
+    <plurals name="cm_no_minutes_available">
+        <item quantity="zero">%1$d Minutes Available</item>
+        <item quantity="one">%1$d Minute Available</item>
+        <item quantity="two">%1$d Minutes Available</item>
+        <item quantity="few">%1$d Minutes Available</item>
+        <item quantity="many">%1$d Minutes Available</item>
+        <item quantity="other">%1$d Minutes Available</item>
+    </plurals>
+
+    <!-- Strings added based on the june relase -->
+    <string name="cm_none">None</string>
+    <string name="cm_add_other_network_name">Add Other Network &#8211; Network Name</string>
+    <string name="cm_no_usb_cable">No USB Cable</string>
+    <string name="ui_cancel_long">Cancel</string>
+    <string name="ui_cancel">Cancel</string>
+    <string name="cm_join_network_long">Join Network</string>
+    <string name="cm_forget_device_small">Forget Phone</string>
+    <string name="cm_check_device_for_messages">Check phone for messages.</string>
+    <string name="cm_code_matches">Pair</string>
+    <string name="cm_connecting_device_qn">Connecting Phone -%1$s</string>
+    <string name="cm_data_roaming_long">Data Roaming</string>
+    <string name="cm_on_long">On &#8211;</string>
+    <string name="ui_off_small">Off &#8211;</string>
+    <string name="cm_off_short">Off &#8211;</string>
+    <string name="cm_data_roaming_content1">use data services while signal is roaming.</string>
+    <string name="cm_data_roaming_content2">do not use data while signal is roaming.</string>
+    <string name="cm_device_connected_bluetooth_phone">%1$s Connected – %2$s</string>
+    <string name="cm_forget_device_long">Forget Phone</string>
+    <string name="cm_forget_device_big">Forget Phone</string>
+    <string name="cm_forget_wifi_network_big">Forget Network</string>
+    <string name="cm_forget_network_long">Forget Network</string>
+    <string name="cm_add_other_network_password">Add Other Network &#8211; Password</string>
+    <string name="cm_forget_network_lig_28_395_94">Forget Network</string>
+    <string name="cm_wifi_services_med_28_587_38">Wi-Fi Services</string>
+    <string name="cm_on_short">On &#8211;</string>
+    <string name="cm_wireless_network_reg_28_503_38">Wireless Network</string>
+    <string name="cm_secured_with_security_type">Secured with %1$s</string>
+    <string name="cm_secured_with_security_type_short">Secured with %1$s</string>
+    <string name="cm_use_this_network_for_vehicle_sw_update">Use this Network for Vehicle Software Updates</string>
+    <string name="cm_use_data_roaming">Use Data while Roaming</string>
+    <string name="cm_wifi_name_small">WiFiName</string>
+    <string name="cm_no_subscription">No Subscription Available</string>
+
+    <plurals name="cm_outgoing_calls_min_remaining">
+
+        <!-- Deprecated -->
+        <item quantity="zero">Outgoing Phone Source &#8211; %1$d Minutes Remaining</item>
+        <item quantity="one">Outgoing Phone Source &#8211; %1$d Minute Remaining</item>
+        <item quantity="two">Outgoing Phone Source &#8211; %1$d Minutes Remaining</item>
+        <item quantity="few">Outgoing Phone Source &#8211; %1$d Minutes Remaining</item>
+        <item quantity="many">Outgoing Phone Source &#8211; %1$d Minutes Remaining</item>
+        <item quantity="other">Outgoing Phone Source &#8211; %1$d Minutes Remaining</item>
+    </plurals>
+
+    <string name="cm_802_1_eap">802.1x EAP</string>
+    <string name="cm_try_pairing">OK</string>
+    <string name="cm_disconnect_network">Disconnect Network</string>
+
+    <!-- Requested by Harman in Settings common file -->
+    <string name="cm_onstar_vehicle_hotspot_not_active">%1$s Wi-Fi Hotspot Inactive</string>
+    <string name="ui_onstar_1">OnStar</string>
+    <!-- This should be calibratable according to the the region -->
+
+
+    <!-- Sept Release Strings -->
+    <string name="cm_change_device_name_content_within_the_vehicle_reg_21_763_29">Change Phone Name Within the Vehicle (must be 1 – 14 characters)</string>
+    <!-- Existing String has been updated -->
+    <string name="cm_connect_android_auto_device_usb_content_lig_28_468_266">Plug in a phone with the Android Auto app installed.</string>
+    <!-- Existing String has been updated -->
+    <string name="cm_legacy_bluetooth_un_supported_popup_content_lig_28_629_266">Bluetooth pairing not supported for this device.</string>
+    <!-- Existing String has been updated -->
+
+    <string name="cm_appshop_big">%1$s</string>
+    <!-- This is being used by Harman -->
+    <string name="cm_onstar_advisor">Advisor</string>
+    <!-- This is being used by Harman -->
+
+
+    <!-- November Release -->
+
+    <string name="ui_dismiss">Dismiss</string>
+    <string name="cm_incompatible_device_med_28_684_38">Unsupported Device</string>
+    <!-- Existing String has been updated -->
+    <string name="cm_media">Media - %1$s</string>
+
+    <!-- December 2015 Release New Strings -->
+    <string name="cm_add_other_network_big_med_28_587_38">Add Other Network</string>
+    <string name="cm_add_other_network_content_lig_28_629_266">Only WPA/WPA2 secured Wi-Fi Networks can be added.</string>
+    <string name="cm_switch_devices_med_28_684_38">Switch Phones</string>
+    <string name="cm_switch_device_content1_lig_28_629_114">Connect %1$s as new phone?</string>
+    <string name="cm_switch_device_content2_lig_28_629_152">A current phone may be disconnected, moving any active calls to the handset.</string>
+    <string name="cm_projection_device_connected_med_28_684_38">%1$s Phone Connected</string>
+    <string name="cm_projection_device_content1_lig_28_629_114">Start %1$s from %2$s?</string>
+    <string name="ui_continue">Continue</string>
+    <string name="cm_secondary_phone_reg_28_579_38">Secondary Phone</string>
+    <string name="cm_secondary_phone_content_lig_21_579_29">Allow Bluetooth connection alongside another phone</string>
+    <string name="ui_save">Save</string>
+    <string name="cm_discard_reg_23_198_32">Discard</string>
+    <string name="cm_would_you_like_to_save_changes_med_28_684_38">Would you like to save changes?</string>
+    <string name="cm_no_connected_devices_reg_28_585_38">No Connected Devices</string>
+
+    <!-- December 2015 Release Updated Strings -->
+    <string name="cm_cannot_connect_to_open_wifi_networks">This network is not secure enough. Please choose a WPA/WPA2 secured Wi-Fi Network.</string>
+    <string name="cm_open_wifi_network_not_supported">Wi-Fi Network Not Supported</string>
+
+    <!-- March 2016 Release updated strings -->
+    <string name="cm_first_to_connect">First to Connect</string> <!-- Fixed 19787 & 25557 & 32317 -->
+    <!-- string is being re-used as per my18 updates -->
+    <string name="cm_connect_android_auto_device_usb_content">Plug in supported device to launch Android Auto.</string>
+    <!-- string is being re-used as per my18 updates -->
+
+
+    <!-- May 2016 MY18 8 Inch HD new strings added -->
+    <string name="cm_nfc_device_detected">NFC Device Detected</string>
+    <string name="cm_wifi_hotspot_ssid_length_content">Vehicle Wi-Fi Name must be 1 &#8211; 14 Characters</string>
+    <string name="cm_wifi_hotspot_password_length_content">Vehicle Wi-Fi Password must be 8 &#8211; 24 Characters</string>
+    <string name="ui_remove_remote">Remove Remote Access Ability</string>
+    <string name="cm_cc_removedevice_confirmation_popup_content">%1$s will no longer be able to remotely control system functionality or access vehicle data. Are you sure you want to cancel this access?</string>
+    <string name="cm_hotspot_data">Hotspot Data Sharing</string>
+    <string name="cm_hotspot_conflict_popup_content">Hotspot Data Sharing is not available while connected to a Wi-Fi network. Select Continue to disconnect from %1$s.</string>
+    <string name="cm_nfc_connection_unavail_while_driving">NFC Bluetooth pairing not available while driving.</string>
+    <string name="cm_wifi_wifinetwork_conflict_popup">Wi-Fi Networks list is not available while Hotspot data sharing is enabled. Select Continue to disable Hotspot data Sharing.</string>
+    <string name="cm_nfc_device_detected_content">Device is already paired.</string>
+    <string name="cm_apple_carplay">Apple Carplay</string>
+    <string name="cm_auto_show_projection_name">Auto-Show %1$s</string>
+    <string name="cm_auto_show_projection_content">Automatically show %1$s when connected wirelessly</string>
+    <string name="ui_no">No</string>
+    <string name="cm_yes">Yes</string>
+    <string name="cm_auto_show_content">Show %1$s now from %2$s?</string>
+    <string name="cm_wireless_device_connected">Wireless %1$s Device Connected</string>
+    <string name="cm_auto_show_content1">Remember decision for this device?</string>
+    <string name="cm_remote_access">Remote Access</string>
+    <string name="cm_remote_access_small">Remote Access</string>
+    <string name="cm_device_remote_access">Device Remote Access</string>
+    <string name="cm_remote_access_content">Allowed devices can control system functionality and access data</string>
+    <string name="cm_remote_access_content_small">Allowed devices can control system functionality and access data</string>
+    <string name="cm_remote_access_content1">Devices cannot control system functionality or access data</string>
+    <string name="cm_device_remote_access_content">Only devices with an installed %1$s app linked to this vehicle can request Remote Access.</string>
+    <string name="cm_device_remote_access_content_small">Only devices with an installed %1$s app linked to this vehicle can request Remote Access.</string>
+    <string name="cm_device_permissions">Device Permissions</string>
+    <string name="cm_no_devices">No Devices</string>
+    <string name="cm_remote_access_on_content">Utilizing the vehicle\'s Wi-Fi hotspot or a USB port, devices can interact with certain radio system features and record vehicle data.</string>
+    <string name="cm_remote_access_on_content_small">Utilizing the vehicle\'s Wi-Fi hotspot or a USB port, devices can interact with certain radio system features and record vehicle data.</string>
+    <string name="cm_remote_access_off_content">Devices cannot control radio system or record vehicle data.</string>
+    <string name="cm_cc_disabled_content">Devices cannot control system functionality or access data</string>
+    <string name="cm_connect_projection_type_device_to_usb">Connect %1$s Device to USB</string>
+    <string name="cm_connect_projection_device_to_usb_content">Preferred for better connection.\nMay also enable future wireless connections.</string>
+    <string name="cm_connecting_to_network">Connecting to %1$s</string>
+    <string name="cm_cc_wifi_services_disabled_content">Wi-Fi services is currently disabled. Enable Wi-Fi Services to enable Remote Access over the vehicle\'s Wi-Fi hotspot.</string>
+    <string name="cm_wifi_services_small">Wi-Fi Services</string>
+
+    <!-- May 2016 MY18 8 Inch HD Updated strings -->
+    <string name="cm_wifi_services_onstar_hotspot_small">Wi-Fi Hotspot</string>
+    <string name="cm_select_mirror_link_device">Select a %1$s Device</string>
+    <string name="cm_tap_to_pair_ready">Tap to Pair Ready (NFC)</string>
+    <string name="cm_steps_to_pairing_with_nfc">NFC Pairing Steps</string>
+    <string name="cm_unlock_phone">1. Unlock phone</string>
+    <string name="cm_enable_nfc_on_phone">2. Enable NFC on phone.</string>
+    <string name="cm_enable_bluetooth_on_phone">3. Enable Bluetooth on phone.</string>
+    <string name="cm_hold_phone_to">3. Hold phone near NFC sensor in vehicle\n (refer to owner’s manual for sensor location).</string>
+    <string name="cm_changes_not_saved">Changes Not Saved</string>
+    <string name="cm_projection_device_content2_lig_28_629_152">%1$s on %2$s will end, and active calls may be transferred to the handset.</string>
+    <!-- Deprecated -->
+    <string name="cm_swithc_device_content2">A current phone may be disconnected, moving any active calls to the handset.</string>
+    <!-- Deprecated -->
+
+
+    <!-- 14-nov-2016 -->
+    <string name="cm_enable_baidu_carlife_content">Once this feature is enabled, a device may launch Baidu CarLife when connected to USB.\n\nApple CarPlay and Android Auto will be disabled.</string>
+    <string name="cm_reenable_carplay_content">Once this feature is enabled, a device may launch Apple CarPlay when connected to USB.\n\nBaidu CarLife will be disabled.</string>
+    <string name="cm_reenable_baidu_carlife_content">Once this feature is enabled, a device may launch Apple CarPlay wirelessly or when connected to USB.\n\nBaidu CarLife will be disabled.</string>
+    <string name="cm_enable_baidu_carlife_device_content">Once this feature is enabled, a device may launch Android Auto when connected to USB.\n\nBaidu CarLife will be disabled.</string>
+    <string name="cm_enable_baidu_carlife_content1">Once this feature is enabled, a device may launch Baidu CarLife when connected to USB.\n\n%ProjectionTypeA% on %Device A% will end, and active calls may be transferred to the handset.</string>
+    <string name="cm_enable_baidu_carlife">Enable Baidu CarLife</string>
+    <string name="cm_confirm_bluetooth_pairing_code">Confirm Bluetooth Pairing Code</string>
+    <string name="cm_check_your_device">Check your device to continue.</string>
+    <string name="cm_connect_baidu">Connect Baidu CarLife Device to USB</string>
+    <string name="cm_connect_baidu_content">Plug in a device with the CarLife app installed.</string>
+    <string name="cm_minimum_8_characters_req_reg_21_763_29">Minimum 8 Characters Required</string>
+
+    <!-- Updater Strings -->
+    <string name="ui_cancel_small">Cancel</string>
+    <string name="ui_retry">Retry</string>
+    <string name="ui_ok">OK</string>
+    <string name="updater_vehicle_updates">Vehicle Updates</string>
+    <!-- <string name="updater_vehicle_updates_long">Vehicle Updates</string> -->
+    <string name="updater_details">Details</string>
+
+    <plurals name="updater_install_time">
+        <item quantity="zero">Install time: %1$d mins</item>
+        <item quantity="one">Install time: %1$d min</item>
+        <item quantity="two">Install time: %1$d mins</item>
+        <item quantity="few">Install time: %1$d mins</item>
+        <item quantity="many">Install time: %1$d mins</item>
+        <item quantity="other">Install time: %1$d mins</item>
+    </plurals>
+
+    <string name="updater_install_time_big">Install time:</string>
+    <string name="updater_active_safety_content1">The vehicle will need to remain parked and turned off during the update.</string>
+    <string name="updater_remind_me_later_long">Remind Me Later</string>
+    <string name="updater_download_size">Download size:</string>
+    <string name="updater_connected_to">Connected to:</string>
+    <string name="updater_decline_update">Decline\nUpdate</string>
+    <string name="updater_pause_download">Pause Download</string>
+    <string name="updater_cancel_download_long">Cancel Download</string>
+    <string name="updater_resume_download_long">Resume Download</string>
+    <string name="updater_download_paused">Download Paused</string>
+    <string name="updater_vehicle_update_download_resuming">Vehicle Update Download Resuming</string>
+    <string name="updater_vehicle_update_successful">Vehicle Update Successful</string>
+    <string name="updater_vehicle_update_downloading">Vehicle Update Downloading</string>
+    <string name="updater_reminder_set">Reminder Set</string>
+    <string name="updater_reminder_cleared">Reminder Cleared</string>
+    <string name="updater_about">About</string>
+    <string name="updater_map_database">Map Database</string>
+    <string name="updater_open_source_software">Open Source Software</string>
+    <string name="ui_preferences_big">Preferences</string>
+    <string name="updater_download_when_connected_content">Download when connected to the following networks:</string>
+    <string name="updater_linksys">Linksys</string>
+    <string name="ui_onstar_long">OnStar</string>
+    <string name="updater_select_reminder_time">Select Reminder Time</string>
+    <string name="ui_ok_long3">OK</string>
+    <!-- <string name="ui_dismiss">OK</string> -->
+    <string name="updater_checking_for_updates">Checking for updates.\nLast checked for updates on <xliff:g example="February 12, 2016" id="date">%1$s</xliff:g> at <xliff:g example="4:15 PM" id="time">%2$s</xliff:g>.</string>
+    <string name="updater_no_updates_available">No updates available.\nLast checked for updates on <xliff:g example="February 12, 2016" id="date">%1$s</xliff:g> at <xliff:g example="4:15 PM" id="time">%2$s</xliff:g>.</string>
+    <string name="updater_connection_failure_content">Check your device\'s network settings or your remaining %1$s data. Or, you can try connecting to a different Wi-Fi network.</string>
+    <string name="ui_retry_long">Retry</string>
+    <string name="updater_decline_update_long">Decline Update</string>
+    <string name="updater_decline_update_content">If you decline this update, you will no longer be able to install it. If you would like to install this update later, you will need to contact your dealer for assistance.</string>
+    <string name="updater_please_confirm">Important Notice</string>
+    <string name="updater_install_now">Install Now</string>
+    <string name="updater_update_unsuccessful">Update Unsuccessful</string>
+    <string name="ui_terms_and_conditions_long">Terms and Conditions</string>
+    <!-- <string name="updater_terms_and_Conditions_content">You must accept the Terms and Conditions or not install this update. If you\'d like to accept, press \'Agree\'. If not, press cancel and you will not receive a software update.</string> -->
+    <string name="updater_terms_and_Conditions_content">You must accept the Terms and Conditions or not install this update. If you\'d like to accept, press \'Agree\'. If not, press Cancel and you will not receive a software update.</string>
+    <string name="updater_vehicle_update_successful_content">The software update has completed. %1$s</string>
+    <string name="updater_update_failed">Update Failed</string>
+    <string name="updater_update_failed_content">The software update has failed. Contact your dealer for assistance with installing this update.</string>
+    <string name="updater_vehicle_must_be_in_park">Vehicle Must Be in Park</string>
+    <string name="updater_vehicle_must_be_in_park_content">The vehicle must be in Park to apply system updates.</string>
+    <string name="updater_invalid_update_file">Invalid Update File</string>
+    <string name="updater_invalid_vin">Invalid VIN</string>
+    <string name="updater_insufficient_battery">Low Battery</string>
+    <string name="updater_insufficient_battery_content">The updates cannot be applied when the battery is low. Charge the battery by running the vehicle or connect to a charger.</string>
+    <string name="updater_restart_system">Restart System</string>
+    <string name="updater_restart_system_content">The system must restart in order to complete the update process. Turn the vehicle off, open and close the driver door, and wait at least for two minutes before starting the vehicle.</string>
+    <string name="updater_installing_update">Installing Update</string>
+    <string name="updater_vehicle_in_park">Vehicle in Park</string>
+    <string name="updater_vehicle_off">Vehicle Off</string>
+    <string name="updater_remove_key">Remove Key</string>
+    <string name="updater_programming">Programming</string>
+    <string name="updater_update_complete_small">Update Complete</string>
+    <string name="updater_update_complete_big">Update Complete</string>
+    <string name="updater_please_turn_the_vehicle_ignition_off">Turn the vehicle ignition off.</string>
+    <string name="updater_please_remove_key">Remove the key.</string>
+    <string name="updater_vehicle_was_updated_successfully">Vehicle update successful.</string>
+    <string name="updater_system_will_turn_off_content">System will turn off automatically in a few moments.</string>
+    <string name="updater_vehicle_updated_not_successful">Vehicle update unsuccessful.</string>
+    <string name="updater_please_place_vehicle_in_park">Place vehicle in Park.</string>
+    <string name="updater_vehicle_is_now_programming">Vehicle is now programming.</string>
+    <string name="updater_est_time_remaining">Time Remaining:</string>
+    <string name="updater_donot_shift_the_vehicle_content">Do not shift the vehicle out of Park, remove the USB drive, or turn engine off as the update will be interrupted.</string>
+    <string name="updater_vehicle_taken_out_of_park_content">The vehicle was taken out of Park. Current update file is completing. Do not remove USB drive until update has completed.</string>
+    <string name="updater_vehicle_update_is_available">Vehicle update is available.</string>
+    <string name="ui_learn_more_big">Learn More</string>
+    <string name="updater_install_update_big">Install Update</string>
+    <string name="updater_install_update_short">Install Update</string>
+    <string name="updater_vehicle_update_is_ready_to_download">Vehicle update is ready to download.</string>
+    <string name="updater_start_download_big">Start Download</string>
+    <string name="updater_vehicle_update_download_failed">Vehicle update download failed.</string>
+    <string name="updater_vehicle_update_canceled">Vehicle update canceled.</string>
+    <string name="updater_vehicle_update_is_Ready_to_resume">Vehicle update is ready to resume.</string>
+    <string name="updater_est_time_remaining_short">Time Remaining:</string>
+    <string name="updater_vehicle_cannot_be_shifted_content">The vehicle cannot be shifted out of Park until the update is complete. Do not remove the USB drive or turn engine off as the update will be interrupted.</string>
+    <string name="updater_ignition_in_run">Ignition in Run</string>
+    <string name="updater_decline_update_big">Decline Update</string>
+    <string name="updater_pass">PASS</string>
+    <string name="updater_fail">FAIL</string>
+    <string name="updater_invalid_update_file_content">The following update file is invalid.\n%1$s</string>
+    <string name="updater_invalid_vin_content">The following update file is not valid for use on this vehicle.\n%1$s</string>
+    <string name="updater_device_registration">Device Registration</string>
+    <string name="updater_status">Status:</string>
+    <string name="updater_unregistered">Unregistered</string>
+    <string name="updater_registered">Registered</string>
+    <string name="updater_your_system_is_not_registered_content">Your system is not registered and may experience errors when using %1$s and connected services.\n\nContact your dealer to correct this issue.</string>
+    <string name="updater_your_system_register">Your system is successfully registered and can use %1$s and connected services.</string>
+    <string name="updater_wifi_networks">Wi-Fi Networks</string>
+    <string name="updater_p">P</string>
+    <string name="updater_rndl">RNDL</string>
+    <string name="updater_update_unsuccessful_contentinfo">The software update was unsuccessful.\nYou may retry the update the next time you place your vehicle into Park. If the error persists, contact your dealer.</string>
+
+    <plurals name="updater_mins">
+        <item quantity="zero">~%1$d mins</item>
+        <item quantity="one">~%1$d min</item>
+        <item quantity="two">~%1$d mins</item>
+        <item quantity="few">~%1$d mins</item>
+        <item quantity="many">~%1$d mins</item>
+        <item quantity="other">~%1$d mins</item>
+    </plurals>
+
+    <string name="updater_update_file_missing">Insert device containing system update file %1$s to begin update process.</string>
+    <string name="updater_active_safety_long">Active Safety</string>
+    <string name="updater_open_source_software_small">Open Source Software</string>
+    <string name="updater_resume_download_small">Resume Download</string>
+    <string name="updater_start_download_small">Start Download</string>
+    <string name="ui_connection_failure_long">Connection Error</string>
+    <string name="updater_active_safety">Active Safety</string> <!-- This is dynamic This will not be translated -->
+
+    <string name="updater_please_apply_the_park_brake">Please apply the park brake.</string>
+    <string name="updater_update_failed_small">Update Failed</string>
+    <string name="updater_active_safety_content3">The vehicle will need to remain parked with the engine running during the update.</string>
+    <string name="updater_engine_running">Engine Running</string>
+    <string name="updater_critical_vehicle_update_title">Critical Vehicle Update</string>
+    <string name="updater_critical_install_within">Update needs to be installed in <xliff:g example="2 days" id="time">%1$s</xliff:g></string>
+    <string name="updater_critical_msg">Update may take up xx minutes. Park in a secure location. Your vehicle will be disabled, cannot be driven, and features like door locks, windows, and chimes may not work. If you leave the vehicle, do no lock occpants inside.</string>
+    <string name="updater_install_key_off">Install at Key Off</string>
+    <string name="updater_critical_install_next_time">Update needs to be installed next time vehicle turns off.</string>
+    <string name="updater_critical_install_at_key_off_toast">Update Will Install Next Time Vehicle is Turned Off</string>
+    <string name="updater_critical_user_consent_title">Vehicle Update in %1$d Seconds</string>
+    <string name="updater_critical_user_consent">To Delay Installation, Start Vehicle.\n%1$s</string>
+
+    <plurals name="updater_madai_mins">
+        <item quantity="zero">%1$d mins</item>
+        <item quantity="one">%1$d min</item>
+        <item quantity="two">%1$d mins</item>
+        <item quantity="few">%1$d mins</item>
+        <item quantity="many">%1$d mins</item>
+        <item quantity="other">%1$d mins</item>
+    </plurals>
+    <plurals name="updater_madai_hrs">
+        <item quantity="zero">%1$d hours</item>
+        <item quantity="one">%1$d hour</item>
+        <item quantity="two">%1$d hours</item>
+        <item quantity="few">%1$d hours</item>
+        <item quantity="many">%1$d hours</item>
+        <item quantity="other">%1$d hours</item>
+    </plurals>
+    <plurals name="updater_madai_days">
+        <item quantity="zero">%1$d days</item>
+        <item quantity="one">%1$d day</item>
+        <item quantity="two">%1$d days</item>
+        <item quantity="few">%1$d days</item>
+        <item quantity="many">%1$d days</item>
+        <item quantity="other">%1$d days</item>
+    </plurals>
+
+    <string name="ui_downloading_update">Downloading Update</string>
+    <!-- This is being used by Harman -->
+    <string name="ui_connections">Connections</string>
+    <!-- This is being used by Harman -->
+
+    <string name="updater_last_checked_for_updates_on">Last checked for updates on %1$s at %2$s.</string>
+    <!-- This is being used by Harman -->
+
+    <string name="ui_cancel_big">Cancel</string>
+    <!-- This is being used by Harman -->
+
+    <string name="updater_vehicle_updates_long">Vehicle Updates</string>
+    <!-- THis is being used by Harman.GIS_509_Updater_UI_v4.4_09DEC2016 section 3.1.1*MY17 Available Updates View Figure 3.1.1.1 Software Updater Main View -->
+    <string name="updater_agree">Agree</string>
+    <!-- This is being used by Harman -->
+    <!-- New String -->
+
+    <string name="updater_reminder_string_hours">%1$d hours</string>
+    <string name="updater_reminder_string_days">%1$d days</string>
+    <string name="ui_kph">km/h</string>
+    <string name="updater_remain_in_vehicle_content">You do not need to remain in the vehicle. If you leave, don’t forget your keys.</string>
+    <string name="ui_connect">Connect</string>
+    <string name="colon">:</string>
+    <string name="settings_teen_driver_plus">%1$s +</string>
+    <string name="wifi_connecting">Connecting …</string>
+    <string name="wifi_security_psk_generic">@string/wifi_security_wpa_wpa2</string>
+    <string name="wifi_security_short_eap">802.1x</string>
+    <string name="wifi_security_wpa">WPA PSK</string>
+    <string name="wifi_security_short_psk_generic">@string/wifi_security_short_wpa_wpa2</string>
+    <string name="wifi_security_short_wpa_wpa2">WPA/WPA2</string>
+    <string name="wifi_security_wpa_wpa2">WPA/WPA2 PSK</string>
+    <string name="wifi_security_wpa2">WPA2 PSK</string>
+    <string name="wifi_wps_available_first_item">WPS available</string>
+    <string name="wifi_wps_available_second_item">\u0020(WPS available)</string>
+    <string name="cm_vehicle_hotspot_password_small">**********</string>
+    <string name="cm_connect_to_network">Connect to Network</string>
+    <string name="settings_variable_volume_setting">Variable Volume Setting</string>
+    <string name="hyphen">–</string>
+    <string name="audio_no_content_available">No Content Available</string>
+    <string name="ui_users">Users</string>
+    <string name="ui_please_wait_reg_28_500_38_s_cen">Please Wait</string>
+    <string name="ui_feature_unavailable_while_driving_reg_21_559_32_s_cen">Feature unavailable while driving.</string>
+    <string name="ui_cancel_lig_28_390_38_s_cen">Cancel</string>
+    <string name="ui_delete_lig_28_390_38_s_cen">Delete</string>
+    <string name="ui_delete_lig_28_500_38_s_cen">Remove</string>
+    <string name="personalization_wizard_sync_no_content">If you do not connect your profile, your settings will not be backed up online, and cannot move to other vehicles.</string>
+    <string name="pz_key_1_reg_23_62_32_s_1_cen">1</string>
+    <string name="pz_key_2_reg_23_62_32_s_1_cen">2</string>
+    <string name="ui_audio_small">Audio</string>
+    <string name="ui_phone_small2">Phone</string>
+    <string name="ui_nav1">Nav</string>
+    <string name="ui_climate">Climate</string>
+    <string name="ui_apple_carplay_short1">Apple CarPlay</string>
+    <string name="ui_android_auto">Android Auto</string>
+    <string name="ui_connection_failure">Connection Error</string>
+    <string name="ui_retry_small">Retry</string>
+    <string name="ui_wifi_network">Wi-Fi\nNetworks</string>
+    <string name="ui_connection_failure_content">Check your device\'s network settings or your remaining %1$s data. Or, you can try connecting to a different Wi-Fi network.</string>
+    <string name="cm_add_device_bluetooth">Bluetooth</string>
+    <string name="settings_coloum">:</string>
+
+    <!-- Deprecated -->
+    <string name="personalization_remove_profile">Remove Profile</string>
+    <!-- String Modified -->
+    <!-- Strings based on june release -->
+    <string name="up_wifi_networks_lig_28_396_38">Wi-Fi Networks</string>
+    <string name="up_waiting_for_next_part_reg_21_331_29">Waiting for next part</string>
+    <string name="up_download_suspend_content_reg_21_675_29">Update divided into parts for download. Each part automatically starts when available. This could take up to several hours.</string>
+    <string name="up_release_details_lig_28_605_38">Release Details</string>
+    <string name="up_updater_reminder_unavailable_content_med_23_560_64">Reminder Unavailable While Downloading</string>
+    <string name="up_updater_terms">Terms and Conditions \n\n%1$s</string>
+    <string name="up_agree_lig_28_273_38">Agree</string>
+    <string name="up_disagree_lig_28_273_38">Disagree</string>
+    <string name="updater_system_will_turn_off_content_long">System will turn off automatically in a few moments.</string>
+    <string name="up_updater_vehicle_updates_finished_content_med_23_560_64">Vehicle Update Finished Downloading</string>
+    <string name="on_no_updates_avail_lig_28_628_38">No updates available.</string>
+    <string name="up_device_registration_lig_28_98_38">Device Registration</string>
+
+    <!-- New String -->
+    <string name="up_engine_running_23_373_32_s_1_lef">Engine Running</string>
+    <string name="up_start_the_engine_23_394_64_s_2_lef">Start the engine</string>
+    <!-- copy translation from updater_start_the_engine -->
+    <string name="up_remain_in_vehicle_content_23_394_191_s_4_lef">You do not need to remain in the vehicle. If you leave, don’t forget your keys.</string>
+    <string name="updater_unable_to_update">Unable to Update</string>
+    <string name="updater_unable_to_update_content">Vehicle conditions are not ideal at this time to proceed with this update. Retry the update next time you place your vehicle into Park. If conditions persist, contact your dealer.</string>
+    <!-- New String -->
+    <string name="updater_update_cancelled">Vehicle Update Canceled</string>
+    <string name="updater_file_not_available">File Not Available</string>
+    <string name="updater_file_not_available_content">Certain software materials for this vehicle could not be updated. Contact your nearest dealer for assistance.</string>
+    <string name="updater_license_compliance">License Compliance Material</string>
+    <string name="updater_license_compliance_content">[***NOTE*** Supplier to provide appropriate info and notices and directions to supplier\u2019s websites in this area of the screen.]</string>
+    <!-- May release -->
+    <string name="updater_12_hours">%1$s hours</string>
+    <string name="updater_24_hours">%1$s hours</string>
+    <string name="updater_2_days">%1$s days</string>
+    <string name="updater_7_days">%1$s days</string>
+    <string name="updater_vehicle_update_ready_content">Download Complete</string>
+    <string name="up_download_new_updates_lig_28_570_68">Download New Updates in the Background</string>
+
+    <!-- **************************************************************************Additional Strings******************************************************************************************* -->
+
+    <string name="settings_register">Setup</string>
+    <string name="cm_sharing_data_connected_devices_short">Sharing data with connected devices.</string>
+    <string name="cm_phone_favorite">Favorite Phone</string>
+    <string name="cm_onstar_vehicle_hotspot_not_active_content1">This service requires a data plan. Press the %1$s button or push the blue %2$s button to speak with an %2$s Advisor.</string>
+    <string name="cm_legacy_bluetooth_pairing_not_supported_med_28_684_38">Legacy Bluetooth Pairing Not Supported</string>
+    <string name="cm_legacy_bluetooth_pairing_not_supported_content_lig_28_579_114">This device may not be supported.</string>
+    <string name="cm_device_connection_error">Device Connection Error</string>
+    <string name="cm_device_connection_error_content">Please try connecting device again.</string>
+    <string name="cm_apple_carplay_small">Apple CarPlay</string>
+    <string name="cm_android_auto_long">Android Auto</string>
+    <string name="cm_wep">WEP</string>
+    <string name="cm_purchase_lig_21_503_29">Purchase</string>
+    <string name="cm_wpa_wpa2">WPA/WPA2</string>
+    <string name="cm_mirrolink_short">MirrorLink</string>
+    <!-- Deprecated -->
+    <string name="cm_android_auto_small">Android Auto</string>
+    <!-- Deprecated -->
+    <string name="cm_apple_carplay_short">Apple CarPlay</string>
+    <!-- Deprecated -->
+    <string name="cm_phone_or_media">Bluetooth</string>
+    <string name="personalization_edit_the_vehicle_name_content">This will be the name of the vehicle shown on the web portal and mobile application.</string>
+    <string name="ui_name_big">Name</string>
+    <string name="personalization_edit_your_full_name_content">This will become the user name displayed in the vehicle.</string>
+    <string name="personalization_profile_identifiers">Profile Identifiers</string>
+    <string name="personalization_secured_by_pin">Secured by PIN</string>
+    <string name="personalization_gm_account">Vehicle Account</string>
+    <string name="personalization_profile_picture">Profile Picture</string>
+    <string name="personalization_accounts">Accounts</string>
+    <string name="personalization_gm_account_information">Vehicle Account Information</string>
+    <string name="personalization_vehicle_name">Vehicle Name</string>
+    <string name="personalization_vehicle_key_profile_number">Vehicle Key %1$s</string>
+    <string name="personalization_profile_identifiers_short">Profile Identifiers</string>
+    <string name="personalization_edit_your_full_name">Edit Your Full Name</string>
+    <string name="personalization_edit_the_vehicle_name">Edit Vehicle Name</string>
+    <string name="ui_security_long1">Security</string>
+
+    <string name="personalization_delete_profile">Delete Profile</string>
+    <string name="ui_security">Security</string>
+    <string name="personalization_cannot_change_user">Cannot change users while in a phone call.</string>
+
+
+    <!-- Extras from sw1080 classification -->
+    <string name="cm_set_phone_favorite_content1">The Favorite Phone connects before other phones.</string>
+    <string name="cm_set_favorite_phone">Favorite Phone</string>
+    <!-- Deprecated -->
+    <string name="cm_phone_bluetooth_long">Bluetooth</string>
+    <!-- Deprecated -->
+    <string name="cm_phone_bluetooth">Bluetooth</string>
+    <!-- Deprecated -->
+    <string name="cm_media_bluetooth">Bluetooth</string>
+    <string name="cm_connection_type">Connection Type</string>
+    <string name="cm_connect_over_wifi_direct">Connect via Wi-Fi Direct</string>
+    <string name="cm_connect_over_wifi">Connect via Wi-Fi</string>
+    <string name="cm_use_wifi_next_time">Use Wi-Fi Next Time</string>
+    <string name="cm_connect_wirelessly_next_time">Connect Wirelessly Next Time</string>
+    <string name="cm_connecting_over_usb_content">Certain apps will be displayed on this screen when supported by the device. Connecting via USB is suggested as it may enable your device to connect wirelessly in the future.</string>
+    <string name="cm_connect_wirelessly_next_time_content">Enable connection to %1$s via Wi-Fi when available.</string>
+    <string name="ui_skip_long">Skip</string>
+    <string name="updater_install_time">Install time: %1$d mins</string>
+    <string name="updater_centerstack_long">CenterStack</string>
+    <string name="updater_updates_ready_to_install">Updates Ready to Install</string>
+    <string name="updater_update_history">Update History</string>
+    <string name="updater_update_now">Update Now</string>
+
+    <!--     BDD64290.002.2016.05.25.MY19.8INCH.HIGHRES.HARMAN.PRODUCTION.zip\GIS-512 Connection Manager\ConnectionManager_Theme_B_MY19_8inch\res\values\strings.xml -->
+    <string name="cm_continue_holding_device">Continue Holding Device</string>
+    <string name="cm_hold_device_against_the_nfc_sensor_longer">Hold Device Against the NFC Sensor Longer</string>
+    <string name="cm_nfc_confirm_bluetooth_pairing_code">Confirm Bluetooth Pairing Code</string>
+    <string name="cm_nfc_confirm_bluetooth_pairing_content">Check your device to continue.</string>
+    <string name="cm_nfc_unknown_device">Unknown device</string>
+
+    <!-- END -->
+
+
+    <!-- Companion app -->
+    <string name="consent_popup_title">Device Requesting Remote Access</string>
+    <string name="consent_popup_content_device_name">Granting access allows %s to:</string>
+    <string name="consent_popup_content_device_description">Share Phone contacts and call history with your vehicle\nAccess and use vehicle and driving information such as location, speed, warnings, and alerts</string>
+    <string name="consent_popup_checkbox_text">Remember decision for this device</string>
+    <string name="consent_popup_action_denied">Request Denied</string>
+    <string name="consent_popup_button_allow">Allow</string>
+    <string name="consent_popup_button_deny">Deny</string>
+    <string name="vca_notification_multiple_connection">Multiple Devices Remotely Connected</string>
+    <string name="vca_notification_single_connection">Remotely Connected</string>
+    <string name="settings_device_remote_access">Device Remote Access</string>
+    <string name="settings_device_remote_permissions">Device Permissions</string>
+    <string name="settings_device_remote_remove_header">Remove Remote Access Ability</string>
+    <string name="settings_device_remote_remove_description">%s will no longer be able to interact with vehicle features or access vehicle data. Are you sure you want to cancel this acces?</string>
+    <string name="settings_device_remote_description">Remote Access controls if devices with an installed Onstar app, linked to this vehicle by USB or the Wi-Fi hotspot can interact with certain vehicle features and record vehicle data.</string>
+    <string name="settings_remote_access_list_no_devices">No Devices</string>
+    <string name="settings_remote_access_list_footer">Only devices with an installed OnStar app linked to this vehicle can request Remote Access</string>
+    <string name="settings_device_remote_no_devices">No Devices</string>
+    <string name="settings_device_remote_wifi_is_disabled_warning">Wi-Fi services is currently disabled.\nEnable Wi-Fi Services to enable Remote Access over\nthe vehicle’s Wi-Fi hotspot.</string>
+    <string name="settings_short_remote_access">Remote Access</string>
+    <string name="settings_remote_access_allowed_content">Allowed devices can interact with vehicle features and access data</string>
+    <string name="settings_remote_access_denied_content">Devices cannot control interact with vehicle features or access data</string>
+    <!-- END -->
+
+    <string name="ui_collection">Collection</string>
+    <string name="ui_app_shop">Shop</string>
+    <string name="cm_pairing_code">000000</string>
+    <string name="cm_connecting_nfc">Connecting NFC Device</string>
+    <string name="cm_connecting_nfc_device">Continue Holding Device</string>
+    <string name="cm_hold_nfc">Hold Device Against the\nNFC Sensor Longer</string>
+    <string name="settings_baidu_carlife">Baidu CarLife</string>
+    <string name="settings_vmode">V-Mode</string>
+    <string name="settings_zmode">Z-Mode</string>
+    <string name="settings_mymode">MyMode</string>
+    <string name="settings_link_to_drive_mode_gb">Link to Drive Mode</string>
+    <string name="settings_demo_mode_gb">Demo Mode</string>
+
+    <!-- NFC : request this string from RAMP -->
+    <string name="cm_nfc_help">NFC Help</string>
+    <string name="cm_bluetooth_device">""</string> <!-- Fixed 25114 -->
+    <string name="settings_park_assist_on_with_towbar">Parking Assist Towbar specifies if Park Assist will work properly when a small item, such as a hitch ball, is attached to the vehicle hitch.</string> <!-- Fixed 25115 -->
+    <string name="settings_front_pedestrian_detection_content_1">Front Pedestrian Braking alerts you when a collision is imminent with a pedestrian detected directly ahead and, if necessary, automatically applies the brakes or steers to help reduce the collision\’s severity or avoid the collision.</string> <!-- Fixed 30899 -->
+
+
+    <string name="settings_rear_pedestrian_detection_content1">Rear Pedestrian Detection alerts you
+        while in reverse gear when a collision is imminent with a pedestrian detected directly
+        behind %1$s to help reduce the collision’s severity or avoid the collision.
+</string>
+
+
+    <string name="settings_automatic_entry">Automatic Entry/Egress</string>
+    <string name="settings_automatic_entry_content">Automatic Entry/Egress Assist specifies if the vehicle will automatically lower to make it easier to enter or exit the vehicle.</string>
+
+
+    <string name="settings_forward_collision_system_content">Forward Collision System can alert you to a potential crash with a detected vehicle ahead and, if you haven’t already, it can apply brakes to help reduce a collision’s severity.</string>
+    <string name="settings_forward_collision_system_content_brake_and_steer">Forward Collision System can alert you to a potential crash with a detected vehicle ahead and, if you haven\'t already, it can apply brakes and steer to help reduce a collision\'s severity.</string>
+
+
+    <string name="Settings_onstar_wifi_disabled_title">%1$s Wi-Fi Hotspot Disabled</string>
+    <string name="Settings_onstar_wifi_disabled_content">Push the blue %1$s button to speak with an %1$s Advisor.</string>
+
+    <!-- CR 1530805 -->
+    <string name="settings_privacy_location_services_content_1">Location Services allows apps and services to use your vehicle location, which can improve performance. Selecting Off prevents in-vehicle apps from accessing your vehicle location. Other services, including emergency services and navigation, are not affected.</string>
+    <string name="settings_privacy_location_services_content_2">Location Services allows apps and services to use your vehicle location, which can improve performance. Selecting Off prevents apps and services, other than navigation and emergency services, from accessing your vehicle location.</string>
+
+    <!--CR 1347837-->
+    <string name="settings_power_liftgate">Power Liftgate</string>
+    <string name="settings_power_liftgate_description">Power Liftgate lets you decide what happens when you press the Power Liftgate switch.\n\nSelect Open Fully to enable power open and close capability to the full door height.\n\nSelect Open to Custom Height to enable power open and close, but open only to a specified height to prevent damage. To set the Custom Height open the liftgate to the desired height, then press and hold the open button on the outside of the liftgate until the turn signals flash and a beep sounds. See owner\'s manual for detailed instructions.\n\nSelect Off to disable the Power Liftgate switch and only allow manual operation of the liftgate.</string>
+    <string name="settings_power_liftgate_option_open_fully">Open Fully</string>
+    <string name="settings_power_liftgate_option_open_custom">Open to Custom Height</string>
+
+
+    <string name="settings_buckle_to_drive">Buckle to Drive</string>
+    <string name="settings_buckle_to_drive_description">Buckle to Drive prevents you from shifting out of Park if your driver or passenger seat belts are not buckled.</string>
+    <string name="settings_setting_restricted">Setting Restricted</string>
+    <string name="settings_setting_restricted_description">Buckle to Drive is turned On in Teen Driver settings. It cannot be turned off while Teen Driver is active.</string>
+
+    <string name="settings_language_content_dynamic">The system may also use the selected language for Voice Recognition and Audio Feedback.</string>
+    <string name="settings_location">Location</string>
+    <string name="settings_calendar">Calendar</string>
+    <string name="settings_contacts">Contacts</string>
+    <string name="settings_microphone">Microphone</string>
+
+    <string name="settings_sensors">Sensors</string>
+    <string name="settings_sms">SMS</string>
+    <string name="settings_used_by_application">Used By Application</string>
+    <string name="settings_other">Other</string>
+    <string name="settings_storage">Storage</string>
+    <string name="settings_stitcher">Stitcher</string>
+    <string name="settings_disable_permission">Disable Permission</string>
+    <string name="settings_disable_permission_content">If you turn off this permission, basic features of your infotainment system may no longer function as intended.</string>
+    <string name="settings_turn_off">Turn Off Permission</string>
+    <string name="settings_apps_allowing_phone">Apps Allowing Phone</string>
+    <string name="settings_messages">Messages</string>
+
+    <!-- start drive mode -->
+    <string name="drive_mode_v_mode">V</string>
+    <string name="drive_mode_z_mode">Z</string>
+    <string name="drive_mode_my_mode">My</string>
+    <string name="drive_mode_tour">Tour</string>
+    <string name="drive_mode_sport">Sport</string>
+    <string name="drive_mode_track">Track</string>
+    <string name="drive_mode_weather">Weather</string>
+    <string name="drive_mode_snow_ice">Snow / Ice</string>
+
+    <string name="drive_mode_edit_settings_v_mode">Switch to V-Mode or My Mode to edit Drive Mode settings.</string>
+    <string name="drive_mode_edit_settings_mymode">Switch to My Mode to edit Drive Mode settings.</string>
+    <string name="drive_mode_settings">Drive Mode settings are now editable.</string>
+    <string name="drive_mode_settings_will_be_affected">Suspension and Engine / Shift settings will be affected.</string>
+    <string name="drive_mode_settings_confirm">Confirm changes to Engine/Shift.</string>
+    <string name="drive_mode_settings_not_apply">Could not apply mode changes, try again later.</string>
+    <string name="drive_mode_edit_settings_z_mode">Switch to Z-Mode or My Mode to edit Drive Mode settings.</string>
+    <string name="drive_mode_ptm_off">PTM Off</string>
+    <string name="drive_mode_cancel">Cancel</string>
+    <string name="drive_mode_ok">OK</string>
+    <string name="drive_mode_disabled">TCS / ESC will be limited or disabled.</string>
+    <string name="drive_mode_steering">Steering</string>
+    <string name="drive_mode_suspension">Suspension</string>
+    <string name="drive_mode_engine">Engine/Shift</string>
+    <string name="drive_mode_brakefeel">Brake Feel</string>
+    <string name="drive_mode_enginesound">Engine Sound</string>
+    <string name="drive_mode_activeaero">Active Aero</string>
+    <string name="drive_mode_ptm">PTM</string>
+    <string name="drive_mode_edit">Edit</string>
+    <string name="drive_mode_tos_eso_confirmation">Suspension and Engine / Shift settings will be affected.\nTCS / ESC will be limited or disabled.</string>
+    <string name="drive_mode_subsystem_name">Subsystem Name</string>
+    <string name="drive_mode_title">%1$s Mode</string>
+    <string name="drive_mode_subsystem_engine_sound_content">Engine Sound adjusts the volume of engine noise. Engine sound gets louder as you move from Stealth through Track.</string>
+    <string name="drive_mode_subsystem_steering_content">The steering wheel offers better feedback but requires more effort as you move from Tour through Track.</string>
+    <string name="drive_mode_subsystem_suspension_content">Suspension adjusts the stiffness of the shocks and / or springs. The ride is more comfortable at lower settings and is stiffer at higher settings for better control.</string>
+    <string name="drive_mode_subsystem_awd_content">AWD allows adjustment of All Wheel Drive calibrations for optimized intended driving conditions. Tour gives best fuel economy, while Track gives best handling.</string>
+    <string name="drive_mode_subsystem_engine_content">Engine/Shift adjusts the throttle response and gear shifting. An increased throttle response enhances the acceleration feel as you move towards track, but with a comfort trade-off due to more aggressive gear shifting</string>
+    <string name="drive_mode_subsystem_brakefeel_content">Brake Feel adjusts the brake pedal response. Brake pedal travel decreases and caliper pressure increases as you move from Comfort through Track.</string>
+    <string name="drive_mode_subsystem_ptm_content">PTM controls vehicle performance systems for professional handling on race tracks. Traction Control and Stability Control are reduced as you move through Race. Changing PTM settings may also automatically change other settings.</string>
+    <string name="drive_mode_configuration">%1$s Mode Configuration</string>
+
+
+    <string name="fake_option_1">Option 1</string>
+    <string name="fake_option_2">Option 2</string>
+    <string name="fake_option_3">Option 3</string>
+    <string name="fake_option_4">Option 4</string>
+    <string name="fake_option_5">Option 5</string>
+    <string name="fake_option_6">Option 6</string>
+    <string name="fake_option_7">Option 7</string>
+    <string name="fake_description">Some descriptions</string>
+    <!-- end drive mode -->
+
+    <!-- 6/15 release integration -->
+    <string name="cm_connecting_to_apple_carplay">Connecting to Apple CarPlay</string>
+    <string name="cm_check_phone">Check phone for instructions and messages</string>
+    <string name="cm_connecting">Connecting...</string>
+    <string name="cm_confirm_connection_type">Confirm connection type(s) and tap device near NFC sensor to continue.</string>
+    <string name="cm_pair_as_blutooth_device">Pair as Bluetooth Device</string>
+    <string name="cm_device_connected">%1$s Connected</string>
+    <string name="cm_bluetooth_device_type">Bluetooth %1$s</string>
+    <string name="cm_exit">Exit</string>
+    <string name="cm_vehicle_wifi_hotspot">Vehicle Wi-Fi Hotspot</string>
+    <string name="cm_nfc_setup_failed">NFC Setup Failed</string>
+    <string name="cm_select_option_manually">Select an option below to manually connect to Bluetooth or to the vehicle hotspot</string>
+    <string name="cm_could_not_connect_using_nfc">Could not connect using NFC</string>
+    <string name="cm_connect_to_bluetooth_">Connect to\nBluetooth</string>
+    <string name="cm_connect_to_hotspot">Connect to\nHotspot</string>
+    <string name="cm_connect_to_hotspot_manually">Press Connect to Hotspot to manually connect to the Vehicle Hotspot</string>
+    <string name="cm_connect_to_hotspot1">Connect to Hotspot</string>
+    <string name="cm_pair_bluetooth_device1">Pair Bluetooth Device</string>
+    <string name="cm_pair_bluetooth_device_content1">Follow the steps below to connect your device to Bluetooth.\n\n1. Open Settings on your device, and select Bluetooth.\n2. Set Bluetooth to On.\n3. Select the vehicle name shown below from your device\'s Bluetooth Setting List.</string>
+    <string name="cm_nfc_device_connecting">NFC Device Connecting</string>
+    <string name="cm_keep_holding_device">Keep holding device near sensor.</string>
+    <string name="settings_manage_keypass_devices">Manage KeyPass Devices</string>
+    <string name="settings_keypass_no_paired_device_1">No Paired Device</string>
+    <string name="settings_keypass_vehicle_park_content">Make sure the key is in the vehicle, with the vehicle running and in park. Keep the screen bright and avoid reflected light to prevent glare.</string>
+    <string name="settings_keypass_manage">Manage KeyPass Devices</string>
+    <string name="settings_keypass_remove_all">Remove All</string>
+
+    <string name="cm_connected_phone">Connected Phone</string>
+    <string name="cm_change_phone">Change Phone</string>
+    <string name="cm_select_carplay_phone">Select Phone</string>
+
+    <!-- Wireless Projection -->
+    <string name="cm_wireless_android_auto">Wireless Android Auto</string>
+    <string name="cm_wireless_android_auto_subtext">Connect Android Auto wirelessly instead of by USB only</string>
+    <string name="wcp_content">Connect via Apple CarPlay instead of Bluetooth</string>
+
+    <!-- Toast informing that storage unmount operation was successful. [CHAR LIMIT=64]-->
+    <string name="storage_unmount_success"><xliff:g example="SD card" id="name">%1$s</xliff:g> is safely ejected</string>
+    <!-- Toast informing that storage unmount operation failed. [CHAR LIMIT=64]-->
+    <string name="storage_unmount_failure">Couldn\u2019t safely eject <xliff:g example="SD card" id="name">%1$s</xliff:g></string>
+
+    <string name="settings_select_time_zone">Select Time Zone</string>
+    <!-- settings new strings added on 26/09/2018-->
+    <string name="app_name">Settings</string>
+    <string name="submit">Submit</string>
+    <string name="select_theme">Please Select Theme</string>
+    <string name="RTL">RTL</string>
+    <string name="LHD">LHD</string>
+    <string name="RHD">RHD</string>
+    <string name="layout_direction">Select Layout Direction</string>
+    <string name="info_3.5c_mode">Info 3.5c Mode</string>
+    <string name="skew">Skew</string>
+    <string name="enable">Enable</string>
+    <string name="disable">Disable</string>
+    <string name="theme_cadillac">Cadillac UI</string>
+    <string name="theme_non_cadillac">Non-Cadillac UI</string>
+    <string name="info_3.5c_curve_mode">Info 3.5c Curve Mode</string>
+    <string name="ui_configuration">Config</string>
+    <!--Launch screen tab layout strings-->
+    <string name="ui_apps">Apps</string>
+    <string name="ui_vehicle_caps">Vehicle</string>
+    <string name="ui_system_caps">System</string>
+    <string name="ui_personal_caps">Personal</string>
+
+    <!--settings system tab layout strings-->
+    <string name="settings_time_date_big">Time / Date</string>
+    <string name="settings_language_big">Language</string>
+
+    <string name="settings_sounds_header">Sounds</string>
+
+    <string name="settings_phone">Phone</string>
+    <string name="ui_wifi_networks_short">Wi-Fi Networks</string>
+    <string name="ui_wifi_hotspot">Wi-Fi Hotspot</string>
+    <string name="settings_privacy">Privacy</string>
+
+    <string-array name="system_data">
+        <item>@string/settings_time_date_cadillac</item>
+        <item>@string/settings_language_big</item>
+        <item>@string/settings_phone</item>
+        <item>@string/ui_wifi_networks_short</item>
+        <item>@string/ui_wifi_hotspot</item>
+        <item>@string/settings_privacy</item>
+        <item>@string/settings_display_big</item>
+        <item>@string/settings_sounds_big</item>
+        <item>@string/settings_speech</item>
+        <item>@string/settings_favorites_big</item>
+        <item>@string/settings_return_to_factory_settings</item>
+        <item>@string/settings_about</item>
+        <item>@string/settings_running_applications</item>
+    </string-array>
+    <string-array name="vehicle_data">
+        <item>@string/settings_driving_mode_big</item>
+        <item>@string/settings_sport_mode_customization</item>
+        <item>@string/settings_drive_mode_customization</item>
+        <item>@string/settings_auto_mode_customization</item>
+        <item>@string/settings_vmode</item>
+        <item>@string/settings_mymode</item>
+        <item>@string/settings_climate_app</item>
+        <item>@string/settings_collision</item>
+        <item>@string/settings_comfort_convenience</item>
+
+    </string-array>
+
+    <string-array name="sounds_data">
+        <item>@string/settings_maximum_startup_volume</item>
+        <item>@string/settings_audio_cues_shutdown</item>
+        <item>@string/settings_audio_cues_shutdown</item>
+        <item>@string/settings_audible_touch_feedback_large</item>
+    </string-array>
+
+    <string-array name="configuration_data">
+        <item>LHD</item>
+        <item>RHD</item>
+        <item>RTL</item>
+        <item>SKEW</item>
+        <item>INFO 3.5C</item>
+
+    </string-array>
+
+    <string-array name="timedate_data">
+        <item>@string/settings_automatic_time_date</item>
+        <item>@string/settings_set_time_big</item>
+        <item>@string/settings_set_date_big</item>
+        <item>@string/settings_automatic_time_zone</item>
+        <item>@string/settings_select_time_zone_long</item>
+        <item>@string/settings_use_24_hour_format</item>
+
+
+    </string-array>
+
+
+    <string-array name="tablayout_titlesdata">
+        <item>@string/ui_system_caps</item>
+        <item>@string/ui_vehicle_caps</item>
+        <item>@string/settings_search</item>
+        <item>@string/cm_help</item>
+    </string-array>
+    <string-array name="tablayout_titlesdataa">
+        <item>sdfgdf</item>
+        <item>@string/ui_apps</item>
+        <item>@string/ui_vehicle_caps</item>
+    </string-array>
+
+
+    <!-- used for settime and dtae screen -->
+    <string name="settings_automatic_time_date">Automatic Time and Date</string>
+    <string name="settings_automatic_time_zone">Automatic Time Zone</string>
+    <string name="settings_select_time_zone_long">Select Time Zone</string>
+    <string name="settings_set_time_big">Set Time</string>
+    <string name="settings_set_date_big">Set Date</string>
+    <string name="settings_use_24_hour_format">Use 24-hour Format</string>
+    <string name="settings_automatic_timezone_unavailable">Automatic Time Zone Unavailable</string>
+    <string name="settings_automatic_timezone_unavailable_content">The Automatic Time Zone feature is unavailable because your %1$s subscription has expired.</string>
+    <string name="settings_use_network_provided_time">Use network provided time.</string>
+    <string name="settings_use_network_provided_time_zone">Use network provided time zone.</string>
+
+    <string name="str_empty"></string>
+    <string name="str_one_space"> </string>
+    <string name="title_activity_language_list">LanguageListActivity</string>
+    <string name="topbar_title_name">Time  Date</string>
+    <string name="topbar_language_title_name">Language</string>
+
+    <string name="language_type" translatable="false">en</string>
+
+    <!--for languages-->
+    <string name="language_english_us">English US</string>
+    <string name="language_german">German</string>
+    <string name="language_italian">Italian</string>
+    <string name="language_swedish">Swedish</string>
+    <string name="language_na_french">Français Canadien</string>
+    <string name="language_na_spanish">Español Latino</string>
+    <string name="language_uk_english">UK English</string>
+    <string name="language_spanish">Spanish</string>
+    <string name="language_french">French</string>
+    <string name="language_standard_chinese">Chinese</string>
+    <string name="language_russian">Russian</string>
+    <string name="language_netherland_dutch">Netherland Dutch</string>
+    <string name="language_turkish">Turkish</string>
+    <string name="language_polish">Polish</string>
+    <string name="language_portuguese">Portuguese</string>
+    <string name="language_korean">Korean</string>
+    <string name="language_saudi_arabia_arbic">Arabian</string>
+    <string name="language_greek">Greek</string>
+    <string name="language_au_english">Australian English</string>
+    <string name="language_hungarian">Hungarian</string>
+    <string name="settings_language_za_english">S. Africa English</string>
+    <string name="language_denmark_danish">Danish</string>
+    <string name="language_romanian">Romanian</string>
+    <string name="language_norwegian">Norwegian</string>
+    <string name="language_finnish">Finnish</string>
+    <string name="language_croation">Croatioon</string>
+    <string name="language_slovenion">Slovenion</string>
+    <string name="language_czeh">Czeh</string>
+    <string name="language_slovak">Slovak</string>
+    <string name="language_bulgarian">Bulgarian</string>
+    <string name="language_ukarinian">Ukarinian</string>
+    <string name="language_serbian">Serbian</string>
+    <string name="language_japanese">Japanese</string>
+    <string name="ui_step_speed_information_text">This setting is a part of the Power Take-Off feature. With this setting enabled you can press up or down on the steering wheel buttons to change the speed of the engine by set increments (similar to adjusting cruise control). The Power Take-Off feature makes it possible to power an attached piece of equipment, such as an air compressor or winch, using your vehicleâs engine.</string>
+    <string name="title_activity_settings_automatic_time_zone">SettingsAutomaticTimeZoneActivity
+    </string>
+
+    <string name="shared_pref_skew_state_key" translatable="false">skew_state_key</string>
+    <!--system sound string-->
+    <string name="system_sound_text">Maximum Startup Volume limits the volume of the audio sources when you start your vehicle.</string>
+    <string name="title_activity_settings_display">SettingsDisplayActivity</string>
+    <string name="title_activity_settings_calibration_failure">SettingsCalibrationFailureActivity
+    </string>
+
+    <string name="language_english_code">en</string>
+    <string name="language_spanish_code">es_MX</string>
+    <string name="language_french_code">fr_CA</string>
+    <string name="setting_language_english">English</string>
+    <string name="setting_language_spanish">Español</string>
+    <string name="setting_language_french">Français</string>
+
+
+    <!--Favorites related strings-->
+    <string name="setting_favorite_set_num_of_audio_fav_content">Set Number of Audio Favorites specifies how many pages of audio favorites are available. Select Auto to let the system adjust this number based on the number of favorites you\'ve saved.</string>
+
+    <!-- Assuming all quantity strings belong here -->
+    <integer name="setting_ten">10</integer>
+    <integer name="setting_fiftin">15</integer>
+    <integer name="setting_twenty">20</integer>
+    <integer name="setting_twenty_five">25</integer>
+    <integer name="setting_thirty">30</integer>
+    <integer name="setting_thirty_five">35</integer>
+    <integer name="setting_fourty">40</integer>
+    <integer name="setting_zero">1</integer>
+    <integer name="ui_5_short">5</integer>
+
+    <!--settings_auto_small-->
+    <integer-array name="favorite_set_audio_number_favorites">
+        <item>@integer/setting_zero</item>
+        <item>@integer/ui_5_short</item>
+        <item>@integer/setting_ten</item>
+        <item>@integer/setting_fiftin</item>
+        <item>@integer/setting_twenty</item>
+        <item>@integer/setting_twenty_five</item>
+        <item>@integer/setting_thirty</item>
+        <item>@integer/setting_thirty_five</item>
+        <item>@integer/setting_fourty</item>
+    </integer-array>
+
+
+    <string name="support_format">%02d</string>
+    <string-array name="favorite_list">
+        <item>@string/settings_manage_favorites_long</item>
+        <item>@string/settings_set_number_of_audio_favorites</item>
+    </string-array>
+
+    <string name="np_year">year</string>
+    <string name="np_date">date</string>
+    <string name="np_month">month</string>
+    <string name="np_hour">hour</string>
+    <string name="np_mins">mins</string>
+    <string name="np_ampm">ampm</string>
+
+
+    <string-array name="month_values">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+
+    </string-array>
+
+    <string-array name="month_ampm">
+        <item>@string/ui_am</item>
+        <item>@string/ui_pm</item>
+    </string-array>
+    <string name="autoKey">Aatomatic</string>
+    <string name="autoTimeZone">GMT+00:00, Auto</string>
+    <string name="settings_time_date_cadillac">Time, Date, and Unit</string>
+
+    <string-array name="vehicle_primary_text">
+        <item>@string/settings_rear_seat_reminder</item>
+        <item>@string/settings_buckle_to_drive</item>
+        <item>Phone Left in Vehicle Reminder</item>
+        <item>@string/settings_drive_mode_customization</item>
+        <item>Tire Load</item>
+        <item>@string/settings_climate_air_quality</item>
+        <item>@string/settings_collision_detection_systems</item>
+        <item>@string/settings_comfort_convenience</item>
+        <item>@string/settings_lighting</item>
+        <item>@string/settings_power_door_locks</item>
+        <item>@string/settings_remote_lock_unlock_start_short</item>
+        <item>KeyPass</item>
+        <item>@string/settings_ride_height</item>
+        <item>Running Boards</item>
+        <item>Memory Feature Recall</item>
+        <item>@string/settings_suspension</item>
+    </string-array>
+
+</resources>

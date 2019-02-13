@@ -1,0 +1,28 @@
+{
+  "voice":{
+    "browse": "eNowPlayingBrowse",
+    "list": "eNowPlayingBrowse",
+    "next":"eNowPlayingNext",
+    "previous:":"eNowPlayingPrevious",
+    "am":"eNowPlayingAM",
+    "fm":"eNowPlayingFM",
+    "usb":"eNowPlayingMedia",
+    "media":"eNowPlayingMedia",
+    "aux":"eNowPlayingMore",
+    "back":"eScreenBack",
+    "close":"eScreenClose"
+  },
+
+  "keyboard":{
+    "B":"eNowPlayingBrowse",
+    "N":"eNowPlayingNext",
+    "P":"eNowPlayingPrevious",
+    "A":"eNowPlayingAM",
+    "F":"eNowPlayingFM",
+    "U":"eNowPlayingMedia",
+    "X":"eNowPlayingMore"
+  },
+  "remote":{
+    "remoteBrowse":"eNowPlayingBrowse"
+  }
+}

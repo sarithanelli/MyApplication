@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gm.settingsservice" >
+
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <application>
+
+    <service
+        android:name="com.gm.settingsservice.apiintegration.SettingsService"
+        android:enabled="true"
+        android:exported="true">
+        <intent-filter>
+             <action android:name="com.gm.settingsservice.apiintegration.SettingsService" />
+        </intent-filter>
+    </service>
+
+
+
+</application>
+
+</manifest>

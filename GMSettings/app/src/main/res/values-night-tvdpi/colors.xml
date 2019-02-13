@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gm_cyan_green">#1CBFB7</color>
+    <color name="background_light_brilliant_red">#fd3838</color>
+    <color name="card_background">#00757575</color>
+    <color name="bg_color">#585858</color>
+    <color name="colorGreen">#05420f</color>
+    <color name="ta_desc_txt_color">#6d6e70</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green">#20e620</color>
+    <color name="edit_text">#20e620</color>
+    <color name="connected">#888888</color>
+    <color name="grey">#888888</color>
+    <color name="light_grey">#bababa</color>
+    <color name="maintenance_reminder">#888888</color>
+    <color name="orange">#ebaf29</color>
+    <color name="timer_count">#ebaf29</color>
+    <color name="light_grey_header">#263238</color>
+    <color name="light_white">#f5f5f5</color>
+    <color name="ta_desc_problem_txt_color">#FBB03B</color>
+    <color name="colorPrimary1">#FFFFFF</color>
+    <color name="diagonse_txtcolor">#010000</color>
+    <color name="disable_txtcolor">#2c2c2e</color>
+    <color name="blue">#487ef4</color>
+    <color name="red">#ee1f25</color>
+    <color name="tab_indicator_color">#292d32</color>
+    <color name="yellow">#FFC200</color>
+    <color name="np_unselect_color">#4b4d4e</color>
+    <color name="np_select_color">#FFFFFF</color>
+    <color name="btn_text_color">#ffffff</color>
+    <color name="rb_text_color">#ffffff</color>
+    <color name="tb_text_color">#ffffff</color>
+    <color name="hint_text_color">#999999</color>
+    <color name="text_white">#ffffff</color>
+    <color name="rb_white">#ffffff</color>
+    <color name="layout_bg">#000000</color>
+    <color name="skew_white_bg">@android:color/transparent</color>
+    <color name="secondary_color">#999999</color>
+
+    <color name="picker_grey">#57595a</color>
+    <color name="btn_stroke_highlight">#000000</color>
+    <color name="btn_stroke_normal">#e0ba77</color>
+    <color name="button_highlight">#e0ba77</color>
+    <color name="btn_txt_color">#e0ba77</color>
+    <color name="btn_txt_highlight_color">@color/black</color>
+    <color name="ripple_color">#e0ba77</color>
+
+    <color name="toolbar_bg">#292d32</color>
+    <color name="textview_color">#FFFFFF</color>
+    <color name="textview_select_color">#dcb776</color>
+    <color name="select_text_color">#e0ba77</color>
+
+    <color name="skew_bg">#FFFFFF</color>
+
+    <color name="tab_active_color">#4D000000</color>
+    <color name="tab_pressed_color">#B3444b52</color>
+
+    <color name="thumb_color">#9ca3ab</color>
+    <color name="track_color">#444b52</color>
+    <color name="bottom_bar_text">#000000</color>
+    <color name="third_tier_body_text">#dcb776</color>
+    <color name="view_button_selector">#dcb776</color>
+    <color name="bottom_bar_text_color">#e7e7e7</color>
+    <color name="list_selector">#e0ba77</color>
+    <color name="list_selector_axure">#40e0ba77</color>
+    <color name="textview_unselect_color">#FFFFFF</color>
+</resources>

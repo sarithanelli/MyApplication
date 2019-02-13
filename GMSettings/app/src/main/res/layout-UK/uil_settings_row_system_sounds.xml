@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="obj"
+            type="com.gm.settingsservice.models.GMSoundMenu" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+    </data>
+
+    <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        style="?attr/settings_favorites_no_bg_style"
+        android:clickable="@{obj.tPosition == 2 &amp;&amp; !dataPoolHandler.SETTINGS_STARTUP_SHUTDOWN_SOUNDS? false : true}"
+        android:onClick="@{(view) -> clickHandler.onItemClickHandler(view,obj)}"
+        android:tag="@{position == 0 ? `eMaxSoundVol` : position == 1 ?`eCueSoundVolOnOff`:position == 2 ?`eCueSoundVol`:position == 3 ?`eCueSoundVolOnOff`: `eOnOffSelection`}"
+        bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
+
+        <TextView
+            android:id="@+id/switch_id_ta_settings_view_text"
+            style="?attr/settings_sounds_text"
+            android:textColor="@{obj.tPosition == 2 &amp;&amp; !dataPoolHandler.SETTINGS_STARTUP_SHUTDOWN_SOUNDS ? @color/grey : @color/textview_color}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            bind:text="@{obj.name}" />
+
+        <ImageView
+            android:id="@+id/img_sub_list_header"
+            style="?attr/settings_imageview"
+            android:visibility="@{obj.isTogglevisible? View.VISIBLE : View.INVISIBLE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/switch_id_ta_settings_view"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ToggleButton
+            android:id="@+id/switch_id_ta_settings_view"
+            style="?attr/settings_time_date_tab_toggle_button"
+            android:checked="@{obj.isToggleState}"
+            android:onClick="@{(view) -> clickHandler.onClickHandler(view,obj)}"
+            android:tag='@{position == 1 &amp;&amp; obj.isToggleState  ? `eSoundPopup`:``}'
+            android:visibility="@{obj.isTogglevisible? View.VISIBLE : View.INVISIBLE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="10:10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+
+</layout>

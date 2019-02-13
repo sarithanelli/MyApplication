@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="obj"
+            type="String" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+    </data>
+
+    <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        android:id="@+id/ics_ta_settings_system_view"
+        style="?attr/settings_fragment_list_row_layout"
+        android:onClick="@{(view) -> clickHandler.onItemClickHandler(view)}"
+        android:tag="@{position == 0 ? `eTimeDate`:position == 1 ? `eLanguage`:position == 2  ? `eConDevice`:position == 3 ? `eWifiNetworks`:position == 4 ? `eWifiHotspot`:position == 5 ? `ePrivacy`:position == 6  ? `eScreenDisplay`:position == 7  ? `eScreenSound`:position == 8  ? `eScreenVoice`:position == 9  ? `eFavList`:position ==10 ? `eReturnToFactory`:position ==11 ? `eAbout` :position ==12 ? `eRunningApps` : `eThemesScreen`}"
+        bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
+
+        <TextView
+            style="?attr/settings_favorites_list_row_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            bind:text="@{obj}" />
+
+    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+</layout>

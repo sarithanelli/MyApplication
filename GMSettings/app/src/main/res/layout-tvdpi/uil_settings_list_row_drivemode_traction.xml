@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="obj"
+            type="com.gm.settingsservice.models.ESettingsTractionCustomization" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+    </data>
+
+
+    <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        android:id="@+id/ics_ta_settings_system_view"
+        style="?attr/settings_time_date_picker"
+        android:layout_height="@dimen/row_height_cadillac"
+        android:background="@drawable/settings_list_selector"
+        android:onClick="@{(view) -> clickHandler.onClickHandler(view,obj,position)}"
+        android:tag="eTractionType"
+        bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
+
+        <TextView
+            android:id="@+id/ics_ta_settings_primary_text"
+            style="?attr/settings_layout_text"
+            android:layout_width="0dp"
+            android:text="@{obj.toString()}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideline_vertical_text"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.7" />
+
+        <RadioButton
+            android:id="@+id/radio_button"
+            style="?attr/settings_time_zone_radio"
+            android:checked="@{dataPoolHandler.SETTINGS_TRACTIONTYPE.equals(obj.toString())}"
+            android:onClick="@{(view) -> clickHandler.onClickHandler(view,obj,position)}"
+            android:tag="eTractionType"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.2" />
+
+
+    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+</layout>

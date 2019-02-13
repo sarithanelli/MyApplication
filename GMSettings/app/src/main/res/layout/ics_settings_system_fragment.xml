@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data class="SettingsSystemFragmentBinding">
+
+        <import type="android.view.View" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+    </data>
+
+    <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        android:id="@+id/ics_ta_settings_view"
+        style="?attr/settings_fragment_layout"
+        bind:layoutDirection="@{dataPoolHandler.settingsConfiguration}"
+        bind:slopedAngle="@{dataPoolHandler.SKEW_ANGLE_8}">
+
+        <com.google.android.material.card.MaterialCardView style="?attr/settings_fragment_cardview">
+
+            <com.gm.uisdk.views.GMRecyclerView
+                android:id="@+id/recycler_view_settings_system_view"
+                style="?attr/settings_fragment_recylerview"
+                app:fastScrollArrowRadius="@integer/fastScrollArrowRadius"
+                app:fastScrollBarBgColor="@android:color/transparent"
+                app:fastScrollBarWidth="@integer/fastScrollBarWidth"
+                app:fastScrollDividerColor="@android:color/transparent"
+                app:fastScrollThumbColor="@color/thumb_color"
+                app:fastScrollTrackColor="@color/track_color"
+                app:fastScrollType="@{dataPoolHandler.SETTINGS_REQ_SYSTEMDATA.size() > 6 ? 1 : 0}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                bind:childLayout="@{@layout/uil_settings_list_row_system_tab}"
+                bind:items="@{dataPoolHandler.SETTINGS_REQ_SYSTEMDATA}">
+
+            </com.gm.uisdk.views.GMRecyclerView>
+
+        </com.google.android.material.card.MaterialCardView>
+    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+</layout>

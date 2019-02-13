@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data class="SoundsAudioCueVolActivityBinding">
+
+        <import type="android.view.View" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+    </data>
+
+
+    <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        android:id="@+id/system_sounds_maxstartvol_imglayout"
+        style="?attr/settings_layout_bg_style"
+        app:layout_constraintStart_toStartOf="parent"
+        bind:layoutDirection="@{dataPoolHandler.settingsConfiguration}"
+        bind:skewValue="@{dataPoolHandler.isSkewEnabled}">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            app:cardElevation="8dp">
+
+            <include
+                layout="@layout/uil_ta_hc_topbar_layout"
+                android:background="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                bind:clickHandler="@{clickHandler}"
+                bind:dataPoolHandler="@{dataPoolHandler}" />
+        </androidx.cardview.widget.CardView>
+
+
+        <SeekBar
+            android:id="@+id/customSeekBar"
+            android:layout_width="@dimen/system_progressbar_width"
+            android:layout_height="wrap_content"
+            android:max="@{dataPoolHandler.SOUNDPARAMS_MAXIMUMSTARTUPVOLUME}"
+            android:maxHeight="@dimen/system__sound_progresssbar_maxmin_height"
+            android:minHeight="@dimen/system__sound_progresssbar_maxmin_height"
+            android:progress="@{dataPoolHandler.SETTINGS_AUDIOCUES}"
+            android:progressDrawable="@drawable/custom_progress"
+            android:thumb="@drawable/ic_volume_indicator"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/topbar"
+            bind:seekbarTouch="@{1}" />
+
+        <ImageButton
+            android:id="@+id/volume_reduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/system_margin_top_button"
+            android:layout_marginEnd="@dimen/system_margin_start_end_button"
+            android:background="@drawable/volume_reduce_button_selector_theme"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical_for_buttons"
+            app:layout_constraintTop_toBottomOf="@+id/customSeekBar"
+            bind:SeekBarCuelongPress="@{1}" />
+
+        <ImageButton
+            android:id="@+id/volume_increase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/system_margin_start_end_button"
+            android:layout_marginTop="@dimen/system_margin_top_button"
+
+            android:background="@drawable/volume_increase_button_selector_theme"
+            app:layout_constraintStart_toEndOf="@+id/guideline_vertical_for_buttons"
+            app:layout_constraintTop_toBottomOf="@+id/customSeekBar"
+            bind:SeekBarCuelongPress="@{0}" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_for_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.7" />
+
+        <ImageView
+            android:id="@+id/vertical_seperator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/vertical_line_divider"
+            app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+            app:layout_constraintTop_toBottomOf="@id/topbar" />
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="@dimen/system_sounds_scrollbar_width"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toStartOf="@id/vertical_seperator"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/topbar">
+
+            <com.gm.settingsapp.ui.customview.SkewTextView
+                android:id="@+id/ui_system_sounds_maxstartupvol_text"
+                style="@style/text_material_content_text"
+                android:fontFamily="@font/gmsansui_regular"
+                android:padding="@dimen/text_settings_text_padding"
+                android:text="@string/settings_set_audio_cue_volume_content"
+                android:textColor="@color/textview_color"
+                android:textSize="@dimen/text_secondary_size"
+                bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
+
+        </ScrollView>
+
+        <com.gm.settingsapp.ui.customview.SkewImageView
+            android:id="@+id/on_off_car_image"
+            style="@style/text_material_content_text"
+            android:layout_width="@dimen/system_sound_car_image_width"
+            android:layout_height="@dimen/system_sound_car_image_height"
+            android:layout_marginEnd="@dimen/system_sound_car_image_padding_end"
+            android:src="@drawable/img_sensor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+            app:layout_constraintVertical_bias="@integer/system_sound_car_bias"
+            app:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
+
+    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+</layout>

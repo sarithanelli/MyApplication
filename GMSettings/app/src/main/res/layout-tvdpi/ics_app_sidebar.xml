@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        bind:layoutAnim="@{dataPoolHandler.LAYOUT_ANIM}">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.22" />
+
+        <ImageButton
+            android:id="@+id/img_home"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/ic_bottom_bar_home_button_selector"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/img_music"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/img_music"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/ic_bottom_bar_music_button_selector"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/img_navigation"
+            app:layout_constraintStart_toEndOf="@id/img_home"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/img_navigation"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/ic_bottom_bar_navigation_button_selector"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/img_call"
+            app:layout_constraintStart_toEndOf="@id/img_music"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/img_call"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/ic_bottom_bar_phone_button_selector"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/img_italic"
+            app:layout_constraintStart_toEndOf="@id/img_navigation"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/img_italic"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/ic_bottom_bar_info_button_selector"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/img_car"
+            app:layout_constraintStart_toEndOf="@id/img_call"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/img_car"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/ic_bottom_bar_vehicleinfo_button_selector"
+            android:onClick="@{(view) -> clickHandler.onClickHandler(view)}"
+            android:tag="@{position == 0 ? `eConfiguration`: position==6 ?`eScreenClose`:position==2 ?`evG_Back`:position==3 ?`evG_Back`: `eOnOffSelectiondd`}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/img_setting"
+            app:layout_constraintStart_toEndOf="@id/img_italic"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/img_setting"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/ic_bottom_bar_settings_button_selector"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img_car"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/img_bottom_active"
+            android:text="@string/str_empty"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/img_setting"
+            app:layout_constraintHeight_percent="0.33"
+            app:layout_constraintStart_toStartOf="@+id/img_setting"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.01999997"
+            app:layout_constraintWidth_percent="0.0845" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

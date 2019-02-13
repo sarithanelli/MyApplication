@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <variable
+            name="obj"
+            type="com.gm.settingsservice.models.AppInfo" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_height_cadillac"
+        android:background="@drawable/settings_list_selector">
+
+        <TextView
+            android:id="@+id/primary_text"
+            style="?attr/settings_layout_text"
+            android:text="@{obj.appName}"
+            app:layout_constraintBottom_toTopOf="@id/secondary_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/secondary_text"
+            style="?attr/settings_layout_text_secondary"
+            android:text="@{obj.appSize}"
+            android:textColor="@color/np_unselect_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/primary_text" />
+
+        <com.gm.settingsapp.ui.customview.SkewMaterialButton
+            android:id="@+id/btn"
+            style="@style/btn_retry"
+            android:layout_height="0dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/gmsansui_medium"
+            android:onClick="@{(view) -> clickHandler.onClickHandler(view,position)}"
+            android:tag="eRunningPopup"
+            android:text="@string/ui_stop_short"
+            android:textColor="@color/btn_text_color"
+            android:textSize="@dimen/Popup_text_cadillac_buttons"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.9"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.15"
+            app:rippleColor="@color/ripple_color" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

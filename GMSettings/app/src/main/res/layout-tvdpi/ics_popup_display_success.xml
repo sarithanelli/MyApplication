@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data class="SettingsPopupSuccessBinding">
+
+        <import type="android.view.View" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+    </data>
+
+    <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        android:id="@+id/voice_recognition_layout_id"
+        style="?attr/settings_layout_bg_style"
+        app:layout_constraintStart_toStartOf="parent"
+        bind:skewValue="@{dataPoolHandler.isSkewEnabled}">
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="start"
+            android:text="@string/settings_touchscreen_calibration_successful"
+            android:textColor="@color/black"
+            app:autoSizeMaxTextSize="100dp"
+            app:autoSizeMinTextSize="10dp"
+            app:autoSizeStepGranularity="10dp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.15"
+            app:layout_constraintHorizontal_bias="0.718"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.112"
+            app:layout_constraintWidth_percent="0.7" />
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="890dp"
+            android:layout_height="0dp"
+            android:text="@string/settings_touchscreen_calibration_successful_content"
+            android:textColor="@color/black"
+            app:autoSizeMaxTextSize="100dp"
+            app:autoSizeMinTextSize="10dp"
+            app:autoSizeStepGranularity="10dp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/txt"
+            app:layout_constraintTop_toBottomOf="@+id/txt"
+            app:layout_constraintVertical_bias="0.13999999"
+            app:layout_constraintWidth_percent="0.35" />
+
+
+        <Button
+            android:id="@+id/button"
+            style="@style/btn_retry"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/btn_border"
+            android:fontFamily="@font/gmsansui_light"
+            android:onClick="@{clickHandler::onClickHandler}"
+            android:tag="eButtonOk"
+            android:text="@string/ui_ok"
+            android:textColor="@color/text_selector"
+            android:textSize="20sp"
+            app:backgroundTint="@android:color/transparent"
+            app:cornerRadius="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.20"
+            app:layout_constraintHorizontal_bias="0.26"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.656"
+            app:layout_constraintWidth_percent=".15"
+            app:rippleColor="#43577c"
+            app:strokeColor="@color/stroke_color"
+            app:strokeWidth="1dp"
+            app:textAllCaps="false" />
+
+    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+
+</layout>

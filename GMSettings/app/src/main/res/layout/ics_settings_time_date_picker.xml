@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="com.gm.settingsapp.utils.CustomNumberPicker" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:visibility="@{dataPoolHandler.SETTINGS_TIMEPICKER_VISIBILITY ? View.VISIBLE: View.GONE}">
+
+        <com.gm.settingsapp.utils.CustomNumberPicker
+            android:id="@+id/npMonth"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/npDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:np_dividerColor="@null"
+            app:np_dividerDistance="23dp"
+            app:np_dividerThickness="1dp"
+            app:np_formatter="@string/support_format"
+            app:np_max="11"
+            app:np_min="0"
+            app:np_textColor="@color/np_unselect_color"
+            app:np_textSize="@dimen/settings_time_picker_text_size"
+            app:np_value="@{dataPoolHandler.SETTINGS_DATEINFO_CALENDARMONTH.get()}"
+            app:np_wheelItemCount="3"
+            app:np_wrapSelectorWheel="true"
+            bind:enabled="@{dataPoolHandler.SETTINGS_TIMEPICKER_STATUS.get()}"
+            bind:monthDisplayValues="@{1}"
+            bind:monthWheelChange="@{@string/np_month}" />
+
+        <com.gm.settingsapp.utils.CustomNumberPicker
+            android:id="@+id/npDate"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/npYear"
+            app:layout_constraintStart_toEndOf="@+id/npMonth"
+            app:layout_constraintTop_toTopOf="parent"
+            app:np_dividerColor="@null"
+            app:np_dividerDistance="23dp"
+            app:np_dividerThickness="1dp"
+            app:np_formatter="@string/support_format"
+            app:np_max="@{dataPoolHandler.SETTINGS_DATEINFO_MAXVALUE.get()}"
+            app:np_min="1"
+            app:np_textColor="@color/np_unselect_color"
+            app:np_textSize="@dimen/settings_time_picker_text_size"
+            app:np_value="@{dataPoolHandler.SETTINGS_DATEINFO_CALENDARDAY.get()}"
+            app:np_wheelItemCount="3"
+            app:np_wrapSelectorWheel="true"
+            bind:enabled="@{dataPoolHandler.SETTINGS_TIMEPICKER_STATUS.get()}"
+            bind:monthWheelChange="@{@string/np_date}" />
+
+
+        <com.gm.settingsapp.utils.CustomNumberPicker
+            android:id="@+id/npYear"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_month_picker"
+            app:layout_constraintStart_toEndOf="@+id/npDate"
+            app:layout_constraintTop_toTopOf="parent"
+            app:np_dividerColor="@null"
+            app:np_dividerDistance="23dp"
+            app:np_dividerThickness="1dp"
+            app:np_formatter="@string/support_format"
+            app:np_max="2100"
+            app:np_min="2003"
+            app:np_textColor="@color/np_unselect_color"
+            app:np_textSize="@dimen/settings_time_picker_text_size"
+            app:np_value="@{dataPoolHandler.SETTINGS_DATEINFO_CALENDARYEAR.get()}"
+            app:np_wheelItemCount="3"
+            app:np_wrapSelectorWheel="true"
+            bind:enabled="@{dataPoolHandler.SETTINGS_TIMEPICKER_STATUS.get()}"
+            bind:monthWheelChange="@{@string/np_year}" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_month_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_month_picker_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.85" />
+
+        <com.gm.settingsapp.utils.CustomNumberPicker
+            android:id="@+id/npHours"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txt_colon"
+            app:layout_constraintStart_toEndOf="@+id/guideline_month_picker"
+            app:layout_constraintTop_toTopOf="parent"
+            app:np_dividerColor="@null"
+            app:np_dividerDistance="23dp"
+            app:np_dividerThickness="1dp"
+            app:np_formatter="@string/support_format"
+            app:np_max="11"
+            app:np_min="0"
+            app:np_textColor="@color/np_unselect_color"
+            app:np_textSize="@dimen/settings_time_picker_text_size"
+            app:np_value="@{dataPoolHandler.SETTINGS_TIMEINFO_HOUROFDAY.get()}"
+            app:np_wheelItemCount="3"
+            app:np_wrapSelectorWheel="true"
+            bind:enabled="@{dataPoolHandler.SETTINGS_TIMEPICKER_STATUS.get()}"
+            bind:monthWheelChange="@{@string/np_hour}"
+            bind:np_hour_max="@{dataPoolHandler.SETTINGS_USE_24HOUR_FORMAT_TOGGLESTATE.get()}" />
+
+        <TextView
+            android:id="@+id/txt_colon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/gmsansui_medium"
+            android:text="@string/settings_colon"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/settings_time_picker_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/npMins"
+            app:layout_constraintStart_toEndOf="@+id/npHours"
+            app:layout_constraintTop_toTopOf="parent"
+            bind:enabled="@{dataPoolHandler.SETTINGS_TIMEPICKER_STATUS.get()}" />
+
+        <com.gm.settingsapp.utils.CustomNumberPicker
+            android:id="@+id/npMins"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/npAmPM"
+            app:layout_constraintStart_toEndOf="@+id/txt_colon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:np_dividerColor="@null"
+            app:np_dividerDistance="23dp"
+            app:np_dividerThickness="1dp"
+            app:np_formatter="@string/support_format"
+            app:np_max="59"
+            app:np_min="0"
+            app:np_textColor="@color/np_unselect_color"
+            app:np_textSize="@dimen/settings_time_picker_text_size"
+            app:np_value="@{dataPoolHandler.SETTINGS_TIMEINFO_MINUTEOFHOUR.get()}"
+            app:np_wheelItemCount="3"
+            app:np_wrapSelectorWheel="true"
+            bind:enabled="@{dataPoolHandler.SETTINGS_TIMEPICKER_STATUS.get()}"
+            bind:monthWheelChange="@{@string/np_mins}" />
+
+        <com.gm.settingsapp.utils.CustomNumberPicker
+            android:id="@+id/npAmPM"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_month_picker_end"
+            app:layout_constraintStart_toEndOf="@+id/npMins"
+            app:layout_constraintTop_toTopOf="parent"
+            app:np_dividerColor="@null"
+            app:np_dividerThickness="1dp"
+            app:np_formatter="@string/support_format"
+            app:np_max="1"
+            app:np_min="0"
+            app:np_textColor="@color/np_unselect_color"
+            app:np_textSize="@dimen/settings_time_picker_text_size"
+            app:np_wheelItemCount="3"
+            app:np_wrapSelectorWheel="false"
+            bind:ampmvalues="@{1}"
+            bind:enabled="@{dataPoolHandler.SETTINGS_TIMEPICKER_STATUS.get()}"
+            bind:monthWheelChange="@{@string/np_ampm}"
+            bind:np_value="@{dataPoolHandler.SETTINGS_USE_24HOUR_FORMAT_TOGGLESTATE.get()}" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

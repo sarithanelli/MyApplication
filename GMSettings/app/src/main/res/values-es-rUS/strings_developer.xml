@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="development_settings_summary">"Establecer opciones para desarrollar aplicaciones"</string>
+    <string name="development_settings_not_available">"Las opciones de programador no están disponibles para este usuario."</string>
+    <string name="vpn_settings_not_available">"La configuración de la red VPN no está disponible para este usuario."</string>
+    <string name="tethering_settings_not_available">"La configuración de la conexión no está disponible para este usuario."</string>
+    <string name="apn_settings_not_available">"La configuración del nombre de punto de acceso no está disponible para este usuario."</string>
+    <string name="enable_adb_summary">"Modo de depuración cuando se conecta el USB"</string>
+    <string name="clear_adb_keys">"Revocar autorizaciones de depur. USB"</string>
+    <string name="bugreport_in_power">"Acceso directo para informes de errores"</string>
+    <string name="bugreport_in_power_summary">"Mostrar un botón en el menú de encendido para realizar un informe de errores"</string>
+    <string name="keep_screen_on">"Permanecer activo"</string>
+    <string name="keep_screen_on_summary">"La pantalla nunca quedará inactiva mientras el dispositivo se esté cargando."</string>
+    <string name="bt_hci_snoop_log">"Registro de búsq. de HCI de Bluetooth"</string>
+    <string name="bt_hci_snoop_log_summary">"Capturar todos los paquetes de HCI de Bluetooth en un archivo"</string>
+    <string name="oem_unlock_enable">"Desbloqueo de OEM"</string>
+    <string name="oem_unlock_enable_summary">"Permitir que el cargador de inicio se desbloquee"</string>
+    <string name="oem_unlock_enable_pin_prompt">"Ingresa el PIN."</string>
+    <string name="oem_unlock_enable_pin_description">"Ingresa el PIN del dispositivo para habilitar el desbloqueo OEM."</string>
+    <string name="confirm_enable_oem_unlock_title">"¿Permitir desbloqueo de OEM?"</string>
+    <string name="confirm_enable_oem_unlock_text">"ADVERTENCIA: Las funciones de protección de dispositivos no funcionarán en este dispositivo mientras esta configuración esté activada."</string>
+    <string name="local_backup_password_title">"Contras. copia de seguridad"</string>
+    <string name="local_backup_password_summary_none">"Tus copias de seguridad completas de escritorio no están protegidas por contraseña."</string>
+    <string name="local_backup_password_summary_change">"Toca para cambiar o eliminar la contraseña de las copias de seguridad completas de tu escritorio."</string>
+    <string name="local_backup_password_toast_success">"Nueva contraseña de copia de seguridad definida"</string>
+    <string name="local_backup_password_toast_confirmation_mismatch">"La nueva contraseña y la de confirmación no coinciden."</string>
+    <string name="local_backup_password_toast_validation_failure">"Error al definir contraseña de copia de seguridad"</string>
+    <string name="hdcp_checking_title">"Comprobación HDCP"</string>
+    <string name="hdcp_checking_dialog_title">"Configurar comportamiento de la comprobación HDCP"</string>
+    <string name="debug_debugging_category">"Depuración"</string>
+    <string name="debug_app">"Seleccionar la aplicación para depurar"</string>
+    <string name="debug_app_not_set">"No se especificó ninguna aplicación para depurar."</string>
+    <string name="debug_app_set">"Aplicación para depurar: <xliff:g id="APP_NAME">%1$s</xliff:g>"</string>
+    <string name="select_application">"Seleccionar la aplicación"</string>
+    <string name="no_application">"Ninguna"</string>
+    <string name="wait_for_debugger">"Esperar al depurador"</string>
+    <string name="wait_for_debugger_summary">"Esperar que se conecte el depurador para iniciar la aplicación"</string>
+    <string name="process_stats_summary_title">"Estadísticas de procesos"</string>
+    <string name="process_stats_summary">"Estadísticas para geeks sobre procesos activos"</string>
+    <string name="enable_terminal_title">"Terminal local"</string>
+    <string name="enable_terminal_summary">"Habilitar aplicac. de terminal que ofrece acceso al shell local"</string>
+    <string name="allow_mock_location">"Ubicaciones de prueba"</string>
+    <string name="allow_mock_location_summary">"Permitir ubicaciones de prueba"</string>
+    <string name="debug_view_attributes">"Habilitar inspección de atributos de vista"</string>
+    <string name="adb_warning_title">"¿Permitir depuración por USB?"</string>
+    <string name="wifi_display_certification">"Certificación de pantalla inalámbrica"</string>
+    <string name="wifi_verbose_logging">"Habilitar registro detallado de Wi-Fi"</string>
+    <string name="wifi_aggressive_handover">"Transferencia intensa de Wi‑Fi a celular"</string>
+    <string name="wifi_allow_scan_with_traffic">"Permitir siempre búsquedas de Wi-Fi"</string>
+    <string name="wifi_display_certification_summary">"Mostrar opciones de certificación de pantalla inalámbrica"</string>
+    <string name="wifi_verbose_logging_summary">"Aumentar nivel de registro Wi-Fi; mostrar por SSID RSSI en el selector de Wi-Fi"</string>
+    <string name="wifi_aggressive_handover_summary">"Si está habilitada, la conexión Wi‑Fi será más intensa al transferir la conexión de datos al celular (si la señal Wi‑Fi es débil)."</string>
+    <string name="wifi_allow_scan_with_traffic_summary">"Permitir/no permitir las búsquedas de Wi-Fi basadas la cantidad de tráfico de datos presente en la interfaz"</string>
+    <string name="select_logd_size_title">"Tamaños de búfer de Logger"</string>
+    <string name="select_logd_size_dialog_title">"Sel. tamaños Logger/búfer registro"</string>
+    <string name="adb_warning_message">"La depuración por USB solo está indicada para actividades de programación. Úsala para copiar datos entre tu computadora y el dispositivo, para instalar aplicaciones en el dispositivo sin recibir notificaciones y para leer datos de registro."</string>
+    <string name="adb_keys_warning_message">"¿Quieres revocar el acceso a la depuración por USB desde todas la computadoras que autorizaste hasta ahora?"</string>
+    <string name="dev_settings_warning_title">"¿Permitir configuración de desarrollo?"</string>
+    <string name="dev_settings_warning_message">"Estos parámetros de configuración están destinados únicamente a los programadores. Pueden hacer que el dispositivo o sus aplicaciones no funcionen correctamente."</string>
+    <string name="verify_apps_over_usb_title">"Verificar aplicaciones por USB"</string>
+    <string name="verify_apps_over_usb_summary">"Comprobar que las aplicaciones instaladas mediante ADB/ADT no ocasionen daños"</string>
+    <string name="debug_input_category">"Entrada"</string>
+    <string name="debug_drawing_category">"Dibujo"</string>
+    <string name="debug_hw_drawing_category">"Representación acelerada mediante hardware"</string>
+    <string name="media_category">"Multimedia"</string>
+    <string name="debug_monitoring_category">"Monitoreo"</string>
+    <string name="pointer_location">"Ubicación del puntero"</string>
+    <string name="pointer_location_summary">"Superponer capa en pant. para mostrar puntos tocados"</string>
+    <string name="show_touches">"Mostrar toques"</string>
+    <string name="show_touches_summary">"Mostrar información visual para toques"</string>
+    <string name="show_screen_updates">"Ver actualiz. de superficie"</string>
+    <string name="show_screen_updates_summary">"Destellar superficie de ventana al actualizarla"</string>
+    <string name="debug_layout">"Mostrar límites de diseño"</string>
+    <string name="debug_layout_summary">"Mostrar límites de recortes, márgenes, etc."</string>
+    <string name="force_rtl_layout_all_locales">"Forzar diseño der. a izq."</string>
+    <string name="force_rtl_layout_all_locales_summary">"Forzar diseño pantalla der.&gt;izq., cualquier idioma"</string>
+    <string name="window_animation_scale_title">"Ventana de escala de animación"</string>
+    <string name="window_animation_scale_off">Animación desactivada</string>
+    <string name="window_animation_scale_0_5x">Escala de animación .5x</string>
+    <string name="window_animation_scale_1x">Escala de animación 1x</string>
+    <string name="window_animation_scale_1_5x">Escala de animación 1.5x</string>
+    <string name="window_animation_scale_2x">Escala de animación 2x</string>
+    <string name="window_animation_scale_5x">Escala de animación 5x</string>
+    <string name="window_animation_scale_10x">Escala de animación 10x</string>
+    <string name="transition_animation_scale_title">"Transición de escala de animación"</string>
+    <string name="transition_animation_scale_off">Animación desactivada</string>
+    <string name="transition_animation_scale_0_5x">Escala de animación .5x</string>
+    <string name="transition_animation_scale_1x">Escala de animación 1x</string>
+    <string name="transition_animation_scale_1_5x">Escala de animación 1.5x</string>
+    <string name="transition_animation_scale_2x">Escala de animación 2x</string>
+    <string name="transition_animation_scale_5x">Escala de animación 5x</string>
+    <string name="transition_animation_scale_10x">Escala de animación 10x</string>
+    <string name="animator_duration_scale_title">"Escala de duración de animador"</string>
+    <string name="animator_animation_scale_off">Animación desactivada</string>
+    <string name="animator_animation_scale_0_5x">Escala de animación .5x</string>
+    <string name="animator_animation_scale_1x">Escala de animación 1x</string>
+    <string name="animator_animation_scale_1_5x">Escala de animación 1.5x</string>
+    <string name="animator_animation_scale_2x">Escala de animación 2x</string>
+    <string name="animator_animation_scale_5x">Escala de animación 5x</string>
+    <string name="animator_animation_scale_10x">Escala de animación 10x</string>
+    <string name="overlay_display_devices_title">"Simular pantallas secundarias"</string>
+    <string name="overlay_option_none">Ninguno</string>
+    <string name="overlay_option_720_480">720 x 480 mdpi</string>
+    <string name="overlay_option_720_480_secure">720 x 480 mdpi (segura)</string>
+    <string name="overlay_option_1280_720">1280 x 720 tvdpi</string>
+    <string name="overlay_option_1280_720_secure">1280 x 720 tvdpi (segura)</string>
+    <string name="overlay_option_1920_1080">1920 x 1080 xhdpi</string>
+    <string name="overlay_option_1920_1080_secure">1920 x 1080 xhdpi (segura)</string>
+    <string name="overlay_option_1280_720_tvdpi">1280 x 720 tvdpi; 1920 x 1080 xhdpi</string>
+    <string name="debug_applications_category">"Aplicaciones"</string>
+    <string name="strict_mode">"Modo estricto"</string>
+    <string name="strict_mode_summary">"Destellar cuando las aplicaciones realicen operaciones largas en la conversación principal"</string>
+    <string name="show_hw_screen_updates">"Ver actualiz. vistas GPU"</string>
+    <string name="show_hw_screen_updates_summary">"Mostrar vistas de ventanas procesadas con GPU"</string>
+    <string name="show_hw_layers_updates">"Ver actualiz. de capas de hardware"</string>
+    <string name="show_hw_layers_updates_summary">"Luz verde en capas de hardware al actualizarse"</string>
+    <string name="debug_hw_overdraw">"Depurar superpos. con GPU"</string>
+    <string name="debug_hw_overdraw_Off">Desactivado</string>
+    <string name="debug_hw_overdraw_areas">Mostrar áreas superpuestas</string>
+    <string name="debug_hw_overdraw_areas_deuteranomaly">Mostrar áreas para deuteranomalía</string>
+    <string name="disable_overlays">"Desactivar superpos. HW"</string>
+    <string name="disable_overlays_summary">"Usar GPU para combinar pantallas"</string>
+    <string name="simulate_color_space">"Simular espacio de color"</string>
+    <string name="enable_opengl_traces_title">"Seguimientos de OpenGL"</string>
+    <string name="enable_opengl_traces_title_none">Ninguna</string>
+    <string name="enable_opengl_traces_title_logcat">Logcat</string>
+    <string name="enable_opengl_traces_title_systrace">Systrace (gráficos)</string>
+    <string name="enable_opengl_traces_title_call_stack">Pila de llamadas en glGetError</string>
+    <string name="usb_audio_disable_routing">"Inhab. enrutam. audio USB"</string>
+    <string name="usb_audio_disable_routing_summary">"Inhab. enrutam. automático a periféricos audio USB"</string>
+    <string name="show_cpu_usage">"Mostrar el uso de CPU"</string>
+    <string name="show_cpu_usage_summary">"Mostrar superposición en pantalla con uso actual de la CPU"</string>
+    <string name="force_hw_ui">"Forzar representación GPU"</string>
+    <string name="force_hw_ui_summary">"Forzar uso de GPU para dibujar en 2d"</string>
+    <string name="force_msaa">"Forzar MSAA 4x"</string>
+    <string name="force_msaa_summary">"Activar MSAA 4x en aplicaciones OpenGL ES 2.0"</string>
+    <string name="show_non_rect_clip">"Depurar operac. de recorte no rectangulares"</string>
+    <string name="show_non_rect_clip_off">Desactivado</string>
+    <string name="show_non_rect_clip_blue">Recorte no rectangular en azul</string>
+    <string name="show_non_rect_clip_green">Comandos de dib. probados en verde</string>
+    <string name="track_frame_time">"Represent. GPU del perfil"</string>
+    <string name="track_frame_time_Off">Desactivado</string>
+    <string name="track_frame_time_on_screen_bars">En pantalla como barras</string>
+    <string name="track_frame_time_in_adb_shell">En adb shell dumpsys gfxinfo</string>
+    <string name="immediately_destroy_activities">"Eliminar actividades"</string>
+    <string name="immediately_destroy_activities_summary">"Descartar todas las actividades en cuanto el usuario las abandona"</string>
+    <string name="app_process_limit_title">"Límite de procesos en segundo plano"</string>
+    <string name="show_all_anrs">"Errores sin respuesta"</string>
+    <string name="show_all_anrs_summary">"Mostrar diálogo cuando las aplic. en 2do plano no responden"</string>
+    <string name="daltonizer_mode_disabled">"Inhabilitado"</string>
+    <string name="daltonizer_mode_monochromacy">"Acromatopsia"</string>
+    <string name="daltonizer_mode_deuteranomaly">"Deuteronomalía (rojo-verde)"</string>
+    <string name="daltonizer_mode_protanomaly">"Protanomalía (rojo-verde)"</string>
+    <string name="daltonizer_mode_tritanomaly">"Tritanomalía (azul-amarillo)"</string>
+    <string name="managed_user_title">"Perfil de trabajo"</string>
+    <string name="battery_history_days">"<xliff:g id="DAYS">%1$d</xliff:g>días <xliff:g id="HOURS">%2$d</xliff:g>h <xliff:g id="MINUTES">%3$d</xliff:g>min <xliff:g id="SECONDS">%4$d</xliff:g>seg"</string>
+    <string name="battery_history_hours">"<xliff:g id="HOURS">%1$d</xliff:g>h <xliff:g id="MINUTES">%2$d</xliff:g>min <xliff:g id="SECONDS">%3$d</xliff:g>seg"</string>
+    <string name="battery_history_minutes">"<xliff:g id="MINUTES">%1$d</xliff:g> min <xliff:g id="SECONDS">%2$d</xliff:g> seg"</string>
+    <string name="battery_history_seconds">"<xliff:g id="SECONDS">%1$d</xliff:g> seg"</string>
+    <string name="battery_history_days_no_seconds">"<xliff:g id="DAYS">%1$d</xliff:g> d <xliff:g id="HOURS">%2$d</xliff:g> h <xliff:g id="MINUTES">%3$d</xliff:g> min"</string>
+    <string name="battery_history_hours_no_seconds">"<xliff:g id="HOURS">%1$d</xliff:g> h <xliff:g id="MINUTES">%2$d</xliff:g> min"</string>
+    <string name="battery_history_minutes_no_seconds">"<xliff:g id="MINUTES">%1$d</xliff:g> min"</string>
+    <string name="battery_info_status_unknown">"Desconocido"</string>
+    <string name="battery_info_status_charging">"Cargando"</string>
+    <string name="battery_info_status_charging_ac">"Carga en CA"</string>
+    <string name="battery_info_status_charging_usb">"Carga con USB"</string>
+    <string name="battery_info_status_charging_wireless">"Carga inalámbrica"</string>
+    <string name="battery_info_status_discharging">"No se está cargando."</string>
+    <string name="battery_info_status_not_charging">"No se realiza la carga"</string>
+    <string name="battery_info_status_full">"Cargado"</string>
+    <string name="running_process_item_user_label">"Usuario: <xliff:g id="USER_NAME">%1$s</xliff:g>"</string>
+    <string name="unknown">"Desconocido"</string>
+    <string name="user_summary_not_set_up">"No configurado"</string>
+    <string name="user_summary_restricted_not_set_up">"Sin configurar - Perfil restringido"</string>
+    <string name="user_summary_managed_profile_not_set_up">"Sin configurar: perfil de trabajo"</string>
+    <string name="user_owner">"Propietario"</string>
+    <string name="user_you">"Tú (<xliff:g id="NAME">%s</xliff:g>)"</string>
+    <string name="user_nickname">"Seudónimo"</string>
+    <string name="user_add_user_type_title">"Agregar"</string>
+    <string name="user_add_user_item_summary">"Los usuarios tienen sus propias aplicaciones y contenidos."</string>
+    <string name="user_add_profile_item_summary">"Desde tu cuenta, puedes restringir el acceso a las aplicaciones y al contenido."</string>
+    <string name="user_add_user_item_title">"Usuario"</string>
+    <string name="user_add_profile_item_title">"Perfil restringido"</string>
+    <string name="user_add_user_title">"¿Agregar usuario nuevo?"</string>
+    <string name="user_add_user_message_long">"Si creas usuarios adicionales, puedes compartir este dispositivo con otras personas. Cada usuario tendrá su propio espacio, que podrá personalizar con sus propias aplicaciones, fondos de pantalla, etc. Los usuarios también pueden cambiar la configuración que afecta a todos, como la conexión Wi-Fi.\n\nCuando agregas un nuevo usuario, la persona debe configurar su espacio.\n\nCualquier usuario puede actualizar aplicaciones para todos los usuarios."</string>
+    <string name="user_add_user_message_short">"Cuando agregas un nuevo usuario, esa persona debe configurar su espacio.\n\nCualquier usuario puede actualizar aplicaciones para todos los usuarios."</string>
+    <string name="user_setup_dialog_title">"¿Configurar el usuario ahora?"</string>
+    <string name="user_setup_dialog_message">"Asegúrate de que la persona pueda acceder al dispositivo y configurar su espacio."</string>
+    <string name="user_setup_profile_dialog_message">"¿Quieres configurar tu perfil ahora?"</string>
+    <string name="user_setup_button_setup_now">"Configurar ahora"</string>
+    <string name="user_setup_button_setup_later">"Ahora no"</string>
+<!--
+    <string name="user_cannot_manage_message" product="tablet">"Solo los propietarios de la tablet pueden administrar los usuarios."</string>
+-->
+
+    <string name="user_cannot_manage_message" product="default">"Solo los propietarios del dispositivo pueden administrar los usuarios."</string>
+
+    <string name="user_cannot_add_accounts_message">"Los perfiles restringidos no pueden agregar cuentas."</string>
+    <string name="user_remove_user_menu">"Eliminar <xliff:g id="USER_NAME">%1$s</xliff:g> del disp."</string>
+    <string name="user_add_on_lockscreen_menu">"Agregar usuarios"</string>
+    <string name="user_new_user_name">"Usuario nuevo"</string>
+    <string name="user_new_profile_name">"Perfil nuevo"</string>
+    <string name="user_confirm_remove_self_title">"¿Deseas eliminarte a ti mismo?"</string>
+    <string name="user_confirm_remove_title">"¿Eliminar este usuario?"</string>
+    <string name="user_profile_confirm_remove_title">"¿Eliminar este perfil?"</string>
+    <string name="work_profile_confirm_remove_title">"¿Eliminar perfil trabajo?"</string>
+<!--
+    <string name="user_confirm_remove_self_message" product="tablet">"Perderás tu espacio y tus datos en esta tablet. No puedes deshacer esta acción."</string>
+-->
+
+    <string name="user_confirm_remove_self_message" product="default">"Perderás tu espacio y tus datos en este dispositivo. No puedes deshacer esta acción."</string>
+
+    <string name="user_confirm_remove_message">"Se eliminarán todas las aplicaciones y todos los datos."</string>
+    <string name="work_profile_confirm_remove_message">"Se eliminarán las aplicaciones y los datos de este perfil."</string>
+    <string name="user_profile_confirm_remove_message">"Se eliminarán todas las aplicaciones y todos los datos."</string>
+    <string name="tether_settings_title_usb">"Anclaje a red USB"</string>
+    <string name="tether_settings_title_wifi">"Zona Wi-Fi portátil"</string>
+    <string name="tether_settings_title_bluetooth">"Anclaje a red Bluetooth"</string>
+    <string name="tether_settings_title_usb_bluetooth">"Anclaje a red"</string>
+    <string name="tether_settings_title_all">"Anclaje a red y zona portátil"</string>
+    <string name="help_label">"Ayuda y comentarios"</string>
+<!--
+    <string name="global_change_warning" product="tablet">"Esta configuración afecta a todos los usuarios de esta tablet."</string>
+-->
+    <string name="global_change_warning" product="default">"Esta configuración afecta a todos los usuarios de este dispositivo."</string>
+
+    <string name="user_delete_button">"Eliminar"</string>
+
+    <dimen name="circle_avatar_size">48dp</dimen>
+    <dimen name="circle_avatar_frame_stroke_width">1dp</dimen>
+    <dimen name="circle_avatar_frame_shadow_radius">3dp</dimen>
+
+    <string name="daltonizer_type_overridden">"Reemplazado por <xliff:g id="TITLE">%1$s</xliff:g>"</string>
+    <string name="accessibility_display_daltonizer_preference_title">"Corrección de color"</string>
+    <string name="enable_text">"Activar"</string>
+    <string name="global_locale_change_title">"Cambiar idioma"</string>
+    <string name="switch_on_text">"Activar"</string>
+    <string name="switch_off_text">"Desactivar"</string>
+    <string name="current_backup_pw_prompt">"Escribe tu contraseña actual de copia de seguridad completa aquí"</string>
+    <string name="new_backup_pw_prompt">"Escribe una nueva contraseña para copias de seguridad completas."</string>
+    <string name="confirm_new_backup_pw_prompt">"Vuelve a escribir aquí tu nueva contraseña de copia de seguridad completa"</string>
+    <string name="backup_pw_set_button_text">"Definir contraseña de copia de seguridad"</string>
+    <string name="backup_pw_cancel_button_text">"Cancelar"</string>
+    <string name="menu_duration_3h">"3 horas"</string>
+    <string name="menu_duration_6h">"6 horas"</string>
+    <string name="menu_duration_12h">"12 horas"</string>
+    <string name="menu_duration_1d">"1 día"</string>
+    <string name="menu_show_system">"Mostrar sistema"</string>
+    <string name="menu_use_uss">"Usar USS"</string>
+    <string name="menu_proc_stats_type">"Tipo de estadística"</string>
+    <string name="menu_proc_stats_type_background">"En el fondo"</string>
+    <string name="menu_proc_stats_type_foreground">"En primer plano"</string>
+    <string name="menu_proc_stats_type_cached">"En caché"</string>
+    <string name="power_usage_not_available">"Sin datos de uso de batería"</string>
+    <string name="process_stats_total_duration">"Aplicaciones <xliff:g id="TYPE">%1$s</xliff:g> durante <xliff:g id="TIME">%2$s</xliff:g>"</string>
+    <string name="process_stats_type_background">"En el fondo"</string>
+    <string name="process_stats_type_foreground">"En primer plano"</string>
+    <string name="process_stats_type_cached">"En caché"</string>
+    <string name="menu_stats_total">"Total de usos"</string>
+    <string name="menu_stats_refresh">"Actualizar"</string>
+    <string name="app_memory_use">"Uso de memoria"</string>
+    <string name="mem_state_subtitle">"Estados de la memoria"</string>
+    <string name="mem_use_subtitle">"Uso de memoria"</string>
+    <string name="mem_use_kernel_type">"Kernel"</string>
+    <string name="mem_use_native_type">"Nativo"</string>
+    <string name="mem_use_kernel_cache_type">"Cachés Kernel"</string>
+    <string name="mem_use_zram_type">"Intercambio zram"</string>
+    <string name="mem_use_free_type">"Libre"</string>
+    <string name="mem_use_total">"Total"</string>
+    <string name="mem_details_title">"Detalles de la memoria"</string>
+    <string name="menu_proc_stats_duration">"Duración"</string>
+    <string name="details_subtitle">"Detalles de uso"</string>
+    <string name="services_subtitle">"Servicios"</string>
+    <string name="force_stop">"Forzar la detención"</string>
+    <string name="process_stats_avg_ram_use">"Uso promedio de RAM"</string>
+    <string name="process_stats_max_ram_use">"Uso máximo de RAM"</string>
+    <string name="process_stats_run_time">"Tiempo de ejecución"</string>
+    <string name="cancel">"Cancelar"</string>
+    <string name="development_settings_title">"Opciones del programador"</string>
+    <string name="enable_adb">"Depuración por USB"</string>
+    <string name="history_details_title">"Detalles del historial"</string>
+    <string name="details_title">"Utilizar detalles"</string>
+    <string name="process_stats_memory_status">"En este momento, el estado de la memoria del dispositivo es <xliff:g id="MEMSTATE">%1$s</xliff:g>."</string>
+
+    <plurals name="show_dev_countdown">
+        <item quantity="one">"Estás a <xliff:g id="STEP_COUNT">%1$d</xliff:g> paso de ser programador."</item>
+        <item quantity="other">"Estás a <xliff:g id="STEP_COUNT">%1$d</xliff:g> pasos de ser programador."</item>
+    </plurals>
+
+    <string name="show_dev_on">"¡Ya eres programador!"</string>
+    <string name="show_dev_already">"No es necesario, ya eres programador."</string>
+
+</resources>

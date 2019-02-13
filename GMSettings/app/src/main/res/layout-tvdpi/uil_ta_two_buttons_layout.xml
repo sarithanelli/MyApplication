@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/Layout_Match_Match"
+        android:background="@android:color/transparent">
+
+        <com.gm.settingsapp.ui.customview.SkewMaterialButton
+            android:id="@+id/btn_id_ta_bc_advance_done_twobutton_advance"
+            style="@style/btn_retry"
+            android:layout_marginStart="@dimen/two_button_layout_button_margin_endstart"
+            android:layout_marginEnd="@dimen/two_button_layout_button_margin_endstart"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/gmsansui_light"
+            android:onClick="@{clickHandler::onClickHandler}"
+            android:padding="@dimen/two_button_layout_button_padding"
+            android:tag="eKillRunApp"
+            android:text="@string/ui_ok"
+            android:textColor="@color/btn_text_color"
+            android:textSize="@dimen/Popup_text_cadillac_buttons"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_id_ta_bc_advance_done_twobutton_advance1"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:rippleColor="@color/ripple_color"
+            bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
+
+        <com.gm.settingsapp.ui.customview.SkewMaterialButton
+            android:id="@+id/btn_id_ta_bc_advance_done_twobutton_advance1"
+            style="@style/btn_retry"
+            android:layout_marginEnd="@dimen/two_button_layout_button_margin_endstart"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/gmsansui_light"
+            android:onClick="@{clickHandler::onClickHandler}"
+            android:padding="@dimen/two_button_layout_button_padding"
+            android:tag="eScreenBack"
+            android:text="@string/ui_cancel_small"
+            android:textColor="@color/btn_text_color"
+            android:textSize="@dimen/Popup_text_cadillac_buttons"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_id_ta_bc_advance_done_twobutton_advance2"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@+id/btn_id_ta_bc_advance_done_twobutton_advance"
+            app:rippleColor="@color/ripple_color"
+            bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
+
+        <com.gm.settingsapp.ui.customview.SkewMaterialButton
+            android:id="@+id/btn_id_ta_bc_advance_done_twobutton_advance2"
+            style="@style/btn_retry"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/gmsansui_light"
+            android:onClick="@{clickHandler::onClickHandler}"
+            android:padding="@dimen/two_button_layout_button_padding"
+            android:tag="eCalibrate"
+            android:text="Retry"
+            android:textColor="@color/btn_text_color"
+            android:textSize="@dimen/Popup_text_cadillac_buttons"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@+id/btn_id_ta_bc_advance_done_twobutton_advance1"
+            app:rippleColor="@color/ripple_color"
+            bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

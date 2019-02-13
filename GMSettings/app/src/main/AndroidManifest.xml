@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    coreApp="true"
+    package="com.gm.settingsapp">
+
+    <uses-permission
+        android:name="android.permission.SET_TIME"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="com.gm.vehicle.permission.WRITE_DATE_AND_TIME_PROTECTED" />
+    <uses-permission android:name="android.permission.SET_TIME_ZONE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.Manifest.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="gm.permission.ACCESS_PERSONALIZATION" />
+    <uses-permission android:name="gm.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="gm.permission.READ_VEHICLE_DATA" />
+    <uses-permission android:name="gm.permission.WRITE_VEHICLE_DATA" />
+    <uses-permission android:name="com.gm.cluster.permission.ACCESS_IPC_HUD" />
+    <uses-permission android:name="gm.permission.ACCESS_DRIVINGMODE" />
+    <uses-permission android:name="gm.permission.encryption.DATA_LOCK_LISTENER" />
+    <uses-permission android:name="gm.permission.encryption.DATA_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="gm.permission.ACCESS_ONSTAR" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="gm.vehicle.permission.READ_VEHICLE_DATA" />
+    <uses-permission android:name="gm.vehicle.permission.WRITE_VEHICLE_DATA" />
+    <uses-permission android:name="gm.vehicle.permission.SECURITY" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.OVERRIDE_WIFI_CONFIG" />
+    <uses-permission android:name="com.gm.vehicle.permission.CUSTOMIZATION" /> <!-- Permissions to access DCM apis -->
+    <uses-permission android:name="gm.permission.READ_DEVICE_INFO" />
+    <uses-permission android:name="gm.permission.WRITE_DEVICE_INFO" />
+    <uses-permission android:name="com.gm.subscription.permission.ACCOUNT_INFO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- New Vehicle Permissions -->
+    <uses-permission android:name="com.gm.vehicle.permission.READ_CUSTOMIZATION_PROTECTED" />
+    <uses-permission android:name="com.gm.vehicle.permission.READ_CLIMATE" />
+    <uses-permission android:name="com.gm.vehicle.permission.READ_BATTERY_PROTECTED" />
+    <uses-permission android:name="com.gm.vehicle.permission.READ_VEHICLE_MOVEMENT_PROTECTED" />
+    <uses-permission android:name="com.gm.vehicle.permission.READ_LIGHTS_PROTECTED" />
+    <uses-permission android:name="com.gm.vehicle.permission.READ_DOORS_AND_WINDOWS_PROTECTED" />
+    <uses-permission android:name="com.gm.vehicle.permission.READ_TEEN_DRIVER_PROTECTED" />
+    <uses-permission android:name="com.gm.vehicle.permission.READ_MOTION_DRIVING_BEHAVIOR_PROTECTED" />
+    <uses-permission android:name="com.gm.vehicle.permission.READ_CLIMATE_PROTECTED" />
+    <uses-permission android:name="com.gm.vehicle.permission.READ_VEHICLE_INFORMATION" />
+    <uses-permission android:name="com.gm.vehicle.permission.WRITE_CUSTOMIZATION_PROTECTED" />
+    <uses-permission android:name="com.gm.vehicle.permission.WRITE_VEHICLE_INFORMATION_PROTECTED" />
+    <uses-permission android:name="com.gm.vehicle.permission.WRITE_TEEN_DRIVER_PROTECTED" />
+    <uses-permission android:name="com.gm.vehicle.permission.READ_BRAKES_PROTECTED" />
+    <uses-permission android:name="com.gm.vehicle.permission.READ_VEHICLE_INFORMATION_PROTECTED" />
+    <uses-permission android:name="com.gm.vehicle.permission.READ_SECURITY_PROTECTED" />
+    <uses-permission android:name="com.gm.vehicle.permission.WRITE_DATE_AND_TIME_PROTECTED" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+
+    <application
+        android:name=".GMSettingsApp"
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.activities.SettingsDrivingModeTractionActivity"
+            android:label="@string/title_activity_settings_driving_mode_traction">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.evG_Traction" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SettingsDrivingModeSuspensionActivity"
+            android:label="@string/title_activity_settings_driving_mode_suspension">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.evG_Suspension" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activities.SettingsDriveModeSteeringActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.evG_Steering" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SettingsHomeActivity"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.evG_FrontScreen" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SettingsTimeDateActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|orientation"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_REQ_TIMEDATE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SettingsLanguagesActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|orientation"
+            android:label="@string/title_activity_language_list">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_REQ_GETSUPPORTEDLANGUAGES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activities.SettingsTimeDateOnOffActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.evG_automaticTimeDate" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activities.SettingsAutomaticTimeZoneActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.evG_AutomaticTimeZone" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activities.SettingsTimeZoneActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_REQ_TIMEZONE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SettingsDisplayActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_REQ_DISPLAY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activities.SettingsSoundsActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_REQ_SOUND_MENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SettingsFactoryPopupActivity"
+            android:theme="@style/CustomPopup"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_REQ_RESETVEHICLESETTINGS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activities.SettingsDrivingModeActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_REQ_DRIVINGMODELIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activities.SettingsVehicleDriveModeEngineActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.evG_Engine" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.activities.SettingsFactoryRetryActivity"
+            android:theme="@style/CustomPopup">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.evG_Retry" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SettingsClearDefaultPopupActivity"
+            android:theme="@style/CustomPopup">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.evG_Clear_App" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SettingsDataResetPopupActivity"
+            android:theme="@style/CustomPopup">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activities.SettingsEraseLoadingActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.evG_Erase_Load" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SettingsEraseSettingsPopupActivity"
+            android:theme="@style/CustomPopup">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.evG_Erase" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activities.SettingsDisplayModeActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.evG_Mode" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activities.DisplayOffActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_REQ_SETDISPLAYSTATUS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SettingsCalibrationActivity"
+            android:theme="@style/CustomPopup">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_REQ_CALIBRATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activities.SettingsSoundsMaxVolumeActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_REQ_GETMAXSTARTUPVOLUME" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SettingsReturnToFactoryActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_RETURNTOFACTORY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SettingsSoundsAudioCueVolActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|orientation">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_REQ_GETAUDIOCUES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SettingsOnOffActivitySounds"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|orientation">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_REQ_GETAUDIBLETOUCHFEEDBACK3" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activities.SettingsPopupActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_REQ_CALIBRATION_SUCCESS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activities.SettingsCalibrationFailureActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.evG_calibrationfailurepopup" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SettingsSoundsPopupCueActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|orientation">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.evG_Sound_popup" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activities.SettingsFavoritesActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_REQ_CONTAINER_LIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activities.SettingsManageFavoritesActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_MANAGE_SET_FAV" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SettingsSearchButtonActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|orientation">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.evG_Search" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SettingsClimateActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|orientation">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_REQ_CLIMATE_MENU_LIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.AirQualitySensorSettingsActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|orientation">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.evG_AirQuality" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.AutoFanSpeedActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|orientation">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.evG_AutoFanSpeed" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.AutoAirDistributionActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|orientation">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.evG_AutoAirDistribuion" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SettingsClimateOnOffActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|orientation">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_REQ_CLIMATE_INNER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SettingsTDFormatOnOffActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|orientation">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.evG_SetDisplayFormat" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.ConfigurationActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|orientation">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.evG_Configuration" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.RunningAppsSettingsActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|orientation">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_REQ_GET_RUNNING_APPLICATIONLIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.RunningsAppsPopupSettingsActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|orientation"
+            android:theme="@style/CustomPopup">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_REQ_GET_RUNNINGAPPSTOP_POS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SettingsSportModeCustomizationActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|orientation">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.eSportModeCustomization" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SettingsSportModeCustomizationOnOffActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|orientation">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_REQ_SPORTMODESETTINGS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SettingsAutoModeCustomizationActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|orientation">
+            
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.eAutoModeCustomization" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SettingsAboutDeviceRegistrationActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|orientation">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.eDeviceRegistration" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SettingsAppsAudioActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|orientation">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.evGAudio" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SettingsAboutBuildNumberActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|orientation">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_REQ_BUILDNUMBER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.HTMLViewerActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|orientation">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_REQ_OPENSOURCE" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:mimeType="text/html" />
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="application/xhtml+xml" />
+                <data android:mimeType="application/vnd.wap.xhtml+xml" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.AboutSettingsLauncherActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|orientation">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.evG_about" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.activities.SettingsAppsOnOffActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|orientation">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_REQ_APPS_INNER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+    </application>
+
+</manifest>

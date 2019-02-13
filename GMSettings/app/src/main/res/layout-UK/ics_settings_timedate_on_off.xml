@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data class="SettingsTimeDateOnOffActivityBinding">
+
+        <import type="android.view.View" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+
+        <import type="com.gm.settingsservice.models.eSettingsTimeDisplayFormat" />
+
+        <import type="com.gm.settingsapp.utils.CustomNumberPicker" />
+    </data>
+
+    <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        style="?attr/settings_time_date_on_off"
+        bind:layoutDirection="@{dataPoolHandler.settingsConfiguration}"
+        android:background="@drawable/img_settings_bg"
+        bind:skewValue="@{dataPoolHandler.isSkewEnabled()}"
+        bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            style="?attr/settings_wrap_wrap_style"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="@dimen/setting_favorates_horizontal_guideline_per" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/settings_on_off"
+            style="?attr/settings_time_date_card"
+            app:cardElevation="@dimen/settings_card_time_date_card_elevation">
+
+            <com.gm.settingsapp.ui.customview.SkewConstraintLayout style="?attr/settings_time_date_match_wrap_style">
+
+                <include
+                    android:id="@+id/tabLayout"
+                    style="?attr/settings_match_wrap_style"
+                    layout="@layout/uil_ta_hc_topbar_layout"
+                    bind:clickHandler="@{clickHandler}"
+                    bind:dataPoolHandler="@{dataPoolHandler}" />
+            </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <ToggleButton
+            android:id="@+id/toggle_btn_automatic_time"
+            style="?attr/settings_time_date_tab_toggle_button"
+            android:checked="@{dataPoolHandler.SETTINGS_REQ_TIMEDATEDATAOBJ.isToggleState}"
+            android:onClick="@{(view) -> clickHandler.onClickHandler(view,dataPoolHandler.SETTINGS_REQ_TIMEDATEDATAOBJ)}"
+            android:tag="@{dataPoolHandler.SETTINGS_REQ_TIMEDATEDATAOBJ.tPosition == 0 ? `e24HourFormat`: `eAutoUpdateTimeDate`}"
+            app:layout_constraintBottom_toTopOf="@+id/guideline_toggle_horizontal"
+            app:layout_constraintDimensionRatio="10:10"
+            app:layout_constraintEnd_toStartOf="@+id/txt_toggle_btn"
+            app:layout_constraintStart_toEndOf="@+id/guideline_toggle_start"
+            app:layout_constraintTop_toBottomOf="@+id/settings_on_off" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_toggle_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.45" />
+
+        <TextView
+            android:id="@+id/txt_toggle_btn"
+            style="?attr/settings_time_date_text_on_off"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="@{dataPoolHandler.SETTINGS_ON_OFF_TEXT_STATUS}"
+            app:layout_constraintBottom_toTopOf="@+id/guideline_toggle_horizontal"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_toggle"
+            app:layout_constraintHeight_percent="0.08"
+            app:layout_constraintStart_toEndOf="@+id/toggle_btn_automatic_time"
+            app:layout_constraintTop_toBottomOf="@+id/settings_on_off" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.97" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_toggle_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.73" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_ver"
+            style="?attr/settings_wrap_wrap_style"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.4" />
+
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            style="?attr/settings_scroll_view"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_ver"
+            app:layout_constraintHeight_percent="0.23"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settings_on_off"
+            app:layout_constraintWidth_percent="0.31">
+
+            <TextView
+                android:id="@+id/ui_settings_information_text"
+                style="?attr/text_material_content_text"
+                android:fontFamily="@font/gmsansui_regular"
+                android:text="@{dataPoolHandler.SETTINGS_REQ_TIMEDATEDATAOBJ.description}"
+                android:textSize="@dimen/List_Secondary_text" />
+
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/imageView"
+            style="?attr/settings_image_view_on_off"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.6"
+            app:layout_constraintStart_toStartOf="@+id/scrollView2"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+            app:layout_constraintWidth_percent="0.31" />
+
+        <include
+            android:id="@+id/date_picker_time_picker"
+            style="?attr/settings_time_picker_include"
+            layout="@layout/ics_settings_time_date_picker"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.3"
+            app:layout_constraintStart_toEndOf="@+id/guideline_picker"
+            app:layout_constraintTop_toBottomOf="@+id/toggle_btn_automatic_time"
+            app:layout_constraintWidth_percent="0.69"
+            bind:clickHandler="@{clickHandler}"
+            bind:dataPoolHandler="@{dataPoolHandler}" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+</layout>

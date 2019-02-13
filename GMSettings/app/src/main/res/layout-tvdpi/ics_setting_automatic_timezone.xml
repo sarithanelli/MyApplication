@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data class="AutomaticTimeZoneActivityBinding">
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        android:id="@+id/ics_ta_common_popup_layout"
+        style="@style/Layout_Match_Match"
+        android:background="@drawable/img_settings_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        bind:skewValue="@{dataPoolHandler.isSkewEnabled}"
+        bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/settings_top_bar_popup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            app:cardElevation="8dp">
+
+            <include
+                layout="@layout/uil_ta_hc_topbar_title_layout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                bind:clickHandler="@{clickHandler}"
+                bind:dataPoolHandler="@{dataPoolHandler}" />
+        </androidx.cardview.widget.CardView>
+
+        <com.gm.settingsapp.ui.customview.SkewTextView
+            android:id="@+id/txt1_id_maintenance_complete_popup"
+            style="@style/text_material_content_text"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/ics_setting_time_zone_skewtext_padding"
+            android:text="@string/settings_automatic_timezone_unavailable_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settings_top_bar_popup"
+            bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
+
+        <include
+            android:id="@+id/onebutton_include"
+            layout="@layout/uil_ta_bc_onebutton_ok_layout_disp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            bind:clickHandler="@{clickHandler}"
+            bind:dataPoolHandler="@{dataPoolHandler}" />
+
+    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+
+</layout>

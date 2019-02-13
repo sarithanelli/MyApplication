@@ -1,0 +1,204 @@
+<resources>
+
+    <dimen name="ten_dp">10dp</dimen>
+    <dimen name="eight_dp">8dp</dimen>
+
+    <dimen name="metadataTextSize1">20sp</dimen>
+    <dimen name="carousalText2">32sp</dimen>
+    <dimen name="themeTitle">40sp</dimen>
+
+    <dimen name="running_apps_padding_end">28dp</dimen>
+    <dimen name="running_apps_row_height">160dp</dimen>
+    <item name="settings_running_apps_guideline" format="float" type="integer">0.12</item>
+    <item name="settings_running_apps_guideline_end" format="float" type="integer">0.9</item>
+    <item name="settings_running_apps_text_weight_one" format="float" type="integer">0.21</item>
+    <item name="settings_running_apps_seekbar_weight" format="float" type="integer">0.6</item>
+    <item name="settings_running_apps_text_weight_two" format="float" type="integer">0.14</item>
+
+    <!-- the recyclerview text for middle of the padding-->
+    <!-- The radius of the pill. This number should be half the value of
+    car_preset_number_bg_height. -->
+
+    <!-- The length of time it takes the radio preset list to animate a slide up or down. -->
+
+    <!-- The delay before the start of a slide up animation on the preset list. -->
+
+    <dimen name="lens_header_height">112dp</dimen>
+    <dimen name="car_radio_fab_size">100dp</dimen>
+    <dimen name="car_radio_fab_padding">30dp</dimen>
+
+    <integer name="sloped_angle_skew_0">0</integer>
+    <integer name="sloped_angle_skew_15">15</integer>
+    <integer name="sloped_angle_skew_9">9</integer>
+    <integer name="sloped_angle_skew_8">8</integer>
+
+    <dimen name="stream_card_keyline_1">20dp</dimen>
+    <dimen name="stream_card_keyline_2">8dp</dimen>
+    <dimen name="system_tablayout_height">124dp</dimen>
+    <dimen name="text_hmitextlargestyle">50sp</dimen>
+    <dimen name="text_secondary_size">30sp</dimen>
+    <dimen name="text_secondary_size_sounds_popup">30sp</dimen>
+    <dimen name="text_settings_text_padding">42dp</dimen>
+    <dimen name="text_settings_zero">0dp</dimen>
+    <dimen name="text_settings_text_padding_zone">30dp</dimen>
+    <!--for language screen-->
+
+    <dimen name="language_textview_padding">30dp</dimen>
+    <dimen name="guideline_percent">0.15</dimen>
+    <dimen name="design_tab_text_size">14sp</dimen>
+    <integer name="fastScrollBarWidth">24</integer>
+    <integer name="fastScrollArrowRadius">128</integer>
+
+    <dimen name="text_settings_margin_end_config">20dp</dimen>
+
+    <dimen name="recyclerview_margintop">100dp</dimen>
+    <dimen name="radiogroup_margin_start">140dp</dimen>
+    <dimen name="radiobutton_padding_top">30dp</dimen>
+    <dimen name="skewtext_padding_left">30dp</dimen>
+    <dimen name="skewtext_padding">30dp</dimen>
+    <dimen name="guideline_percent_vertical">0.6
+    </dimen> <!--new dimens in wp3 material design sound screen-->
+    <dimen name="guideline_percent_vertical_rhd">0.4
+    </dimen><!--new dimens in wp3 material design sound screen-->
+    <!--for guidelines-->
+    <dimen name="text_settings_text_padding_zone_aroud">25dp</dimen>
+
+    <!--list_row_system_tab-->
+    <!--list_row_timedate-->
+    <dimen name="onoff_text_size">24sp</dimen>
+    <!--settimezone-->
+
+    <!--set time date button width and height-->
+    <dimen name="submitbutton_marginTop">15dp</dimen>
+    <!--Time date recycler view -->
+
+    <!-- <float name="settime_guideline_horizontal_set_time_date_top">0.25</float>-->
+    <!--<float name="settime_guideline_horizontalal_set_time_date_bottom">0.85</float>-->
+
+    <!--automatic time zone text size-->
+    <dimen name="automatictimezone_text_size">35sp</dimen>
+    <dimen name="onoffbutton_padding">35dp</dimen>
+    <dimen name="onoffbutton_padding_end">35dp</dimen>
+
+    <!--Toggle button width and height-->
+    <dimen name="toggle_btn_width">145dp</dimen>
+    <dimen name="toggle_btn_height">55dp</dimen>
+
+    <!--system_sounds_sizes-->
+    <dimen name="system_progressbar_width">1050dp</dimen>
+    <dimen name="system_margin_top_button">45dp</dimen>
+    <item name="system_sounds_guidline" format="float" type="integer">0.6</item>
+    <dimen name="system_sounds_scrollbar_width">0dp</dimen>
+    <dimen name="system__sound_progresssbar_maxmin_height">20dip</dimen>
+    <dimen name="system_sound_car_image_width">500dp</dimen>
+    <dimen name="system_sound_car_image_height">250dp</dimen>
+    <item name="system_sound_car_bias" format="float" type="integer">0.095</item>
+    <dimen name="system_sound_car_image_padding_end">40dp</dimen>
+    <dimen name="system_sounds_card_elevartion">8dp</dimen>
+    <!--Settings_system_speech_prompt_radio_buttons-->
+    <!--Settings voice text padding-->
+    <item name="system_sounds_guidline_for_buttons" format="float" type="integer">0.4</item>
+    <dimen name="system_margin_start_end_button">30dp</dimen>
+    <dimen name="on_off_height_sounds">446dp</dimen>
+    <!-- topbar layout width and height-->
+    <!--search button layout sizes-->
+    <dimen name="search_layout_edittext_crossbutton_size">35dp</dimen>
+    <dimen name="crossbutton_width_height">35dp</dimen>
+    <dimen name="microphone_width">60dp</dimen>
+    <dimen name="microphone__height">84dp</dimen>
+    <dimen name="search_layout_marginbottom">10dp</dimen>
+    <dimen name="search_layout_marginstart_end">20dp</dimen>
+    <dimen name="calibartion_width_height">140dp</dimen>
+    <dimen name="two_button_layout_button_margin_endstart">10dp</dimen>
+    <dimen name="two_button_layout_button_padding">20dp</dimen>
+    <!--phone text padding-->
+    <dimen name="phone_txt_padding_start">30dp</dimen>
+    <!--Side bar and top bar -->
+    <dimen name="img_app_sidebar_width">178dp</dimen>
+    <dimen name="img_cellsignalstrength_width">35dp</dimen>
+    <!--Top Bar Image width and height-->
+    <dimen name="txt_padding">15dp</dimen>
+
+    <item name="system_tab_guideline" format="float" type="integer">0.9</item>
+
+    <!--radio_button_sizes-->
+
+    <!--Select Time zone-->
+    <dimen name="time_image_width">590dp</dimen>
+    <dimen name="time_image_height">380dp</dimen>
+    <dimen name="timedate_text_second_size_cadillac">20sp</dimen>
+
+
+
+
+    <!-- ics_settings_steps_to_pair_final_guideline percent and imageview height and textview size-->
+    <dimen name="system_sounds_maxstart_imageview_margintop">170dp</dimen>
+    <dimen name="ics_setting_time_zone_skewtext_padding">50dp</dimen>
+
+    <!--language-->
+    <dimen name="system_language_buttons_padding">30dp</dimen>
+
+    <!--Side bar margin start-->
+    <dimen name="settings_on_off_margin_start">35dp</dimen>
+    <dimen name="settings_on_off_padding_start">20dp</dimen>
+    <dimen name="side_bar_height">120dp</dimen>
+
+
+    <!--Time Picker Date Picker -->
+    <dimen name="settings_time_picker_text_size">20sp</dimen>
+    <dimen name="settings_time_picker_include">350dp</dimen>
+    
+    <!--text_sizes-->
+    <dimen name="List_primary_text_cadillac">24sp</dimen>
+    <dimen name="List_Secondary_text_cadillac">18sp</dimen>
+    <dimen name="radio_btn_text_size">20sp</dimen>
+    <dimen name="Popup_text_cadillac">32sp</dimen>
+    <dimen name="Popup_text_cadillac_secondary">24sp</dimen>
+    <dimen name="Popup_text_cadillac_buttons">18sp</dimen>
+
+    <!--top_bar_size-->
+    <dimen name="top_bar_text_size">40sp</dimen>
+
+
+    <dimen name="image_view_margin_end">30dp</dimen>
+    <dimen name="toggle_btn_margin_end">10dp</dimen>
+
+    <!--teninch branch new dimensions-->
+    <dimen name="timedate_textview_primary_size">40sp</dimen>
+    <dimen name="image_view_height">94dp</dimen>
+    <dimen name="img_cellsignalstrength_height">22dp</dimen>
+    <dimen name="txt_topbar_devicename">41sp</dimen>
+    <dimen name="txt_topbar_time">35sp</dimen>
+    <dimen name="txt_topbar_username">28sp</dimen>
+
+    <dimen name="row_height">120dp</dimen>
+    <dimen name="row_primary_margiin_bottom">10dp</dimen>
+    <dimen name="setting_favorates_horizontal_guideline_per">0.1</dimen>
+    <dimen name="setting_language_horizontal_guideline_per_rhd">0.05</dimen>
+
+    <!--Card dimens-->
+    <dimen name="settings_card_time_date_margin_bottom">10dp</dimen>
+    <dimen name="settings_card_time_date_card_elevation">8dp</dimen>
+    <dimen name="settings_zero">0dp</dimen>
+    <dimen name="settings_margin_top">72dp</dimen>
+    <dimen name="settings_uil_time_date_padding">5dp</dimen>
+    <dimen name="settings_margin_start">15dp</dimen>
+
+    <dimen name="setting_topbar_marginbottom">4dp</dimen>
+    <item name="cancel_popup_guideline" format="float" type="integer">0.4</item>
+    <item name="cancel_popup_end_guideline" format="float" type="integer">0.6</item>
+
+    <integer name="toast_marginStart">120</integer>
+    <integer name="toast_marginTop">125</integer>
+    <integer name="toast_width">1000</integer>
+
+
+    <item name="settings_running_apps_guideline_progress" format="float" type="integer">0.9</item>
+    <item name="settings_running_apps_guideline_rhd" format="float" type="integer">0.02</item>
+    <item name="settings_running_apps_guideline__rhd_end" format="float" type="integer">0.84</item>
+
+    <dimen name="settings_language_padding">20dp</dimen>
+    <dimen name="text_hmimediumstyle">50sp</dimen>
+</resources>
+
+

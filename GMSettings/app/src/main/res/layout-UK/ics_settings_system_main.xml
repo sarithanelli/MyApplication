@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data class="SettingsHomeActivityBinding">
+
+        <import type="android.view.View" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+    </data>
+
+    <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        style="?attr/settings_language_skewlayout_style"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        bind:layoutDirection="@{dataPoolHandler.settingsConfiguration}"
+        bind:skewValue="@{dataPoolHandler.isSkewEnabled()}"
+        bind:slopedAngle="@{dataPoolHandler.SKEW_ANGLE_8}">
+
+        <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+            android:id="@+id/asd"
+            style="?attr/settings_main_skewlayout_style"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/top_bar_container">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/homeviewPager"
+                style="@style/Layout_Wrap_Wrap"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                bind:pagerItems="@{dataPoolHandler.homeScreenData}" />
+
+        </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+
+        <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+            android:id="@+id/top_bar_container"
+            style="?attr/settings_main_skewlayout_wrap_style"
+            app:layout_constraintBottom_toTopOf="@id/asd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                style="@style/setings_time_date_card"
+                app:cardElevation="8dp">
+
+                <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+                    android:id="@+id/tab_layout"
+                    style="?attr/settings_language_skewlayout_wrap_style"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline_vertical_tab_bar"
+                        style="@style/Layout_Match_Wrap_Vertical"
+                        app:layout_constraintGuide_percent="@integer/system_tab_guideline" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/lv_tabs"
+                        style="?attr/settings_tab_layout_home_style"
+                        android:layout_width="match_parent"
+                        app:layout_constraintEnd_toStartOf="@+id/settings_btn_search"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        bind:tabChildLayout="@{@layout/uil_settings_list_row_tab}"
+                        bind:tabItems="@{dataPoolHandler.SETTINGS_MAINVIEWPAGER_TITLES}" />
+
+
+                    <ImageButton
+                        android:id="@+id/settings_btn_search"
+                        style="@style/settings_button_search"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:onClick="@{clickHandler::onClickHandler}"
+                        android:tag="ePhoneLaunch"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/guideline_vertical_tab_bar"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/icn_search_gmc_rect"
+                        bind:ignore="ContentDescription" />
+
+                </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+
+    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+
+</layout>

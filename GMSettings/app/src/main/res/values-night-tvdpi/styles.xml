@@ -1,0 +1,1076 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="settings_language_list_style">@style/settings_bg_main_azure</item>
+        <item name="settings_fragment_recylerview">@style/recyclerview_material_sprite</item>
+        <!--saritha start-->
+
+        <item name="settings_cardview_style">@style/settings_cardview</item>
+        <item name="settings_layout_bg_style">@style/settings_layout_bg</item>
+        <item name="settings_skewlayout_bg">@style/settings_skewlayout_bg</item>
+        <item name="settings_recyclerview">@style/settings_recyclerview</item>
+        <item name="settings_constraintlayout_bg">@style/settings_constraintlayout_bg</item>
+        <item name="settings_button_backarrow">@style/settings_button_backarrow</item>
+        <item name="settings_text_title">@style/settings_text_title</item>
+        <item name="settings_button_search">@style/settings_button_search</item>
+        <item name="settings_skewlayout">@style/settings_skewlayout</item>
+        <item name="settings_layout_text">@style/settings_layout_text</item>
+        <item name="settings_layout_text_secondary">@style/settings_layout_text_secondary</item>
+        <item name="settings_imageview">@style/settings_imageview</item>
+        <item name="settings_radiobutton">@style/settings_radiobutton</item>
+        <item name="settings_constraintlayout">@style/settings_constraintlayout</item>
+        <item name="settings_radiogroup">@style/settings_radiogroup</item>
+        <item name="settings_radiobutton_day">@style/settings_radiobutton_day</item>
+        <item name="settings_radiobutton_night">@style/settings_radiobutton_night</item>
+        <item name="text_material_content_text">@style/text_material_content_text</item>
+        <item name="settings_topbar_text_title">@style/settings_top_bar_text_title_sprite</item>
+
+        <item name="settings_calibrate">@style/settings_calibrate</item>
+        <item name="btn_retry_calibration">@style/btn_retry_calibration</item>
+
+        <!--saritha end-->
+
+        <item name="settings_main_skewlayout_style">@style/settings_main_skewlayout_style_sprite</item>
+        <item name="settings_main_skewlayout_wrap_style">@style/settings_main_skewlayout_wrap_style_sprite</item>
+        <item name="settings_language_skewlayout_wrap_style">@style/settings_language_skewlayout_wrap_style_sprite</item>
+        <item name="settings_tab_layout_home_style">@style/settings_tab_layout_home_style_sprite</item>
+        <item name="system_main_search_image_style">@style/system_main_search_image_style_sprite</item>
+
+
+        <!--Favorites Styles-->
+
+
+        <item name="settings_favorites_bg_style">@style/settings_favorites_bg_main_sprite</item>
+        <item name="settings_favorites_no_bg_style">@style/settings_favorites_no_bg_main_sprite
+        </item>
+        <item name="settings_favorites_recycler_style">@style/settings_favorites_recycler_sprite
+        </item>
+        <item name="settings_favorites_list_row_text">
+            @style/settings_favorites_list_row_text_sprite
+        </item>
+        <item name="settings_set_audio_favorites_recycler_style">
+            @style/settings_set_audio_favorites_recycler_sprite
+        </item>
+        <item name="settings_set_audio_favorites_guideline_vertical">
+            @style/settings_set_audio_favorites_guideline_vertical_sprite
+        </item>
+        <item name="settings_set_audio_favorites_guideline_horizontal">
+            @style/settings_set_audio_favorites_guideline_horizontal_sprite
+        </item>
+        <item name="settings_set_audio_favorites_scroll">
+            @style/settings_set_audio_favorites_scroll_sprite
+        </item>
+        <item name="settings_set_audio_favorites_skewConstraintLayout_no_bg">
+            @style/settings_set_audio_favorites_no_bg_skewclayout_sprite
+        </item>
+        <item name="settings_set_audio_favorites_skewConstraintLayout_no_bg_match">
+            @style/settings_set_audio_favorites_no_bg_skewclayout_match_match_sprite
+        </item>
+        <item name="settings_set_audio_favorites_skewConstraintLayout_no_bg_wrap">
+            @style/settings_set_audio_favorites_no_bg_skewclayout_match_wrap_sprite
+        </item>
+        <item name="settings_set_audio_favorites_image">
+            @style/settings_set_audio_favorites_image_sprite
+        </item>
+        <item name="settings_set_audio_favorites_text">
+            @style/settings_set_audio_favorites_text_sprite
+        </item>
+        <item name="settings_set_audio_favorites_MaterialCardView">
+            @style/settings_set_audio_favorites_MaterialCardView_sprite
+        </item>
+        <item name="settings_set_audio_favorites_list_row_text">
+            @style/settings_set_audio_favorites_list_row_text_sprite
+        </item>
+
+        <!--Above Styles of Favorites-->
+
+        <item name="settings_fragment_cardview">@style/settings_fragments_mCardView_sprite</item>
+        <item name="settings_fragment_layout">@style/settings_fragments_constraintLayout_sprite</item>
+        <item name="settings_fragment_list_row_layout">@style/settings_fragments_list_row_constraintLayout_sprite</item>
+        <item name="settings_fragment_list_row_text">@style/settings_fragments_list_row_text_sprite</item>
+
+
+
+
+        <!--width height styles-->
+        <item name="settings_match_match_style">@style/Layout_Match_Match</item>
+        <item name="settings_match_wrap_style">@style/Layout_Match_Wrap</item>
+        <item name="settings_match_zero_style">@style/Layout_Match_Zero</item>
+        <item name="settings_zero_zero_style">@style/Layout_Zero_Zero</item>
+        <item name="settings_wrap_match_style">@style/Layout_Wrap_Match</item>
+        <item name="settings_wrap_wrap_style">@style/Layout_Wrap_Wrap</item>
+        <item name="settings_zero_wrap_style">@style/Layout_Zero_Wrap</item>
+
+
+        <!--Language Attrs-->
+
+        <item name="settings_language_card_style">@style/settings_language_card_style_sprite</item>
+        <item name="settings_language_skewlayout_style">
+            @style/settings_language_skewlayout_style_sprite
+        </item>
+        <item name="settings_layout_guideline_horizontal">
+            @style/settings_layout_guideline_horizontal_sprite
+        </item>
+        <item name="settings_layout_guideline_vertical">
+            @style/settings_layout_guideline_vertical_sprite
+        </item>
+
+        <item name="settings_language_recyclerview">@style/settings_language_recyclerview_sprite
+        </item>
+        <item name="settings_language_scrollview">@style/settings_language_scrollview_sprite</item>
+        <item name="settings_language_skewtext_text">@style/settings_language_skewtext_text_sprite
+        </item>
+        <item name="settings_language_skewconstraintlayout">
+            @style/settings_language_skewconstraintlayout_sprite
+        </item>
+        <item name="settings_language_imageview">@style/settings_language_imageview_sprite</item>
+        <item name="settings_language_skewlayout_row">
+            @style/settings_language_skewlayout_row_sprite
+        </item>
+        <item name="settings_language_radio_button">
+            @style/settings_language_radio_button_sprite
+        </item>
+        <item name="settings_language_text_medium">
+            @style/settings_language_text_medium_sprite
+        </item>
+        <!--Time Date List Styles-->
+        <item name="settings_time_date_card">@style/setings_time_date_card</item>
+        <item name="settings_time_date_match_wrap_style">@style/settings_time_date_match_wrap</item>
+        <item name="settings_time_date_recycler_view">@style/settings_time_date_recycler</item>
+        <item name="settings_time_date_on_off">@style/settings_time_on_off</item>
+        <item name="settings_time_date_toggle_constraint">
+            @style/settings_time_date_on_off_toggle_constraint
+        </item>
+        <item name="settings_time_date_toggle_button">@style/settings_time_toggle_btn</item>
+        <item name="settings_time_date_text_on_off">@style/settings_on_off_txt_toggle</item>
+        <item name="settings_scroll_view">@style/settings_scroll_text_view</item>
+        <item name="settings_scroll_text_content">@style/settings_scroll_on_off_main_content</item>
+        <item name="settings_image_view_on_off">@style/settings_image_view</item>
+        <item name="settings_time_picker_include">@style/settings_time_picker_date_picker_include
+        </item>
+        <item name="settings_time_date_time_zone_layout">@style/settings_time_zone_layout</item>
+        <item name="settings_time_date_time_zone_recycler">@style/settings_time_zone_recycler</item>
+        <item name="settings_time_date_scroll_view_text">
+            @style/settings_time_zone_scroll_view_text
+        </item>
+        <item name="settings_time_zone_color_transparent">
+            @style/settings_time_zone_color_transparent_match
+        </item>
+        <item name="settings_time_zone_image">@style/settings_time_zone_image_view</item>
+        <item name="settings_time_date_uil_layout">@style/settings_time_date_row_list_layout</item>
+        <item name="settings_time_date_uil_secondary">
+            @style/settings_time_date_uil_secondary_layout
+        </item>
+        <item name="settings_time_date_primary_txt">@style/settings_time_date_tab_primary_txt</item>
+        <item name="settings_time_date_secondary_txt">@style/settings_time_date_tab_secondary_txt
+        </item>
+        <item name="settings_time_date_image">@style/settings_time_date_image_view</item>
+        <item name="settings_time_date_tab_toggle_button">
+            @style/settings_time_date_tab_toggle_button_uil
+        </item>
+        <item name="settings_time_date_picker">@style/settings_time_date_layout_picker</item>
+        <item name="settings_time_date_include">@style/settings_time_date_picker_include</item>
+        <item name="settings_time_zone_radio">@style/settings_time_zone_radio_btn</item>
+        <item name="settings_time_zone_text_primary">@style/settings_time_zone_list_text_primary
+        </item>
+        <item name="settings_time_zone_text_secondary">
+            @style/settings_time_zone_list_text_secondary
+        </item>
+        <!--Sounds Attrs-->
+        <item name="settings_sounds_skew_main">@style/settings_sounds_skew_main_sprite</item>
+        <item name="settings_sounds_recyclerview">@style/settings_sounds_recyclerview_sprite</item>
+        <item name="settings_sounds_text">@style/settings_sounds_text_sprite</item>
+        <item name="settings_sounds_imageview">@style/settings_sounds_imageview_sprite</item>
+        <item name="settings_sounds_audio1_layout_zero_wrap">@style/settings_sounds_audio1_layout_zero_wrap_sprite</item>
+        <item name="settings_sounds_audio1_skewimag">@style/settings_sounds_audio1_skewimg_sprite</item>
+        <item name="settings_sounds_audio1_text">@style/settings_sounds_audio1_text_sprite</item>
+        <item name="settings_sounds_audio1_radiobutton">@style/settings_sounds_audio1_radiobutton_sprite</item>
+        <item name="settings_sounds_audio1_radiogroup">@style/settings_sounds_audio1_radiogroup_sprite</item>
+
+
+        <!--Side bar Styles-->
+        <item name="settings_side_bar_layout">@style/settings_side_bar</item>
+        <item name="settings_side_bar_row_list">@style/settings_nav_row_list</item>
+    </style>
+
+
+
+
+
+    <style name="settings_fragments_mCardView_sprite" parent="@style/Layout_Match_Wrap">
+        <item name="android:layout_marginTop">@dimen/ten_dp</item>
+        <item name="android:layout_marginBottom">@dimen/ten_dp</item>
+        <item name="android:backgroundTint">@android:color/transparent</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:elevation">@dimen/eight_dp</item>
+    </style>
+
+
+    <style name="settings_fragments_constraintLayout_sprite" parent="@style/Layout_Match_Match">
+        <item name="android:layout_marginTop">@dimen/recyclerview_margintop</item>
+        <item name="android:background">@drawable/img_settings_bg</item>
+    </style>
+
+    <style name="settings_fragments_list_row_constraintLayout_sprite" parent="@style/Layout_Match_Wrap">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+
+    <style name="settings_fragments_list_row_text_sprite" parent="@android:style/TextAppearance.Material.Subhead">
+        <item name="android:ellipsize">end</item>
+        <item name="android:fontFamily">@font/gmsansui_medium</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textDirection">locale</item>
+        <item name="android:textSize">@dimen/top_bar_text_size</item>
+        <item name="android:textColor">@color/textview_color</item>
+        <item name="android:padding">@dimen/text_settings_text_padding</item>
+    </style>
+
+
+    <style name="search_cross_buton_width_height">
+        <item name="android:layout_width">@dimen/crossbutton_width_height</item>
+        <item name="android:layout_height">@dimen/crossbutton_width_height</item>
+        <!-- <item name="android:layout_marginStart">@dimen/material_marginstart</item>-->
+    </style>
+
+    <style name="search_microphone_buton_width_height">
+        <item name="android:layout_width">@dimen/microphone_width</item>
+        <item name="android:layout_height">@dimen/microphone__height</item>
+        <!-- <item name="android:layout_marginStart">@dimen/material_marginstart</item>-->
+    </style>
+
+    <style name="Layout_Wrap_Wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- <style name="Button_Layout_width_height">
+         <item name="android:layout_width">@dimen/topbar_layout_width</item>
+         <item name="android:layout_height">@dimen/topbar_layout_width</item>
+     </style>-->
+    <style name="Layout_Match_Match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Layout_Match_Zero">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/text_settings_zero</item>
+    </style>
+
+    <style name="Layout_Zero_Wrap">
+        <item name="android:layout_width">@dimen/text_settings_zero</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Layout_Zero_Zero">
+        <item name="android:layout_width">@dimen/text_settings_zero</item>
+        <item name="android:layout_height">@dimen/text_settings_zero</item>
+    </style>
+
+    <style name="Layout_Match_Wrap" parent="Layout_Match_Match">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Layout_Wrap_Match" parent="Layout_Match_Match">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="Layout_Match_Wrap_Horizontal" parent="Layout_Match_Wrap">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Layout_Match_Wrap_Vertical" parent="Layout_Match_Wrap">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Layout_Match_Wrap_transparent" parent="Layout_Match_Wrap">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="Layout_Wrap_Wrap_transparent" parent="Layout_Wrap_Wrap">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="text_material_subheading_medium" parent="@android:style/TextAppearance.Material.Subhead">
+        <item name="android:ellipsize">end</item>
+        <item name="android:fontFamily">@font/gmsansui_regular</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textDirection">locale</item>
+        <item name="android:textSize">@dimen/metadataTextSize1</item>
+        <item name="android:textColor">@color/textview_color</item>
+
+    </style>
+
+    <style name="text_material_subheading_light" parent="@style/text_material_subheading_medium">
+        <item name="android:fontFamily">@font/gmsansui_light</item>
+        <item name="android:textSize">@dimen/carousalText2</item>
+
+    </style>
+
+    <style name="tab_layout_home" parent="Base.Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/MyTabTextAppearance</item>
+        <item name="android:fontFamily">@font/gmsansui_medium</item>
+    </style>
+
+    <style name="MyTabTextAppearance" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">@dimen/text_hmimediumstyle</item>
+        <item name="android:textColor">@color/textview_color</item>
+        <item name="android:fontFamily">@font/gmsansui_medium</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <!--style for recycler view match parent-->
+    <style name="recyclerview_material_sprite" parent="@style/Layout_Match_Wrap">
+        <item name="android:scrollbars">none</item>
+    </style>
+
+    <style name="radio_button_on_off" parent="@style/Layout_Wrap_Wrap">
+        <item name="android:background">@drawable/ic_radio_button_selector</item>
+    </style>
+
+    <style name="text_material_content_text" parent="@android:style/TextAppearance.Material.Display1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/gmsansui_light</item>
+        <item name="android:foregroundGravity">center_vertical</item>
+        <item name="android:textColor">@color/third_tier_body_text</item>
+        <item name="android:textSize">@dimen/automatictimezone_text_size</item>
+        <!--<item name="android:textAlignment">viewStart</item>-->
+        <!--  <item name="android:textDirection">locale</item>-->
+    </style>
+
+    <style name="uil_ta_bc_onebutton_ok_layout_ImageView8_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="text_material_headline_config" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Headline1
+        </item>
+        <item name="android:textSize">@dimen/themeTitle</item>
+        <item name="android:textColor">@color/background_light_brilliant_red</item>
+    </style>
+
+    <style name="material_btn" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="backgroundTint">@android:color/transparent</item>
+
+    </style>
+
+    <style name="btn_retry" parent="@style/material_btn">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:gravity">center</item>
+        <item name="rippleColor">#646464</item>
+        <item name="android:textSize">@dimen/onoff_text_size</item>
+        <item name="textAllCaps">false</item>
+        <item name="strokeColor">@color/grey</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="android:fontFamily">@font/gmsansui_regular</item>
+    </style>
+    <!--Styles for side bar and top bar -->
+    <style name="txt_device_name_detail" parent="android:style/TextAppearance.Material.Headline">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/yellow</item>
+        <item name="android:fontFamily">@font/gmsansui_regular</item>
+    </style>
+
+    <style name="incall_vehicle_btn" parent="@android:style/Widget.Material.Button.Borderless">
+        <item name="android:background">@drawable/image_button_ripple_selector</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_width">@dimen/img_app_sidebar_width</item>
+        <item name="android:layout_height">@dimen/img_app_sidebar_width</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+
+    <style name="text_primary_regular">
+        <item name="android:fontFamily">@font/gmsansui_regular</item>
+        <item name="android:textColor">@color/third_tier_body_text</item>
+    </style>
+
+    <style name="text_primary_medium" parent="@style/Layout_Wrap_Wrap">
+        <item name="android:fontFamily">@font/gmsansui_medium</item>
+        <item name="android:textColor">@color/textview_color</item>
+    </style>
+
+    <style name="text_primary" parent="@android:style/TextAppearance.Material.Subhead">
+        <item name="android:ellipsize">end</item>
+        <item name="android:fontFamily">@font/gmsansui_regular</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textDirection">locale</item>
+        <item name="android:textSize">@dimen/List_primary_text</item>
+        <item name="android:textColor">@color/textview_color</item>
+    </style>
+
+    <style name="text_secondary" parent="@android:style/TextAppearance.Material.Subhead">
+        <item name="android:ellipsize">end</item>
+        <item name="android:fontFamily">@font/gmsansui_light</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textDirection">locale</item>
+        <item name="android:textSize">@dimen/List_Secondary_text</item>
+        <item name="android:textColor">@color/secondary_color</item>
+    </style>
+
+
+    <!--New Styles Added-->
+
+    <style name="settings_bg_main_azure">
+        <item name="android:background">@drawable/img_settings_bg</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!--Language Attrs-->
+
+    <style name="settings_language_card_style_sprite" parent="@style/Layout_Match_Match">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="settings_language_skewlayout_style_sprite" parent="@style/Layout_Match_Match">
+        <item name="android:background">@color/skew_white_bg</item>
+    </style>
+
+    <style name="settings_layout_guideline_horizontal_sprite" parent="@style/Layout_Wrap_Wrap">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="settings_layout_guideline_vertical_sprite" parent="@style/Layout_Wrap_Wrap">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="settings_language_recyclerview_sprite">
+        <item name="android:layout_width">@dimen/text_settings_zero</item>
+        <item name="android:layout_height">@dimen/text_settings_zero</item>
+        <item name="android:choiceMode">singleChoice</item>
+        <item name="android:divider">@drawable/list_line_divider</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:tag">""</item>
+    </style>
+
+    <style name="settings_language_scrollview_sprite" parent="@style/Layout_Wrap_Wrap">
+        <item name="android:layout_width">@dimen/text_settings_zero</item>
+    </style>
+
+    <style name="settings_language_skewtext_text_sprite" parent="@style/Layout_Wrap_Wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:fontFamily">@font/gmsansui_regular</item>
+        <item name="android:padding">@dimen/language_textview_padding</item>
+        <!--<item name="android:paddingEnd">@dimen/language_textview_padding</item>-->
+        <item name="android:textColor">@color/skew_bg</item>
+        <item name="android:textSize">@dimen/timedate_textview_second_size</item>
+    </style>
+
+    <style name="settings_language_skewconstraintlayout_sprite" parent="@style/Layout_Wrap_Wrap">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="settings_language_imageview_sprite" parent="@style/Layout_Wrap_Wrap">
+        <item name="android:layout_width">@dimen/settings_zero</item>
+        <item name="android:layout_height">@dimen/settings_zero</item>
+        <item name="android:background">@drawable/img_sensor</item>
+    </style>
+
+    <style name="settings_language_skewlayout_row_sprite" parent="@style/Layout_Wrap_Wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="settings_language_text_medium_sprite" parent="@style/text_primary_medium">
+        <item name="android:padding">@dimen/system_language_buttons_padding</item>
+        <item name="android:paddingStart">@dimen/text_settings_text_padding_zone</item>
+        <item name="android:textSize">@dimen/timedate_textview_primary_size</item>
+    </style>
+
+    <style name="settings_language_radio_button_sprite" parent="@style/radio_button_on_off">
+        <item name="android:layout_marginStart">15dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:tag">eLanguageRow</item>
+    </style>
+
+    <!--Styles for Favorites-->
+
+    <style name="settings_favorites_bg_main_sprite" parent="@style/Layout_Match_Match">
+        <item name="android:background">@drawable/img_settings_bg</item>
+    </style>
+
+    <style name="settings_favorites_no_bg_main_sprite" parent="@style/Layout_Match_Wrap">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="settings_favorites_recycler_sprite" parent="@style/Layout_Match_Zero">
+        <item name="android:choiceMode">singleChoice</item>
+        <item name="android:divider">@drawable/list_line_divider</item>
+        <item name="android:foregroundGravity">top</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+
+    <style name="settings_set_audio_favorites_recycler_sprite" parent="@style/Layout_Zero_Zero">
+        <item name="android:choiceMode">singleChoice</item>
+        <item name="android:divider">@drawable/list_line_divider</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:tag">""</item>
+    </style>
+
+
+    <style name="settings_set_audio_favorites_guideline_vertical_sprite" parent="@style/Layout_Wrap_Wrap">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="settings_set_audio_favorites_guideline_horizontal_sprite" parent="@style/Layout_Wrap_Wrap">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="settings_set_audio_favorites_scroll_sprite" parent="@style/Layout_Zero_Wrap">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="settings_set_audio_favorites_no_bg_skewclayout_sprite" parent="@style/Layout_Wrap_Wrap">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="settings_set_audio_favorites_no_bg_skewclayout_match_wrap_sprite" parent="@style/Layout_Match_Wrap">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="settings_set_audio_favorites_no_bg_skewclayout_match_match_sprite" parent="@style/Layout_Match_Match">
+        <item name="android:background">@color/skew_white_bg</item>
+    </style>
+
+
+    <style name="settings_set_audio_favorites_MaterialCardView_sprite" parent="@style/Layout_Match_Zero">
+        <item name="android:layout_marginBottom">@dimen/ten_dp</item>
+    </style>
+
+    <style name="settings_set_audio_favorites_image_sprite">
+        <item name="android:layout_width">@dimen/time_image_width</item>
+        <item name="android:layout_height">@dimen/time_image_height</item>
+        <item name="android:background">@drawable/img_sensor</item>
+    </style>
+
+    <style name="settings_set_audio_favorites_text_sprite" parent="@style/Layout_Match_Wrap">
+        <item name="android:fontFamily">@font/gmsansui_regular</item>
+        <item name="android:textColor">@color/third_tier_body_text</item>
+        <item name="android:textSize">@dimen/timedate_text_second_size_cadillac</item>
+        <!--<item name="android:paddingEnd">@dimen/language_textview_padding</item>-->
+    </style>
+
+    <style name="settings_favorites_list_row_text_sprite" parent="@android:style/TextAppearance.Material.Subhead">
+        <item name="android:ellipsize">end</item>
+        <item name="android:fontFamily">@font/gmsansui_regular</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textDirection">locale</item>
+        <item name="android:textSize">@dimen/metadataTextSize1</item>
+        <item name="android:textColor">@color/textview_color</item>
+        <item name="android:padding">@dimen/text_settings_text_padding</item>
+    </style>
+
+    <style name="settings_set_audio_favorites_list_row_text_sprite" parent="@style/text_material_subheading_medium">
+        <item name="android:fontFamily">@font/gmsansui_regular</item>
+        <item name="android:textSize">@dimen/timedate_textview_primary_size</item>
+        <item name="android:textColor">@color/textview_color</item>
+        <item name="android:padding">@dimen/system_language_buttons_padding</item>
+        <item name="android:paddingStart">@dimen/text_settings_text_padding_zone</item>
+    </style>
+
+    <!--Above Styles of Favorites-->
+    <!--Time Date Styles-->
+    <style name="setings_time_date_card" parent="@style/Layout_Match_Wrap">
+        <item name="android:layout_marginBottom">@dimen/settings_card_time_date_margin_bottom</item>
+    </style>
+
+    <style name="settings_time_date_match_wrap" parent="@style/Layout_Match_Wrap">
+        <item name="android:background">@color/white</item>
+    </style>
+
+
+    <style name="settings_time_date_recycler">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/settings_zero</item>
+        <item name="android:choiceMode">singleChoice</item>
+        <item name="android:divider">@drawable/list_line_divider</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+    <style name="settings_time_on_off" parent="@style/Layout_Match_Match">
+        <item name="android:background">@drawable/img_settings_bg</item>
+    </style>
+
+    <style name="settings_time_date_on_off_toggle_constraint">
+        <item name="android:layout_width">@dimen/settings_zero</item>
+        <item name="android:layout_height">wrap_content</item>
+       <!-- <item name="android:layout_marginTop">@dimen/settings_margin_top</item>-->
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="settings_time_toggle_btn">
+        <item name="android:layout_width">@dimen/toggle_btn_width</item>
+        <item name="android:layout_height">@dimen/toggle_btn_height</item>
+        <item name="android:layout_marginStart">@dimen/settings_on_off_margin_start</item>
+        <item name="android:background">@drawable/switch_selector_themeb</item>
+        <item name="android:textAlignment">viewEnd</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textOff">@string/str_empty</item>
+        <item name="android:textOn">@string/str_empty</item>
+        <item name="android:textSize">@dimen/onoff_text_size</item>
+    </style>
+
+    <style name="settings_on_off_txt_toggle" parent="@style/text_primary_medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">@dimen/settings_on_off_padding_start</item>
+        <item name="android:textSize">@dimen/onoff_text_size</item>
+    </style>
+
+    <style name="settings_scroll_text_view">
+        <item name="android:layout_width">@dimen/settings_zero</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="settings_scroll_on_off_main_content" parent="@style/text_primary_regular">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:padding">@dimen/language_textview_padding</item>-->
+        <item name="android:textSize">@dimen/timedate_text_second_size_cadillac</item>
+    </style>
+
+    <style name="settings_image_view">
+        <item name="android:layout_width">@dimen/settings_zero</item>
+        <item name="android:layout_height">@dimen/time_image_height</item>
+        <item name="android:src">@drawable/img_auto_time</item>
+    </style>
+
+    <style name="settings_time_picker_date_picker_include">
+        <item name="android:layout_width">@dimen/settings_zero</item>
+        <item name="android:layout_height">@dimen/settings_time_picker_include</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="settings_time_zone_layout" parent="@style/Layout_Match_Match">
+        <item name="android:background">@drawable/img_settings_bg</item>
+    </style>
+
+    <style name="settings_time_zone_recycler">
+        <item name="android:layout_width">@dimen/settings_zero</item>
+        <item name="android:layout_height">@dimen/settings_zero</item>
+        <item name="android:choiceMode">singleChoice</item>
+        <item name="android:divider">@drawable/list_line_divider</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+    <style name="settings_time_zone_scroll_view_text" parent="@style/text_primary_regular">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:padding">@dimen/language_textview_padding</item>-->
+        <item name="android:text">@string/settings_step_speed_drivingmode_content</item>
+        <item name="android:textSize">@dimen/timedate_text_second_size_cadillac</item>
+
+    </style>
+
+    <style name="settings_time_zone_color_transparent_match" parent="Layout_Wrap_Wrap">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="settings_time_zone_image_view">
+        <item name="android:layout_width">@dimen/time_image_width</item>
+        <item name="android:layout_height">@dimen/time_image_height</item>
+        <item name="android:background">@drawable/img_auto_time</item>
+    </style>
+
+    <style name="settings_time_date_row_list_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:paddingEnd">@dimen/settings_uil_time_date_padding</item>
+
+    </style>
+
+    <style name="settings_time_date_uil_secondary_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/row_height</item>
+        <item name="android:paddingStart">@dimen/phone_txt_padding_start</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="settings_time_date_tab_primary_txt" parent="@style/text_primary">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/List_primary_text_cadillac</item>
+        <item name="android:paddingBottom">@dimen/row_primary_margiin_bottom</item>
+        <item name="android:fontFamily">@font/gmsansui_regular</item>
+    </style>
+
+    <style name="settings_time_date_tab_secondary_txt" parent="@style/text_secondary">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/gmsansui_light</item>
+        <item name="android:textSize">@dimen/List_Secondary_text</item>
+
+    </style>
+
+    <style name="settings_time_date_image_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/image_view_height</item>
+        <item name="android:layout_marginEnd">@dimen/image_view_margin_end</item>
+        <item name="android:src">@drawable/img_vertical_divider</item>
+    </style>
+
+    <style name="settings_time_date_tab_toggle_button_uil">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+<!--
+        <item name="android:layout_marginEnd">@dimen/toggle_btn_margin_end</item>
+-->
+        <item name="android:background">@drawable/switch_selector_themeb</item>
+        <item name="android:text">@string/str_empty</item>
+        <item name="android:textOff">@string/str_one_space</item>
+        <item name="android:textOn">@string/str_one_space</item>
+    </style>
+
+    <style name="settings_time_date_layout_picker">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/transparent</item>
+
+    </style>
+
+    <style name="settings_time_date_picker_include">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="settings_time_zone_radio_btn" parent="@style/radio_button_on_off">
+        <item name="android:button">@null</item>
+        <item name="android:layout_marginStart">@dimen/settings_margin_start</item>
+    </style>
+
+    <style name="settings_time_zone_list_text_primary" parent="@style/text_primary">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">@dimen/text_settings_text_padding_zone</item>
+        <item name="android:paddingTop">@dimen/text_settings_text_padding_zone_aroud</item>
+        <item name="android:textSize">@dimen/timedate_textview_primary_size</item>
+    </style>
+
+    <style name="settings_time_zone_list_text_secondary" parent="@style/text_secondary">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">@dimen/text_settings_text_padding_zone</item>
+        <item name="android:paddingBottom">@dimen/text_settings_text_padding</item>
+        <item name="android:textSize">@dimen/timedate_textview_second_size</item>
+    </style>
+    <!--saritha start-->
+    <style name="settings_layout_bg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+
+
+
+    <style name="settings_cardview" parent="@style/Layout_Match_Match">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="settings_skewlayout_bg" parent="Layout_Match_Match">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="settings_recyclerview" parent="Layout_Match_Match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:choiceMode">singleChoice</item>
+        <item name="android:divider">@drawable/list_line_divider</item>
+        <item name="android:foregroundGravity">top</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+    <style name="settings_constraintlayout_bg" parent="Layout_Match_Wrap">
+        <item name="android:background">@color/toolbar_bg</item>
+    </style>
+
+    <style name="settings_top_bar_text_title_sprite" parent="@android:style/TextAppearance.Material.Subhead">
+        <item name="android:ellipsize">end</item>
+        <item name="android:fontFamily">@font/gmsansui_medium</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textDirection">locale</item>
+        <item name="android:textSize">@dimen/text_hmimediumstyle</item>
+        <item name="android:textColor">@color/textview_color</item>
+        <item name="android:padding">@dimen/txt_padding</item>
+
+    </style>
+
+
+    <style name="settings_button_backarrow">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:src">@drawable/icn_back_cadillac</item>
+
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>    </style>
+
+    <style name="settings_text_title" parent="@android:style/TextAppearance.Material.Subhead">
+        <item name="android:ellipsize">end</item>
+        <item name="android:fontFamily">@font/gmsansui_medium</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textDirection">locale</item>
+        <item name="android:textSize">@dimen/text_hmimediumstyle</item>
+        <item name="android:textColor">@color/textview_color</item>
+        <item name="android:padding">@dimen/txt_padding</item>
+
+    </style>
+
+    <style name="settings_button_search">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@drawable/back_image_button_ripple_selector</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="settings_skewlayout" parent="Layout_Match_Wrap">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="settings_layout_text" parent="Layout_Wrap_Wrap">
+
+        <item name="android:fontFamily">@font/gmsansui_regular</item>
+        <item name="android:textColor">@color/textview_color</item>
+        <item name="android:textSize">@dimen/List_primary_text_cadillac</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="settings_layout_text_secondary" parent="Layout_Wrap_Wrap">
+
+        <item name="android:fontFamily">@font/gmsansui_light</item>
+        <item name="android:textColor">@color/secondary_color</item>
+        <item name="android:textSize">@dimen/List_Secondary_text_cadillac</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="settings_imageview" parent="Layout_Wrap_Wrap">
+        <item name="android:layout_height">@dimen/image_view_height</item>
+        <item name="android:layout_marginEnd">@dimen/image_view_margin_end</item>
+        <item name="android:src">@drawable/img_vertical_divider</item>
+
+    </style>
+
+    <style name="settings_radiobutton">
+        <item name="android:layout_width">@dimen/toggle_btn_width</item>
+        <item name="android:layout_height">@dimen/toggle_btn_height</item>
+        <item name="android:layout_marginEnd">@dimen/toggle_btn_margin_end</item>
+        <item name="android:background">@drawable/switch_selector_themeb</item>
+        <item name="android:text">@string/str_empty</item>
+        <item name="android:textOff">@string/str_one_space</item>
+        <item name="android:textOn">@string/str_one_space</item>
+    </style>
+
+    <style name="settings_constraintlayout" parent="Layout_Match_Match">
+        <item name="android:background">@color/layout_bg</item>
+
+    </style>
+
+    <style name="settings_radiogroup" parent="Layout_Wrap_Wrap">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginStart">@dimen/radiogroup_margin_start</item>
+        <item name="android:divider">@drawable/seperator</item>
+        <item name="android:showDividers">end|middle</item>
+    </style>
+
+    <style name="settings_radiobutton_day" parent="Layout_Match_Wrap">
+
+        <item name="android:textColor">@color/rb_text_color</item>
+
+    </style>
+
+    <style name="settings_radiobutton_night" parent="Layout_Match_Wrap">
+
+        <item name="android:textColor">@color/rb_text_color</item>
+
+
+    </style>
+
+    <style name="settings_calibrate" parent="Layout_Match_Wrap">
+
+        <item name="android:background">@drawable/ic_calibrate_selector</item>
+
+
+    </style>
+
+    <style name="settings_calibrate_text" parent="Layout_Match_Wrap">
+
+        <item name="android:textColor">@color/textview_color</item>
+
+
+    </style>
+
+    <style name="btn_retry_calibration" parent="@style/material_btn">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textview_color</item>
+        <item name="android:gravity">center</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="rippleColor">#646464</item>
+        <item name="android:textSize">@dimen/onoff_text_size</item>
+        <item name="textAllCaps">false</item>
+        <item name="strokeColor">@color/grey</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="android:fontFamily">@font/gmsansui_regular</item>
+    </style>
+    <!--saritha end-->
+    <!--Sounds Attrs-->
+
+    <style name="settings_sounds_audio1_layout_zero_wrap_sprite" parent="@style/Layout_Zero_Wrap">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="settings_sounds_audio1_skewimg_sprite" parent="@style/text_material_content_text">
+        <item name="android:layout_width">@dimen/system_sound_car_image_width</item>
+        <item name="android:layout_height">@dimen/system_sound_car_image_height</item>
+        <item name="android:src">@drawable/img_sensor</item>
+    </style>
+
+    <style name="settings_sounds_audio1_text_sprite" parent="@style/text_material_content_text">
+        <item name="android:paddingStart">@dimen/skewtext_padding_left</item>
+        <item name="android:paddingTop">@dimen/skewtext_padding_left</item>
+        <item name="android:paddingEnd">@dimen/skewtext_padding</item>
+        <item name="android:paddingBottom">@dimen/skewtext_padding</item>
+        <item name="android:textSize">@dimen/text_secondary_size</item>
+        <item name="android:fontFamily">@font/gmsansui_regular</item>
+    </style>
+
+
+    <style name="settings_sounds_audio1_radiobutton_sprite" parent="@style/Layout_Match_Wrap">
+        <item name="android:button">@null</item>
+        <item name="android:drawableStart">@drawable/ic_radio_button_selector</item>
+        <item name="android:drawablePadding">@dimen/onoffbutton_padding_end</item>
+        <item name="android:fontFamily">@font/gmsansui_medium</item>
+        <item name="android:padding">@dimen/onoffbutton_padding</item>
+        <item name="android:paddingTop">@dimen/radiobutton_padding_top</item>
+        <item name="android:paddingBottom">@dimen/radiobutton_padding_top</item>
+        <item name="android:textColor">@color/textview_color</item>
+        <item name="android:textSize">@dimen/onoff_text_size</item>
+    </style>
+
+    <style name="settings_sounds_audio1_radiogroup_sprite">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/on_off_height_sounds</item>
+        <item name="android:divider">@drawable/img_list_line_divider</item>
+        <item name="android:showDividers">end|middle</item>
+    </style>
+
+
+    <style name="settings_sounds_skew_main_sprite" parent="@style/Layout_Match_Match">
+        <item name="android:layout_width">@dimen/settings_zero</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="settings_sounds_recyclerview_sprite" parent="@style/settings_time_date_recycler">
+        <item name="android:foregroundGravity">top</item>
+    </style>
+
+    <style name="settings_sounds_text_sprite" parent="@style/Layout_Wrap_Wrap">
+        <item name="android:fontFamily">@font/gmsansui_regular</item>
+        <item name="android:padding">@dimen/text_settings_text_padding</item>
+        <item name="android:textSize">@dimen/List_primary_text_cadillac</item>
+        <item name="android:textColor">@color/textview_color</item>
+
+    </style>
+
+    <style name="settings_sounds_imageview_sprite" parent="@style/Layout_Wrap_Wrap">
+        <item name="android:src">@drawable/img_vertical_divider</item>
+        <item name="android:paddingEnd">10dp</item>
+    </style>
+    <style name="settings_side_bar" parent="@style/Layout_Wrap_Match">
+        <item name="android:background">@drawable/img_tray_background_gmc_rect</item>
+    </style>
+    <style name="settings_nav_row_list" parent="@style/Layout_Wrap_Wrap">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!--Settings main Attrs-->
+
+    <style name="settings_main_skewlayout_style_sprite" parent="@style/Layout_Match_Wrap">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="settings_main_skewlayout_wrap_style_sprite" parent="@style/Layout_Match_Wrap">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="settings_tab_layout_home_style_sprite" parent="@style/tab_layout_home">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/system_tablayout_height</item>
+    </style>
+
+    <style name="settings_language_skewlayout_wrap_style_sprite" parent="@style/Layout_Match_Wrap">
+        <item name="android:background">@color/skew_white_bg</item>
+    </style>
+
+    <style name="system_main_search_image_style_sprite" parent="@style/settings_button_search">
+        <item name="android:layout_marginEnd">0dp</item>
+    </style>
+
+    <style name="CustomPopup" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@drawable/img_settings_popup_screens_bg_cadillac</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <style name="background_image" parent="@style/Layout_Match_Match">
+        <item name="android:background">@drawable/img_home_bg</item>
+    </style>
+
+    <style name="bottom_bar_animation" parent="@style/Layout_Wrap_Wrap">
+        <item name="android:background">@drawable/img_bottom_status_date_bg</item>
+    </style>
+
+    <style name="recycler_view_scroll_color" parent="@style/Layout_Zero_Wrap">
+        <item name="android:scrollbarThumbVertical">@color/list_selector</item>
+        <item name="android:scrollbarTrackVertical">@color/white</item>
+    </style>
+</resources>

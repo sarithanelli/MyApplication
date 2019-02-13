@@ -1,0 +1,4 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('gmsettings-api-0.1.0.aar'))
+dependencies {
+}

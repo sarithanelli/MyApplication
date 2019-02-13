@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="obj"
+            type="com.gm.settingsservice.models.SideBarModel" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+    </data>
+
+    <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        style="?attr/settings_side_bar_row_list"
+        android:onClick="@{(view) -> clickHandler.onClickHandler(view)}"
+        bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
+
+
+        <ImageButton
+            android:id="@+id/left_img"
+            style="@style/incall_vehicle_btn"
+            android:onClick="@{(view) -> clickHandler.onClickHandler(view)}"
+            android:tag="@{position == 0 ? `eConfiguration`: position==6 ?`eScreenClose`:position==2 ?`evG_Back`:position==3 ?`evG_Back`: `eOnOffSelectiondd`}"
+            app:layout_constraintEnd_toStartOf="@+id/left_indicator"
+            bind:background="@{obj.imageSelectorId}" />
+
+        <View
+            android:id="@+id/left_indicator"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/left_img"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+</layout>
+

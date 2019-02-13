@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data class="SettingsThemeBinding">
+
+        <import type="android.view.View" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ics_ta_settings_config_view"
+        style="?attr/settings_match_match_style"
+        bind:layoutDirection="@{dataPoolHandler.settingsConfiguration}">
+
+        <com.gm.uisdk.views.GMRecyclerView
+            android:id="@+id/recycler_view_settings_themes"
+            style="?attr/settings_fragment_recylerview"
+            app:fastScrollArrowRadius="@integer/fastScrollArrowRadius"
+            app:fastScrollBarWidth="@integer/fastScrollBarWidth"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            bind:childLayout="@{@layout/uil_settings_list_row_config_tab}"
+            bind:items="@{dataPoolHandler.settingsConfigurationList}">
+
+        </com.gm.uisdk.views.GMRecyclerView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

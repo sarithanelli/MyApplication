@@ -1,0 +1,2316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="settings_unlocked_door_anti_lock_out_short">منع قفل الباب المفتوح</string>
+  <string name="ui_warning_long">تحذير</string>
+  <string name="settings_30_seconds">30 ثانية</string>
+  <string name="settings_60_seconds">60 ثانية</string>
+  <string name="settings_120_seconds">120 ثانية</string>
+  <string name="settings_about">نبذة</string>
+  <string name="settings_abs_active">نظام منع انغلاق الفرامل نشط:</string>
+  <string name="settings_adaptive_cruise_go_notifier_content">يهدف الإعداد \"تنبيه التكيّف مع حركة السير\" إلى تنبيهك عندما يقوم نظام التحكّم في ثبات السرعة التكيفي بإيقاف السيارة بالكامل خلف سيارة أخرى متوقفة وتستعد للانطلاق من جديد.</string>
+  <string name="settings_adaptive_cruise_go_notifier_big">إنذار التكيّف مع حركة السير</string>
+  <!-- Copy the translation from "settings_adaptive_cruise_go_notifier_short" -->
+  <string name="settings_adaptive_cruise_go_notifier_short">إنذار التكيّف مع حركة السير</string>
+  <string name="settings_adaptive_forward_lighting_big">‏‏الأضواء الأمامية التكيفية</string>
+  <!-- Copy the translation from "settings_adaptive_forward_lighting_short" -->
+  <string name="settings_adaptive_forward_lighting_short">‏‏الأضواء الأمامية التكيفية</string>
+  <string name="settings_speech_prompttype_content">يحدد هذا الإعداد مقدار التفاصيل التي يوفرها نظام التعرف على الصوت عند تقديم ملاحظات لك. حدد \"تلقائي\" لضبط النظام تلقائيًا لطريقة حديثك المعتادة.</string>
+  <string name="settings_interactive_prompts_content">يضبط هذا الإعداد شكليات التوجيهات الصوتية. حدد \"تشغيل\" لسماع التوجيهات مع مزيد من الخصوصية. حدد \"إيقاف\" للتوجيهات الأقصر والأكثر مباشرة. حدد \"تلقائي\" لمطابقة أسلوب التوجيهات مع أسلوب الأوامر لديك.</string>
+  <string name="settings_air_quality_sensor">حساس جودة الهواء</string>
+  <string name="settings_alert_big">تنبيه</string>
+  <string name="settings_alert_small">‏تنبيه</string>
+  <string name="settings_alert_brake">التنبيه والفرملة</string>
+  <string name="settings_alert_brake_steer">التنبيه والفرملة والتوجيه</string>
+  <string name="settings_alert_type">‏نوع التنبيه</string>
+  <string name="ui_audio">الصوت</string>
+  <!-- Copy the translation from "ui_audio_small" from Personalization -->
+  <string name="ui_audio_long1">الصوت</string>
+  <string name="ui_off">إيقاف</string>
+  <!-- Copy the translation from "ui_off_small" from Connections -->
+  <string name="ui_low">منخفضة</string>
+  <string name="ui_medium">متوسطة</string>
+  <string name="ui_medium_small">متوسطة</string>
+  <!-- Copy the translation from "ui_medium" -->
+  <string name="ui_high">عالية</string>
+  <string name="ui_on">تشغيل</string>
+  <!-- Copy the translation from "ui_on_big" -->
+  <string name="ui_pm">م</string>
+  <string name="ui_vehicle_caps">السيارة</string>
+  <string name="ui_system_caps">النظام</string>
+  <string name="ui_personal_caps">شخصي</string>
+  <string name="ui_on_big">تشغيل</string>
+  <string name="ui_apps">التطبيقات</string>
+  <string name="ui_erase">حذف</string>
+  <string name="ui_reset">إعادة التعيين</string>
+  <string name="ui_kb">ك ب</string>
+  <!-- Copy the translation from "ui_kb" from AppShop -->
+  <string name="ui_mb">م ب</string>
+  <!-- Copy the translations from "ui_mb" from AppShop -->
+  <string name="ui_gb_big">GB</string>
+  <!-- Copy the translation from "ui_gb" from AppShop -->
+  <string name="ui_off_big">إيقاف</string>
+  <string name="settings_apple_carplay">Apple CarPlay</string>
+  <!-- DNT -->
+  <string name="settings_android_auto">Android Auto</string>
+  <!-- DNT -->
+  <string name="settings_mirrorlink">MirrorLink</string>
+  <!-- DNT -->
+  <string name="settings_engine_sound_management_short">إدارة صوت المحرك</string>
+  <!-- Copy the translation from "settings_engine_sound_management" -->
+  <string name="settings_audio_cues_menu_option_off">خيار قائمة التلميحات السمعية غير مفعل</string>
+  <string name="settings_audio_cues_menu_option_off_content">إن التلميحات السمعية مضبوطة حالياً على وضع إيقاف التشغيل. يُرجى تشغيل التلميحات السمعية لضبط إعداد المستوى لهذه الأصوات.</string>
+  <string name="settings_disabled">معطل</string>
+  <string name="settings_rear_mimic_front">مطابقة المقدمة</string>
+  <string name="settings_rear_last_known">آخر إعداد معروف</string>
+  <string name="settings_set_time_content">يهدف الإعداد \"ضبط الوقت\" إلى إتاحة الضبط اليدوي للوقت. استخدم أزرار التحكّم هذه لتعديل قيم الوقت.</string>
+  <string name="settings_confidence_threshold">قليل/مزيد من التأكيد</string>
+  <string name="settings_confidence_threshold_content">يحدد هذا الإعداد مدى تأكيد نظام التعرف على الصوت للأوامر. حدد مزيد من التأكيد لدفع النظام للتحقق من الأوامر معك غالبًا قبل تنفيذها.</string>
+  <string name="settings_confirm_more">مزيد من التأكيد</string>
+  <string name="settings_confirm_less_big">قليل من التأكيد</string>
+  <string name="settings_confirm_less_small">قليل من التأكيد</string>
+  <string name="settings_climate_air_quality">‏المناخ وجودة الهواء</string>
+  <string name="settings_climate_app">المناخ</string>
+  <string name="settings_collision_detection_systems">أنظمة الكشف/التصادم</string>
+  <string name="settings_comfort_convenience">‏الراحة والملاءمة</string>
+  <string name="settings_lighting">‏‏الإنارة</string>
+  <string name="settings_lighting_long">‏‏الإضاءة</string>
+  <string name="settings_left_hand_traffic">‏حركة المرور على اليسار</string>
+  <string name="settings_power_door_locks">‏أقفال الأبواب الأوتوماتيكية</string>
+  <string name="settings_remote_lock_unlock_start_short">القفل والفتح والتشغيل عن بُعد</string>
+  <string name="settings_driving_mode_big">وضع القيادة</string>
+  <string name="settings_sport_mode_customization">تخصيص وضع القيادة الرياضية</string>
+  <string name="settings_auto_mode_customization">تخصيص الوضع التلقائي</string>
+  <string name="settings_teen_driver">وضع السائق المراهق</string>
+  <string name="settings_valet_mode">وضع خدمة الركن</string>
+  <string name="settings_vehicle_locator_lights_big">‏مصابيح تحديد موقع السيارة</string>
+  <!-- Copy the translation from "settings_vehicle_locator_lights_short" -->
+  <string name="settings_vehicle_locator_lights_short">‏مصابيح تحديد موقع السيارة</string>
+  <string name="settings_vehicle_locator_lights_content">يتيح الإعداد \"‏مصابيح تحديد موقع السيارة\" إضاءة الأضواء الخارجية لفترة وجيزة عند الضغط على زرّ الفتح في جهاز التحكّم عن بُعد في فتح الأبواب.</string>
+  <string name="settings_exit_lighting">‏إنارة ما بعد الخروج‏</string>
+  <string name="settings_auto_high_beam">‏الضوء العالي التلقائي</string>
+  <!-- Copy the translation from "settings_auto_high_beam_short" -->
+  <string name="settings_adaptive_high_beam">‏الضوء العالي التكيفي</string>
+  <string name="settings_smart_high_beam_assist_short">مساعد الضوء العالي الذكي</string>
+  <string name="settings_auto_high_beam_small">‏الضوء العالي التلقائي</string>
+  <string name="settings_intelligent_light_distribution_small">التوزيع الذكي للإنارة</string>
+  <string name="settings_return_to_factory_settings">العودة إلى إعدادات المصنع</string>
+  <string name="settings_view_report_card">عرض التقرير</string>
+  <string name="settings_report_card">التقرير</string>
+  <string name="settings_change_pin">تغيير رمز التعريف الشخصي</string>
+  <string name="settings_key_registration">إعداد المفاتيح</string>
+  <string name="settings_audio_volume_limit">حد مستوى الصوت</string>
+  <string name="settings_set_audio_volume_limit">تعيين الحد الاقصى لمستوى الصوت</string>
+  <string name="settings_chime_volume">‏مستوى صوت التنبيه</string>
+  <string name="settings_set_audio_volume_limit_content">يحدّد الإعداد \"تعيين الحدّ الأقصى لمستوى الصوت\" المستوى الأقصى للصوت المسموح به للسائق المراهق.</string>
+  <string name="settings_teen_driver_speed_limiter">محدد السرعة للسائق المراهق</string>
+  <string name="settings_set_teen_driver_speed_warning">تحديد تحذير تجاوز السرعة لوضع السائق المراهق</string>
+  <string name="settings_language_big">اللغة (Language)</string>
+  <!-- Copy the translation from "settings_language_small" -->
+  <string name="settings_language_small">اللغة (Language)</string>
+  <string name="settings_language_content">يشير الإعداد \"اللغة\" إلى اللغة المعروضة في لوحة العدّادات وعلى شاشة جهاز الراديو. .%1$s</string>
+  <string name="settings_sounds_big">الأصوات</string>
+  <!-- Copy the translation from "settings_sounds_small" -->
+  <string name="settings_sounds_small">الأصوات</string>
+  <string name="settings_maximum_startup_volume">الحد الأقصى لمستوى الصوت عند بدء التشغيل</string>
+  <string name="settings_audio_cues">أصوات بدء التشغيل</string>
+  <string name="settings_set_audio_cue_volume">مستوى صوت بدء التشغيل</string>
+  <string name="settings_audible_touch_feedback_short">الإشارات الصوتية عند اللمس</string>
+  <string name="settings_audio_feedback_speed">سرعة الإعلام الصوتي</string>
+  <string name="settings_slow">بطيئة</string>
+  <string name="settings_fast">سريعة</string>
+  <string name="settings_mode">الوضع</string>
+  <string name="settings_proximity_sensing">استشعار اقتراب الأصابع</string>
+  <string name="settings_auto_small">تلقائي</string>
+  <string name="settings_auto_big">تلقائي</string>
+  <!-- Copy the translation from "settings_auto" -->
+  <string name="settings_calibrate_touchscreen">معايرة شاشة اللمس</string>
+  <string name="settings_turn_display_off">إيقاف العرض</string>
+  <string name="settings_warning_content1">أنت على وشك إعادة تعيين كافة إعدادات السيارة للمستخدم الحالي.</string>
+  <string name="settings_interactive_prompts">توجيهات لطيفة</string>
+  <string name="settings_setting_unavailable_content">ينبغي تشغيل السيارة للوصول إلى هذا الإعداد.</string>
+  <string name="settings_setting_unavailable">الإعداد غير متاح</string>
+  <string name="settings_incorrect_code">رمز غير صحيح</string>
+  <string name="settings_speech">الصوت</string>
+  <string name="settings_voice_recognition_feedback_unavailable_content">إن اللغة المحددة لا تدعم نظام التعرف على الصوت والملاحظات الصوتية. اختر لغة مختلفة لتمكينه.</string>
+  <string name="settings_voice_recognition_unavailable_content">إن اللغة المحددة لا تدعم نظام التعرف على الصوت. اختر لغة مختلفة لتمكين نظام التعرف على الصوت.</string>
+  <string name="settings_voice_recognition_unavailable">نظام التعرف على الصوت غير متاح</string>
+  <string name="settings_voice_recognition_feedback_unavailable">نظام التعرف على الصوت/الملاحظات غير متاح</string>
+  <string name="settings_touchscreen_calibration_successful_content">تم حفظ المعايرة الجديدة.</string>
+  <string name="settings_touchscreen_calibration_successful">تمت معايرة شاشة اللمس بنجاح</string>
+  <string name="settings_touchscreen_calibration_failed_big">فشلت معايرة شاشة اللمس</string>
+  <string name="settings_touchscreen_calibration_failed_content">لم يتم حفظ عملية معايرة شاشة اللمس. ينبغي الضغط على النقطة الموجودة على الشاشة لإتمام عملية المعايرة.</string>
+  <string name="settings_teen_driver_speed_warning_content">يهدف الإعداد \"تحذير السرعة للسائق المراهق\" إلى تحذيرك عندما يتجاوز السائق المراهق الحدّ الأقصى للسرعة المحدّدة.\nبالإمكان ضبط عتبة تحذير السرعة من خلال الإعداد \"ضبط تحذير السرعة للسائق المراهق\".</string>
+  <string name="settings_warning_content">أنت على وشك محو إعدادات بيانات التطبيقات، وملفات تعريف المستخدمين، والبيانات الشخصية في السيارة بما في ذلك بيانات الملاحة والهاتف.</string>
+  <string name="settings_warning_content2">أنت على وشك إعادة تعيين إعدادات نظام الراديو و تفضيلات التطبيقات بالكامل للمستخدم الحالي.</string>
+  <string name="settings_automatic_timezone_unavailable">المنطقة الزمنية التلقائية غير متاحة</string>
+  <string name="settings_automatic_timezone_unavailable_content">إن خاصية الضبط التلقائي للمنطقة الزمنية غير متاحة نظراً لانتهاء مدة صلاحية اشتراكك بخدمة %1$s.</string>
+  <string name="settings_lock_codes_do_not_match">رموز القفل غير متطابقة</string>
+  <string name="settings_lock_codes_do_not_match_content">إن رموز القفل التي أدخلتها غير متطابقة. اضغط على إعادة المحاولة وأعد إدخال رمز القفل لضبط نظام خدمة الركن.</string>
+  <string name="settings_four_digit_lock_code_required">يلزم إدخال رمز القفل من 4 أرقام</string>
+  <string name="settings_four_digit_lock_code_required_content">يجب أن يتكون رمز القفل من 4 أرقام. اضغط إعادة المحاولة وأدخل الأرقام التي قمت بتعيينها عند ضبط نظام خدمة الركن.</string>
+  <string name="settings_valet_mode_unlock">وضع خدمة الركن - أدخل الرمز لإلغاء القفل</string>
+  <string name="settings_set_teen_driver_enter_a_4_digit_pin">وضع السائق المراهق - تعيين رمز PIN من 4 أرقام</string>
+  <string name="settings_incorrect_code_content">الرمز الذي أدخلته غير صحيح. أدخل الأرقام التي قمت بتعيينها عند ضبط نظام خدمة الركن.</string>
+  <string name="settings_re_enter_pin_then_press_set">وضع السائق المراهق - تأكيد رمز PIN</string>
+  <string name="settings_teen_driver_information">معلومات بشأن وضع السائق المراهق</string>
+  <string name="settings_teen_driver_information_content">يتيح لك وضع السائق المراهق تعيين مفاتيح بقيود قابلة للتخصيص. يرجى الرجوع إلى دليل المالك الخاص بك للحصول على التفاصيل.</string>
+  <string name="settings_four_digit_pin_required">يلزم إدخال رمز التعريف الشخصي من 4 أرقام</string>
+  <string name="settings_four_digit_pin_required_content">يجب أن يتكون رمز التعريف الشخصي من 4 أرقام.</string>
+  <string name="settings_teen_driver_mode_set_content">تم تعيين رمز التعريف الشخصي بوضع السائق المراهق بنجاح.</string>
+  <string name="settings_pin_does_not_match">رمز التعريف الشخصي غير متطابق</string>
+  <string name="settings_pin_does_not_match_content">رمز التعريف الشخصي الذي أدخلته غير متطابق.</string>
+  <string name="settings_teen_driver_mode_not_set_content">يمكنك إعادة محاولة إدخال رمز التعريف الشخصي لتعيين وضع السائق المراهق.</string>
+  <string name="settings_unregister_teen_driver_key_content">أنت على وشك إزالة المفتاح الحالي لوضع السائق المراهق.</string>
+  <string name="settings_unregister_teen_driver_key">إزالة مفتاح وضع السائق المراهق</string>
+  <string name="settings_key_unregistered_confirmation">تمت إزالة المفتاح</string>
+  <string name="settings_register_teen_driver_key">إضافة مفتاح للسائق المراهق</string>
+  <string name="settings_register_teen_driver_key_content">أنت على وشك إضافة المفتاح الحالي كمفتاح لوضع السائق المراهق.</string>
+  <string name="settings_key_unregistered_confirmation_content">لقد تمت إزالة المفتاح الحالي بنجاح بصفته مفتاحًا لوضع السائق المراهق. وعند استخدامه، لن يتم تطبيق أي من القيود الخاصة بوضع السائق المراهق.</string>
+  <string name="settings_key_registered_confirmation_content">لقد تمت إضافة المفتاح الحالي بنجاح كمفتاح لوضع السائق المراهق. عند استخدامه، سيتم تطبيق القيود الخاصة بوضع السائق المراهق.</string>
+  <string name="settings_key_registered_confirmation">تمت إضافة مفتاح</string>
+  <string name="settings_keyless_registration">الإعداد بدون مفتاح</string>
+  <string name="settings_teen_driver_clear_all_keys_pin">وضع السائق المراهق - مسح جميع المفاتيح ورموز PIN</string>
+  <string name="settings_keyless_registration_content">ضع جهاز التحكم عن بُعد الذي ترغب في إضافته أو حذفه في وحدة التسجيل.</string>
+  <string name="settings_fasten_seatbelts_content">وضع السائق المراهق نشط. يتم كتم الصوت إلى أن يتم ربط أحزمة المقاعد.</string>
+  <string name="settings_fasten_seatbelts">ربط أحزمة المقاعد</string>
+  <string name="settings_report_card_reset">مسح بيانات التقرير</string>
+  <string name="settings_report_card_reset_content">أنت على وشك مسح جميع بيانات التقرير.</string>
+  <string name="settings_clear_all_teen_keys_pin_failed_content">حدد مسح جميع مفاتيح ورموز PIN لوضع السائق المراهق من القائمة لإعادة المحاولة.</string>
+  <string name="settings_clear_all_teen_keys_pin_success">نجاح مسح جميع المفاتيح ورموز التعريف الشخصي للسائق المراهق</string>
+  <string name="settings_clear_all_teen_keys_pin_success_content">تم مسح جميع المفاتيح ورموز التعريف الشخصي بنجاح.</string>
+  <string name="settings_clear_all_teen_keys_pin_failed">فشل مسح جميع مفاتيح ورموز PIN لوضع السائق المراهق</string>
+  <string name="settings_teen_driver_clear_all_keys_pin_content">لقد حدّدتَ مسح جميع مفاتيح وأرقام التعريف الشخصي لوضع السائق المراهق الخاص بك.</string>
+  <string name="settings_forgot_code">نسيت الرمز</string>
+  <string name="settings_unable_to_send_code">تعذر إرسال الرمز</string>
+  <string name="settings_set_audio_cue_volume_content">مستوى صوت بدء التشغيل يتحكم في مستوى صوت بدء التشغيل في نظام المعلومات والترفيه,</string>
+  <string name="settings_maximum_startup_volume_content">تعمل ميزة \"أقصى حد لمستوى الصوت عند بدء التشغيل\" على الحد من مستوى الصوت للمصادر الصوتية عند تشغيل السيارة.</string>
+  <string name="settings_enter_pin">أدخل رمز التعريف الشخصي</string>
+  <string name="settings_unregister">إزالة</string>
+  <string name="settings_set_date_content">يتيح الإعداد \"تعيين الوقت\" إمكانية تعيين الوقت يدوياً. استخدم أزرار التحكّم لضبط الوقت.</string>
+  <string name="settings_downloaded">تم التنزيل</string>
+  <string name="settings_time_date_big">الوقت/التاريخ</string>
+  <!-- Copy the translation from "settings_time_date_small" -->
+  <string name="settings_display_small">العرض</string>
+  <string name="settings_display_big">العرض</string>
+  <!-- Copy the translation from "settings_display_small" -->
+  <string name="settings_favorites_big">‏‏المفضلات</string>
+  <string name="settings_updates">التحديثات</string>
+  <string name="ui_preferences">التفضيلات</string>
+  <string name="settings_running_applications">التطبيقات الفعَالة حالياً</string>
+  <string name="ui_navigation_short">الملاحة</string>
+  <string name="settings_set_time_big">تعيين الوقت</string>
+  <string name="settings_set_date_big">تعيين التاريخ</string>
+  <string name="settings_manage_settings">إدارة الإعدادات</string>
+  <string name="settings_manage_settings_big">إدارة الإعدادات</string>
+  <!-- Copy the translation from "settings_manage_settings" -->
+  <string name="settings_timezone_content">يتيح الإعداد \"تحديد المنطقة الزمنية\" تعيين المنطقة الزمنية يدوياً. استخدم أزرار التحكّم لضبط الوقت.</string>
+  <string name="settings_select_time_zone_long">حدد المنطقة الزمنية</string>
+  <string name="settings_prompttype_big">طول التوجيهات</string>
+  <!-- Copy the translation from "settings_prompttype_small" -->
+  <string name="settings_short">موجز</string>
+  <string name="settings_auto">تلقائي</string>
+  <string name="settings_step_speed_drivingmode_content">تتيح ضبط مستوى صوت المحرّك.</string>
+  <string name="settings_auto_mode_selector">تلقائي (محدد الوضع)</string>
+  <string name="settings_drivingmode_stealth">خفيف</string>
+  <string name="settings_drivingmode_city">مدينة</string>
+  <string name="settings_traction_big">الجر</string>
+  <!-- Copy the translation from "settings_traction_long" -->
+  <string name="settings_step_speed_traction_content">يحدّد الإعداد \"تحسين نظام AWD\" كيفية معايرة نظام الدفع بجميع العجلات وفق ظروف محدّدة للقيادة أو وفق النمط المعتمد في القيادة وذلك لتحسين أداء السيارة.\nحدّد \"تلقائي\" لربط إعدادات نظام الدفع بجميع العجلات بمحدّد وضع القيادة.</string>
+  <string name="settings_traction_snow_ice_weather">جليد/ثلج/الطقس</string>
+  <string name="settings_traction_eco">اقتصادي</string>
+  <string name="settings_traction_assist_off">مساعد الجر موقف</string>
+  <string name="settings_steering">التوجيه</string>
+  <string name="settings_steering_content">تتيح ضبط جهد التوجيه ليتناسب بالشكل الأمثل مع ظروف القيادة المقصودة أو تفضيلاتك.</string>
+  <!-- Copy the translation from "settings_displays_short" -->
+  <string name="settings_drivingmode_display_content">يهدف الإعداد \"وحدات العرض\" إلى ضبط مظهر لوحة العدّادات. كما يتم توفير مظهر إضافي للعدّادات وفق كل واحدة من ظروف القيادة أو كل واحد من أنماط القيادة.\nحدّد \"تلقائي\" لربط إعداد شاشة العرض بمحدّد وضع القيادة.</string>
+  <string name="settings_remote_start_auto_cool_seats_long">تشغيل المقاعد ذاتية التبريد عند التشغيل عن بُعد</string>
+  <!-- Copy the translation from "settings_remote_start_auto_cool_seats" -->
+  <string name="settings_auto_cool_seats_content">يهدف الإعداد \"تشغيل المقاعد ذاتية التبريد عن بُعد\" إلى إتاحة التشغيل التلقائي للمقاعد ذاتية التبريد عند استخدام وظيفة التشغيل عن بُعد في الأيام الحارة.</string>
+  <string name="settings_remote_start_auto_heat_seats_long">تشغيل المقاعد ذاتية التدفئة عند التشغيل عن بُعد</string>
+  <!-- Copy the translation from "settings_remote_start_auto_heat_seats" -->
+  <string name="settings_auto_heat_seats_content">يهدف الإعداد \"تشغيل المقاعد ذاتية التدفئة عن بُعد\" إلى إتاحة التشغيل التلقائي للمقاعد ذاتية التدفئة عند استخدام وظيفة التشغيل عن بُعد في الأيام الباردة.</string>
+  <string name="settings_left_or_right_hand_traffic">‏حركة المرور على اليسار أو اليمين</string>
+  <string name="settings_traffic_content">يحدّد الإعداد \"حركة المرور على اليسار أو اليمين\" كيفية استخدام ميزة \"الإضاءة الأمامية التكيفية\" وذلك بالاستناد إلى جانب الطريق الذي تسلكه السيارة في العادة.\nحدّد \"تلقائي (GPS)\" لضبط هذا الإعداد تلقائياً وفق موقع السيارة الذي تم كشفه.</string>
+  <string name="settings_right_hand_traffic">‏حركة المرور على اليمين</string>
+  <string name="settings_traffic_automatic_gps">‏تلقائي (GPS)</string>
+  <string name="settings_auto_high_beam_content">يساهم الإعداد \"الضوء العالي التلقائي\" في التشغيل أو إيقاف التشغيل التلقائي للأضواء العالية وذلك وفقاً لحركة المرور المحيطة.\nيقلّل الإعداد \"الحساسية المنخفضة\" من المدة التي يتم خلالها ضبط الأضواء العالية تلقائياً.</string>
+  <string name="settings_auto_high_beam_normal_sensitivity">حساسية عادية</string>
+  <string name="settings_normal_sensitivity_small">حساسية عادية</string>
+  <string name="settings_auto_adaptive_high_beam_content">يضبط الإعداد \"الضوء العالي التكيّفي\" الأضواء العالية تلقائياً بغية توجيهها بعيداً عن السيارات القادمة.\nيقلّل الإعداد \"الحساسية المنخفضة\" من المدة التي يتم خلالها ضبط الأضواء العالية تلقائياً.</string>
+  <string name="settings_auto_adaptive_forward_lighting_corner_curve_lighting">إنارة الزوايا والمنحنيات</string>
+  <string name="settings_intelligent_light_distribution_big">التوزيع الذكي للإنارة</string>
+  <string name="settings_auto_adaptive_forward_lighting_gps_assistance">مساعد GPS</string>
+  <string name="settings_adaptive_forward_lighting_content">يساعد الإعداد \"الإضاءة الأمامية التكيفية\" في الضبط التلقائي للمصابيح الأمامية وذلك بالاستناد إلى ظروف القيادة.</string>
+  <string name="settings_auto_mode_customizations">تخصيص الوضع التلقائي</string>
+  <string name="settings_auto_mode_customizations_content">يتيح الإعداد \"تخصيص الوضع التلقائي\" التحكّم في أوضاع القيادة استناداً إلى نمط القيادة الخاص بك. ويمكن لهذا الإعداد نقل السيارة تلقائياً بين إعدادات الوضع الرياضي ووضع الراحة ووضع القيادة المريحة.</string>
+  <string name="settings_sport_sensitive">وفق القيادة الرياضية</string>
+  <string name="settings_comfort_sensitive">وفق مستوى الراحة</string>
+  <string name="settings_sport_comfort_sensitive">وفق الراحة/القيادة الرياضية</string>
+  <string name="settings_sport_comfort_less_sensitive">لا تأثير للراحة/القيادة الرياضية</string>
+  <string name="settings_auto_adjustment_off">إيقاف الضبط التلقائي</string>
+  <string name="settings_auto_tour_off">إيقاف الوضع المريح التلقائي</string>
+  <string name="settings_reverse_tilt_mirror">إمالة المرآة أثناء السير إلى الخلف</string>
+  <string name="settings_reverse_tilt_mirror_content">يساهم الإعداد \"إمالة المرآة أثناء السير إلى الخلف\" في إمالة إحدى المرآتين الجانبيّتين أو كلتيهما للأسفل عندما يتم الرجوع بالسيارة إلى الخلف. ويهدف هذا الإعداد إلى تحسين رؤية الأرض المجاورة للعجلات الخلفية وهو يفيد عند الركن بجانب الرصيف.</string>
+  <string name="settings_on_driver_passenger">تشغيل - السائق والراكب</string>
+  <string name="settings_on_driver_passenger_small">تشغيل - السائق والراكب</string>
+  <string name="settings_on_driver">تشغيل - السائق</string>
+  <string name="settings_on_passenger">تشغيل - الراكب</string>
+  <string name="settings_easy_exit_steering_column">ضبط عمود القيادة للخروج السهل</string>
+  <string name="settings_easy_exit_steering_column_content">يهدف الإعداد \"ضبط عمود التوجيه للخروج السهل\" إلى تحديد إمكانية وكيفية تحرك عمود التوجيه عند الضغط على زرّ \"الخروج السهل\" أو عند الخروج من السيارة.</string>
+  <string name="settings_on_column_in">تشغيل - العمود للداخل</string>
+  <string name="settings_on_column_up">تشغيل - العمود للأعلى</string>
+  <string name="settings_on_column_in_up">تشغيل - العمود للداخل والأعلى</string>
+  <string name="settings_auto_memory_recall">استعادة الذاكرة تلقائيًا</string>
+  <string name="settings_auto_memory_recall_content">يساعد الإعداد \"استعادة الذاكرة تلقائياً\" في ضبط مقعد السائق، وعمود التوجيه، والدوّاسات، ووضعيّة المرايا الخارجية.\nحدّد \"تشغيل - باب السائق مفتوح\" لاستعادة الوضعيّات عندما يتم فتح باب السائق.\nحدّد \"تشغيل - عند الإشعال\" لاستعادة الوضعيّات عندما يتم تفعيل الإشعال.\nتعتمد وضعيّات الذاكرة التلقائية على جهاز التحكّم عن بُعد في فتح الأبواب المستخدم لفتح وتشغيل السيارة.</string>
+  <string name="settings_on_driver_door_open">تشغيل - عند فتح باب السائق</string>
+  <string name="settings_on_at_ignition_on">تشغيل - عند الإشعال</string>
+  <string name="ui_normal">عادي</string>
+  <string name="settings_display_mode_day">النهار</string>
+  <string name="settings_display_mode_night">المساء</string>
+  <string name="settings_passive_door_lock_big">قفل الأبواب السلبي</string>
+  <string name="settings_on_with_horn_chirp">التشغيل مع صوت البوق</string>
+  <string name="settings_auto_fan_max_speed">سرعة المروحة التلقائية</string>
+  <string name="settings_air_quality_sensor_content">يتيح إعداد \"حساس جودة الهواء\" تشغيل وضع إعادة التدوير وفقاً لنسبة جودة الهواء الخارجي التي تم كشفها.\nيهدف وضع \"إعادة التدوير\" إلى تكييف وتدوير الهواء في المقصورة بدلاً من استخدام الهواء الخارجي.</string>
+  <string name="settings_low_sensitivity">‏حساسية منخفضة</string>
+  <string name="settings_high_sensitivity">حساسية عالية</string>
+  <string name="settings_alert_type_content">يهدف الإعداد \"‏نوع التنبيه\" إلى الإشارة إلى نوع التنبيه الذي ستتلقاه من نُظم مساعدة السائق بغية المساعدة في تجنّب الحوادث. ويكون النوع إما مجموعة من الإنذارات الصوتية أو مجموعة من النبضات التي تؤدي إلى اهتزاز المقعد للتنبيه إلى وضع السلامة.</string>
+  <string name="settings_beeps_long">‏إشارات صوتية</string>
+  <string name="settings_beeps_short">‏إشارات صوتية</string>
+  <string name="settings_safety_alert_seat">تنبيه الأمان في المقعد</string>
+  <string name="settings_front_pedestrian_detection">‏ميزة كشف المشاة من الأمام</string>
+  <string name="settings_front_pedestrian_detection_content">يهدف الإعداد \"كشف المشاة من الأمام\" إلى تنبيهك إلى احتمال حدوث تصادم وشيك مع أحد المشاة الذي تم اكتشافه مباشرة أمامك وإلى تعشيق الفرامل أو إعادة توجيه السيارة، إذا لزم الأمر، وذلك للمساعدة على التقليل من شدة الاصطدام أو على تجنّبه.</string>
+  <string name="settings_intersection_stop_alert">إنذار التوقف عند نقطة تقاطع</string>
+  <string name="settings_intersection_stop_alert_content">يهدف إعداد \"إنذار التوقف عند نقطة تقاطع\" إلى تنبيهك إلى خطر تجاوزك لإشارة مروريّة حمراء أو عند اكتشاف السيارة لاحتمال حدوث تصادم بعد دخولك أحد التقاطعات.</string>
+  <string name="settings_rear_pedestrian_detection">اكتشاف المشاة من الخلف</string>
+  <string name="settings_rear_pedestrian_detection_content">ينبهك اكتشاف المشاة من الخلف أثناء رجوع السيارة إلى الخلف في حالة وقوع تصادم وشيك مع أحد المشاة الذين تم اكتشافهم مباشرة خلف السيارة، وعند الضرورة يتم أوتوماتيكيًا الضغط على الفرامل للمساعدة في تقليل حدة التصادم أو تجنب وقوع التصادم.</string>
+  <string name="settings_auto_door_unlock">إلغاء قفل الباب تلقائيًا</string>
+  <!-- Copy the translation from "settings_auto_door_unlock_short" -->
+  <string name="settings_auto_door_unlock_short">إلغاء قفل الباب تلقائيًا</string>
+  <string name="settings_auto_door_unlock_content">يحدّد الإعداد \"فتح قفل الباب التلقائي\" أي واحد من الأبواب، إن وجد، سوف يتم فتحه تلقائياً عند نقل السيارة إلى وضع الركن.</string>
+  <string name="settings_audio_feedback_speed_content">يحدد هذا الإعداد مدى سرعة الكلام في نظام التعرف على الصوت.</string>
+  <string name="settings_teen_driver_speed_warning_off">إيقاف تحذير السرعة بوضع السائق المراهق</string>
+  <string name="settings_teen_driver_speed_warning_off_content">إن خيار التحذير بشأن السرعة في وضع السائق المراهق موقف حاليًا. قم بتشغيله قبل إعداد السرعة.</string>
+  <string name="ui_enter_long">إدخال</string>
+  <string name="settings_unlock">إلغاء القفل</string>
+  <string name="settings_lock">قفل</string>
+  <string name="settings_valet_mode_enter_code_to_lock">وضع خدمة الركن - أدخل الرمز للقفل</string>
+  <string name="settings_reenter_lock_code_then_press_lock">تأكيد رمز القفل</string>
+  <string name="settings_lock_code_recovery">استعادة رمز القفل</string>
+  <string name="settings_lock_code_recovery_content1">جار الاتصال بالهاتف.</string>
+  <string name="settings_lock_code_recovery_content2">جار إرسال رسالة نصية مع رمز الفتح.</string>
+  <string name="settings_touch_the_white_dot_to_calibrate">المس النقطة لإجراء المعايرة.</string>
+  <string name="settings_vehicle_settings_reset">إعادة تعيين إعدادات السيارة</string>
+  <string name="settings_vehicle_settings_reset_content">تمت إعادة تعيين إعدادات السيارة بنجاح.</string>
+  <string name="settings_prompttype_small">طول التوجيهات</string>
+  <string name="settings_informative">تفصيلي</string>
+  <string name="settings_vehicle_locator_lights_content1">‏يتيح الإعداد \"‏مصابيح تحديد موقع السيارة\" إضاءة الأضواء الخارجية لفترة وجيزة عند الضغط على زرّ الفتح في جهاز التحكّم عن بُعد في فتح الأبواب.</string>
+  <string name="settings_daytime_tail_lights">‏أضواء المؤخرة أثناء النهار</string>
+  <string name="settings_daytime_tail_lights_content">يتيح الإعداد \"‏أضواء المؤخرة أثناء النهار\" إضاءة تلك الأضواء أثناء القيادة خلال النهار لتحسين رؤية الآخرين للسيارة.</string>
+  <string name="settings_unlocked_door_anti_lock_out">منع قفل الباب المفتوح</string>
+  <!-- Translation not found -->
+  <string name="settings_unlocked_door_anti_lock_out_content">يهدف الإعداد \"منع قفل الباب المفتوح\" إلى تجنّب قفل أبواب السيارة عندما يكون أحد الأبواب مفتوح.</string>
+  <string name="settings_auto_door_lock_long">قفل الباب تلقائيًا</string>
+  <!-- Copy the translation from "settings_auto_door_lock" -->
+  <string name="settings_auto_door_lock_content">يتيح الإعداد \"قفل الباب تلقائياً\" القفل التلقائي للأبواب عندما يتم نقل السيارة من وضع الركن، أو عند انطلاق السيارة.</string>
+  <string name="settings_delayed_door_lock">‏قفل الباب المؤجل</string>
+  <!-- Copy the translation from "settings_delayed_door_lock_short" -->
+  <string name="settings_delayed_door_lock_content">يتيح الإعداد \"قفل الباب المؤجل\" قفل السيارة بعد فترة قصيرة من إغلاق جميع الأبواب.</string>
+  <string name="settings_remote_unlock_light_feedback_big">مؤشر الإعلام بالفتح عن بُعد</string>
+  <!-- Copy the translation from "settings_remote_unlock_light_feedback_short" -->
+  <string name="settings_remote_unlock_light_feedback_content">يوفر الإعداد \"مؤشر الإعلام بالفتح عن بُعد\" للسائق تأكيداً على فتح قفل أبواب السيارة. حدّد \"الومّاضات\" كي تومض المصابيح الخارجية عند فتح الأبواب عن بُعد.</string>
+  <string name="settings_flash_lights">‏المصابيح</string>
+  <string name="settings_remote_door_unlock_big">فتح الباب عن بُعد</string>
+  <!-- Copy the translation from "settings_remote_door_unlock_short" -->
+  <string name="settings_all_doors_small">‏كل الأبواب</string>
+  <string name="settings_all_doors_big">‏كل الأبواب</string>
+  <string name="settings_driver_door">‏باب السائق</string>
+  <string name="settings_remote_door_unlock_content">يهدف الإعداد \"فتح الباب عن بُعد\" إلى تحديد الباب الواجب فتحه عند الضغط على زرّ الفتح لمرة واحدة في جهاز التحكّم عن بُعد في فتح الأبواب.</string>
+  <string name="settings_relock_remotely_unlocked_doors_big">إعادة قفل الأبواب المفتوحة عن بُعد</string>
+  <!-- Copy the translation from "settings_relock_remotely_unlocked_doors_short" -->
+  <string name="settings_relock_remotely_unlocked_doors_content">يتيح الإعداد \"إعادة قفل الأبواب المفتوحة عن بُعد\" إلى ضمان إعادة قفل الأبواب في حال لم يتم فتح الأبواب في غضون 30 ثانية باستخدام جهاز التحكّم عن بُعد في فتح الأبواب.</string>
+  <string name="settings_remote_start_big">التشغيل عن بُعد</string>
+  <!-- Copy the translation from "settings_remote_start_short" -->
+  <string name="settings_remote_start_content">يتيح الإعداد \"تشغيل عند بُعد\" بدء تشغيل السيارة من مسافة بعيدة عن طريق الضغط على زرّ \"تشغيل عن بُعد\" في جهاز التحكّم عن بُعد في فتح الأبواب.</string>
+  <string name="settings_remote_window_operation_big">تشغيل النوافذ عن بُعد</string>
+  <!-- Copy the translation from "settings_remote_window_operation_short" -->
+  <string name="settings_remote_window_operation_content">يحدّد الإعداد \"تشغيل النوافذ عن بُعد\" إمكانية فتح أو إغلاق نوافذ السيارة عن بُعد من خلال الضغط المزدوج والاستمرار في الضغط على زرّ الفتح أو على زرّ القفل على التوالي في جهاز التحكّم عن بُعد في فتح الأبواب.</string>
+  <string name="settings_passive_door_unlock_big">قفل الأبواب الأوتوماتيكي</string>
+  <!-- Copy the translation from "settings_passive_door_unlock_short" -->
+  <string name="settings_driver_door_only">‏باب السائق فقط</string>
+  <string name="settings_passive_door_unlock_content">يحدد هذا الإعداد الأبواب التي سيتم فتحها عندما تضغط على الزر الموجود على مقبض باب السائق لفتح أحد أبواب السيارة.</string>
+  <string name="settings_remote_left_in_vehicle_alert">تنبيه نسيان المفتاح في السيارة</string>
+  <!-- Copy the translation from "settings_remote_left_in_vehicle_alert_short" -->
+  <string name="settings_remote_left_in_vehicle_alert_content">يهدف الإعداد \"تنبيه ترك جهاز التحكّم عن بُعد في السيارة\" إلى تنبيهك عند نسيان جهاز التحكّم عن بُعد في فتح الأبواب داخل السيارة المركونة.</string>
+  <string name="settings_sliding_door_selection">تحديد الباب المنزلق</string>
+  <!-- Copy the translation from "settings_sliding_door_selection_long" -->
+  <string name="settings_courtesy_big">Courtesy</string>
+  <!-- Translation not found but not used -->
+  <string name="settings_courtesy_small">Courtesy</string>
+  <!-- Translation not found but not used -->
+  <string name="ui_security_short">Security</string>
+  <!-- Translation exists but not used -->
+  <string name="settings_sliding_door_selection_content">يحدد هذا الإعداد كيفية فتح الباب المنزلق من الخارج وتأمينه.</string>
+  <string name="settings_automatic_time_date">الوقت والتاريخ التلقائي</string>
+  <string name="settings_automatic_time_date_content">يستخدم الإعداد \"الضبط التلقائي للوقت والتاريخ\" إشارات نظُم GPS وRDS والشبكة الخليوية لضمان صوابية الوقت والتاريخ في النظام. حدّد \"إيقاف\" لضبط الوقت والتاريخ يدوياً.</string>
+  <string name="settings_automatic_time_zone">المنطقة الزمنية التلقائية</string>
+  <string name="settings_automatic_time_zone_content">يهدف الإعداد \"الضبط التلقائي للمنطقة الزمنية\" إلى ضبط المنطقة الزمنية في النظام بالاستناد إلى موقع السيارة. حدّد \"إيقاف\" لضبط المنطقة الزمنية يدوياً.</string>
+  <string name="settings_use_24_hr_format_content">يتيح الإعداد \"تنسيق 24 ساعة\" تغيير تنسيق عرض الساعة إلى 24 ساعة. على سبيل المثال، يتم عرض الساعة 07:00 م بتنسيق 19:00 عند تشغيل هذا الإعداد.</string>
+  <string name="settings_proximity_sensing_content">يتيح الإعداد \"استشعار اقتراب الأصابع\" التحكّم في ظهور الأزرار على شاشة عرض الخريطة. في حالة \"التشغيل\"، يتم عرض الأزرار فقط عندما تتحرك يدك نحو الشاشة اللمسية. حدّد \"إيقاف التشغيل\" للحفاظ على جميع الأزرار مرئية على الدوام.</string>
+  <string name="settings_on_map_only">تشغيل - الخريطة فقط</string>
+  <string name="settings_audio_cues_content">يحدد إعداد أصوات بدء التشغيل إذا ما كنت ترغب في تشغيل الأصوات عند بداية تشغيل نظام المعلومات والترفيه أم لا.</string>
+  <string name="settings_audible_touch_feedback_large">الإشارات الصوتية عند اللمس</string>
+  <string name="settings_audible_touch_feedback_medium_content">تحدد ميزة \"استجابة اللمس المسموعة\" وقت تشغيل الأصوات عند الضغط على شاشة اللمس أو عنصر التحكم في لوحة واجهة الراديو.</string>
+  <string name="settings_voice_command_help_display">الوضع التعليمي</string>
+  <string name="settings_voice_command_help_display_content">يحدد هذا الإعداد ما إذا كانت الطلبات الصوتية ستوفر تنبيهات تعليمية في الشاشة المركزية.</string>
+  <string name="settings_easy_exit_driver_seat">ضبط مقعد السائق للخروج بسهولة</string>
+  <string name="settings_rear_seat_reminder">تذكير المقعد الخلفي</string>
+  <string name="settings_rear_seat_reminder_content">يتيح الإعداد \"تذكير حول المقعد الخلفي\" عرض تنبيه في لوحة العدّادات عندما يكون هناك احتمال نسيان طفل رضيع أو غرض كبير الحجم داخل السيارة.</string>
+  <string name="settings_sport_steering_big">التوجيه بالوضع الرياضي</string>
+  <!-- Copy the translation from "settings_sport_steering_short" -->
+  <string name="settings_sport_steering_content">يتيح الإعداد \"التوجيه بالوضع الرياضي\" زيادة صلابة عجلة التوجيه عند تفعيل الوضع الرياضي.</string>
+  <string name="settings_sport_display_big">عرض لوحة العدادات بالوضع الرياضي</string>
+  <!-- Copy the translation from "settings_sport_displays_short" -->
+  <string name="settings_sport_display_content">يساعد الإعداد \"العرض الرياضي\" في ضبط مظهر لوحة العدّادات كي يتخذ شكلاً رياضياً عند تفعيل الوضع الرياضي.</string>
+  <string name="settings_sport_suspension_big">التعليق بالوضع الرياضي</string>
+  <!-- Copy the translation from "settings_sport_suspension_short" -->
+  <string name="settings_sport_suspension_content">يتيح الإعداد \"التعليق بالوضع الرياضي\" زيادة صلابة التعليق عند تفعيل الوضع الرياضي.</string>
+  <string name="settings_sport_awd_big">الدفع الرباعي المتواصل في الوضع الرياضي</string>
+  <!-- Copy the translation from "settings_sport_awd_short" -->
+  <string name="settings_sport_awd_content">يحدّد الإعداد \"تحسين نظام AWD الرياضي\" كيفية معايرة نظام الدفع بجميع العجلات بغية تحسين أداء السيارة عند تفعيل الوضع الرياضي.</string>
+  <string name="settings_sport_driver_seat_big">مقعد السائق بالوضع الرياضي</string>
+  <!-- Copy the translation from "settings_sport_driver_seat_short" -->
+  <string name="settings_sport_driver_seat_content">يهدف الإعداد \"مقعد السائق الرياضي\" إلى ضبط مقعد السائق بغية تعزيز الدعم الإضافي الجانبي أثناء تفعيل الوضع الرياضي.</string>
+  <string name="settings_sport_passenger_seat_big">مقعد الراكب بالوضع الرياضي</string>
+  <!-- Copy the translation from 'settings_sport_passenger_seat_short' -->
+  <string name="settings_sport_passenger_seat_content">يهدف الإعداد \"مقعد الراكب الرياضي\" إلى ضبط مقعد الراكب بغية تعزيز الدعم الإضافي الجانبي أثناء تفعيل الوضع الرياضي.</string>
+  <string name="settings_sport_adaptive_cruise_control_big">التحكم في ثبات السرعة التكيفي في الوضع الرياضي</string>
+  <!-- Copy the translation from "settings_sport_adaptive_cruise_control_short" -->
+  <string name="settings_sport_adaptive_cruise_control_content">يتيح الإعداد \"التحكّم في ثبات السرعة التكيّفي\" تعزيز السلوك الديناميكي لوضع التحكّم في ثبات السرعة التكيّفي عند تفعيل الوضع الرياضي.</string>
+  <string name="settings_pollution_control">‏التحكم في التلوث</string>
+  <!-- Copy the translation from "settings_pollution_control_long" -->
+  <string name="settings_auto_cooled_seats_big">‏المقاعد ذاتية التبريد</string>
+  <!-- Copy the translation from "settings_auto_cooled_seats_short" -->
+  <string name="settings_auto_cooled_seats_content">يهدف الإعداد \"‏المقاعد ذاتية التبريد\" إلى التشغيل التلقائي لتبريد المقاعد عند بدء تشغيل السيارة وعندما تكون درجة حرارة المقصورة أعلى بكثير من تلك المطلوبة.</string>
+  <string name="settings_auto_heated_seats_big">‏المقاعد ذاتية التدفئة</string>
+  <!-- Copy the translation from "settings_auto_heated_seats_short" -->
+  <string name="settings_auto_heated_seats_content">يهدف الإعداد \"‏المقاعد ذاتية التدفئة\" إلى التشغيل التلقائي لتدفئة المقاعد عند بدء تشغيل السيارة وعندما تكون درجة حرارة المقصورة أدنى بكثير من تلك المطلوبة.</string>
+  <string name="settings_rear_zone_temp_big">ضبط مناخ الجزء الخلفي عند بدء التشغيل</string>
+  <!-- Copy the translation from "settings_rear_zone_temp_short" -->
+  <string name="settings_rear_zone_temp_content">يتيح الإعداد \"ضبط المناخ الخلفي عند بدء التشغيل\" التحكّم في طريقة عمل نظام المناخ الخلفي عند بدء تشغيل السيارة.\nيهدف الإعداد \"الخلف مثل الأمام\" إلى مزامنة إعدادات مناخ الحجرة الخلفية مع إعدادات مناخ حجرة السائق الأمامية.\nيتيح الإعداد \"الآخر المعروف\" الاحتفاظ بإعدادات مناخ الحجرة الخلفية الخاصة بالرحلة السابقة.</string>
+  <string name="settings_auto_defog_big">‏مزيل الضباب التلقائي</string>
+  <!-- Copy the translation from "settings_auto_defog_short" -->
+  <string name="settings_auto_defog_content">يتيح الإعداد \"مزيل الضباب التلقائي\" التوجيه التلقائي للهواء نحو الزجاج الأمامي للمساعدة في إزالة الضباب وذلك وفقاً لدرجة الحرارة ونسبة الرطوبة.</string>
+  <string name="settings_auto_rear_defog">‏مزيل الضباب الخلفي التلقائي</string>
+  <!-- Copy the translation from "settings_auto_rear_defog_short" -->
+  <string name="settings_auto_rear_defog_content">يهدف الإعداد \"مزيل الضباب الخلفي التلقائي\" إلى تشغيل مزيل الضباب على الزجاج الخلفي وفقاً لدرجة الحرارة ونسبة الرطوبة.</string>
+  <string name="settings_elevated_idle_big">التسخين السريع - وضع التباطؤ المعزّز</string>
+  <!-- Copy the translation from "settings_elevated_idle_short" -->
+  <string name="settings_elevated_idle_content">يتيح الإعداد \"التسخين السريع - وضع التباطؤ المعزّز\" زيادة سرعة تباطؤ المحرّك بغية الوصول إلى تدفئة المقصورة بشكل أسرع.</string>
+  <string name="settings_engine_assisted_heating_big">التدفئة بمساعدة المحرك</string>
+  <!-- Copy the translation from "settings_engine_assisted_heating_short" -->
+  <string name="settings_engine_assisted_heating_content">يتحكّم الإعداد \"التدفئة عبر المحرّك\" في استخدام محرّك البنزين للمساعدة في تدفئة المقصورة. يتم بدء تشغيل المحرّك للحفاظ على طاقة البطارية عندما تكون قيد التشغيل.\nاستخدم الوضع \"مؤجل\" لعدم تشغيل المحرّك إلا في ظروف شديدة البرودة.</string>
+  <string name="settings_deferred">مؤجل</string>
+  <string name="settings_auto_air_distribution_big">‏توزيع الهواء التلقائي</string>
+  <!-- Copy the translation from "settings_auto_air_distribution_short" -->
+  <string name="settings_auto_air_distribution_content">يحدّد الإعداد \"توزيع الهواء التلقائي\" كيفية تدفق الهواء في السيارة عند تنشيط وضع \"التحكّم التلقائي في المناخ\". يؤدي تدفق الهواء المباشر إلى توجيه مزيد من الهواء تجاه الركاب في حين يتيح تدفق الهواء الموزّع إلى توجيه نسبة أقل من الهواء في اتجاههم.</string>
+  <!-- Copy the translation from "ui_ok_short" -->
+  <string name="settings_direct_airflow_big">‏تدفق هواء مباشر</string>
+  <string name="settings_diffuse_airflow_small">نشر تدفق الهواء</string>
+  <string name="settings_diffuse_airflow">نشر تدفق الهواء</string>
+  <string name="settings_engine_assisted_heating_plugged_in_big">تنشيط التدفئة بمساعدة المحرك</string>
+  <!-- Copy the translation from "settings_engine_assisted_heating_plugged_in_short" -->
+  <string name="settings_engine_assisted_heating_plugged_in_content">يتحكّم الإعداد \"توصيل التدفئة عبر المحرّك\" في استخدام محرّك البنزين للمساعدة في تدفئة المقصورة أثناء شحن السيارة. يتم بدء تشغيل المحرّك للحفاظ على طاقة البطارية عندما تكون قيد التشغيل.</string>
+  <string name="settings_pedestrian_friendly_alert_big">التنبيه الودي لسلامة المشاة</string>
+  <!-- Copy the translation from "settings_pedestrian_friendly_alert_short" -->
+  <string name="settings_pedestrian_friendly_alert_content">يتيح الإعداد \"التنبيه الودّي لسلامة المشاة\" إصدار صوت خارج السيارة أثناء سيرها على سرعة منخفضة وذلك لمساعدة المشاة في التنبّه لوجود السيارة بالقرب منهم.</string>
+  <string name="settings_connected_vehicle_braking_alerts">تنبيه فرملة السيارة التي تسير أمامك</string>
+  <!-- Copy translation from "settings_connected_vehicle_braking" -->
+  <string name="settings_connected_vehicle_braking_alerts_content">يهدف الإعداد \"تنبيه فرملة السيارة التي تسير أمامك\" إلى تنبيهك إلى الفرملة المفاجئة للسيارة التي تسير مباشرةً أمامك. بالتالي، يكون لديك المزيد من الوقت للتفاعل مع الحالة.</string>
+  <string name="settings_traffic_and_roadside_information">معلومات المرور وجانبي الطريق</string>
+  <string name="settings_traffic_and_roadside_information_content">يحدّد الإعداد \"معلومات حول حركة المرور والطريق أمامك\" ما إذا كانت السيارات التي تسير أمامك أو الأجهزة أمامك تشارك البيانات الخاصة بظروف وأحداث حركة المرور التي يمكن أن تؤثر على رحلتك.</string>
+  <string name="settings_drowsy_driver_alert_big">تنبيه شعور السائق بالنعاس</string>
+  <!-- Copy the translation from "settings_drowsy_driver_alert_short" -->
+  <string name="settings_drowsy_driver_alert_content">يهدف الإعداد \"تنبيه السائق المرهق\" إلى تنبيهك عندما يشير سلوكك في القيادة إلى أنك مرهق جداً.</string>
+  <string name="settings_side_blind_zone_alert_big">‏مساعد منطقة الزاوية العمياء</string>
+  <!-- Copy the translation from "settings_side_blind_zone_alert_short" -->
+  <string name="settings_side_blind_zone_alert_content">يتيح الإعداد \"تنبيه منطقة انعدام الرؤية الجانبية\" إصدار تنبيهات من المرآة الجانبية لمساعدتك على تجنّب الاصطدام بسيارة أخرى متحركة تم اكتشافها ضمن منطقة انعدام الرؤية الجانبية وذلك أثناء قيامك بتغيير حارة السير.</string>
+  <string name="settings_lane_change_alert_big">إنذار تغيير حارة السير‏‏</string>
+  <!-- Copy the translation from "settings_lane_change_alert_small" -->
+  <string name="settings_lane_change_alert_small">إنذار تغيير حارة السير‏‏</string>
+  <string name="settings_lane_change_alert_content">يتيح الإعداد \"تنبيه تغيير حارة السير\" إصدار تنبيهات من المرآة الجانبية لمساعدتك على تجنّب الاصطدام بسيارة أخرى متحركة تم اكتشافها ضمن منطقة انعدام الرؤية الجانبية أو بسيارة تقترب بسرعة من منطقة انعدام الرؤية الجانبية وذلك أثناء قيامك بتغيير حارة السير.</string>
+  <string name="settings_seat_belt_tightening_big">شد حزام المقعد</string>
+  <!-- Copy the translation from "settings_seat_belt_tightening_short" -->
+  <string name="settings_seat_belt_tightening_content">يتيح الإعداد \"شدّ حزام المقعد\" الضبط التلقائي لحزام المقعد على وضع آمن ملائم عند ربطه. ويتم شدّ حزام الأمان عندما تقوم بربطه أولاً وأثناء القيادة العنيفة أو في ظروف مرورية غير ملائمة.</string>
+  <string name="settings_park_assist_big">مساعد الركن‏</string>
+  <!-- Copy the translation from "settings_park_assist_short" -->
+  <string name="settings_park_assist_content">يهدف إعداد \"المساعدة في الركن\" إلى تنبيهك إلى وجود أشياء بالقرب من السيارة عند قيادتها على سرعة منخفضة.</string>
+  <string name="settings_park_assist_towbar">مساعد الركن مع وجود قضيب الجر</string>
+  <!-- Copy the translation from "settings_park_assist_towbar_short" -->
+  <string name="settings_off_not_attached">إيقاف التشغيل - غير مرفق</string>
+  <string name="settings_off_not_attached_small">إيقاف التشغيل - غير مرفق</string>
+  <string name="settings_on_attached">تشغيل - مرفق</string>
+  <string name="settings_park_assist_towbar_content">يحدّد الإعداد \"المساعدة في الركن مع قضيب القطر\" إمكانية عمل وظيفة المساعدة في الركن بشكل صحيح مع وجود عنصر صغير، مثل وصلة كرويّة، متصل بوصلة الجرّ.</string>
+  <string name="settings_rear_camera_park_assist_symbols_big">رموز مساعد الركن بالكاميرا الخلفية</string>
+  <!-- Copy the translation from "settings_rear_camera_park_assist_symbols_short" -->
+  <string name="settings_rear_camera_park_assist_symbols_content">يتم عرض رموز التحذير \"المساعدة في الركن مع الكاميرا الخلفية\" على شاشة عرض الكاميرا عندما يكتشف نظام المساعدة في الركن وجود كائن ما.</string>
+  <string name="settings_rear_cross_traffic_alerts">تنبيه التقاطعات المرورية الخلفية‏‏</string>
+  <!-- Copy the translation from "settings_rear_cross_traffic_alert_long" -->
+  <string name="settings_rear_cross_traffic_alerts_content">يهدف الإعداد \"منبّه التقاطعات المرورية الخلفية\" إلى تنبيهك إلى حركة السيارات التي تقترب من الجهة الخلفية اليسرى أو اليمنى من السيارة أثناء قيامك بمناورات للرجوع للخلف على سرعة منخفضة.</string>
+  <string name="settings_easy_exit_driver_seat_content">يساهم الإعداد \"ضبط مقعد السائق للخروج السهل\" في ضبط مقعد السائق عند الضغط على زرّ الخروج السهل أو عند إيقاف تشغيل السيارة والخروج منها.</string>
+  <string name="settings_easy_exit_options_big">خيارات الخروج السهل</string>
+  <!-- Copy the translation from "settings_easy_exit_options_short" -->
+  <string name="settings_easy_exit_options_content">يحدّد الإعداد \"خيارات الخروج السهل\" ما إذا كان الضغط على زرّ \"الخروج السهل\" من شأنه أن يحرّك مقعد السائق نحو الخلف عند الخروج من السيارة.</string>
+  <string name="settings_auto_mirror_folding">الطي التلقائي للمرآة</string>
+  <!-- Copy the translation from "settings_auto_mirror_folding_short" -->
+  <string name="settings_auto_mirror_folding_content">يتيح الإعداد \"الطي التلقائي للمرآة\" القيام بطيّ المرايا الخارجية عن طريق الضغط لمدة ثانية واحدة على زرّ القفل في جهاز التحكّم عن بُعد في فتح الأبواب. كما يؤدي الضغط على زرّ الفتح في الجهاز إلى إعادة فتح المرايا.</string>
+  <string name="settings_personalization_by_driver_big">التخصيص من قبل السائق</string>
+  <!-- Copy the translation from "settings_personalization_by_driver_short" -->
+  <string name="settings_personalization_by_driver_content">يتيح الإعداد \"التخصيص بواسطة السائق\" القيام بتحديث إعدادات السيارة الخاصة بك وذلك استناداً إلى المفتاح المستخدم.</string>
+  <string name="settings_auto_wipe_in_reverse_gear_big">المسح التلقائي عند السير للخلف</string>
+  <!-- Copy translation from "settings_auto_wipe_in_reverse_gear_short" -->
+  <string name="settings_auto_wipe_in_reverse_gear_content">يتيح الإعداد \"المسح التلقائي عند السير للخلف\" التشغيل التلقائي لماسحة الزجاج الخلفي وذلك عند السير للخلف وإذا تم الكشف عن وجود رطوبة.</string>
+  <string name="settings_rain_sense_wipers_big">مستشعرات الأمطار في الماسحات</string>
+  <!-- Translation exists -->
+  <string name="settings_rain_sense_wipers_content">يتيح الإعداد \"مستشعرات الأمطار في الماسحات\" تشغيل ماسحات الزجاج الأمامي على السرعة المتقطعة عند الكشف عن وجود رطوبة. ويمكن ضبط حساسية استشعار الأمطار عن طريق تدوير ذراع التحكّم بالمسح المتقطع.</string>
+  <string name="settings_enabled_big">مفعَل</string>
+  <string name="settings_enabled_small">مفعَل</string>
+  <string name="settings_remote_lock_feedback_big">إعلام بالقفل عن بُعد</string>
+  <!-- Copy translation from "settings_remote_lock_feedback_short" -->
+  <string name="settings_remote_lock_feedback_content">يوفر الإعداد \"مؤشر الإعلام بالقَفل عن بُعد\" للسائق تأكيداً على قفل أبواب السيارة بواسطة جهاز التحكّم عن بُعد في فتح الأبواب. حدّد \"المصابيح والبوق\" كي تومض المصابيح الخارجية وينطلق صوت البوق عند قَفل الأبواب عن بُعد باستخدام الجهاز.</string>
+  <string name="settings_lights_horn">‏المصابيح والبوق</string>
+  <string name="settings_lights_only">المصابيح فقط</string>
+  <string name="settings_horn_only">‏البوق فقط</string>
+  <string name="settings_exit_lighting_content">يحدّد الإعداد \"‏إنارة الخروج\" فترة إنارة الأضواء الخارجية عند خروجك من السيارة وكان المحيط مظلماً.</string>
+  <string name="settings_suspension">التعليق</string>
+  <string name="settings_suspension_content">تتيح ضبط مستوى ممتص الصدمات ليتناسب مع ظروف القيادة المحدّدة أو تفضيلاتك.</string>
+  <string name="settings_auto_mode_selector_long">تلقائي (محدد الوضع)</string>
+  <string name="settings_tour">مريح</string>
+  <string name="settings_sport">رياضي</string>
+  <string name="settings_track">مسار</string>
+  <string name="settings_forward_collision_system_big">نظام التصادم الأمامي</string>
+  <!-- Copy translation from "settings_forward_collision_system_short" -->
+  <string name="settings_forward_collision_system_content">بإمكان نظام التصادم الأمامي تحذيرك من تصادم محتمل مع السيارة التي يتم اكتشافها أمامك، وإذا لم يسعفك الوقت للضغط على الفرامل فبإمكان النظام الضغط عليها للمساعدة في تقليل حدة التصادم.</string>
+  <string name="settings_clear_all_teen_keys_and_pin">مسح جميع مفاتيح ورموز PIN لوضع السائق المراهق</string>
+  <string name="settings_teen_driver_speed_warning_big">تحذير تجاوز السرعة لوضع السائق المراهق</string>
+  <!-- Copy translation from "settings_teen_driver_speed_warning" -->
+  <string name="settings_set_teen_driver_speed_warning_big">تعيين تحذير السرعة في وضع السائق المراهق</string>
+  <string name="settings_engine_sound_management">صوت المحرّك</string>
+  <string name="settings_displays_short">وحدات العرض</string>
+  <string name="settings_climate_and_air_quality">‏المناخ وجودة الهواء</string>
+  <string name="settings_pollution_control_long">‏التحكم في التلوث</string>
+  <string name="settings_auto_defog_short">‏مزيل الضباب التلقائي</string>
+  <string name="settings_auto_rear_defog_short">‏مزيل الضباب الخلفي التلقائي</string>
+  <string name="settings_elevated_idle_short">تسخين سريع - وضع التباطؤ المعزّز</string>
+  <string name="settings_auto_air_distribution_short">‏توزيع الهواء التلقائي</string>
+  <string name="settings_engine_assisted_heating_short">التدفئة بمساعدة المحرك</string>
+  <string name="settings_engine_assisted_heating_plugged_in_short">تنشيط التدفئة بمساعدة المحرك</string>
+  <string name="settings_auto_cooled_seats_short">‏المقاعد ذاتية التبريد</string>
+  <string name="settings_auto_heated_seats_short">‏المقاعد ذاتية التدفئة</string>
+  <string name="settings_rear_zone_temp_short">ضبط مناخ الجزء الخلفي عند بدء التشغيل</string>
+  <string name="settings_rear_off">إيقاف الميزة في الخلف</string>
+  <!-- Copy translation from "settings_rear_off_big" -->
+  <string name="settings_collision_detection_system">أنظمة الكشف/التصادم</string>
+  <!-- Copy translation from "settings_collision_detection_systems" -->
+  <string name="settings_pedestrian_friendly_alert_short">التنبيه الودي لسلامة المشاة</string>
+  <string name="settings_forward_collision_system_short">نظام التصادم الأمامي</string>
+  <string name="settings_connected_vehicle_braking">تنبيه فرملة السيارة التي تسير أمامك</string>
+  <string name="settings_rear_off_big">غير نشطة</string>
+  <string name="settings_drowsy_driver_alert_short">تنبيه شعور السائق بالنعاس</string>
+  <string name="settings_side_blind_zone_alert_short">‏مساعد منطقة الزاوية العمياء</string>
+  <string name="settings_seat_belt_tightening_short">شد حزام المقعد</string>
+  <string name="settings_park_assist_short">مساعد الركن</string>
+  <string name="settings_park_assist_towbar_short">مساعد الركن مع وجود قضيب الجر</string>
+  <string name="settings_rear_camera_park_assist_symbols_short">رموز مساعد الركن بالكاميرا الخلفية</string>
+  <string name="settings_rear_cross_traffic_alert_long">تنبيه التقاطعات المرورية الخلفية‏‏</string>
+  <string name="settings_comfort_and_convenience">‏الراحة والملاءمة</string>
+  <!-- Copy translation from "settings_comfort_convenience" -->
+  <string name="settings_easy_exit_driver_seat_long">ضبط مقعد السائق للخروج بسهولة</string>
+  <!-- Copy translation from "settings_easy_exit_driver_seat" -->
+  <string name="settings_easy_exit_options_short">خيارات الخروج السهل</string>
+  <string name="settings_chime_volume_content">يحدّد الإعداد \"مستوى صوت الرنّة\" مستوى صوت الرنّات في السيارة التي تنشط مثلاً في حالة الفتح الجزئي للباب أو عند نسيان المصابيح الأمامية مضاءة.</string>
+  <string name="settings_auto_mirror_folding_short">‏الطي التلقائي للمرآة</string>
+  <string name="settings_personalization_by_driver_short">التخصيص من قبل السائق</string>
+  <string name="settings_rain_sense_wipers_short">‏الماسحات المزودة بمستشعرات المطر ‏</string>
+  <string name="settings_auto_wipe_in_reverse_gear_short">المسح التلقائي عند السير للخلف</string>
+  <string name="settings_automatic_vehicle_hold_short">ثبات السيارة تلقائيًا</string>
+  <string name="settings_auto_door_lock">قفل الباب تلقائيًا</string>
+  <string name="settings_delayed_door_lock_short">‏قفل الباب المؤجل</string>
+  <string name="settings_remote_lock_unlock_start">القفل والفتح والتشغيل عن بُعد</string>
+  <!-- Copy translation from "settings_remote_lock_unlock_start_short" -->
+  <string name="settings_remote_unlock_light_feedback_short">مؤشر الإعلام بالفتح عن بُعد</string>
+  <string name="settings_remote_lock_feedback_short">إعلام بالقفل عن بُعد</string>
+  <string name="settings_remote_door_unlock_short">فتح الباب عن بُعد</string>
+  <string name="settings_relock_remotely_unlocked_doors_short">إعادة قفل الأبواب المفتوحة عن بُعد</string>
+  <string name="settings_remote_start_short">التشغيل عن بُعد</string>
+  <string name="settings_remote_start_auto_cool_seats">تشغيل المقاعد ذاتية التبريد عند التشغيل عن بُعد</string>
+  <string name="settings_remote_start_auto_heat_seats">تشغيل المقاعد ذاتية التدفئة عند التشغيل عن بُعد</string>
+  <string name="settings_remote_window_operation_short">تشغيل النوافذ عن بُعد</string>
+  <string name="settings_passive_door_unlock_short">قفل الأبواب الأوتوماتيكي</string>
+  <string name="settings_passive_door_lock_short">قفل الأبواب السلبي</string>
+  <!-- Translation not found -->
+  <string name="settings_remote_left_in_vehicle_alert_short">تنبيه نسيان المفتاح في السيارة</string>
+  <string name="settings_sliding_door_selection_long">تحديد الباب المنزلق</string>
+  <!-- Translation not found -->
+  <string name="settings_power_door_locks_long">‏أقفال الأبواب الأوتوماتيكية</string>
+  <!-- Copy the translation from "settings_power_door_locks" -->
+  <string name="settings_sport_mode_customization_long">تخصيص الوضع الرياضي</string>
+  <string name="settings_sport_steering_short">التوجيه بالوضع الرياضي</string>
+  <string name="settings_sport_displays_short">العرض بالوضع الرياضي</string>
+  <string name="settings_sport_suspension_short">التعليق بالوضع الرياضي</string>
+  <string name="settings_sport_awd_short">الدفع الرباعي المتواصل في الوضع الرياضي</string>
+  <string name="settings_sport_driver_seat_short">مقعد السائق بالوضع الرياضي</string>
+  <string name="settings_sport_passenger_seat_short">مقعد الراكب بالوضع الرياضي</string>
+  <string name="settings_sport_adaptive_cruise_control_short">التحكم في ثبات السرعة التكيفي في الوضع الرياضي</string>
+  <string name="settings_reset_to_factory_settings">العودة إلى إعدادات المصنع</string>
+  <!-- Copy translation from "settings_return_to_factory_settings" -->
+  <string name="settings_reset_vehicle_settings">إعادة تعيين إعدادات السيارة</string>
+  <string name="settings_reset_radio_system_settings">إعادة تعيين إعدادات نظام الراديو</string>
+  <string name="ui_stop_short">إيقاف</string>
+  <string name="settings_running_applications_large">التطبيقات الفعَالة حالياً</string>
+  <!-- Copy translation from "settings_running_applications" -->
+  <string name="ui_phone_big1">الهاتف</string>
+  <string name="ui_navigation_big">الملاحة</string>
+  <!-- Copy translation from "ui_navigation_short" -->
+  <string name="settings_use_network_provided_time">استخدم الوقت الذي توفره الشبكة.</string>
+  <string name="settings_use_network_provided_time_zone">استخدم المنطقة الزمنية التي توفرها الشبكة.</string>
+  <string name="settings_select_time_zone">حدد المنطقة الزمنية</string>
+  <string name="settings_use_24_hour_format">استخدم تنسيق 24 ساعة</string>
+  <string name="settings_teendriver_vol">مستوى الصوت - وضع السائق المراهق</string>
+  <string name="settings_teendriver_vol_max">الحد الأقصى</string>
+  <string name="settings_distance_driven">المسافة المقطوعة:</string>
+  <string name="settings_maximum_speed">السرعة القصوى:</string>
+  <string name="settings_overspeed_warnings">تحذيرات تجاوز السرعة:</string>
+  <string name="settings_wide_open_throttle">الضغط الكامل على دواسة التسارع:</string>
+  <string name="settings_forward_collision_alerts">إنذارات التصادم الأمامي:</string>
+  <string name="settings_forward_collision_avoidance_braking">الفرامل الأوتوماتيكية الأمامية:</string>
+  <string name="settings_rear_collision_avoidance_braking">الفرامل الأوتوماتيكية الخلفية:</string>
+  <string name="settings_lane_departure_warnings">تحذيرات مغادرة الحارة:</string>
+  <string name="settings_traction_control">التحكم في الجر:</string>
+  <string name="settings_stability_control">التحكم في الثبات:</string>
+  <string name="settings_tailing_alerts">إنذارات الاقتراب الشديد من السيارة الأمامية:</string>
+  <string name="settings_drowsy_driver_alerts">تنبيهات شعور السائق بالنعاس:</string>
+  <string name="settings_maximum_speed_in_number">%1$s ميل في الساعة</string>
+  <string name="settings_touchscreen_calibration">معايرة شاشة اللمس</string>
+  <string name="settings_teen_driver_pin_not_set">لم يتم تعيين رمز التعريف الشخصي لوضع السائق المراهق</string>
+  <string name="settings_private_data_erased">تم مسح الإعدادات والبيانات الشخصية</string>
+  <string name="settings_teen_driver_pin_set">تعيين رمز التعريف الشخصي بوضع السائق المراهق</string>
+  <string name="ui_devices_small">الهواتف</string>
+  <string name="ui_wifi_networks_short">شبكات Wi-Fi</string>
+  <string name="ui_lte">LTE</string>
+  <string name="settings_automatic_vehicle_hold_long">المساعدة الممدّدة في بدء التشغيل في المرتفعات</string>
+  <!-- Copy translation from "settings_automatic_vehicle_hold_short" -->
+  <string name="settings_automatic_vehicle_hold_content">تساهم ميزة \"المساعدة الممدّدة على بدء التشغيل في المرتفعات\" في تجنّب تراجع سيارتك إلى الخلف على تلة شديدة الانحدار وذلك في حال عدم الضغط على دوّاسة الفرامل. ويساعد \"الإيقاف القياسي\" في الإبقاء على ثبات السيارة لمدة 3 ثوان. أمّا \"الإيقاف الممدّد\" فيساعد في إبقائها ثابتة لمدة تصل إلى 5 دقائق، كما يمكنه أيضاً إشراك فرامل الركن بشكل تلقائي.</string>
+  <string name="settings_long_and_auto_park_brake_on_short">الإيقاف الممدّد</string>
+  <string name="settings_long_and_auto_park_brake_on">تشغيل فرامل الركن تلقائيًا ولمدة طويلة</string>
+  <string name="settings_short_and_auto_park_brake_off">الإيقاف القياسي</string>
+  <string name="settings_smart_high_beam_assist_long">مساعد الضوء العالي الذكي</string>
+  <!-- Copy translation from "settings_smart_high_beam_assist_short" -->
+  <string name="settings_smart_high_beam_assist_content">يضبط الإعداد \"الضوء العالي التكيّفي\" تلقائياً الأضواء العالية بغية توجيهها بعيداً عن السيارات القادمة.</string>
+  <string name="settings_auto_high_beam_short">‏الضوء العالي التلقائي</string>
+  <string name="settings_adaptive_high_beam_short">‏الضوء العالي التكيفي</string>
+  <string name="settings_manage_favorites_long">إدارة المفضلات</string>
+  <string name="settings_set_number_of_audio_favorites">تعيين عدد المفضلات الصوتية</string>
+  <string name="settings_traction_long">الجر</string>
+  <string name="settings_teen_driver_speed_limiter_med_28">محدّد السرعة لوضع السائق المراهق</string>
+  <!-- Copy translation from "settings_teen_driver_speed_limiter" -->
+  <string name="settings_teen_driver_audio_volume_limit_med_28">حد مستوى الصوت</string>
+  <string name="ui_am">ص</string>
+  <string name="settings_teen_driver_speed_warning">تحذير السرعة لوضع السائق المراهق</string>
+  <string name="settings_private_data_cleared_content">تم مسح إعدادات بيانات التطبيق الخاص بك وملفات تعريف المستخدم والبيانات الشخصية من النظام بنجاح.</string>
+  <string name="settings_distance_driven_in_number">%1$s ميل</string>
+  <string name="settings_set">تعيين</string>
+  <string name="settings_time_date_small">الوقت/التاريخ</string>
+  <string name="settings_pollution_control_content">يتيح الإعداد \"‏التحكّم في التلوث\" التشغيل التلقائي لوضع إعادة تدوير الهواء عند سرعة السيارة المنخفضة. وهذا يحدّ من جودة الهواء السيئة داخل السيارة أثناء ظروف قيادة معينة مثل حركة المرور الكثيفة. ويهدف وضع \"إعادة تدوير الهواء\" إلى تكييف هواء المقصورة وتدويره بدلاً من استخدام الهواء الخارجي.</string>
+  <string name="settings_auto_fan_max_speed_content">يتحكّم الإعداد \"سرعة المروحة التلقائية\" في كمية تدفق الهواء في المقصورة (منخفضة، متوسطة، أو مرتفعة) عندما يتم ضبط نظام التحكّم بالمناخ على \"تلقائي\". وتؤدي السرعة الأعلى للمروحة إلى الضبط الأسرع لدرجات الحرارة مع العلم أنها قد تؤدي أيضاً إلى المزيد من الضجيج في المقصورة.</string>
+  <string name="settings_android_force_stop">قد يؤدي فرض إيقافك لتطبيق معيّن إلى تعذّر عمله بشكل صحيح.</string>
+  <!-- Translation exists -->
+  <string name="settings_unable_to_compute_package_size">يتعذّر حساب حجم الحزمة.</string>
+  <!-- Translation exists -->
+  <string name="settings_enter_teen_driver_enter_4_digit_pin">وضع السائق المراهق - أدخل رمز PIN من 4 أرقام</string>
+  <string name="settings_add">إضافة</string>
+  <string name="settings_clear">مسح</string>
+  <string name="settings_relock">إعادة القفل</string>
+  <string name="settings_erase_settings_and_personal_data">حذف الإعدادات والبيانات الشخصية</string>
+  <string name="settings_clear_default_applications">مسح التطبيقات الافتراضية</string>
+  <string name="settings_clear_default_applications_long">مسح التطبيقات الافتراضية</string>
+  <string name="settings_clear_defaults_apps_popup_content">سوف يعيد ذلك تعيين التطبيقات المفضّلة التي تم تعيينها لتفتح عند تحديد وظيفة ما. لن يتم فقدان أية بيانات تتعلق بالتطبيقات. اضغط على \"مسح\" للمتابعة.</string>
+  <string name="settings_application_defaults_cleared">تم مسح القيم الافتراضية للتطبيق</string>
+  <string name="ui_ok_long">موافق</string>
+  <!-- Not used -->
+  <!-- Copy translation from "ui_cancel_small" in Connections -->
+  <string name="ui_ok_short">موافق</string>
+  <!-- Translation exists from updater -->
+  <string name="settings_privacy">الخصوصية</string>
+  <!-- Copy translation from "settings_privacy_small" -->
+  <string name="settings_privacy_small">الخصوصية</string>
+  <string name="settings_location_services">خدمات الموقع</string>
+  <!-- Copy translation from "settings_location_services_short" -->
+  <string name="settings_data_services">خدمات البيانات</string>
+  <!-- Copy translation from "settings_data_services_short" -->
+  <string name="settings_location_services_short">خدمات الموقع</string>
+  <string name="settings_data_services_short">خدمات البيانات</string>
+  <string name="settings_auto_memory_recall_content_1">يضبط هذا الإعداد وضعية الجلوس المعتادة ووضعية الجلوس عند الخروج ومرآة الرؤية الجانبية ومواضع الدواسات بحسب تفضيلاتك المحفوظة.</string>
+  <!-- Copy translation from "settings_auto_memory_recall_content" -->
+  <string name="settings_traffic_content_1">يحدد مرور الجهة اليمنى أو اليسرى سلوك ميزة الأضواء الأمامية التكيفية على حسب جهة الطريق التي يتم قيادة السيارة فيها.</string>
+  <string name="settings_auto_high_beam_content_1">يحدد الضوء العالي التلقائي ما إذا كان سيتم تشغيل الضوء العالي للسيارة أوتوماتيكيًا أو إيقاف تشغيله وذلك على حسب الظروف المرورية المحيطة.</string>
+  <!-- Copy translation from "settings_auto_high_beam_content" -->
+  <string name="settings_auto_adaptive_high_beam_content_1">هذا الإعداد يعيد تشكيل شعاع إنارة المصابيح الأمامية تلقائياً، حيث أنه يوجه الأضواء العالية بعيدًا عن المركبات القادمة</string>
+  <!-- Copy translation from "settings_auto_adaptive_high_beam_content" -->
+  <string name="settings_valet_mode_released">إلغاء قفل وضع خدمة الركن</string>
+  <string name="settings_valet_mode_released_content">تم إلغاء قفل وضع خدمة الركن بنجاح</string>
+  <string name="settings_used_space">%1$s مستخدَم</string>
+  <string name="settings_remaining_space">%1$s متاح</string>
+  <!-- Copy translation from "ui_settings" from Home -->
+  <string name="framework_feature_not_available">الميزة غير متوفرة أثناء القيادة.</string>
+  <!-- Translation exists -->
+  <string name="settings_ionizer">Ionizer</string>
+  <string name="settings_ionizer_content">يزيل الإعداد \"المؤيّن\" مفعول الروائح والجزيئات في هواء المقصورة.</string>
+  <string name="settings_warning_content3">You are about to erase all data from your system. This removes all user accounts and resets all settings.</string>
+  <!-- Deprecated -->
+  <string name="settings_radio_system_settings_reset">Radio System Settings Reset</string>
+  <!-- Deprecated -->
+  <string name="settings_radio_system_settings_reset_content">Your system preference settings were successfully reset.</string>
+  <!-- Deprecated -->
+  <string name="settings_system_reset">System Reset</string>
+  <!-- Deprecated -->
+  <string name="settings_system_reset_content">تمت إعادة تعيين النظام بنجاح.</string>
+  <!-- Deprecated -->
+  <string name="ui_low_small">منخفضة</string>
+  <!-- Deprecated -->
+  <string name="settings_register">إعداد</string>
+  <!-- Deprecated -->
+  <string name="settings_factory_data_reset">Factory Data Reset</string>
+  <!-- Deprecated -->
+  <string name="settings_set_pin_hint_text">1234</string>
+  <!-- Deprecated -->
+  <string name="settings_unverified">- لم يتم التحقق منه</string>
+  <!-- Deprecated -->
+  <string name="settings_not_signed_in">الدخول غير مسجّل</string>
+  <!-- Deprecated -->
+  <string name="setting_favorite_set_num_of_audio_fav_content">يتيح لك هذا الإعداد اختيار عدد صفحات المفضلات التي يمكن عرضها من تطبيق \"الصوت\". سوف يسمح اختيار الإعداد \"تلقائي\" بضبط هذا الرقم تلقائياً تبعاً لعدد المفضلات التي قمت بحفظها.</string>
+  <!-- Deprecated -->
+  <string name="settings_vehicle_software">برنامج المركبة</string>
+  <!-- Deprecated -->
+  <!-- Deprecated -->
+  <!-- Already sent in the Home list -->
+  <string name="settings_auto_air_distribution2_content">يحدّد الإعداد \"توزيع الهواء التلقائي\" كيفية تدفق الهواء في السيارة عند تنشيط وضع \"التحكّم التلقائي في المناخ\". يؤدي تدفق الهواء المباشر إلى توجيه مزيد من الهواء تجاه الركاب في حين يتيح تدفق الهواء الموزّع إلى توجيه نسبة أقل من الهواء في اتجاههم. أمّا تدفق الهواء المتقلّب فهو وضع يجمع بين الوضعين الآخرين</string>
+  <!-- Translation exists -->
+  <string name="settings_mode_content">يتيح هذا الإعداد ضبط مظهر شاشة عرض خريطة التجوال وكذلك أية تطبيقات تم تنزيلها لظروف القيادة الأمثل نهاراً أو ليلاً. قم بتعيين الوضع \"التلقائي\" لشاشة العرض بغية ضبطها تلقائيًا ووفقاً للظروف المحيطة الساطعة أو القاتمة.</string>
+  <!-- Translation not found -->
+  <string name="settings_data_services_content">يتيح الإعداد \"خدمات البيانات\" للتطبيقات استخدام خطة البيانات الخاصة بك لأهداف تنزيل وتدفق البيانات. يمكنك إيقاف تشغيل وظيفة تبادل البيانات لمنع استخدامها. وفي حالة إيقاف التشغيل، فلن يؤثر ذلك على خدمات الطوارئ.</string>
+  <!-- Translation not found -->
+  <string name="settings_privacy_location_services_content">يتيح الإعداد \"خدمات الموقع\" للتطبيقات وللخدمات تحديد موقع سيارتك للوصول إلى تحسين الأداء. يمكنك إيقاف تشغيل خدمات الموقع للحفاظ على خصوصية هذه المعلومات. وفي حالة إيقاف التشغيل، فلن يؤثر ذلك على خدمات الطوارئ.</string>
+  <!-- Translation not found -->
+  <string name="settings_teen_driver_audio_volume_limit_content">يحدّد الإعداد \"الحد الأقصى لمستوى الصوت\" إمكانية حدّ مستوى الصوت للسائق المراهق. بالإمكان ضبط الحدّ الأقصى للمستوى من خلال الإعداد \"ضبط الحد الأقصى لمستوى الصوت\".</string>
+  <!-- Translation not found -->
+  <string name="settings_unable_to_send_code_content1">تحقق من العناصر التالية وحاول مرة أخرى: - وجود الهاتف الموصل مسبقًا بالسيارة - تمكين البلوتوث بالهاتف - وجود ذاكرة الرسائل النصية متاحة بالهاتف</string>
+  <!-- Translation exists -->
+  <string name="settings_surround_view_lighting">إنارة المشهد المحيط</string>
+  <!-- Translation exists -->
+  <string name="settings_surround_view_lighting_content">ينشّط الإعداد \"إنارة المشهد المحيط\" الأضواء الجانبية في السيارة بغية تحسين جودة الصورة عند استخدام نظام كاميرا المشهد المحيط.</string>
+  <!-- Translation exists -->
+  <string name="settings_remote_removed_from_vehicle_alert">تنبيه إزالة مفتاح التحكّم عن بُعد من السيارة</string>
+  <!-- Copy translation from "settings_remote_removed_from_vehicle_alert_short" -->
+  <string name="settings_remote_removed_from_vehicle_alert_content">يهدف الإعداد \"تنبيه إزالة مفتاح التحكّم عن بُعد من السيارة\" إلى تحذيرك بواسطة إطلاق صوت البوق 3 مرات في حال خرجتَ من السيارة أثناء تشغيلها وأخذتَ معك جهاز التحكّم عن بُعد في فتح الأبواب.</string>
+  <!-- Translation exists -->
+  <string name="settings_direct_normalflow">تدفق هواء عادي</string>
+  <string name="settings_oscillating_airflow">تدفق هواء متقلّب</string>
+  <string name="updater_vehicle_updates">تحديثات السيارة</string>
+  <string name="updater_details">التفاصيل</string>
+  <string name="updater_install_time">Install time: %1$d mins</string>
+  <string name="updater_install_time_big">وقت التثبيت:</string>
+  <string name="updater_active_safety_content1">يتعين أن تظل السيارة في وضع الركن وقيد إيقاف التشغيل أثناء عملية التحديث.</string>
+  <string name="updater_remind_me_later_long">التذكير لاحقاً</string>
+  <string name="updater_download_size">حجم التنزيل:</string>
+  <string name="updater_connected_to">متصل بـ:</string>
+  <string name="updater_decline_update">رفض التحديث</string>
+  <string name="updater_pause_download">إيقاف التنزيل مؤقتًا</string>
+  <string name="updater_cancel_download_long">إلغاء التنزيل</string>
+  <string name="updater_resume_download_long">استئناف التنزيل</string>
+  <string name="updater_download_paused">تم إيقاف التنزيل مؤقتًا</string>
+  <string name="updater_vehicle_update_download_resuming">جاري استئناف تنزيل تحديث السيارة</string>
+  <string name="updater_vehicle_update_successful">تمت عملية تحديث السيارة بنجاح</string>
+  <string name="updater_vehicle_update_downloading">جاري تنزيل تحديث السيارة</string>
+  <string name="updater_reminder_set">تم تعيين التذكير</string>
+  <string name="updater_reminder_cleared">تم مسح التذكير</string>
+  <string name="updater_about">نبذة</string>
+  <string name="updater_map_database">قاعدة بيانات الخريطة</string>
+  <string name="updater_open_source_software">البرامج مفتوحة المصدر</string>
+  <!-- sending for translation -->
+  <string name="ui_preferences_big">التفضيلات</string>
+  <string name="updater_automatically_check_for_updates">التحقق تلقائيًا من توفر تحديثات </string>
+  <string name="updater_download_when_connected_content">التنزيل عند الاتصال بالشبكات التالية:</string>
+  <string name="updater_linksys">Linksys</string>
+  <string name="ui_onstar_long">OnStar</string>
+  <!-- OnStar is dynamic for MY18 -->
+  <string name="updater_select_reminder_time">حدد وقت التذكير</string>
+  <string name="ui_ok_long3">موافق</string>
+  <string name="updater_checking_for_updates">يجري التحقق من وجود تحديثات. آخر عملية تحقق من وجود تحديثات تمت بتاريخ %1$s عند الساعة %2$s.</string>
+  <string name="updater_no_updates_available">لا تتوفر أية تحديثات. آخر عملية تحقق من وجود تحديثات تمت بتاريخ %1$s عند الساعة %2$s.</string>
+  <string name="updater_connection_failure_content">تحقق من إعدادات الشبكة في الجهاز أو من باقة بيانات %1$s المتبقية. كما يمكنك أيضاً محاولة الاتصال بشبكة Wi-Fi مختلفة.</string>
+  <!-- copy translation from ui_cancel -->
+  <string name="ui_retry_long">إعادة المحاولة</string>
+  <!-- deprecated but copy the translation from ui_retry_small-->
+  <string name="updater_decline_update_long">رفض التحديث</string>
+  <!-- sending for translation -->
+  <string name="updater_decline_update_content">إذا رفضت إجراء هذا التحديث، فلن تستطيع تثبيته بعد ذلك. إذا كنت تريد تثبيته في وقت لاحق، فسوف تحتاج إلى الاتصال بالوكيل للمساعدة.</string>
+  <string name="updater_please_confirm">إخطار مهم</string>
+  <string name="updater_install_now">التثبيت الآن</string>
+  <string name="updater_update_unsuccessful">فشلت عملية التحديث</string>
+  <string name="ui_terms_and_conditions_long">الشروط والأحكام</string>
+  <string name="updater_terms_and_Conditions_content">يجب قبول الشروط والأحكام أو تمتنع عن تثبيت هذا التحديث. إذا أردت قبولها، اضغط على \"موافق\". وإذا لم ترِد ذلك، اضغط على \"إلغاء\" وحينئذ لن تتلقى تحديثات للبرنامج.</string>
+  <string name="updater_update_failed">فشل التحديث</string>
+  <string name="updater_update_failed_content">فشل تحديث البرنامج. اتصل بالوكيل للمساعدة في تثبيت هذا التحديث.</string>
+  <string name="updater_vehicle_must_be_in_park">يجب أن تكون السيارة في وضع الركن</string>
+  <string name="updater_vehicle_must_be_in_park_content">يجب ان تكون السيارة في وضع الركن حتى يتم تطبيق تحديث النظام.</string>
+  <string name="updater_invalid_update_file">ملف تحديث غير صالح</string>
+  <string name="updater_invalid_vin">رقم تعريف السيارة غير صالح</string>
+  <string name="updater_insufficient_battery">مستوى شحن البطارية منخفض</string>
+  <string name="updater_insufficient_battery_content">يتعذر تطبيق التحديثات عندما يكون مستوى شحن البطارية منخفض. قم بشحن البطارية عبر تشغيل السيارة أو توصيل الشاحن.</string>
+  <string name="updater_restart_system">إعادة تشغيل النظام</string>
+  <string name="updater_restart_system_content">يجب إعادة تشغيل النظام حتى تكتمل عملية التحديث. قم بإيقاف تشغيل السيارة، تم افتح باب السائق وأغلقه، وانتظر لمدة دقيقتين على الأقل قبل بدء تشغيل السيارة.</string>
+  <string name="updater_installing_update">تثبيت التحديث</string>
+  <string name="updater_vehicle_in_park">السيارة في وضع \"الركن\"</string>
+  <string name="updater_vehicle_off">السيارة قيد الإيقاف</string>
+  <string name="updater_remove_key">إزالة المفتاح</string>
+  <string name="updater_programming">البرمجة</string>
+  <string name="updater_update_complete_small">اكتمل التحديث</string>
+  <string name="updater_update_complete_big">اكتمل التحديث</string>
+  <!-- sending for translation -->
+  <string name="updater_please_turn_the_vehicle_ignition_off">قم بإيقاف تشغيل السيارة.</string>
+  <string name="updater_please_remove_key">قم بإزالة المفتاح.</string>
+  <string name="updater_vehicle_was_updated_successfully">نجحت عملية تحديث السيارة.</string>
+  <string name="updater_system_will_turn_off_content">سوف يتم إيقاف تشغيل النظام تلقائياً بعد فترة وجيزة.</string>
+  <!-- copy translation fromupdater_system_will_turn_off_content_long -->
+  <string name="updater_vehicle_updated_not_successful">فشلت عملية تحديث السيارة.</string>
+  <string name="updater_please_place_vehicle_in_park">انقل السيارة إلى وضع الركن.</string>
+  <string name="updater_vehicle_is_now_programming">السيارة الآن قيد البرمجة.</string>
+  <string name="updater_est_time_remaining">الوقت المتبقي:</string>
+  <string name="updater_donot_shift_the_vehicle_content">لا تنتقل من وضع الركن، ولا تقم بإزالة محرك أقراص USB، ولا تقم بإيقاف تشغيل المحرك وإلا ستتم مقاطعة عملية التحديث.</string>
+  <string name="updater_vehicle_taken_out_of_park_content">لقد تم نقل السيارة من وضع الركن. يجري استكمال ملف التحديث الحالي. لا تقم بإزالة محرك أقراص USB حتى يكتمل التحديث.</string>
+  <string name="updater_vehicle_update_is_available">يتوفر تحديث للسيارة.</string>
+  <string name="ui_learn_more_big">معرفة المزيد</string>
+  <string name="updater_install_update_big">تثبيت التحديث</string>
+  <string name="updater_install_update_short">تثبيت التحديث</string>
+  <!-- copy translation from updater_install_update_big -->
+  <string name="updater_vehicle_update_is_ready_to_download">تحديث السيارة جاهز لتنزيله.</string>
+  <string name="updater_start_download_big">بدء التنزيل</string>
+  <string name="updater_vehicle_update_download_failed">فشلت عملية تنزيل تحديث السيارة.</string>
+  <string name="updater_vehicle_update_is_Ready_to_resume">عملية تحديث السيارة جاهزة لاستئنافها.</string>
+  <string name="updater_est_time_remaining_short">الوقت المتبقي:</string>
+  <string name="updater_vehicle_cannot_be_shifted_content">لا يمكن نقل السيارة من وضع الركن إلا بعد اكتمال التحديث. لا تقم بإزالة محرك أقراص USB أو بإيقاف تشغيل المحرك وإلا ستتم مقاطعة عملية التحديث.</string>
+  <string name="updater_ignition_in_run">المفتاح في وضع الإشعال</string>
+  <string name="updater_decline_update_big">رفض التحديث</string>
+  <string name="updater_active_safety">Active Safety</string>
+  <!-- translation exists with the same ID and for arabic translation is given n English only -->
+  <string name="updater_pass">اكتمل</string>
+  <string name="updater_fail">فشل</string>
+  <string name="updater_invalid_update_file_content">ملف التحديث التالي غير صالح. %1$s</string>
+  <string name="updater_invalid_vin_content">ملف التحديث التالي غير صالح للاستخدام بهذه السيارة. %1$s</string>
+  <string name="updater_device_registration">تسجيل الجهاز</string>
+  <!-- copy translation from up_device_registration_lig_28_98_38 -->
+  <string name="updater_status">الحالة:</string>
+  <string name="updater_unregistered">غير مسجَّل</string>
+  <string name="updater_registered">مسجَّل</string>
+  <string name="updater_your_system_is_not_registered_content">هذا النظام غير مسجَّل وقد تحدث أخطاء عند استخدام %1$s والخدمات المتصلة. اتصل بوكيلك لتصحيح هذه المشكلة.</string>
+  <string name="updater_wifi_networks">شبكات Wi-Fi</string>
+  <string name="updater_p">P</string>
+  <string name="updater_rndl">RNDL</string>
+  <string name="updater_update_unsuccessful_contentinfo">فشلت عملية التحديث. يمكنك معاودة عملية التحديث في المرة القادمة التي تنقل فيها السيارة إلى وضع الركن. إذا استمر الخطأ، اتصل بالوكيل.</string>
+  <plurals name="updater_mins">
+    <item quantity="zero">%1$d من الدقائق</item>
+    <item quantity="one">%1$d من الدقائق</item>
+    <item quantity="two">%1$d من الدقائق</item>
+    <item quantity="few">%1$d من الدقائق</item>
+    <item quantity="many">%1$d من الدقائق</item>
+    <item quantity="other">%1$d من الدقائق</item>
+  </plurals>
+  <string name="updater_update_file_missing">قم بإدخال جهاز يحتوي على ملف تحديث النظام %1$s لبدء عملية التحديث.</string>
+  <string name="updater_active_safety_long">Active Safety</string>
+  <!-- copy translation from updater_active_safety and the translation is in English only in Arabic-->
+  <string name="updater_open_source_software_small">برنامج مفتوح المصدر</string>
+  <string name="updater_resume_download_small">استئناف التنزيل</string>
+  <!-- copy translation from updater_resume_download_long -->
+  <string name="updater_start_download_small">بدء التنزيل</string>
+  <!-- copy translation fromupdater_start_download_big -->
+  <string name="ui_connection_failure_long">خطأ في الاتصال</string>
+  <string name="up_wifi_networks_lig_28_396_38">شبكات Wi-Fi</string>
+  <string name="up_waiting_for_next_part_reg_21_331_29">في انتظار الجزء التالي</string>
+  <string name="up_download_suspend_content_reg_21_675_29">ينقسم التحديث إلى عدة أجزاء بغرض التنزيل. يبدأ تنزيل كل جزء تلقائيًا عندما يكون متاحًا. وقد يستغرق ذلك ساعات عديدة.</string>
+  <string name="up_release_details_lig_28_605_38">بيانات الإصدار</string>
+  <string name="up_updater_reminder_unavailable_content_med_23_560_64">لا تكون ميزة التذكير متوفرة أثناء عملية التنزيل</string>
+  <string name="up_updater_terms">الشروط والأحكام %1$s</string>
+  <string name="up_agree_lig_28_273_38">أوافق</string>
+  <string name="up_disagree_lig_28_273_38">لا أوافق</string>
+  <string name="updater_system_will_turn_off_content_long">سيتم إيقاف تشغيل النظام تلقائيًا في غضون لحظات قليلة.</string>
+  <string name="up_updater_vehicle_updates_finished_content_med_23_560_64">انتهى تنزيل تحديث السيارة</string>
+  <string name="on_no_updates_avail_lig_28_628_38">لا تتوفر تحديثات.</string>
+  <string name="up_device_registration_lig_28_98_38">تسجيل الجهاز</string>
+  <string name="up_download_new_updates_lig_28_570_68">تنزيل التحديثات الجديدة في الخلفية</string>
+  <string name="updater_center_display">Center Display</string>
+  <!-- deprecated -->
+  <string name="updater_centerstack_long">وحدة التحكّم المركزية</string>
+  <!-- deprecated -->
+  <string name="updater_instrument_cluster">Instrument Cluster</string>
+  <!-- deprecated -->
+  <string name="updater_Telematics_module">Telematics Module</string>
+  <!-- deprecated -->
+  <string name="updater_automatically_install_updates_when_possible">Automatically Install Updates When Possible</string>
+  <!-- deprecated -->
+  <!-- deprecated -->
+  <string name="ui_text_from">Text from %1$s</string>
+  <!-- deprecated -->
+  <string name="ui_listen_big">سماع</string>
+  <!-- deprecated -->
+  <!-- deprecated -->
+  <string name="ui_call_big">اتصال</string>
+  <!-- deprecated -->
+  <string name="updater_updates_ready_to_install">التحديثات جاهزة للتنزيل</string>
+  <!-- deprecated -->
+  <!-- deprecated -->
+  <string name="ui_downloading_update">جاري تنزيل التحديث</string>
+  <!-- translation exists with the same ID -->
+  <string name="ui_connections">الاتصالات المتاحة بالشبكات</string>
+  <!-- translation exists with the same ID -->
+  <string name="updater_update_history">تحديث السجل</string>
+  <!-- translation exists with the same ID -->
+  <string name="updater_last_checked_for_updates_on">آخر عملية تحقّق من وجود تحديثات تمت بتاريخ %1$s في الساعة %2$s.</string>
+  <!-- translation exists with the same ID -->
+  <string name="updater_update_now">التحديث الآن</string>
+  <!-- deprecated -->
+  <string name="ui_cancel_big">إلغاء</string>
+  <!-- translation exists with the same ID -->
+  <string name="updater_last_checked_for_updates_on_short">آخر عملية تحقّق من وجود تحديثات تمت بتاريخ %1$s في الساعة %2$s.</string>
+  <!-- translation exists with the same ID -->
+  <string name="updater_do_not_remind_content">عدم التذكير من جديد</string>
+  <!-- deprecated but there in FNBS, will provide translation in the next drop-->
+  <string name="up_empty_reg_28_373_38_s_1_lef">فارغ</string>
+  <!-- deprecated -->
+  <string name="updater_vehicle_updates_long">تحديثات السيارة</string>
+  <!-- deprecated -->
+  <string name="updater_agree">أوافق</string>
+  <!-- deprecated -->
+  <string name="up_engine_running_23_373_32_s_1_lef">المحرك يعمل</string>
+  <!-- sending for translation -->
+  <string name="up_start_the_engine_23_394_64_s_2_lef">تشغيل المحرك</string>
+  <!-- sending for translation -->
+  <string name="up_remain_in_vehicle_content_23_394_191_s_4_lef">لا حاجة لأن تظل في السيارة. ولا تنسَ أن تأخذ المفاتيح إذا قررت المغادرة.</string>
+  <!-- sending for translation -->
+  <string name="updater_unable_to_update">يتعذّر التحديث</string>
+  <string name="ui_users">المستخدمون</string>
+  <string name="personalization_linked_to_user">مرتبط بـ %1$s</string>
+  <string name="pz_cannot_switch_content_reg_21_423_58_s_2_lef">يتعذر تغيير المستخدم أثناء إجراء مكالمة هاتفية.</string>
+  <string name="personalization_loading_profile">جاري تحميل ملف التعريف</string>
+  <string name="personalization_enter_your_full_name">أدخل الاسم بالكامل</string>
+  <string name="personalization_view_your_settings">عرض الإعدادات</string>
+  <string name="personalization_clear_content">سيؤدي مسح رقم التعريف الشخصي إلى السماح لأي شخص بالسيارة بتسجيل الدخول إلى ملف التعريف الخاص بك والوصول إلى بياناتك وإعداداتك.</string>
+  <string name="personalization_set_pin">تعيين رقم التعريف الشخصي</string>
+  <string name="personalization_edit_the_vehicle_name_content">سيصبح هذا الاسم هو اسم السيارة الذي سيتم عرضه على موقع البوابة الإلكترونية وتطبيق الهاتف.</string>
+  <string name="ui_switch_user">تغيير المستخدم</string>
+  <string name="personalization_always_require_pin_at_login">طلب رقم التعريف الشخصي دائماً عند الدخول</string>
+  <string name="personalization_other_key_detected">تم اكتشاف مفتاح آخر</string>
+  <string name="personalization_secure_profile_with_a_pin">تأمين ملف التعريف باستخدام رقم تعريف شخصي</string>
+  <string name="personalization_started_the_vehicle">تم استخدامه لبدء تشغيل السيارة</string>
+  <string name="ui_skip">تخطي</string>
+  <string name="ui_clear_all">مسح الكل</string>
+  <string name="ui_clear">مسح</string>
+  <string name="ui_notifications">الإشعارات</string>
+  <string name="ui_find_gas_stations_short">البحث عن محطة وقود</string>
+  <string name="ui_system_short">النظام </string>
+  <string name="ui_apps_short2">التطبيقات</string>
+  <string name="ui_vehicle">السيارة</string>
+  <string name="ui_name_big">الاسم</string>
+  <string name="personalization_guest_small">ضيف</string>
+  <string name="personalization_manage_users_small">إدارة المستخدمين</string>
+  <string name="personalization_add_a_user">إضافة ملف تعريف مستخدم</string>
+  <string name="personalization_full_name">الاسم الكامل</string>
+  <string name="personalization_edit_your_full_name_content">سيصبح هذا الاسم هو اسم المستخدم الذي يتم عرضه على شاشة السيارة.</string>
+  <string name="pz_delete_profile_lig_28_507_38_s_1_lef">حذف ملف التعريف</string>
+  <string name="ui_q_caps">Q</string>
+  <string name="ui_w_caps">W</string>
+  <string name="ui_e_caps">E</string>
+  <string name="ui_r_caps">R</string>
+  <string name="ui_t_caps">T</string>
+  <string name="ui_y_caps">Y</string>
+  <string name="ui_u_caps">U</string>
+  <string name="ui_i_caps">I</string>
+  <string name="ui_o_caps">O</string>
+  <string name="ui_p_caps">P</string>
+  <string name="ui_a_caps">A</string>
+  <string name="ui_s_caps">S</string>
+  <string name="ui_d_caps">D</string>
+  <string name="ui_f_caps">F</string>
+  <string name="ui_g_caps">G</string>
+  <string name="ui_h_caps">H</string>
+  <string name="ui_j_caps">J</string>
+  <string name="ui_k_caps">K</string>
+  <string name="ui_z_caps">Z</string>
+  <string name="ui_x_caps">X</string>
+  <string name="ui_c_caps">C</string>
+  <string name="ui_v_caps">V</string>
+  <string name="ui_b_caps">B</string>
+  <string name="ui_n_caps">N</string>
+  <string name="ui_m_caps">M</string>
+  <string name="ui_l_caps">L</string>
+  <string name="ui_1_small">1</string>
+  <string name="ui_2_small">2</string>
+  <string name="ui_3_small">3</string>
+  <string name="ui_4_small">4</string>
+  <string name="ui_5_small">5</string>
+  <string name="ui_6_small">6</string>
+  <string name="ui_7_small">7</string>
+  <string name="ui_8_small">8</string>
+  <string name="ui_9_small">9</string>
+  <string name="ui_0_small">0</string>
+  <string name="personalization_your_profile_has_been_loaded">تم تحميل ملف التعريف الخاص بك.</string>
+  <string name="personalization_your_profile_is_complete">ملف التعريف الخاص بك مكتمل.</string>
+  <string name="personalization_select_devices_to_identify_you_content">يمكن لهذه السيارة التعرّف إليك من خلال المعرّفات التي تستخدمها.</string>
+  <string name="personalization_keys">المفاتيح</string>
+  <string name="personalization_delete_profile_content">أنت لم تنهِ إعداد ملف التعريف الجديد. سيتم حذف ملف التعريف غير المكتمل إذا تم الخروج.</string>
+  <string name="personalization_profile_identifiers">معرّفات ملفات التعريف</string>
+  <string name="personalization_secured_by_pin">مؤمَّن بواسطة رقم تعريف شخصي</string>
+  <string name="personalization_users_currently_unavailable">المستخدمون المتاحون حاليًا</string>
+  <string name="personalization_gm_account">حساب السيارة</string>
+  <string name="personalization_personal">معلومات شخصية</string>
+  <string name="personalization_profile_picture">صورة ملف التعريف</string>
+  <string name="personalization_accounts">الحسابات</string>
+  <string name="personalization_accounts_long">الحسابات</string>
+  <string name="personalization_gm_account_information">معلومات حساب السيارة</string>
+  <string name="personalization_vehicle_name">اسم السيارة</string>
+  <string name="personalization_change_pin">تغيير رقم التعريف الشخصي</string>
+  <string name="personalization_other_key">مفتاح آخر</string>
+  <string name="personalization_secure_profile_with_a_pin_content">هل ترغب في تأمين ملف التعريف باستخدام رقم تعريف شخصي؟ قد يتم طلب إدخال رقم التعريف الشخصي عند بدء تشغيل السيارة وذلك استناداً إلى الإعدادات.</string>
+  <string name="personalization_incorrect_pin">رقم تعريف شخصي غير صحيح</string>
+  <string name="personalization_if_you_are_not_the_user_select_your_profile_now">إذا لم تكن أنت %1$s، حدد ملف التعريف الخاص بك الآن.</string>
+  <string name="personalization_welcome_long">مرحبا بك %1$s</string>
+  <!-- Copy the translation from "personalization_welcome_short" -->
+  <string name="personalization_welcome_short">مرحبا بك %1$s</string>
+  <string name="personalization_account_already_in_use_content">إن %1$s مسجّل الدخول بالفعل على هذه السيارة. الرجاء استخدام عنوان بريد إلكتروني مختلف.</string>
+  <string name="personalization_vehicle_key_profile_number">مفتاح السيارة %1$s</string>
+  <string name="personalization_key_number_detected_with_user_name">تم اكتشاف المفتاح %1$d الخاص بالمستخدم %2$s</string>
+  <string name="personalization_key_number_detected">تم اكتشاف المفتاح %1$d</string>
+  <!-- Translation exists -->
+  <string name="pz_wizard_welome_content_lig_23_s_3_lef">ملف التعريف مكتمل. تحقق من بريدك الإلكتروني واعتمد الحساب الجديد. </string>
+  <string name="pz_wizard_welcome_local_content_lig_23_462_124_s_3_lef">ملف التعريف مكتمل، وتمت إضافته إلى السيارة.</string>
+  <string name="pz_synchronize_your_profile_content_lig_23_629_140_s_4_lef">هل ترغب في مزامنة ملف التعريف الخاص بك عبر الإنترنت لنسخ تفضيلاتك احتياطيًا واستخدامها في سيارة أخرى؟</string>
+  <string name="pz_yes_synchronize_profile_lig_23_334_s_1_cen">نعم أرغب في مزامنة ملف التعريف</string>
+  <string name="pz_data_connection_required_reg_21_333_29_s_1_lef">يتطلّب الاتصال بباقة البيانات</string>
+  <plurals name="personalization_user_distance_and_destination">
+    <item quantity="zero">%1$s ميل - %2$s</item>
+    <item quantity="one">%1$s ميل - %2$s</item>
+    <item quantity="two">%1$s ميل - %2$s</item>
+    <item quantity="few">%1$s ميل - %2$s</item>
+    <item quantity="many">%1$s ميل - %2$s</item>
+    <item quantity="other">%1$s ميل - %2$s</item>
+  </plurals>
+  <string name="ui_retry_long1">إعادة المحاولة</string>
+  <string name="ui_sign_in">تسجيل الدخول</string>
+  <string name="personalization_create_profile">إنشاء ملف تعريف</string>
+  <plurals name="personalization_low_fuel_and_miles_remaining">
+    <item quantity="zero">مستوى الوقود منخفض - يتبقى %1$s ميل</item>
+    <item quantity="one">مستوى الوقود منخفض - يتبقى %1$s ميل</item>
+    <item quantity="two">مستوى الوقود منخفض - يتبقى %1$s ميل</item>
+    <item quantity="few">مستوى الوقود منخفض - يتبقى %1$s ميل</item>
+    <item quantity="many">مستوى الوقود منخفض - يتبقى %1$s ميل</item>
+    <item quantity="other">مستوى الوقود منخفض - يتبقى %1$s ميل</item>
+  </plurals>
+  <!-- Copy translation from "ui_low_fuel_miles_remaining" -->
+  <string name="personalization_welcome">مرحباً!</string>
+  <string name="ui_welcome_content">يمكن نسخ إعدادات السيارة احتياطيًا ونقلها إلى سيارات أخرى.</string>
+  <string name="ui_welcome_content1">بإمكانك تخصيص ميزات هذه السيارة لعدة سائقين.</string>
+  <string name="ui_welcome_content2">يمكن استخدام المفتاح الخاص بك لتعريفك تلقائيًا.</string>
+  <string name="ui_done">تم</string>
+  <string name="personalization_already_in_use">قيد الاستخدام</string>
+  <string name="ui_save_long">حفظ</string>
+  <string name="personalization_already_in_use_content">إن %1$s قيد الاستخدام من قبل %2$s. إذا اخترت المتابعة، فلن يتم استخدامه بعد الآن لتعريف %2$s.</string>
+  <string name="ui_continue_long">متابعة</string>
+  <string name="personalization_create_new_account">حساب جديد</string>
+  <string name="personalization_my_email_not_found">لم يتم العثور على %1$s</string>
+  <string name="personalization_my_email_not_found_content">لا يتوفر لـ %1$s أي حساب مقترن به. هل ترغب في إدخال عنوان بريد إلكتروني مختلف أو إنشاء حساب جديد؟</string>
+  <string name="personalization_profile_identifiers_short">معرّفات ملفات التعريف</string>
+  <string name="ui_are_you_sure">إخطار هام</string>
+  <string name="personalization_profile_identifier_removed">تمت إزالة معرّف ملف التعريف</string>
+  <string name="personalization_dont_synchronize">عدم المزامنة</string>
+  <string name="ui_no_big">لا</string>
+  <!-- Copy translation from "pz_no_lig_23_334_32_s_1_cen" -->
+  <string name="personalization_yes">نعم</string>
+  <string name="pz_unable_to_create_profile_28_684_38_s_1_lef">يتعذر إنشاء ملف تعريف</string>
+  <string name="personalization_you_are_about_to_delete">أنت على وشك حذف %1$s</string>
+  <string name="personalization_account_already_in_use">الحساب قيد الاستخدام </string>
+  <string name="personalization_you_are_about_to_remove">أنت على وشك إزالة %1$s</string>
+  <string name="personalization_exit_and_delete">الخروج والحذف</string>
+  <string name="personalization_clear_pin_long">مسح رقم التعريف الشخصي</string>
+  <!-- Copy translation from "personalization_clear_pin_small" -->
+  <string name="personalization_clear_pin">مسح رقم التعريف الشخصي</string>
+  <string name="ui_ok_long1">موافق</string>
+  <!-- Copy the translation from "ui_ok_long3" -->
+  <string name="pz_unble_to_create_profile_content_lig_28_629_114_s_3_lef">عذرا، إنّ هذه الميزة غير متوفرة إلا بعد شراء السيارة.</string>
+  <string name="personalization_users_currently_unavailable_content">يجب بدء تشغيل السيارة للوصول إلى تطبيق المستخدمين. </string>
+  <string name="personalization_username_deleted">حذف %1$s</string>
+  <!-- Copy the translation from "personalization_user_name_deleted" -->
+  <string name="personalization_pin_does_not_match">رقم التعريف الشخصي غير مطابق</string>
+  <string name="personalization_edit_your_full_name">تحرير الاسم الكامل</string>
+  <string name="personalization_edit_the_vehicle_name">أدخل اسم السيارة</string>
+  <string name="personalization_select_your_identifiers">حدد المعرّفات الخاصة بك</string>
+  <string name="personalization_manage_users_big">إدارة المستخدمين</string>
+  <!-- Copy the translation from "app_shop_manage_users_big" -->
+  <string name="ui_security_long1">الأمان</string>
+  <!-- Copy the translation from "ui_security" -->
+  <string name="pz_synchronize_your_profile_med_28_587_38_s_lef">مزامنة ملف التعريف</string>
+  <string name="personalization_enter_a_four_digit_pin">إنشاء رقم تعريف شخصي مكون من 4 أرقام</string>
+  <string name="personalization_enter_your_four_digit_pin">أدخل رقم التعريف الشخصي المكون من 4 أرقام</string>
+  <string name="pz_user_name_removed_lig_21_560_29_s_1_lef">تمت إزالة %1$s</string>
+  <string name="ui_activities">الأنشطة</string>
+  <string name="personalization_activities_content2">حساب مستخدم لم يتم التحقق منه. الرجاء التحقق من حالة تنشيط الحساب والاتصال بالشبكة.</string>
+  <string name="personalization_activities_content1">حساب مستخدم غير مؤكد. يُرجى تأكيد البريد الإلكتروني للحفاظ على الخدمات المتصلة.</string>
+  <string name="personalization_you_are_about_to_delete_user_content">ستتم إزالة ملف التعريف هذا من السيارة. سيظل من الممكن الوصول إلى معلومات ملف التعريف المحفوظة باستخدام حساب السيارة. وسيتم فقدان أية بيانات لم تتم مزامنتها مع حساب السيارة.</string>
+  <string name="personalization_you_are_about_to_remove_user_content">سيتم فقدان كافة الإعدادات المقترنة بملف التعريف هذا.</string>
+  <string name="ui_remove">إزالة</string>
+  <string name="personalization_re_enter_that_four_digit_pin">تأكيد رقم التعريف الشخصي</string>
+  <string name="pz_keyguard_p13n_select_tip">اختر مستخدم لتسجيل الدخول.</string>
+  <!-- Translation exists -->
+  <string name="personalization_guest">ضيف</string>
+  <string name="ui_please_wait_reg_28_500_38_s_cen">الرجاء الانتظار</string>
+  <string name="ui_feature_unavailable_while_driving_reg_21_559_32_s_cen">هذه الميزة غير متوفرة أثناء القيادة.</string>
+  <string name="ui_cancel_lig_28_390_38_s_cen">إلغاء</string>
+  <string name="ui_delete_lig_28_390_38_s_cen">حذف</string>
+  <string name="ui_delete_lig_28_500_38_s_cen">إزالة</string>
+  <string name="personalization_wizard_sync_no_content">إذا لم تقم بالاتصال من خلال ملف التعريف الخاص بك، فلن يتم نسخ الإعدادات احتياطياً عبر الإنترنت ولن يمكن نقلها إلى سيارة أخرى.</string>
+  <string name="pz_key_1_reg_23_62_32_s_1_cen">1</string>
+  <string name="pz_key_2_reg_23_62_32_s_1_cen">2</string>
+  <string name="ui_audio_small">الصوت</string>
+  <string name="ui_phone_small2">الهاتف</string>
+  <string name="ui_nav1">التجوال</string>
+  <string name="ui_climate">المناخ</string>
+  <string name="ui_settings">الإعدادات</string>
+  <string name="ui_apple_carplay_short1">Apple CarPlay</string>
+  <!-- DNT -->
+  <string name="ui_android_auto">Android Auto</string>
+  <!-- DNT -->
+  <string name="ui_connection_failure">خطأ في الاتصال</string>
+  <!-- Copy the translation from "ui_connection_error" -->
+  <string name="ui_retry_small">إعادة المحاولة</string>
+  <!-- Copy the translation from "ui_retry_small" from Frameworks -->
+  <string name="ui_wifi_network">شبكات Wi-Fi</string>
+  <string name="ui_connection_failure_content">تحقق من إعدادات الشبكة بالجهاز أو من باقة بيانات %1$s المتبقية. أو يمكنك محاولة الاتصال بشبكة Wi-Fi مختلفة.</string>
+  <!-- Copy the translation from "ui_connection_failure_content" from UI Frameworks -->
+  <string name="personalization_create_profile_long">إنشاء ملف تعريف</string>
+  <!-- Copy the translation from "personalization_create_profile" -->
+  <string name="personalization_change_your_profile_picture">تغيير صورة ملف التعريف الخاص بك</string>
+  <!-- Translation exists -->
+  <string name="personalization_device_identifier_removed_content1">تم فصل مفتاح المركبة %1$s المُستخدم كمعرّف من ملف التعريف الخاص بك وذلك بواسطة %2$s.</string>
+  <!-- Translation exists -->
+  <string name="personalization_device_identifier_removed_content2">انتقل إلى شاشة معرّفي ملف التعريف الخاص بك لإجراء التغييرات.</string>
+  <!-- Translation exists -->
+  <string name="personalization_change_password">تغيير كلمة المرور</string>
+  <string name="personaliztion_sign_out_short">تسجيل الخروج </string>
+  <string name="ui_next_long1">التالي</string>
+  <string name="pz_notify_keybob_invalid_profile_name">مستخدم آخر</string>
+  <!-- Translation exists -->
+  <string name="personalization_linked_to_user_started_the_vehicle">متصل بـ %1$s – بدأ تشغيل المركبة</string>
+  <!-- Translation exists -->
+  <string name="personalization_go_back">Go Back</string>
+  <!-- Deprecated and translation not found -->
+  <string name="personalization_create_a_password">Create a Password</string>
+  <!-- Deprecated and translation not found -->
+  <string name="ui_cancel_long1">إلغاء</string>
+  <!-- Deprecated -->
+  <string name="ui_dismiss_long1">‏‏تجاهل</string>
+  <!-- Deprecated -->
+  <!-- Translation exists -->
+  <string name="ui_ok_small1">موافق</string>
+  <!-- Copy the translation from "ui_ok_small"-->
+  <string name="pz_no_lig_23_334_32_s_1_cen">لا</string>
+  <plurals name="personalization_number_of_attempts_remaining_for_password">
+    <item quantity="zero">لديك %1$d محاولات متبقية.</item>
+    <item quantity="one">لديك %1$d محاولة متبقية.</item>
+    <item quantity="two">لديك %1$d محاولة متبقية.</item>
+    <item quantity="few">لديك %1$d محاولات متبقية.</item>
+    <item quantity="many">لديك %1$d محاولة متبقية.</item>
+    <item quantity="other">لديك %1$d محاولة متبقية.</item>
+  </plurals>
+  <!-- Deprecated but translation exists -->
+  <string name="personalization_connection_failure_content1">فشل الاتصال بالشبكة.</string>
+  <!-- Translation exists -->
+  <string name="personalization_wifi_networks">شبكات Wi-Fi</string>
+  <!-- Translation exists -->
+  <string name="personalization_select_devices_to_identify_you">Select device(s) to identify you</string>
+  <!-- Deprecated -->
+  <string name="pz_password_not_secure_enough_med_28_684_38_s_1_lef">Password Not Secure Enough</string>
+  <!-- Deprecated -->
+  <string name="personalization_logging_in">جاري تسجيل الدخول</string>
+  <!-- Translation exists -->
+  <string name="personalization_account_locked">تم تأمين الحساب</string>
+  <!-- Translation exists -->
+  <string name="personalization_gm_account_short">GM Account</string>
+  <!-- Deprecated -->
+  <string name="ui_tty_reg_21_39_29_s_1_lef">TTY</string>
+  <!-- Deprecated -->
+  <string name="personalization_clear_pin_small">مسح رمز التعريف الشخصي</string>
+  <!-- Deprecated -->
+  <string name="pz_delete_reg_28_397_66_1_s_cen">حذف</string>
+  <!-- Deprecated -->
+  <string name="pz_wizard_entery_your_email_content_reg_21_666_29_s_2_lef">This will become your username for your GM account. If you have an account already, we\'ll let you sign in on the next page.</string>
+  <!-- Deprecated -->
+  <string name="personalization_please_wait_ten_minutes_before_trying_again">Please wait 10 minutes before trying again.</string>
+  <!-- Deprecated -->
+  <string name="personalization_enter_your_email">Enter Your Email</string>
+  <!-- Deprecated -->
+  <string name="personalization_enter_your_password">Enter Your Password</string>
+  <!-- Deprecated -->
+  <string name="personalization_looking_up_account">جاري البحث عن الحساب</string>
+  <!-- Deprecated -->
+  <string name="personalization_re_enter_your_password">Re-enter Your Password</string>
+  <!-- Deprecated -->
+  <string name="personalization_not_a_valid_email">Not a Valid Email</string>
+  <!-- Deprecated -->
+  <string name="personalization_delete_profile">حذف ملف التعريف</string>
+  <!-- Deprecated -->
+  <string name="personalization_remove_profile">إزالة ملف التعريف</string>
+  <!-- Deprecated -->
+  <string name="personalization_invalid_password">كلمة المرور غير صحيحة</string>
+  <!-- Deprecated -->
+  <string name="personalization_profile_identifier_removed_long">تم فصل المعرّف عن ملف التعريف</string>
+  <!-- Deprecated -->
+  <string name="personalization_sign_out">Sign Out</string>
+  <!-- Deprecated -->
+  <string name="personalization_are_you_sure_content1">في حال سجّلت خروجك، سوف يتوقف نسخ إعداداتك احتياطياً على شبكة الإنترنت ولن يعود بالإمكان نقلها إلى أية مركبة أخرى. يمكنك إعادة تسجيل دخولك في وقت لاحق.</string>
+  <!-- Deprecated -->
+  <string name="ui_special_sym5">\u0040</string>
+  <!-- Deprecated -->
+  <string name="ui_retry_short">إعادة المحاولة</string>
+  <!-- Deprecated -->
+  <string name="ui_password_small">كلمة المرور</string>
+  <!-- Deprecated -->
+  <string name="pz_creating_account_reg_28_444_38_s_1_cen">جاري إنشاء الحساب</string>
+  <!-- Deprecated -->
+  <string name="personalization_enter_your_password_content">يُرجى إدخال كلمة المرور لحساب مركبتك.</string>
+  <!-- Deprecated -->
+  <string name="personalization_create_a_password_content">ستكون هذه هي كلمة المرور للوصول إلى حسابك.</string>
+  <!-- Deprecated -->
+  <string name="personalization_email_address">e-mail address</string>
+  <!-- Deprecated -->
+  <string name="personalization_sign_in_create_content">This is your username for your GM account.</string>
+  <!-- Deprecated -->
+  <string name="ui_1_small1">1</string>
+  <string name="ui_2_small1">2</string>
+  <string name="ui_3_small1">3</string>
+  <string name="ui_4_small1">4</string>
+  <string name="ui_5_small1">5</string>
+  <string name="ui_6_small1">6</string>
+  <string name="ui_7_small1">7</string>
+  <string name="ui_8_small1">8</string>
+  <string name="ui_9_small1">9</string>
+  <string name="ui_0_small1">0</string>
+  <string name="personalization_user_name_deleted">حذف %1$s</string>
+  <string name="ui_security">الأمان</string>
+  <string name="personalization_slacker_radio">Slacker Radio</string>
+  <!-- DNT -->
+  <string name="ui_pandora_big">Pandora</string>
+  <!-- DNT -->
+  <string name="ui_next_long">التالي</string>
+  <string name="personalization_choose_your_profile_picture">حدد صورة ملف التعريف</string>
+  <string name="pz_quick_notice_verified_content_reg_23_423_58_s_2_lef">حساب مستخدم لم يتم التحقق منه. تحقق من البريد الإلكتروني للمحافظة على الخدمات المتصلة.</string>
+  <!-- Copy the translation from "pz_quick_notice_verified_content_reg_21_423_58_s_2_lef" -->
+  <string name="pz_activities_content2_reg_28_499_38">لم يتم التحقق من حساب المستخدم. تحقق من الحساب للحفاظ على الخدمات المتصلة.</string>
+  <!-- Translation not found -->
+  <string name="pz_resend_verification_reg_23_168_38">إعادة إرسال التحقق</string>
+  <!-- Translation not found -->
+  <string name="pz_wizard_welome_content_lig_23_462_124_s_3_lef">ملف التعريف الخاص بك مكتمل. تحقق من هاتفك ثم اعتمد الحساب الجديد.</string>
+  <!-- Translation not found -->
+  <string name="ui_advisor_lig_28_182_38_s_lef">‏مستشار</string>
+  <!-- Copy the translation from "terms_advisor" -->
+  <string name="pz_verification_failed_28_629_38_lef">فشلت عملية التحقق</string>
+  <!-- Translation not found -->
+  <string name="pz_notification_unverified_onstar_content_28_629_266">هناك احتمال بعدم صحة عنوان البريد الإلكتروني أو رقم الهاتف المستخدم لإنشاء حسابك. اتصل بمستشار %1$s لتحديث عنوان البريد الإلكتروني أو رقم الهاتف الخاص بك.</string>
+  <!-- Translation not found -->
+  <string name="pz_account_already_in_use_content_1">%1$s مسجل حاليًا في هذه السيارة. استخدم رقم هاتف أو عنوان بريد إلكتروني آخر.</string>
+  <!-- Translation not found -->
+  <string name="pz_notification_unverified_onstar_content_one_28_629_266">هناك احتمال بعدم صحة عنوان البريد الإلكتروني أو رقم الهاتف المستخدم لإنشاء حسابك. سجل الدخول إلى حسابك على موقع الويب لتحديث عنوان البريد الإلكتروني أو رقم الهاتف. </string>
+  <!-- Translation not found -->
+  <string name="pz_sending_verification_reg_28_444_38">يتم الآن إرسال التحقق</string>
+  <!-- Translation not found -->
+  <string name="pz_select_user_to_signin_28_360_38">اختر مستخدم لتسجيل الدخول.</string>
+  <!-- Copy the translation from "pz_keyguard_p13n_select_tip" -->
+  <string name="pz_quick_notice_verification_content_reg_21_423_58_s_2_lef">نجحت عملية إرسال التحقق</string>
+  <!-- Translation not found -->
+  <string name="pz_reg_23_423_64_unverified_china_content_s_2_lef">لم يتم التحقق من حساب المستخدم. تحقق من الحساب للحفاظ على الخدمات المتصلة.</string>
+  <!-- Translation not found -->
+  <string name="personalization_unverified">- لم يتم التحقق منه</string>
+  <!-- Translation not found -->
+  <string name="ui_ok_big2">موافق</string>
+  <string name="personalization_vehicle_account">حساب السيارة</string>
+  <!-- Copy the translation from "au_vehicle_account_med_28_587_38_s_1_lef" -->
+  <string name="ui_retry_lig_28_390_38_s_cen">إعادة المحاولة</string>
+  <!-- Copy the translation from "ui_retry" from Connections -->
+  <string name="personalization_device_identifier_removed_content">تمت إزالة %1$s كمعرّف من ملف التعريف الخاص بك من قبل %2$s. انتقل إلى شاشة معرّفات ملفات التعريف لإجراء تغييرات.</string>
+  <string name="pz_remove_profile_lig_28_507_38_s_1_lef">إزالة ملف التعريف</string>
+  <!-- Translation not found -->
+  <string name="cm_mirrolink_short">MirrorLink</string>
+  <string name="cm_android_auto_small">Android Auto</string>
+  <string name="cm_connected_caps_long">متصل</string>
+  <string name="cm_not_connected_caps">غير متصل</string>
+  <string name="cm_wifi_services_onstar_hotspot_big">نقطة اتصال Wi-Fi</string>
+  <string name="cm_add_other_network">إضافة شبكة أخرى</string>
+  <string name="cm_open_network">شبكة غير مؤمّنة</string>
+  <string name="cm_wifi_network_settings">إعدادات شبكة Wi-Fi</string>
+  <string name="cm_select_a_wifi_network">حدد شبكة Wi-Fi</string>
+  <string name="cm_available_long">متوفر</string>
+  <string name="cm_connect_android_auto_device_to_usb">توصيل هاتف Android Auto إلى منفذ USB</string>
+  <string name="cm_enable_carplay_content">بمجرد تفعيل هذه الميزة، قد يقوم هاتف معيّن ببدء تشغيل Apple CarPlay عند الاتصال عبر USB.</string>
+  <string name="cm_connect_android_auto_device_to_usb_content">يفضل ذلك لتحقيق اتصال أفضل. قد يمكّن أيضًا اتصالات لاسلكية مستقبلية.</string>
+  <string name="cm_connect_apple_carplay_device_to_usb">توصيل هاتف Apple CarPlay إلى منفذ USB</string>
+  <string name="cm_apple_carplay_short">Apple CarPlay</string>
+  <string name="ui_add_device">إضافة هاتف</string>
+  <string name="ui_devices_long">الهواتف</string>
+  <string name="ui_wifi_networks_long">شبكات Wi-Fi</string>
+  <string name="ui_wifi_networks">شبكات Wi-Fi المتوفرة</string>
+  <string name="cm_no_network_connected">لا توجد شبكات متصلة</string>
+  <string name="cm_devicename">اسم الهاتف</string>
+  <string name="ui_disconnect">فصل الاتصال</string>
+  <string name="cm_connecting_over_wifi">الاتصال عبر Wi-Fi</string>
+  <string name="cm_join_network">الانضمام إلى الشبكة</string>
+  <string name="cm_network_name">اسم الشبكة</string>
+  <string name="ui_password">كلمة المرور</string>
+  <string name="cm_security_type">نوع الأمان</string>
+  <string name="cm_favorite_network">الشبكة المفضلة</string>
+  <string name="cm_forget_network">عدم تذكر الشبكة</string>
+  <string name="cm_favorite_network_content">الاتصال بهذه الشبكة أولاً</string>
+  <string name="cm_automatic_updates">التنزيلات التلقائية</string>
+  <string name="cm_device_not_found">الهاتف غير موجود</string>
+  <string name="cm_device_not_found_content">تعذر الاتصال بالهاتف المحدّد.\nيُرجى التحقّق من إعدادات الاتصال في الهاتف.</string>
+  <string name="cm_disconnect_device_big">فصل اتصال الجهاز</string>
+  <string name="cm_disconnect_device_small">فصل الهاتف</string>
+  <string name="cm_disconnect_device_content">هل تريد بالفعل فصل هذا الجهاز من نقطة الاتصال Wi-Fi؟</string>
+  <string name="cm_disconnect_device_content2">هل تريد بالفعل فصل هذا الهاتف؟\nقد يتم تحويل المكالمات النشطة على هذا الجهاز إلى سمّاعة الهاتف.</string>
+  <string name="cm_forget_device_content">هل أنت متأكّد؟ سوف تتم إزالة هذا الهاتف من قائمة الهواتف كما لن يعود بالإمكان الاتصال به بشكل تلقائي.</string>
+  <string name="cm_forgetting_wifi_network_content">هل تريد ذلك بالتأكيد؟ ستتم إزالة هذه الشبكة من قائمة شبكات Wi-Fi ولن يتم الاتصال بها تلقائيًا بعد الآن.</string>
+  <string name="cm_paired_device_limit_reached">تم بلوغ حدّ الهواتف المقترنة</string>
+  <string name="cm_paired_device_limit_content">سوف تتم إزالة الجهاز أدناه من قائمة الهواتف بغية إقران هاتفك الجديد.</string>
+  <string name="cm_couldnot_connect_to_selected_wifi_network">يتعذر الاتصال بشبكة Wi-Fi المحددة.</string>
+  <string name="cm_wifi_network_connection_error">خطأ في الاتصال بشبكة Wi-Fi</string>
+  <string name="cm_enable_wireless_screen_sharing_big">تمكين مشاركة الشاشة لاسلكيًا</string>
+  <string name="cm_enable_wireless_screen_sharing_small">تمكين مشاركة الشاشة لاسلكيًا</string>
+  <string name="cm_enable_wireless_screen_sharing_content">لا يمكن اتصال الأجهزة القديمة بالشبكة اللاسلكية بينما تكون \"مشاركة الشاشة لاسلكياً\" قيد التمكين.</string>
+  <string name="ui_enable">تمكين</string>
+  <string name="ui_disable">تعطيل</string>
+  <string name="cm_disable_wireless_screen_sharing_big">تعطيل مشاركة الشاشة لاسلكيًا</string>
+  <string name="cm_disable_wireless_screen_sharing_small">تعطيل مشاركة الشاشة لاسلكيًا</string>
+  <string name="cm_disable_wireless_screen_sharing_content">توصيل الجهاز عبر USB لاستخدام مشاركة الشاشة.</string>
+  <string name="cm_steps_to_pair_device">الخطوات المتّبعة لإقران الهاتف</string>
+  <string name="cm_bluetooth_help_content">1. قُم بتشغيل الهاتف.\n2. افتح \"الإعدادات\"، وحدّد البلوتوث.\n3. قُم بتشغيل البلوتوث.\n4. حدّد اسم السيارة %1$s.</string>
+  <string name="cm_gal_connection_over_wifi_popup_content1">1. قم بتشغيل الهاتف. 2. افتح \"الإعدادات\"، وحدد \"Wi-Fi\". 3. قم بتعيين Wi-Fi على \"تشغيل\". 4. حدد - %1$s. 5. أدخل الرمز الظاهر على شاشة السيارة.</string>
+  <string name="cm_pairing_device">جاري إقران الهاتف</string>
+  <string name="cm_searching_for_device">جاري البحث عن هاتف</string>
+  <string name="cm_pair_bluetooth_device">إقران هاتف بلوتوث</string>
+  <string name="cm_pair_bluetooth_device_content">حدّد اسم السيارة المبيّن أدناه في قائمة إعدادات البلوتوث في هاتفك</string>
+  <string name="cm_confirm_bluetooth_pairing">تأكيد الاقران عبر بلوتوث</string>
+  <string name="cm_confirm_bluetooth_pairing_content">هل هذا هو الرمز الظاهر على هاتفك؟</string>
+  <string name="cm_connect_apple_carplay_device_usb_content">قُم بتوصيل هاتف مدعوم بغية تشغيل Apple CarPlay.</string>
+  <string name="cm_enable_android_auto_content">بمجرد تفعيل هذه الميزة، قد يقوم هاتف معيّن ببدء تشغيل Android Auto عند الاتصال عبر USB.</string>
+  <string name="cm_wireless_screen_sharing">مشاركة الشاشة لاسلكيًا</string>
+  <string name="cm_wireless_screen_sharing_content1">اتصال عبر منفذ USB من أجل Apple CarPlay أو Android Auto. يمكن توصيل معظم الهواتف والأجهزة بنقطة الاتصال Wi-Fi لمشاركة بياناتها.</string>
+  <string name="cm_wireless_screen_sharing_content2">اتصال لاسلكي وعبر منفذ USB من أجل Apple CarPlay أو Android Auto. يؤدي ذلك إلى تعطيل نقطة الاتصال Wi-Fi للطرازات القديمة من الهواتف والأجهزة.</string>
+  <string name="cm_wireless_network_big">خدمات Wi-Fi</string>
+  <string name="cm_wireless_network_long">خدمات Wi-Fi</string>
+  <string name="cm_wireless_network_off">نقطة اتصال Wi-Fi متوقفة</string>
+  <string name="cm_wireless_network_content1">بإمكان الأجهزة استخدام نقطة اتصال Wi-Fi.</string>
+  <string name="cm_wireless_network_content2">نقطة اتصال Wi-Fi في وضع إيقاف التشغيل. لا يمكن للأجهزة الاتصال.</string>
+  <string name="cm_advanced_wifi_services">خدمات Wi-Fi المتقدمة</string>
+  <string name="cm_wireless_access_onstar_hotspot">وصول لا سلكي إلى - نقطة اتصال Wi-Fi</string>
+  <string name="cm_share_hotspot_data_big">مشاركة بيانات نقطة الاتصال</string>
+  <string name="cm_share_hotspot_data_small">مشاركة بيانات نقطة الاتصال</string>
+  <string name="cm_sharing_data_connected_devices_long">مشاركة البيانات مع الأجهزة المتصلة</string>
+  <string name="cm_share_hotspot_data_content1">يمكن للأجهزة استخدام نقطة الاتصال Wi-Fi وبياناتها.</string>
+  <string name="cm_share_hotspot_data_content2">يمكن للأجهزة استخدام نقطة الاتصال Wi-Fi ولكن دون بياناتها.</string>
+  <string name="cm_not_currently_sharing_data_connected_devices">لا مشاركة للبيانات مع الاجهزة المتصلة</string>
+  <string name="cm_wireless_network_info">يتعذر اتصال الأجهزة القديمة عند تمكين \"مشاركة الشاشة لاسلكياً\". افتح \"خدمات Wi-Fi المتقدمة\" لتغيير الإعداد.</string>
+  <string name="cm_connected_to_usb">متصل عبر USB</string>
+  <string name="cm_wifi_services">خدمات Wi-Fi</string>
+  <string name="cm_connected_devices">الأجهزة المتصلة</string>
+  <string name="cm_connected_devices_long">الأجهزة المتصلة</string>
+  <string name="cm_data_subscription_status">حالة اشتراك باقة البيانات</string>
+  <string name="cm_advanced">الإعدادات المتقدمة</string>
+  <string name="cm_advanced_wifi_services_settings">إعدادات خدمات Wi-Fi المتقدمة</string>
+  <string name="cm_vehicle_hotspot_on_qn">نقطة اتصال Wi-Fi تعمل</string>
+  <string name="cm_vehicle_hotspot_off_qn">نقطة اتصال Wi-Fi في وضع إيقاف التشغيل</string>
+  <string name="ui_1_long">1</string>
+  <string name="ui_2_long">2</string>
+  <string name="ui_3_long">3</string>
+  <string name="ui_4_long">4</string>
+  <string name="ui_5_long">5</string>
+  <string name="ui_6_long">6</string>
+  <string name="ui_7_long">7</string>
+  <string name="ui_8_long">8</string>
+  <string name="ui_9_long">9</string>
+  <string name="ui_0_long">0</string>
+  <string name="ui_q_small">q</string>
+  <string name="ui_w_small">w</string>
+  <string name="ui_e_small">e</string>
+  <string name="ui_r_small">r</string>
+  <string name="ui_t_small">t</string>
+  <string name="ui_y_small">y</string>
+  <string name="ui_u_small">u</string>
+  <string name="ui_i_small">i</string>
+  <string name="ui_o_small">o</string>
+  <string name="ui_p_small">p</string>
+  <string name="ui_a_small">a</string>
+  <string name="ui_s_small">s</string>
+  <string name="ui_d_small">d</string>
+  <string name="ui_f_small">f</string>
+  <string name="ui_g_small">g</string>
+  <string name="ui_h_small">h</string>
+  <string name="ui_j_small">j</string>
+  <string name="ui_k_small">k</string>
+  <string name="ui_z_small">z</string>
+  <string name="ui_x_small">x</string>
+  <string name="ui_c_small">c</string>
+  <string name="ui_v_small">v</string>
+  <string name="ui_b_small">b</string>
+  <string name="ui_n_small">n</string>
+  <string name="ui_m_small">m</string>
+  <string name="ui_l_small">l</string>
+  <string name="ui_1_short">1</string>
+  <!-- Deprecated-->
+  <string name="ui_2_short">2</string>
+  <!-- Deprecated -->
+  <string name="ui_3_short">3</string>
+  <!-- Deprecated -->
+  <string name="ui_4_short">4</string>
+  <!-- Deprecated -->
+  <string name="ui_5_short">5</string>
+  <!-- Deprecated -->
+  <string name="ui_6_short">6</string>
+  <!-- Deprecated -->
+  <string name="ui_7_short">7</string>
+  <!-- Deprecated -->
+  <string name="ui_8_short">8</string>
+  <!-- Deprecated -->
+  <string name="ui_9_short">9</string>
+  <!-- Deprecated -->
+  <string name="cm_wifi_name">اسم شبكة Wi-Fi</string>
+  <string name="cm_wifi_password">كلمة مرور شبكة Wi-Fi</string>
+  <string name="ui_save_small">حفظ</string>
+  <string name="ui_confirm_short">تأكيد</string>
+  <string name="ui_qn123">\?123</string>
+  <string name="ui_space">مسافة</string>
+  <string name="cm_enter_network_password">كلمة المرور للشبكة</string>
+  <string name="cm_enter_network_name">اسم الشبكة</string>
+  <string name="cm_outgoing_and_incoming_calls_bluetooth">المكالمات الورادة والصادرة</string>
+  <string name="cm_first_to_connect_current_favorite_long">الأول للاتصال. المفضلة الحالية - %1$s</string>
+  <string name="cm_pairing_device_content">جاري الإقران مع %1$s</string>
+  <string name="cm_bluetooth_device_name">اسم الهاتف</string>
+  <string name="cm_enter_password">أدخل كلمة المرور - %1$s</string>
+  <string name="cm_wifiname_vehicle_wifi_name">اسم شبكة Wi-Fi</string>
+  <string name="cm_vehicle_wifi_name_password">كلمة مرور شبكة Wi-Fi</string>
+  <string name="cm_favorite_phone_content">الهاتف المفضل - %1$s</string>
+  <string name="cm_device_disconnected_qn">تم فصل الهاتف - %1$s</string>
+  <string name="cm_device_forgotten_qn">تمت إزالة الهاتف - %1$s</string>
+  <string name="cm_bluetooth_battery_low">مستوى شحن البطارية منخفض - %1$s</string>
+  <string name="cm_wifi_connected_qn">شبكة Wi-Fi متصلة - %1$s</string>
+  <string name="cm_wifi_disconnected_qn">تم فصل اتصال شبكة Wi-Fi - %1$s</string>
+  <string name="cm_wifi_forgotten_qn">تم حذف شبكة Wi-Fi - %1$s</string>
+  <string name="cm_favorite_network_qn">الشبكة المفضلة - %1$s</string>
+  <string name="cm_connected_to_vehicle_hotspot_qn">%1$s متصل بنقطة اتصال السيارة</string>
+  <string name="ui_cancel_small">إلغاء</string>
+  <string name="cm_rename_your_vehicle_wireless_network_reg_21_763_29">تغيير اسم واي فاي للسيارة (يلزم أن يقع بين نطاق 1-24 حرفًا)</string>
+  <string name="cm_set_change_your_vehiclewifipassword_reg_21_763_29">قُم بتغيير كلمة مرور شبكة Wi-Fi في السيارة (ينبغي أن تتراوح بين 8 و24 حرفاً)</string>
+  <string name="cm_wireless_network_wss_enabled_content">يمكن للأجهزة استخدام نقطة الاتصال Wi-Fi والاتصال لاسلكياً بتطبيقات مشاركة الشاشة.</string>
+  <string name="cm_wireless_access_to_device_lig_21_681_29">الوصول لاسلكياً إلى - %1$s</string>
+  <string name="cm_data_services_declined_reg_28_690_38">تم تعطيل خدمة البيانات</string>
+  <string name="cm_deactivated_lig_21_503_29">معطل</string>
+  <string name="cm_help">التعليمات</string>
+  <string name="cm_help_lig_28">التعليمات</string>
+  <string name="cm_incoming_calls_only">المكالمات الواردة فقط</string>
+  <plurals name="cm_two_devices_connected_to_wireless_network">
+    <item quantity="zero">%1$d من الأجهزة متصلة بنقاطة اتصال Wi-Fi</item>
+    <item quantity="one">%1$d من الأجهزة متصلة بنقطة اتصال Wi-Fi</item>
+    <item quantity="two">%1$d من الأجهزة متصلة بنقطة اتصال Wi-Fi</item>
+    <item quantity="few">%1$d من الأجهزة متصلة بنقطة اتصال Wi-Fi</item>
+    <item quantity="many">%1$d من الأجهزة متصلة بنقطة اتصال Wi-Fi</item>
+    <item quantity="other">%1$d من الأجهزة متصلة بنقطة اتصال Wi-Fi</item>
+  </plurals>
+  <plurals name="cm_incoming_calls_min_remaining">
+    <item quantity="zero">المكالمات الواردة - %1$d من الدقائق المتبقية</item>
+    <item quantity="one">المكالمات الواردة - %1$d من الدقائق المتبقية</item>
+    <item quantity="two">المكالمات الواردة - %1$d من الدقائق المتبقية</item>
+    <item quantity="few">المكالمات الواردة - %1$d من الدقائق المتبقية</item>
+    <item quantity="many">المكالمات الواردة - %1$d من الدقائق المتبقية</item>
+    <item quantity="other">المكالمات الواردة - %1$d من الدقائق المتبقية</item>
+  </plurals>
+  <plurals name="cm_no_min_available">
+    <item quantity="zero">%1$d من الدقائق المتوفرة</item>
+    <item quantity="one">%1$d من الدقائق المتوفرة</item>
+    <item quantity="two">%1$d من الدقائق المتوفرة</item>
+    <item quantity="few">%1$d من الدقائق المتوفرة</item>
+    <item quantity="many">%1$d من الدقائق المتوفرة</item>
+    <item quantity="other">%1$d من الدقائق المتوفرة</item>
+  </plurals>
+  <string name="cm_none">لا يوجد</string>
+  <string name="cm_add_other_network_name">إضافة شبكة أخرى - اسم الشبكة</string>
+  <string name="cm_no_usb_cable">لا يوجد كابل USB</string>
+  <string name="ui_cancel_long">إلغاء</string>
+  <string name="ui_cancel">إلغاء</string>
+  <string name="cm_join_network_long">الانضمام إلى الشبكة</string>
+  <string name="cm_forget_device_small">إزالة الهاتف</string>
+  <string name="ui_ok">موافق</string>
+  <string name="cm_code_matches">إقران</string>
+  <string name="cm_connecting_device_qn">جاري توصيل الهاتف - %1$s</string>
+  <string name="cm_on_long">تشغيل</string>
+  <string name="cm_device_connected_bluetooth_phone">%1$s متصل - %2$s</string>
+  <string name="ui_retry">إعادة المحاولة</string>
+  <string name="cm_forget_device_long">إزالة الهاتف</string>
+  <string name="cm_forget_device_big">إزالة الهاتف</string>
+  <string name="cm_forget_wifi_network_big">عدم تذكر الشبكة</string>
+  <string name="cm_forget_network_long">عدم تذكر الشبكة</string>
+  <string name="cm_add_other_network_password">إضافة شبكة أخرى - كلمة المرور</string>
+  <string name="cm_forget_network_lig_28_395_94">عدم تذكر الشبكة</string>
+  <string name="cm_wifi_services_med_28_587_38">خدمات Wi-Fi</string>
+  <string name="cm_on_short">تشغيل</string>
+  <string name="cm_phone_or_media">بلوتوث</string>
+  <string name="cm_wireless_network_reg_28_503_38">شبكة لاسلكية</string>
+  <string name="cm_secured_with_security_type">مؤمنة بواسطة %1$s</string>
+  <string name="cm_secured_with_security_type_short">مؤمنة بواسطة %1$s</string>
+  <string name="cm_use_data_roaming">استخدم خدمة البيانات أثناء التجوال</string>
+  <string name="cm_no_subscription">لا يتوفر أي اشتراك</string>
+  <plurals name="cm_outgoing_calls_min_remaining">
+    <item quantity="zero">مصدر للمكالمات الصادرة - %1$d من الدقائق المتبقية</item>
+    <item quantity="one">مصدر للمكالمات الصادرة - %1$d من الدقائق المتبقية</item>
+    <item quantity="two">مصدر للمكالمات الصادرة - %1$d من الدقائق المتبقية</item>
+    <item quantity="few">مصدر للمكالمات الصادرة - %1$d من الدقائق المتبقية</item>
+    <item quantity="many">مصدر للمكالمات الصادرة - %1$d من الدقائق المتبقية</item>
+    <item quantity="other">مصدر للمكالمات الصادرة - %1$d من الدقائق المتبقية</item>
+  </plurals>
+  <string name="ui_ok_big">موافق</string>
+  <string name="cm_internet_currently_unavailable_lig_21_503_29">لا اتصال حالياً بالإنترنت</string>
+  <string name="ui_no">لا</string>
+  <string name="cm_change_device_name_within_the_vehicle_reg_21_763_29">تغيير اسم الجهاز بالسيارة</string>
+  <string name="cm_connect_android_auto_device_usb_content">قم بتوصيل جهاز مدعوم لتشغيل Android Auto.</string>
+  <string name="cm_legacy_bluetooth_pairing_not_supported_med_28_684_38">الإقران التقليدي عبر بلوتوث غير مدعوم</string>
+  <string name="cm_legacy_bluetooth_pairing_not_supported_content_lig_28_579_114">قد يكون هذا الجهاز غير مدعوم.</string>
+  <string name="cm_emergency_call">‏طوارئ</string>
+  <string name="cm_onstar_advisor">‏مستشار</string>
+  <string name="cm_onstar_hands_free_calling_long">وضع الاتصال \"حرّ اليدين\" من %1$s غير نشط</string>
+  <string name="cm_none_short">لا يوجد</string>
+  <string name="cm_connect_lig_28_389_38">الاتصال</string>
+  <!-- Deprecated -->
+  <string name="ui_dismiss">تجاهل</string>
+  <string name="ui_0_short">0</string>
+  <!-- Deprecated -->
+  <string name="cm_media">الوسيط – %1$s</string>
+  <string name="cm_add_other_network_big_med_28_587_38">إضافة شبكة أخرى</string>
+  <string name="cm_add_other_network_content_lig_28_629_266">لا يمكن إضافة سوى شبكات Wi-Fi ذات درجة أمان WPA/WPA2.</string>
+  <string name="cm_switch_devices_med_28_684_38">التبديل بين الهواتف</string>
+  <string name="cm_switch_device_content1_lig_28_629_114">هل تود توصيل %1$s كهاتف جديد؟</string>
+  <string name="cm_switch_device_content2_lig_28_629_152">قد يكون تم فصل الاتصال بالهاتف الحالي، سيتم نقل أية مكالمات نشطة إلى السمّاعة.</string>
+  <string name="cm_projection_device_connected_med_28_684_38">تم توصيل الهاتف %1$s</string>
+  <string name="cm_projection_device_content1_lig_28_629_114">هل تود تشغيل %1$s من %2$s؟</string>
+  <string name="cm_projection_device_content2_lig_28_629_152">سوف يتوقف تشغيل %1$s على %2$s وقد يتم تحويل المكالمات النشطة إلى سمّاعة الهاتف.</string>
+  <string name="ui_continue">متابعة</string>
+  <string name="cm_secondary_phone_reg_28_579_38">هاتف ثانوي</string>
+  <string name="cm_secondary_phone_content_lig_21_579_29">السماح باتصال بلوتوث بالتوازي مع هاتف آخر</string>
+  <string name="ui_save">حفظ</string>
+  <string name="cm_discard_reg_23_198_32">تجاهل</string>
+  <string name="cm_no_connected_devices_reg_28_585_38">لا أجهزة متصلة</string>
+  <string name="cm_cannot_connect_to_open_wifi_networks">هذه الشبكة غير آمنة بما فيه الكفاية. يُرجى اختيار شبكة Wi-Fi ذات درجة أمان WPA/WPA2.</string>
+  <string name="cm_select_mirror_link_device">اختيار جهاز %1$s</string>
+  <string name="cm_android_auto_usb">Android Auto – %1$s</string>
+  <string name="cm_apple_carplay_wifi">Apple Carplay – %1$s</string>
+  <!-- strings not found in language file -->
+  <plurals name="cm_no_minutes_available">
+    <item quantity="zero">لديك %1$d من الدقائق المتاحة</item>
+    <item quantity="one">لديك %1$d من الدقائق المتاحة</item>
+    <item quantity="two">لديك %1$d من الدقائق المتاحة</item>
+    <item quantity="few">لديك %1$d من الدقائق المتاحة</item>
+    <item quantity="many">لديك %1$d من الدقائق المتاحة</item>
+    <item quantity="other">لديك %1$d من الدقائق المتاحة</item>
+  </plurals>
+  <!-- in the device list java file -->
+  <string name="cm_check_device_for_messages">افحص الهاتف للتحقق من الرسائل.</string>
+  <!-- string not found in the translation files-->
+  <string name="cm_data_roaming_long">تجوال البيانات</string>
+  <!-- Translation not found -->
+  <string name="cm_data_roaming_content1">استخدم خدمات البيانات أثناء تشغيل إشارة التجوال</string>
+  <!-- Translation not found -->
+  <string name="cm_data_roaming_content2">لا تستخدم خدمات البيانات أثناء تشغيل إشارة التجوال.</string>
+  <!-- Translation not found -->
+  <string name="cm_use_this_network_for_vehicle_sw_update">استخدم هذه الشبكة لتحديثات برنامج المركبة</string>
+  <!-- Translation not found -->
+  <string name="cm_wifi_name_small">اسم شبكة Wi-Fi</string>
+  <plurals name="cm_outgoing_incoming_calls_min_remaining">
+    <!-- Deprecated Strings -->
+    <!-- Deprecated -->
+    <item quantity="zero">المكالمات الصادرة والواردة - يتبقى %1$d من الدقائق</item>
+    <item quantity="one">المكالمات الصادرة والواردة - يتبقى %1$d من الدقائق</item>
+    <item quantity="two">المكالمات الصادرة والواردة - يتبقى %1$d من الدقائق</item>
+    <item quantity="few">المكالمات الصادرة والواردة - يتبقى %1$d من الدقائق</item>
+    <item quantity="many">المكالمات الصادرة والواردة - يتبقى %1$d من الدقائق</item>
+    <item quantity="other">المكالمات الصادرة والواردة - يتبقى %1$d من الدقائق</item>
+  </plurals>
+  <string name="cm_802_1_eap">802.1x EAP</string>
+  <!-- Deprecated -->
+  <string name="cm_off_short">معطلة</string>
+  <!-- Translation can be copied from "ui_off_short"-->
+  <string name="cm_try_pairing">موافق</string>
+  <!-- Deprecated -->
+  <string name="cm_first_to_connect_current_favorite_short">الأول للاتصال. المفضلة الحالية - %1$s</string>
+  <!-- Deprecated but there in FNBS and translation exists -->
+  <string name="cm_disconnect_network">قطع الاتصال بالشبكة</string>
+  <!-- Deprecated but there in FNBS, will provide translation in the next drop-->
+  <string name="cm_phone_favorite_short">الهاتف المفضل</string>
+  <!-- Deprecated -->
+  <string name="cm_forget_wifi_network_small">عدم تذكر\nالشبكة</string>
+  <!-- Deprecated -->
+  <string name="cm_wpa">WPA</string>
+  <!-- Deprecated -->
+  <string name="cm_wpa2">WPA2</string>
+  <!-- Deprecated -->
+  <string name="cm_wep2">WEP2</string>
+  <!-- Deprecated -->
+  <string name="cm_tkip">TKIP</string>
+  <!-- Deprecated -->
+  <string name="cm_connecting_over_usb_content1">Connecting over USB is suggested as it may enable your device to connect wirelessly in the future.</string>
+  <!-- Deprecated -->
+  <string name="cm_in_devices_wifi_direct_settings">حدد الاسم الظاهر أدناه في إعدادات Wi-Fi Direct بالجهاز.</string>
+  <!-- Deprecated -->
+  <string name="cm_sharing_data_connected_devices_short">مشاركة البيانات مع الأجهزة المتصلة</string>
+  <!-- Deprecated -->
+  <string name="cm_connected_waze">%1$s Connected</string>
+  <!-- Deprecated -->
+  <string name="cm_phone_favorite">الهاتف المفضل</string>
+  <!-- Deprecated -->
+  <string name="cm_outgoing_phone_source_short">Outgoing Phone Source</string>
+  <!-- Deprecated -->
+  <string name="cm_automatic_updates_content_lig_21_579_29">استخدم هذه الشبكة لتحديثات برامج المركبة</string>
+  <!-- Deprecated -->
+  <string name="cm_onstar_vehicle_hotspot_not_active_content1">To activate, visit the %1$s or push the blue %1$s button to reach an Advisor.</string>
+  <!-- Deprecated -->
+  <string name="cm_set_phone_favorite_content1">يتم اتصال الهاتف المفضّل أولاً.</string>
+  <!-- Deprecated -->
+  <string name="cm_set_favorite_phone">الهاتف المفضل</string>
+  <!-- Deprecated -->
+  <string name="cm_device_connection_error">خطأ في الاتصال بالجهاز</string>
+  <!-- Deprecated -->
+  <string name="cm_device_connection_error_content">الرجاء محاولة توصيل الجهاز مجددًا.</string>
+  <!-- Deprecated -->
+  <string name="cm_enable_mirrorlink">تمكين MirrorLink</string>
+  <!-- Deprecated -->
+  <string name="cm_enable_mirrorlink_content">بمجرد تمكين هذه الميزة، قد يقوم الجهاز بتشغيل MirrorLink عند الاتصال عبر USB.</string>
+  <!-- Deprecated -->
+  <string name="cm_connect_apple_carplay_over_wifi">توصيل Apple CarPlay عبر Wi-Fi</string>
+  <!-- Deprecated -->
+  <string name="cm_connect_mirrorlink_over_wifi_direct">توصيل MirrorLink عبر Wi-Fi Direct</string>
+  <!-- Deprecated -->
+  <string name="cm_connect_android_auto_over_wifi_direct_med_28_627_38">توصيل Android Auto عبر Wi-Fi Direct</string>
+  <!-- Deprecated -->
+  <string name="cm_select_in_devices_wifi_settings">حدد في إعدادات Wi-Fi Direct للجهاز:</string>
+  <!-- Deprecated -->
+  <string name="cm_apple_carplay_small">Apple CarPlay</string>
+  <!-- Deprecated -->
+  <string name="cm_android_auto_long">Android Auto</string>
+  <!-- Deprecated -->
+  <string name="cm_mirrorlink_long">MirrorLink</string>
+  <!-- Deprecated -->
+  <string name="cm_connect_mirrorlink_device_to_usb">توصيل جهاز MirrorLink عبر USB</string>
+  <!-- Deprecated -->
+  <string name="cm_security_long1">الأمان</string>
+  <!-- Deprecated -->
+  <string name="cm_phone_bluetooth_long">بلوتوث</string>
+  <!-- Deprecated -->
+  <string name="cm_connection_type">نوع الاتصال</string>
+  <!-- Deprecated -->
+  <string name="cm_phone_bluetooth">بلوتوث</string>
+  <!-- Deprecated -->
+  <string name="cm_media_bluetooth">بلوتوث</string>
+  <!-- Deprecated -->
+  <string name="cm_connecting_over_wifi_direct">Wi-Fi Direct</string>
+  <!-- Deprecated -->
+  <string name="cm_connect_over_wifi_direct">الاتصال عبر Wi-Fi Direct</string>
+  <!-- Deprecated -->
+  <string name="cm_connect_over_wifi">الاتصال عبر Wi-Fi</string>
+  <!-- Deprecated -->
+  <string name="cm_gal_connection_over_wifi_popup_content">1. قم بتشغيل الهاتف. 2. افتح \"الإعدادات\"، وحدد \"Wi-Fi\". 3. حدد \"Wi-Fi Direct\". 4. حدد - %1$s. 5. قم بتأكيد الاتصال من خلال شاشة الجهاز.</string>
+  <!-- Deprecated -->
+  <string name="cm_wep">WEP</string>
+  <!-- Deprecated -->
+  <string name="cm_connection_type_long">نوع الاتصال</string>
+  <!-- Deprecated -->
+  <string name="cm_apple_carplay_long">Apple CarPlay</string>
+  <!-- Deprecated -->
+  <string name="cm_use_wifi_next_time">استخدام Wi-Fi في المرة القادمة</string>
+  <!-- Deprecated -->
+  <string name="cm_connect_wirelessly_next_time">التوصيل لاسلكيا في المرة القادمة</string>
+  <!-- Deprecated -->
+  <string name="cm_connect_mirrorlink_device_usb_content">قم بتوصيل جهاز مدعوم لتشغيل MirrorLink.</string>
+  <!-- Deprecated -->
+  <string name="cm_connecting_over_usb">الاتصال عبر USB</string>
+  <!-- Deprecated -->
+  <string name="cm_connecting_over_usb_content">عندما يكون الجهاز يدعم ذلك، يتم عرض بعض التطبيقات على هذه الشاشة. يوصى بالتوصيل عبر USB لأن ذلك قد يمكن توصيل الجهاز لاسلكيا في المستقبل.</string>
+  <!-- Deprecated -->
+  <string name="cm_wireless_connection_from_usb">اتصال لاسلكي من USB</string>
+  <!-- Deprecated -->
+  <string name="cm_wireless_connection_from_usb_content">سيتيح تمكين الاتصال عبر Wi-Fi اتصال الجهاز الخاص بك لاسلكياً في المرة القادمة.</string>
+  <!-- Deprecated -->
+  <string name="cm_confirm_connection">تأكيد الاتصال</string>
+  <!-- Deprecated -->
+  <string name="cm_enter_this_code_on_your_device">أدخل هذا الرمز بالجهاز الخاص بك.</string>
+  <!-- Deprecated -->
+  <string name="cm_enter_device_code">أدخل رمز الجهاز</string>
+  <!-- Deprecated -->
+  <string name="cm_text_hint">123489778676</string>
+  <!-- Deprecated -->
+  <string name="cm_connect_wirelessly_next_time_content">تمكين الاتصال بـ %1$s عبر شبكة Wi-Fi عند توفرها.</string>
+  <!-- Deprecated -->
+  <string name="cm_purchase_lig_21_503_29">شراء</string>
+  <!-- Deprecated -->
+  <string name="ui_next_big">التالي</string>
+  <!-- Deprecated -->
+  <string name="cm_wpa_wpa2">WPA/WPA2</string>
+  <!-- Deprecated -->
+  <string name="cm_make_calls_content_short">إجراء المكالمات، الوصول إلى المكالمات الأخيرة، وقائمة الاتصال</string>
+  <!-- Deprecated -->
+  <string name="cm_outgoing_calls_source_qn">هاتف المكالمات الصادرة - %1$s</string>
+  <!-- Deprecated -->
+  <string name="ui_skip_long">تخطي</string>
+  <!-- Deprecated -->
+  <string name="cm_set_phone_favorite_content2">سيظهر هذا الجهاز على الشاشة الرئيسية عندما يكون متصلاً.</string>
+  <!-- Deprecated -->
+  <string name="ui_skip_small">تخطي</string>
+  <string name="cm_outgoing_phone_source_long">هاتف المكالمات الصادرة</string>
+  <!-- Deprecated -->
+  <string name="cm_first_to_connect">الأولوية في الاتصال للتالي</string>
+  <!-- Deprecated -->
+  <string name="cm_connecting_to_android_auto_device_med_28_684_38">جاري الاتصال بجهاز Android Auto</string>
+  <!-- Deprecated -->
+  <string name="cm_change_device_name_content_within_the_vehicle_reg_21_763_29">تغيير اسم الهاتف داخل السيارة (يجب أن يكون من 1 إلى 14 حرفاً)</string>
+  <!-- Existing String has been updated -->
+  <string name="cm_connect_android_auto_device_usb_content_lig_28_468_266">قُم بتوصيل هاتف حيث تم تثبيت تطبيق Android Auto.</string>
+  <!-- Existing String has been updated -->
+  <string name="cm_legacy_bluetooth_un_supported_popup_content_lig_28_629_266">إقران Bluetooth غير مدعوم لهذا الجهاز.</string>
+  <!-- Existing String has been updated -->
+  <string name="ui_period">\u002E</string>
+  <string name="cm_incompatible_device_med_28_684_38">جهاز غير معتمد</string>
+  <!-- Existing String has been updated -->
+  <string name="cm_set_phone_favorite_lig_28_389_38">تعيين كمفضّل</string>
+  <!-- Deprecated -->
+  <string name="cm_confirm_connection_content">Tap Connect to accept connection from the device shown below.</string>
+  <!-- Deprecated -->
+  <string name="cm_select_in_devices_wifi_settings1">حدد إعدادات Wi-Fi للجهاز:</string>
+  <!-- Deprecated -->
+  <string name="cm_would_you_like_to_save_changes_med_28_684_38">هل ترغب في حفظ التغييرات؟</string>
+  <string name="ui_off_small">معطل –</string>
+  <string name="cm_appshop_big">%1$s</string>
+  <!-- Deprecated -->
+  <string name="cm_onstar_hands_free_calling_not_active_content">تتطلب هذه الخدمة توفر دقائق لاستخدام وضع الاتصال \"حرّ اليدين\". اضغط على الزر %3$s أو اضغط على الزر الأزرق %1$s للتحدث إلى مستشار %2$s.</string>
+  <!-- Deprecated -->
+  <string name="cm_open_wifi_network_not_supported">شبكة Wi-Fi غير مدعومة</string>
+  <!--strings added from Strings_needed file-->
+  <string name="updater_reminder_string_hours">%1$d من الساعات</string>
+  <string name="updater_reminder_string_days">%1$d من الأيام</string>
+  <string name="ui_kph">km/h</string>
+  <string name="updater_remain_in_vehicle_content">لا حاجة لأن تظل في السيارة. ولا تنسَ أن تأخذ المفاتيح إذا قررت المغادرة.</string>
+  <string name="cm_add_device_bluetooth">بلوتوث</string>
+  <string name="ui_connect">الاتصال</string>
+  <string name="colon">:</string>
+  <string name="settings_teen_driver_plus">%1$s +</string>
+  <string name="settings_teen_driver_speed">55</string>
+  <string name="wifi_connecting">جاري الاتصال...</string>
+  <string name="wifi_security_psk_generic">@string/wifi_security_wpa_wpa2</string>
+  <string name="wifi_security_short_eap">802.1x</string>
+  <string name="wifi_security_short_psk_generic">@string/wifi_security_short_wpa_wpa2</string>
+  <string name="wifi_security_short_wpa_wpa2">WPA/WPA2</string>
+  <string name="wifi_security_wpa">WPA PSK</string>
+  <string name="wifi_security_wpa_wpa2">WPA/WPA2 PSK</string>
+  <string name="wifi_security_wpa2">WPA2 PSK</string>
+  <string name="wifi_wps_available_first_item">WPS متوفر</string>
+  <string name="wifi_wps_available_second_item">\u0020(WPS متوفر)</string>
+  <string name="cm_vehicle_hotspot_password_small">**********</string>
+  <string name="cm_connect_to_network">الاتصال بشبكة</string>
+  <string name="settings_variable_volume_setting">إعداد مستوى الصوت المتغيّر</string>
+  <string name="hyphen">–</string>
+  <string name="ui_profile">ملف التعريف</string>
+  <string name="audio_no_content_available">لا يتوفر أي محتوى</string>
+  <string name="settings_erase_all_private_data">حذف الإعدادات والبيانات الشخصية</string>
+  <!-- Already delivered-->
+  <string name="settings_relock_with_four_numbers">إعادة القفل</string>
+  <!-- Was already delivered -->
+  <string name="updater_please_apply_the_park_brake">برجاء تعشيق فرامل الركن.</string>
+  <string name="updater_update_failed_small">فشل التحديث</string>
+  <string name="updater_active_safety_content3">يلزم أن تظل السيارة مركونة مع تشغيل المحرك أثناء عملية التحديث.</string>
+  <string name="updater_vehicle_update_successful_content">اكتملت عملية تحديث البرنامج. %1$s</string>
+  <!-- updated the existing string -->
+  <string name="updater_engine_running">المحرك يعمل</string>
+  <!--            
+  <string name="cm_connect_mirrorlink_device_to_usb_med_28_627_38">Connect MirrorLink Device to USB</string>           
+  <string name="cm_connect_apple_carplay_device_to_usb_med_28_627_38">Connect Apple CarPlay Device to USB</string>           
+  <string name="cm_connect_android_auto_device_to_usb_med_28_627_38">Connect Android Auto Device to USB</string>      
+  -->
+  <string name="ui_not_connected_caps">Not Connected</string>
+  <string name="ui_connected_caps_long">Connected</string>
+  <string name="ui_connected_caps_short">Connected</string>
+  <!-- May 2016 -->
+  <string name="ui_mph">MPH</string>
+  <!-- Newly added strings -->
+  <string name="settings_coloum">:</string>
+  <string name="settings_extended_hold">إيقاف ممدّد</string>
+  <string name="settings_standard_hold">إيقاف قياسي</string>
+  <string name="settings_extended_hill_start_assist">المساعدة الممدّدة في بدء التشغيل في المرتفعات</string>
+  <string name="settings_extended_hill_start_assist_content">يجنّب هذا الإعداد تراجع سيارتك إلى الخلف على تلة شديدة الانحدار. يساعد \"الإيقاف القياسي\" في الإبقاء على ثبات السيارة لمدة 3 ثوانٍ. أمّا \"الإيقاف الممدّد\" فيساعد في إبقائها ثابتة لمدة تصل إلى 5 دقائق، كما يمكن أيضاً تنشيط فرامل الانتظار تلقائياً</string>
+  <string name="cm_swithc_device_content2">قد يكون تم فصل الاتصال بالهاتف الحالي، سيتم نقل أية مكالمات نشطة إلى السمّاعة.</string>
+  <!-- May 2016 MY18 updated strings -->
+  <string name="cm_wifi_services_onstar_hotspot_small">نقطة اتصال Wi-Fi</string>
+  <!-- May 2016 MY18 new strings added -->
+  <string name="cm_connecting_to_network">جاري الاتصال بـ %1$s</string>
+  <string name="cm_wifi_hotspot_ssid_length_content">ينبغي أن يتراوح اسم شبكة Wi-Fi في السيارة بين 1 و14 حرف.</string>
+  <string name="cm_wifi_hotspot_password_length_content">ينبغي أن تتراوح كلمة السر لشبكة Wi-Fi في السيارة بين 8 و24 حرف</string>
+  <string name="cm_wifi_services_small">خدمات Wi-Fi</string>
+  <string name="cm_changes_not_saved">لم يتم حفظ التغييرات</string>
+  <!-- New Strings -->
+  <string name="updater_your_system_register">تم تسجيل النظام بنجاح ويمكن استخدام %1$s والخدمات المتصلة.</string>
+  <string name="updater_unable_to_update_content">إنّ ظروف قيادة السيارة غير مثالية حالياً للشروع في هذا التحديث. أعِد محاولة التحديث في المرة المقبلة التي تنقل فيها سيارتك إلى وضع \"الركن\". إذا استمرت تلك الظروف، اتصل عندئذٍ بوكيلك.</string>
+  <!-- May release -->
+  <string name="updater_2_days">%1$s أيام</string>
+  <!-- May2016 - translation will be updated in the next release -->
+  <string name="updater_12_hours">%1$s ساعات</string>
+  <string name="updater_24_hours">%1$s ساعات</string>
+  <string name="updater_7_days">%1$s أيام</string>
+  <!-- Assembla Updates -->
+  <string name="settings_intersection_stop_alert_content_1">يتحكّم هذا الإعداد في استجابة السيارة عندما تدخل إلى نقطة تقاطع حيث تكتشف السيارة إمكانية حدوث تصادم. ويمكن لهذا الإعداد منع وقوع التصادم أو الحد من شدته من خلال إصدار الإنذارات ذات الصلة.</string>
+  <!-- Assembla #1087 -->
+  <string name="settings_teen_driver_speed_limiter_content">يعمل محدد السرعة في وضع السائق المراهق على عدم تجاوز السيارة للسرعة القصوى التي تساوي %1$d ميل في الساعة / %2$d كم/سا عند استخدامها بواسطة سائق مراهق.</string>
+  <!-- #874 - only the englisg string is updated -->
+  <string name="settings_auto_volume_content">تتيح وظيفة \"الضبط التلقائي لمستوى الصوت\" ضبط صوت الراديو استناداً إلى سرعة السيارة. حدّد مستوى الصوت النسبي الذي تفضّله.</string>
+  <!-- 716 -->
+  <string name="settings_passive_door_lock_content">يحدّد الإعداد \"قفل الأبواب التلقائي\" إمكانية قفل السيارة للأبواب تلقائياً، أو الحاجة إلى القفل والتنبيه بعد إغلاق جميع الأبواب وابتعادك عن السيارة آخذاً معك جهاز التحكّم عن بُعد في فتح الأبواب.</string>
+  <!-- 1079  -->
+  <string name="updater_vehicle_update_ready_content">اكتمل التنزيل</string>
+  <!-- 1119  -->
+  <string name="settings_teen_mode_unlock">وضع السائق المراهق - أدخل الرمز لإلغاء القفل</string>
+  <!-- 1070 -->
+  <string name="audio_no_content_available_short">لا يتوفر أيّ محتوى</string>
+  <!-- 1070 -->
+  <string name="cm_enable_disable_android_auto_settings_content">يتيح لك Android Auto التفاعل مباشرة مع هاتفك من شاشة الراديو. يجب تمكين هذه الميزة هنا وفي الجهاز المتصل. كما يمكن الوصول إلى هذه الميزة عن طريق الضغط على أيقونة Android Auto الموجودة على الشاشة الرئيسية، أو عن طريق الضغط المطوّل على زر \"الصوت\" الموجود في عجلة القيادة.</string>
+  <!-- 881 -->
+  <string name="cm_enable_apple_carplay">تمكين Apple CarPlay</string>
+  <!-- 881 -->
+  <string name="cm_enable_android_auto">Android Auto</string>
+  <!-- 881 -->
+  <string name="cm_available_wifi_networks">شبكات Wi-Fi المتاحة</string>
+  <!-- 881, 920, 1103 -->
+  <string name="settings_voice_recognition_sharing">مشاركة ‏التعرّف على الصوت</string>
+  <!-- 1103 -->
+  <string name="settings_voice_recognition_sharing_content">يتيح الإعداد \"مشاركة ‏التعرّف على الصوت\" إرسال الأوامر الصوتية الخاصة بك إلى نظام التعرّف على الصوت السحابي. بإمكانك تعطيل هذا الإعداد لمنع مشاركة أوامرك الصوتية مع هذا النظام وتسجيلها عليه. قد يحدّ هذا الأمر من قدرة النظام على فهم طلباتك وقد يعطل بعض الميزات.</string>
+  <!-- 1103 -->
+  <string name="cm_phone_view_vehiclephonename_big">هاتف %1$s</string>
+  <!-- 1103 -->
+  <string name="cm_password_confirmation_content_lig_28_629_114">هل ترغب في حفظ التغييرات؟</string>
+  <!-- 1103 -->
+  <string name="cm_discard">تجاهل</string>
+  <!-- 1103 -->
+  <string name="ui_off_short">معطلة</string>
+  <!-- 1103 -->
+  <string name="cm_onstar_vehicle_hotspot">نقطة اتصال Wi-Fi</string>
+  <!-- 1103 - The string is correct and translations exist too -->
+  <string name="personalization_cannot_change_user">يتعذر تغيير المستخدم أثناء إجراء مكالمة هاتفية.</string>
+  <!-- 1103 -->
+  <string name="cm_onstar_vehicle_hotspot_not_active">نقطة اتصال Wi-Fi لـ %1$s غير نشطة</string>
+  <!-- 1103 -->
+  <string name="settings_mode_content_nonnav">يتيح هذا الإعداد ضبط مظهر أية تطبيقات تم تنزيلها لظروف القيادة الأمثل نهاراً أو ليلاً. قم بتعيين الوضع \"التلقائي\" لشاشة العرض بغية ضبطها تلقائيًا ووفقاً للظروف المحيطة الساطعة أو القاتمة.</string>
+  <!-- 1078 -->
+  <string name="settings_language1">English (United States)</string>
+  <!-- Copied from Dynamic File -->
+  <string name="settings_language2">Français (Canada)</string>
+  <!-- Copied from Dynamic File -->
+  <string name="settings_language3">Español (Estados Unidos)</string>
+  <!-- Copied from Dynamic File -->
+  <string name="cm_device_may_be_disconnected">هل تود توصيل هاتف جديد؟ قد يتم فصل الاتصال بـ %1$s وتحويل أيّة مكالمات نشطة إلى سمّاعة الهاتف.</string>
+  <!-- 920 -->
+  <string name="cm_phone_favorite_long">الأولوية في الاتصال للتالي</string>
+  <!-- 903 -->
+  <string name="settings_set_teen_driver_speed_warning_content">يحدّد الإعداد \"تحذير تجاوز السرعة لوضع السائق المراهق\" الحدّ الأقصى للسرعة لعرض تحذير تجاوز السرعة لوضع السائق المراهق. يمكن تحديد السرعة بين %1$s و%2$s.</string>
+  <!-- 876 -->
+  <string name="settings_automatic_timedate_unavailable_content">إن خاصية الضبط التلقائي للوقت والتاريخ غير متاحة نظراً لانتهاء مدة صلاحية اشتراكك بخدمة %1$s.</string>
+  <string name="settings_automatic_timedate_unavailable">الضبط التلقائي للوقت والتاريخ غير متاح</string>
+  <string name="build_number">رقم التكوين</string>
+  <string name="cm_switch_device_may_disconnect">يمكن أن يتم فصل الاتصال بـ %1$s وتحويل أيّة مكالمات نشطة إلى سمّاعة الهاتف.</string>
+  <string name="cm_wifi_password_incorrect">كلمة المرور غير صحيحة</string>
+  <string name="cm_wifi_error_forget_network">انتقل إلى ملف تعريف الضيف في تطبيق المستخدمين لإزالة شبكات Wi-Fi.</string>
+  <!-- Legal String which should be shown on the Open Source Software screen -->
+  <string name="terms_english_license_text">تُعتبر النسخة الإنكليزية من هذه الرخصة على أنها النسخة الرسمية والمُلزمة قانوناً؛ أمّا كافة النسخ الأخرى، فقد تم توفيرها فقط لتسهيل الفهم وضمان رضا العميل.</string>
+  <string name="cm_on">تشغيل</string>
+  <string name="updater_install_percent">اكتمل تنزيل ~ %1$s</string>
+  <!--Added from dynamic file-->
+  <string name="autohighbeam_list">إيقاف</string>
+  <string name="ui_kb_long">ك ب</string>
+  <string name="ui_mb_long">م ب</string>
+  <string name="ui_gb_long">غ ب</string>
+  <string name="settings_desc_not_available">إنّ وصف هذا الإعداد غير متوفر أثناء القيادة.</string>
+  <string name="cm_local_only">محلّي فقط</string>
+  <string name="settings_voice_allow_prompt_interruptions_content">تتحكّم ميزة \"السماح بمقاطعات المطالبات\" في قدرتك على الكلام بالأوامر الصوتية قبل انتهاء المطالبات الصوتية. يمكنك تشغيل هذه الميزة إذا كنت غالبًا تعرف الأمر الذي ترغب في إصداره ولا تحتاج لسماع المطالبة بالكامل. هذه الميزة قد تؤدي إلى مقاطعات عرضية بسبب الضوضاء الخلفية أو الحوارات الجانبية.</string>
+  <string name="settings_voice_allow_prompt_interruptions">السماح بمقاطعة المطالبات</string>
+  <string name="settings_rear_seat_audio_controls">أزرار التحكّم بالصوت في المقاعد الخلفية</string>
+  <string name="settings_rear_seat_audio_controls_content">يتيح هذا الإعداد \"تشغيل\" أو \"إيقاف تشغيل\" أزرار التحكّم بالصوت المجهّزة في الصف الثاني من المقاعد.</string>
+  <string name="settings_intersection_stop_alert_content_2">يهدف إعداد \"إنذار التوقف عند نقطة تقاطع\" إلى تنبيهك إلى خطر تجاوزك لإشارة مروريّة حمراء أو عند اكتشاف السيارة لاحتمال حدوث تصادم بعد دخولك أحد التقاطعات. ويمكن لهذا الإعداد منع وقوع التصادم أو الحدّ من شدّته من خلال تفعيل المساعدة في الفرملة.</string>
+  <string name="settings_forward_collision_system_content_1">يهدف هذا الإعداد في التحكّم في استجابة السيارة عندما تكتشف وجود سيارة أخرى أمامك. ويمكن لهذا الإعداد منع وقوع التصادم أو الحدّ من شدّته من خلال إصدار الإنذارات ذات الصلة أو من خلال تفعيل المساعدة في الفرملة.</string>
+  <string name="settings_advanced_range_estimation">التقدير المتقدّم للمدى</string>
+  <string name="settings_advanced_range_estimation_content">يستخدم إعداد \"التقدير المتقدّم للمدى\" البيانات المحفوظة عن استهلاك الطاقة على أساس ساعة القيادة وفصل السنة وإعدادات نظام التحكّم في المناخ بغية توفير تقدير أكثر دقة لمدى الطاقة المتبقية في البطارية.</string>
+  <string name="cm_min_characters">8 أحرف كحدّ أدنى</string>
+  <string name="personalization_not_signed_in">الدخول غير مسجّل</string>
+  <string name="settings_voice_interruptions_content">يهدف هذا الإعداد إلى التحكّم في إمكانية إصدارك لأوامر صوتية قبل الانتهاء من الاستماع للمطالبات الصوتية. في العادة، يمكنك \"تشغيل\" هذا الإعداد إذا كنت تعرف الأمر الذي ترغب في إصداره دون الحاجة للاستماع إلى كامل المطالبة. قد يؤدي استخدام هذا الإعداد إلى انقطاع عرضي للمطالبات ناتج عن الضوضاء المحيطة أو عن الأحاديث الجارية بين الأشخاص.</string>
+  <string name="settings_important_notice">إخطار هام</string>
+  <string name="settings_important_notice_ota_content">قد يستغرق التحديث ما يصل الى %1$d دقيقة. يرجى ركن السيارة في مكان آمن. سوف يتم تعطيل سيارتك ولن تتمكن من قيادتها، كما قد تتعطّل بعض الميزات مثل أقفال الأبواب والنوافذ والرنّات. إذا خرجتَ من السيارة، تأكّد من عدم حجز الركاب في داخلها.</string>
+  <string name="settings_onStar_vehicle_hotspot">نقطة اتصال %1$s في السيارة</string>
+  <string name="settings_backup_settings_to_usb">نسخ احتياطي للإعدادات إلى USB</string>
+  <string name="settings_restore_settings_from_usb">استعادة الإعدادات من USB</string>
+  <string name="ui_confirm">تأكيد</string>
+  <string name="settings_confirm_content">لم يتم تحديد تغييراتك. اضغط زر \"تطبيق التغييرات\" لتأكيد التغييرات.</string>
+  <string name="ui_apply_changes">تطبيق التغييرات</string>
+  <string name="settings_keyless_setup_content">أولاً، ضع المفتاح في جيب التسجيل ثم اضغط \"موافق\". راجع دليل التشغيل لمعرفة موقع الجيب.</string>
+  <string name="settings_keyless_setup">الإعداد بدون مفتاح</string>
+  <string name="settings_collections">تطبيق Collections</string>
+  <string name="settings_devices_remote_access">الوصول عن بُعد إلى الجهاز</string>
+  <string name="settings_touchpad">لوحة اللمس</string>
+  <string name="settings_ride_height">ارتفاع الركوب</string>
+  <string name="settings_energy">الطاقة</string>
+  <string name="settings_power_take_off">مأخذ الطاقة</string>
+  <string name="settings_seating_position">وضع الجلوس</string>
+  <string name="settings_powertrain">مجموعة نقل الحركة</string>
+  <string name="settings_brake_pedal_feel">شعور دواسة الفرامل</string>
+  <string name="settings_traction_and_stability_control">التحكم في الجر والثبات</string>
+  <string name="settings_motorized_seatbelts">أحزمة الأمان المزودة بمحرك</string>
+  <string name="settings_active_aero">ديناميكية هوائية نشطة</string>
+  <string name="settings_personal_driving_mode_big">وضع القيادة الشخصي</string>
+  <string name="settings_power_take_off_big">‏مأخذ الطاقة</string>
+  <string name="settings_siriusxm_explicit_content_filter">فلتر المحتوى الآمن SiriusXM</string>
+  <string name="settings_ambient_lighting">الإضاءة المحيطة</string>
+  <string name="settings_surround_view_lighting_small">إنارة المشهد المحيط</string>
+  <string name="settings_brake_pedal_feel_big">شعور دواسة الفرامل</string>
+  <string name="settings_active_aero_big">ديناميكية هوائية نشطة</string>
+  <string name="settings_weather">الطقس</string>
+  <string name="settings_snow_ice">ثلج/جليد</string>
+  <string name="settings_powertrain_long">مجموعة نقل الحركة</string>
+  <string name="settings_customdrivingmode_tcs_esc_on_big">نُظم TCS وESC نشطة</string>
+  <string name="settings_key_not_detected">تعذر اكتشاف المفتاح</string>
+  <string name="settings_key_not_detected_content">تعذر اكتشاف مفتاح التحكم عن بعد. أولاً ضع المفتاح في جيب التسجيل ثم حدد \"إعادة المحاولة\".</string>
+  <string name="settings_mode_change_applied">تم تطبيق تغيير الوضع</string>
+  <string name="settings_mode_change_not_applied">لم يتم تطبيق تغيير الوضع</string>
+  <string name="settings_demo_mode_unavailable">الوضع التجريبي غير متوفر</string>
+  <string name="settings_demo_mode">الوضع التجريبي</string>
+  <string name="settings_demo_mode_unavailable_content">ميزة الوضع التجريبي غير متوفرة أثناء القيادة.</string>
+  <string name="settings_mode_unavailable">الوضع غير متوفر</string>
+  <string name="settings_mode_unavailable_content">الوضع الموسع غير متوفر أثناء تعشيق السيارة على أحد التروس. ضع السيارة في الوضع المحايد أو وضع الركن.</string>
+  <string name="settings_custommode_mode_unavailable_content">تعذر على النظام التغيير إلى قيم الإعداد المحددة.</string>
+  <string name="settings_communicationloss">فقدان الاتصال</string>
+  <string name="settings_communicationloss_content">الميزة غير متوفرة بسبب فقدان الاتصال بين الوحدات.</string>
+  <string name="settings_settingrestored">تمت استعادة الإعدادات</string>
+  <string name="settings_settingrestored_content">نجحت استعادة إعدادات المستخدم.</string>
+  <string name="settings_restorefailed">فشلت الاستعادة</string>
+  <string name="settings_restorefailed_content">يُرجى إدخال جهاز USB يحتوي على ملف استعادة الإعدادات %1$s لبدء العملية.</string>
+  <string name="settings_insufficient_battery">طاقة البطارية غير كافية</string>
+  <string name="settings_insufficient_battery_content">يتعذر استعادة الإعدادات في حالة انخفاض شحن البطارية. اشحن البطارية عن طريق تشغيل السيارة أو التوصيل بشاحن. يمكنك وقتها محاولة استعادة الإعدادات.</string>
+  <string name="settings_settings_backup">النسخ الاحتياطي للإعدادات</string>
+  <string name="settings_settings_backup_content">أدخل جهاز USB لحفظ إعدادات المستخدم.</string>
+  <string name="settings_settings_multipleusb_backup_content">تتوفر أجهزة USB متعددة. يُرجى إزالة الكل ما عدا جهاز USB واحد لحفظ إعدادات المستخدم.</string>
+  <string name="settings_settings_backup_error">خطأ في النسخ الاحتياطي للإعدادات</string>
+  <string name="settings_settings_backup_error_content">حدث خطأ أثناء الكتابة على جهاز USB. يُرجى إدخال جهاز USB يحتوي على مساحة فارغة كافية والتحقق من أنه غير محمي ضد الكتابة عليه.</string>
+  <string name="settings_settings_backup_error2_content">حدث خطأ أثناء حفظ إعدادات المستخدم. يُرجى إعادة المحاولة. إذا استمر الخطأ يرجى زيارة الوكيل.</string>
+  <string name="settings_settings_backup_success">نجح النسخ الاحتياطي للإعدادات</string>
+  <string name="settings_settings_backup_success_content">نجح حفظ إعدادات المستخدم.</string>
+  <string name="settings_ionizer_small">Ionizer</string>
+  <string name="settings_touchpad_big">لوحة اللمس</string>
+  <string name="settings_up_down_invert_big">عكس للأعلى/للأسفل</string>
+  <string name="settings_left_right_invert_big">عكس لليمين/لليسار</string>
+  <string name="settings_tap_to_enter_big">اضغط للإدخال</string>
+  <string name="settings_cursor_tracking_speed_big">سرعة تتبع المؤشر</string>
+  <string name="settings_gesture_indication_big">مؤشر الإيماءات</string>
+  <string name="settings_haptic_Feedback">استجابة لمسية</string>
+  <string name="settings_touchpad_surface_big">سطح لوحة اللمس</string>
+  <string name="settings_go_notifier">Go Notifier</string>
+  <string name="settings_auto_collision_preparation">الاستعداد التلقائي لاحتمال التصادم</string>
+  <string name="settings_automatic_running_boards">المرقاة الأوتوماتيكية</string>
+  <string name="settings_handsfree_liftgate_trunk_control">التحكم حر اليدين في صندوق الأمتعة/الباب الخلفي</string>
+  <string name="settings_remote_mirror_folding_short">الطي الأوتوماتيكي للمرايا</string>
+  <string name="settings_location_based_charging_big">الشحن المستند إلى الموقع</string>
+  <string name="settings_energy_summary_pop_up_big">رسالة ملخصة حول استهلاك الطاقة</string>
+  <string name="settings_charge_status_feedback_big">إعلام صوتي حول حالة الشحن</string>
+  <string name="settings_charge_cord_theft_alert_big">إنذار سرقة سلك الشحن</string>
+  <string name="settings_charge_power_loss_alert_big">إنذار فقدان طاقة الشحن</string>
+  <string name="settings_hybrid_eco_indicator_big">مؤشر الحفاظ على البيئة الهجين</string>
+  <string name="settings_seating_position_long">وضع الجلوس</string>
+  <string name="settings_ride_height_long">ارتفاع الركوب</string>
+  <string name="settings_energy_long">الطاقة</string>
+  <string name="settings_location_based_auto_lift_big">الرفع التلقائي المستند إلى الموقع</string>
+  <string name="settings_seat_entry_memory_big">ذاكرة استخدام المقعد</string>
+  <string name="settings_seat_exit_memory">ذاكرة الخروج من المقعد</string>
+  <string name="settings_teen_driver_entry_screen">شاشة إدخال السائق المراهق</string>
+  <string name="settings_cursor_tracking_speed">سرعة تتبع المؤشر</string>
+  <string name="settings_faster">أسرع</string>
+  <string name="settings_normal">عادي</string>
+  <string name="settings_slower">أبطأ</string>
+  <string name="settings_enabled">مفعّل</string>
+  <string name="settings_information">معلومات</string>
+  <string name="settings_gesture_indication">مؤشر الإيماءات</string>
+  <string name="settings_touchpad_surface">سطح لوحة اللمس</string>
+  <string name="settings_up_down_invert">عكس للأعلى/للأسفل</string>
+  <string name="settings_default">افتراضي</string>
+  <string name="settings_inverted">معكوس</string>
+  <string name="settings_left_right_invert">عكس لليمين/لليسار</string>
+  <string name="settings_tap_to_enter">اضغط للإدخال</string>
+  <string name="settings_location_based_charging">الشحن المستند إلى الموقع</string>
+  <string name="settings_set_location">ضبط الموقع</string>
+  <string name="settings_energy_summary_pop_up">رسالة ملخصة حول استهلاك الطاقة</string>
+  <string name="settings_charge_status_feedback">إعلام صوتي حول حالة الشحن</string>
+  <string name="settings_charge_cord_theft_alert">إنذار سرقة سلك الشحن</string>
+  <string name="settings_charge_power_loss_alert">إنذار فقدان طاقة الشحن</string>
+  <string name="settings_hybrid_eco_indicator">مؤشر الحفاظ على البيئة الهجين</string>
+  <string name="settings_hybrid_eco_indicator_content">يشير هذا الإعداد إلى قيادتك بأسلوب يحافظ على الوقود.</string>
+  <string name="settings_location_based_auto_lift">الرفع التلقائي المستند إلى الموقع</string>
+  <string name="settings_remote_mirror_folding">الطي الأوتوماتيكي للمرايا</string>
+  <string name="settings_seat_entry_memory">ذاكرة استخدام المقعد</string>
+  <string name="settings_offroad">الطرق الوعرة</string>
+  <string name="settings_tow_haul">قطر/سحب</string>
+  <string name="settings_customdrivingmode_lowered_big">منخفض</string>
+  <string name="settings_raised">مرتفع</string>
+  <string name="settings_automatic_running_boards_long">المرقاة الأوتوماتيكية</string>
+  <string name="settings_handsfree_liftgate_trunk_control_long">التحكم حر اليدين في صندوق الأمتعة/الباب الخلفي</string>
+  <string name="settings_extended">تمديد</string>
+  <string name="settings_on_open_and_close">تشغيل - فتح وإغلاق</string>
+  <string name="settings_on_open_only">تشغيل - فتح فقط</string>
+  <string name="settings_customdrivingmode_stealth">خفيف</string>
+  <string name="settings_customdrivingmode_eco">اقتصادي</string>
+  <string name="settings_customdrivingmode_touring">التجول</string>
+  <string name="settings_customdrivingmode_tour">مريح</string>
+  <string name="settings_customdrivingmode_snow_ice_weather">جليد/ثلج/الطقس</string>
+  <string name="settings_customdrivingmode_normal">عادي</string>
+  <string name="settings_customdrivingmode_tcs_esc_on">نُظم TCS وESC نشطة</string>
+  <string name="settings_customdrivingmode_lowered">منخفض</string>
+  <string name="settings_standby_speed">سرعة الاستعداد</string>
+  <string name="settings_set_1_speed">ضبط السرعة 1</string>
+  <string name="settings_set_2_speed">ضبط السرعة 2</string>
+  <string name="settings_tap_step_speed">الضغط للسرعة التدريجية</string>
+  <string name="settings_shutdown_time">وقت إيقاف التشغيل</string>
+  <string name="settings_900_rmp_small">RPM 900</string>
+  <string name="settings_1100_rmp_small">RPM 1100</string>
+  <string name="settings_2000_rmp_small">RPM 2000</string>
+  <string name="settings_5_rmp_small">5 RPM</string>
+  <string name="settings_10_minutes_small">10 دقائق</string>
+  <string name="settings_5_rmp">5 RPM</string>
+  <string name="settings_10_rmp">10 RPM</string>
+  <string name="settings_25_rmp">25 RPM</string>
+  <string name="settings_50_rmp">50 RPM</string>
+  <string name="settings_100_rmp">100 RPM</string>
+  <string name="settings_250_rmp">250 RPM</string>
+  <string name="settings_500_rmp">500 RPM</string>
+  <string name="settings_standby_speed_long">سرعة الاستعداد</string>
+  <string name="settings_tap_step_speed_long">الضغط للسرعة التدريجية</string>
+  <string name="settings_shutdown_time_long">وقت إيقاف التشغيل</string>
+  <string name="settings_set_1_speed_long">ضبط السرعة 1</string>
+  <string name="settings_set_2_speed_long">ضبط السرعة 2</string>
+  <string name="settings_900_rmp">900 RPM</string>
+  <string name="settings_1000_rmp">1000 RPM</string>
+  <string name="settings_1100_rmp">1100 RPM</string>
+  <string name="settings_1200_rmp">1200 RPM</string>
+  <string name="settings_1300_rmp">1300 RPM</string>
+  <string name="settings_1400_rmp">1400 RPM</string>
+  <string name="settings_1500_rmp">1500 RPM</string>
+  <string name="settings_1600_rmp">1600 RPM</string>
+  <string name="settings_1700_rmp">1700 RPM</string>
+  <string name="settings_1800_rmp">1800 RPM</string>
+  <string name="settings_1900_rmp">1900 RPM</string>
+  <string name="settings_2000_rmp">2000 RPM</string>
+  <string name="settings_2100_rmp">2100 RPM</string>
+  <string name="settings_2200_rmp">2200 RPM</string>
+  <string name="settings_2300_rmp">2300 RPM</string>
+  <string name="settings_2400_rmp">2400 RPM</string>
+  <string name="settings_2500_rmp">2500 RPM</string>
+  <string name="settings_2600_rmp">2600 RPM</string>
+  <string name="settings_2700_rmp">2700 RPM</string>
+  <string name="settings_2800_rmp">2800 RPM</string>
+  <string name="settings_2900_rmp">2900 RPM</string>
+  <string name="settings_3000_rmp">3000 RPM</string>
+  <string name="settings_3100_rmp">3100 RPM</string>
+  <string name="settings_10_minutes">10 دقائق</string>
+  <string name="settings_30_minutes">30 دقيقة</string>
+  <string name="settings_1_dot_5_hours">1.5 ساعة</string>
+  <string name="settings_2_dot_5_hours">2.5 ساعات</string>
+  <string name="settings_3_dot_5_hours">3.5 ساعات</string>
+  <string name="settings_4_dot_5_hours">4.5 ساعات</string>
+  <string name="settings_5_dot_5_hours">5.5 ساعات</string>
+  <string name="settings_6_dot_5_hours">6.5 ساعات</string>
+  <string name="settings_7_dot_5_hours">7.5 ساعات</string>
+  <string name="settings_2_hours">2 ساعات</string>
+  <string name="settings_3_hours">3 ساعات</string>
+  <string name="settings_4_hours">4 ساعات</string>
+  <string name="settings_5_hours">5 ساعات</string>
+  <string name="settings_6_hours">6 ساعات</string>
+  <string name="settings_7_hours">7 ساعات</string>
+  <string name="settings_ambient_lighting_information">معلومات الإضاءة المحيطة</string>
+  <string name="settings_ambient_lighting_information_content_themea">يتيح لك هذا التطبيق إمكانية تحديد لون للإضاءة المحيطة في سيارتك. حدد من المصفوفة لتغيير الإضاءة إلى اللون المفضل. يمكن إيقاف تشغيل هذه الميزة باستخدام زر التبديل \"تشغيل/إيقاف\". سيغير خيار \"الربط مع وضع القيادة\" الإضاءة المحيطة لمطابقة اللون المستخدم في لوحة العدادات بناء على إعداد زر وضع القيادة. يتيح العرض التجريبي تشغيل الإضاءة المحيطة وفق كل الألوان المتاحة. لا يتوفر هذا الخيار إلا إذا كانت السيارة متوقفة.</string>
+  <string name="settings_distance_above_speed">المسافة الزائدة عن حدّ السرعة:</string>
+  <string name="settings_distance_unbuckled">المسافة دون ربط حزام الأمان:</string>
+  <string name="settings_colon">:</string>
+  <string name="settings_restore_settings_from_usb_big">استعادة الإعدادات من USB</string>
+  <string name="settings_restore_settings_from_usb_big_content">لا تقم بإزالة محرك أقراص USB حتى إتمام عملية الاستعادة. يمكنك إيقاف تشغيل السيارة والاستئناف فيما بعد وفي أي وقت.</string>
+  <string name="settings_backup_in_progress">عملية النسخ الاحتياطي قيد التقدم...</string>
+  <string name="settings_personal_driving_mode">MyMode</string>
+  <string name="settings_video">فيديو</string>
+  <string name="settings_allow_prompt_interruptions">السماح بمقاطعة المطالبات</string>
+  <string name="settings_engine_sound">صوت المحرّك</string>
+  <string name="settings_awd_optimization">تحسين نظام AWD</string>
+  <string name="settings_video_voice_over">التعليق الصوتي في الفيديو</string>
+  <string name="settings_tap_step_speed_content">يحدّد الإعداد \"مدى السرعة التدريجية\" الزيادات التدريجية لضبط سرعة المحرّك.\nاستخدم الأزرار Set+ وRes- في عجلة القيادة لضبط السرعة للأعلى أو للأسفل وفق زيادات محدّدة.\nيتيح مأخذ الطاقة للسيارة إمكانية تزويد جهاز ملحق بالطاقة، مثل ضاغط الهواء أو الرافعة.</string>
+  <string name="settings_standby_speed_content">يحدّد الإعداد \"‏سرعة الاستعداد\" السرعة الأولية لتعشيق ميزة مأخذ الطاقة. لا حاجة لهذه السرعة لمتابعة استخدام الميزة بمجرد تعشيقها. يتيح مأخذ الطاقة للسيارة إمكانية تزويد جهاز ملحق بالطاقة، مثل ضاغط الهواء أو الرافعة.</string>
+  <string name="settings_set_1_speed_content">يساهم الإعداد \"مجموعة السرعات 1\" في تحديد مجموعة السرعات الدنيا التي يمكن أن يعمل بها المحرّك أثناء استخدام مأخذ الطاقة.\nيتيح مأخذ الطاقة للسيارة إمكانية تزويد جهاز ملحق بالطاقة، مثل ضاغط الهواء أو الرافعة.</string>
+  <string name="settings_set_2_speed_content">يساهم الإعداد \"مجموعة السرعات 2\" في تحديد مجموعة السرعات العليا التي يمكن أن يعمل بها المحرّك أثناء استخدام مأخذ الطاقة.\nيتيح مأخذ الطاقة للسيارة إمكانية تزويد جهاز ملحق بالطاقة، مثل ضاغط الهواء أو الرافعة.</string>
+  <string name="settings_shutdown_time_content">يحدّد الإعداد \"وقت إيقاف التشغيل\" مقدار الوقت الذي سيستمر فيه المحرّك في العمل أثناء استخدام مأخذ الطاقة.\nيتيح مأخذ الطاقة للسيارة إمكانية تزويد جهاز ملحق بالطاقة، مثل ضاغط الهواء أو الرافعة وذلك باستخدام المحرّك.</string>
+  <string name="settings_automatic_running_boards_content">يضبط الإعداد \"امتداد المرقاة تلقائياً\" وضعيّة المرقاة في السيارة.\nحدّد \"تشغيل\" لسحب المرقاة عند إقفال أبواب السيارة أو عندما تتحرك السيارة.\nحدّد \"ممدّدة\" للحفاظ على المرقاة ممدّدة؛ ينبغي أن تكون السيارة في وضع الركن أو في الوضع المحايد بغية تحديد واستخدام هذا الوضع.</string>
+  <string name="settings_handsfree_liftgate_trunk_control_content">يحدّد الإعداد \"التحكّم حرّ اليدين في صندوق الأمتعة/الباب الخلفي\" كيفية الاستخدام المؤتمت للباب الخلفي/صندوق الأمتعة.\nحدّد \"تشغيل - فتح وإغلاق\" لتمكين الفتح والإغلاق حرّ اليدين.\nحدّد \"تشغيل - فتح فقط\" لمنع قفل الباب الخلفي بواسطة ميزة حرّ اليدين.</string>
+  <string name="settings_gesture_indication_content">يتيح الإعداد \"مؤشر الإيماءات\" استخدام إيماءات اليد المختلفة فوق اللوحة اللمسية للتفاعل مع شاشة العرض.</string>
+  <string name="settings_touchpad_surface_content">يتيح الإعداد \"سطح اللوحة اللمسية\" تشغيل أو إيقاف تشغيل وحدة التحكّم باللوحة اللمسية.</string>
+  <string name="settings_tap_to_enter_content">يتيح الإعداد \"المس للدخول\" استخدام اللوحة اللمسية لتحديد الخيارات. كما يتيح ذلك تجاهل الضغط على زرّ ما أو لمس الشاشة.</string>
+  <string name="settings_haptic_feedback_content">يتيح الإعداد \"الاستجابة اللمسية\" الشعور بالذبذبات الصادرة من اللوحة اللمسية عند التفاعل مع الأزرار أو الروابط على شاشة العرض.</string>
+  <string name="settings_location_based_charging_content">يتيح الإعداد \"الشحن المستند إلى الموقع\" تكوين إعدادات الشحن في السيارة الكهربائية خاصتك وذلك وفقاً لموقعها الجغرافي.</string>
+  <string name="settings_energy_summary_pop_up_content">يتيح الإعداد \"رسالة ملخصة حول استهلاك الطاقة\" عرض ملخص عن حالة البطارية واستهلاك الوقود منذ آخر شحن كامل وذلك قبل الخروج من السيارة.</string>
+  <string name="settings_charge_status_feedback_content">يتيح الإعداد \"إعلام صوتي حول حالة الشحن\" إصدار تنبيه مسموع و/أو مرئي خارج السيارة أثناء شحنها.</string>
+  <string name="settings_charge_cord_theft_alert_content">يهدف الإعداد \"تنبيه سرقة سلك الشحن\" إلى تنبيهك إلى احتمال سرقة سلك الشحن وذلك من خلال وميض مصابيح السيارة وإطلاق صوت البوق.</string>
+  <string name="settings_charge_power_loss_alert_content">يهدف الإعداد \"تنبيه فقدان طاقة الشحن\" إلى تنبيهك إلى توقف شحن السيارة وذلك من خلال وميض المصابيح وإطلاق صوت البوق.</string>
+  <string name="settings_location_based_auto_lift_content">يهدف الإعداد \"الرفع التلقائي المستند إلى الموقع\" إلى تغيير ارتفاع ركوب السيارة وفقاً لموقعها بحسب نظام تحديد المواقع العالمي.\nويتم استخدام نظام التجوال لتحديد المواقع حيث ينبغي تغيير ارتفاع الركوب.</string>
+  <string name="settings_antilock_brake_system_active">نظام الفرامل المانع للانغلاق نشط:</string>
+  <string name="settings_lane_keep_assist_alerts">تنبيهات نظام المساعدة على البقاء في حارة السير:</string>
+  <string name="settings_this_vehicle_is_recording_content">يتم تسجيل الصوت والفيديو في هذه السيارة</string>
+  <string name="settings_brake_response">استجابة الفرامل</string>
+  <string name="settings_competition_mode">الوضع التنافسي</string>
+  <string name="ui_warning_long_hd">تحذير</string>
+  <string name="settings_link_to_drive_mode">الربط مع وضع القيادة</string>
+  <string name="settings_off">إيقاف</string>
+  <string name="settings_step_speed_traction_content_mode">يحدّد الإعداد \"تحسين نظام AWD\" كيفية معايرة نظام الدفع بجميع العجلات وفق ظروف محدّدة للقيادة أو وفق النمط المعتمد في القيادة وذلك لتحسين أداء السيارة عند تفعيل الوضع %1$s.</string>
+  <string name="settings_step_speed_drivingmode_content_1">يضبط الإعداد \"صوت المحرّك\" بفاعلية صوت المحرّك كي يتطابق بالشكل الأمثل مع ظروف أو نمط القيادة المطلوب وذلك عند تفعيل الوضع %1$s.</string>
+  <string name="settings_on">تفعيل</string>
+  <string name="settings_step_speed_drivingmode_content_2">يضبط الإعداد \"صوت المحرّك\" بفاعلية صوت المحرّك كي يتطابق بالشكل الأمثل مع ظروف أو نمط القيادة المطلوب وذلك عند تفعيل الوضع %1$s.</string>
+  <string name="settings_reduced">مخفّض</string>
+  <string name="settings_standard">قياسي</string>
+  <string name="settings_enhanced">محسَّن</string>
+  <string name="settings_performance">وفق الأداء</string>
+  <string name="settings_steering_content_1">يضبط الإعداد \"التوجيه\" كيفية استجابة نظام التوجيه كي يتطابق بالشكل الأمثل مع ظروف أو نمط القيادة المطلوب وذلك عند تفعيل الوضع %1$s.</string>
+  <string name="settings_suspension_content_1">يضبط الإعداد \"التعليق\" معدل استجابة مخمد الاهتزازات و/أو النابض وفق ظروف محدّدة للقيادة أو وفق النمط المعتمد عند تفعيل الوضع %1$s.</string>
+  <string name="settings_brake_pedal_feel_content_1">يضبط الإعداد \"استجابة الفرامل\" كيفية استجابة دوّاسة الفرامل لظروف محدّدة للقيادة أو للنمط المعتمد في القيادة وذلك عند تفعيل الوضع %1$s.</string>
+  <string name="settings_ride_height_content_1">يحدّد الإعداد \"ارتفاع الركوب\" نسبة ارتفاع السيارة التي ينبغي اعتمادها عند تفعيل الوضع %1$s.</string>
+  <string name="settings_cursor_tracking_speed_content">يهدف الإعداد \"سرعة تتبّع المؤشر\" إلى التحكّم في سرعة حركة المؤشر وأداة التمييز على الشاشة. يمكنك بالتالي تسريع أو إبطاء استجابة اللوحة اللمسية لحركة يديك.</string>
+  <string name="settings_ride_height_content">يحدّد الإعداد \"ارتفاع الركوب\" نسبة ارتفاع السيارة التي ينبغي اعتمادها عند تفعيل هذا الوضع.\nيمكن أن يؤثر تغيير ارتفاع الركوب في قيم الخلوص الأرضي والاقتصاد في الوقود والدخول/الخروج من السيارة.</string>
+  <string name="settings_powertrain_content">يهدف الإعداد \"مجموعة نقل الحركة\" إلى تحسين خصائص دواسة الخانق واستجابة الخانق والمحرّك وآلية انتقاء السرعات وذلك وفقاً لظروف قيادة معينة أو نمط قيادة محدّد وعند تفعيل الوضع %1$s.</string>
+  <string name="settings_traction_and_stability_control_long">الوضع التنافسي</string>
+  <string name="settings_competitive_mode">وضع القيادة التنافسية - المناولة النشطة قيد إيقاف تشغيل</string>
+  <string name="settings_ptm_mode_1">وضع إدارة التحكّم في الجرّ 1 - الحلبة الرطبة: %1$s نشطة</string>
+  <string name="settings_ptm_mode_2">وضع إدارة التحكّم في الجرّ 2 - الحلبة الجافة: %1$s نشطة</string>
+  <string name="settings_ptm_mode_3">وضع إدارة التحكّم في الجرّ 3 - الحلبة الجافة +: %1$s غير نشطة</string>
+  <string name="settings_ptm_mode_4">وضع إدارة التحكّم في الجرّ 4 - الحلبة الجافة +: %1$s غير نشطة</string>
+  <string name="settings_ptm_mode_5">وضع إدارة التحكّم في الجرّ 5 - السباق %1$s غير نشط</string>
+  <string name="settings_traction_and_stability_control_content">يهدف الإعداد \"الوضع التنافسي\" إلى ضبط خصائص السيارة الرئيسية مثل المناولة النشطة، والتحكّم الإلكتروني بالثبات بغية تحسين أداء السيارة على حلبات السباق. ويكون وضع إدارة التحكّم في الجرّ (PTM) مخصّص للاستخدام على الحلبات فقط، وهو يتضمّن التحكّم في الجرّ، وStabiliTrak، ونُظم التحكّم في الركوب المغناطيسي لتوفير أفضل أداء ثابت في المنعطفات. ويستند حجم قوة المحرّك المتاحة إلى الوضع المحدّد، وإلى ظروف الحلبة ومهارة السائق وقياس نصف قطر كل واحد من المنعطفات. وقد تم تخفيض قيم التحكّم في المناولة النشطة (التحكّم في الجر والتحكّم الإلكتروني بالثبات) أو تم تعطيلها في أوضاع إدارة التحكّم في الجرّ (PTM) (1-5). ويتم تطبيق هذا الإعداد عند تفعيل وضع القيادة المخصّصة فقط.</string>
+  <string name="settings_video_voice_content">يحدّد الإعداد \"التعليق الصوتي في الفيديو\" إمكانية حصول ذوي الإعاقة البصرية على تعليق صوتي حول مقطع الفيديو القيد التشغيل كما يتيح إمكانية توفير هذا الإعداد أثناء تصفّح نظام الترفيه في المقاعد الخلفية.</string>
+  <string name="settings_prompt_interruptions_content">يهدف الإعداد \"السماح بمقاطعة المطالبات\" إلى التحكّم في إمكانية إصدارك لأوامر صوتية قبل الانتهاء من الاستماع للمطالبات الصوتية. في العادة، يمكنك \"تشغيل\" هذا الإعداد إذا كنت تعرف الأمر الذي ترغب في إصداره دون الحاجة للاستماع إلى كامل المطالبة. قد ينتج عن استخدام هذا الإعداد انقطاع عرضي للمطالبات ناجم عن الضوضاء المحيطة أو عن الأحاديث الجارية بين الأشخاص.</string>
+  <string name="settings_rear_seat_audio_content">يتم استخدام الإعداد \"أزرار التحكّم بالصوت في المقاعد الخلفية\" لتفعيل وتعطيل أزرار التحكّم بالصوت في مقاعد الصف الثاني.</string>
+  <string name="settings_siriusxm_explicit_content_filter_content">يساعد الإعداد \"فلتر المحتوى الآمن SiriusXM\" في منع وصول السائق المراهق إلى قنوات المحتوى الغير آمن على SiriusXM.</string>
+  <string name="settings_remote_mirror_folding_content">تتيح ميزة طي المرايا عن بُعد إمكانية طي المرايا الخارجية بالضغط على زر القفل في جهاز إرسال الدخول عن بُعد بدون مفتاح لمدة ثانية واحدة تقريبًا. يؤدي الضغط على زر فتح القفل من جهاز التحكم عن بُعد إلى فتح المرايا.</string>
+  <string name="settings_seat_entry_memory_content">يقوم هذا الإعداد باستدعاء المواضع لمقعد السائق وعمود التوجيه والمرايا الخارجية والدواسات (إذا توفرت) من خلال زر الذاكرة 1 أو 2 عند تشغيل الإشعال. وإذا لم يتم استدعاء المواضع المحفوظة من قبل، حاول استخدام جهاز التحكم عن بعد الآخر.</string>
+  <string name="settings_seat_Exit_memory_content">يعمل هذا الإعداد على استدعاء المواضع لمقعد السائق وعمود التوجيه والمرايا الخارجية والدواسات (إذا توفرت) من خلال زر ذاكرة الخروج وذلك عند إيقاف تشغيل الإشعال وفتح باب السائق.</string>
+  <string name="settings_ambient_lighting_information_content_themeb">يتيح هذا التطبيق إمكانية تحديد لون للإنارة المحيطة في سيارتك. استخدم المصفوفة لتغيير الإنارة إلى لونك المفضّل.\n\nيمكن إيقاف تشغيل هذه الميزة باستخدام زرّ التبديل \"تشغيل/إيقاف\".\n\nسوف يغيّر خيار \"الربط مع وضع القيادة\" الإنارة المحيطة لمطابقة لون لوحة العدّادات بناء على إعداد زرّ وضع القيادة.\n\nيتيح الوضع التجريبي تشغيل الإنارة المحيطة وفق كل الألوان المتاحة. ولا يتوفر هذا الخيار إلا إذا كانت السيارة متوقفة.\nيمكن تعديل السطوع من \"منخفض\" إلى \"متوسط\" إلى \"عالي\" باستخدام الرموز في الجزء السفلي من الشاشة.</string>
+  <string name="settings_direct_airflow">‏تدفق هواء مباشر</string>
+  <string name="settings_brake_pedal_feel_content">يضبط الإعداد \"استجابة الفرامل\" كيفية استجابة دوّاسة الفرامل لظروف محدّدة للقيادة أو للنمط المعتمد في القيادة وذلك عند تفعيل الوضع %1$s.</string>
+  <string name="settings_active_aero_content_1">يحدّد الإعداد \"الديناميكية الهوائية نشطة\" نوع الديناميكية التي ينبغي تنشيطها عند تفعيل الوضع %1$s.\nيضبط كل واحد من الإعدادات وضعيّة الجناح الخلفي/حارف الهواء وعناصر الديناميكية الهوائية الأخرى وذلك لتحسين أداء السيارة وفق ظروف محدّدة أو نمط قيادة معيّن.</string>
+  <string name="settings_active_aero_content">يحدّد الإعداد \"الديناميكية الهوائية نشطة\" نوع الديناميكية التي ينبغي تنشيطها عند تفعيل الوضع %1$s.\nيضبط كل واحد من الإعدادات وضعيّة الجناح الخلفي/حارف الهواء وعناصر الديناميكية الهوائية الأخرى وذلك لتحسين أداء السيارة وفق ظروف محدّدة أو نمط قيادة معيّن.</string>
+  <string name="settings_left_right_invert_content">يحدّد الإعداد \"العكس لليمين/لليسار\" كيفية استجابة الشاشة للحركة الأفقية للأصابع على اللوحة اللمسية.\nحدّد \"افتراضي\" كي تتطابق الاستجابة مع حركة الأصابع على اللوحة اللمسية.\nحدّد \"معكوس\" كي تكون استجابة الشاشة معاكسة لحركة الأصابع.</string>
+  <string name="settings_up_down_invert_content">يحدّد الإعداد \"العكس للأعلى/للأسفل\" كيفية استجابة الشاشة للحركة العمودية للأصابع على اللوحة اللمسية.\nحدّد \"افتراضي\" كي تتطابق الاستجابة مع حركة الأصابع على اللوحة اللمسية.\nحدّد \"معكوس\" كي تكون استجابة الشاشة معاكسة لحركة الأصابع.</string>
+  <string name="settings_suspension_content_pmode">يضبط الإعداد \"التعليق\" معدل استجابة مخمد الاهتزازات و/أو النابض وفق ظروف محدّدة للقيادة أو وفق النمط المعتمد عند تفعيل الوضع %1$s.</string>
+  <string name="settings_trailer_light_test">اختبار مصابيح المقطورة</string>
+  <string name="settings_automatic_timezone_unavailable_content_rds">إن ميزة الضبط التلقائي للمنطقة الزمنية غير متاحة نظراً لعدم توفر معلومات حول نظام RDS.</string>
+  <string name="ui_onstar_1">OnStar</string>
+  <string name="cm_nfc_device_detected">تم اكتشاف جهاز NFC</string>
+  <string name="ui_remove_remote">إزالة إمكانية الوصول عن بُعد</string>
+  <string name="cm_cc_removedevice_confirmation_popup_content">لن يعود بإمكان %1$s التحكّم عن بُعد في وظائف النظام أو الوصول إلى بيانات السيارة. هل أنت متأكد أنك تريد إلغاء هذا الوصول؟</string>
+  <string name="cm_hotspot_data">مشاركة بيانات نقطة الاتصال</string>
+  <string name="cm_hotspot_conflict_popup_content">إن ميزة تبادل بيانات نقطة الاتصال غير متوفرة أثناء الاتصال بشبكة Wi-Fi. حدّد \"متابعة\" لفصل الاتصال بـ %1$s.</string>
+  <string name="cm_nfc_connection_unavail_while_driving">إقران بلوتوث NFC غير متاح أثناء القيادة.</string>
+  <string name="cm_wifi_wifinetwork_conflict_popup">لن تكون قائمة شبكات Wi-Fi متوفرة عند تمكين ميزة تبادل بيانات نقطة الاتصال. حدّد \"متابعة\" بغية تعطيل هذه الميزة.</string>
+  <string name="cm_nfc_device_detected_content">الجهاز مقترن بالفعل.</string>
+  <string name="cm_apple_carplay">Apple Carplay</string>
+  <string name="cm_auto_show_projection_name">عرض %1$s تلقائياً</string>
+  <string name="cm_auto_show_projection_content">عرض %1$s تلقائياً عند الاتصال لاسلكياً</string>
+  <string name="cm_yes">نعم</string>
+  <string name="cm_auto_show_content">عرض %1$s الآن من %2$s؟</string>
+  <string name="cm_wireless_device_connected">جهاز %1$s اللاسلكي متصل</string>
+  <string name="cm_auto_show_content1">تذكر القرار لهذا الجهاز؟</string>
+  <string name="cm_remote_access">الوصول عن بُعد</string>
+  <string name="cm_remote_access_small">الوصول عن بُعد</string>
+  <string name="cm_device_remote_access">الوصول عن بُعد للجهاز</string>
+  <string name="cm_remote_access_content">يمكن للأجهزة المسموح بها التحكم في وظائف النظام والوصول إلى البيانات</string>
+  <string name="cm_remote_access_content_small">يمكن للأجهزة المسموح بها التحكم في وظائف النظام والوصول إلى البيانات</string>
+  <string name="cm_remote_access_content1">يتعذر على الأجهزة التحكم في وظائف النظام أو الوصول إلى البيانات</string>
+  <string name="cm_device_remote_access_content">إنّ طلب الوصول عن بُعد متاح فقط للأجهزة حيث تم تثبيت تطبيق %1$s المرتبط بهذه المركبة.</string>
+  <string name="cm_device_remote_access_content_small">فقط الأجهزة المزوّدة بتطبيق %1$s مثبت ومرتبط بالسيارة يمكنها طلب الوصول عن بُعد.</string>
+  <string name="cm_device_permissions">أذونات الأجهزة</string>
+  <string name="cm_no_devices">لا أجهزة متصلة</string>
+  <string name="cm_remote_access_on_content">باستخدام نقطة اتصال Wi-Fi بالسيارة أو منفذ USB، يمكن للأجهزة التفاعل مع ميزات معينة بنظام الراديو وتسجيل بيانات السيارة.</string>
+  <string name="cm_remote_access_on_content_small">باستخدام نقطة اتصال Wi-Fi بالسيارة أو منفذ USB، يمكن للأجهزة التفاعل مع ميزات معينة بنظام الراديو وتسجيل بيانات السيارة.</string>
+  <string name="cm_remote_access_off_content">يتعذر على الأجهزة التحكم في نظام الراديو أو تسجيل بيانات السيارة.</string>
+  <string name="cm_cc_disabled_content">يتعذر على الأجهزة التحكم في وظائف النظام أو الوصول إلى البيانات</string>
+  <string name="cm_connect_projection_type_device_to_usb">قم بتوصيل جهاز %1$s إلى USB</string>
+  <string name="cm_connect_projection_device_to_usb_content">يُنصح به لاتصال أفضل.\nقد يتيح تمكين اتصالات مستقبلية لاسلكية.</string>
+  <string name="cm_cc_wifi_services_disabled_content">خدمات Wi-Fi معطلة حاليًا. قم بتمكين خدمات Wi-Fi لتمكين الوصول عن بُعد عبر نقطة اتصال Wi-Fi بالسيارة.</string>
+  <string name="cm_tap_to_pair_ready">المس لتجهيز الإقران (NFC)</string>
+  <string name="cm_steps_to_pairing_with_nfc">خطوات الإقران مع NFC</string>
+  <string name="cm_unlock_phone">1. افتح قفل الهاتف</string>
+  <string name="cm_enable_nfc_on_phone">2. قم بتمكين NFC على الهاتف.</string>
+  <string name="cm_enable_bluetooth_on_phone">3. قُم بتفعيل البلوتوث في الهاتف.</string>
+  <string name="cm_hold_phone_to">3. أمسك الهاتف باتجاه %1$s.</string>
+  <string name="cm_enable_baidu_carlife_content">بمجرد تفعيل هذه الميزة، قد يقوم جهاز ما ببدء تشغيل Baidu CarLife عند الاتصال عبر USB.\n\nسوف يتم تعطيل Apple CarPlay وAndroid Auto.</string>
+  <string name="cm_reenable_carplay_content">بمجرد تفعيل هذه الميزة، قد يقوم جهاز ما ببدء تشغيل Apple CarPlay عند الاتصال عبر USB.\n\nسوف يتم تعطيل Baidu CarLife.</string>
+  <string name="cm_reenable_baidu_carlife_content">بمجرد تفعيل هذه الميزة، قد يقوم جهاز ما ببدء تشغيل Apple CarPlay لاسلكياً أو عند الاتصال عبر USB.\n\nسوف يتم تعطيل Baidu CarLife.</string>
+  <string name="cm_enable_baidu_carlife_device_content">بمجرد تفعيل هذه الميزة، قد يقوم جهاز ما ببدء تشغيل Android Auto عند الاتصال عبر USB.\n\nسوف يتم تعطيل Baidu CarLife.</string>
+  <string name="cm_enable_baidu_carlife_content1">بمجرد تفعيل هذه الميزة، قد يقوم جهاز ما ببدء تشغيل Baidu CarLife عند الاتصال عبر USB.\n\nسوف يتم إيقاف تشغيل %ProjectionTypeA% على %Device A% ممّا قد يؤدي إلى نقل المكالمات النشطة إلى سمّاعة الهاتف.</string>
+  <string name="cm_enable_baidu_carlife">تفعيل Baidu CarLife</string>
+  <string name="cm_confirm_bluetooth_pairing_code">تأكيد رمز إقران البلوتوث</string>
+  <string name="cm_check_your_device">تحقّق من جهازك للمتابعة.</string>
+  <string name="cm_connect_baidu">قم بتوصيل جهاز ‎Baidu CarLife إلى USB</string>
+  <string name="cm_connect_baidu_content">قُم بتوصيل جهاز تم عليه تثبيت تطبيق CarLife.</string>
+  <string name="cm_minimum_8_characters_req_reg_21_763_29">ينبغي إدخال 8 أحرف كحدّ أدنى</string>
+  <string name="updater_update_cancelled">تم إلغاء تحديث السيارة</string>
+  <string name="updater_file_not_available">الملف غير متوفر</string>
+  <string name="updater_file_not_available_content">يتعذر تحديث بعض مواد البرامج لهذه اسيارة. اتصل بأقرب وكيل للمساعدة.</string>
+  <string name="updater_license_compliance">مواد متعلقة بتوافق الترخيص</string>
+  <string name="updater_license_compliance_content">[***ملاحظة*** يقوم المورّد بتوفير معلومات وإشعارات وتوجيهات صحيحة في مواقع ويب المورّد في هذه المنطقة من الشاشة].</string>
+  <string name="ui_collection">المجموعة</string>
+  <string name="ui_app_shop">التسوق</string>
+  <string name="settings_on_with_towbar">تشغيل مع عمود السحب</string>
+  <string name="settings_reverse_tilt_mirror2_content">إمالة المرايا عند الرجوع للخلف تساعد على إمالة مرايا الرؤية الجانبية للأسفل عند وضع ذراع تغيير التروس على وضع الرجوع للخلف. يؤدي هذا الأمر إلى تحسين الرؤية للأرض بجوار العجلات الخلفية وهو مفيد كذلك في حالة الركن بجوار الرصيف.</string>
+  <string name="settings_trailering">Trailering</string>
+  <string name="settings_side_trailer_camera">كاميرات المقطورة الجانبية</string>
+  <string name="settings_trailer_length_overlay">الخطوط الدليلية لطول المقطورة</string>
+  <string name="settings_jack_knife_alerts">تحذيرات من خطر الالتفاف</string>
+  <string name="settings_cargo_camera_lighting">إنارة كاميرا منصة التحميل</string>
+  <string name="settings_side_trailer_camera_content">يحدّد إعداد \"كاميرا الرؤية الجانبية\" ما إذا كان استخدام إشارة الانعطاف خلال تغيير الحارة سيتيح أيضاً عرض منظر الجانب ذو الصلة من المقطورة والسيارة. يتيح لك ذلك رؤية المنطقة الجانبية للسيارة والمقطورة التي قد تكون، لولا هذه الوظيفة، محجوبة عنك.</string>
+  <string name="settings_trailer_length_overlay_content">يحدّد الإعداد \"الخطوط الدليلية لطول المقطورة\" ما إذا كان سيتم عرض الخطوط الدليلية الخاصة بطول المقطورة عند تنشيط الكاميرا الجانبية للمقطورة. قُم بضبط طول المقطورة من خلال تطبيق المقطورة.</string>
+  <string name="settings_jack_knife_alerts_content">يحدّد الإعداد \"التحذيرات من خطر الالتفاف\" ما إذا كان سيتم تفعيل التحذيرات أثناء الرجوع للخلف وعند ظهور خطر التفاف المقطورة.</string>
+  <string name="settings_cargo_camera_lighting_content">يحدّد الإعداد \"إنارة كاميرا منصة التحميل\" ما إذا كان سيتم تشغيل أضواء عارضات منصة التحميل عندما تكون كاميرا منصة التحميل نشطة.</string>
+  <string name="settings_audio_cues_shutdown">أصوات بدء/إيقاف التشغيل</string>
+  <string name="settings_rear_pedestrian_detection_content_2">ينبهك اكتشاف المشاة من الخلف أثناء رجوع السيارة للخلف عند حدوث تصادم وشيك مع أحد المشاة الذين تم اكتشافهم خلف السيارة وذلك للمساعدة في تقليل حدة التصادم أو تجنب التصادم.</string>
+  <string name="cm_continue_holding_device">استمر في حمل الجهاز</string>
+  <string name="cm_hold_device_against_the_nfc_sensor_longer">أمسك بالجهاز في مواجهة مستشعر NFC لمدة أطول</string>
+  <string name="cm_nfc_confirm_bluetooth_pairing_code">تأكيد رمز إقران البلوتوث</string>
+  <string name="cm_nfc_confirm_bluetooth_pairing_content">تحقّق من جهازك للمتابعة.</string>
+  <string name="cm_nfc_unknown_device">جهاز غير معروف</string>
+  <string name="cm_pairing_code">000000</string>
+  <string name="cm_connecting_nfc">توصيل جهاز عن طريق NFC</string>
+  <string name="cm_connecting_nfc_device">استمر في حمل الجهاز</string>
+  <string name="cm_hold_nfc">أمسك بالجهاز في مواجهة مستشعر NFC لمدة أطول</string>
+  <string name="settings_baidu_carlife">Baidu CarLife</string>
+  <string name="settings_vmode">وضع V</string>
+  <string name="settings_zmode">وضع Z</string>
+  <string name="settings_mymode">MyMode</string>
+  <string name="settings_link_to_drive_mode_gb">الربط مع وضع القيادة</string>
+  <string name="settings_demo_mode_gb">الوضع التجريبي</string>
+  <string name="cm_nfc_help">مساعدة NFC</string>
+  <string name="cm_bluetooth_device"></string>
+  <string name="settings_park_assist_on_with_towbar">يحدّد الإعداد \"المساعدة في الركن مع قضيب القطر\" إمكانية عمل وظيفة المساعدة في الركن بشكل صحيح مع وجود عنصر صغير، مثل وصلة كرويّة، متصل بوصلة الجرّ.</string>
+  <string name="settings_rear_pedestrian_detection_content1">Rear Pedestrian Detection alerts you while in reverse gear when a collision is imminent with a pedestrian detected directly behind %1$s to help reduce the collision’s severity or avoid the collision.</string>
+  <string name="settings_automatic_entry">الدخول/الخروج التلقائي</string>
+  <string name="settings_automatic_entry_content">يحدّد إعداد \"مساعِد الدخول/الخروج التلقائي\" ما إذا كان سيتم خفض مستوى السيارة تلقائياً لتسهيل الدخول إليها أو الخروج منها.</string>
+  <string name="settings_forward_collision_system_content_brake_and_steer">بإمكان نظام التصادم الأمامي تحذيرك من تصادم محتمل مع السيارة التي يتم اكتشافها أمامك وإذا لم يسعفك الوقت للضغط على الفرامل فبإمكان النظام الضغط عليها وتوجيه السيارة للمساعدة في تقليل حدة التصادم.</string>
+  <string name="settings_handsfree_liftgate_control">التحكم حر اليدين في صندوق الأمتعة/الباب الخلفي</string>
+  <string name="settings_handsfree_liftgate_control_content">يحدّد الإعداد \"التحكّم حرّ اليدين في صندوق الأمتعة/الباب الخلفي\" كيفية الاستخدام المؤتمت للباب الخلفي/صندوق الأمتعة.\nحدّد \"تشغيل - فتح وإغلاق\" لتمكين الفتح والإغلاق حرّ اليدين.\nحدّد \"تشغيل - فتح فقط\" لمنع قفل الباب الخلفي بواسطة ميزة حرّ اليدين.</string>
+  <string name="settings_ride_height_location">الرفع التلقائي المستند إلى الموقع</string>
+  <string name="settings_remote_access_list_divider">أذونات الأجهزة</string>
+  <string name="settings_automatic_entry_egress_assist">مساعِد الدخول/الخروج التلقائي</string>
+  <string name="settings_set_audio_cue_shutdown_volume">مستوى صوت بدء/إيقاف التشغيل</string>
+  <string name="settings_set_audio_cue_shutdown_volume_content">تتحكّم ميزة \"مستوى صوت\nالتشغيل/الإيقاف\" في\nمستوى صوت نظام\nالمعلومات الترفيهية\nأثناء التشغيل\nوالإيقاف.</string>
+  <string name="settings_adaptive_forward_lighting_content_1">الأضواء الأمامية التكيفية تعمل أوتوماتكيًا على ضبط الإضاءة الأمامية في الزوايا والمنعطفات وذلك لتوفير إضاءة طريق أفضل.</string>
+  <string name="settings_automatic_entry_egress_assist_content">يحدّد إعداد \"مساعِد الدخول/الخروج التلقائي\" ما إذا كان سيتم خفض مستوى السيارة تلقائياً لتسهيل الدخول إليها أو الخروج منها.</string>
+  <string name="settings_automatic_running_boards_content_1">يضبط الإعداد \"امتداد المرقاة تلقائياً\" وضعيّة المرقاة في السيارة.\nحدّد \"تشغيل\" لسحب المرقاة تلقائياً عند إقفال أبواب السيارة أو عندما تتحرك السيارة.</string>
+  <string name="settings_audio_cues_shutdown_content">تحدد ميزة \"أصوات بدء\nالتشغيل/الإيقاف\" وقت\nتشغيل نظام المعلومات\nالترفيهية وإيقاف تشغيله.</string>
+  <string name="updater_vehicle_update_canceled">تم إلغاء تحديث السيارة</string>
+  <string name="updater_critical_vehicle_update_title">تحديث أساسي للسيارة</string>
+  <string name="updater_critical_install_within">ينبغي تثبيت التحديث بعد %1$s</string>
+  <string name="updater_critical_msg">قد يستغرق التحديث ما يصل إلى %1$d من الدقائق. وينبغي الركن في مكان آمن. سوف يتم تعطيل سيارتك ولن تتمكن من قيادتها، كما قد يتم تعطيل بعض الميزات مثل أقفال الأبواب والنوافذ والرنّات. وإذا خرجتَ من السيارة، تأكّد من عدم حجز الركاب في داخلها.</string>
+  <string name="updater_install_key_off">التثبيت بعد إيقاف تشغيل السيارة</string>
+  <string name="updater_critical_install_next_time">ينبغي تثبيت التحديث عند إيقاف التشغيل التالي للسيارة.</string>
+  <string name="updater_critical_install_at_key_off_toast">سيتم تثبيت التحديث عند إيقاف تشغيل السيارة</string>
+  <string name="updater_critical_user_consent_title">سوف يبدأ تحديث السيارة بعد %1$d ثانية/ثواني</string>
+  <string name="updater_critical_user_consent">لتأخير التثبيت، ابدأ تشغيل السيارة</string>
+  <plurals name="updater_madai_mins">
+    <item quantity="zero">%1$d دقيقة</item>
+    <item quantity="one">%1$d دقائق</item>
+    <item quantity="two">%1$d دقيقة</item>
+    <item quantity="few">%1$d دقيقة</item>
+    <item quantity="many">%1$d دقيقة</item>
+    <item quantity="other">%1$d دقيقة</item>
+  </plurals>
+  <plurals name="updater_madai_hrs">
+    <item quantity="zero">%1$d hours</item>
+    <item quantity="one">%1$d hour</item>
+    <item quantity="two">%1$d hours</item>
+    <item quantity="few">%1$d hours</item>
+    <item quantity="many">%1$d hours</item>
+    <item quantity="other">%1$d hours</item>
+  </plurals>
+  <plurals name="updater_madai_days">
+    <item quantity="zero">%1$d من الأيام</item>
+    <item quantity="one">%1$d من الأيام</item>
+    <item quantity="two">%1$d من الأيام</item>
+    <item quantity="few">%1$d من الأيام</item>
+    <item quantity="many">%1$d من الأيام</item>
+    <item quantity="other">%1$d من الأيام</item>
+  </plurals>
+  <string name="consent_popup_title">الوصول عن بُعد إلى الجهاز</string>
+  <string name="consent_popup_content_device_name">Granting access allows %s to:</string>
+  <string name="consent_popup_content_device_description">✹ Share Phone contacts and call history with your vehicle\n✹ Access and use vehicle and driving information such as location, speed, warnings, and alerts</string>
+  <string name="consent_popup_checkbox_text">تذكر القرار لهذا الجهاز؟</string>
+  <string name="consent_popup_action_denied">Request Denied</string>
+  <string name="consent_popup_button_allow">سماح</string>
+  <string name="consent_popup_button_deny">رفض</string>
+  <string name="vca_notification_multiple_connection">Multiple Devices Remotely Connected</string>
+  <string name="vca_notification_single_connection">Remotely Connected</string>
+  <string name="settings_device_remote_access">الوصول عن بُعد للجهاز</string>
+  <string name="settings_device_remote_permissions">أذونات الأجهزة</string>
+  <string name="settings_device_remote_remove_header">إزالة إمكانية الوصول عن بُعد</string>
+  <string name="settings_device_remote_remove_description">لن يكون %1$s قادراً بعد الآن على التفاعل مع ميزات السيارة أو على الوصول إلى بيانات السيارة. هل تريد بالتأكيد إلغاء هذا الوصول؟</string>
+  <string name="settings_device_remote_description">تهدف ميزة الوصول عن بُعد إلى التحكّم بإمكانية تفاعل الأجهزة حيث تم تثبيت التطبيق %1$s، المرتبط بهذه السيارة عن طريق USB أو نقطة اتصال بشبكة Wi-Fi، مع بعض ميزات السيارة وتسجيل بيانات السيارة.</string>
+  <string name="settings_remote_access_list_no_devices">لا أجهزة متصلة</string>
+  <string name="settings_remote_access_list_footer">وحدها الأجهزة حيث تم تثبيت التطبيق %1$s المرتبط بهذه السيارة يمكنها طلب الوصول عن بُعد</string>
+  <string name="settings_device_remote_no_devices">لا أجهزة متصلة</string>
+  <string name="settings_device_remote_wifi_is_disabled_warning">خدمات Wi-Fi معطلة حالياً. ينبغي تفعيل خدمات Wi-Fi بغية تمكين الوصول عن بُعد عبر نقطة الاتصال Wi-Fi في السيارة.</string>
+  <string name="settings_short_remote_access">الوصول عن بُعد</string>
+  <string name="settings_remote_access_allowed_content">يمكن للأجهزة المسموح بها التفاعل مع ميزات السيارة والوصول إلى البيانات</string>
+  <string name="settings_remote_access_denied_content">لا يمكن للأجهزة التحكّم في التفاعل مع ميزات السيارة أو مع بيانات الوصول</string>
+  <string name="settings_front_pedestrian_detection_content_1">يهدف الإعداد \"كشف المشاة من الأمام\" إلى تنبيهك إلى احتمال حدوث تصادم وشيك مع أحد المشاة الذي تم اكتشافه مباشرة أمامك وإلى تعشيق الفرامل تلقائياً، إذا لزم الأمر، وذلك للمساعدة على التقليل من شدة الاصطدام أو على تجنّبه.</string>
+  <string name="Settings_onstar_wifi_disabled_title">%1$s نقطة الاتصال Wi-Fi معطّلة</string>
+  <string name="Settings_onstar_wifi_disabled_content">اضغط على زرّ %1$s الأزرق للتحدث إلى مستشار %1$s.</string>
+  <string name="settings_remote_removed_from_vehicle_alert_short">تنبيه إزالة مفتاح التكم عن بعد من السيارة</string>
+  <plurals name="updater_install_time">
+    <item quantity="zero">مدة التثبيت: %1$d من الدقائق</item>
+    <item quantity="one">مدة التثبيت: %1$d من الدقائق</item>
+    <item quantity="two">مدة التثبيت: %1$d من الدقائق</item>
+    <item quantity="few">مدة التثبيت: %1$d من الدقائق</item>
+    <item quantity="many">مدة التثبيت: %1$d من الدقائق</item>
+    <item quantity="other">مدة التثبيت: %1$d من الدقائق</item>
+  </plurals>
+  <string name="settings_passive_door_unlock_content_1">يحدّد الإعداد \"قفل الأبواب الأوتوماتيكي\" الأبواب التي يتم فتحها عند استخدام الزرّ في مقبض باب السائق.</string>
+  <string name="settings_language_content_dynamic">يمكن أيضاً للنظام أن يستخدم اللغة المحدّدة للتعرّف على الصوت والتعليق الصوتي.</string>
+  <string name="settings_location">الموقع</string>
+  <string name="settings_calendar">التقويم</string>
+  <string name="settings_contacts">جهات الاتصال</string>
+  <string name="settings_microphone">الميكروفون</string>
+  <string name="settings_phone">الهاتف</string>
+  <string name="settings_sensors">المستشعرات</string>
+  <string name="settings_sms">الرسائل القصيرة</string>
+  <string name="settings_used_by_application">مُستخدمة من التطبيقات</string>
+  <string name="settings_used_by_applications">مُستخدمة من التطبيقات</string>
+  <string name="settings_other">أخرى</string>
+  <string name="settings_storage">التخزين</string>
+  <string name="settings_stitcher">Stitcher</string>
+  <string name="settings_types">الأنواع</string>
+  <string name="settings_disable_permission">تعطيل الإذن</string>
+  <string name="settings_disable_permission_content">في حالة إيقاف تشغيل هذا الإذن، قد لا تعمل الميزات الأساسية في نظام المعلومات والترفيه كما ينبغي.</string>
+  <string name="settings_turn_off">تعطيل الإذن</string>
+  <string name="settings_apps_allowing_phone">التطبيقات المسموح لها باستخدام الهاتف</string>
+  <string name="settings_messages">الرسائل</string>
+  <string name="settings_pandora">Pandora</string>
+</resources>

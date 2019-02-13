@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data class="AirQualitySensorDataBinding">
+
+        <import type="android.view.View" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+
+
+    </data>
+
+    <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        android:id="@+id/system_sounds_maxstartvol_imglayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        bind:layoutDirection="@{dataPoolHandler.settingsConfiguration}"
+        bind:skewValue="@{dataPoolHandler.isSkewEnabled}">
+
+
+        <include
+            android:id="@+id/topbar_settings_system"
+            style="@style/Layout_Match_Wrap"
+            layout="@layout/uil_ta_hc_topbar_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintHorizontal_bias="0.23"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5"
+            bind:clickHandler="@{clickHandler}"
+            bind:dataPoolHandler="@{dataPoolHandler}" />
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            style="?attr/settings_sounds_audio1_radiogroup"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical"
+            app:layout_constraintHeight_percent="0.69"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topbar_settings_system"
+            app:layout_constraintWidth_percent="0.25">
+
+
+            <RadioButton
+                android:id="@+id/radioButtonOn"
+                style="?attr/settings_sounds_audio1_radiobutton"
+                android:checked="@{dataPoolHandler.SETTINGS_AIR_QUALITY_SENSOR_VALUE == 2?true: false}"
+                android:onClick="@{(view) -> clickHandler.onClickHandler(view,2)}"
+                android:padding="15dp"
+                android:tag="eAirQualitySensor"
+                android:text="@string/settings_low_sensitivity"
+                app:layout_constraintStart_toStartOf="@+id/radioGroup"
+                app:layout_constraintTop_toBottomOf="@+id/radioButtonOff" />
+
+            <RadioButton
+                android:id="@+id/radioButtonOff"
+                style="?attr/settings_sounds_audio1_radiobutton"
+                android:checked="@{dataPoolHandler.SETTINGS_AIR_QUALITY_SENSOR_VALUE == 3?true: false}"
+                android:onClick="@{(view) -> clickHandler.onClickHandler(view,3)}"
+                android:padding="15dp"
+                android:tag="eAirQualitySensor"
+                android:text="@string/settings_high_sensitivity"
+                app:layout_constraintStart_toStartOf="@+id/radioGroup" />
+
+            <RadioButton
+                android:id="@+id/radioButtonthree"
+                style="?attr/settings_sounds_audio1_radiobutton"
+                android:checked="@{dataPoolHandler.SETTINGS_AIR_QUALITY_SENSOR_VALUE == 1?true: false}"
+                android:onClick="@{(view) -> clickHandler.onClickHandler(view,1)}"
+                android:padding="15dp"
+                android:tag="eAirQualitySensor"
+                android:text="@string/ui_off"
+                app:layout_constraintStart_toStartOf="@+id/radioGroup"
+                app:layout_constraintTop_toBottomOf="@+id/radioButtonOn" />
+
+
+        </RadioGroup>
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical"
+            style="?attr/settings_layout_guideline_vertical"
+            app:layout_constraintGuide_percent="0.55" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_begin"
+            style="?attr/settings_set_audio_favorites_guideline_vertical"
+            app:layout_constraintGuide_percent="0.30" />
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            style="?attr/settings_sounds_audio1_layout_zero_wrap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/on_off_car_image"
+            app:layout_constraintHeight_percent="0.43"
+            app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/topbar_settings_system"
+            app:layout_constraintWidth_percent="0.2">
+
+            <com.gm.settingsapp.ui.customview.SkewTextView
+                android:id="@+id/ui_settings_information_text"
+                style="?attr/settings_sounds_audio1_text"
+                android:text="@string/settings_air_quality_sensor_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
+
+        </ScrollView>
+
+        <com.gm.settingsapp.ui.customview.SkewImageView
+            android:id="@+id/on_off_car_image"
+            style="?attr/settings_sounds_audio1_skewimag"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.35"
+            app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+            app:layout_constraintWidth_percent="0.2"
+            app:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
+
+    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+
+
+</layout>

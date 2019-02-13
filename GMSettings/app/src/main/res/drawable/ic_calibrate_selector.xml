@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:autoMirrored="true">
+
+    <item android:drawable="@drawable/ic_caliberator_active" android:state_focused="true" android:state_pressed="true" />
+
+    <item android:drawable="@drawable/ic_caliberator_active" android:state_pressed="true" />
+
+    <item android:drawable="@drawable/ic_caliberator_inactive" />
+
+</selector>

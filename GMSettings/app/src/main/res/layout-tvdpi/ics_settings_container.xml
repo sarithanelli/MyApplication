@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data class="SettingsContainerBinding">
+
+        <import type="android.view.View" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+
+        <import type="com.gm.settingsapp.viewmodels.Constants" />
+
+
+    </data>
+
+    <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        style="@style/background_image"
+        app:layout_constraintStart_toStartOf="parent"
+        bind:layoutDirection="@{dataPoolHandler.settingsConfiguration}"
+        bind:slopedAngle="@{dataPoolHandler.SKEW_MAIN_ANGLE_8}">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_bottom_bar_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.128" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/settings_bottom_layout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline_bottom_bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.17"
+            app:layout_constraintStart_toEndOf="@+id/guideline_bottom_bar_start"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.999"
+            bind:layoutAnim="@{dataPoolHandler.LAYOUT_ANIM}">
+
+            <include
+                android:id="@+id/settings_side_bar"
+                layout="@layout/ics_app_sidebar"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/bottom_text_bar"
+                app:layout_constraintHeight_percent="0.8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.5"
+                bind:clickHandler="@{clickHandler}"
+                bind:dataPoolHandler="@{dataPoolHandler}" />
+
+            <include
+                android:id="@+id/bottom_text_bar"
+                layout="@layout/ics_bottom_bar_details"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.8"
+                app:layout_constraintStart_toEndOf="@+id/settings_side_bar"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_bottom_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.96" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_bottom_bar_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.83" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_top_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.17" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_start_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.3" />
+
+        <FrameLayout
+            android:id="@+id/root_container"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toTopOf="@+id/settings_bottom_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guideline_top_main" />
+
+        <ImageButton
+            android:id="@+id/guild_line_btn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bottom_bar_arrow_selector"
+            android:gravity="center_vertical"
+            android:onClick="@{clickHandler::onClickHandler}"
+            android:visibility="@{dataPoolHandler.LAYOUT_ANIM==1 ? View.VISIBLE : View.INVISIBLE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_btn_arrow"
+            app:layout_constraintHeight_percent="0.18"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent="0.04"
+            bind:layoutShow="@{Constants.BOTTOM_BAR_RE_OPEN}" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_btn_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.55" />
+
+        <ImageView
+            android:id="@+id/img_view_btm_bar"
+            style="@style/bottom_bar_animation"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="@{clickHandler::onClickHandler}"
+            android:visibility="@{dataPoolHandler.LAYOUT_ANIM==1 ? View.VISIBLE : View.INVISIBLE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.15"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.95"
+            app:layout_constraintWidth_percent="0.16" />
+
+        <TextView
+            android:id="@+id/temp_text2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:onClick="@{clickHandler::onClickHandler}"
+            android:text="@string/temperature_bottom_bar"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_hmimediumstyle"
+            android:visibility="@{dataPoolHandler.LAYOUT_ANIM==1 ? View.VISIBLE : View.INVISIBLE}"
+            app:layout_constraintBottom_toBottomOf="@+id/img_view_btm_bar"
+            app:layout_constraintEnd_toStartOf="@+id/time_text"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/img_view_btm_bar"
+            app:layout_constraintTop_toTopOf="@+id/img_view_btm_bar"
+            app:layout_constraintWidth_percent="0.08" />
+
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:onClick="@{clickHandler::onClickHandler}"
+            android:text="@string/time_bottom_bar"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_hmimediumstyle"
+            android:visibility="@{dataPoolHandler.LAYOUT_ANIM==1 ? View.VISIBLE : View.INVISIBLE}"
+            app:layout_constraintBottom_toBottomOf="@+id/img_view_btm_bar"
+            app:layout_constraintEnd_toEndOf="@+id/img_view_btm_bar"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintStart_toEndOf="@+id/temp_text2"
+            app:layout_constraintTop_toTopOf="@+id/img_view_btm_bar"
+            app:layout_constraintWidth_percent="0.28" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_frame_cadillac" />
+
+    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+</layout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SkewLayout">
+        <attr name="slopedAngle" />
+    </declare-styleable>
+
+    <declare-styleable name="SkewConstraintLayout">
+        <attr name="slopedAngle" />
+    </declare-styleable>
+
+    <declare-styleable name="SkewMaterialButton">
+        <attr name="slopedAngle" />
+    </declare-styleable>
+
+    <declare-styleable name="SkewTextView">
+        <attr name="slopedAngle" />
+    </declare-styleable>
+
+    <declare-styleable name="SkewRecyclerView">
+        <attr name="slopedAngle" />
+    </declare-styleable>
+
+    <declare-styleable name="SkewImageView">
+        <attr name="slopedAngle" />
+    </declare-styleable>
+
+    <declare-styleable name="SkewToggleButton">
+        <attr name="slopedAngle" />
+    </declare-styleable>
+
+    <declare-styleable name="SkewTabLayout">
+        <attr name="slopedAngle" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CustomNumberPicker">
+        <attr name="np_width" format="dimension" />
+        <attr name="np_height" format="dimension" />
+        <attr name="np_dividerColor" format="color" />
+        <attr name="np_dividerDistance" format="dimension" />
+        <attr name="np_dividerThickness" format="dimension" />
+        <attr name="np_formatter" format="string" />
+        <attr name="np_max" format="integer" />
+        <attr name="np_min" format="integer" />
+        <attr name="np_orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="np_selectedTextColor" format="color" />
+        <attr name="np_selectedTextSize" format="dimension" />
+        <attr name="np_defaultSelectedTextSize" format="dimension" />
+        <attr name="np_textColor" format="color" />
+        <attr name="np_DisplayedValues" format="color" />
+        <attr name="np_textSize" format="dimension" />
+        <attr name="np_typeface" format="string" />
+        <attr name="np_value" format="integer" />
+        <attr name="np_wheelItemCount" format="integer" />
+        <attr name="np_wrapSelectorWheel" format="boolean" />
+        <attr name="np_scrollViewTag" format="integer" />
+
+
+    </declare-styleable>
+
+
+    <!--New Styles Added-->
+
+    <attr name="settings_language_list_style" format="reference" />
+    <!--Width Height Attrs-->
+
+    <attr name="settings_wrap_match_style" format="reference" />
+    <attr name="settings_wrap_wrap_style" format="reference" />
+    <attr name="settings_match_match_style" format="reference" />
+    <attr name="settings_match_wrap_style" format="reference" />
+    <attr name="settings_match_zero_style" format="reference" />
+    <attr name="settings_zero_zero_style" format="reference" />
+    <attr name="settings_zero_wrap_style" format="reference" />
+
+    <!--//<attr name="settings_language_list_style_1" format="reference"/>-->
+
+    <!--Att for Favorites Style-->
+
+    <attr name="settings_favorites_bg_style" format="reference" />
+    <attr name="settings_favorites_no_bg_style" format="reference" />
+    <attr name="settings_favorites_recycler_style" format="reference" />
+    <attr name="settings_set_audio_favorites_recycler_style" format="reference" />
+    <attr name="settings_favorites_list_row_text" format="reference" />
+    <attr name="settings_set_audio_favorites_guideline_vertical" format="reference" />
+    <attr name="settings_set_audio_favorites_guideline_horizontal" format="reference" />
+    <attr name="settings_set_audio_favorites_scroll" format="reference" />
+    <attr name="settings_set_audio_favorites_skewConstraintLayout_no_bg" format="reference" />
+    <attr name="settings_set_audio_favorites_skewConstraintLayout_no_bg_match" format="reference" />
+    <attr name="settings_set_audio_favorites_skewConstraintLayout_no_bg_wrap" format="reference" />
+
+    <attr name="settings_set_audio_favorites_image" format="reference" />
+    <attr name="settings_set_audio_favorites_text" format="reference" />
+    <attr name="settings_set_audio_favorites_MaterialCardView" format="reference" />
+    <attr name="settings_set_audio_favorites_list_row_text" format="reference" />
+
+    <!--Above Att of Favorites Styles-->
+
+
+    <!--Settings Fragments-->
+
+    <attr name="settings_fragment_recylerview" format="reference" />
+    <attr name="settings_fragment_cardview" format="reference" />
+    <attr name="settings_fragment_layout" format="reference" />
+    <attr name="settings_fragment_list_row_layout" format="reference" />
+    <attr name="settings_fragment_list_row_text" format="reference" />
+
+
+
+    <!--Above Att of Settings Fragments-->
+
+    <!--Time Date Attrs-->
+
+    <!--saritha start-->
+    <attr name="settings_cardview_style" format="reference" />
+    <attr name="settings_layout_bg_style" format="reference" />
+    <attr name="settings_skewlayout_bg" format="reference" />
+    <attr name="settings_recyclerview" format="reference" />
+    <attr name="settings_constraintlayout_bg" format="reference" />
+    <attr name="settings_button_backarrow" format="reference" />
+    <attr name="settings_text_title" format="reference" />
+    <attr name="settings_topbar_text_title" format="reference" />
+    <attr name="settings_button_search" format="reference" />
+    <attr name="settings_skewlayout" format="reference" />
+    <attr name="settings_layout_text" format="reference" />
+    <attr name="settings_layout_text_secondary" format="reference" />
+    <attr name="settings_imageview" format="reference" />
+    <attr name="settings_radiobutton" format="reference" />
+    <attr name="settings_constraintlayout" format="reference" />
+    <attr name="settings_radiogroup" format="reference" />
+    <attr name="settings_time_date_card" format="reference" />
+    <attr name="settings_time_date_match_wrap_style" format="reference" />
+    <attr name="settings_time_date_recycler_view" format="reference" />
+    <attr name="settings_time_date_on_off" format="reference" />
+    <attr name="settings_time_date_toggle_constraint" format="reference" />
+    <attr name="settings_time_date_toggle_button" format="reference" />
+    <attr name="settings_time_date_text_on_off" format="reference" />
+    <attr name="settings_scroll_view" format="reference" />
+    <attr name="settings_scroll_text_content" format="reference" />
+    <attr name="settings_image_view_on_off" format="reference" />
+    <attr name="settings_time_picker_include" format="reference" />
+    <attr name="settings_time_date_time_zone_layout" format="reference" />
+    <attr name="settings_time_date_time_zone_recycler" format="reference" />
+    <attr name="settings_time_date_scroll_view_text" format="reference" />
+    <attr name="settings_time_zone_color_transparent" format="reference" />
+    <attr name="settings_time_zone_image" format="reference" />
+    <attr name="settings_time_date_uil_layout" format="reference" />
+    <attr name="settings_time_date_uil_secondary" format="reference" />
+    <attr name="settings_time_date_primary_txt" format="reference" />
+    <attr name="settings_time_date_secondary_txt" format="reference" />
+    <attr name="settings_time_date_image" format="reference" />
+    <attr name="settings_time_date_tab_toggle_button" format="reference" />
+    <attr name="settings_time_date_picker" format="reference" />
+    <attr name="settings_time_date_include" format="reference" />
+    <attr name="settings_time_zone_radio" format="reference" />
+    <attr name="settings_time_zone_text_primary" format="reference" />
+    <attr name="settings_time_zone_text_secondary" format="reference" />
+
+    <!--Language Attrs-->
+    <attr name="settings_language_card_style" format="reference" />
+    <attr name="settings_language_skewlayout_style" format="reference" />
+    <attr name="settings_layout_guideline_horizontal" format="reference" />
+    <attr name="settings_layout_guideline_vertical" format="reference" />
+    <attr name="settings_language_recyclerview" format="reference" />
+    <attr name="settings_language_scrollview" format="reference" />
+    <attr name="settings_language_skewtext_text" format="reference" />
+    <attr name="settings_language_skewconstraintlayout" format="reference" />
+    <attr name="settings_language_imageview" format="reference" />
+    <attr name="settings_language_skewlayout_row" format="reference" />
+    <attr name="settings_language_text_medium" format="reference" />
+    <attr name="settings_language_radio_button" format="reference" />
+    <attr name="settings_radiobutton_auto" format="reference" />
+    <attr name="settings_radiobutton_night" format="reference" />
+    <attr name="settings_radiobutton_day" format="reference" />
+    <attr name="text_material_content_text" format="reference" />
+    <attr name="settings_calibrate" format="reference" />
+    <attr name="settings_calibrate_text" format="reference" />
+    <attr name="settings_calibrate_text_secondary" format="reference" />
+    <attr name="btn_retry_calibration" format="reference" />
+
+    <!--Sounds Attrs-->
+    <attr name="settings_sounds_skew_main" format="reference"/>
+    <attr name="settings_sounds_recyclerview" format="reference"/>
+    <attr name="settings_sounds_text" format="reference"/>
+    <attr name="settings_sounds_imageview" format="reference"/>
+    <attr name="settings_sounds_togglebutton" format="reference"/>
+    <attr name="settings_sounds_audio1_layout_zero_wrap" format="reference"/>
+    <attr name="settings_sounds_audio1_skewimag" format="reference"/>
+    <attr name="settings_sounds_audio1_text" format="reference"/>
+    <attr name="settings_sounds_audio1_radiobutton" format="reference"/>
+    <attr name="settings_sounds_audio1_radiogroup" format="reference"/>
+
+
+    <!--saritha end-->
+
+    <!--Settings main Attrs-->
+    <attr name="settings_main_skewlayout_style" format="reference" />
+    <attr name="settings_main_skewlayout_wrap_style" format="reference" />
+    <attr name="settings_language_skewlayout_wrap_style" format="reference" />
+    <attr name="settings_tab_layout_home_style" format="reference" />
+    <attr name="system_main_search_image_style" format="reference" />
+    <attr name="setings_time_date_card" format="reference" />
+
+
+
+
+    <!--Side bar attr-->
+    <attr name="settings_side_bar_layout" format="reference"/>
+    <attr name="settings_side_bar_row_list" format="reference"/>
+</resources>

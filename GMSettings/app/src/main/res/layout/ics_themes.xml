@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <data class="ActivityThemeBinding">
+
+        <import type="android.view.View" />
+
+        <import type="com.gm.settingsservice.models.eLHD_RHD_RTL" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+
+    </data>
+
+    <ScrollView
+        style="?attr/settings_layout_bg_style"
+        android:fillViewport="true">
+
+        <LinearLayout
+            style="@style/Layout_Wrap_Wrap"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text"
+                style="@style/text_material_headline_config"
+                android:text="@string/select_theme"
+                android:visibility="gone" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                style="@style/Layout_Wrap_Wrap"
+                android:onCheckedChanged="@{clickHandler::onRadioChanged}"
+                android:visibility="visible">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    style="@style/text_material_subheading_light"
+                    android:buttonTint="@color/gm_cyan_green"
+                    android:checked="@{dataPoolHandler.themeType}"
+                    android:text="@string/theme_cadillac" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    style="@style/text_material_subheading_light"
+                    android:buttonTint="@color/gm_cyan_green"
+                    android:checked="@{!dataPoolHandler.themeType}"
+                    android:text="@string/theme_non_cadillac"
+                    android:visibility="gone" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/text_direction_selection"
+                style="@style/text_material_headline_config"
+
+                android:text="@string/layout_direction" />
+
+            <LinearLayout
+                android:id="@+id/layout_direction_layout"
+                style="@style/Layout_Wrap_Wrap"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="@id/text"
+                app:layout_constraintTop_toBottomOf="@id/text_direction_selection">
+
+                <RadioGroup
+                    android:id="@+id/radioGroupLhdRhd"
+                    style="@style/Layout_Wrap_Wrap"
+                    android:onCheckedChanged="@{clickHandler::onRadioChanged}">
+
+                    <RadioButton
+                        android:id="@+id/lhdRadiButton"
+                        style="@style/text_material_subheading_light"
+                        android:buttonTint="@color/gm_cyan_green"
+                        android:checked="@{dataPoolHandler.layoutDirectionRadioBtnState.get()==eLHD_RHD_RTL.LHD ? true: false}"
+                        android:text="@string/LHD" />
+
+                    <RadioButton
+                        android:id="@+id/rhdRadioButton"
+                        style="@style/text_material_subheading_light"
+                        android:buttonTint="@color/gm_cyan_green"
+                        android:checked="@{dataPoolHandler.layoutDirectionRadioBtnState.get()==eLHD_RHD_RTL.RHD ? true: false}"
+                        android:text="@string/RHD" />
+
+                    <RadioButton
+                        android:id="@+id/rtlRadioButton"
+                        style="@style/text_material_subheading_light"
+                        android:buttonTint="@color/gm_cyan_green"
+                        android:checked="@{dataPoolHandler.layoutDirectionRadioBtnState.get()==eLHD_RHD_RTL.RTL ? true: false}"
+                        android:text="@string/RTL" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/SideBar"
+                style="@style/text_material_headline_config"
+                android:text="@string/info_3.5c_mode" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupSideBar"
+                style="@style/Layout_Wrap_Wrap"
+                android:onCheckedChanged="@{clickHandler::onRadioChanged}">
+
+                <RadioButton
+                    android:id="@+id/SideBarEnable"
+                    style="@style/text_material_subheading_light"
+                    android:buttonTint="@color/gm_cyan_green"
+                    android:checked="@{dataPoolHandler.isLargeScreenLayout}"
+                    android:enabled="@{dataPoolHandler.isLargeScreenLayoutEnabled}"
+                    android:text="@string/enable" />
+
+                <RadioButton
+                    android:id="@+id/SideBarDisable"
+                    style="@style/text_material_subheading_light"
+                    android:buttonTint="@color/gm_cyan_green"
+                    android:checked="@{!dataPoolHandler.isLargeScreenLayout}"
+                    android:enabled="@{dataPoolHandler.isLargeScreenLayoutEnabled}"
+                    android:text="@string/disable" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/themesView"
+                style="@style/text_material_headline_config"
+                android:text="ThemesMode" />
+
+            <RadioGroup
+                android:id="@+id/ThemeRadioGroup"
+                style="@style/Layout_Wrap_Wrap"
+                android:onCheckedChanged="@{clickHandler::onRadioChanged}">
+
+                <RadioButton
+                    android:id="@+id/SpriteEnable"
+                    style="@style/text_material_subheading_light"
+                    android:buttonTint="@color/gm_cyan_green"
+
+                    android:checked="@{dataPoolHandler.themeType.get() ==true ? false: true}"
+
+                    android:text="Axure" />
+
+                <RadioButton
+                    android:id="@+id/AzureEnable"
+                    style="@style/text_material_subheading_light"
+                    android:buttonTint="@color/gm_cyan_green"
+                    android:checked="@{dataPoolHandler.themeType.get() ==false ? false: true}"
+                    android:text="Sprite" />
+
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/curvedDisplay"
+                style="@style/text_material_headline_config"
+                android:text="@string/info_3.5c_curve_mode"
+                android:visibility="gone" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupCurved"
+                style="@style/Layout_Wrap_Wrap"
+                android:onCheckedChanged="@{clickHandler::onRadioChanged}"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/curveEnable"
+                    style="@style/text_material_subheading_light"
+                    android:buttonTint="@color/gm_cyan_green"
+                    android:checked="@{dataPoolHandler.isInfoCurvedView}"
+                    android:enabled="@{dataPoolHandler.isLargeScreenLayout}"
+                    android:text="@string/enable" />
+
+                <RadioButton
+                    android:id="@+id/curveDisable"
+                    style="@style/text_material_subheading_light"
+                    android:buttonTint="@color/gm_cyan_green"
+                    android:checked="@{!dataPoolHandler.isInfoCurvedView}"
+                    android:enabled="@{dataPoolHandler.isLargeScreenLayout}"
+                    android:text="@string/disable" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Skew"
+                style="@style/text_material_headline_config"
+                android:text="@string/skew" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupSkew"
+                style="@style/Layout_Wrap_Wrap"
+                android:onCheckedChanged="@{clickHandler::onRadioChanged}">
+
+                <RadioButton
+                    android:id="@+id/SkewEnable"
+                    style="@style/text_material_subheading_light"
+                    android:buttonTint="@color/gm_cyan_green"
+                    android:checked="@{dataPoolHandler.skewRadioButtonState}"
+                    android:text="@string/enable" />
+
+                <RadioButton
+                    android:id="@+id/SkewDisable"
+                    style="@style/text_material_subheading_light"
+                    android:buttonTint="@color/gm_cyan_green"
+                    android:checked="@{!dataPoolHandler.skewRadioButtonState}"
+                    android:text="@string/disable" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/imageButton2"
+                style="@style/text_material_subheading_light"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/submitbutton_marginTop"
+                android:background="@android:color/holo_blue_dark"
+                android:onClick="@{clickHandler::onClickHandler}"
+                android:tag="eSubmit"
+                android:text="@string/submit"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</layout>

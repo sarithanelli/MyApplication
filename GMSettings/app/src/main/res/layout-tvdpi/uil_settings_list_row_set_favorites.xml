@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="obj"
+            type="Integer" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+    </data>
+
+    <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        android:id="@+id/ics_ta_settings_system_view"
+        style="?attr/settings_set_audio_favorites_skewConstraintLayout_no_bg_wrap"
+        android:layout_height="@dimen/row_height_cadillac"
+        android:background="@drawable/settings_list_selector"
+        android:onClick="@{(view) -> clickHandler.onClickHandler(view,obj)}"
+        android:tag="eSetNumberFavorite"
+        app:layout_constraintEnd_toEndOf="parent"
+        bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
+
+        <TextView
+            android:id="@+id/ics_ta_settings_primary_text"
+            style="?attr/settings_layout_text"
+            android:layout_width="0dp"
+            android:text="@{obj!=1 ? String.valueOf(obj): @string/settings_auto_small}"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/radio_button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.2" />
+
+        <RadioButton
+            android:id="@+id/radio_button"
+            style="@style/radio_button_on_off"
+            android:layout_marginStart="15dp"
+            android:button="@null"
+            android:checked="@{dataPoolHandler.SETTINGS_CURRENT_NUMBER_FAVORITES==obj}"
+            android:onClick="@{(view) -> clickHandler.onClickHandler(view,obj)}"
+            android:tag="eSetNumberFavorite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+
+</layout>

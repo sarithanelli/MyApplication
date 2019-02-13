@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:autoMirrored="true">
+
+    <item android:drawable="@drawable/icn_controls_pressed_cadillac" android:state_focused="true" android:state_pressed="true" />
+
+    <item android:drawable="@drawable/icn_controls_pressed_cadillac" android:state_pressed="true" />
+
+    <item android:drawable="@drawable/icn_controls_active_cadillac" />
+
+</selector>
