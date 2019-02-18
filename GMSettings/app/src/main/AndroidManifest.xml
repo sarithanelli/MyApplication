@@ -484,6 +484,13 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.activities.SettingsVehicleVModeEngineActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.eVMEngine" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".ui.activities.ConfigurationActivity"
             android:clearTaskOnLaunch="true"
