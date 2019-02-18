@@ -598,5 +598,72 @@
     "eventName": "onSETTINGS_REQ_OPENSOURCE",
     "activityName": "HTMLViewerActivity",
     "isProcess": "true"
+  },
+
+  "eMyMode": {
+    "eventType": "navigate",
+    "eventName": "eMyMode",
+    "activityName": "SettingsMyModeActivity",
+    "isProcess": "false"
+  },
+  "eVMode": {
+    "eventType": "navigate",
+    "eventName": "eVMode",
+    "activityName": "SettingsVModeActivity",
+    "isProcess": "false"
+  },
+  "eVMSteering": {
+    "eventType": "navigate",
+    "eventName": "eVMSteering",
+    "activityName": "SettingsVehicleVModeSteeringActivity",
+    "isProcess": "false"
+  },
+  "eMMEngine":{
+    "eventType": "navigate",
+    "eventName": "eMMEngine",
+    "activityName": "SettingsVehicleMyModeEngineActivity",
+    "isProcess": "false"
+  },
+  "eVMSuspension":{
+    "eventType": "navigate",
+    "eventName": "eVMSuspension",
+    "activityName": "SettingsVehicleVModeSuspensionActivity",
+    "isProcess": "false"
+  },
+  "eMMSteering":{
+    "eventType": "navigate",
+    "eventName": "eMMSteering",
+    "activityName": "SettingsVehicleMyModeSteeringActivity",
+    "isProcess": "false"
+  },
+  "eMMSuspension":{
+    "eventType": "navigate",
+    "eventName": "eMMSuspension",
+    "activityName": "SettingsVehicleMyModeSuspensionActivity",
+    "isProcess": "false"
+  },
+  "eMMBrake":{
+    "eventType": "navigate",
+    "eventName": "eMMBrake",
+    "activityName": "SettingsVehicleMyModeBreakActivity",
+    "isProcess": "false"
+  },
+  "eVMBrake":{
+    "eventType": "navigate",
+    "eventName": "eVMBrake",
+    "activityName": "SettingsVehicleVModeBrakeActivity",
+    "isProcess": "false"
+  },
+  "eVMPower":{
+    "eventType": "navigate",
+    "eventName": "eVMPower",
+    "activityName": "SettingsVehicleVModePowertrainActivity",
+    "isProcess": "false"
+  },
+  "eVModeEngine":{
+    "eventType": "navigate",
+    "eventName": "eVMEngine",
+    "activityName": "SettingsVehicleVModeEngineActivity",
+    "isProcess": "false"
   }
 }

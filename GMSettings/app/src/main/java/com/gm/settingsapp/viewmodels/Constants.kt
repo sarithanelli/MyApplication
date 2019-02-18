@@ -214,4 +214,30 @@ object Constants {
     const val SPORT_PASSANGER_SEAT="eSportModeCustomizationToggleOnOffPassengerSeat"
     const val SPORT_ADAPTIVE="eSportModeCustomizationToggleOnOffAdaptiveCruiseControl"
 
+
+    val MYMODE_TAG = "eMyMode"
+    val VMODE_TAG = "eVMode"
+    val MYMODE_ENGINE_TAG = "eMMEngine"
+    val MYMODE_STEERING_TAG = "eMMSteering"
+    val MYMODE_SUSPENSION_TAG = "eMMSuspension"
+    val MYMODE_BRAKE_TAG = "eMMBrake"
+
+
+    val VMODE_ENGINE_TAG = "eVModeEngine"
+    val VMODE_STEERING_TAG = "eVMSteering"
+    val VMODE_SUSPENSION_TAG = "eVMSuspension"
+    val VMODE_BRAKE_TAG = "eVMBrake"
+    val VMODE_POWER_TAG = "eVMPower"
+
+    const val MY_MODE_ENGINE = 10001
+    const val MY_MODE_STEERING = 10002
+    const val MY_MODE_SUSPENSION = 10003
+    const val MY_MODE_BRAKE = 10004
+
+    const val V_MODE_ENGINE = 10005
+    const val V_MODE_STEERING = 10006
+    const val V_MODE_SUSPENSION = 10007
+    const val V_MODE_BRAKE = 10008
+    const val V_MODE_POWER = 10009
+
 }

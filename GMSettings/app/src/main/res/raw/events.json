@@ -79,7 +79,18 @@
     "onSETTINGS_REQ_APPS_INNER":"onSETTINGS_REQ_APPS_INNER",
     "onDEVICEPROJECTION_REQ_SETAPPLECARPLAYENABLE":"onDEVICEPROJECTION_REQ_SETAPPLECARPLAYENABLE",
     "onDEVICEPROJECTION_REQ_SETGOOGLEAUTOLINKENABLE":"onDEVICEPROJECTION_REQ_SETGOOGLEAUTOLINKENABLE",
-    "onSETTINGS_APPS_REQ_DATA":"onSETTINGS_APPS_REQ_DATA"
+    "onSETTINGS_APPS_REQ_DATA":"onSETTINGS_APPS_REQ_DATA",
+    "eVMode":"eVMode",
+    "eVMEngine":"eVMEngine",
+    "eVMSteering":"eVMSteering",
+    "eVMSuspension":"eVMSuspension",
+    "eVMBrake":"eVMBrake",
+    "eVMPower":"eVMPower",
+    "eMyMode":"eMyMode",
+    "eMMEngine":"eMMEngine",
+    "eMMSteering":"eMMSteering",
+    "eMMSuspension":"eMMSuspension",
+    "eMMBrake":"eMMBrake"
   },
   "events_activity_action_map_custom": {
     "evG_WiFiHotspot": "com.gm.connectionwifi.action.evG_WiFiHotspot",

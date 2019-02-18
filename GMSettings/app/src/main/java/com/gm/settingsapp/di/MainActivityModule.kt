@@ -176,5 +176,33 @@ abstract class MainActivityModule {
     abstract fun contributeSettingsSportModeCustomizationOnOffActivity() :SettingsSportModeCustomizationOnOffActivity
 
 
+    @ContributesAndroidInjector
+    abstract fun SettingsMyModeActivity(): SettingsMyModeActivity
+
+    @ContributesAndroidInjector
+    abstract fun SettingsVehicleMyModeEngineActivity(): SettingsVehicleMyModeEngineActivity
+
+    @ContributesAndroidInjector
+    abstract fun SettingsVehicleMyModeSteeringActivity(): SettingsVehicleMyModeSteeringActivity
+
+    @ContributesAndroidInjector
+    abstract fun SettingsVehicleMyModeSuspensionActivity(): SettingsVehicleMyModeSuspensionActivity
+
+    @ContributesAndroidInjector
+    abstract fun SettingsVehicleMyModeBrakeActivity(): SettingsVehicleMyModeBrakeActivity
+
+    @ContributesAndroidInjector
+    abstract fun SettingsVModeActivity(): SettingsVModeActivity
+    @ContributesAndroidInjector
+    abstract fun SettingsVehicleVModeEngineActivity(): SettingsVehicleVModeEngineActivity
+    @ContributesAndroidInjector
+    abstract fun SettingsVehicleVModeSteeringActivity(): SettingsVehicleVModeSteeringActivity
+    @ContributesAndroidInjector
+    abstract fun SettingsVehicleVModeSuspensionActivity(): SettingsVehicleVModeSuspensionActivity
+    @ContributesAndroidInjector
+    abstract fun SettingsVehicleVModeBrakeActivity(): SettingsVehicleVModeBrakeActivity
+    @ContributesAndroidInjector
+    abstract fun SettingsVehicleVModePowertrainActivity(): SettingsVehicleVModePowertrainActivity
+
 
 }

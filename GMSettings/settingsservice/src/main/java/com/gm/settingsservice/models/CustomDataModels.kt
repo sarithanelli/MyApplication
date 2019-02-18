@@ -99,6 +99,22 @@ data class DriveModeModel(
 )
 
 /**
+ * Model to create data for V Mode and MyMode
+ */
+
+
+data class MyModeModel(
+        var primaryData: String,
+        var secondaryData: String,
+        var ref: Int
+)
+data class VModeModel(
+        var primaryData: String,
+        var secondaryData: String,
+        var ref: Int
+)
+
+/**
  * Model to create data for configuration screen
  */
 data class SettingsConfigurationModel

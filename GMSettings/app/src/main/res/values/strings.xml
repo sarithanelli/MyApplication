@@ -1972,8 +1972,51 @@
         <item>@string/settings_sport</item>
         <item>@string/settings_track</item>
         <item>@string/settings_off</item>
-
     </string-array>
+        <string-array name="my_mode_engine">
+            <item>@string/settings_drivingmode_stealth</item>
+            <item>@string/settings_drivingmode_city</item>
+            <item>@string/settings_tour</item>
+            <item>@string/settings_sport</item>
+            <item>@string/settings_track</item>
+            <item>@string/settings_off</item>
+
+        </string-array>
+        <string-array name="my_mode_steering">
+            <item>@string/settings_traction_eco</item>
+            <item>@string/settings_drivingmode_city</item>
+            <item>@string/settings_tour</item>
+            <item>@string/settings_sport</item>
+            <item>@string/settings_track</item>
+        </string-array>
+
+
+        <string-array name="my_mode_suspension">
+            <item>@string/settings_tour</item>
+            <item>@string/settings_sport</item>
+            <item>@string/settings_track</item>
+        </string-array>
+
+
+        <string-array name="my_mode_brake">
+            <item>@string/settings_normal</item>
+            <item>@string/settings_tour</item>
+            <item>@string/settings_sport</item>
+            <item>@string/settings_track</item>
+            <item>@string/settings_offroad</item>
+            <item>@string/settings_tow_haul</item>
+        </string-array>
+
+        <string-array name="v_mode_brake">
+            <item>@string/settings_normal</item>
+            <item>@string/settings_sport</item>
+            <item>@string/settings_track</item>
+            <item>@string/settings_snow_ice</item>
+            <item>@string/cadillac_display_weather</item>
+        </string-array>
+
+
+
     <string-array name="configuration_data">
         <item>LHD</item>
         <item>RHD</item>
@@ -2223,6 +2266,15 @@
         <item>@string/settings_awd_optimization</item>
     </string-array>
 
+
+    <string-array name="mymode_list">
+        <item>@string/settings_engine_sound_management</item>
+        <item>@string/settings_steering</item>
+        <item>@string/settings_suspension</item>
+        <item>@string/drive_mode_brakefeel_response</item>
+    </string-array>
+
+
     <string-array name="climate_data">
         <item>@string/settings_auto_fan_max_speed</item>
         <item>@string/settings_air_quality_sensor</item>
@@ -2316,5 +2368,18 @@
 
     <string name="temperature_bottom_bar">100\u00B0</string>
     <string name="time_bottom_bar">11:00</string>
+
+
+    <string-array name="vmode_brake">
+        <item>@string/settings_normal</item>
+        <item>@string/settings_sport</item>
+        <item>@string/settings_track</item>
+        <item>@string/settings_snow_ice</item>
+        <item>@string/settings_weather</item>
+    </string-array>
+
+
+    <string name="drive_mode_brakefeel_response">Brake Feel,Brake Response</string>
+    <string name="settings_power_train_engine">Powertrain , Engine / Shift </string>
 </resources>
 

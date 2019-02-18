@@ -609,4 +609,22 @@ import androidx.databinding.ObservableField
     var LAYOUT_ANIM = ObservableField<Int>(3)
     var DISPLAY_CADILLAC_SELECT = ObservableField<Int>(0)
 
+   val SETTINGS_MYMODE_MENU = ObservableArrayList<MyModeModel>()
+   val SETTINGS_VMODE_MENU = ObservableArrayList<VModeModel>()
+
+   val SETTINGS_MYMODE_ENGINE = ObservableArrayList<String>()
+   val SETTINGS_VMODE_ENGINE = ObservableArrayList<String>()
+   val SETTINGS_MYMODE_STEERING = ObservableArrayList<String>()
+   val SETTINGS_VMODE_STEERING = ObservableArrayList<String>()
+   val SETTINGS_MYMODE_SUSPENSION = ObservableArrayList<String>()
+   val SETTINGS_VMODE_SUSPENSION = ObservableArrayList<String>()
+   val SETTINGS_MYMODE_BRAKE = ObservableArrayList<String>()
+   val SETTINGS_VMODE_BRAKE = ObservableArrayList<String>()
+   val SETTINGS_VMODE_POWER = ObservableArrayList<String>()
+   val SETTINGS_MYMODE_ENGINE_POS = ObservableField<Int>(0)
+   val SETTINGS_MYMODE_STEERING_POS = ObservableField<Int>(0)
+   val SETTINGS_MYMODE_SUSPENSION_POS = ObservableField<Int>(0)
+   val SETTINGS_MYMODE_BRAKE_POS = ObservableField<Int>(0)
+   val SETTINGS_VMODE_POWER_TRAIN_POS = ObservableField<Int>(0)
+
 }

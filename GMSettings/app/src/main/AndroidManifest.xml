@@ -205,6 +205,76 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.activities.SettingsVModeActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.eVMode" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activities.SettingsVehicleVModeSteeringActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.eVMSteering" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activities.SettingsVehicleVModeSuspensionActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.eVMSuspension" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activities.SettingsVehicleVModeBrakeActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.eVMBrake" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activities.SettingsVehicleVModePowertrainActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.eVMPower" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activities.SettingsMyModeActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.eMyMode" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activities.SettingsVehicleMyModeEngineActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.eMMEngine" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activities.SettingsVehicleMyModeSteeringActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.eMMSteering" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activities.SettingsVehicleMyModeSuspensionActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.eMMSuspension" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activities.SettingsVehicleMyModeBrakeActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.eMMBrake" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
         <activity
             android:name=".ui.activities.SettingsFactoryRetryActivity"

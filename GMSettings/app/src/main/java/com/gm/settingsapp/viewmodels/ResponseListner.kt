@@ -380,8 +380,13 @@ class ResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Util
 
 
     override fun onSETTINGS_RES_CLIMATE() {
-        if (!dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.contains(GMSettingsApp.appContext.getString(R.string.settings_climate_app)))
+        dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_vmode))
+        dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_mymode))
+        if (!dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.contains(GMSettingsApp.appContext.getString(R.string.settings_climate_app))) {
             dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_climate_app))
+        }
+        dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_collision))
+        dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_comfort_and_convenience))
     }
 
     init {

@@ -79,6 +79,8 @@ class SettingsHomeActivity : BaseActivity(), ISystemStateChanged, IConnectionSta
                         GMSettingsApp.appContext.resources.getString(R.string.settings_sport_mode_customization) -> view.tag = Constants.SPORTMODE_TAG
                         GMSettingsApp.appContext.resources.getString(R.string.settings_auto_mode_customization) -> view.tag = Constants.AUTOMODE_TAG
                         GMSettingsApp.appContext.resources.getString(R.string.settings_driving_mode_big) -> view.tag = DRIVEMODE_TAG
+                        GMSettingsApp.appContext.resources.getString(R.string.settings_mymode) -> view.tag = Constants.MYMODE_TAG
+                        GMSettingsApp.appContext.resources.getString(R.string.settings_vmode) -> view.tag = Constants.VMODE_TAG
                         GMSettingsApp.appContext.resources.getString(R.string.settings_climate_app) -> {
                             if (!dataPoolDataHandler.SETTINGS_VEHICLE_POWER_ON_OFF.get()!!)
                                 view.tag = CLIMATE_TAG
