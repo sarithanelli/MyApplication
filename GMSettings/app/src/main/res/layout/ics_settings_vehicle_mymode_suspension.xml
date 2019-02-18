@@ -45,13 +45,13 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline_vertical_start"
+            android:id="@+id/guideline_vertical_my_mode_suspension_start"
             style="?attr/settings_wrap_wrap_style"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.6" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline_vertical_end"
+            android:id="@+id/guideline_vertical_my_mode_suspension_end"
             style="?attr/settings_wrap_wrap_style"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.98" />
@@ -67,7 +67,7 @@
             app:fastScrollTrackColor="@color/track_color"
             app:fastScrollType="@{dataPoolHandler.SETTINGS_MYMODE_SUSPENSION.size() > 6 ? 1 : 0}"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical_start"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical_my_mode_suspension_start"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/settings_vehicle_my_mode_suspension_card_view"
             bind:childLayout="@{@layout/uil_settings_list_row_mymode_suspension}"
@@ -76,19 +76,19 @@
         </com.gm.uisdk.views.GMRecyclerView>
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline_horizontal_end"
+            android:id="@+id/guideline_horizontal_my_mode_suspension_end"
             style="?attr/settings_wrap_wrap_style"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.98" />
 
         <ScrollView
-            android:id="@+id/scrollView"
+            android:id="@+id/scroll_view_my_mode_suspension"
             style="?attr/settings_scroll_view"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_constraintEnd_toEndOf="@+id/guideline_vertical_end"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_vertical_my_mode_suspension_end"
             app:layout_constraintHeight_percent="0.13"
-            app:layout_constraintStart_toEndOf="@+id/guideline_vertical_start"
+            app:layout_constraintStart_toEndOf="@+id/guideline_vertical_my_mode_suspension_start"
             app:layout_constraintTop_toBottomOf="@+id/settings_vehicle_my_mode_suspension_card_view"
             app:layout_constraintWidth_percent="0.36">
 
@@ -107,10 +107,10 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:src="@drawable/img_engine_sound"
-            app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal_end"
-            app:layout_constraintEnd_toEndOf="@+id/guideline_vertical_end"
-            app:layout_constraintStart_toStartOf="@+id/guideline_vertical_start"
-            app:layout_constraintTop_toBottomOf="@+id/scrollView" />
+            app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal_my_mode_suspension_end"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_vertical_my_mode_suspension_end"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical_my_mode_suspension_start"
+            app:layout_constraintTop_toBottomOf="@+id/scroll_view_my_mode_suspension" />
     </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
 
 </layout>

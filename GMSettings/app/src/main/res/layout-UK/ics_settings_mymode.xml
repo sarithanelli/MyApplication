@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:bind="http://schemas.android.com/tools">
 
-    <data class="SettingsCollisionSystemsActivityBinding">
+    <data class="SettingsMyModeActivityBinding">
 
         <import type="android.view.View" />
 
@@ -27,19 +27,19 @@
         bind:skewValue="@{dataPoolHandler.isSkewEnabled}">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/settings_collision_systems_material_card_view"
+            android:id="@+id/settings_vehicle_my_mode_material_card_view"
             style="?attr/settings_cardview_style"
-            app:cardElevation="@dimen/card_view_elevation">
+            app:cardElevation="8dp">
 
             <com.gm.settingsapp.ui.customview.SkewConstraintLayout
                 style="?attr/settings_skewlayout_bg"
                 bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
 
                 <include
-                    android:id="@+id/settings_collision_systems_top_bar"
+                    android:id="@+id/settings_vehicle_my_mode_top_bar"
                     style="?attr/settings_match_wrap_style"
                     layout="@layout/uil_ta_hc_topbar_layout"
-                    app:layout_constraintBottom_toTopOf="@+id/settings_collision_systems_recycler_view"
+                    app:layout_constraintBottom_toTopOf="@+id/settings_vehicle_my_mode_recycler_view"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -50,15 +50,19 @@
 
 
         <com.gm.uisdk.views.GMRecyclerView
-            android:id="@+id/settings_collision_systems_recycler_view"
+            android:id="@+id/settings_vehicle_my_mode_recycler_view"
             style="?attr/settings_recyclerview"
             app:fastScrollArrowRadius="@integer/fastScrollArrowRadius"
+            app:fastScrollBarBgColor="@android:color/transparent"
             app:fastScrollBarWidth="@integer/fastScrollBarWidth"
-            app:fastScrollType="@{dataPoolHandler.SETTINGS_DRIVING_MODE_MENU.size() > 6 ? 1 : 0}"
+            app:fastScrollDividerColor="@android:color/transparent"
+            app:fastScrollThumbColor="@color/thumb_color"
+            app:fastScrollTrackColor="@color/track_color"
+            app:fastScrollType="@{dataPoolHandler.SETTINGS_MYMODE_MENU.size() > 6 ? 1 : 0}"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/settings_collision_systems_material_card_view"
-            bind:childLayout="@{@layout/uil_settings_list_row_collision_systems}"
-            bind:items="@{dataPoolHandler.SETTINGS_DRIVING_MODE_MENU}">
+            app:layout_constraintTop_toBottomOf="@+id/settings_vehicle_my_mode_material_card_view"
+            bind:childLayout="@{@layout/uil_settings_list_row_mymode}"
+            bind:items="@{dataPoolHandler.SETTINGS_MYMODE_MENU}">
 
         </com.gm.uisdk.views.GMRecyclerView>
     </com.gm.settingsapp.ui.customview.SkewConstraintLayout>

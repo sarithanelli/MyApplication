@@ -987,8 +987,8 @@
         <item name="android:paddingBottom">@dimen/text_settings_text_padding</item>
         <item name="android:textSize">@dimen/timedate_textview_second_size</item>
     </style>
-    <!--Sounds Attrs-->
 
+    <!--Sounds Attrs-->
 
     <style name="settings_sounds_audio1_layout_zero_wrap_azure" parent="@style/Layout_Zero_Wrap">
         <item name="android:background">@android:color/transparent</item>
@@ -1002,10 +1002,10 @@
     </style>
 
     <style name="settings_sounds_audio1_text_azure" parent="@style/text_material_content_text">
-       <item name="android:paddingStart">@dimen/skewtext_padding_left</item>
+       <!--<item name="android:paddingStart">@dimen/skewtext_padding_left</item>
        <item name="android:paddingTop">@dimen/skewtext_padding_left</item>
        <item name="android:paddingEnd">@dimen/skewtext_padding</item>
-       <item name="android:paddingBottom">@dimen/skewtext_padding</item>
+       <item name="android:paddingBottom">@dimen/skewtext_padding</item>-->
         <item name="android:textSize">@dimen/text_secondary_size</item>
         <item name="android:fontFamily">@font/gmsansui_regular</item>
     </style>

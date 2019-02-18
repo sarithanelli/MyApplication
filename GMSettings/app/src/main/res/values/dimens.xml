@@ -195,5 +195,13 @@
     <item name="settings_running_apps_guideline_rhd" format="float" type="integer">0.02</item>
     <item name="settings_running_apps_guideline__rhd_end" format="float" type="integer">0.84</item>
     <dimen name="textview_padding">34dp</dimen>
+
+
+    <!--card view dimen-->
+
+    <dimen name="card_view_elevation">8dp</dimen>
+
+
+
 </resources>
 
