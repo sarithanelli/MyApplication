@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data class="CollisionParkAssistActivityBinding">
+
+        <import type="android.view.View" />
+
+        <variable
+            name="obj"
+            type="String" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <import type="com.gm.settingsservice.models.eSettingsdisplayMode" />
+
+    </data>
+
+    <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        style="?attr/settings_layout_bg_style"
+        bind:layoutDirection="@{dataPoolHandler.settingsConfiguration}"
+        bind:slopedAngle="@{dataPoolHandler.SKEW_ANGLE_8}">
+
+        <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+            android:id="@+id/settings_park_assist_layout"
+            style="?attr/settings_skewlayout_bg"
+
+            bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/settings_park_assist_top_bar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="8dp">
+
+                <include
+                    style="@style/Layout_Match_Wrap"
+                    layout="@layout/uil_ta_hc_topbar_layout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    bind:clickHandler="@{clickHandler}"
+                    bind:dataPoolHandler="@{dataPoolHandler}" />
+            </androidx.cardview.widget.CardView>
+
+
+            <RadioGroup
+                android:id="@+id/settings_park_assist_radioGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/radiogroup_margin_start"
+                android:divider="@drawable/seperator"
+                android:showDividers="end|middle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/settings_park_assist_scrollView"
+                app:layout_constraintTop_toBottomOf="@+id/settings_park_assist_top_bar">
+
+
+                <RadioButton
+                    android:id="@+id/settings_park_assist_radio_btn_off"
+                    style="?attr/settings_radiobutton_auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:checked="@{dataPoolHandler.SETTINGS_DISPLAYMODETYPE==eSettingsdisplayMode.SETTINGS_DISPLAY_MODE_AUTO}"
+                    android:drawableStart="@drawable/img_ta_radiobutton_themeb"
+                    android:drawablePadding="@dimen/onoffbutton_padding_end"
+                    android:fontFamily="@font/gmsansui_medium"
+                    android:onClick="@{(view) -> clickHandler.onClickHandler(view,eSettingsdisplayMode.SETTINGS_DISPLAY_MODE_AUTO)}"
+                    android:padding="@dimen/onoffbutton_padding"
+                    android:tag="eModeType"
+                    android:text="@string/settings_auto"
+                    android:textAlignment="viewStart"
+
+
+                    android:textSize="@dimen/radio_btn_text_size"
+                    app:layout_constraintStart_toStartOf="@+id/settings_park_assist_radioGroup" />
+
+                <RadioButton
+                    android:id="@+id/settings_park_assist_radio_btn_on"
+                    style="?attr/settings_radiobutton_day"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:checked="@{dataPoolHandler.SETTINGS_DISPLAYMODETYPE==eSettingsdisplayMode.SETTINGS_DISPLAY_MODE_DAY}"
+                    android:drawableStart="@drawable/img_ta_radiobutton_themeb"
+                    android:drawablePadding="@dimen/onoffbutton_padding_end"
+                    android:fontFamily="@font/gmsansui_medium"
+                    android:onClick="@{(view) -> clickHandler.onClickHandler(view,eSettingsdisplayMode.SETTINGS_DISPLAY_MODE_DAY)}"
+                    android:padding="@dimen/onoffbutton_padding"
+                    android:tag="eModeType"
+                    android:text="@string/settings_display_mode_day"
+                    android:textAlignment="viewStart"
+
+                    android:textSize="@dimen/radio_btn_text_size"
+                    app:layout_constraintStart_toStartOf="@+id/settings_park_assist_radioGroup"
+                    app:layout_constraintTop_toBottomOf="@+id/settings_park_assist_radio_btn_off" />
+
+                <RadioButton
+                    android:id="@+id/settings_park_assist_radio_btn_on_towbar"
+                    style="?attr/settings_radiobutton_night"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:checked="@{dataPoolHandler.SETTINGS_DISPLAYMODETYPE==eSettingsdisplayMode.SETTINGS_DISPLAY_MODE_NIGHT}"
+                    android:drawableStart="@drawable/img_ta_radiobutton_themeb"
+                    android:drawablePadding="@dimen/onoffbutton_padding_end"
+                    android:fontFamily="@font/gmsansui_medium"
+                    android:onClick="@{(view) -> clickHandler.onClickHandler(view,eSettingsdisplayMode.SETTINGS_DISPLAY_MODE_NIGHT)}"
+                    android:padding="@dimen/onoffbutton_padding"
+                    android:tag="eModeType"
+                    android:text="@string/settings_display_mode_night"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/radio_btn_text_size"
+                    app:layout_constraintStart_toStartOf="@+id/settings_park_assist_radioGroup"
+                    app:layout_constraintTop_toBottomOf="@+id/settings_park_assist_radio_btn_on" />
+            </RadioGroup>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/settings_park_assist_guideline_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.4" />
+
+            <ScrollView
+                android:id="@+id/settings_park_assist_scrollView"
+                style="@style/Layout_Match_Wrap"
+                android:layout_width="0dp"
+                app:layout_constraintEnd_toStartOf="@+id/settings_park_assist_guideline_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/settings_park_assist_top_bar">
+
+                <com.gm.settingsapp.ui.customview.SkewTextView
+                    android:id="@+id/settings_park_assist_text"
+                    style="?attr/text_material_content_text"
+                    android:fontFamily="@font/gmsansui_regular"
+                    android:padding="@dimen/skewtext_padding"
+                    android:paddingStart="60dp"
+                    android:text="@string/settings_mode_content"
+                    android:textSize="@dimen/List_Secondary_text"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/settings_park_assist_scrollView" />
+            </ScrollView>
+
+
+            <ImageView
+                android:id="@+id/settings_park_assist_img_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_sensor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/settings_park_assist_guideline_vertical"
+                app:layout_constraintStart_toStartOf="@+id/settings_park_assist_scrollView"
+                app:layout_constraintTop_toBottomOf="@+id/settings_park_assist_scrollView"
+                bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
+
+
+        </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+
+</layout>
