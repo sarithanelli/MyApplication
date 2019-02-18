@@ -28,7 +28,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/settings_rear_camera_park_assist_symbols_card_view"
             style="?attr/settings_set_audio_favorites_MaterialCardView"
-            app:cardElevation="@dimen/system_sounds_card_elevartion">
+            app:cardElevation="@dimen/card_view_elevation">
 
             <include
                 layout="@layout/uil_ta_hc_topbar_layout"
@@ -67,7 +67,7 @@
                         style="?attr/settings_sounds_audio1_radiobutton"
                         android:checked="@{dataPoolHandler.SETTINGS_SET_CLIMATE_INNER_STATE}"
                         android:onClick="@{(view) -> clickHandler.onClickHandler(view,true)}"
-                        android:text="On"
+                        android:text="@string/ui_on"
                         app:layout_constraintStart_toStartOf="@+id/settings_rear_camera_park_assist_symbols_radioGroup"
                         app:layout_constraintTop_toBottomOf="@+id/settings_rear_camera_park_assist_symbols_radioButtonOff" />
 
@@ -76,7 +76,7 @@
                         style="?attr/settings_sounds_audio1_radiobutton"
                         android:checked="@{!dataPoolHandler.SETTINGS_SET_CLIMATE_INNER_STATE}"
                         android:onClick="@{(view) -> clickHandler.onClickHandler(view,false)}"
-                        android:text="Off"
+                        android:text="@string/ui_off"
                         app:layout_constraintStart_toStartOf="@+id/settings_rear_camera_park_assist_symbols_radioGroup" />
 
 
@@ -97,6 +97,10 @@
             <ScrollView
                 android:id="@+id/settings_rear_camera_park_assist_symbols_scrollView"
                 style="?attr/settings_sounds_audio1_layout_zero_wrap"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintWidth_percent="0.4"
+                app:layout_constraintHeight_percent="0.15"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/settings_rear_camera_park_assist_symbols_guideline_vertical"

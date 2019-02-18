@@ -29,7 +29,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/settings_collision_systems_material_card_view"
             style="?attr/settings_cardview_style"
-            app:cardElevation="8dp">
+            app:cardElevation="@dimen/card_view_elevation">
 
             <com.gm.settingsapp.ui.customview.SkewConstraintLayout
                 style="?attr/settings_skewlayout_bg"

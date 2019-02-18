@@ -26,7 +26,7 @@
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/settings_rear_pedestrian_detection_material_card_view"
             style="?attr/settings_language_card_style"
-            app:cardElevation="8dp">
+            app:cardElevation="@dimen/card_view_elevation">
 
             <com.gm.settingsapp.ui.customview.SkewConstraintLayout style="?attr/settings_language_skewlayout_style">
 
