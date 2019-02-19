@@ -67,7 +67,7 @@
                         style="?attr/settings_sounds_audio1_radiobutton"
                         android:checked="@{dataPoolHandler.SETTINGS_SET_CLIMATE_INNER_STATE}"
                         android:onClick="@{(view) -> clickHandler.onClickHandler(view,true)}"
-                        android:text="On"
+                        android:text="@string/ui_on"
                         app:layout_constraintStart_toStartOf="@+id/settings_automatic_entry_egress_radiogrp"
                         app:layout_constraintTop_toBottomOf="@+id/settings_automatic_entry_egress_radioButtonOff" />
 
@@ -76,7 +76,7 @@
                         style="?attr/settings_sounds_audio1_radiobutton"
                         android:checked="@{!dataPoolHandler.SETTINGS_SET_CLIMATE_INNER_STATE}"
                         android:onClick="@{(view) -> clickHandler.onClickHandler(view,false)}"
-                        android:text="Off"
+                        android:text="@string/ui_off"
                         app:layout_constraintStart_toStartOf="@+id/settings_automatic_entry_egress_radiogrp" />
 
 
@@ -105,7 +105,8 @@
                 <com.gm.settingsapp.ui.customview.SkewTextView
                     android:id="@+id/settings_automatic_entry_egress_text"
                     style="?attr/settings_sounds_audio1_text"
-                    android:text="@{dataPoolHandler.SETTINGS_SET_CLIMATE_INNER_DES}"
+
+                    android:text="@string/settings_automatic_entry_egress_assist_content"
                     app:layout_constraintBottom_toBottomOf="parent"
                     bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
 

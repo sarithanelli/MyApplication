@@ -34,6 +34,7 @@
                 bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
 
                 <include
+                    android:id="@+id/settings_my_mode_vehicle_steering_top_bar"
                     style="?attr/settings_match_wrap_style"
                     layout="@layout/uil_ta_hc_topbar_layout"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -45,19 +46,19 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline_vertical_my_mode_steering_start"
+            android:id="@+id/settings_vehicle_my_mode_steering_guideline_vertical_start"
             style="?attr/settings_wrap_wrap_style"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.6" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline_vertical_my_mode_steering_end"
+            android:id="@+id/settings_vehicle_my_mode_steering_guideline_vertical_end"
             style="?attr/settings_wrap_wrap_style"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.98" />
 
         <com.gm.uisdk.views.GMRecyclerView
-            android:id="@+id/recycler_view_settings_steering_recycler_view"
+            android:id="@+id/settings_vehicle_my_mode_steering_recyceler_view"
             style="?attr/settings_time_date_time_zone_recycler"
             app:fastScrollArrowRadius="@integer/fastScrollArrowRadius"
             app:fastScrollBarBgColor="@android:color/transparent"
@@ -67,7 +68,7 @@
             app:fastScrollTrackColor="@color/track_color"
             app:fastScrollType="@{dataPoolHandler.SETTINGS_MYMODE_STEERING.size() > 6 ? 1 : 0}"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical_my_mode_steering_start"
+            app:layout_constraintEnd_toStartOf="@+id/settings_vehicle_my_mode_steering_guideline_vertical_start"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/settings_vehicle_my_mode_steering_card_view"
             bind:childLayout="@{@layout/uil_settings_list_row_mymode_steering}"
@@ -76,24 +77,24 @@
         </com.gm.uisdk.views.GMRecyclerView>
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline_horizontal_my_mode_steering_end"
+            android:id="@+id/settings_vehicle_my_mode_steering_guideline_horizontal_end"
             style="?attr/settings_wrap_wrap_style"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.98" />
 
         <ScrollView
-            android:id="@+id/scroll_view_my_mode_steering"
+            android:id="@+id/settings_vehicle_my_mode_steering_scroll_view"
             style="?attr/settings_scroll_view"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_constraintEnd_toEndOf="@+id/guideline_vertical_my_mode_steering_end"
+            app:layout_constraintEnd_toEndOf="@+id/settings_vehicle_my_mode_steering_guideline_vertical_end"
             app:layout_constraintHeight_percent="0.13"
-            app:layout_constraintStart_toEndOf="@+id/guideline_vertical_my_mode_steering_start"
+            app:layout_constraintStart_toEndOf="@+id/settings_vehicle_my_mode_steering_guideline_vertical_start"
             app:layout_constraintTop_toBottomOf="@+id/settings_vehicle_my_mode_steering_card_view"
             app:layout_constraintWidth_percent="0.36">
 
             <com.gm.settingsapp.ui.customview.SkewTextView
-                android:id="@+id/ui_settings_my_mode_steering_text_view"
+                android:id="@+id/settings_vehicle_my_mode_steering_text_view"
                 style="?attr/text_material_content_text"
                 android:layout_gravity="center_vertical"
                 android:text="@string/settings_steering_content"
@@ -104,13 +105,14 @@
         </ScrollView>
 
         <ImageView
+            android:id="@+id/settings_vehicle_my_mode_steering_image_view"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:src="@drawable/img_engine_sound"
-            app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal_my_mode_steering_end"
-            app:layout_constraintEnd_toEndOf="@+id/guideline_vertical_my_mode_steering_end"
-            app:layout_constraintStart_toStartOf="@+id/guideline_vertical_my_mode_steering_start"
-            app:layout_constraintTop_toBottomOf="@+id/scroll_view_my_mode_steering" />
+            app:layout_constraintBottom_toTopOf="@+id/settings_vehicle_my_mode_steering_guideline_horizontal_end"
+            app:layout_constraintEnd_toEndOf="@+id/settings_vehicle_my_mode_steering_guideline_vertical_end"
+            app:layout_constraintStart_toStartOf="@+id/settings_vehicle_my_mode_steering_guideline_vertical_start"
+            app:layout_constraintTop_toBottomOf="@+id/settings_vehicle_my_mode_steering_scroll_view" />
     </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
 
 </layout>

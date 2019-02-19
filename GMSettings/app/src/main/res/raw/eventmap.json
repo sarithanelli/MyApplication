@@ -676,5 +676,11 @@
     "eventName": "eAutoRunningBoards",
     "activityName": "SettingsAutomaticRunningBoardsActivity",
     "isProcess": "false"
+  },
+  "eAutomaticEntry": {
+    "eventType": "navigate",
+    "eventName": "eAutomaticEntry",
+    "activityName": "SettingsVehicleComfortAutomaticEntryActivity",
+    "isProcess": "false"
   }
 }

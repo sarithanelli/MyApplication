@@ -92,7 +92,9 @@
     "eMMSuspension":"eMMSuspension",
     "eMMBrake":"eMMBrake",
     "eComfort":"eComfort",
-    "eAutoRunningBoards":"eAutoRunningBoards"
+    "eAutoRunningBoards":"eAutoRunningBoards",
+    "eAutomaticEntry":"eAutomaticEntry"
+
   },
   "events_activity_action_map_custom": {
     "evG_WiFiHotspot": "com.gm.connectionwifi.action.evG_WiFiHotspot",

@@ -646,6 +646,16 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.activities.SettingsVehicleComfortAutomaticEntryActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|orientation">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.eAutomaticEntry" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
 
     </application>

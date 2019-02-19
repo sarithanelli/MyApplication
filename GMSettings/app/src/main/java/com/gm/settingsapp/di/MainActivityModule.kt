@@ -207,5 +207,7 @@ abstract class MainActivityModule {
     abstract fun SettingsComfortAndConvenienceActivity(): SettingsComfortAndConvenienceActivity
     @ContributesAndroidInjector
     abstract fun SettingsAutomaticRunningBoardsActivity(): SettingsAutomaticRunningBoardsActivity
+    @ContributesAndroidInjector
+    abstract fun SettingsVehicleComfortAutomaticEntryActivity(): SettingsVehicleComfortAutomaticEntryActivity
 
 }

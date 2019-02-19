@@ -7,7 +7,7 @@ import com.gm.settingsapp.R
 import com.gm.settingsapp.databinding.SettingsComfortConvenienceBinding
 import com.gm.settingsapp.databinding.SettingsMyModeActivityBinding
 import com.gm.settingsapp.viewmodels.Constants
-import com.gm.settingsapp.viewmodels.Constants.C_AUTO_EGRESS_ASSIST
+import com.gm.settingsapp.viewmodels.Constants.C_AUTO_ENTRY
 import com.gm.settingsapp.viewmodels.Constants.C_AUTO_MEMORY_RECALL
 import com.gm.settingsapp.viewmodels.Constants.C_AUTO_RUNNING_BOARDS
 import com.gm.settingsapp.viewmodels.Constants.C_AUTO_WIPE_IN_REVERSE_GEAR
@@ -47,7 +47,7 @@ class SettingsComfortAndConvenienceActivity : BaseActivity() {
         dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.clear()
 
         dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_automatic_running_boards_long),C_AUTO_RUNNING_BOARDS))
-        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_automatic_entry_egress_assist),C_AUTO_EGRESS_ASSIST))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_automatic_entry_egress_assist),C_AUTO_ENTRY))
         dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_auto_memory_recall), C_AUTO_MEMORY_RECALL))
         dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_easy_exit_driver_seat), C_EASY_EXIT_SEAT))
         dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_easy_exit_steering_column), C_EASY_EXIT_STEERING_COLUMN))
@@ -74,9 +74,19 @@ class SettingsComfortAndConvenienceActivity : BaseActivity() {
     override fun onEventResponse(view: View, obj: Any?) {
         when ((obj as ComfortAndConvenienceModel).ref) {
             C_AUTO_RUNNING_BOARDS -> view.tag = Constants.AUTOMATIC_RUNNING_BOARDS
-           /* MY_MODE_STEERING -> view.tag = Constants.MYMODE_STEERING_TAG
-            MY_MODE_SUSPENSION -> view.tag = Constants.MYMODE_SUSPENSION_TAG
-            MY_MODE_BRAKE -> view.tag = Constants.MYMODE_BRAKE_TAG*/
+            C_AUTO_ENTRY -> view.tag = Constants.AUTOMATIC_ENTRY
+            C_AUTO_MEMORY_RECALL -> view.tag = Constants.AUTOMATIC_ENTRY
+            C_EASY_EXIT_SEAT -> view.tag = Constants.AUTOMATIC_ENTRY
+            C_EASY_EXIT_OPTIONS -> view.tag = Constants.AUTOMATIC_ENTRY
+            C_REVERSE_TILT_MIRROR -> view.tag = Constants.AUTOMATIC_ENTRY
+            C_REMOTE_MIRROR_FOLDING -> view.tag = Constants.AUTOMATIC_ENTRY
+            C_PERSONALIZATION_BY_DRIVER -> view.tag = Constants.AUTOMATIC_ENTRY
+            C_AUTO_WIPE_IN_REVERSE_GEAR -> view.tag = Constants.AUTOMATIC_ENTRY
+            C_EASY_EXIT_STEERING_COLUMN -> view.tag = Constants.AUTOMATIC_RUNNING_BOARDS
+            C_CHIME_VOLUME -> view.tag = Constants.AUTOMATIC_RUNNING_BOARDS
+            C_POWER_LIFTGATE -> view.tag = Constants.AUTOMATIC_RUNNING_BOARDS
+            C_RAIN_SENSE_WIPERS -> view.tag = Constants.AUTOMATIC_RUNNING_BOARDS
+            C_HANDSFREE_LIFTGATE -> view.tag = Constants.AUTOMATIC_RUNNING_BOARDS
         }
     }
 }
