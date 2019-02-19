@@ -9,7 +9,7 @@
 
         <variable
             name="obj"
-            type="String" />
+            type="com.gm.settingsservice.models.ComfortAndConvenienceModel" />
 
         <variable
             name="clickHandler"
@@ -29,18 +29,17 @@
 
     <com.gm.settingsapp.ui.customview.SkewConstraintLayout
         style="?attr/settings_skewlayout"
+        android:onClick="@{(view) -> clickHandler.onItemClickHandler(view,obj)}"
         bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
 
         <TextView
             android:id="@+id/settings_comfort_convenience_primary_txt"
-            style="?attr/settings_layout_text"
-            android:layout_width="0dp"
+            style="?attr/settings_language_text_medium"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{obj}"
+            android:text="@{obj.primaryData}"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/settings_comfort_convenience_guideline"
-            app:layout_constraintHeight_percent="0.6"
-            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintHeight_percent="0.7"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintWidth_percent="0.25" />
@@ -57,12 +56,12 @@
             app:layout_constraintTop_toBottomOf="@id/settings_comfort_convenience_primary_txt"
             app:layout_constraintWidth_percent="0.25" />
 -->
-        <androidx.constraintlayout.widget.Guideline
+     <!--   <androidx.constraintlayout.widget.Guideline
             android:id="@+id/settings_comfort_convenience_guideline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.25" />
+            app:layout_constraintGuide_percent="0.25" />-->
     <ImageButton
         android:id="@+id/settings_comfort_convenience_img_button"
         android:layout_width="0dp"
@@ -72,7 +71,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintWidth_percent="0.05"
+        app:layout_constraintWidth_percent="0.12"
         />
 
     </com.gm.settingsapp.ui.customview.SkewConstraintLayout>

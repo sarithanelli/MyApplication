@@ -626,6 +626,26 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.activities.SettingsComfortAndConvenienceActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|orientation">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.eComfort" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SettingsAutomaticRunningBoardsActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|orientation">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.eAutoRunningBoards" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
 
     </application>

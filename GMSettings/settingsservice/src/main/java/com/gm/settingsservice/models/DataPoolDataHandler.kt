@@ -611,6 +611,8 @@ import androidx.databinding.ObservableField
 
    val SETTINGS_MYMODE_MENU = ObservableArrayList<MyModeModel>()
    val SETTINGS_VMODE_MENU = ObservableArrayList<VModeModel>()
+   val SETTINGS_COMFORT_AND_CONVENIENCE = ObservableArrayList<ComfortAndConvenienceModel>()
+
 
    val SETTINGS_MYMODE_ENGINE = ObservableArrayList<String>()
    val SETTINGS_VMODE_ENGINE = ObservableArrayList<String>()
@@ -626,5 +628,7 @@ import androidx.databinding.ObservableField
    val SETTINGS_MYMODE_SUSPENSION_POS = ObservableField<Int>(0)
    val SETTINGS_MYMODE_BRAKE_POS = ObservableField<Int>(0)
    val SETTINGS_VMODE_POWER_TRAIN_POS = ObservableField<Int>(0)
+
+
 
 }

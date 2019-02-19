@@ -9,7 +9,7 @@
 
         <variable
             name="obj"
-            type="String" />
+            type="com.gm.settingsservice.models.ComfortAndConvenienceModel" />
 
         <variable
             name="clickHandler"
@@ -26,22 +26,24 @@
 
     </data>
 
+
     <com.gm.settingsapp.ui.customview.SkewConstraintLayout
         style="?attr/settings_skewlayout"
+        android:onClick="@{(view) -> clickHandler.onItemClickHandler(view,obj)}"
         bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
 
         <TextView
             android:id="@+id/settings_comfort_convenience_primary_txt"
-            style="?attr/settings_layout_text"
-            android:layout_width="0dp"
+            style="?attr/settings_language_text_medium"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{obj}"
+            android:text="@{obj.primaryData}"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHeight_percent="0.8"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintWidth_percent="0.25" />
 
+<!--
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/settings_comfort_convenience_guideline"
@@ -49,6 +51,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.25" />
+-->
 
         <ImageButton
             android:id="@+id/settings_comfort_convenience_img_button"
@@ -58,8 +61,9 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintWidth_percent="0.05"
+            app:layout_constraintWidth_percent="0.12"
             app:srcCompat="@drawable/ic_icn_next" />
 
     </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+
 </layout>

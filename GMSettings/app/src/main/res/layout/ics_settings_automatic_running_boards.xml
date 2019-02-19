@@ -23,7 +23,6 @@
             name="position"
             type="Integer" />
 
-        <import type="com.gm.settingsservice.models.eSettingsdisplayMode" />
 
     </data>
 
@@ -66,14 +65,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:button="@null"
-                    android:checked="@{dataPoolHandler.SETTINGS_DISPLAYMODETYPE==eSettingsdisplayMode.SETTINGS_DISPLAY_MODE_AUTO}"
                     android:drawableStart="@drawable/img_ta_radiobutton_themeb"
                     android:drawablePadding="@dimen/onoffbutton_padding_end"
                     android:fontFamily="@font/gmsansui_medium"
-                    android:onClick="@{(view) -> clickHandler.onClickHandler(view,eSettingsdisplayMode.SETTINGS_DISPLAY_MODE_AUTO)}"
                     android:padding="@dimen/onoffbutton_padding"
                     android:tag="eModeType"
-                    android:text="@string/settings_auto"
+                    android:text="@string/ui_off"
                     android:textAlignment="viewStart"
                     android:textSize="@dimen/radio_btn_text_size"
                     app:layout_constraintStart_toStartOf="@+id/settings_automatic_running_board_radio_group" />
@@ -84,14 +81,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:button="@null"
-                    android:checked="@{dataPoolHandler.SETTINGS_DISPLAYMODETYPE==eSettingsdisplayMode.SETTINGS_DISPLAY_MODE_DAY}"
                     android:drawableStart="@drawable/img_ta_radiobutton_themeb"
                     android:drawablePadding="@dimen/onoffbutton_padding_end"
                     android:fontFamily="@font/gmsansui_medium"
-                    android:onClick="@{(view) -> clickHandler.onClickHandler(view,eSettingsdisplayMode.SETTINGS_DISPLAY_MODE_DAY)}"
                     android:padding="@dimen/onoffbutton_padding"
                     android:tag="eModeType"
-                    android:text="@string/settings_display_mode_day"
+                    android:text="@string/ui_on"
                     android:textAlignment="viewStart"
                     android:textSize="@dimen/radio_btn_text_size"
                     app:layout_constraintStart_toStartOf="@+id/settings_automatic_running_board_radio_group"
@@ -103,14 +98,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:button="@null"
-                    android:checked="@{dataPoolHandler.SETTINGS_DISPLAYMODETYPE==eSettingsdisplayMode.SETTINGS_DISPLAY_MODE_NIGHT}"
                     android:drawableStart="@drawable/img_ta_radiobutton_themeb"
                     android:drawablePadding="@dimen/onoffbutton_padding_end"
                     android:fontFamily="@font/gmsansui_medium"
-                    android:onClick="@{(view) -> clickHandler.onClickHandler(view,eSettingsdisplayMode.SETTINGS_DISPLAY_MODE_NIGHT)}"
                     android:padding="@dimen/onoffbutton_padding"
                     android:tag="eModeType"
-                    android:text="@string/settings_display_mode_night"
+                    android:text="@string/settings_extended"
                     android:textAlignment="viewStart"
                     android:textSize="@dimen/radio_btn_text_size"
                     app:layout_constraintStart_toStartOf="@+id/settings_automatic_running_board_radio_group"
