@@ -4,13 +4,11 @@ import android.app.ActivityManager
 import android.app.AlarmManager
 import android.app.admin.DevicePolicyManager
 import android.content.Context
-import android.content.pm.IPackageStatsObserver
 import android.content.pm.PackageManager
 import android.content.pm.PackageStats
 import android.os.*
 import android.provider.Settings
 import android.text.format.Formatter
-import com.android.internal.app.LocalePicker
 import com.gm.settingsservice.apiintegration.SettingsService
 import com.gm.settingsservice.apiintegration.SystemListener
 import com.gm.settingsservice.apiintegration.apiinterfaces.IManager
@@ -24,23 +22,12 @@ import com.gm.settingsservice.utils.Constants.ENABLE_SETTING
 import com.gm.settingsservice.utils.Constants.HOURS_12
 import com.gm.settingsservice.utils.Constants.HOURS_24
 import dagger.Lazy
-import gm.content.LanguageInfo
-import gm.content.SupportedLanguageListData
-import gm.media.audio.VehicleAudioManager
-import gm.panel.Panel
-import gm.powermode.PowerModeManager
-import gm.vehicle.DateAndTime
 import java.util.*
 import kotlin.collections.ArrayList
-import gm.vehicle.Customization
 import javax.inject.Inject
-import android.security.KeyStore.getApplicationContext
-import com.gm.settings.core.SetupDomainUseCase
 import com.gm.settings.entities.vehiclesettings.ClimateAndAirQuality
 import com.gm.settings.entities.vehiclesettings.VehicleSettings
-import com.gm.settings.events.VehicleEvent
 import com.gm.settings.usecases.vehicle.GetVehicleSettingsOptionsUseCase
-import kotlinx.android.synthetic.*
 
 
 /**
@@ -205,8 +192,56 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
         mCustomization.setAirQualitySensorCustomizationChangeSettingRequest(any as Int)
     }
 
+
+    val getUpdatedClimateUseCase = GetVehicleSettingsOptionsUseCase()
     override fun onSETTINGS_REQ_CLIMATE_MENU_LIST(any: Any) {
-        systemListener.onSETTINGS_RES_CLIMATE_MENU_LIST()
+        //   systemListener.onSETTINGS_RES_CLIMATE_MENU_LIST()
+        try {
+            val result  = getUpdatedClimateUseCase.executeSync().availableOptions  as List<ClimateAndAirQuality>
+            result.forEach {
+                when (it) {
+                    ClimateAndAirQuality.AUTO_FAN_SPEED -> {
+                        //avoid user access for example
+                    }
+                    ClimateAndAirQuality.AIR_QUALITY_SENSOR -> {
+                        //avoid user access for example
+                    }
+                    ClimateAndAirQuality.POLLUTION_CONTROL -> {
+                        //avoid user access for example
+                    }
+                    ClimateAndAirQuality.AUTO_COOLED_SEATS -> {
+                        //avoid user access for example
+                    }
+                    ClimateAndAirQuality.AUTO_HEATED_SEATS -> {
+                        //avoid user access for example
+                    }
+                    ClimateAndAirQuality.REAR_CLIMATE_ON_STARTUP -> {
+                        //avoid user access for example
+                    }
+                    ClimateAndAirQuality.AUTO_DEFOG -> {
+                        //avoid user access for example
+                    }
+                    ClimateAndAirQuality.AUTO_REAR_DEFOG -> {
+                        //avoid user access for example
+                    }
+                    ClimateAndAirQuality.RAPID_HEAT_ELEVATED_IDLE -> {
+                        //avoid user access for example
+                    }
+                    ClimateAndAirQuality.AUTO_AIR_DISTRIBUTION -> {
+                        //avoid user access for example
+                    }
+                    ClimateAndAirQuality.IONIZER -> {
+                        //avoid user access for example
+                    }
+                }
+            }
+
+
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+
+
     }
 
 
@@ -245,7 +280,10 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
     }
 
     override fun onCUSTOMIZATIONECC_REQ_SETAUTOFANSETTING(any: Any) {
+
         mCustomization.setAutomaticFanCustomizationChangeSettingRequest(any as Int)
+
+
     }
 
     override fun onCUSTOMIZATIONECC_REQ_SETAUTOAIRDISTRSETTINGS(any: Any) {
@@ -253,7 +291,7 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
     }
 
     override fun onCUSTOMIZATIONECC_REQ_SETPOLLUTIONCONTROLSETTINGS(any: Any) {
-        val value: Int = if (any is ClimateModeModel) {
+        var value: Int = if (any is ClimateModeModel) {
             if (any.isToggleState) {
                 CLIMATE_ENABLE_SETTING
             } else {
@@ -266,6 +304,10 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
                 CLIMATE_DISABLE_SETTING
             }
         }
+
+       // ClimateAndAirQuality.valueOf(ClimateAndAirQuality.POLLUTION_CONTROL.name).
+     //    SetVehicleSettingsOptionAsActiveUseCase().execute()
+
         mCustomization.setPollutionControlCustomizationChangeSettingRequest(value)
     }
 
@@ -568,7 +610,7 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
         systemListener.onSETTINGS_RES_AUTOMATICTIMEZONE()
     }
 
-   // var vehicleAudioManager: VehicleAudioManager = VehicleAudioManager(SettingsService.appContext)
+    // var vehicleAudioManager: VehicleAudioManager = VehicleAudioManager(SettingsService.appContext)
 
     override fun onSETTINGS_REQ_GETMAXSTARTUPVOLUME() {
         // for progress bar setMax value
