@@ -627,4 +627,10 @@ import androidx.databinding.ObservableField
    val SETTINGS_MYMODE_BRAKE_POS = ObservableField<Int>(0)
    val SETTINGS_VMODE_POWER_TRAIN_POS = ObservableField<Int>(0)
 
+
+   val SETTINGS_COLLISION_LIST =  ObservableArrayList<CollisionModeModel>()
+   val SETTINGS_PEDESTRIAN_DETECTION = ObservableArrayList<String>()
+
+   val SETTINGS_COLLISION_RECYCLER_VIEW = ObservableField<Int>(0)
+
 }

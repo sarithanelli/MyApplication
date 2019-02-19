@@ -73,6 +73,17 @@ data class AppsModeModel(
 
 ) : Parcelable
 
+/* Model to create data for apps*/
+
+data class CollisionModeModel(
+        var primaryData: String,
+        var isToggleVisible: Boolean,
+        var isToggleState: Boolean,
+        val reference: Int,
+        val description: String,
+        var isArrowVisible:Boolean
+)
+
 
 /**
  * Model to create data for Audio
