@@ -51,13 +51,13 @@
             android:id="@+id/settings_vehicle_v_mode_engine_sound_guideline_vertical_start"
             style="?attr/settings_wrap_wrap_style"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.6" />
+            app:layout_constraintGuide_percent="0.4" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/settings_vehicle_v_mode_engine_sound_guideline_vertical_end"
             style="?attr/settings_wrap_wrap_style"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.98" />
+            app:layout_constraintGuide_percent="0.02" />
 
         <com.gm.uisdk.views.GMRecyclerView
             android:id="@+id/settings_v_mode_engine_sound_view_recycler_view"
@@ -70,8 +70,8 @@
             app:fastScrollTrackColor="@color/track_color"
             app:fastScrollType="@{dataPoolHandler.SETTINGS_VMODE_ENGINE.size() > 6 ? 1 : 0}"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/settings_vehicle_v_mode_engine_sound_guideline_vertical_start"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/settings_vehicle_v_mode_engine_sound_guideline_vertical_start"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/settings_vehicle_v_mode_engine_sound_card_view"
             bind:childLayout="@{@layout/uil_settings_list_row_vmode_engine_sound}"
             bind:items="@{dataPoolHandler.SETTINGS_VMODE_ENGINE}">
@@ -89,9 +89,9 @@
             style="?attr/settings_scroll_view"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_constraintEnd_toEndOf="@+id/settings_vehicle_v_mode_engine_sound_guideline_vertical_end"
+            app:layout_constraintStart_toStartOf ="@+id/settings_vehicle_v_mode_engine_sound_guideline_vertical_end"
             app:layout_constraintHeight_percent="0.13"
-            app:layout_constraintStart_toEndOf="@+id/settings_vehicle_v_mode_engine_sound_guideline_vertical_start"
+            app:layout_constraintEnd_toStartOf="@+id/settings_vehicle_v_mode_engine_sound_guideline_vertical_start"
             app:layout_constraintTop_toBottomOf="@+id/settings_vehicle_v_mode_engine_sound_card_view"
             app:layout_constraintWidth_percent="0.36">
 
@@ -112,8 +112,8 @@
             android:layout_height="0dp"
             android:src="@drawable/img_engine_sound"
             app:layout_constraintBottom_toTopOf="@+id/settings_vehicle_v_mode_engine_sound_guideline_horizontal_end"
-            app:layout_constraintEnd_toEndOf="@+id/settings_vehicle_v_mode_engine_sound_guideline_vertical_end"
-            app:layout_constraintStart_toStartOf="@+id/settings_vehicle_v_mode_engine_sound_guideline_vertical_start"
+            app:layout_constraintEnd_toEndOf="@+id/settings_vehicle_v_mode_engine_sound_guideline_vertical_start"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/settings_vehicle_v_mode_engine_sound_scrollView" />
     </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
 

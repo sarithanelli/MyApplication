@@ -26,7 +26,7 @@ class SettingsVehicleVModePowertrainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         AndroidInjection.inject(this)
         super.onCreate(savedInstanceState)
-        val binding = setContentSubView(R.layout.ics_settings_vmode_powertrain) as SettingsVehicleVModePowerActivityBinding
+        val binding = setContentSubView(R.layout.ics_settings_vehicle_vmode_powertrain) as SettingsVehicleVModePowerActivityBinding
         binding.let {
             it?.clickHandler = eventHandler
             it?.dataPoolHandler = dataPoolDataHandler
