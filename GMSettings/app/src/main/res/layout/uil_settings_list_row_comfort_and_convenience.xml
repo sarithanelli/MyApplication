@@ -9,7 +9,7 @@
 
         <variable
             name="obj"
-            type="com.gm.settingsservice.models.ComfortAndConvenience" />
+            type="String" />
 
         <variable
             name="clickHandler"
@@ -35,7 +35,7 @@
             style="?attr/settings_layout_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@{obj.primaryData}"
+            android:text="@{obj}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHeight_percent="0.8"
             app:layout_constraintStart_toStartOf="parent"

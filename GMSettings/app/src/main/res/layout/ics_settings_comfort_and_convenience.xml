@@ -54,12 +54,8 @@
             style="?attr/settings_recyclerview"
             app:fastScrollArrowRadius="@integer/fastScrollArrowRadius"
             app:fastScrollBarWidth="@integer/fastScrollBarWidth"
-            app:fastScrollType="@{dataPoolHandler.SETTINGS_COMFORT_AND_CONVENIENCE.size() > 6 ? 1 : 0}"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/settings_comfort_convenience_card_view"
-            bind:childLayout="@{@layout/uil_settings_list_row_comfort_and_convenience}"
-            bind:items="@{dataPoolHandler.SETTINGS_COMFORT_AND_CONVENIENCE}"
-           >
+            app:layout_constraintTop_toBottomOf="@+id/settings_comfort_convenience_card_view">
 
         </com.gm.uisdk.views.GMRecyclerView>
     </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
