@@ -4,6 +4,10 @@ import android.app.Service
 import android.content.Context
 import android.content.Intent
 import android.os.IBinder
+import com.gm.settings.core.EventBus
+import com.gm.settings.events.ConnectivityEvent
+import com.gm.settings.events.SystemEvents
+import com.gm.settings.events.VehicleEvent
 import com.gm.settingsservice.BuildConfig
 import dagger.android.AndroidInjection
 import java.util.*

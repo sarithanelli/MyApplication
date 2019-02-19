@@ -34,6 +34,13 @@ import java.util.*
 import kotlin.collections.ArrayList
 import gm.vehicle.Customization
 import javax.inject.Inject
+import android.security.KeyStore.getApplicationContext
+import com.gm.settings.core.SetupDomainUseCase
+import com.gm.settings.entities.vehiclesettings.ClimateAndAirQuality
+import com.gm.settings.entities.vehiclesettings.VehicleSettings
+import com.gm.settings.events.VehicleEvent
+import com.gm.settings.usecases.vehicle.GetVehicleSettingsOptionsUseCase
+import kotlinx.android.synthetic.*
 
 
 /**
@@ -44,7 +51,7 @@ import javax.inject.Inject
  *  these funcs usually start after proxy constructor func in CAMFMProxy.cpp
  *  This should exclude all the functions under RecvData func, as the func in RecvData only corresponds to RES functions
  */
-class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHandler, val systemListener: SystemListener, val  utility: Utility, val settingsManager: SettingsManager, val vehicleAudioManager: dagger.Lazy<VehicleAudioManager>, val context: Context, val mCustomization : Customization, val supportedLanguageListData: Lazy<SupportedLanguageListData>): IManager, ApplicationsState.Callbacks {
+class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHandler, val systemListener: SystemListener, val  utility: Utility, val gmsettingsManager: GMSettingsManager, val vehicleAudioManager: dagger.Lazy<VehicleAudioManager>, val context: Context, val mCustomization : Customization, val supportedLanguageListData: Lazy<SupportedLanguageListData>): IManager, ApplicationsState.Callbacks {
 
     override fun onSETTINGS_MANAGE_SET_FAV() {
         systemListener.onSETTINGS_MANAGE_RES_FAV()
@@ -111,7 +118,24 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
      *Request for set engine sound type
      */
     override fun onSETTINGS_REQ_SETENGINESOUNDTYPE(any: Any) {
-        val value = dataPoolDataHandler.ENGINESOUND_MAP.get(any.toString())!!
+
+        val getVehicleSettingsOptionsUseCase = GetVehicleSettingsOptionsUseCase()
+        getVehicleSettingsOptionsUseCase.execute(object : com.gm.settings.core.Observer.Acceptor<VehicleSettings> {
+            override fun onReceived(p0: VehicleSettings?) {
+                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+            }
+
+            override fun onError(p0: Throwable?) {
+                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+            }
+
+
+        })
+
+
+
+          val value = dataPoolDataHandler.ENGINESOUND_MAP.get(any.toString())!!
         mCustomization.setSoundPerformanceModeCustomizationSettingRequest(value)
     }
 
@@ -335,7 +359,7 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
 
 
     override fun initListeners() {
-        settingsManager.initListeners()
+        gmsettingsManager.initListeners()
     }
 
     private var mSupportedLanguageKeys: ArrayList<Int>? = null
