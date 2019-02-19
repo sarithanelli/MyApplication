@@ -24,16 +24,19 @@ import com.gm.settingsservice.utils.Constants.ENABLE_SETTING
 import com.gm.settingsservice.utils.Constants.HOURS_12
 import com.gm.settingsservice.utils.Constants.HOURS_24
 import dagger.Lazy
+import java.util.*
+import kotlin.collections.ArrayList
+import javax.inject.Inject
+import com.gm.settings.entities.vehiclesettings.ClimateAndAirQuality
+import com.gm.settings.entities.vehiclesettings.VehicleSettings
+import com.gm.settings.usecases.vehicle.GetVehicleSettingsOptionsUseCase
 import gm.content.LanguageInfo
 import gm.content.SupportedLanguageListData
 import gm.media.audio.VehicleAudioManager
 import gm.panel.Panel
 import gm.powermode.PowerModeManager
-import gm.vehicle.DateAndTime
-import java.util.*
-import kotlin.collections.ArrayList
 import gm.vehicle.Customization
-import javax.inject.Inject
+import gm.vehicle.DateAndTime
 
 
 /**
@@ -44,7 +47,7 @@ import javax.inject.Inject
  *  these funcs usually start after proxy constructor func in CAMFMProxy.cpp
  *  This should exclude all the functions under RecvData func, as the func in RecvData only corresponds to RES functions
  */
-class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHandler, val systemListener: SystemListener, val  utility: Utility, val settingsManager: SettingsManager, val vehicleAudioManager: dagger.Lazy<VehicleAudioManager>, val context: Context, val mCustomization : Customization, val supportedLanguageListData: Lazy<SupportedLanguageListData>): IManager, ApplicationsState.Callbacks {
+class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHandler, val systemListener: SystemListener, val  utility: Utility, val gmsettingsManager: GMSettingsManager, val vehicleAudioManager: dagger.Lazy<VehicleAudioManager>, val context: Context, val mCustomization : Customization, val supportedLanguageListData: Lazy<SupportedLanguageListData>): IManager, ApplicationsState.Callbacks {
 
     override fun onSETTINGS_MANAGE_SET_FAV() {
         systemListener.onSETTINGS_MANAGE_RES_FAV()
@@ -111,7 +114,24 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
      *Request for set engine sound type
      */
     override fun onSETTINGS_REQ_SETENGINESOUNDTYPE(any: Any) {
-        val value = dataPoolDataHandler.ENGINESOUND_MAP.get(any.toString())!!
+
+        val getVehicleSettingsOptionsUseCase = GetVehicleSettingsOptionsUseCase()
+        getVehicleSettingsOptionsUseCase.execute(object : com.gm.settings.core.Observer.Acceptor<VehicleSettings> {
+            override fun onReceived(p0: VehicleSettings?) {
+                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+            }
+
+            override fun onError(p0: Throwable?) {
+                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+            }
+
+
+        })
+
+
+
+          val value = dataPoolDataHandler.ENGINESOUND_MAP.get(any.toString())!!
         mCustomization.setSoundPerformanceModeCustomizationSettingRequest(value)
     }
 
@@ -181,8 +201,56 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
         mCustomization.setAirQualitySensorCustomizationChangeSettingRequest(any as Int)
     }
 
+
+    val getUpdatedClimateUseCase = GetVehicleSettingsOptionsUseCase()
     override fun onSETTINGS_REQ_CLIMATE_MENU_LIST(any: Any) {
-        systemListener.onSETTINGS_RES_CLIMATE_MENU_LIST()
+        //   systemListener.onSETTINGS_RES_CLIMATE_MENU_LIST()
+        try {
+            val result  = getUpdatedClimateUseCase.executeSync().availableOptions  as List<ClimateAndAirQuality>
+            result.forEach {
+                when (it) {
+                    ClimateAndAirQuality.AUTO_FAN_SPEED -> {
+                        //avoid user access for example
+                    }
+                    ClimateAndAirQuality.AIR_QUALITY_SENSOR -> {
+                        //avoid user access for example
+                    }
+                    ClimateAndAirQuality.POLLUTION_CONTROL -> {
+                        //avoid user access for example
+                    }
+                    ClimateAndAirQuality.AUTO_COOLED_SEATS -> {
+                        //avoid user access for example
+                    }
+                    ClimateAndAirQuality.AUTO_HEATED_SEATS -> {
+                        //avoid user access for example
+                    }
+                    ClimateAndAirQuality.REAR_CLIMATE_ON_STARTUP -> {
+                        //avoid user access for example
+                    }
+                    ClimateAndAirQuality.AUTO_DEFOG -> {
+                        //avoid user access for example
+                    }
+                    ClimateAndAirQuality.AUTO_REAR_DEFOG -> {
+                        //avoid user access for example
+                    }
+                    ClimateAndAirQuality.RAPID_HEAT_ELEVATED_IDLE -> {
+                        //avoid user access for example
+                    }
+                    ClimateAndAirQuality.AUTO_AIR_DISTRIBUTION -> {
+                        //avoid user access for example
+                    }
+                    ClimateAndAirQuality.IONIZER -> {
+                        //avoid user access for example
+                    }
+                }
+            }
+
+
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+
+
     }
 
 
@@ -221,7 +289,10 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
     }
 
     override fun onCUSTOMIZATIONECC_REQ_SETAUTOFANSETTING(any: Any) {
+
         mCustomization.setAutomaticFanCustomizationChangeSettingRequest(any as Int)
+
+
     }
 
     override fun onCUSTOMIZATIONECC_REQ_SETAUTOAIRDISTRSETTINGS(any: Any) {
@@ -229,7 +300,7 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
     }
 
     override fun onCUSTOMIZATIONECC_REQ_SETPOLLUTIONCONTROLSETTINGS(any: Any) {
-        val value: Int = if (any is ClimateModeModel) {
+        var value: Int = if (any is ClimateModeModel) {
             if (any.isToggleState) {
                 CLIMATE_ENABLE_SETTING
             } else {
@@ -242,6 +313,10 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
                 CLIMATE_DISABLE_SETTING
             }
         }
+
+       // ClimateAndAirQuality.valueOf(ClimateAndAirQuality.POLLUTION_CONTROL.name).
+     //    SetVehicleSettingsOptionAsActiveUseCase().execute()
+
         mCustomization.setPollutionControlCustomizationChangeSettingRequest(value)
     }
 
@@ -335,7 +410,7 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
 
 
     override fun initListeners() {
-        settingsManager.initListeners()
+        gmsettingsManager.initListeners()
     }
 
     private var mSupportedLanguageKeys: ArrayList<Int>? = null
@@ -544,7 +619,7 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
         systemListener.onSETTINGS_RES_AUTOMATICTIMEZONE()
     }
 
-   // var vehicleAudioManager: VehicleAudioManager = VehicleAudioManager(SettingsService.appContext)
+    // var vehicleAudioManager: VehicleAudioManager = VehicleAudioManager(SettingsService.appContext)
 
     override fun onSETTINGS_REQ_GETMAXSTARTUPVOLUME() {
         // for progress bar setMax value

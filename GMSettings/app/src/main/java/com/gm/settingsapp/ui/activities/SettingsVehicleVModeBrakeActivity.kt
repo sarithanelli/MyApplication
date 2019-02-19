@@ -25,7 +25,7 @@ class SettingsVehicleVModeBrakeActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         AndroidInjection.inject(this)
         super.onCreate(savedInstanceState)
-        val binding = setContentSubView(R.layout.ics_settings_vmode_brake_feel) as SettingsVehicleVModeBrakeActivityBinding
+        val binding = setContentSubView(R.layout.ics_settings_vehicle_vmode_brake_feel) as SettingsVehicleVModeBrakeActivityBinding
         binding.let {
             it?.clickHandler = eventHandler
             it?.dataPoolHandler = dataPoolDataHandler

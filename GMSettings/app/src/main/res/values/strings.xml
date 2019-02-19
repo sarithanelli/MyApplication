@@ -2375,6 +2375,24 @@
         <item>@string/settings_snow_ice</item>
         <item>@string/settings_weather</item>
     </string-array>
+    <string-array name="comfort_and_convenience">
+        <item>@string/settings_automatic_running_boards_long</item>
+        <item>@string/settings_automatic_entry_egress_assist</item>
+        <item>@string/settings_auto_memory_recall</item>
+        <item>@string/settings_easy_exit_driver_seat</item>
+        <item>@string/settings_easy_exit_steering_column</item>
+        <item>@string/settings_easy_exit_options_big</item>
+        <item>@string/settings_chime_volume</item>
+        <item>@string/settings_power_liftgate</item>
+        <item>@string/settings_handsfree_liftgate_trunk_control</item>
+        <item>@string/settings_reverse_tilt_mirror</item>
+        <item>@string/settings_remote_mirror_folding_short</item>
+        <item>@string/settings_personalization_by_driver_big</item>
+        <item>@string/settings_rain_sense_wipers_big</item>
+        <item>@string/settings_auto_wipe_in_reverse_gear_big</item>
+        <item>@string/settings_automatic_vehicle_hold_long</item>
+
+    </string-array>
 
 
     

@@ -19,7 +19,7 @@ class SettingsVModeActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         AndroidInjection.inject(this)
         super.onCreate(savedInstanceState)
-        val binding = setContentSubView(R.layout.ics_settings_vmode) as SettingsVModeActivityBinding
+        val binding = setContentSubView(R.layout.ics_settings_vehicle_vmode) as SettingsVModeActivityBinding
         binding.let {
             it?.clickHandler = eventHandler
             it?.dataPoolHandler = dataPoolDataHandler

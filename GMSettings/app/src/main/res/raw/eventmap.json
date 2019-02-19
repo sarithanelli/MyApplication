@@ -599,7 +599,6 @@
     "activityName": "HTMLViewerActivity",
     "isProcess": "true"
   },
-
   "eMyMode": {
     "eventType": "navigate",
     "eventName": "eMyMode",
@@ -618,49 +617,49 @@
     "activityName": "SettingsVehicleVModeSteeringActivity",
     "isProcess": "false"
   },
-  "eMMEngine":{
+  "eMMEngine": {
     "eventType": "navigate",
     "eventName": "eMMEngine",
     "activityName": "SettingsVehicleMyModeEngineActivity",
     "isProcess": "false"
   },
-  "eVMSuspension":{
+  "eVMSuspension": {
     "eventType": "navigate",
     "eventName": "eVMSuspension",
     "activityName": "SettingsVehicleVModeSuspensionActivity",
     "isProcess": "false"
   },
-  "eMMSteering":{
+  "eMMSteering": {
     "eventType": "navigate",
     "eventName": "eMMSteering",
     "activityName": "SettingsVehicleMyModeSteeringActivity",
     "isProcess": "false"
   },
-  "eMMSuspension":{
+  "eMMSuspension": {
     "eventType": "navigate",
     "eventName": "eMMSuspension",
     "activityName": "SettingsVehicleMyModeSuspensionActivity",
     "isProcess": "false"
   },
-  "eMMBrake":{
+  "eMMBrake": {
     "eventType": "navigate",
     "eventName": "eMMBrake",
     "activityName": "SettingsVehicleMyModeBreakActivity",
     "isProcess": "false"
   },
-  "eVMBrake":{
+  "eVMBrake": {
     "eventType": "navigate",
     "eventName": "eVMBrake",
     "activityName": "SettingsVehicleVModeBrakeActivity",
     "isProcess": "false"
   },
-  "eVMPower":{
+  "eVMPower": {
     "eventType": "navigate",
     "eventName": "eVMPower",
     "activityName": "SettingsVehicleVModePowertrainActivity",
     "isProcess": "false"
   },
-  "eVModeEngine":{
+  "eVModeEngine": {
     "eventType": "navigate",
     "eventName": "eVMEngine",
     "activityName": "SettingsVehicleVModeEngineActivity",
@@ -688,7 +687,18 @@
     "eventType": "navigate",
     "eventName": "evGPedestrian",
     "activityName": "SettingsRearPedestrianDetectionActivity",
+
+  "eComfort": {
+    "eventType": "navigate",
+    "eventName": "eComfort",
+    "activityName": "SettingsComfortAndConvenienceActivity",
+    "isProcess": "false"
+  },
+  "eAutoRunningBoards": {
+    "eventType": "navigate",
+    "eventName": "eAutoRunningBoards",
+    "activityName": "SettingsAutomaticRunningBoardsActivity",
     "isProcess": "false"
   }
 
-}
+}}
