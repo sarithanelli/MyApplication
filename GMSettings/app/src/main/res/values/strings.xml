@@ -295,8 +295,9 @@
     <string name="settings_oscillating_airflow">Oscillating Airflow</string>
     <string name="settings_engine_assisted_heating_plugged_in_big">Engine Assisted Heating Plugged In</string> <!-- Fixed 20057 -->
     <string name="settings_pedestrian_friendly_alert_big">Pedestrian Friendly Alert</string>
+    <string name="settings_pedestrian_alert_sound"> Pedestrian Friendly Alert Sound</string>
     <string name="settings_connected_vehicle_braking_alerts">Connected Vehicle Braking Alert</string>
-    <string name="settings_traffic_and_roadside_information">Traffic and Roadside Information</string>
+    <string name="settings_traffic_and_roadside_info">Traffic and Roadside Information</string>
     <string name="settings_drowsy_driver_alert_big">Drowsy Driver Alert</string>
     <string name="settings_side_blind_zone_alert_big">Side Blind Zone Alert</string>
     <string name="settings_lane_change_alert_big">Lane Change Alert</string>
@@ -304,7 +305,7 @@
     <string name="settings_seat_belt_tightening_big">Seat Belt Tightening</string>
     <string name="settings_park_assist_big">Park Assist</string>
     <string name="settings_on_with_towbar">On with Towbar</string>
-    <string name="settings_park_assist_towbar">Park Assist Towbar</string>
+    <string name="settings_park_assist_towbar_text">Park Assist Towbar</string>
     <string name="settings_off_not_attached">Off – Not Attached</string>
     <string name="settings_off_not_attached_small">Off – Not Attached</string>
     <string name="settings_on_attached">On – Attached</string>
@@ -1791,6 +1792,7 @@
     <string name="drive_mode_suspension">Suspension</string>
     <string name="drive_mode_engine">Engine/Shift</string>
     <string name="drive_mode_brakefeel">Brake Feel</string>
+    <string name="drive_mode_brakefeel_response">Brake Feel,Brake Response</string>
     <string name="drive_mode_enginesound">Engine Sound</string>
     <string name="drive_mode_activeaero">Active Aero</string>
     <string name="drive_mode_ptm">PTM</string>
@@ -1972,50 +1974,40 @@
         <item>@string/settings_sport</item>
         <item>@string/settings_track</item>
         <item>@string/settings_off</item>
+
     </string-array>
-        <string-array name="my_mode_engine">
-            <item>@string/settings_drivingmode_stealth</item>
-            <item>@string/settings_drivingmode_city</item>
-            <item>@string/settings_tour</item>
-            <item>@string/settings_sport</item>
-            <item>@string/settings_track</item>
-            <item>@string/settings_off</item>
+    <string-array name="my_mode_engine">
+        <item>@string/settings_drivingmode_stealth</item>
+        <item>@string/settings_drivingmode_city</item>
+        <item>@string/settings_tour</item>
+        <item>@string/settings_sport</item>
+        <item>@string/settings_track</item>
+        <item>@string/settings_off</item>
 
-        </string-array>
-        <string-array name="my_mode_steering">
-            <item>@string/settings_traction_eco</item>
-            <item>@string/settings_drivingmode_city</item>
-            <item>@string/settings_tour</item>
-            <item>@string/settings_sport</item>
-            <item>@string/settings_track</item>
-        </string-array>
+    </string-array>
+    <string-array name="my_mode_steering">
+    <item>@string/settings_traction_eco</item>
+    <item>@string/settings_drivingmode_city</item>
+    <item>@string/settings_tour</item>
+    <item>@string/settings_sport</item>
+    <item>@string/settings_track</item>
+</string-array>
 
-
-        <string-array name="my_mode_suspension">
-            <item>@string/settings_tour</item>
-            <item>@string/settings_sport</item>
-            <item>@string/settings_track</item>
-        </string-array>
-
-
-        <string-array name="my_mode_brake">
-            <item>@string/settings_normal</item>
-            <item>@string/settings_tour</item>
-            <item>@string/settings_sport</item>
-            <item>@string/settings_track</item>
-            <item>@string/settings_offroad</item>
-            <item>@string/settings_tow_haul</item>
-        </string-array>
-
-        <string-array name="v_mode_brake">
-            <item>@string/settings_normal</item>
-            <item>@string/settings_sport</item>
-            <item>@string/settings_track</item>
-            <item>@string/settings_snow_ice</item>
-            <item>@string/cadillac_display_weather</item>
-        </string-array>
+    <string-array name="my_mode_suspension">
+        <item>@string/settings_tour</item>
+        <item>@string/settings_sport</item>
+        <item>@string/settings_track</item>
+    </string-array>
 
 
+    <string-array name="my_mode_brake">
+        <item>@string/settings_normal</item>
+        <item>@string/settings_tour</item>
+        <item>@string/settings_sport</item>
+        <item>@string/settings_track</item>
+        <item>@string/settings_offroad</item>
+        <item>@string/settings_tow_haul</item>
+    </string-array>
 
     <string-array name="configuration_data">
         <item>LHD</item>
@@ -2144,7 +2136,15 @@
 
     <!--Favorites related strings-->
     <string name="setting_favorite_set_num_of_audio_fav_content">Set Number of Audio Favorites specifies how many pages of audio favorites are available. Select Auto to let the system adjust this number based on the number of favorites you\'ve saved.</string>
-
+<!--collision related strings-->
+    
+    <string name="settings_connected_vehicle_braking_alert">Connected Vehicle Braking Alert notifies you if Vehicle-toVehicle (V2V) connected vehicles in front of you suddenly brake, giving you more time to react.</string>
+    <string name="settings_traffic_and_roadside_information">Connected Vehicle Traffic and Roadside Information specifies if  connected vehicles or devices  ahead of you share traffic conditions or events that could affect your travel.</string>
+    <string name="settings_lane_change_alert">Lane Change Alert provides side-mirror alerts to help you avoid crashing into a moving vehicle detected in their side blind spot (or zone) or a vehicle that is rapidly approaching  your side blind spot during a lane-change maneuver. </string>
+    <string name="settings_park_assist">Park Assist can alert you to objects near your vehicle during low speed maneuvers.</string>
+    <string name="settings_park_assist_towbar">Parking Assist Towbar specifies if  Park Assist will work properly when a small item, such as a hitch ball, is attached to the vehicle hitch</string>
+    <string name="settings_side_beltzone_alert_content">Side BeltZone Alert</string>
+    <string name="settings_seatbelt_tightening">Seatbelt Tightening</string>
     <!-- Assuming all quantity strings belong here -->
     <integer name="setting_ten">10</integer>
     <integer name="setting_fiftin">15</integer>
@@ -2266,7 +2266,6 @@
         <item>@string/settings_awd_optimization</item>
     </string-array>
 
-
     <string-array name="mymode_list">
         <item>@string/settings_engine_sound_management</item>
         <item>@string/settings_steering</item>
@@ -2369,7 +2368,6 @@
     <string name="temperature_bottom_bar">100\u00B0</string>
     <string name="time_bottom_bar">11:00</string>
 
-
     <string-array name="vmode_brake">
         <item>@string/settings_normal</item>
         <item>@string/settings_sport</item>
@@ -2379,7 +2377,38 @@
     </string-array>
 
 
-    <string name="drive_mode_brakefeel_response">Brake Feel,Brake Response</string>
+    
     <string name="settings_power_train_engine">Powertrain , Engine / Shift </string>
+
+
+    <string-array name="v_mode_brake">
+        <item>@string/settings_normal</item>
+        <item>@string/settings_sport</item>
+        <item>@string/settings_track</item>
+        <item>@string/settings_snow_ice</item>
+        <item>@string/cadillac_display_weather</item>
+    </string-array>
+
+
+
+    <!--collision_desc-->
+
+    <string name="pedestrian_friendly_alert_sound_text">Pedestrian Friendly Alert Sound determines which sound plays when Pedestrian Friendly Alert is On</string>
+    <string name="forward_collision_system_text">Forward Collision System can alert you to a potential crash with a detected vehicle ahead and, if you haven’t already, it can apply brakes %and steer% to help reduce a collision’s severity</string>
+    <string name="front_pedestrian_detection_text">Front Pedestrian Detection alerts you when a collision is imminent with a pedestrian detected directly ahead and, if necessary, automatically applies the brakes to help reduce the collision’s severity or avoid the collision</string>
+    <string name="intersection_stop_alert_text">Intersection Stop Alert can alert you when you are about to drive through a red light or when you enter an intersection and the vehicle detects a potential crash. %It can prevent or reduce the severity of a crash byhelping you brake.%</string>
+    <string name="connected_vehicle_braking_alert_text">Connected Vehicle Braking Alert notifies you if Vehicle-to-Vehicle (V2V) connected vehicles in front of you suddenly brake, giving you more time to react.</string>
+    <string name="side_belt_zone_alert_text">Side Blind Zone Alert provides side mirror alerts to help you avoid crashing into a moving vehicle detected in your side-blind spot (or zone) during a lane-change maneuver.</string>
+    <string name="lane_change_alert_text"> Lane Change Alert provides side-mirror alerts to help you avoid crashing into a moving vehicle detected in their side blind spot (or zone) or a vehicle that is rapidly approaching  your side blind spot during a lane-change maneuver.</string>
+    <string name="rear_pedestrian_detection_text">Rear Pedestrian Detection alerts you while in reverse gear when a collision is imminent with a pedestrian detected directly behind %and, if necessary, automatically applies the brakes% to help reduce the collision’s severity or avoid the collision</string>
+
+<string-array name="pedestrian_detection">
+    <item>@string/ui_off</item>
+    <item>@string/settings_alert_small</item>
+    <item>@string/settings_alert_brake</item>
+    <item>@string/settings_alert_brake_steer</item>
+</string-array>
+
+
 </resources>
 

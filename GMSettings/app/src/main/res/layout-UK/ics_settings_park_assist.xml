@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:bind="http://schemas.android.com/tools">
 
-    <data class="CollisionParkAssistActivityBinding">
+    <data class="SettingsParkAssistActivityBinding">
 
         <import type="android.view.View" />
 

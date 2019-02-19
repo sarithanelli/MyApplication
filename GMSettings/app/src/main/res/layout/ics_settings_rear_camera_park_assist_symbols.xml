@@ -48,18 +48,20 @@
             app:layout_constraintTop_toBottomOf="@+id/settings_rear_camera_park_assist_symbols_card_view"
             bind:layoutDirection="@{dataPoolHandler.settingsConfiguration}">
 
-            <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+            <!--<com.gm.settingsapp.ui.customview.SkewConstraintLayout
                 android:id="@+id/settings_rear_camera_park_assist_symbols_layout_skew"
                 style="?attr/settings_sounds_audio1_layout_zero_wrap"
                 app:layout_constraintEnd_toStartOf="@+id/settings_rear_camera_park_assist_symbols_guideline_vertical"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
+                bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">-->
 
                 <RadioGroup
                     android:id="@+id/settings_rear_camera_park_assist_symbols_radioGroup"
                     style="?attr/settings_sounds_audio1_radiogroup"
-                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.6"
+                    app:layout_constraintEnd_toStartOf="@+id/settings_rear_camera_park_assist_symbols_guideline_vertical"
                     app:layout_constraintTop_toBottomOf="@+id/settings_rear_camera_park_assist_symbols_card_view">
 
                     <RadioButton
@@ -99,8 +101,8 @@
                 style="?attr/settings_sounds_audio1_layout_zero_wrap"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                app:layout_constraintWidth_percent="0.4"
-                app:layout_constraintHeight_percent="0.15"
+                app:layout_constraintWidth_percent="0.37"
+                app:layout_constraintHeight_percent="0.3"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/settings_rear_camera_park_assist_symbols_guideline_vertical"
@@ -109,7 +111,7 @@
                 <com.gm.settingsapp.ui.customview.SkewTextView
                     android:id="@+id/settings_rear_camera_park_assist_symbols_text"
                     style="?attr/settings_sounds_audio1_text"
-                    android:text="@{dataPoolHandler.SETTINGS_SET_CLIMATE_INNER_DES}"
+                    bind:DescText="@{dataPoolHandler.SETTINGS_CHILD_CURRENT_SCREEN}"
                     app:layout_constraintBottom_toBottomOf="parent"
                     bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
 
@@ -121,12 +123,11 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/settings_rear_camera_park_assist_symbols_guideline_vertical"
-                app:layout_constraintTop_toBottomOf="@+id/settings_rear_camera_park_assist_symbols_scrollView"
                 app:layout_constraintVertical_bias="@integer/system_sound_car_bias"
                 app:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
 
         </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
 
-    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+   <!-- </com.gm.settingsapp.ui.customview.SkewConstraintLayout>-->
 
 </layout>

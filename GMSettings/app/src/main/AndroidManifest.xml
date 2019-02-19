@@ -627,6 +627,43 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".ui.activities.SettingsCollisionActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.evGCollision" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.CollisionOnOffActivity">
+
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.evGCollisionOnOff" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SettingsParkAssistActivity">
+
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.evGParkAssist" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SettingsRearPedestrianDetectionActivity">
+
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.evGPedestrian" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
 
     </application>
 

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:bind="http://schemas.android.com/tools">
 
-    <data class="CollisionRearPedestrianActivityBinding">
+    <data class="SettingsRearPedestrianDetectionActivityBinding">
 
 
         <import type="android.view.View" />
@@ -50,12 +50,57 @@
             style="?attr/settings_sounds_recyclerview"
             app:fastScrollArrowRadius="@integer/fastScrollArrowRadius"
             app:fastScrollBarWidth="@integer/fastScrollBarWidth"
-            app:fastScrollType="@{dataPoolHandler.SETTINGS_REQ_SOUNDDATA.size() > 6 ? 1 : 0}"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.85"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.6"
+            app:fastScrollType="@{dataPoolHandler.SETTINGS_PEDESTRIAN_DETECTION.size() > 6 ? 1 : 0}"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/settings_rear_pedestrian_detection_guideline_vertical"
             app:layout_constraintTop_toBottomOf="@+id/settings_rear_pedestrian_detection_material_card_view"
             bind:childLayout="@{@layout/uil_settings_rear_pedestrain_detection}"
-            bind:items="@{dataPoolHandler.SETTINGS_REQ_SOUNDDATA}">
+            bind:items="@{dataPoolHandler.SETTINGS_PEDESTRIAN_DETECTION}">
         </com.gm.uisdk.views.GMRecyclerView>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/settings_rear_pedestrian_detection_guideline_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <ScrollView
+            android:id="@+id/settings_rear_pedestrian_detection_scrollView"
+            style="@style/Layout_Match_Wrap"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintWidth_percent="0.37"
+            app:layout_constraintHeight_percent="0.3"
+            app:layout_constraintEnd_toStartOf="@+id/settings_rear_pedestrian_detection_guideline_vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/settings_rear_pedestrian_detection_material_card_view">
+
+            <com.gm.settingsapp.ui.customview.SkewTextView
+                android:id="@+id/settings_rear_pedestrian_detection_text"
+                style="?attr/text_material_content_text"
+                android:fontFamily="@font/gmsansui_regular"
+                android:text="@string/settings_mode_content"
+                android:textSize="@dimen/List_Secondary_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/settings_rear_pedestrian_detection_scrollView" />
+        </ScrollView>
+
+
+        <ImageView
+            android:id="@+id/settings_rear_pedestrian_detection_img_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_sensor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/settings_rear_pedestrian_detection_guideline_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/settings_rear_pedestrian_detection_scrollView"
+            bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
 
     </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
 

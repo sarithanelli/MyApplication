@@ -588,7 +588,66 @@ class BinderAdapter @Inject constructor(val eventHandler: EventHandler, val bind
             textView.text = GMSettingsApp.appContext.getText(R.string.settings_set_date_content)
         else if (currentScreen == com.gm.settingsservice.utils.Constants.SET_DATE_SCREEN)
             textView.text = GMSettingsApp.appContext.getText(R.string.settings_set_date_content)
+
     }
+
+    @BindingAdapter("bind:DescText")
+    fun setDescriptionText(textView: TextView, currentScreen: Int){
+        if (currentScreen == Constants.PEDESTRIAN_FRIENDLY_ALERT)
+            textView.text = GMSettingsApp.appContext.getText(R.string.settings_pedestrian_friendly_alert_content)
+
+        else if (currentScreen == Constants.PEDESTRIAN_FRIENDLY_ALERT_SOUND)
+            textView.text = GMSettingsApp.appContext.getText(R.string.pedestrian_friendly_alert_sound_text)
+
+        else if (currentScreen == Constants.ALERT_TYPE)
+            textView.text = GMSettingsApp.appContext.getText(R.string.settings_alert_type_content)
+
+        else if (currentScreen == Constants.FORWORD_COLLISION_SYSTEM)
+            textView.text = GMSettingsApp.appContext.getText(R.string.forward_collision_system_text)
+
+        else if (currentScreen == Constants.FRONT_PEDESTRIAN_DETECTION)
+            textView.text = GMSettingsApp.appContext.getText(R.string.front_pedestrian_detection_text)
+
+        else if (currentScreen == Constants.INTERSECTIONS_TOP_ALERT)
+            textView.text = GMSettingsApp.appContext.getText(R.string.intersection_stop_alert_text)
+
+        else if (currentScreen == Constants.CONNECTED_VEHICLE_BRAKING_ALERT)
+            textView.text = GMSettingsApp.appContext.getText(R.string.connected_vehicle_braking_alert_text)
+
+        else if (currentScreen == Constants.TRAFFIC_AND_ROADSIDE_INFORMATION)
+            textView.text = GMSettingsApp.appContext.getText(R.string.settings_traffic_and_roadside_information)
+
+        else if (currentScreen == Constants.DROWSY_DRIVER_ALETRT)
+            textView.text = GMSettingsApp.appContext.getText(R.string.settings_drowsy_driver_alert_content)
+
+        else if (currentScreen == Constants.ADAPTIVE_CRUISEGO_NOTIFIER)
+            textView.text = GMSettingsApp.appContext.getText(R.string.settings_adaptive_cruise_go_notifier_content)
+
+        else if (currentScreen == Constants.SIDE_BELTZONE_ALERT)
+            textView.text = GMSettingsApp.appContext.getText(R.string.side_belt_zone_alert_text)
+
+        else if (currentScreen == Constants.LANE_CHANGE_ALERT)
+            textView.text = GMSettingsApp.appContext.getText(R.string.lane_change_alert_text)
+
+        else if (currentScreen == Constants.SEATBEL_TTIEGHTENING)
+            textView.text = GMSettingsApp.appContext.getText(R.string.settings_seat_belt_tightening_content)
+
+        else if (currentScreen == Constants.PARK_ASSIST)
+            textView.text = GMSettingsApp.appContext.getText(R.string.settings_park_assist)
+
+        else if (currentScreen == Constants.PARK_ASSIST_TOWBAR)
+            textView.text = GMSettingsApp.appContext.getText(R.string.settings_park_assist_towbar)
+
+        else if (currentScreen == Constants.REAR_CAMERA_PARK_ASSIST_SYMBOLS)
+            textView.text = GMSettingsApp.appContext.getText(R.string.settings_rear_camera_park_assist_symbols_content)
+
+        else if (currentScreen == Constants.REAR_CROSS_TRAFFIC_ALERT)
+            textView.text = GMSettingsApp.appContext.getText(R.string.settings_rear_cross_traffic_alerts_content)
+
+        else if (currentScreen == Constants.REAR_PEDESTRAIN_DETECTION)
+            textView.text = GMSettingsApp.appContext.getText(R.string.rear_pedestrian_detection_text)
+    }
+
 
     /**
      * Changing Configuration settings for configuration screen

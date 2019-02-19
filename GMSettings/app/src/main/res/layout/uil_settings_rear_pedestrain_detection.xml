@@ -26,32 +26,30 @@
 
     <com.gm.settingsapp.ui.customview.SkewConstraintLayout
         style="?attr/settings_favorites_no_bg_style"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
         android:onClick="@{(view) -> clickHandler.onItemClickHandler(view,obj)}"
         bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
 
-        <TextView
-            android:id="@+id/settings_rear_pedestrian_detection_view_text"
-            style="?attr/settings_sounds_text"
+        <RadioButton
+            android:id="@+id/settings_rear_pedestrian_detection_radio_button"
+            style="?attr/settings_time_zone_radio"
+            android:checked="@{position==dataPoolHandler.SETTINGS_COLLISION_RECYCLER_VIEW}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            bind:text="@{obj}" />
-
-        <ImageView
-            android:id="@+id/settings_rear_pedestrian_detection_list_header"
-            style="?attr/settings_imageview"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/settings_rear_pedestrian_detection_view"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ToggleButton
-            android:id="@+id/settings_rear_pedestrian_detection_view"
-            style="?attr/settings_time_date_tab_toggle_button"
-            android:onClick="@{(view) -> clickHandler.onClickHandler(view,obj)}"
+        <TextView
+            android:id="@+id/settings_rear_pedestrian_detection_text"
+            style="?attr/settings_language_text_medium"
+            android:text="@{obj.toString()}"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintDimensionRatio="10:10"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/settings_rear_pedestrian_detection_radio_button"
             app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
     </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
 
 </layout>

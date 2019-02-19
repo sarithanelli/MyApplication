@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:bind="http://schemas.android.com/tools">
 
-    <data class="CollisionParkAssistActivityBinding">
+    <data class="SettingsParkAssistActivityBinding">
 
         <import type="android.view.View" />
 
@@ -63,8 +63,8 @@
                 android:layout_marginStart="@dimen/radiogroup_margin_start"
                 android:divider="@drawable/seperator"
                 android:showDividers="end|middle"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/settings_park_assist_scrollView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/settings_park_assist_scrollView"
                 app:layout_constraintTop_toBottomOf="@+id/settings_park_assist_top_bar">
 
 
@@ -135,14 +135,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.4" />
+                app:layout_constraintGuide_percent="0.6" />
 
             <ScrollView
                 android:id="@+id/settings_park_assist_scrollView"
                 style="@style/Layout_Match_Wrap"
                 android:layout_width="0dp"
-                app:layout_constraintEnd_toStartOf="@+id/settings_park_assist_guideline_vertical"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/settings_park_assist_guideline_vertical"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/settings_park_assist_top_bar">
 
                 <com.gm.settingsapp.ui.customview.SkewTextView
@@ -165,8 +165,8 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/img_sensor"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/settings_park_assist_guideline_vertical"
-                app:layout_constraintStart_toStartOf="@+id/settings_park_assist_scrollView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/settings_park_assist_guideline_vertical"
                 app:layout_constraintTop_toBottomOf="@+id/settings_park_assist_scrollView"
                 bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
 
