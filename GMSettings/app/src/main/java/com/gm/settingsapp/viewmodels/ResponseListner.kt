@@ -391,7 +391,7 @@ class ResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Util
     }
 
     init {
-        systemListener.registerApiCallback(this)
+       // systemListener.registerApiCallback(this)
     }
 
     override fun onSETTINGS_RES_VEHICLEDISPLAYUNITS(pData: Int) {
