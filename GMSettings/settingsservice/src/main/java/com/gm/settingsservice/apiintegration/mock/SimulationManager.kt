@@ -13,26 +13,69 @@ import android.os.RemoteException
 import android.text.format.Formatter
 import android.widget.ProgressBar
 import com.gm.settingsservice.apiintegration.SettingsService
-
+import com.gm.settingsservice.apiintegration.SystemListener
 import com.gm.settingsservice.apiintegration.apiinterfaces.IManager
 import com.gm.settingsservice.models.*
-
 import com.gm.settingsservice.utils.*
-import com.gm.settingsservice.utils.Constants
 import com.gm.settingsservice.utils.Constants.ENABLE_SETTING
-import com.gm.settingsservice.utils.Log
 import java.util.*
-import kotlin.collections.ArrayList
-import android.security.KeyStore.getApplicationContext
-import com.gm.settingsservice.apiintegration.SystemListener
-import java.io.File
 import javax.inject.Inject
+import kotlin.collections.ArrayList
 
 
 /**
  * To Perform functionalities when any event occurred and process the data and passing to [systemListener]
  */
 class SimulationManager @Inject constructor(dataPoolDataHandler: DataPoolDataHandler, systemListener: SystemListener, utility: Utility, context: Context) : IManager, ApplicationsState.Callbacks {
+
+
+    override fun onSETTINGS_REQ_AUTOMATIC_ENTRY_EGRESS_ASSIST() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun SOUNDPARAMS_REQ_CHIMEVOLUMEDEC() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun SOUNDPARAMS_REQ_CHIMEVOLUMEINC() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun SOUNDPARAMS_REQ_SETCHIMEVOLUME() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun SOUNDPARAMS_REQ_GETCHIMEVOLUME() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_REQ_POWER_LIFTGATE() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_REQ_HANDSFREE_LIFTGATE() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_REQ_REVERSE_TILTMIRROR() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_REQ_REMOTE_MIRRORFOLDING() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_REQ_RAIN_SENSE_WIPERS() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_REQ_AUTO_WIPE_REVERSEGEAR() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_REQ_EXTENDED_HILL_START_ASSIST() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
 
     var dataPoolDataHandler: DataPoolDataHandler = dataPoolDataHandler
 
@@ -769,6 +812,7 @@ class SimulationManager @Inject constructor(dataPoolDataHandler: DataPoolDataHan
         systemListener.onSETTINGS_RES_DRIVERSELECTEDMODESTATUS(SettingsDriverStatus)
         systemListener.onSETTINGS_RES_CLIMATE()
         systemListener.onSETTINGS_APPS_RES_DATA()
+        systemListener.onSETTINGS_RES__COMFORT_CONVENIENCE_MENU()
     }
 
     /**

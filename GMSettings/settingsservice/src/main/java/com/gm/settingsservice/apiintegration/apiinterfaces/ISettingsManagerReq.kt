@@ -4,11 +4,13 @@ package com.gm.settingsservice.apiintegration.apiinterfaces
  * Request Methods for different features which are used  by [SimulationManager]
  */
 interface ISettingsManagerReq {
+
+
     fun initListeners()
     /**
      * In set time option, To set AM/PM option to AM
      */
-     fun onSETTINGS_REQ_CALIBRATION()
+    fun onSETTINGS_REQ_CALIBRATION()
 
     fun onSETTINGS_REQ_SETTIMEAM(any: Any)
     fun onSETTINGS_REQ_SETSUSPENSIONTYPE(any: Any)
@@ -220,8 +222,8 @@ interface ISettingsManagerReq {
     fun onSETTINGS_RETURNTOFACTORY(any: Any)
 
     fun onSETTINGS_REQ_ERASESETTINGSPERSONALDATA(any: Any)
-  //  fun onSETTINGS_REQ_VEHICLELIST(vehicleList: Any)
-    fun onSETTINGS_REQ_SETENGINESOUNDTYPE(any:Any)
+    //  fun onSETTINGS_REQ_VEHICLELIST(vehicleList: Any)
+    fun onSETTINGS_REQ_SETENGINESOUNDTYPE(any: Any)
 
     fun onSETTINGS_REQ_GET_RUNNING_APPLICATIONLIST()
 
@@ -267,9 +269,19 @@ interface ISettingsManagerReq {
     fun onSETTINGS_REQ_BUILDNUMBER()
 
 
-
     fun onSETTINGS_REQ_OPENSOURCE()
 
     fun onSETTINGS_REQ_BUILDCLICK()
-
+    fun onSETTINGS_REQ_AUTOMATIC_ENTRY_EGRESS_ASSIST()
+    fun SOUNDPARAMS_REQ_CHIMEVOLUMEDEC()
+    fun SOUNDPARAMS_REQ_CHIMEVOLUMEINC()
+    fun SOUNDPARAMS_REQ_SETCHIMEVOLUME()
+    fun SOUNDPARAMS_REQ_GETCHIMEVOLUME()
+    fun onSETTINGS_REQ_POWER_LIFTGATE()
+    fun onSETTINGS_REQ_HANDSFREE_LIFTGATE()
+    fun onSETTINGS_REQ_REVERSE_TILTMIRROR()
+    fun onSETTINGS_REQ_REMOTE_MIRRORFOLDING()
+    fun onSETTINGS_REQ_RAIN_SENSE_WIPERS()
+    fun onSETTINGS_REQ_AUTO_WIPE_REVERSEGEAR()
+    fun onSETTINGS_REQ_EXTENDED_HILL_START_ASSIST()
 }

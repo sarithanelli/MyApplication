@@ -18,6 +18,45 @@ import javax.inject.Inject
  * Updating the data to [dataPoolDataHandler] when UI event occurred
  */
 class SystemListener @Inject constructor(dataPoolDataHandler: DataPoolDataHandler) : ISettingsManagerRes {
+    override fun onSETTINGS_RES__COMFORT_CONVENIENCE_MENU() {
+        mCallback?.onSETTINGS_RES__COMFORT_CONVENIENCE_MENU()
+    }
+
+    override fun onSETTINGS_RES_AUTOMATIC_ENTRY_EGRESS_ASSIST() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun SOUNDPARAMS_RES_CHIMEVOLUME() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_RES_POWER_LIFTGATE() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_RES_HANDSFREE_LIFTGATE() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_RES_REVERSE_TILTMIRROR() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_RES_REMOTE_MIRRORFOLDING() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_RES_RAIN_SENSE_WIPERS() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_RES_AUTO_WIPE_REVERSEGEAR() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_RES_EXTENDED_HILL_START_ASSIST() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
 
     var dataPoolDataHandler: DataPoolDataHandler = dataPoolDataHandler
     override fun onSETTINGS_RES_SPORTMODESETTINGS(any: Any) {

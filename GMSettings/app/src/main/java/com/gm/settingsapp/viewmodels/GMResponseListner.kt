@@ -6,6 +6,21 @@ import androidx.databinding.ObservableField
 import com.gm.settingsapp.GMSettingsApp
 import com.gm.settingsapp.R
 import com.gm.settingsapp.utils.SubUtility
+import com.gm.settingsapp.viewmodels.Constants.C_AUTO_ENTRY
+import com.gm.settingsapp.viewmodels.Constants.C_AUTO_MEMORY_RECALL
+import com.gm.settingsapp.viewmodels.Constants.C_AUTO_RUNNING_BOARDS
+import com.gm.settingsapp.viewmodels.Constants.C_AUTO_WIPE_IN_REVERSE_GEAR
+import com.gm.settingsapp.viewmodels.Constants.C_CHIME_VOLUME
+import com.gm.settingsapp.viewmodels.Constants.C_EASY_EXIT_OPTIONS
+import com.gm.settingsapp.viewmodels.Constants.C_EASY_EXIT_SEAT
+import com.gm.settingsapp.viewmodels.Constants.C_EASY_EXIT_STEERING_COLUMN
+import com.gm.settingsapp.viewmodels.Constants.C_EXTENDED_HILL_START_ASSIST
+import com.gm.settingsapp.viewmodels.Constants.C_HANDSFREE_LIFTGATE
+import com.gm.settingsapp.viewmodels.Constants.C_PERSONALIZATION_BY_DRIVER
+import com.gm.settingsapp.viewmodels.Constants.C_POWER_LIFTGATE
+import com.gm.settingsapp.viewmodels.Constants.C_RAIN_SENSE_WIPERS
+import com.gm.settingsapp.viewmodels.Constants.C_REMOTE_MIRROR_FOLDING
+import com.gm.settingsapp.viewmodels.Constants.C_REVERSE_TILT_MIRROR
 import com.gm.settingsapp.viewmodels.Constants.DIFFUES_AIRFLOW_VALUE
 import com.gm.settingsapp.viewmodels.Constants.DIRECT_AIRFLOW_VALUE
 import com.gm.settingsapp.viewmodels.Constants.DISPLAY_TURN_OFF
@@ -35,6 +50,61 @@ import javax.inject.Inject
 import kotlin.collections.ArrayList
 
 class GMResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Utility, serviceUtility: com.gm.settingsservice.utils.Utility, dataPoolDataHandler: DataPoolDataHandler, systemListener: SystemListener, context: Context) : ISettingsManagerRes {
+    override fun onSETTINGS_RES_AUTOMATIC_ENTRY_EGRESS_ASSIST() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+    override fun onSETTINGS_RES__COMFORT_CONVENIENCE_MENU() {
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.clear()
+
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_automatic_running_boards_long),C_AUTO_RUNNING_BOARDS))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_automatic_entry_egress_assist),C_AUTO_ENTRY))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_auto_memory_recall), C_AUTO_MEMORY_RECALL))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_easy_exit_driver_seat), C_EASY_EXIT_SEAT))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_easy_exit_steering_column), C_EASY_EXIT_STEERING_COLUMN))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_easy_exit_options_big), C_EASY_EXIT_OPTIONS))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_chime_volume), C_CHIME_VOLUME))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_power_liftgate), C_POWER_LIFTGATE))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_handsfree_liftgate_trunk_control), C_HANDSFREE_LIFTGATE))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_reverse_tilt_mirror), C_REVERSE_TILT_MIRROR))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_remote_mirror_folding_short), C_REMOTE_MIRROR_FOLDING))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_personalization_by_driver_big), C_PERSONALIZATION_BY_DRIVER))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_rain_sense_wipers_big), C_RAIN_SENSE_WIPERS))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_auto_wipe_in_reverse_gear_big), C_AUTO_WIPE_IN_REVERSE_GEAR))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_automatic_vehicle_hold_long), com.gm.settingsapp.viewmodels.Constants.EXTENDED_HILL_START_ASSIST))
+
+
+    }
+    override fun SOUNDPARAMS_RES_CHIMEVOLUME() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_RES_POWER_LIFTGATE() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_RES_HANDSFREE_LIFTGATE() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_RES_REVERSE_TILTMIRROR() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_RES_REMOTE_MIRRORFOLDING() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_RES_RAIN_SENSE_WIPERS() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_RES_AUTO_WIPE_REVERSEGEAR() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_RES_EXTENDED_HILL_START_ASSIST() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
 
     var utility: com.gm.settingsapp.utils.Utility = utility
 
