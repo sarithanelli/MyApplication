@@ -84,6 +84,7 @@ class SettingsHomeActivity : BaseActivity(), ISystemStateChanged, IConnectionSta
                         GMSettingsApp.appContext.resources.getString(R.string.settings_collision) -> view.tag = Constants.COLLISION_SYSTEMS_TAG
                         GMSettingsApp.appContext.resources.getString(R.string.settings_comfort_and_convenience) -> view.tag= Constants.COMFORT_AND_CONVENIENCE_TAG
                         GMSettingsApp.appContext.resources.getString(R.string.settings_drive_mode_customization) -> view.tag = Constants.DRIVE_MODE_CUSTOMIZATION_TAG
+                        GMSettingsApp.appContext.resources.getString(R.string.settings_ride_height) -> view.tag = Constants.RIDE_HEIGHT_TAG
                         GMSettingsApp.appContext.resources.getString(R.string.settings_climate_app) -> {
                             if (!dataPoolDataHandler.SETTINGS_VEHICLE_POWER_ON_OFF.get()!!)
                                 view.tag = CLIMATE_TAG

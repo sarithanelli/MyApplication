@@ -429,6 +429,7 @@ class ResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Util
         }
         dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_collision))
         dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_comfort_and_convenience))
+        dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_ride_height))
     }
 
     init {

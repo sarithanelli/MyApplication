@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="obj"
+            type="com.gm.settingsservice.models.RideHeightModel" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+
+    </data>
+
+    <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        style="?attr/settings_fragment_list_row_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:onClick="@{(view) -> clickHandler.onClickHandler(view,obj)}"
+        bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
+
+        <TextView
+            android:id="@+id/settings_list_row_ride_height_systems_primary_text"
+            style="?attr/settings_favorites_list_row_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{obj.primaryData}"
+            app:layout_constraintBottom_toTopOf="@+id/txt_settings_system_speech_secondary"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <ImageView
+            android:id="@+id/settings_list_row_ride_height_systems_list_header"
+            style="?attr/settings_imageview"
+            android:visibility="@{obj.isToggleVisible ? View.VISIBLE : View.GONE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/settings_list_row_ride_height_systems_button"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ToggleButton
+            android:id="@+id/settings_list_row_ride_height_systems_button"
+            style="?attr/settings_time_date_tab_toggle_button"
+            android:visibility="@{obj.isToggleVisible ? View.VISIBLE : View.GONE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="10:10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/settings_list_row_ride_height_systems_guideline_text_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+</layout>

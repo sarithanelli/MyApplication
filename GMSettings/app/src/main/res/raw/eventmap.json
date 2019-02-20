@@ -724,6 +724,18 @@
     "eventName": "evGPedestrian",
     "activityName": "SettingsRearPedestrianDetectionActivity",
     "isProcess": "false"
+  },
+  "evRideHeight":{
+    "eventType": "navigate",
+    "eventName": "evRideHeight",
+    "activityName": "SettingsRideHeightActivity",
+    "isProcess": "false"
+  },
+  "evRideHeightOnOff":{
+    "eventType": "navigate",
+    "eventName": "evRideHeightOnOff",
+    "activityName": "SettingsRideHeightOnOffActivity",
+    "isProcess": "false"
   }
 
 }

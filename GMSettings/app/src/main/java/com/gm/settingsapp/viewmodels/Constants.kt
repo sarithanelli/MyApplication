@@ -237,6 +237,10 @@ object Constants {
     val RAINSENSEWIPER = "eRainSenseWiper"
     val REVERSETILTMIRROR = "eAutomaticEntry"
 
+    val RIDE_HEIGHT_TAG = "evRideHeight"
+    val RIDE_HEIGHT_ON_OFF_TAG = "evRideHeightOnOff"
+
+
     const val MY_MODE_ENGINE = 10001
     const val MY_MODE_STEERING = 10002
     const val MY_MODE_SUSPENSION = 10003
@@ -289,7 +293,9 @@ object Constants {
     val PEDESTRIAN_FRIENDLY_ALERT_SOUND_TAG = "evGParkAssist"
     val REAR_PEDESTRIAN_DETECTION_TAG = "evGPedestrian"
     const val C_EXTENDED_HILL_START_ASSIST = 10115
+
     const val C_AUTO_EGRESS_ASSIST = 10102
+
     const val V_MODE_Z_MODE = 10010
     const val MY_MODE = 10011
     const val VISUALIZATION = 10012
@@ -297,5 +303,8 @@ object Constants {
     // val EXTENDED_HILL_START_ASSIST="eExtendedHillStartAssist"
     val DRIVE_MODE_CUSTOMIZATION_TAG = "eDriveModeCustomization"
 
+
+    const val LOCATION_BASED_AUTO_LIFT = 10016
+    const val AUTO_ENTRY_EGRESS = 10017
 
 }

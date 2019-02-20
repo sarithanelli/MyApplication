@@ -133,6 +133,14 @@ data class DriveModeCustomizationModel(
         var primaryData: String,
         var ref: Int
 )
+
+data class RideHeightModel(
+        var primaryData: String,
+        var isToggleVisible: Boolean,
+        var isToggleState: Boolean,
+        val reference: Int
+)
+
 /**
  * Model to create data for configuration screen
  */

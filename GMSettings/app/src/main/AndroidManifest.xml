@@ -719,10 +719,27 @@
 
             <intent-filter>
                 <action android:name="com.gm.settingsapp.action.evGPedestrian" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.activities.SettingsRideHeightActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.evRideHeight" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.activities.SettingsRideHeightOnOffActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.evRideHeightOnOff" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
 
         <activity
             android:name=".ui.activities.SettingsVehicleChimeVolumeActivity"

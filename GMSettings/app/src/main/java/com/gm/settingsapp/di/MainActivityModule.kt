@@ -225,5 +225,18 @@ abstract class MainActivityModule {
     @ContributesAndroidInjector
     abstract fun SettingsParkAssistActivity(): SettingsParkAssistActivity
     @ContributesAndroidInjector
-    abstract fun SettingsRearPedestrianDetectionActivity(): SettingsRearPedestrianDetectionActivity
+    abstract fun SettingsVehicleChimeVolumeActivity():SettingsVehicleChimeVolumeActivity
+    @ContributesAndroidInjector
+    abstract fun SettingsVehicleComfortAutomaticExtendedHillStartActivity():SettingsVehicleComfortAutomaticExtendedHillStartActivity
+
+    @ContributesAndroidInjector
+    abstract fun SettingsDriveModeCustomizationActivity(): SettingsDriveModeCustomizationActivity
+
+    @ContributesAndroidInjector
+    abstract fun SettingsRideHeightActivity(): SettingsRideHeightActivity
+
+    @ContributesAndroidInjector
+    abstract fun SettingsRideHeightOnOffActivity(): SettingsRideHeightOnOffActivity
+
+
 }
