@@ -10,14 +10,14 @@ import dagger.android.AndroidInjection
 /**
  * This activity is to set display modes Auto,Day,Night
  */
-class SettingsVehicleComfortAutomaticEntryActivity : BaseActivity() {
+class SettingsVehicleComfortAndConvenienceOnOffActivity : BaseActivity() {
     override fun onEventResponse(view: View, obj: Any?) {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         AndroidInjection.inject(this)
         super.onCreate(savedInstanceState)
-        val binding = setContentSubView(R.layout.ics_settings_automatic_entry_egress_assist) as SettingsAutomaticEntryEgressAssistBinding
+        val binding = setContentSubView(R.layout.ics_settings_comfort_and_convenience_on_off) as SettingsAutomaticEntryEgressAssistBinding
         binding.let {
             it?.clickHandler = eventHandler
             it?.dataPoolHandler = dataPoolDataHandler

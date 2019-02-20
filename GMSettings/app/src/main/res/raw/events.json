@@ -93,15 +93,11 @@
     "eMMBrake":"eMMBrake",
     "eComfort":"eComfort",
     "eAutoRunningBoards":"eAutoRunningBoards",
-    "eChimeVolume":"eChimeVolume",
-    "eExtendedHillStartAssist":"eExtendedHillStartAssist",
     "eAutomaticEntry":"eAutomaticEntry",
-    "evGCollision":"evGCollision",
-    "evGCollisionOnOff":"evGCollisionOnOff",
-    "evGParkAssist":"evGParkAssist",
-    "evGPedestrian":"evGPedestrian",
-    "eMMBrake":"eMMBrake",
-    "eDriveModeCustomization" : "eDriveModeCustomization"
+    "ePowerLiftGate":"ePowerLiftGate",
+    "eHandFreeLiftGate":"eHandFreeLiftGate",
+    "eRainSenseWiper":"eRainSenseWiper"
+
   },
   "events_activity_action_map_custom": {
     "evG_WiFiHotspot": "com.gm.connectionwifi.action.evG_WiFiHotspot",

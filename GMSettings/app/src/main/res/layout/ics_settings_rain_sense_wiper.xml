@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:bind="http://schemas.android.com/tools">
 
-    <data class="SettingsAutomaticEntryEgressAssistBinding">
+    <data class="SettingsRainSenseWiperBinding">
 
         <import type="android.view.View" />
 
@@ -19,14 +19,14 @@
     </data>
 
     <com.gm.settingsapp.ui.customview.SkewConstraintLayout
-        android:id="@+id/settings_automatic_entry_egress_layout"
+        android:id="@+id/settings_comfort_and_convenience_rain_sense_wiper_layout"
         style="?attr/settings_layout_bg_style"
         app:layout_constraintStart_toStartOf="parent"
         bind:layoutDirection="@{dataPoolHandler.settingsConfiguration}"
         bind:skewValue="@{dataPoolHandler.isSkewEnabled}">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/settings_automatic_entry_egress_card_view"
+            android:id="@+id/settings_comfort_and_convenience_rain_sense_wiper_card_view"
             style="?attr/settings_set_audio_favorites_MaterialCardView"
             app:cardElevation="@dimen/system_sounds_card_elevartion">
 
@@ -41,42 +41,43 @@
         </androidx.cardview.widget.CardView>
 
         <com.gm.settingsapp.ui.customview.SkewConstraintLayout
-            android:id="@+id/settings_automatic_entry_egress_imglayout"
+            android:id="@+id/settings_comfort_and_convenience_rain_sense_wiper_img_layout"
             style="?attr/settings_match_zero_style"
             android:background="@drawable/img_settings_bg"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/settings_automatic_entry_egress_card_view"
+            app:layout_constraintTop_toBottomOf="@+id/settings_comfort_and_convenience_rain_sense_wiper_card_view"
             bind:layoutDirection="@{dataPoolHandler.settingsConfiguration}">
 
             <com.gm.settingsapp.ui.customview.SkewConstraintLayout
-                android:id="@+id/settings_automatic_entry_egress_radiogrp_layout"
+                android:id="@+id/settings_comfort_and_convenience_rain_sense_wiper_radio_grp_layout"
                 style="?attr/settings_sounds_audio1_layout_zero_wrap"
-                android:layout_marginEnd="@dimen/radiogroup_margin_start"
-                app:layout_constraintStart_toEndOf="@+id/settings_automatic_entry_egress_guideline_vertical"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/settings_comfort_and_convenience_rain_sense_wiper_guideline_vertical"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
 
                 <RadioGroup
-                    android:id="@+id/settings_automatic_entry_egress_radiogrp"
+                    android:id="@+id/settings_comfort_and_convenience_rain_sense_wiper_radio_grp"
                     style="?attr/settings_sounds_audio1_radiogroup"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/settings_automatic_entry_egress_card_view">
+                    app:layout_constraintTop_toBottomOf="@+id/settings_comfort_and_convenience_rain_sense_wiper_card_view">
 
                     <RadioButton
-                        android:id="@+id/settings_automatic_entry_egress_radioButtonOn"
+                        android:id="@+id/settings_comfort_and_convenience_rain_sense_wiper_radioButton_disabled"
                         style="?attr/settings_sounds_audio1_radiobutton"
+                        android:checked="@{dataPoolHandler.SETTINGS_SET_CLIMATE_INNER_STATE}"
                         android:onClick="@{(view) -> clickHandler.onClickHandler(view,true)}"
-                        android:text="On"
-                        app:layout_constraintStart_toStartOf="@+id/settings_automatic_entry_egress_radiogrp"
-                        app:layout_constraintTop_toBottomOf="@+id/settings_automatic_entry_egress_radioButtonOff" />
+                        android:text="@string/settings_disabled"
+                        app:layout_constraintStart_toStartOf="@+id/settings_comfort_and_convenience_rain_sense_wiper_radio_grp"
+                        app:layout_constraintTop_toBottomOf="@+id/settings_comfort_and_convenience_rain_sense_wiper_radio_Button_enabled" />
 
                     <RadioButton
-                        android:id="@+id/settings_automatic_entry_egress_radioButtonOff"
+                        android:id="@+id/settings_comfort_and_convenience_rain_sense_wiper_radio_Button_enabled"
                         style="?attr/settings_sounds_audio1_radiobutton"
+                        android:checked="@{!dataPoolHandler.SETTINGS_SET_CLIMATE_INNER_STATE}"
                         android:onClick="@{(view) -> clickHandler.onClickHandler(view,false)}"
-                        android:text="Off"
-                        app:layout_constraintStart_toStartOf="@+id/settings_automatic_entry_egress_radiogrp" />
+                        android:text="@string/settings_enabled_big"
+                        app:layout_constraintStart_toStartOf="@+id/settings_comfort_and_convenience_rain_sense_wiper_radio_grp" />
 
 
                 </RadioGroup>
@@ -84,39 +85,40 @@
             </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
 
             <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/settings_automatic_entry_egress_guideline_horizontal"
+                android:id="@+id/settings_comfort_and_convenience_rain_sense_wiper_guideline_horizontal"
                 style="?attr/settings_layout_guideline_horizontal"
                 app:layout_constraintGuide_percent="@dimen/guideline_percent" />
 
             <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/settings_automatic_entry_egress_guideline_vertical"
+                android:id="@+id/settings_comfort_and_convenience_rain_sense_wiper_guideline_vertical"
                 style="?attr/settings_layout_guideline_vertical"
-                app:layout_constraintGuide_percent="0.4" />
+                app:layout_constraintGuide_percent="@dimen/guideline_percent_vertical" />
 
             <ScrollView
-                android:id="@+id/settings_automatic_entry_egress_scrollView"
+                android:id="@+id/settings_comfort_and_convenience_rain_sense_wiper_scrollView"
                 style="?attr/settings_sounds_audio1_layout_zero_wrap"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintEnd_toStartOf="@+id/settings_automatic_entry_egress_guideline_vertical"
-                app:layout_constraintTop_toBottomOf="@+id/settings_automatic_entry_egress_card_view">
+                app:layout_constraintStart_toEndOf="@+id/settings_comfort_and_convenience_rain_sense_wiper_guideline_vertical"
+                app:layout_constraintTop_toBottomOf="@+id/settings_comfort_and_convenience_rain_sense_wiper_card_view">
 
                 <com.gm.settingsapp.ui.customview.SkewTextView
-                    android:id="@+id/settings_automatic_entry_egress_text"
+                    android:id="@+id/settings_comfort_and_convenience_rain_sense_wiper_text"
                     style="?attr/settings_sounds_audio1_text"
-                    android:text="@{dataPoolHandler.SETTINGS_SET_CLIMATE_INNER_DES}"
+
+                    android:text="@string/settings_automatic_entry_egress_assist_content"
                     app:layout_constraintBottom_toBottomOf="parent"
                     bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
 
             </ScrollView>
 
             <com.gm.settingsapp.ui.customview.SkewImageView
-                android:id="@+id/settings_automatic_entry_egress_on_off_car_image"
+                android:id="@+id/settings_comfort_and_convenience_rain_sense_wiper_car_image"
                 style="?attr/settings_sounds_audio1_skewimag"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/settings_automatic_entry_egress_guideline_vertical"
-                app:layout_constraintTop_toBottomOf="@+id/settings_automatic_entry_egress_scrollView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/settings_comfort_and_convenience_rain_sense_wiper_guideline_vertical"
+                app:layout_constraintTop_toBottomOf="@+id/settings_comfort_and_convenience_rain_sense_wiper_scrollView"
                 app:layout_constraintVertical_bias="@integer/system_sound_car_bias"
                 app:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
 

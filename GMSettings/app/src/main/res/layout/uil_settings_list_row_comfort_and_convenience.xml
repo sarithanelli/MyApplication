@@ -33,8 +33,8 @@
         bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
 
         <TextView
-            android:id="@+id/settings_comfort_convenience_primary_txt"
-            style="?attr/settings_language_text_medium"
+            android:id="@+id/settings_list_row_comfort_convenience_primary_txt"
+            style="?attr/settings_sounds_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{obj.primaryData}"
@@ -54,7 +54,7 @@
 -->
 
         <ImageButton
-            android:id="@+id/settings_comfort_convenience_img_button"
+            android:id="@+id/settings_list_row_comfort_convenience_img_button"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@color/transparent"

@@ -208,27 +208,13 @@ abstract class MainActivityModule {
     @ContributesAndroidInjector
     abstract fun SettingsAutomaticRunningBoardsActivity(): SettingsAutomaticRunningBoardsActivity
     @ContributesAndroidInjector
-    abstract fun SettingsVehicleComfortAutomaticEntryActivity(): SettingsVehicleComfortAutomaticEntryActivity
+    abstract fun SettingsVehicleComfortAutomaticEntryActivity(): SettingsVehicleComfortAndConvenienceOnOffActivity
+       @ContributesAndroidInjector
+    abstract fun SettingsVehicleComfortPowerLiftgateActivity(): SettingsVehicleComfortPowerLiftgateActivity
     @ContributesAndroidInjector
-    abstract fun SettingsCollisionActivity(): SettingsCollisionActivity
+    abstract fun SettingsVehicleHandFreeLiftgateActivity(): SettingsVehicleHandFreeLiftgateActivity
     @ContributesAndroidInjector
-    abstract fun CollisionOnOffActivity(): CollisionOnOffActivity
-
-    @ContributesAndroidInjector
-    abstract fun SettingsParkAssistActivity(): SettingsParkAssistActivity
-    @ContributesAndroidInjector
-    abstract fun SettingsRearPedestrianDetectionActivity():SettingsRearPedestrianDetectionActivity
-    @ContributesAndroidInjector
-    abstract fun SettingsVehicleChimeVolumeActivity():SettingsVehicleChimeVolumeActivity
-    @ContributesAndroidInjector
-    abstract fun SettingsVehicleComfortAutomaticExtendedHillStartActivity():SettingsVehicleComfortAutomaticExtendedHillStartActivity
-
-
-
-
-
-    @ContributesAndroidInjector
-    abstract fun SettingsDriveModeCustomizationActivity(): SettingsDriveModeCustomizationActivity
+    abstract fun SettingsVehicleComfortRainSenseWiperActivity(): SettingsVehicleComfortRainSenseWiperActivity
 
 
 }

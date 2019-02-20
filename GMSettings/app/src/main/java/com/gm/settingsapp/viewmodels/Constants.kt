@@ -83,30 +83,6 @@ object Constants {
     const val DISPLAY_REAR_CLIMATE = 3015
     const val DISPLAY_AIR_QUALITY = 3016
 
-    val PEDESTRIAN_FRIENDLY_ALERT = 4001
-    val PEDESTRIAN_FRIENDLY_ALERT_SOUND = 4002
-    val ALERT_TYPE = 4003
-    val FORWORD_COLLISION_SYSTEM = 4004
-    val FRONT_PEDESTRIAN_DETECTION=4005
-    val INTERSECTIONS_TOP_ALERT=4006
-    val CONNECTED_VEHICLE_BRAKING_ALERT=4007
-    val TRAFFIC_AND_ROADSIDE_INFORMATION=4008
-    val DROWSY_DRIVER_ALETRT=4009
-    val ADAPTIVE_CRUISEGO_NOTIFIER=4010
-    val SIDE_BELTZONE_ALERT=4011
-    val LANE_CHANGE_ALERT=4012
-    val SEATBEL_TTIEGHTENING=4013
-    val PARK_ASSIST=4014
-    val PARK_ASSIST_TOWBAR=4015
-    val REAR_CAMERA_PARK_ASSIST_SYMBOLS=4016
-    val REAR_CROSS_TRAFFIC_ALERT=4017
-    val REAR_PEDESTRAIN_DETECTION=4018
-
-    val PEDESTRIAN_FRIENDLY_ALERT_TAG = "evGCollisionOnOff"
-    val COLLISION_SYSTEMS_TAG = "evGCollision"
-    val  PEDESTRIAN_FRIENDLY_ALERT_SOUND_TAG = "evGParkAssist"
-    val REAR_PEDESTRIAN_DETECTION_TAG = "evGPedestrian"
-
     const val DISPLAYMODE = "eMode"
     const val DISPLAYPROXIMITY = "eProximity"
     const val DISPLAYCALIBRATE = "eCalibrate"
@@ -256,15 +232,10 @@ object Constants {
     val COMFORT_AND_CONVENIENCE_TAG="eComfort"
     val AUTOMATIC_RUNNING_BOARDS="eAutoRunningBoards"
     val AUTOMATIC_ENTRY="eAutomaticEntry"
-    val CHIME_VOLUME="eChimeVolume"
-    val EXTENDED_HILL_START_ASSIST="eExtendedHillStartAssist"
-
-
-    val DRIVE_MODE_CUSTOMIZATION_TAG = "eDriveModeCustomization"
-
-
-
-
+    val POWER_LIFTGATE="ePowerLiftGate"
+    val HANDFREELIFTGATE="eHandFreeLiftGate"
+    val RAINSENSEWIPER="eRainSenseWiper"
+    val REVERSETILTMIRROR="eAutomaticEntry"
 
     const val MY_MODE_ENGINE = 10001
     const val MY_MODE_STEERING = 10002
@@ -291,7 +262,7 @@ object Constants {
     const val C_PERSONALIZATION_BY_DRIVER = 10112
     const val C_RAIN_SENSE_WIPERS = 10113
     const val C_AUTO_WIPE_IN_REVERSE_GEAR = 10114
-    const val C_EXTENDED_HILL_START_ASSIST = 10115
+    const val EXTENDED_HILL_START_ASSIST = 10115
 
 
 
@@ -302,21 +273,5 @@ object Constants {
 
 
 
-
-    const val C_AUTO_EGRESS_ASSIST = 10102
-
-
-
-
-
-
-
-
-
-
-
-    const val V_MODE_Z_MODE = 10010
-    const val MY_MODE = 10011
-    const val VISUALIZATION = 10012
 
 }

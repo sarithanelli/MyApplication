@@ -66,7 +66,8 @@
             app:fastScrollBarBgColor="@android:color/transparent"
             app:fastScrollBarWidth="@integer/fastScrollBarWidth"
             app:fastScrollDividerColor="@android:color/transparent"
-            app:fastScrollThumbColor="@color/thumb_color"
+
+
             app:fastScrollTrackColor="@color/track_color"
             app:fastScrollType="@{dataPoolHandler.SETTINGS_VMODE_ENGINE.size() > 6 ? 1 : 0}"
             app:layout_constraintBottom_toBottomOf="parent"

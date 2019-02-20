@@ -31,21 +31,20 @@
         bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
 
         <TextView
-            android:id="@+id/my_mode_primary_text"
+            android:id="@+id/settings_list_row_vmode_primary_text"
             style="?attr/settings_layout_text"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="0dp"
-            app:layout_constraintBottom_toTopOf="@+id/my_mode_secondary_text"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_text_my_mode_start"
+            app:layout_constraintBottom_toTopOf="@+id/settings_list_row_vmode_secondary_txt"
             app:layout_constraintHeight_percent="0.6"
             app:layout_constraintHorizontal_chainStyle="spread"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintWidth_percent="0.25"
+            app:layout_constraintWidth_percent="0.35"
             android:text="@{obj.primaryData}"/>
 
         <TextView
-            android:id="@+id/my_mode_secondary_text"
+            android:id="@+id/settings_list_row_vmode_secondary_txt"
             style="?attr/settings_layout_text_secondary"
             android:layout_width="0dp"
             android:text="@{obj.secondaryData}"
@@ -53,11 +52,12 @@
             android:textAllCaps="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_chainStyle="spread"
-            app:layout_constraintStart_toStartOf="@+id/my_mode_primary_text"
-            app:layout_constraintTop_toBottomOf="@id/my_mode_primary_text"
+            app:layout_constraintStart_toStartOf="@+id/settings_list_row_vmode_primary_text"
+            app:layout_constraintTop_toBottomOf="@id/settings_list_row_vmode_primary_text"
             app:layout_constraintWidth_percent="0.25" />
 
         <ImageButton
+            android:id="@+id/settings_list_row_vmode_img_btn"
             style="?attr/settings_button_backarrow"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -68,11 +68,11 @@
             bind:ignore="ContentDescription" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline_text_my_mode_start"
+            android:id="@+id/settings_list_row_vmode_guideline_text_start"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.25" />
+            app:layout_constraintGuide_percent="0.4" />
 
     </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
 </layout>
