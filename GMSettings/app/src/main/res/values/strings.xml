@@ -2149,10 +2149,10 @@
 <!--collision related strings-->
 
     <string name="settings_connected_vehicle_braking_alert">Connected Vehicle Braking Alert notifies you if Vehicle-toVehicle (V2V) connected vehicles in front of you suddenly brake, giving you more time to react.</string>
-    <string name="settings_traffic_and_roadside_information">Connected Vehicle Traffic and Roadside Information specifies if  connected vehicles or devices  ahead of you share traffic conditions or events that could affect your travel.</string>
+    <string name="settings_traffic_and_roadside_information1">Connected Vehicle Traffic and Roadside Information specifies if  connected vehicles or devices  ahead of you share traffic conditions or events that could affect your travel.</string>
     <string name="settings_lane_change_alert">Lane Change Alert provides side-mirror alerts to help you avoid crashing into a moving vehicle detected in their side blind spot (or zone) or a vehicle that is rapidly approaching  your side blind spot during a lane-change maneuver. </string>
     <string name="settings_park_assist">Park Assist can alert you to objects near your vehicle during low speed maneuvers.</string>
-    <string name="settings_park_assist_towbar">Parking Assist Towbar specifies if  Park Assist will work properly when a small item, such as a hitch ball, is attached to the vehicle hitch</string>
+    <string name="settings_park_assist_towbar1">Parking Assist Towbar specifies if  Park Assist will work properly when a small item, such as a hitch ball, is attached to the vehicle hitch</string>
     <string name="settings_side_beltzone_alert_content">Side BeltZone Alert</string>
     <string name="settings_seatbelt_tightening">Seatbelt Tightening</string>
     <!-- Assuming all quantity strings belong here -->
@@ -2407,17 +2407,8 @@
     </string-array>
 
 
-    <string name="drive_mode_brakefeel_response">Brake Feel,Brake Response</string>
     <string name="settings_power_train_engine">Powertrain , Engine / Shift </string>
 
-
-    <string-array name="v_mode_brake">
-        <item>@string/settings_normal</item>
-        <item>@string/settings_sport</item>
-        <item>@string/settings_track</item>
-        <item>@string/settings_snow_ice</item>
-        <item>@string/cadillac_display_weather</item>
-    </string-array>
 
 
 

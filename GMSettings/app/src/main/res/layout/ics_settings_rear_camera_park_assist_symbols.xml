@@ -111,7 +111,7 @@
                 <com.gm.settingsapp.ui.customview.SkewTextView
                     android:id="@+id/settings_rear_camera_park_assist_symbols_text"
                     style="?attr/settings_sounds_audio1_text"
-                    bind:DescText="@{dataPoolHandler.SETTINGS_CHILD_CURRENT_SCREEN}"
+                    android:text="@string/settings_front_pedestrian_detection_content"
                     app:layout_constraintBottom_toBottomOf="parent"
                     bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
 
