@@ -256,6 +256,8 @@ object Constants {
     val COMFORT_AND_CONVENIENCE_TAG="eComfort"
     val AUTOMATIC_RUNNING_BOARDS="eAutoRunningBoards"
     val AUTOMATIC_ENTRY="eAutomaticEntry"
+    val CHIME_VOLUME="eChimeVolume"
+    val EXTENDED_HILL_START_ASSIST="eExtendedHillStartAssist"
 
 
     val DRIVE_MODE_CUSTOMIZATION_TAG = "eDriveModeCustomization"
@@ -289,7 +291,7 @@ object Constants {
     const val C_PERSONALIZATION_BY_DRIVER = 10112
     const val C_RAIN_SENSE_WIPERS = 10113
     const val C_AUTO_WIPE_IN_REVERSE_GEAR = 10114
-    const val EXTENDED_HILL_START_ASSIST = 10115
+    const val C_EXTENDED_HILL_START_ASSIST = 10115
 
 
 

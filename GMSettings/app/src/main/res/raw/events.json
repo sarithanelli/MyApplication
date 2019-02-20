@@ -93,6 +93,8 @@
     "eMMBrake":"eMMBrake",
     "eComfort":"eComfort",
     "eAutoRunningBoards":"eAutoRunningBoards",
+    "eChimeVolume":"eChimeVolume",
+    "eExtendedHillStartAssist":"eExtendedHillStartAssist",
     "eAutomaticEntry":"eAutomaticEntry",
     "evGCollision":"evGCollision",
     "evGCollisionOnOff":"evGCollisionOnOff",

@@ -663,6 +663,26 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.activities.SettingsVehicleChimeVolumeActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|orientation">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.eChimeVolume" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SettingsVehicleComfortAutomaticExtendedHillStartActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|orientation">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.eExtendedHillStartAssist" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
         <activity
             android:name=".ui.activities.SettingsCollisionActivity">

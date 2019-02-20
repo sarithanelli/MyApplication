@@ -690,6 +690,18 @@
     "activityName": "SettingsVehicleComfortAutomaticEntryActivity",
     "isProcess": "false"
   },
+  "eExtendedHillStartAssist": {
+    "eventType": "navigate",
+    "eventName": "eExtendedHillStartAssist",
+    "activityName": "SettingsVehicleComfortAutomaticExtendedHillStartActivity",
+    "isProcess": "false"
+  },
+  "eChimeVolume": {
+    "eventType": "navigate",
+    "eventName": "eChimeVolume",
+    "activityName": "SettingsVehicleChimeVolumeActivity",
+    "isProcess": "false"
+  },
   "evGCollision":{
     "eventType": "navigate",
     "eventName": "evGCollision",
