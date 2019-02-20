@@ -2,7 +2,6 @@ package com.gm.settingsservice.di
 
 import android.app.Application
 import android.content.Context
-import com.gm.settingsservice.apiintegration.GMSystemListener
 import com.gm.settingsservice.apiintegration.SystemController
 import com.gm.settingsservice.apiintegration.SystemListener
 import com.gm.settingsservice.apiintegration.mock.SimulationManager
@@ -56,8 +55,8 @@ class ServiceAppModule {
     }
     @Provides
     @Singleton
-    fun provideGMSDKManager(dataPoolDataHandler: DataPoolDataHandler, gmsystemListener: GMSystemListener, utility: Utility, gmsettingsManager: GMSettingsManager, context: Context, mCustomization : Customization, vehicleAudioManager: dagger.Lazy<VehicleAudioManager>, supportedLanguageListData: dagger.Lazy<SupportedLanguageListData>): GMSDKManager {
-        return GMSDKManager(dataPoolDataHandler, gmsystemListener, utility, gmsettingsManager, vehicleAudioManager,context,mCustomization, supportedLanguageListData)
+    fun provideGMSDKManager(dataPoolDataHandler: DataPoolDataHandler, systemListener: SystemListener, utility: Utility, gmsettingsManager: GMSettingsManager, context: Context, mCustomization : Customization, vehicleAudioManager: dagger.Lazy<VehicleAudioManager>, supportedLanguageListData: dagger.Lazy<SupportedLanguageListData>): GMSDKManager {
+        return GMSDKManager(dataPoolDataHandler, systemListener, utility, gmsettingsManager, vehicleAudioManager,context,mCustomization, supportedLanguageListData)
     }
 
 

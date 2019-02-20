@@ -1,7 +1,6 @@
 package com.gm.settingsservice.di
 
 import android.app.Application
-import com.gm.settingsservice.apiintegration.GMSystemListener
 import com.gm.settingsservice.apiintegration.SystemController
 import com.gm.settingsservice.apiintegration.SystemListener
 import com.gm.settingsservice.models.DataPoolDataHandler
@@ -30,6 +29,5 @@ interface ServiceAppComponent {
     fun getDataPoolDataHandler(): DataPoolDataHandler
 
     fun getSystemListener(): SystemListener
-    fun getGMSystemListener(): GMSystemListener
     fun provideUtility(): Utility
 }

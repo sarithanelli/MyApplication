@@ -11,6 +11,7 @@ import android.os.*
 import android.provider.Settings
 import android.text.format.Formatter
 import com.android.internal.app.LocalePicker
+import com.gm.settings.entities.vehiclesettings.ClimateAndAirQuality
 import com.gm.settingsservice.apiintegration.SettingsService
 import com.gm.settingsservice.apiintegration.apiinterfaces.IManager
 import com.gm.settingsservice.models.*
@@ -28,7 +29,7 @@ import kotlin.collections.ArrayList
 import javax.inject.Inject
 import com.gm.settings.entities.vehiclesettings.VehicleSettings
 import com.gm.settings.usecases.vehicle.GetVehicleSettingsOptionsUseCase
-import com.gm.settingsservice.apiintegration.GMSystemListener
+import com.gm.settingsservice.apiintegration.SystemListener
 import gm.content.LanguageInfo
 import gm.content.SupportedLanguageListData
 import gm.media.audio.VehicleAudioManager
@@ -46,15 +47,15 @@ import gm.vehicle.DateAndTime
  *  these funcs usually start after proxy constructor func in CAMFMProxy.cpp
  *  This should exclude all the functions under RecvData func, as the func in RecvData only corresponds to RES functions
  */
-class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHandler, val gmsystemListener: GMSystemListener, val utility: Utility, val gmsettingsManager: GMSettingsManager, val vehicleAudioManager: dagger.Lazy<VehicleAudioManager>, val context: Context, val mCustomization: Customization, val supportedLanguageListData: Lazy<SupportedLanguageListData>) : IManager, ApplicationsState.Callbacks {
+class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHandler, val systemListener: SystemListener, val utility: Utility, val gmsettingsManager: GMSettingsManager, val vehicleAudioManager: dagger.Lazy<VehicleAudioManager>, val context: Context, val mCustomization: Customization, val supportedLanguageListData: Lazy<SupportedLanguageListData>) : IManager, ApplicationsState.Callbacks {
 
     override fun onSETTINGS_MANAGE_SET_FAV() {
-        gmsystemListener.onSETTINGS_MANAGE_RES_FAV()
+        systemListener.onSETTINGS_MANAGE_RES_FAV()
     }
 
     override fun onSETTINGS_APPS_REQ_DATA() {
-        gmsystemListener.onDEVICEPROJECTION_RES_GOOGLEAUTOLINKENABLE(Settings.System.getInt(SettingsService.appContext.contentResolver, Constants.ANDROID_AUTO_ENABLED))
-        gmsystemListener.onDEVICEPROJECTION_RES_APPLECARPLAYENABLE(Settings.System.getInt(SettingsService.appContext.contentResolver, Constants.CARPLAY_ENABLED))
+        systemListener.onDEVICEPROJECTION_RES_GOOGLEAUTOLINKENABLE(Settings.System.getInt(SettingsService.appContext.contentResolver, Constants.ANDROID_AUTO_ENABLED))
+        systemListener.onDEVICEPROJECTION_RES_APPLECARPLAYENABLE(Settings.System.getInt(SettingsService.appContext.contentResolver, Constants.CARPLAY_ENABLED))
     }
 
     override fun onSETTINGS_REQ_APPS_INNER(any: Any) {
@@ -81,9 +82,9 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
             }
         }
         Settings.System.putInt(SettingsService.appContext.contentResolver, Constants.CARPLAY_ENABLED, value)
-        gmsystemListener.onDEVICEPROJECTION_RES_APPLECARPLAYENABLE(Settings.System.getInt(SettingsService.appContext.contentResolver, Constants.CARPLAY_ENABLED))
+        systemListener.onDEVICEPROJECTION_RES_APPLECARPLAYENABLE(Settings.System.getInt(SettingsService.appContext.contentResolver, Constants.CARPLAY_ENABLED))
         /* if (value == 0) {
-             gmsystemListener.onDEVICEPROJECTION_RES_APPLECARPLAYENABLE(Settings.System.getInt(SettingsService.appContext.contentResolver, Constants.BAIDU_CARLIFE_ENABLED))
+             systemListener.onDEVICEPROJECTION_RES_APPLECARPLAYENABLE(Settings.System.getInt(SettingsService.appContext.contentResolver, Constants.BAIDU_CARLIFE_ENABLED))
          }*/
     }
 
@@ -102,9 +103,9 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
             }
         }
         Settings.System.putInt(SettingsService.appContext.contentResolver, Constants.ANDROID_AUTO_ENABLED, value)
-        gmsystemListener.onDEVICEPROJECTION_RES_GOOGLEAUTOLINKENABLE(Settings.System.getInt(SettingsService.appContext.contentResolver, Constants.ANDROID_AUTO_ENABLED))
+        systemListener.onDEVICEPROJECTION_RES_GOOGLEAUTOLINKENABLE(Settings.System.getInt(SettingsService.appContext.contentResolver, Constants.ANDROID_AUTO_ENABLED))
         /* if (value == 0) {
-             gmsystemListener.onDEVICEPROJECTION_RES_GOOGLEAUTOLINKENABLE(Settings.System.getInt(SettingsService.appContext.contentResolver, Constants.BAIDU_CARLIFE_ENABLED))
+             systemListener.onDEVICEPROJECTION_RES_GOOGLEAUTOLINKENABLE(Settings.System.getInt(SettingsService.appContext.contentResolver, Constants.BAIDU_CARLIFE_ENABLED))
          }*/
     }
 
@@ -160,14 +161,14 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
     }
 
     override fun onSETTINGS_REQ_SPORTMODESETTINGS(any: Any) {
-        gmsystemListener.onSETTINGS_RES_SPORTMODESETTINGS(any)
+        systemListener.onSETTINGS_RES_SPORTMODESETTINGS(any)
     }
 
     override fun onSETTINGS_REQ_SPORTMODECHANGESETTINGS(any: Any) {}
 
 
     override fun onSETTINGS_REQ_DISPLAY_CADILLAC() {
-        gmsystemListener.onSETTINGS_RES_DISPLAY_CADILLAC(dataPoolDataHandler.DISPLAY_CADILLAC_SELECT)
+        systemListener.onSETTINGS_RES_DISPLAY_CADILLAC(dataPoolDataHandler.DISPLAY_CADILLAC_SELECT)
     }
 
     override fun onSETTINGS_REQ_CLIMATE_INNER(any: Any) {
@@ -202,8 +203,8 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
 
     val getUpdatedClimateUseCase = GetVehicleSettingsOptionsUseCase()
     override fun onSETTINGS_REQ_CLIMATE_MENU_LIST(any: Any) {
-        gmsystemListener.onSETTINGS_RES_CLIMATE_MENU_LIST()
-       /* try {
+       // systemListener.onSETTINGS_RES_CLIMATE_MENU_LIST()
+        try {
             val result = getUpdatedClimateUseCase.executeSync().availableOptions as List<ClimateAndAirQuality>
             result.forEach {
                 when (it) {
@@ -246,7 +247,7 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
 
         } catch (e: Exception) {
             e.printStackTrace()
-        }*/
+        }
 
 
     }
@@ -392,7 +393,7 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
 
             }
         }
-        gmsystemListener.onSETTINGS_RES_DRIVINGMODELIST(vehicleData)
+        systemListener.onSETTINGS_RES_DRIVINGMODELIST(vehicleData)
     }
 
     override fun onSETTINGS_REQ_GETLANGUAGE() {
@@ -436,13 +437,13 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
 
     // request for current time
     override fun onSETTINGS_REQ_GETTIMEINFO() {
-        gmsystemListener.onSETTINGS_RES_TIMEINFO(utility.getCurrentTime())
+        systemListener.onSETTINGS_RES_TIMEINFO(utility.getCurrentTime())
     }
 
     // request for current date
     override fun onSETTINGS_REQ_GETDATEINFO() {
         utility.setMinMaxLimits()
-        gmsystemListener.onSETTINGS_RES_DATEINFO(utility.getCurrentDate())
+        systemListener.onSETTINGS_RES_DATEINFO(utility.getCurrentDate())
     }
 
     override fun onSETTINGS_REQ_TIMEDATE() {
@@ -464,12 +465,12 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
      * This method is launch the sound menu list
      */
     override fun onSETTINGS_REQ_SOUND_MENU() {
-        gmsystemListener.onSETTINGS_RES_SOUND_MENU()
+        systemListener.onSETTINGS_RES_SOUND_MENU()
     }
 
     override fun onSETTINGS_REQ_SETTIMEHOURDEC(any: Any) {
         val timeInfo = utility.setCalenderTime(Calendar.HOUR_OF_DAY, any as Int)
-        gmsystemListener.onSETTINGS_RES_TIMEINFO(timeInfo)
+        systemListener.onSETTINGS_RES_TIMEINFO(timeInfo)
         dataPoolDataHandler.SETTINGS_TIMEINFO_HOUROFDAY.set(any)
         (SettingsService.appContext.getSystemService(Context.ALARM_SERVICE) as AlarmManager).setTime(utility.convertTimeInMillis(timeInfo))
 
@@ -477,28 +478,28 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
 
     override fun onSETTINGS_REQ_SETTIMEHOURINC(any: Any) {
         val timeInfo = utility.setCalenderTime(Calendar.HOUR_OF_DAY, any as Int)
-        gmsystemListener.onSETTINGS_RES_TIMEINFO(timeInfo)
+        systemListener.onSETTINGS_RES_TIMEINFO(timeInfo)
         dataPoolDataHandler.SETTINGS_TIMEINFO_HOUROFDAY.set(any)
         (SettingsService.appContext.getSystemService(Context.ALARM_SERVICE) as AlarmManager).setTime(utility.convertTimeInMillis(timeInfo))
     }
 
     override fun onSETTINGS_REQ_SETTIMEMINUTEDEC(any: Any) {
         val timeInfo = utility.setCalenderTime(Calendar.MINUTE, any as Int)
-        gmsystemListener.onSETTINGS_RES_TIMEINFO(timeInfo)
+        systemListener.onSETTINGS_RES_TIMEINFO(timeInfo)
         //   dataPoolDataHandler.SETTINGS_TIMEINFO_MINUTEOFHOUR.set(any)
         (SettingsService.appContext.getSystemService(Context.ALARM_SERVICE) as AlarmManager).setTime(utility.convertTimeInMillis(timeInfo))
     }
 
     override fun onSETTINGS_REQ_SETTIMEMINUTEINC(any: Any) {
         val timeInfo = utility.setCalenderTime(Calendar.MINUTE, any as Int)
-        gmsystemListener.onSETTINGS_RES_TIMEINFO(timeInfo)
+        systemListener.onSETTINGS_RES_TIMEINFO(timeInfo)
         // dataPoolDataHandler.SETTINGS_TIMEINFO_MINUTEOFHOUR.set(any)
         (SettingsService.appContext.getSystemService(Context.ALARM_SERVICE) as AlarmManager).setTime(utility.convertTimeInMillis(timeInfo))
     }
 
     override fun onSETTINGS_REQ_SETTIMEPM(any: Any) {
         val timeInfo = utility.setTimeMeridien(any as Int)
-        gmsystemListener.onSETTINGS_RES_TIMEINFO(timeInfo)
+        systemListener.onSETTINGS_RES_TIMEINFO(timeInfo)
         dataPoolDataHandler.SETTINGS_TIMEINFO_MERIDIEM.set(eSettingsTimeMeridiem.SETTINGS_TIME_MERIDIEM_POST)
         (SettingsService.appContext.getSystemService(Context.ALARM_SERVICE) as AlarmManager).setTime(utility.convertTimeInMillis(timeInfo))
     }
@@ -506,7 +507,7 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
 
     override fun onSETTINGS_REQ_SETTIMEAM(any: Any) {
         val timeInfo = utility.setTimeMeridien(any as Int)
-        gmsystemListener.onSETTINGS_RES_TIMEINFO(timeInfo)
+        systemListener.onSETTINGS_RES_TIMEINFO(timeInfo)
         dataPoolDataHandler.SETTINGS_TIMEINFO_MERIDIEM.set(eSettingsTimeMeridiem.SETTINGS_TIME_MERIDIEM_ANTE)
         (SettingsService.appContext.getSystemService(Context.ALARM_SERVICE) as AlarmManager).setTime(utility.convertTimeInMillis(timeInfo))
     }
@@ -514,35 +515,35 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
     override fun onSETTINGS_REQ_SETDATEDAYDEC(any: Any) {
         val dateInfo_t = utility.setCalenderDate(Calendar.DATE, any as Int)
         dataPoolDataHandler.SETTINGS_DATEINFO_CALENDARDAY.set(any)
-        gmsystemListener.onSETTINGS_RES_DATEINFO(dateInfo_t)
+        systemListener.onSETTINGS_RES_DATEINFO(dateInfo_t)
         (SettingsService.appContext.getSystemService(Context.ALARM_SERVICE) as AlarmManager).setTime(utility.convertDateInMillis())
     }
 
     override fun onSETTINGS_REQ_SETDATEDAYINC(any: Any) {
         val dateInfo_t = utility.setCalenderDate(Calendar.DATE, any as Int)
         dataPoolDataHandler.SETTINGS_DATEINFO_CALENDARDAY.set(any)
-        gmsystemListener.onSETTINGS_RES_DATEINFO(dateInfo_t)
+        systemListener.onSETTINGS_RES_DATEINFO(dateInfo_t)
         (SettingsService.appContext.getSystemService(Context.ALARM_SERVICE) as AlarmManager).setTime(utility.convertDateInMillis())
     }
 
     override fun onSETTINGS_REQ_SETDATEMONTHDEC(any: Any) {
         val dateInfo_t = utility.setCalenderDate(Calendar.MONTH, any as Int)
         dataPoolDataHandler.SETTINGS_DATEINFO_CALENDARMONTH.set(any)
-        gmsystemListener.onSETTINGS_RES_DATEINFO(dateInfo_t)
+        systemListener.onSETTINGS_RES_DATEINFO(dateInfo_t)
         (SettingsService.appContext.getSystemService(Context.ALARM_SERVICE) as AlarmManager).setTime(utility.convertDateInMillis())
     }
 
     override fun onSETTINGS_REQ_SETDATEMONTHINC(any: Any) {
         val dateInfo_t = utility.setCalenderDate(Calendar.MONTH, any as Int)
         dataPoolDataHandler.SETTINGS_DATEINFO_CALENDARMONTH.set(any)
-        gmsystemListener.onSETTINGS_RES_DATEINFO(dateInfo_t)
+        systemListener.onSETTINGS_RES_DATEINFO(dateInfo_t)
         (SettingsService.appContext.getSystemService(Context.ALARM_SERVICE) as AlarmManager).setTime(utility.convertDateInMillis())
     }
 
     override fun onSETTINGS_REQ_SETDATEYEARDEC(any: Any) {
         val dateInfo_t = utility.setCalenderDate(Calendar.YEAR, any as Int)
         dataPoolDataHandler.SETTINGS_DATEINFO_CALENDARYEAR.set(any)
-        gmsystemListener.onSETTINGS_RES_DATEINFO(dateInfo_t)
+        systemListener.onSETTINGS_RES_DATEINFO(dateInfo_t)
         (SettingsService.appContext.getSystemService(Context.ALARM_SERVICE) as AlarmManager).setTime(utility.convertDateInMillis())
 
     }
@@ -550,17 +551,17 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
     override fun onSETTINGS_REQ_SETDATEYEARINC(any: Any) {
         val dateInfo_t = utility.setCalenderDate(Calendar.YEAR, any as Int)
         dataPoolDataHandler.SETTINGS_DATEINFO_CALENDARYEAR.set(any)
-        gmsystemListener.onSETTINGS_RES_DATEINFO(dateInfo_t)
+        systemListener.onSETTINGS_RES_DATEINFO(dateInfo_t)
         (SettingsService.appContext.getSystemService(Context.ALARM_SERVICE) as AlarmManager).setTime(utility.convertDateInMillis())
     }
 
 
     override fun onSETTINGS_REQ_TIMEORDATE(any: Any) {
         if (dataPoolDataHandler.SETTINGS_CHILD_CURRENT_SCREEN.get() == Constants.SET_TIME_SCREEN) {
-            gmsystemListener.onSETTINGS_RES_TIME_OR_DATE(true)
+            systemListener.onSETTINGS_RES_TIME_OR_DATE(true)
             onSETTINGS_REQ_GETTIMEINFO()
         } else if (dataPoolDataHandler.SETTINGS_CHILD_CURRENT_SCREEN.get() == Constants.SET_DATE_SCREEN) {
-            gmsystemListener.onSETTINGS_RES_TIME_OR_DATE(false)
+            systemListener.onSETTINGS_RES_TIME_OR_DATE(false)
             onSETTINGS_REQ_GETDATEINFO()
 
         }
@@ -571,26 +572,26 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
             if (any.isToggleState) {
                 Settings.System.putString(SettingsService.appContext.contentResolver,
                         Settings.System.TIME_12_24, HOURS_24)
-                gmsystemListener.onSETTINGS_RES_TIMEDISPLAYFORMAT(eSettingsTimeDisplayFormat.SETTINGS_SS_TIME_DISPLAY_FORMAT_24HRMODE)
+                systemListener.onSETTINGS_RES_TIMEDISPLAYFORMAT(eSettingsTimeDisplayFormat.SETTINGS_SS_TIME_DISPLAY_FORMAT_24HRMODE)
                 val calender = Calendar.getInstance()
                 dataPoolDataHandler.SETTINGS_TIMEINFO_HOUROFDAY.set(calender.get(Calendar.HOUR_OF_DAY))
             } else {
                 Settings.System.putString(SettingsService.appContext.contentResolver,
                         Settings.System.TIME_12_24, HOURS_12)
-                gmsystemListener.onSETTINGS_RES_TIMEDISPLAYFORMAT(eSettingsTimeDisplayFormat.SETTINGS_SS_TIME_DISPLAY_FORMAT_12HRMODE)
+                systemListener.onSETTINGS_RES_TIMEDISPLAYFORMAT(eSettingsTimeDisplayFormat.SETTINGS_SS_TIME_DISPLAY_FORMAT_12HRMODE)
                 val calender = Calendar.getInstance()
                 dataPoolDataHandler.SETTINGS_TIMEINFO_HOUROFDAY.set(calender.get(Calendar.HOUR))
             }
         }
-        gmsystemListener.onSETTINGS_RES_TIMEINFO(utility.getCurrentTime())
+        systemListener.onSETTINGS_RES_TIMEINFO(utility.getCurrentTime())
     }
 
     override fun onSETTINGS_REQ_GETTIMEDISPLAYFORMAT() {
         val formatVal = Settings.System.getString(SettingsService.appContext.contentResolver, Settings.System.TIME_12_24)
         if (formatVal == HOURS_24) {
-            gmsystemListener.onSETTINGS_RES_TIMEDISPLAYFORMAT(eSettingsTimeDisplayFormat.SETTINGS_SS_TIME_DISPLAY_FORMAT_24HRMODE)
+            systemListener.onSETTINGS_RES_TIMEDISPLAYFORMAT(eSettingsTimeDisplayFormat.SETTINGS_SS_TIME_DISPLAY_FORMAT_24HRMODE)
         } else {
-            gmsystemListener.onSETTINGS_RES_TIMEDISPLAYFORMAT(eSettingsTimeDisplayFormat.SETTINGS_SS_TIME_DISPLAY_FORMAT_12HRMODE)
+            systemListener.onSETTINGS_RES_TIMEDISPLAYFORMAT(eSettingsTimeDisplayFormat.SETTINGS_SS_TIME_DISPLAY_FORMAT_12HRMODE)
         }
     }
 
@@ -598,16 +599,16 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
 
         if (any is TimeDateModel) {
             if (!any.isToggleState) {
-                gmsystemListener.onSETTINGS_RES_AUTOTIMEDATEUPDATESETTING(SettingsAutoTimeUpdateSetting_t(eSettingsAutoTimeDateUpdateSetting.SETTINGS_SS_TIME_DATE_UPDATE_MANUAL, 1, 1))
+                systemListener.onSETTINGS_RES_AUTOTIMEDATEUPDATESETTING(SettingsAutoTimeUpdateSetting_t(eSettingsAutoTimeDateUpdateSetting.SETTINGS_SS_TIME_DATE_UPDATE_MANUAL, 1, 1))
             } else {
-                gmsystemListener.onSETTINGS_RES_AUTOTIMEDATEUPDATESETTING(SettingsAutoTimeUpdateSetting_t(eSettingsAutoTimeDateUpdateSetting.SETTINGS_SS_TIME_DATE_UPDATE_AUTO_PHONE, 1, 1))
+                systemListener.onSETTINGS_RES_AUTOTIMEDATEUPDATESETTING(SettingsAutoTimeUpdateSetting_t(eSettingsAutoTimeDateUpdateSetting.SETTINGS_SS_TIME_DATE_UPDATE_AUTO_PHONE, 1, 1))
             }
         }
 
     }
 
     override fun onSETTINGS_REQ_GETAUTOTIMEDATEUPDATESETTING() {
-        gmsystemListener.onSETTINGS_RES_AUTOTIMEDATEUPDATESETTING(SettingsAutoTimeUpdateSetting_t(eSettingsAutoTimeDateUpdateSetting.SETTINGS_SS_TIME_DATE_UPDATE_AUTO_PHONE, 1, 1))
+        systemListener.onSETTINGS_RES_AUTOTIMEDATEUPDATESETTING(SettingsAutoTimeUpdateSetting_t(eSettingsAutoTimeDateUpdateSetting.SETTINGS_SS_TIME_DATE_UPDATE_AUTO_PHONE, 1, 1))
 
     }
 
@@ -615,21 +616,21 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
         val alarm = SettingsService.appContext
                 .getSystemService(Context.ALARM_SERVICE) as AlarmManager
         alarm.setTimeZone((any as GmTimeZone).id)
-        gmsystemListener.onSETTINGS_RES_TIMEZONE()
+        systemListener.onSETTINGS_RES_TIMEZONE()
 
         onSETTINGS_REQ_GETTIMEINFO()
     }
 
     override fun onSETTINGS_REQ_SETAUTOMATICTIMEZONE() {
-        gmsystemListener.onSETTINGS_RES_AUTOMATICTIMEZONE()
+        systemListener.onSETTINGS_RES_AUTOMATICTIMEZONE()
     }
 
     override fun onSETTINGS_REQ_GETTIMEZONE() {
-        gmsystemListener.onSETTINGS_RES_TIMEZONE()
+        systemListener.onSETTINGS_RES_TIMEZONE()
     }
 
     override fun onSETTINGS_REQ_GETAUTOMATICTIMEZONE() {
-        gmsystemListener.onSETTINGS_RES_AUTOMATICTIMEZONE()
+        systemListener.onSETTINGS_RES_AUTOMATICTIMEZONE()
     }
 
     // var vehicleAudioManager: VehicleAudioManager = VehicleAudioManager(SettingsService.appContext)
@@ -639,14 +640,14 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
         dataPoolDataHandler.SOUNDPARAMS_MAXIMUMSTARTUPVOLUME.set(VehicleAudioManager.STREAM_VOLUME_MAX)
         // for default value for setProgress
         var volume = vehicleAudioManager.get().maxStartupVolume
-        gmsystemListener.onSETTINGS_RES_GETMAXSTARTUPVOLUME(volume)
+        systemListener.onSETTINGS_RES_GETMAXSTARTUPVOLUME(volume)
 
     }
 
     override fun onSETTINGS_REQ_SETMAXSTARTUPVOLUME(any: Any) {
         var changeVolume = vehicleAudioManager.get().maxStartupVolume + any as Int
         vehicleAudioManager.get().maxStartupVolume = changeVolume
-        gmsystemListener.onSETTINGS_RES_GETMAXSTARTUPVOLUME(changeVolume)
+        systemListener.onSETTINGS_RES_GETMAXSTARTUPVOLUME(changeVolume)
     }
 
 
@@ -656,7 +657,7 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
         var changeVolume = volume + any as Int
         //set set_audio_cue_volume
         vehicleAudioManager.get().setStreamVolume(VehicleAudioManager.STREAM_NATIVE_AUDIO_CUE, changeVolume)
-        gmsystemListener.onSETTINGS_RES_AUDIOCUES(changeVolume)
+        systemListener.onSETTINGS_RES_AUDIOCUES(changeVolume)
     }
 
     override fun onSETTINGS_REQ_GETAUDIOCUES() {
@@ -665,7 +666,7 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
         // for default value for setProgress
         var volume = vehicleAudioManager.get()
                 .getStreamVolume(VehicleAudioManager.STREAM_NATIVE_AUDIO_CUE)
-        gmsystemListener.onSETTINGS_RES_AUDIOCUES(volume)
+        systemListener.onSETTINGS_RES_AUDIOCUES(volume)
     }
 
 
@@ -691,7 +692,7 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
                 }
             }
             //set languages count and list to system listener
-            gmsystemListener.onSETTINGS_RES_SUPPORTEDLANGUAGES(SettingsSupportedLanguages_t(languageList.size, languageList))
+            systemListener.onSETTINGS_RES_SUPPORTEDLANGUAGES(SettingsSupportedLanguages_t(languageList.size, languageList))
         }
     }
 
@@ -700,7 +701,7 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
         //  var isProximity: Boolean = false
         //this function check proximity exist or not
 
-        gmsystemListener.onSETTINGS_RES_DISPLAY(CalibrationSettings.getInstance(
+        systemListener.onSETTINGS_RES_DISPLAY(CalibrationSettings.getInstance(
                 SettingsService.appContext).doesProximityExits() && CalibrationSettings.getInstance
         (SettingsService.appContext).doesNavigationExits())
 
@@ -710,24 +711,24 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
 
     //request for set display mode
     override fun onSETTINGS_REQ_SETDISPLAYMODETYPE(any: Any) {
-        gmsystemListener.onSETTINGS_RES_DISPLAYMODETYPE(any as eSettingsdisplayMode)
+        systemListener.onSETTINGS_RES_DISPLAYMODETYPE(any as eSettingsdisplayMode)
     }
 
     //request for get display mode
     override fun SETTINGS_REQ_GETDISPLAYMODETYPE() {
-        gmsystemListener.onSETTINGS_RES_DISPLAYMODETYPE(dataPoolDataHandler.SETTINGS_DISPLAYMODETYPE.get()!!)
+        systemListener.onSETTINGS_RES_DISPLAYMODETYPE(dataPoolDataHandler.SETTINGS_DISPLAYMODETYPE.get()!!)
     }
 
     //request for display status
     override fun onSETTINGS_REQ_SETDISPLAYSTATUS(any: Any) {
         val booleanValue = java.lang.Boolean.valueOf(any.toString())
         PowerModeManager.getInstance().requestDisplayMode(booleanValue)
-        gmsystemListener.onSETTINGS_RES_DISPLAYSTATUS(any.toString())
+        systemListener.onSETTINGS_RES_DISPLAYSTATUS(any.toString())
     }
 
     //request for display calibration touchscreen
     override fun onSETTINGS_REQ_CALIBRATION() {
-        gmsystemListener.onSETTINGS_RES_CALIBRATION()
+        systemListener.onSETTINGS_RES_CALIBRATION()
     }
 
     //request for calibration success
@@ -747,27 +748,27 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
         val mSettingsLanguageDataMap = SupportedLanguageListData.getInstance().languageMap
         val langInfo = mSettingsLanguageDataMap.get(dataPoolDataHandler.languages.get(any.toString()))
         val selectedLocale = langInfo!!.languageAndroidLocaleValue
-        gmsystemListener.localeToString(selectedLocale)
+        systemListener.localeToString(selectedLocale)
         LocalePicker.updateLocale(selectedLocale)
-        gmsystemListener.onSETTINGS_RES_LANGUAGE(any as ESettingsLanguageType, selectedLocale)
+        systemListener.onSETTINGS_RES_LANGUAGE(any as ESettingsLanguageType, selectedLocale)
     }
 
 
     override fun onFAVORITE_REQ_GETAUDIOFAVORITECOUNT() {
         val systemSize = Settings.System.getInt(SettingsService.appContext.contentResolver, Constants.SYSTEM_FAV_SET_NUM_OF_AUD_FAVORITE)
-        gmsystemListener.onFAVORITE_RES_AUDIOMAXFAVCOUNT(systemSize)
-        gmsystemListener.onFAVORITE_RES_AUDIOMAXFAVCOUNT(dataPoolDataHandler.SETTINGS_CURRENT_NUMBER_FAVORITES.get()!!)
+        systemListener.onFAVORITE_RES_AUDIOMAXFAVCOUNT(systemSize)
+        systemListener.onFAVORITE_RES_AUDIOMAXFAVCOUNT(dataPoolDataHandler.SETTINGS_CURRENT_NUMBER_FAVORITES.get()!!)
     }
 
     override fun onFAVORITE_REQ_SETAUDIOFAVORITECOUNT(any: Any) {
         //To update audio favorite count to hardware
-        gmsystemListener.onFAVORITE_RES_AUDIOMAXFAVCOUNT(any)
+        systemListener.onFAVORITE_RES_AUDIOMAXFAVCOUNT(any)
         Settings.System.putInt(SettingsService.appContext.contentResolver, Constants.SYSTEM_FAV_SET_NUM_OF_AUD_FAVORITE, any as Int)
 
     }
 
     override fun onSETTINGS_REQ_CONTAINER_LIST() {
-        gmsystemListener.onSETTINGS_RES_CONTAINER_MENU_LIST()
+        systemListener.onSETTINGS_RES_CONTAINER_MENU_LIST()
     }
 
 
@@ -783,7 +784,7 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
         totalStorage = memInfo.totalMem
         if (totalStorage > 0) {
             usedStorage = totalStorage - freeStorage
-            gmsystemListener.onSETTINGS_RES_GET_STORAGE_USAGE(Formatter.formatShortFileSize(SettingsService.appContext, usedStorage),
+            systemListener.onSETTINGS_RES_GET_STORAGE_USAGE(Formatter.formatShortFileSize(SettingsService.appContext, usedStorage),
                     Formatter.formatShortFileSize(SettingsService.appContext, freeStorage),
                     (usedStorage * 100 / totalStorage).toInt())
         }
@@ -848,7 +849,7 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
             }
 
         }
-        gmsystemListener.onSETTINGS_RES_GET_RUNNING_APPLICATIONLIST(mRunningAppList)
+        systemListener.onSETTINGS_RES_GET_RUNNING_APPLICATIONLIST(mRunningAppList)
         sendMessageToHandler(MSG_HANDLE_RUNNING_APPS_LIST_CHANGE, true, 0, 0, null, 200)
     }
 
@@ -859,7 +860,7 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
 
         override fun handleMessage(msg: Message) {
             when (msg.what) {
-                MSG_HANDLE_RUNNING_APPS_LIST_CHANGE -> gmsystemListener.onSETTINGS_RES_GET_RUNNING_APPLICATIONLIST(mRunningAppList)
+                MSG_HANDLE_RUNNING_APPS_LIST_CHANGE -> systemListener.onSETTINGS_RES_GET_RUNNING_APPLICATIONLIST(mRunningAppList)
             }
         }
     }
@@ -919,12 +920,12 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
             e.printStackTrace()
         }
 
-        gmsystemListener.onSETTINGS_RES_GET_CONFIRM_FORCESTOP()
+        systemListener.onSETTINGS_RES_GET_CONFIRM_FORCESTOP()
     }
 
 
     override fun onSETTINGS_REQ_GET_RUNNINGAPPSTOP_POS(any: Any) {
-        gmsystemListener.onSETTINGS_RES_GET_RUNNINGAPPSTOP_POS(any as Int)
+        systemListener.onSETTINGS_RES_GET_RUNNINGAPPSTOP_POS(any as Int)
     }
 
 
@@ -935,13 +936,13 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
         }
 
 
-        gmsystemListener.onSETTINGS_RES_BUILDCLICK()
+        systemListener.onSETTINGS_RES_BUILDCLICK()
 
     }
 
     override fun onSETTINGS_REQ_BUILDNUMBER() {
 
-        gmsystemListener.onSETTINGS_RES_BUILDNUMBER()
+        systemListener.onSETTINGS_RES_BUILDNUMBER()
 
 
     }
@@ -951,7 +952,7 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
 
     override fun onSETTINGS_REQ_OPENSOURCE() {
         val path = SystemProperties.get(PROPERTY_LICENSE_PATH, DEFAULT_LICENSE_PATH)
-        gmsystemListener.onSETTINGS_RES_OPENSOURCE(path)
+        systemListener.onSETTINGS_RES_OPENSOURCE(path)
 
     }
 
