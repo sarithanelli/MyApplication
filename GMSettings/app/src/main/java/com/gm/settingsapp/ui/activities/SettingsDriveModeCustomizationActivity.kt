@@ -5,17 +5,10 @@ import android.view.View
 import com.gm.settingsapp.GMSettingsApp
 import com.gm.settingsapp.R
 import com.gm.settingsapp.databinding.SettingsDriveModeCustomizationActivityBinding
-import com.gm.settingsapp.databinding.SettingsMyModeActivityBinding
-import com.gm.settingsapp.viewmodels.Constants
 import com.gm.settingsapp.viewmodels.Constants.MY_MODE
-import com.gm.settingsapp.viewmodels.Constants.MY_MODE_BRAKE
-import com.gm.settingsapp.viewmodels.Constants.MY_MODE_ENGINE
-import com.gm.settingsapp.viewmodels.Constants.MY_MODE_STEERING
-import com.gm.settingsapp.viewmodels.Constants.MY_MODE_SUSPENSION
 import com.gm.settingsapp.viewmodels.Constants.VISUALIZATION
 import com.gm.settingsapp.viewmodels.Constants.V_MODE_Z_MODE
 import com.gm.settingsservice.models.DriveModeCustomizationModel
-import com.gm.settingsservice.models.MyModeModel
 import dagger.android.AndroidInjection
 
 /**

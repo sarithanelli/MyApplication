@@ -217,4 +217,13 @@ abstract class MainActivityModule {
     abstract fun SettingsVehicleComfortRainSenseWiperActivity(): SettingsVehicleComfortRainSenseWiperActivity
 
 
+    @ContributesAndroidInjector
+    abstract fun SettingsCollisionActivity(): SettingsCollisionActivity
+    @ContributesAndroidInjector
+    abstract fun CollisionOnOffActivity(): CollisionOnOffActivity
+
+    @ContributesAndroidInjector
+    abstract fun SettingsParkAssistActivity(): SettingsParkAssistActivity
+    @ContributesAndroidInjector
+    abstract fun SettingsRearPedestrianDetectionActivity(): SettingsRearPedestrianDetectionActivity
 }

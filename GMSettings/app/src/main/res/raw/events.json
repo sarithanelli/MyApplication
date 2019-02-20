@@ -91,12 +91,16 @@
     "eMMSteering":"eMMSteering",
     "eMMSuspension":"eMMSuspension",
     "eMMBrake":"eMMBrake",
+    "ePowerLiftGate":"ePowerLiftGate",
+    "eHandFreeLiftGate":"eHandFreeLiftGate",
+    "eRainSenseWiper":"eRainSenseWiper",
     "eComfort":"eComfort",
     "eAutoRunningBoards":"eAutoRunningBoards",
     "eAutomaticEntry":"eAutomaticEntry",
-    "ePowerLiftGate":"ePowerLiftGate",
-    "eHandFreeLiftGate":"eHandFreeLiftGate",
-    "eRainSenseWiper":"eRainSenseWiper"
+    "evGCollision":"evGCollision",
+    "evGCollisionOnOff":"evGCollisionOnOff",
+    "evGParkAssist":"evGParkAssist",
+    "evGPedestrian":"evGPedestrian"
 
   },
   "events_activity_action_map_custom": {

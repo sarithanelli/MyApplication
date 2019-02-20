@@ -206,13 +206,13 @@ object Constants {
 
     const val RADIOBUTTON_ON = "On"
     const val SPORT_TAG = "eSportModeCustomizationOnOff"
-    const val SPORT_STEERING="eSportModeCustomizationToggleOnOffSteering"
-    const val SPORT_DISPLAY="eSportModeCustomizationToggleOnOffDisplay"
-    const val SPORT_SUSPENSION="eSportModeCustomizationToggleOnOffSuspension"
-    const val SPORT_TRACTION="eSportModeCustomizationToggleOnOffTraction"
-    const val SPORT_DRIVER_SEAT="eSportModeCustomizationToggleOnOffDriverSeat"
-    const val SPORT_PASSANGER_SEAT="eSportModeCustomizationToggleOnOffPassengerSeat"
-    const val SPORT_ADAPTIVE="eSportModeCustomizationToggleOnOffAdaptiveCruiseControl"
+    const val SPORT_STEERING = "eSportModeCustomizationToggleOnOffSteering"
+    const val SPORT_DISPLAY = "eSportModeCustomizationToggleOnOffDisplay"
+    const val SPORT_SUSPENSION = "eSportModeCustomizationToggleOnOffSuspension"
+    const val SPORT_TRACTION = "eSportModeCustomizationToggleOnOffTraction"
+    const val SPORT_DRIVER_SEAT = "eSportModeCustomizationToggleOnOffDriverSeat"
+    const val SPORT_PASSANGER_SEAT = "eSportModeCustomizationToggleOnOffPassengerSeat"
+    const val SPORT_ADAPTIVE = "eSportModeCustomizationToggleOnOffAdaptiveCruiseControl"
 
 
     val MYMODE_TAG = "eMyMode"
@@ -229,13 +229,13 @@ object Constants {
     val VMODE_BRAKE_TAG = "eVMBrake"
     val VMODE_POWER_TAG = "eVMPower"
 
-    val COMFORT_AND_CONVENIENCE_TAG="eComfort"
-    val AUTOMATIC_RUNNING_BOARDS="eAutoRunningBoards"
-    val AUTOMATIC_ENTRY="eAutomaticEntry"
-    val POWER_LIFTGATE="ePowerLiftGate"
-    val HANDFREELIFTGATE="eHandFreeLiftGate"
-    val RAINSENSEWIPER="eRainSenseWiper"
-    val REVERSETILTMIRROR="eAutomaticEntry"
+    val COMFORT_AND_CONVENIENCE_TAG = "eComfort"
+    val AUTOMATIC_RUNNING_BOARDS = "eAutoRunningBoards"
+    val AUTOMATIC_ENTRY = "eAutomaticEntry"
+    val POWER_LIFTGATE = "ePowerLiftGate"
+    val HANDFREELIFTGATE = "eHandFreeLiftGate"
+    val RAINSENSEWIPER = "eRainSenseWiper"
+    val REVERSETILTMIRROR = "eAutomaticEntry"
 
     const val MY_MODE_ENGINE = 10001
     const val MY_MODE_STEERING = 10002
@@ -254,7 +254,7 @@ object Constants {
     const val C_EASY_EXIT_SEAT = 10104
     const val C_EASY_EXIT_STEERING_COLUMN = 10105
     const val C_EASY_EXIT_OPTIONS = 10106
-    const val C_CHIME_VOLUME =10107
+    const val C_CHIME_VOLUME = 10107
     const val C_POWER_LIFTGATE = 10108
     const val C_HANDSFREE_LIFTGATE = 10109
     const val C_REVERSE_TILT_MIRROR = 10110
@@ -265,13 +265,37 @@ object Constants {
     const val EXTENDED_HILL_START_ASSIST = 10115
 
 
+    val PEDESTRIAN_FRIENDLY_ALERT = 4001
+    val PEDESTRIAN_FRIENDLY_ALERT_SOUND = 4002
+    val ALERT_TYPE = 4003
+    val FORWORD_COLLISION_SYSTEM = 4004
+    val FRONT_PEDESTRIAN_DETECTION = 4005
+    val INTERSECTIONS_TOP_ALERT = 4006
+    val CONNECTED_VEHICLE_BRAKING_ALERT = 4007
+    val TRAFFIC_AND_ROADSIDE_INFORMATION = 4008
+    val DROWSY_DRIVER_ALETRT = 4009
+    val ADAPTIVE_CRUISEGO_NOTIFIER = 4010
+    val SIDE_BELTZONE_ALERT = 4011
+    val LANE_CHANGE_ALERT = 4012
+    val SEATBEL_TTIEGHTENING = 4013
+    val PARK_ASSIST = 4014
+    val PARK_ASSIST_TOWBAR = 4015
+    val REAR_CAMERA_PARK_ASSIST_SYMBOLS = 4016
+    val REAR_CROSS_TRAFFIC_ALERT = 4017
+    val REAR_PEDESTRAIN_DETECTION = 4018
 
-
-
-
-
-
-
+    val PEDESTRIAN_FRIENDLY_ALERT_TAG = "evGCollisionOnOff"
+    val COLLISION_SYSTEMS_TAG = "evGCollision"
+    val PEDESTRIAN_FRIENDLY_ALERT_SOUND_TAG = "evGParkAssist"
+    val REAR_PEDESTRIAN_DETECTION_TAG = "evGPedestrian"
+    const val C_EXTENDED_HILL_START_ASSIST = 10115
+    const val C_AUTO_EGRESS_ASSIST = 10102
+    const val V_MODE_Z_MODE = 10010
+    const val MY_MODE = 10011
+    const val VISUALIZATION = 10012
+    val CHIME_VOLUME = "eChimeVolume"
+    // val EXTENDED_HILL_START_ASSIST="eExtendedHillStartAssist"
+    val DRIVE_MODE_CUSTOMIZATION_TAG = "eDriveModeCustomization"
 
 
 }

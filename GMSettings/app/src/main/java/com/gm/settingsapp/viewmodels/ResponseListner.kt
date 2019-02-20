@@ -34,8 +34,8 @@ import java.util.*
 import javax.inject.Inject
 import kotlin.collections.ArrayList
 
-class ResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Utility, serviceUtility: com.gm.settingsservice.utils.Utility, dataPoolDataHandler: DataPoolDataHandler, systemListener: SystemListener, context: Context) : ISettingsManagerRes {
-
+class ResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Utility, serviceUtility: com.gm.settingsservice.utils.Utility, dataPoolDataHandler: DataPoolDataHandler, systemListener: SystemListener, context: Context)  {
+/*
     var utility: com.gm.settingsapp.utils.Utility = utility
 
     var serviceUtility: com.gm.settingsservice.utils.Utility = serviceUtility
@@ -359,14 +359,14 @@ class ResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Util
 
 
     override fun onSETTINGS_RES_ENGINESOUNDLIST(enginemodeList: ArrayList<ESettingsChangePerfModeSound>) {
-        /*  if (dataPoolDataHandler.SETTINGS_DRIVE_MODE_ENGINE.size == 0) {
+        *//*  if (dataPoolDataHandler.SETTINGS_DRIVE_MODE_ENGINE.size == 0) {
           //    dataPoolDataHandler.SETTINGS_DRIVE_MODE_ENGINE.addAll(enginemodeList)
               if (!SettingsService.isSDKAvailable())
                   dataPoolDataHandler.SETTINGS_ENGINESOUNDTYPE.set(dataPoolDataHandler.ENGINESOUND_MAP_STATE.get(7))
           }
           if (SettingsService.isSDKAvailable()) {
               dataPoolDataHandler.SETTINGS_ENGINESOUNDTYPE.set(dataPoolDataHandler.ENGINESOUND_MAP_STATE.get(Signals.PerformanceModeSoundSignal().signalValue))
-          }*/
+          }*//*
     }
 
     override fun onSETTINGS_RES_DRIVINGMODELIST(driverModeList: ArrayList<DriveModeModel>) {
@@ -391,7 +391,7 @@ class ResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Util
     }
 
     init {
-       // systemListener.registerApiCallback(this)
+        systemListener.registerApiCallback(this)
     }
 
     override fun onSETTINGS_RES_VEHICLEDISPLAYUNITS(pData: Int) {
@@ -478,9 +478,9 @@ class ResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Util
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
-    /**
+    *//**
      *
-     */
+     *//*
     override fun onSETTINGS_RES_AUDIBLETOUCHFEEDBACK(pData: Int) {
 
 
@@ -536,9 +536,9 @@ class ResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Util
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
-    /**
+    *//**
      *Response for vehicle tab
-     */
+     *//*
     override fun onSETTINGS_RES_GLOBALSUPPORTEDSETTINGS(globalsettingsavailibilityflag: GlobalSettingsAvailibilityFlag_t) {
         dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.clear()
         if (globalsettingsavailibilityflag.drivingModeFlag == Constants.ENABLE_SETTING) {
@@ -637,9 +637,9 @@ class ResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Util
         }
     }
 
-    /**
+    *//**
      *Response for driver mode
-     */
+     *//*
     override fun onSETTINGS_RES_SUPPORTEDSETTINGS(settingsavailibilityflag: SettingsAvailibilityFlag_t) {
         getDriverModeListItems(settingsavailibilityflag)
         getSportModeListItems(settingsavailibilityflag)
@@ -669,9 +669,9 @@ class ResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Util
         }
     }
 
-    /**
+    *//**
      *Response for driver mode status
-     */
+     *//*
     override fun onSETTINGS_RES_DRIVERSELECTEDMODESTATUS(any: Any) {
         if (any is SettingsDriverStatus) {
             getEngineSoundStatus(SettingsDriverModeStatus_t(DriverSelectedMode1Status = dataPoolDataHandler.ENGINESOUND_MAP_STATE[any.enginesound]!!))
@@ -1677,7 +1677,7 @@ class ResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Util
     }
 
     override fun onSETTINGS_RES_TIMEINFO(timeinfo: TimeInfo_t) {
-        /*   if (dataPoolDataHandler.SETTINGS_SET_TIMEDATE_ROW.size < 6) {
+        *//*   if (dataPoolDataHandler.SETTINGS_SET_TIMEDATE_ROW.size < 6) {
                Log.i("calling ", "onSETTINGS_RES_TIMEINFO")
                dataPoolDataHandler.SETTINGS_SET_TIMEDATE_ROW.add(1, TimeDateModel(GMSettingsApp.appContext.resources.getString(R.string.settings_set_time_big), addingZeroToHour(dataPoolDataHandler.SETTINGS_TIMEINFO_HOUROFDAY.get()!!) + ":" + Utility.getMinuteWithLeadingZero(dataPoolDataHandler.SETTINGS_TIMEINFO_MINUTEOFHOUR.get()!!) + " " +
                        if (dataPoolDataHandler.SETTINGS_TIMEDISPLAYFORMAT.get() != eSettingsTimeDisplayFormat.SETTINGS_SS_TIME_DISPLAY_FORMAT_24HRMODE) {
@@ -1694,18 +1694,18 @@ class ResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Util
                            else
                                com.gm.settingsservice.utils.Constants.PM
                        } else "", false, false))
-           }*/
+           }*//*
 
     }
 
 
     override fun onSETTINGS_RES_DATEINFO(dateinfo: DateInfo_t) {
-        /*if (dataPoolDataHandler.SETTINGS_SET_TIMEDATE_ROW.size < 6) {
+        *//*if (dataPoolDataHandler.SETTINGS_SET_TIMEDATE_ROW.size < 6) {
             Log.i("calling ", "onSETTINGS_RES_DATEINFO")
             dataPoolDataHandler.SETTINGS_SET_TIMEDATE_ROW.add(2, TimeDateModel(GMSettingsApp.appContext.resources.getString(R.string.settings_set_date_big), dataPoolDataHandler.SETTINGS_DATEINFO_CALENDARDAY.get().toString() + "/" + com.gm.settingsapp.utils.Utility.monthPlusOne(dataPoolDataHandler.SETTINGS_DATEINFO_CALENDARMONTH.get()!!).toString() + "/" + dataPoolDataHandler.SETTINGS_DATEINFO_CALENDARYEAR.get().toString(), false, false))
         } else {
             dataPoolDataHandler.SETTINGS_SET_TIMEDATE_ROW.set(2, TimeDateModel(GMSettingsApp.appContext.resources.getString(R.string.settings_set_date_big), dataPoolDataHandler.SETTINGS_DATEINFO_CALENDARDAY.get().toString() + "/" + com.gm.settingsapp.utils.Utility.monthPlusOne(dataPoolDataHandler.SETTINGS_DATEINFO_CALENDARMONTH.get()!!).toString().toString() + "/" + dataPoolDataHandler.SETTINGS_DATEINFO_CALENDARYEAR.get().toString(), false, false))
-        }*/
+        }*//*
     }
 
 
@@ -1734,14 +1734,14 @@ class ResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Util
     }
 
     override fun onSETTINGS_RES_AUTOMATICTIMEZONE() {
-        /* if (dataPoolDataHandler.SETTINGS_SET_TIMEDATE_ROW.size < 6) {
+        *//* if (dataPoolDataHandler.SETTINGS_SET_TIMEDATE_ROW.size < 6) {
              Log.i("calling ", "onSETTINGS_RES_AUTOMATICTIMEZONE")
-    */
+    *//*
         //  dataPoolDataHandler.SETTINGS_SET_TIMEDATE_ROW.add(1, TimeDateModel(GMSettingsApp.app
         //  Context.resources.getString(R.string.settings_automatic_time_zone), GMSettingsApp.appContext.resources.getString(R.string.settings_use_network_provided_time), false, false))
-        /*    } else {
+        *//*    } else {
                 dataPoolDataHandler.SETTINGS_SET_TIMEDATE_ROW.set(3, TimeDateModel(GMSettingsApp.appContext.resources.getString(R.string.settings_automatic_time_zone), GMSettingsApp.appContext.resources.getString(R.string.settings_use_network_provided_time), true, false))
-            }*/
+            }*//*
     }
 
     override fun onSETTINGS_RES_GETMAXSTARTUPVOLUME(pData: Int) {
@@ -1798,11 +1798,11 @@ class ResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Util
     }
 
 
-    /**
+    *//**
      * response for supported languages
      * update languages list and count
      * @param SettingsSupportedLanguages_t passes count,arraylist of language type
-     */
+     *//*
     override fun onSETTINGS_RES_SUPPORTEDLANGUAGES(settingssupportedlanguages: SettingsSupportedLanguages_t) {
         if (SettingsService.isSDKAvailable()) {
             val locale = GMSettingsApp.appContext.resources.configuration.locale
@@ -1837,10 +1837,10 @@ class ResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Util
         }
     }
 
-    /**
+    *//**
      * response for set language
      * @param ESettingsLanguageType passes language type
-     */
+     *//*
     override fun onSETTINGS_RES_LANGUAGE(any: Any, selectedLocale: Locale) {
         if (SettingsService.isSDKAvailable()) {
             val lang = dataPoolDataHandler.languageMapSdk.get(selectedLocale.toString())
@@ -1978,5 +1978,5 @@ class ResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Util
         dataPoolDataHandler.SETTINGS_SPORT_MODE_CUSTOMAIZATION[6].isToggleState = any as Int == 2
         dataPoolDataHandler.SETTINGS_SPORT_MODE_CUSTOMAIZATION.set(6, SportModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_sport_adaptive_cruise_control_big), true, any as Int == 2, 2007, "Sport Adaptive Cruise Control enables enhanced dynamic behavior of adaptive cruise mode while in Sport Mode"))
 
-    }
+    }*/
 }

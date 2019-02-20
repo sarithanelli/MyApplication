@@ -1,12 +1,10 @@
 package com.gm.settingsapp.ui.activities
 
 import android.os.Bundle
-import android.provider.SyncStateContract
 import android.view.View
 import com.gm.settingsapp.GMSettingsApp
 import com.gm.settingsapp.R
 import com.gm.settingsapp.databinding.SettingsCollisionSystemsActivityBinding
-import com.gm.settingsapp.viewmodels.Constants
 import com.gm.settingsapp.viewmodels.Constants.ADAPTIVE_CRUISEGO_NOTIFIER
 import com.gm.settingsapp.viewmodels.Constants.ALERT_TYPE
 import com.gm.settingsapp.viewmodels.Constants.CONNECTED_VEHICLE_BRAKING_ALERT

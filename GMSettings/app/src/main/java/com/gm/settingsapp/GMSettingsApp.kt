@@ -17,6 +17,7 @@ import com.gm.settingsapp.ui.adapters.RecyclerViewAdapter
 import com.gm.settingsapp.ui.adapters.SettingsPagerViewAdapter
 import com.gm.settingsapp.ui.navigator.ActivityNavigator
 import com.gm.settingsapp.utils.SubUtility
+import com.gm.settingsapp.viewmodels.GMResponseListner
 import com.gm.settingsapp.viewmodels.TimeZoneParse
 import com.gm.settingsservice.models.DataPoolDataHandler
 import com.gm.settingsservice.utils.Constants.shared_prefs_key
@@ -44,6 +45,9 @@ class GMSettingsApp : Application(), Application.ActivityLifecycleCallbacks, Has
     lateinit var dispatchingServiceAndroidInjector: DispatchingAndroidInjector<Service>
     @Inject
     lateinit var responseListner: ResponseListner
+
+    @Inject
+    lateinit var gmresponseListner: GMResponseListner
     @Inject
     lateinit var systemListener: SystemListener
 
