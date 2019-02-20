@@ -599,6 +599,7 @@
     "activityName": "HTMLViewerActivity",
     "isProcess": "true"
   },
+
   "eMyMode": {
     "eventType": "navigate",
     "eventName": "eMyMode",
@@ -663,6 +664,12 @@
     "eventType": "navigate",
     "eventName": "eVMEngine",
     "activityName": "SettingsVehicleVModeEngineActivity",
+    "isProcess": "false"
+  },
+  "eDriveModeCustomization":{
+    "eventType": "navigate",
+    "eventName": "eDriveModeCustomization",
+    "activityName": "SettingsDriveModeCustomizationActivity",
     "isProcess": "false"
   },
   "eComfort": {

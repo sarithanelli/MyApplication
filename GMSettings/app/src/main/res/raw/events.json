@@ -97,7 +97,9 @@
     "evGCollision":"evGCollision",
     "evGCollisionOnOff":"evGCollisionOnOff",
     "evGParkAssist":"evGParkAssist",
-    "evGPedestrian":"evGPedestrian"
+    "evGPedestrian":"evGPedestrian",
+    "eMMBrake":"eMMBrake",
+    "eDriveModeCustomization" : "eDriveModeCustomization"
   },
   "events_activity_action_map_custom": {
     "evG_WiFiHotspot": "com.gm.connectionwifi.action.evG_WiFiHotspot",
