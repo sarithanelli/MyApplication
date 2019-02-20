@@ -238,5 +238,8 @@ abstract class MainActivityModule {
     @ContributesAndroidInjector
     abstract fun SettingsRideHeightOnOffActivity(): SettingsRideHeightOnOffActivity
 
+    @ContributesAndroidInjector
+    abstract fun SettingsRearPedestrianDetectionActivity(): SettingsRearPedestrianDetectionActivity
+
 
 }
