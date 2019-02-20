@@ -81,7 +81,7 @@ data class CollisionModeModel(
         var isToggleState: Boolean,
         val reference: Int,
         val description: String,
-        var isArrowVisible:Boolean
+        var isArrowVisible: Boolean
 )
 
 
@@ -104,7 +104,7 @@ data class AudioModeModel(
  */
 
 data class DriveModeModel(
-        var primaryData:String,
+        var primaryData: String,
         var secondaryData: String,
         var reference: Int
 )
@@ -119,6 +119,7 @@ data class MyModeModel(
         var secondaryData: String,
         var ref: Int
 )
+
 data class VModeModel(
         var primaryData: String,
         var secondaryData: String,
@@ -129,9 +130,12 @@ data class ComfortAndConvenienceModel(
         var primaryData: String,
         var ref: Int
 )
+
 data class DriveModeCustomizationModel(
         var primaryData: String,
-        var ref: Int
+        var ref: Int,
+        var isToggleVisible: Boolean,
+        var isToggleState: Boolean
 )
 
 data class RideHeightModel(
@@ -173,11 +177,9 @@ data class SportModeModel(
         var primaryData: String,
         var isTogglevisible: Boolean,
         var isToggleState: Boolean,
-        val reference:  Int,
-        val description: String)  : Parcelable
+        val reference: Int,
+        val description: String) : Parcelable
 
 
-
-
-data class AboutListItem(var mMainText : String, var mSubText : String,var mLatestVersion : String,
-                         var mLatestUpdateDate : String,var mHistoryUpdateVersion : String,var mHistoryUpdateDate : String)
+data class AboutListItem(var mMainText: String, var mSubText: String, var mLatestVersion: String,
+                         var mLatestUpdateDate: String, var mHistoryUpdateVersion: String, var mHistoryUpdateDate: String)

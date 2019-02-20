@@ -60,6 +60,7 @@ class SettingsComfortAndConvenienceActivity : BaseActivity() {
             C_AUTO_WIPE_IN_REVERSE_GEAR -> view.tag = Constants.AUTOMATIC_ENTRY
             C_RAIN_SENSE_WIPERS -> view.tag = Constants.RAINSENSEWIPER
             C_HANDSFREE_LIFTGATE -> view.tag = Constants.HANDFREELIFTGATE
+            EXTENDED_HILL_START_ASSIST -> view.tag = Constants.EXTENDED_HILL_START_ASSIST_TAG
 
             /*  C_EASY_EXIT_SEAT -> view.tag = Constants.AUTOMATIC_ENTRY
            C_EASY_EXIT_OPTIONS -> view.tag = Constants.AUTOMATIC_ENTRY

@@ -736,5 +736,23 @@
     "eventName": "evRideHeightOnOff",
     "activityName": "SettingsRideHeightOnOffActivity",
     "isProcess": "false"
+  },
+  "eHillStart": {
+    "eventType": "navigate",
+    "eventName": "eVGHillStart",
+    "activityName": "SettingsVehicleComfortAutomaticExtendedHillStartActivity",
+    "isProcess": "false"
+  },
+  "eDriveModeCustomization": {
+    "eventType": "navigate",
+    "eventName": "eVGDriveModeCustomization",
+    "activityName": "SettingsDriveModeCustomizationActivity",
+    "isProcess": "false"
+  },
+  "eVisualization": {
+    "eventType": "navigate",
+    "eventName": "eVGVisualization",
+    "activityName": "SettingsDriveModeVisualizationActivity",
+    "isProcess": "false"
   }
 }

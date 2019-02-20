@@ -450,6 +450,10 @@ class GMResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Ut
 
 
     override fun onSETTINGS_RES_CLIMATE() {
+        if (!dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.contains(GMSettingsApp.appContext.getString(R.string.settings_drive_mode_customization))) {
+            dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_drive_mode_customization))
+        }
+
         if (!dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.contains(GMSettingsApp.appContext.getString(R.string.settings_vmode))) {
             dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_vmode))
         }

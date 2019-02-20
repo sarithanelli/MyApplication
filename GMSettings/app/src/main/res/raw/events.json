@@ -102,9 +102,11 @@
     "evGCollisionOnOff":"evGCollisionOnOff",
     "evGParkAssist":"evGParkAssist",
     "evGPedestrian":"evGPedestrian",
-    "eDriveModeCustomization" : "eDriveModeCustomization",
+    "eVGDriveModeCustomization" : "eVGDriveModeCustomization",
     "evRideHeight" : "evRideHeight",
-    "evRideHeightOnOff" : "evRideHeightOnOff"
+    "evRideHeightOnOff" : "evRideHeightOnOff",
+    "eVGHillStart" : "eVGHillStart",
+    "eVGVisualization" : "eVGVisualization"
   },
   "events_activity_action_map_custom": {
     "evG_WiFiHotspot": "com.gm.connectionwifi.action.evG_WiFiHotspot",

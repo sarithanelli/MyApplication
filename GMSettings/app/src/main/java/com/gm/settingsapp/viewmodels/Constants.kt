@@ -267,6 +267,7 @@ object Constants {
     const val C_RAIN_SENSE_WIPERS = 10113
     const val C_AUTO_WIPE_IN_REVERSE_GEAR = 10114
     const val EXTENDED_HILL_START_ASSIST = 10115
+    const val EXTENDED_HILL_START_ASSIST_TAG = "eHillStart"
 
 
     val PEDESTRIAN_FRIENDLY_ALERT = 4001
