@@ -489,6 +489,7 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
         systemListener.onSETTINGS_RES_CLIMATE()
         systemListener.onSETTINGS_APPS_RES_DATA()
         //gmsettingsManager.initListeners()
+        systemListener.onSETTINGS_RES__COMFORT_CONVENIENCE_MENU()
     }
 
     private var mSupportedLanguageKeys: ArrayList<Int>? = null
