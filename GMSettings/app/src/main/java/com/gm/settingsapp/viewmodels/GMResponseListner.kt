@@ -115,34 +115,34 @@ class GMResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Ut
     override fun onSETTINGS_APPS_RES_DATA() {
 
         dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.clear()
-        if (SettingsService.isSDKAvailable()) {
-            if (CalibrationSettings.getInstance(GMSettingsApp.appContext).doesNavigationExits() || CalibrationSettings.getInstance(GMSettingsApp.appContext).doesCarPlayEnabled())
-                dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_android_auto), true, dataPoolDataHandler.DEVICEPROJECTION_GOOGLEAUTOLINKENABLE.get() == 1, com.gm.settingsapp.viewmodels.Constants.ANDROID_AUTO, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.cm_enable_disable_android_auto_settings_content)))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_apple_carplay_short1), true, dataPoolDataHandler.DEVICEPROJECTION_APPLECARPLAYENABLE.get() == 1, com.gm.settingsapp.viewmodels.Constants.APPLE_CARPLAY, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.cm_enable_disable_apple_carplay_settings_content)))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_audio_small), false, false, com.gm.settingsapp.viewmodels.Constants.AUDIO, ""))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_Cameras), false, false, com.gm.settingsapp.viewmodels.Constants.CAMERA, ""))
-            if (dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.contains(GMSettingsApp.appContext.getString(R.string.settings_climate_app))) {
-                dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_climate), false, false, com.gm.settingsapp.viewmodels.Constants.CLIMATE, ""))
-            }
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_energy), false, false, com.gm.settingsapp.viewmodels.Constants.ENERGY, ""))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_mirrorlink), true, dataPoolDataHandler.DEVICEPROJECTION_GOOGLEAUTOLINKENABLE.get() == 1, com.gm.settingsapp.viewmodels.Constants.MIRROR_LINK, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.cm_enable_disable_mirror_link_settings_content)))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_navigation_short), false, false, com.gm.settingsapp.viewmodels.Constants.NAVIGATION, ""))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_phone_small2), false, false, com.gm.settingsapp.viewmodels.Constants.PHONE, ""))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_trailering), false, false, com.gm.settingsapp.viewmodels.Constants.TRAILERING, ""))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_video), true, true, com.gm.settingsapp.viewmodels.Constants.VIDEO, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_video_voice_content)))
-        } else {
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_android_auto), true, true, com.gm.settingsapp.viewmodels.Constants.ANDROID_AUTO, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.cm_enable_disable_android_auto_settings_content)))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_apple_carplay_short1), true, true, com.gm.settingsapp.viewmodels.Constants.APPLE_CARPLAY, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.cm_enable_disable_apple_carplay_settings_content)))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_audio_small), false, false, com.gm.settingsapp.viewmodels.Constants.AUDIO, ""))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_Cameras), false, false, com.gm.settingsapp.viewmodels.Constants.CAMERA, ""))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_climate), false, false, com.gm.settingsapp.viewmodels.Constants.CLIMATE, ""))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_energy), false, false, com.gm.settingsapp.viewmodels.Constants.ENERGY, ""))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_mirrorlink), true, true, com.gm.settingsapp.viewmodels.Constants.MIRROR_LINK, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.cm_enable_disable_mirror_link_settings_content)))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_navigation_short), false, false, com.gm.settingsapp.viewmodels.Constants.NAVIGATION, ""))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_phone_small2), false, false, com.gm.settingsapp.viewmodels.Constants.PHONE, ""))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_trailering), false, false, com.gm.settingsapp.viewmodels.Constants.TRAILERING, ""))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_video), true, true, com.gm.settingsapp.viewmodels.Constants.VIDEO, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_video_voice_content)))
-        }
+        /*   if (SettingsService.isSDKAvailable()) {
+               if (CalibrationSettings.getInstance(GMSettingsApp.appContext).doesNavigationExits() || CalibrationSettings.getInstance(GMSettingsApp.appContext).doesCarPlayEnabled())
+                   dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_android_auto), true, dataPoolDataHandler.DEVICEPROJECTION_GOOGLEAUTOLINKENABLE.get() == 1, com.gm.settingsapp.viewmodels.Constants.ANDROID_AUTO, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.cm_enable_disable_android_auto_settings_content)))
+               dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_apple_carplay_short1), true, dataPoolDataHandler.DEVICEPROJECTION_APPLECARPLAYENABLE.get() == 1, com.gm.settingsapp.viewmodels.Constants.APPLE_CARPLAY, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.cm_enable_disable_apple_carplay_settings_content)))
+               dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_audio_small), false, false, com.gm.settingsapp.viewmodels.Constants.AUDIO, ""))
+               dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_Cameras), false, false, com.gm.settingsapp.viewmodels.Constants.CAMERA, ""))
+               if (dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.contains(GMSettingsApp.appContext.getString(R.string.settings_climate_app))) {
+                   dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_climate), false, false, com.gm.settingsapp.viewmodels.Constants.CLIMATE, ""))
+               }
+               dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_energy), false, false, com.gm.settingsapp.viewmodels.Constants.ENERGY, ""))
+               dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_mirrorlink), true, dataPoolDataHandler.DEVICEPROJECTION_GOOGLEAUTOLINKENABLE.get() == 1, com.gm.settingsapp.viewmodels.Constants.MIRROR_LINK, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.cm_enable_disable_mirror_link_settings_content)))
+               dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_navigation_short), false, false, com.gm.settingsapp.viewmodels.Constants.NAVIGATION, ""))
+               dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_phone_small2), false, false, com.gm.settingsapp.viewmodels.Constants.PHONE, ""))
+               dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_trailering), false, false, com.gm.settingsapp.viewmodels.Constants.TRAILERING, ""))
+               dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_video), true, true, com.gm.settingsapp.viewmodels.Constants.VIDEO, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_video_voice_content)))
+           } else {*/
+        dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_android_auto), true, true, com.gm.settingsapp.viewmodels.Constants.ANDROID_AUTO, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.cm_enable_disable_android_auto_settings_content)))
+        dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_apple_carplay_short1), true, true, com.gm.settingsapp.viewmodels.Constants.APPLE_CARPLAY, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.cm_enable_disable_apple_carplay_settings_content)))
+        dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_audio_small), false, false, com.gm.settingsapp.viewmodels.Constants.AUDIO, ""))
+        dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_Cameras), false, false, com.gm.settingsapp.viewmodels.Constants.CAMERA, ""))
+        dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_climate), false, false, com.gm.settingsapp.viewmodels.Constants.CLIMATE, ""))
+        dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_energy), false, false, com.gm.settingsapp.viewmodels.Constants.ENERGY, ""))
+        dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_mirrorlink), true, true, com.gm.settingsapp.viewmodels.Constants.MIRROR_LINK, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.cm_enable_disable_mirror_link_settings_content)))
+        dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_navigation_short), false, false, com.gm.settingsapp.viewmodels.Constants.NAVIGATION, ""))
+        dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_phone_small2), false, false, com.gm.settingsapp.viewmodels.Constants.PHONE, ""))
+        dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_trailering), false, false, com.gm.settingsapp.viewmodels.Constants.TRAILERING, ""))
+        dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_video), true, true, com.gm.settingsapp.viewmodels.Constants.VIDEO, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_video_voice_content)))
+        //}
     }
 
     //response for display status
@@ -260,7 +260,7 @@ class GMResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Ut
         var distributionTag: String? = null
 
 
-        if (SettingsService.isSDKAvailable()) {
+        /*if (SettingsService.isSDKAvailable()) {
             try {
                 if (AppSignal.getInstance(AppSignal.SignalKey.AutomaticFan).isAvailable) {
                     when (AppSignal.getInstance(AppSignal.SignalKey.AutomaticFan).signalValue) {
@@ -377,7 +377,7 @@ class GMResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Ut
             } catch (e: Exception) {
                 Log.i("", "Exception " + e.printStackTrace())
             }
-        } else {
+        } else {*/
 
             when (dataPoolDataHandler.SETTINGS_AIR_QUALITY_SENSOR_VALUE.get()) {
                 OFF_VALUE -> qualityTag = GMSettingsApp.appContext.resources.getString(R.string.ui_off)
@@ -410,7 +410,7 @@ class GMResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Ut
             dataPoolDataHandler.SETTINGS_SET_CLIMATE_ROW.add(ClimateModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_auto_air_distribution_big), distributionTag!!, false, false, com.gm.settingsapp.viewmodels.Constants.AUTO_AIR_DISTRIBUTION, ""))
             dataPoolDataHandler.SETTINGS_SET_CLIMATE_ROW.add(ClimateModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_ionizer), "", true, true, com.gm.settingsapp.viewmodels.Constants.IONIZER, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_ionizer_content)))
 
-        }
+       // }
 
     }
 
@@ -449,13 +449,27 @@ class GMResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Ut
 
 
     override fun onSETTINGS_RES_CLIMATE() {
-        dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_vmode))
-        dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_mymode))
+        if (!dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.contains(GMSettingsApp.appContext.getString(R.string.settings_vmode))) {
+            dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_vmode))
+        }
+        if (!dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.contains(GMSettingsApp.appContext.getString(R.string.settings_mymode))) {
+            dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_mymode))
+        }
         if (!dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.contains(GMSettingsApp.appContext.getString(R.string.settings_climate_app))) {
             dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_climate_app))
         }
-        dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_collision))
-        dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_comfort_and_convenience))
+
+        if (!dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.contains(GMSettingsApp.appContext.getString(R.string.settings_collision))) {
+            dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_collision))
+        }
+
+        if (!dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.contains(GMSettingsApp.appContext.getString(R.string.settings_comfort_and_convenience))) {
+            dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_comfort_and_convenience))
+        }
+
+        if (!dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.contains(GMSettingsApp.appContext.getString(R.string.settings_ride_height))) {
+            dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_ride_height))
+        }
     }
 
     init {

@@ -101,10 +101,7 @@
     "evGCollision":"evGCollision",
     "evGCollisionOnOff":"evGCollisionOnOff",
     "evGParkAssist":"evGParkAssist",
-    "evGPedestrian":"evGPedestrian"
-
     "evGPedestrian":"evGPedestrian",
-    "eMMBrake":"eMMBrake",
     "eDriveModeCustomization" : "eDriveModeCustomization",
     "evRideHeight" : "evRideHeight",
     "evRideHeightOnOff" : "evRideHeightOnOff"

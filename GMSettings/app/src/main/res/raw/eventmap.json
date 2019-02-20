@@ -701,41 +701,40 @@
     "activityName": "SettingsVehicleComfortRainSenseWiperActivity",
     "isProcess": "false"
   },
-  "evGCollision":{
+  "evGCollision": {
     "eventType": "navigate",
     "eventName": "evGCollision",
     "activityName": "SettingsCollisionActivity",
     "isProcess": "false"
   },
-  "evGCollisionOnOff":{
+  "evGCollisionOnOff": {
     "eventType": "navigate",
     "eventName": "evGCollisionOnOff",
     "activityName": "CollisionOnOffActivity",
     "isProcess": "false"
   },
-  "evGParkAssist":{
+  "evGParkAssist": {
     "eventType": "navigate",
     "eventName": "evGParkAssist",
     "activityName": "SettingsParkAssistActivity",
     "isProcess": "false"
   },
-  "evGPedestrian":{
+  "evGPedestrian": {
     "eventType": "navigate",
     "eventName": "evGPedestrian",
     "activityName": "SettingsRearPedestrianDetectionActivity",
     "isProcess": "false"
   },
-  "evRideHeight":{
+  "evRideHeight": {
     "eventType": "navigate",
     "eventName": "evRideHeight",
     "activityName": "SettingsRideHeightActivity",
     "isProcess": "false"
   },
-  "evRideHeightOnOff":{
+  "evRideHeightOnOff": {
     "eventType": "navigate",
     "eventName": "evRideHeightOnOff",
     "activityName": "SettingsRideHeightOnOffActivity",
     "isProcess": "false"
   }
-
 }
