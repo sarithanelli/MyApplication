@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="obj"
+            type="com.gm.settingsservice.models.ComfortAndConvenienceModel" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+
+    </data>
+
+
+    <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        style="?attr/settings_skewlayout"
+        android:onClick="@{(view) -> clickHandler.onItemClickHandler(view,obj)}"
+        bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
+
+        <TextView
+            android:id="@+id/settings_comfort_convenience_primary_txt"
+            style="?attr/settings_language_text_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{obj.primaryData}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.25" />
+
+<!--
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/settings_comfort_convenience_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+-->
+
+        <ImageButton
+            android:id="@+id/settings_comfort_convenience_img_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.12"
+            app:srcCompat="@drawable/ic_icn_next" />
+
+    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+
+</layout>

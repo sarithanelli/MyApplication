@@ -91,13 +91,13 @@
     "eMMSteering":"eMMSteering",
     "eMMSuspension":"eMMSuspension",
     "eMMBrake":"eMMBrake",
-
+    "eComfort":"eComfort",
+    "eAutoRunningBoards":"eAutoRunningBoards",
+    "eAutomaticEntry":"eAutomaticEntry",
     "evGCollision":"evGCollision",
     "evGCollisionOnOff":"evGCollisionOnOff",
     "evGParkAssist":"evGParkAssist",
-    "evGPedestrian":"evGPedestrian",
-    "eComfort":"eComfort",
-    "eAutoRunningBoards":"eAutoRunningBoards"
+    "evGPedestrian":"evGPedestrian"
   },
   "events_activity_action_map_custom": {
     "evG_WiFiHotspot": "com.gm.connectionwifi.action.evG_WiFiHotspot",

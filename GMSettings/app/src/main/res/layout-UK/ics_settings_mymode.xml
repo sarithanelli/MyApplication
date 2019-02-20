@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data class="SettingsMyModeActivityBinding">
+
+        <import type="android.view.View" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+    </data>
+
+
+    <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        style="?attr/settings_layout_bg_style"
+        app:layout_constraintStart_toStartOf="parent"
+        bind:skewValue="@{dataPoolHandler.isSkewEnabled}">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/settings_vehicle_my_mode_material_card_view"
+            style="?attr/settings_cardview_style"
+            app:cardElevation="8dp">
+
+            <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+                style="?attr/settings_skewlayout_bg"
+                bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
+
+                <include
+                    android:id="@+id/settings_vehicle_my_mode_top_bar"
+                    style="?attr/settings_match_wrap_style"
+                    layout="@layout/uil_ta_hc_topbar_layout"
+                    app:layout_constraintBottom_toTopOf="@+id/settings_vehicle_my_mode_recycler_view"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    bind:clickHandler="@{clickHandler}"
+                    bind:dataPoolHandler="@{dataPoolHandler}" />
+            </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <com.gm.uisdk.views.GMRecyclerView
+            android:id="@+id/settings_vehicle_my_mode_recycler_view"
+            style="?attr/settings_recyclerview"
+            app:fastScrollArrowRadius="@integer/fastScrollArrowRadius"
+            app:fastScrollBarBgColor="@android:color/transparent"
+            app:fastScrollBarWidth="@integer/fastScrollBarWidth"
+            app:fastScrollDividerColor="@android:color/transparent"
+            app:fastScrollThumbColor="@color/thumb_color"
+            app:fastScrollTrackColor="@color/track_color"
+            app:fastScrollType="@{dataPoolHandler.SETTINGS_MYMODE_MENU.size() > 6 ? 1 : 0}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settings_vehicle_my_mode_material_card_view"
+            bind:childLayout="@{@layout/uil_settings_list_row_mymode}"
+            bind:items="@{dataPoolHandler.SETTINGS_MYMODE_MENU}">
+
+        </com.gm.uisdk.views.GMRecyclerView>
+    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+</layout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data class="SettingautomaticrunningboardsBinding">
+
+        <import type="android.view.View" />
+
+        <variable
+            name="obj"
+            type="String" />
+
+        <variable
+            name="clickHandler"
+            type="com.gm.settingsapp.viewmodels.EventHandler" />
+
+        <variable
+            name="dataPoolHandler"
+            type="com.gm.settingsservice.models.DataPoolDataHandler" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+
+    </data>
+
+    <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        style="?attr/settings_layout_bg_style"
+        app:layout_constraintStart_toStartOf="parent"
+        bind:layoutDirection="@{dataPoolHandler.settingsConfiguration}"
+        bind:skewValue="@{dataPoolHandler.isSkewEnabled()}"
+        bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
+
+        <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+            android:id="@+id/settings_automatic_running_board_on_off"
+            style="?attr/settings_skewlayout_bg">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/settings_automatic_running_board_card_view"
+                style="?attr/settings_cardview_style"
+                app:cardElevation="8dp">
+
+                <include
+                    style="?attr/settings_match_wrap_style"
+                    layout="@layout/uil_ta_hc_topbar_layout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    bind:clickHandler="@{clickHandler}"
+                    bind:dataPoolHandler="@{dataPoolHandler}" />
+            </androidx.cardview.widget.CardView>
+
+            <RadioGroup
+                android:id="@+id/settings_automatic_running_board_radio_group"
+                style="?attr/settings_radiogroup"
+                app:layout_constraintEnd_toStartOf="@+id/settings_automatic_running_board_scrollView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/settings_automatic_running_board_card_view">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/settings_automatic_running_board_radio_btn_on"
+                    style="?attr/settings_radiobutton_auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableStart="@drawable/img_ta_radiobutton_themeb"
+                    android:drawablePadding="@dimen/onoffbutton_padding_end"
+                    android:fontFamily="@font/gmsansui_medium"
+                    android:padding="@dimen/onoffbutton_padding"
+                    android:tag="eModeType"
+                    android:text="@string/ui_off"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/radio_btn_text_size"
+                    app:layout_constraintStart_toStartOf="@+id/settings_automatic_running_board_radio_group" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/settings_automatic_running_board_radio_btn_off"
+                    style="?attr/settings_radiobutton_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableStart="@drawable/img_ta_radiobutton_themeb"
+                    android:drawablePadding="@dimen/onoffbutton_padding_end"
+                    android:fontFamily="@font/gmsansui_medium"
+                    android:padding="@dimen/onoffbutton_padding"
+                    android:tag="eModeType"
+                    android:text="@string/ui_on"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/radio_btn_text_size"
+                    app:layout_constraintStart_toStartOf="@+id/settings_automatic_running_board_radio_group"
+                    app:layout_constraintTop_toBottomOf="@+id/settings_automatic_running_board_radio_btn_on" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/settings_automatic_running_board_radio_btn_extended"
+                    style="?attr/settings_radiobutton_night"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableStart="@drawable/img_ta_radiobutton_themeb"
+                    android:drawablePadding="@dimen/onoffbutton_padding_end"
+                    android:fontFamily="@font/gmsansui_medium"
+                    android:padding="@dimen/onoffbutton_padding"
+                    android:tag="eModeType"
+                    android:text="@string/settings_extended"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/radio_btn_text_size"
+                    app:layout_constraintStart_toStartOf="@+id/settings_automatic_running_board_radio_group"
+                    app:layout_constraintTop_toBottomOf="@+id/settings_automatic_running_board_radio_btn_off" />
+            </RadioGroup>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/settings_automatic_running_board_guideline_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.6" />
+
+            <ScrollView
+                android:id="@+id/settings_automatic_running_board_scrollView"
+                style="@style/Layout_Match_Wrap"
+                android:layout_width="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/settings_automatic_running_board_guideline_vertical"
+                app:layout_constraintTop_toBottomOf="@id/settings_automatic_running_board_card_view">
+
+                <com.gm.settingsapp.ui.customview.SkewTextView
+                    android:id="@+id/ui_settings_information_audio_text"
+                    style="?attr/text_material_content_text"
+                    android:fontFamily="@font/gmsansui_regular"
+                    android:padding="@dimen/skewtext_padding"
+                    android:text="@string/settings_mode_content"
+                    android:textSize="@dimen/List_Secondary_text"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/settings_automatic_running_board_scrollView" />
+            </ScrollView>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/settings_automatic_running_board_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.6" />
+
+            <ImageView
+                android:id="@+id/settings_automatic_running_board_image_view"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@drawable/img_sensor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.6"
+                app:layout_constraintStart_toEndOf="@+id/settings_automatic_running_board_guideline"
+                app:layout_constraintTop_toBottomOf="@+id/settings_automatic_running_board_scrollView"
+                app:layout_constraintWidth_percent="0.25" />
+        </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+
+</layout>

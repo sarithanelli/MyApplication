@@ -255,6 +255,8 @@ object Constants {
 
     val COMFORT_AND_CONVENIENCE_TAG="eComfort"
     val AUTOMATIC_RUNNING_BOARDS="eAutoRunningBoards"
+    val AUTOMATIC_ENTRY="eAutomaticEntry"
+
 
     const val MY_MODE_ENGINE = 10001
     const val MY_MODE_STEERING = 10002
@@ -268,7 +270,7 @@ object Constants {
     const val V_MODE_POWER = 10009
 
     const val C_AUTO_RUNNING_BOARDS = 10101
-    const val C_AUTO_EGRESS_ASSIST = 10102
+    const val C_AUTO_ENTRY = 10102
     const val C_AUTO_MEMORY_RECALL = 10103
     const val C_EASY_EXIT_SEAT = 10104
     const val C_EASY_EXIT_STEERING_COLUMN = 10105
@@ -282,6 +284,18 @@ object Constants {
     const val C_RAIN_SENSE_WIPERS = 10113
     const val C_AUTO_WIPE_IN_REVERSE_GEAR = 10114
     const val EXTENDED_HILL_START_ASSIST = 10115
+
+
+
+
+
+
+
+
+
+
+
+    const val C_AUTO_EGRESS_ASSIST = 10102
 
 
 

@@ -204,6 +204,12 @@ abstract class MainActivityModule {
     @ContributesAndroidInjector
     abstract fun SettingsVehicleVModePowertrainActivity(): SettingsVehicleVModePowertrainActivity
     @ContributesAndroidInjector
+    abstract fun SettingsComfortAndConvenienceActivity(): SettingsComfortAndConvenienceActivity
+    @ContributesAndroidInjector
+    abstract fun SettingsAutomaticRunningBoardsActivity(): SettingsAutomaticRunningBoardsActivity
+    @ContributesAndroidInjector
+    abstract fun SettingsVehicleComfortAutomaticEntryActivity(): SettingsVehicleComfortAutomaticEntryActivity
+    @ContributesAndroidInjector
     abstract fun SettingsCollisionActivity(): SettingsCollisionActivity
     @ContributesAndroidInjector
     abstract fun CollisionOnOffActivity(): CollisionOnOffActivity
