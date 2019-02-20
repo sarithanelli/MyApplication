@@ -52,6 +52,7 @@
             style="?attr/settings_recyclerview"
             app:fastScrollArrowRadius="@integer/fastScrollArrowRadius"
             app:fastScrollBarWidth="@integer/fastScrollBarWidth"
+            app:fastScrollType="@{dataPoolHandler.SETTINGS_COMFORT_AND_CONVENIENCE.size() > 6 ? 1 : 0}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/settubgs_system_display_materialcardview"
             bind:childLayout="@{@layout/uil_settings_list_row_comfort_and_convenience}"

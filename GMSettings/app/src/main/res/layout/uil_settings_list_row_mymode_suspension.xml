@@ -41,6 +41,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:id="@+id/settings_vehicle_my_mode_brake_response_brake_feel_text_view"
             style="?attr/settings_language_text_medium"
             android:text="@{obj.toString()}"
             app:layout_constraintBottom_toBottomOf="parent"
