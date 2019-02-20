@@ -21,8 +21,8 @@ import com.gm.settingsapp.viewmodels.Constants.MEDIUM_VALUE
 import com.gm.settingsapp.viewmodels.Constants.NORMAL_AIRFLOW_VALUE
 import com.gm.settingsapp.viewmodels.Constants.OFF_VALUE
 import com.gm.settingsapp.viewmodels.Constants.OSCILLATING_AIRFLOW_VALUE
+import com.gm.settingsservice.apiintegration.GMSystemListener
 import com.gm.settingsservice.apiintegration.SettingsService
-import com.gm.settingsservice.apiintegration.SystemListener
 import com.gm.settingsservice.apiintegration.apiinterfaces.ISettingsManagerRes
 import com.gm.settingsservice.models.*
 import com.gm.settingsservice.utils.AppSignal
@@ -34,7 +34,7 @@ import java.util.*
 import javax.inject.Inject
 import kotlin.collections.ArrayList
 
-class ResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Utility, serviceUtility: com.gm.settingsservice.utils.Utility, dataPoolDataHandler: DataPoolDataHandler, systemListener: SystemListener, context: Context) : ISettingsManagerRes {
+class GMResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Utility, serviceUtility: com.gm.settingsservice.utils.Utility, dataPoolDataHandler: DataPoolDataHandler, gmsystemListener: GMSystemListener, context: Context) : ISettingsManagerRes {
 
     var utility: com.gm.settingsapp.utils.Utility = utility
 
@@ -389,7 +389,7 @@ class ResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Util
     }
 
     init {
-        systemListener.registerApiCallback(this)
+        gmsystemListener.registerApiCallback(this)
     }
 
     override fun onSETTINGS_RES_VEHICLEDISPLAYUNITS(pData: Int) {

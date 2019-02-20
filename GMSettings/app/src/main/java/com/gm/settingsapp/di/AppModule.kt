@@ -6,7 +6,9 @@ import com.gm.settingsapp.ui.navigator.ActivityNavigator
 import com.gm.settingsapp.utils.Utility
 import com.gm.settingsapp.viewmodels.EventHandler
 import com.gm.settingsapp.viewmodels.EventProcessor
+import com.gm.settingsapp.viewmodels.GMResponseListner
 import com.gm.settingsapp.viewmodels.ResponseListner
+import com.gm.settingsservice.apiintegration.GMSystemListener
 import com.gm.settingsservice.apiintegration.SystemListener
 import com.gm.settingsservice.models.DataPoolDataHandler
 import dagger.Module
@@ -47,6 +49,12 @@ class AppModule {
     @AppScope
     fun provideResponseListner(utility: Utility, serviceUtility: com.gm.settingsservice.utils.Utility, dataPoolDataHandler: DataPoolDataHandler, systemListener: SystemListener,context: Context): ResponseListner {
         return ResponseListner(utility, serviceUtility, dataPoolDataHandler, systemListener,context)
+    }
+
+    @Provides
+    @AppScope
+    fun provideGMResponseListner(utility: Utility, serviceUtility: com.gm.settingsservice.utils.Utility, dataPoolDataHandler: DataPoolDataHandler, gmsystemListener: GMSystemListener,context: Context): GMResponseListner {
+        return GMResponseListner(utility, serviceUtility, dataPoolDataHandler, gmsystemListener,context)
     }
 
     @Provides
