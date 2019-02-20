@@ -615,7 +615,7 @@ class BinderAdapter @Inject constructor(val eventHandler: EventHandler, val bind
             textView.text = GMSettingsApp.appContext.getText(R.string.connected_vehicle_braking_alert_text)
 
         else if (currentScreen == Constants.TRAFFIC_AND_ROADSIDE_INFORMATION)
-            textView.text = GMSettingsApp.appContext.getText(R.string.settings_traffic_and_roadside_information)
+            textView.text = GMSettingsApp.appContext.getText(R.string.settings_traffic_and_roadside_information_content)
 
         else if (currentScreen == Constants.DROWSY_DRIVER_ALETRT)
             textView.text = GMSettingsApp.appContext.getText(R.string.settings_drowsy_driver_alert_content)
@@ -636,7 +636,7 @@ class BinderAdapter @Inject constructor(val eventHandler: EventHandler, val bind
             textView.text = GMSettingsApp.appContext.getText(R.string.settings_park_assist)
 
         else if (currentScreen == Constants.PARK_ASSIST_TOWBAR)
-            textView.text = GMSettingsApp.appContext.getText(R.string.settings_park_assist_towbar)
+            textView.text = GMSettingsApp.appContext.getText(R.string.settings_park_assist_towbar_desc)
 
         else if (currentScreen == Constants.REAR_CAMERA_PARK_ASSIST_SYMBOLS)
             textView.text = GMSettingsApp.appContext.getText(R.string.settings_rear_camera_park_assist_symbols_content)
