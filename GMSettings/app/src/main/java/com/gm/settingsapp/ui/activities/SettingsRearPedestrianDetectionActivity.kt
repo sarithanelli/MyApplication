@@ -37,6 +37,6 @@ class SettingsRearPedestrianDetectionActivity : BaseActivity() {
     }
     override fun onResume() {
         super.onResume()
-        headerTitle(getString(com.gm.settingsapp.R.string.settings_collision))
+        headerTitle(dataPoolDataHandler.SETTINGS_COLLISION_HEADER_TEXT.get()!!)
     }
 }

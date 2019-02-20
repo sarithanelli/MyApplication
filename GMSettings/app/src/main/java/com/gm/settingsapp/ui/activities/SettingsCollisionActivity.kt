@@ -94,6 +94,8 @@ class SettingsCollisionActivity : BaseActivity() {
             REAR_CROSS_TRAFFIC_ALERT -> view.tag = PEDESTRIAN_FRIENDLY_ALERT_TAG
             REAR_PEDESTRAIN_DETECTION -> view.tag = REAR_PEDESTRIAN_DETECTION_TAG
         }
+        if (obj is CollisionModeModel)
+            dataPoolDataHandler.SETTINGS_COLLISION_HEADER_TEXT.set(obj.primaryData)
     }
 }
 
