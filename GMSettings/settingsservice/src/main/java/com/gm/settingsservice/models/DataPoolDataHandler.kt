@@ -638,7 +638,7 @@ import androidx.databinding.ObservableField
 
    val SETTINGS_COLLISION_RECYCLER_VIEW = ObservableField<Int>(0)
 
-   val SETTINGS_COLLISION_HEADER_TEXT = ObservableField <String>()
+
 
 
 }
