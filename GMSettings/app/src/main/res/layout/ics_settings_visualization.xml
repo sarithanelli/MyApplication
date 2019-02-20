@@ -67,7 +67,7 @@
                         style="?attr/settings_sounds_audio1_radiobutton"
                         android:checked="@{dataPoolHandler.SETTINGS_SET_CLIMATE_INNER_STATE}"
                         android:onClick="@{(view) -> clickHandler.onClickHandler(view,true)}"
-                        android:text="On"
+                        android:text="@string/ui_on"
                         app:layout_constraintStart_toStartOf="@+id/settings_visualization_radio_group"
                         app:layout_constraintTop_toBottomOf="@+id/settings_visualization_radio_button_off" />
 
@@ -76,7 +76,7 @@
                         style="?attr/settings_sounds_audio1_radiobutton"
                         android:checked="@{!dataPoolHandler.SETTINGS_SET_CLIMATE_INNER_STATE}"
                         android:onClick="@{(view) -> clickHandler.onClickHandler(view,false)}"
-                        android:text="Off"
+                        android:text="@string/ui_off"
                         app:layout_constraintStart_toStartOf="@+id/settings_visualization_radio_group" />
 
 

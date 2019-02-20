@@ -129,6 +129,10 @@ data class ComfortAndConvenienceModel(
         var primaryData: String,
         var ref: Int
 )
+data class DriveModeCustomizationModel(
+        var primaryData: String,
+        var ref: Int
+)
 /**
  * Model to create data for configuration screen
  */

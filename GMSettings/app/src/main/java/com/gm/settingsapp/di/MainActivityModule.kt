@@ -219,6 +219,8 @@ abstract class MainActivityModule {
     @ContributesAndroidInjector
     abstract fun SettingsRearPedestrianDetectionActivity(): SettingsRearPedestrianDetectionActivity
 
+    @ContributesAndroidInjector
+    abstract fun SettingsDriveModeCustomizationActivity(): SettingsDriveModeCustomizationActivity
 
 
 }

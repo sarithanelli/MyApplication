@@ -276,6 +276,13 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".ui.activities.SettingsDriveModeCustomizationActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.eDriveModeCustomization" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".ui.activities.SettingsFactoryRetryActivity"
             android:theme="@style/CustomPopup">

@@ -258,6 +258,12 @@ object Constants {
     val AUTOMATIC_ENTRY="eAutomaticEntry"
 
 
+    val DRIVE_MODE_CUSTOMIZATION_TAG = "eDriveModeCustomization"
+
+
+
+
+
     const val MY_MODE_ENGINE = 10001
     const val MY_MODE_STEERING = 10002
     const val MY_MODE_SUSPENSION = 10003
@@ -306,5 +312,9 @@ object Constants {
 
 
 
+
+    const val V_MODE_Z_MODE = 10010
+    const val MY_MODE = 10011
+    const val VISUALIZATION = 10012
 
 }
