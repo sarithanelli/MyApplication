@@ -100,6 +100,8 @@
     "eComfort":"eComfort",
     "onSETTINGS_COMFORT_CONVENIENCE_MENU":"onSETTINGS_COMFORT_CONVENIENCE_MENU",
     "eAutoRunningBoards":"eAutoRunningBoards",
+    "eAutomaticEntry":"eAutomaticEntry",
+    "eChimeVolume":"eChimeVolume",
     "onSETTINGS_REQ_AUTOMATIC_ENTRY_EGRESS_ASSIST":"onSETTINGS_REQ_AUTOMATIC_ENTRY_EGRESS_ASSIST",
     "evGCollision":"evGCollision",
     "evGCollisionOnOff":"evGCollisionOnOff",
