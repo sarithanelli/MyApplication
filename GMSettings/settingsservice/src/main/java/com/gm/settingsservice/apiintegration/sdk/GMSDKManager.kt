@@ -49,6 +49,9 @@ import gm.vehicle.DateAndTime
  */
 
 class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHandler, val systemListener: SystemListener, val utility: Utility, val gmsettingsManager: GMSettingsManager, val vehicleAudioManager: dagger.Lazy<VehicleAudioManager>, val context: Context, val mCustomization: Customization, val supportedLanguageListData: Lazy<SupportedLanguageListData>) : IManager, ApplicationsState.Callbacks {
+    override fun onSETTINGS_REQ_SETPOWERLIFTGATETYPE(any: Any) {
+    }
+
     override fun onSETTINGS_REQ_AUTOMATIC_ENTRY_EGRESS_ASSIST() {
         systemListener.onSETTINGS_RES_AUTOMATIC_ENTRY_EGRESS_ASSIST()
 

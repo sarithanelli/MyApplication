@@ -263,6 +263,12 @@
     "activityName": "SettingsDisplayModeActivity",
     "isProcess": "true"
   },
+  "ePowerLiftGateType": {
+    "eventType": "process",
+    "eventName": "onSETTINGS_REQ_SETPOWERLIFTGATETYPE",
+    "activityName": "SettingsVehicleComfortPowerLiftgateActivity",
+    "isProcess": "true"
+  },
   "ePhoneLaunch": {
     "eventType": "navigate",
     "eventName": "onSETTINGS_PHONE_REQ",
@@ -705,7 +711,7 @@
   "ePowerLiftGate": {
     "eventType": "navigate",
     "eventName": "onSETTINGS_REQ_POWER_LIFTGATE",
-    "activityName": "SettingsVehicleComfortAutomaticEntryActivity",
+    "activityName": "SettingsVehicleComfortPowerLiftgateActivity",
     "isProcess": "true"
   },
   "eHandFreeLiftGate": {
@@ -720,12 +726,12 @@
     "activityName": "SettingsVehicleComfortRainSenseWiperActivity",
     "isProcess": "true"
   },
-  "eAutoWipeReverseGear":{
-  "eventType": "navigate",
-  "eventName": "onSETTINGS_REQ_AUTO_WIPE_REVERSEGEAR",
-  "activityName": "SettingsVehicleComfortAutomaticEntryActivity",
-  "isProcess": "true"
-},
+  "eAutoWipeReverseGear": {
+    "eventType": "navigate",
+    "eventName": "onSETTINGS_REQ_AUTO_WIPE_REVERSEGEAR",
+    "activityName": "SettingsVehicleComfortAutomaticEntryActivity",
+    "isProcess": "true"
+  },
   "evGCollision": {
     "eventType": "navigate",
     "eventName": "evGCollision",

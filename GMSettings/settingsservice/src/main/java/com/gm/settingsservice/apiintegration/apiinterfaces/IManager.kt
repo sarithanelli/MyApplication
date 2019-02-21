@@ -15,7 +15,7 @@ interface IManager : ISettingsManagerReq {
 override fun onSETTINGS_MANAGE_SET_FAV()
     override fun onSETTINGS_REQ_SETTIMEAM(any: Any)
     override fun onSETTINGS_REQ_CALIBRATION()
-
+ override fun onSETTINGS_REQ_SETPOWERLIFTGATETYPE(any: Any)
     override fun onSETTINGS_REQ_SETTIMEHOURDEC(any: Any)
     override fun onSETTINGS_REQ_SETTIMEHOURINC(any: Any)
     override fun onSETTINGS_REQ_SETTIMEMINUTEDEC(any: Any)

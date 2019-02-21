@@ -43,9 +43,4 @@ abstract class FragmentBuildersModule {
 
     @ContributesAndroidInjector
     abstract fun contributeSettingsVehicleFragment(): SettingsVehicleFragment
-
-
-
-
-
 }

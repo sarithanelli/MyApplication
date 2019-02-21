@@ -81,7 +81,9 @@ class GMResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Ut
     }
     override fun onSETTINGS_RES_RAIN_SENSE_WIPERS() {
     }
+    override fun onSETTINGS_RES_SETPOWERLIFTGATETYPE(any: Any) {
 
+    }
     override fun onSETTINGS_RES_AUTO_WIPE_REVERSEGEAR() {
         dataPoolDataHandler.SETTINGS_HEADERTITLE_NAME.set(getStringFromResource(R.string.settings_auto_wipe_in_reverse_gear_big))
 

@@ -154,7 +154,7 @@ interface ISettingsManagerReq {
     fun SETTINGS_REQ_GETDISPLAYMODETYPE()
     fun onSETTINGS_REQ_SETDISPLAYSTATUS(any: Any)
     fun onSETTINGS_REQ_CALIBRATION_SUCCESS()
-
+    fun onSETTINGS_REQ_SETPOWERLIFTGATETYPE(any: Any)
     /**
      *   To get the maximum startup volume
      */

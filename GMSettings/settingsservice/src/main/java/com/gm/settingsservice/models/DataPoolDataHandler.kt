@@ -640,5 +640,5 @@ import androidx.databinding.ObservableField
 
    val SETTINGS_COLLISION_HEADER_TEXT = ObservableField <String>()
 
-
+val SETTINGS_POWER_LIFTGATE_TYPE=ObservableField<Int>()
 }

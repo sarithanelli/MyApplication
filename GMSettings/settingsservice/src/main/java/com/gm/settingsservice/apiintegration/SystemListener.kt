@@ -18,6 +18,11 @@ import javax.inject.Inject
  * Updating the data to [dataPoolDataHandler] when UI event occurred
  */
 class SystemListener @Inject constructor(dataPoolDataHandler: DataPoolDataHandler) : ISettingsManagerRes {
+    override fun onSETTINGS_RES_SETPOWERLIFTGATETYPE(any: Any) {
+        dataPoolDataHandler.SETTINGS_POWER_LIFTGATE_TYPE.set(any as Int)
+
+    }
+
     override fun onSETTINGS_RES__COMFORT_CONVENIENCE_MENU() {
         mCallback?.onSETTINGS_RES__COMFORT_CONVENIENCE_MENU()
     }
@@ -28,6 +33,7 @@ class SystemListener @Inject constructor(dataPoolDataHandler: DataPoolDataHandle
     }
 
     override fun onSETTINGS_RES_POWER_LIFTGATE() {
+        dataPoolDataHandler.SETTINGS_POWER_LIFTGATE_TYPE.get()
         mCallback?.onSETTINGS_RES_POWER_LIFTGATE()
 
     }

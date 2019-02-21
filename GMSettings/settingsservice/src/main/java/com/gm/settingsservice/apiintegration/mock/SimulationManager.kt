@@ -27,6 +27,9 @@ import kotlin.collections.ArrayList
  * To Perform functionalities when any event occurred and process the data and passing to [systemListener]
  */
 class SimulationManager @Inject constructor(dataPoolDataHandler: DataPoolDataHandler, systemListener: SystemListener, utility: Utility, context: Context) : IManager, ApplicationsState.Callbacks {
+    override fun onSETTINGS_REQ_SETPOWERLIFTGATETYPE(any: Any) {
+        systemListener.onSETTINGS_RES_SETPOWERLIFTGATETYPE(any)
+    }
 
 
     override fun onSETTINGS_REQ_AUTOMATIC_ENTRY_EGRESS_ASSIST() {
