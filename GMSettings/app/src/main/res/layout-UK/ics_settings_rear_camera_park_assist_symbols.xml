@@ -64,7 +64,7 @@
                 android:id="@+id/settings_rear_camera_park_assist_symbols_radioGroup"
                 style="?attr/settings_sounds_audio1_radiogroup"
                 android:layout_width="0dp"
-                app:layout_constraintWidth_percent="0.6"
+                app:layout_constraintWidth_percent="0.57"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/settings_rear_camera_park_assist_symbols_guideline_vertical"
                 app:layout_constraintTop_toBottomOf="@+id/settings_rear_camera_park_assist_symbols_card_view">
@@ -124,6 +124,7 @@
                 android:id="@+id/settings_rear_camera_park_assist_symbols_car_image"
                 style="?attr/settings_sounds_audio1_skewimag"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/settings_rear_camera_park_assist_symbols_scrollView"
                 app:layout_constraintEnd_toStartOf="@+id/settings_rear_camera_park_assist_symbols_guideline_vertical"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintVertical_bias="@integer/system_sound_car_bias"
