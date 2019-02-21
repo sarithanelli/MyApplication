@@ -17,26 +17,28 @@
     </data>
 
     <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        android:id="@+id/ics_settings_language_list"
         style="?attr/settings_layout_bg_style"
         app:layout_constraintStart_toStartOf="parent"
         bind:layoutDirection="@{dataPoolHandler.settingsConfiguration}"
         bind:skewValue="@{dataPoolHandler.isSkewEnabled}">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/settings_favorates_materialcardview_id"
+            android:id="@+id/ics_settings_language_list_material_card_view"
             style="?attr/settings_language_card_style"
             app:cardElevation="8dp">
 
             <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+                android:id="@+id/ics_settings_language_list_layout"
                 style="?attr/settings_language_skewlayout_style"
                 bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
 
                 <include
-                    android:id="@+id/topbar_settings_system"
+                    android:id="@+id/ics_settings_language_list_top_bar"
                     style="@style/Layout_Match_Wrap"
                     layout="@layout/uil_ta_hc_topbar_layout"
                     android:background="@android:color/transparent"
-                    app:layout_constraintBottom_toTopOf="@+id/settings_system_recycler_view"
+                    app:layout_constraintBottom_toTopOf="@+id/ics_settings_language_list_recycler_view"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -48,17 +50,17 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline"
+            android:id="@+id/ics_settings_language_list_guideline_horizantal"
             style="?attr/settings_layout_guideline_horizontal"
             app:layout_constraintGuide_percent="@dimen/setting_language_horizontal_guideline_per_rhd" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline_vertical"
+            android:id="@+id/ics_settings_language_list_guideline_vertical"
             style="?attr/settings_layout_guideline_vertical"
             app:layout_constraintGuide_percent="0.6" />
 
         <com.gm.uisdk.views.GMRecyclerView
-            android:id="@+id/settings_system_recycler_view"
+            android:id="@+id/ics_settings_language_list_recycler_view"
             style="?attr/settings_language_recyclerview"
             app:fastScrollArrowRadius="@integer/fastScrollArrowRadius"
             app:fastScrollBarBgColor="@android:color/transparent"
@@ -68,9 +70,9 @@
             app:fastScrollTrackColor="@color/track_color"
             app:fastScrollType="@{dataPoolHandler.SETTINGS_SUPPORTEDLANGUAGES_VALUES.size() > 6 ? 1 : 0}"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical"
+            app:layout_constraintEnd_toStartOf="@+id/ics_settings_language_list_guideline_vertical"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/settings_favorates_materialcardview_id"
+            app:layout_constraintTop_toBottomOf="@+id/ics_settings_language_list_material_card_view"
             bind:childLayout="@{@layout/uil_settings_list_row_language}"
             bind:ignore="MissingConstraints"
             bind:itemsbind="@{dataPoolHandler.SETTINGS_SUPPORTEDLANGUAGES_VALUES}">
@@ -78,15 +80,15 @@
         </com.gm.uisdk.views.GMRecyclerView>
 
         <ScrollView
-            android:id="@+id/scrollView"
+            android:id="@+id/ics_settings_language_list_scrollView"
             style="@style/Layout_Match_Wrap"
             android:layout_width="0dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/guideline_vertical"
-            app:layout_constraintTop_toBottomOf="@id/settings_favorates_materialcardview_id">
+            app:layout_constraintStart_toEndOf="@id/ics_settings_language_list_guideline_vertical"
+            app:layout_constraintTop_toBottomOf="@id/ics_settings_language_list_material_card_view">
 
             <com.gm.settingsapp.ui.customview.SkewTextView
-                android:id="@+id/ui_settings_information_audio_text"
+                android:id="@+id/ics_settings_language_list_text"
                 style="?attr/text_material_content_text"
                 android:fontFamily="@font/gmsansui_regular"
                 android:padding="@dimen/skewtext_padding"
@@ -94,11 +96,11 @@
                 android:textSize="@dimen/List_Secondary_text"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/scrollView" />
+                app:layout_constraintTop_toTopOf="@+id/ics_settings_language_list_scrollView" />
         </ScrollView>
 
         <ImageView
-            android:id="@+id/img_settings_display"
+            android:id="@+id/ics_settings_language_list_img"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:paddingEnd="30dp"
@@ -106,8 +108,8 @@
             android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/scrollView"
-            app:layout_constraintTop_toBottomOf="@+id/scrollView" />
+            app:layout_constraintStart_toStartOf="@+id/ics_settings_language_list_scrollView"
+            app:layout_constraintTop_toBottomOf="@+id/ics_settings_language_list_scrollView" />
     </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
 
 </layout>
