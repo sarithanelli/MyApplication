@@ -52,7 +52,7 @@ class SettingsComfortAndConvenienceActivity : BaseActivity() {
 
     override fun onEventResponse(view: View, obj: Any?) {
         when ((obj as ComfortAndConvenienceModel).ref) {
-            C_CHIME_VOLUME -> view.tag = Constants.AUTOMATIC_RUNNING_BOARDS
+            C_CHIME_VOLUME -> view.tag = Constants.CHIME_VOLUME
             C_AUTO_ENTRY -> view.tag = Constants.AUTOMATIC_ENTRY
             C_POWER_LIFTGATE -> view.tag = Constants.POWER_LIFTGATE
             C_REVERSE_TILT_MIRROR -> view.tag = Constants.AUTOMATIC_ENTRY

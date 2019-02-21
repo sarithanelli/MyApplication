@@ -677,6 +677,13 @@
     "activityName": "SettingsAutomaticRunningBoardsActivity",
     "isProcess": "false"
   },
+  "eChimeVolume": {
+    "eventType": "navigate",
+    "eventName": "eChimeVolume",
+    "activityName": "SettingsVehicleChimeVolumeActivity",
+    "isProcess": "false"
+  },
+
   "eAutomaticEntry": {
     "eventType": "navigate",
     "eventName": "eAutomaticEntry",
