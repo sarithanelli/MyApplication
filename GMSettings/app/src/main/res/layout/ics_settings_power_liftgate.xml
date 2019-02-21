@@ -53,6 +53,8 @@
             <RadioGroup
                 android:id="@+id/settings_comfort_and_convenience_power_liftgate_radio_group"
                 style="?attr/settings_radiogroup"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.57"
                 android:onClick="@{(view) -> clickHandler.onItemClickHandler(view,position)}"
                 app:layout_constraintEnd_toStartOf="@+id/settings_comfort_and_convenience_power_liftgate_guideline_vertical"
                 app:layout_constraintStart_toStartOf="parent"
@@ -124,8 +126,8 @@
                 style="@style/Layout_Match_Wrap"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                app:layout_constraintHeight_percent="0.5"
-                app:layout_constraintWidth_percent="0.4"
+                app:layout_constraintHeight_percent="0.3"
+                app:layout_constraintWidth_percent="0.36"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/settings_comfort_and_convenience_power_liftgate_guideline_vertical"
                 app:layout_constraintTop_toBottomOf="@id/settings_comfort_and_convenience_power_liftgate_card_view">
