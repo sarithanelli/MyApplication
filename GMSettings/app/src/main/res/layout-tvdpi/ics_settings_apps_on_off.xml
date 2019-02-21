@@ -21,7 +21,7 @@
 
 
     <com.gm.settingsapp.ui.customview.SkewConstraintLayout
-        android:id="@+id/system_sounds_maxstartvol_imglayout"
+        android:id="@+id/settings_apps_on_off_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@android:color/transparent"
@@ -31,7 +31,7 @@
 
 
         <include
-            android:id="@+id/topbar_settings_system"
+            android:id="@+id/settings_apps_on_off_top_bar"
             style="@style/Layout_Match_Wrap"
             layout="@layout/uil_ta_hc_topbar_layout"
             android:layout_width="0dp"
@@ -48,7 +48,7 @@
 
 
         <RadioGroup
-            android:id="@+id/radioGroup"
+            android:id="@+id/settings_apps_on_off_radio_group"
             style="?attr/settings_sounds_audio1_radiogroup"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -57,34 +57,34 @@
             app:layout_constraintHeight_percent="0.7"
             app:layout_constraintHorizontal_bias="0.8"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/topbar_settings_system"
+            app:layout_constraintTop_toBottomOf="@+id/settings_apps_on_off_top_bar"
             app:layout_constraintWidth_percent="0.28">
 
             <RadioButton
-                android:id="@+id/radioButtonOn"
+                android:id="@+id/settings_apps_radio_button_on"
                 style="?attr/settings_sounds_audio1_radiobutton"
                 android:checked="@{dataPoolHandler.SETTINGS_SET_APPS_INNER_STATE}"
                 android:onClick="@{(view) -> clickHandler.onClickHandler(view,true)}"
                 android:padding="15dp"
                 android:text="On"
-                app:layout_constraintStart_toStartOf="@+id/radioGroup"
-                app:layout_constraintTop_toBottomOf="@+id/radioButtonOff" />
+                app:layout_constraintStart_toStartOf="@+id/settings_apps_on_off_radio_group"
+                app:layout_constraintTop_toBottomOf="@+id/settings_apps_radio_button_off" />
 
             <RadioButton
-                android:id="@+id/radioButtonOff"
+                android:id="@+id/settings_apps_radio_button_off"
                 style="?attr/settings_sounds_audio1_radiobutton"
                 android:checked="@{!dataPoolHandler.SETTINGS_SET_APPS_INNER_STATE}"
                 android:onClick="@{(view) -> clickHandler.onClickHandler(view,false)}"
                 android:padding="15dp"
                 android:text="Off"
-                app:layout_constraintStart_toStartOf="@+id/radioGroup" />
+                app:layout_constraintStart_toStartOf="@+id/settings_apps_on_off_radio_group" />
 
 
         </RadioGroup>
 
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline_vertical"
+            android:id="@+id/settings_apps_on_off_vertical_guideline_end"
             style="?attr/settings_layout_guideline_vertical"
             app:layout_constraintGuide_percent="0.55" />
 
@@ -94,18 +94,18 @@
             app:layout_constraintGuide_percent="0.30" />
 
         <ScrollView
-            android:id="@+id/scrollView2"
+            android:id="@+id/settings_apps_on_off_scroll_view"
             style="?attr/settings_sounds_audio1_layout_zero_wrap"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/on_off_car_image"
+            app:layout_constraintBottom_toTopOf="@+id/settings_apps_on_off_image_view"
             app:layout_constraintHeight_percent="0.43"
-            app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
-            app:layout_constraintTop_toBottomOf="@+id/topbar_settings_system"
+            app:layout_constraintStart_toEndOf="@+id/settings_apps_on_off_vertical_guideline_end"
+            app:layout_constraintTop_toBottomOf="@+id/settings_apps_on_off_top_bar"
             app:layout_constraintWidth_percent="0.2">
 
             <com.gm.settingsapp.ui.customview.SkewTextView
-                android:id="@+id/ui_settings_information_text"
+                android:id="@+id/settings_apps_on_off_text_view"
                 style="?attr/settings_sounds_audio1_text"
                 android:text="@{dataPoolHandler.SETTINGS_SET_APPS_INNER_DES}"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -114,14 +114,14 @@
         </ScrollView>
 
         <com.gm.settingsapp.ui.customview.SkewImageView
-            android:id="@+id/on_off_car_image"
+            android:id="@+id/settings_apps_on_off_image_view"
             style="?attr/settings_sounds_audio1_skewimag"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHeight_percent="0.35"
-            app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
-            app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+            app:layout_constraintStart_toEndOf="@+id/settings_apps_on_off_vertical_guideline_end"
+            app:layout_constraintTop_toBottomOf="@+id/settings_apps_on_off_scroll_view"
             app:layout_constraintWidth_percent="0.2"
             app:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
 

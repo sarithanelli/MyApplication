@@ -717,7 +717,7 @@
   "eHandFreeLiftGate": {
     "eventType": "navigate",
     "eventName": "onSETTINGS_REQ_HANDSFREE_LIFTGATE",
-    "activityName": "SettingsVehicleHandFreeLiftgateActivity",
+    "activityName": "SettingsVehicleHandFreeLiftGateActivity",
     "isProcess": "true"
   },
   "eRainSenseWiper": {

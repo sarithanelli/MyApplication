@@ -683,7 +683,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.activities.SettingsVehicleHandFreeLiftgateActivity"
+            android:name=".ui.activities.SettingsVehicleHandFreeLiftGateActivity"
             android:clearTaskOnLaunch="true"
             android:configChanges="locale|orientation">
             <intent-filter>

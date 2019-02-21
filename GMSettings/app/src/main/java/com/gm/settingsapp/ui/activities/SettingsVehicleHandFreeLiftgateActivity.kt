@@ -3,22 +3,21 @@ package com.gm.settingsapp.ui.activities
 import android.os.Bundle
 import android.view.View
 import com.gm.settingsapp.R
-import com.gm.settingsapp.databinding.SettingPowerLiftgateBinding
-import com.gm.settingsapp.databinding.Settingsdisplaymodebinding
+import com.gm.settingsapp.databinding.SettingsVehicleHandFreeLiftGateActivityBinding
 import com.gm.settingsapp.viewmodels.Constants
 import dagger.android.AndroidInjection
 
 /**
  * This activity is to set display modes Auto,Day,Night
  */
-class SettingsVehicleHandFreeLiftgateActivity : BaseActivity() {
+class SettingsVehicleHandFreeLiftGateActivity : BaseActivity() {
     override fun onEventResponse(view: View, obj: Any?) {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         AndroidInjection.inject(this)
         super.onCreate(savedInstanceState)
-        val binding = setContentSubView(R.layout.ics_settings_power_liftgate) as com.gm.settingsapp.databinding.SettingPowerLiftgateBinding
+        val binding = setContentSubView(R.layout.ics_settings_handfree_liftgate) as SettingsVehicleHandFreeLiftGateActivityBinding
         binding.let {
             it?.clickHandler = eventHandler
             it?.dataPoolHandler = dataPoolDataHandler
