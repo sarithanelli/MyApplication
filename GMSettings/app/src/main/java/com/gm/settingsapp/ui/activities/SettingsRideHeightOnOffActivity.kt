@@ -23,6 +23,6 @@ class SettingsRideHeightOnOffActivity : BaseActivity() {
 
     override fun onResume() {
         super.onResume()
-        headerTitle(getString(com.gm.settingsapp.R.string.settings_location_based_auto_lift))
+        headerTitle(dataPoolDataHandler.SETTINGS_COLLISION_HEADER_TEXT.get()!!)
     }
 }
