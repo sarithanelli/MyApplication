@@ -22,23 +22,25 @@
 
 
     <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        android:id="@+id/settings_display_main_rhd"
         style="?attr/settings_layout_bg_style"
         bind:skewValue="@{dataPoolHandler.isSkewEnabled}">
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/settubgs_system_display_materialcardview"
+            android:id="@+id/settings_display_material_card_view_rhd"
             style="?attr/settings_cardview_style"
             app:cardElevation="8dp">
 
             <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+                android:id="@+id/settings_display_main_layout_rhd"
                 style="?attr/settings_skewlayout_bg"
                 bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
 
                 <include
-                    android:id="@+id/topbar_settings_system"
+                    android:id="@+id/settings_display_topbar_rhd"
                     style="?attr/settings_match_wrap_style"
                     layout="@layout/uil_ta_hc_topbar_layout"
-                    app:layout_constraintBottom_toTopOf="@+id/settings_system_recycler_view"
+                    app:layout_constraintBottom_toTopOf="@+id/settings_display_recycler_view_rhd"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -48,14 +50,14 @@
         </com.google.android.material.card.MaterialCardView>
 
         <com.gm.uisdk.views.GMRecyclerView
-            android:id="@+id/settings_system_recycler_view"
+            android:id="@+id/settings_display_recycler_view_rhd"
             style="?attr/settings_recyclerview"
             app:fastScrollArrowRadius="@integer/fastScrollArrowRadius"
             app:fastScrollBarWidth="@integer/fastScrollBarWidth"
             app:fastScrollType="@{dataPoolHandler.SETTINGS_DISPLAY_MENU.size() > 6 ? 1 : 0}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/settubgs_system_display_materialcardview"
+            app:layout_constraintTop_toBottomOf="@+id/settings_display_material_card_view_rhd"
             bind:childLayout="@{@layout/uil_settings_list_row_display}"
             bind:items="@{dataPoolHandler.SETTINGS_DISPLAY_MENU}">
 

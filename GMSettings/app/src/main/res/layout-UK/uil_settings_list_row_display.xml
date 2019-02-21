@@ -28,12 +28,13 @@
     </data>
 
     <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        android:id="@+id/settings_list_row_display_rhd"
         style="?attr/settings_skewlayout"
         android:onClick="@{(view)-> clickHandler.onItemClickHandler(view,(obj.reference==dataPoolHandler.settingsDisplayOff)? eSettingsDisplayStatus.SETTINGS_DISPLAY_STATUS_OFF : obj)}"
         bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
 
         <TextView
-            android:id="@+id/txt_settings_system_speech"
+            android:id="@+id/settings_list_row_display_primary_text_rhd"
             style="?attr/settings_layout_text"
             android:text="@{obj.primaryData}"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -42,23 +43,23 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/txt_settings_system_speech_secondary"
+            android:id="@+id/settings_list_row_display_secondary_text_rhd"
             style="?attr/settings_layout_text_secondary"
             android:text="@{obj.secondaryData}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/txt_settings_system_speech" />
+            app:layout_constraintTop_toBottomOf="@id/settings_list_row_display_primary_text_rhd" />
 
         <ImageView
-            android:id="@+id/img_sub_list_header"
+            android:id="@+id/settings_list_row_display_img_rhd"
             style="?attr/settings_imageview"
             android:visibility="@{obj.isTogglevisible? View.VISIBLE : View.INVISIBLE}"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/connections_phone_toggle_btn"
+            app:layout_constraintEnd_toStartOf="@+id/settings_list_row_display_toggle_btn_rhd"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ToggleButton
-            android:id="@+id/connections_phone_toggle_btn"
+            android:id="@+id/settings_list_row_display_toggle_btn_rhd"
             style="?attr/settings_radiobutton"
             android:checked="@{obj.toggleState}"
             android:visibility="@{obj.isTogglevisible? View.VISIBLE : View.INVISIBLE}"
@@ -68,7 +69,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
-            android:id="@+id/settings_display_list_row_image_button"
+            android:id="@+id/settings_list_row_display_image_button_rhd"
             style="?attr/settings_button_backarrow"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

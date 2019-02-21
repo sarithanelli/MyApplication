@@ -28,23 +28,24 @@
     </data>
 
     <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        android:id="@+id/settings_list_display_tvdpi"
         style="?attr/settings_skewlayout"
         android:layout_height="@dimen/row_height_cadillac"
         android:background="@drawable/settings_list_selector"
         bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
 
         <TextView
-            android:id="@+id/ics_ta_settings_primary_text"
+            android:id="@+id/settings_list_display_primary_text_tvdpi"
             style="?attr/settings_layout_text"
             android:paddingStart="10dp"
             android:text="@{obj.primaryData}"
-            app:layout_constraintBottom_toTopOf="@id/ics_ta_settings_secondary_text"
+            app:layout_constraintBottom_toTopOf="@id/settings_list_display_secondary_text_tvdpi"
             app:layout_constraintHorizontal_chainStyle="spread"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/ics_ta_settings_secondary_text"
+            android:id="@+id/settings_list_display_secondary_text_tvdpi"
             style="?attr/settings_layout_text_secondary"
             android:layout_width="wrap_content"
             android:paddingStart="10dp"
@@ -52,7 +53,7 @@
             android:visibility="@{obj.secondaryData.length > 0 ? View.VISIBLE : View.GONE}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/ics_ta_settings_primary_text" />
+            app:layout_constraintTop_toBottomOf="@id/settings_list_display_primary_text_tvdpi" />
 
     </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
 </layout>
