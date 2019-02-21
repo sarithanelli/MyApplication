@@ -32,7 +32,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/settings_list_easy_exit_steering_column_cardview"
             style="?attr/settings_cardview_style"
-            app:cardElevation="8dp">
+            app:cardElevation="@dimen/system_sounds_card_elevartion">
 
             <com.gm.settingsapp.ui.customview.SkewConstraintLayout
                 style="?attr/settings_skewlayout_bg"

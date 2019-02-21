@@ -37,6 +37,17 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             bind:text="@{obj}" />
+        <ImageButton
+            android:id="@+id/settings_system_list_row_image_button"
+            style="?attr/settings_button_backarrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.92"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.12"
+            app:srcCompat="@drawable/ic_icn_next"
+            bind:ignore="ContentDescription" />
+
 
     </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
 </layout>
