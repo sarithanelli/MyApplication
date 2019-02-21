@@ -20,7 +20,7 @@
 
 
     <com.gm.settingsapp.ui.customview.SkewConstraintLayout
-        android:id="@+id/system_sounds_maxstartvol_imglayout"
+        android:id="@+id/settings_vehicle_sport_mode_optimisation_on_off_layout_tvdpi"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@android:color/transparent"
@@ -30,7 +30,7 @@
 
 
         <include
-            android:id="@+id/topbar_settings_system"
+            android:id="@+id/settings_vehicle_sport_mode_optimisation_on_off__top_bar_layout_tvdpi"
             style="@style/Layout_Match_Wrap"
             layout="@layout/uil_ta_hc_topbar_layout"
             android:layout_width="0dp"
@@ -47,64 +47,61 @@
 
 
         <RadioGroup
-            android:id="@+id/radioGroup"
+            android:id="@+id/settings_vehicle_sport_mode_optimisation_on_off_radio_group_tvdpi"
             style="?attr/settings_sounds_audio1_radiogroup"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical"
+            app:layout_constraintEnd_toStartOf="@+id/settings_vehicle_sport_mode_optimisation_on_off_guideline_vertical_start_tvdpi"
             app:layout_constraintHeight_percent="0.7"
             app:layout_constraintHorizontal_bias="0.8"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/topbar_settings_system"
+            app:layout_constraintTop_toBottomOf="@+id/settings_vehicle_sport_mode_optimisation_on_off__top_bar_layout_tvdpi"
             app:layout_constraintWidth_percent="0.28">
 
             <RadioButton
-                android:id="@+id/radioButtonOn"
+                android:id="@+id/settings_vehicle_sport_mode_optimisation_on_off_radio_button_on_tvdpi"
                 style="?attr/settings_sounds_audio1_radiobutton"
                 android:checked="@{dataPoolHandler.SETTINGS_SET_CLIMATE_INNER_STATE}"
                 android:onClick="@{(view) -> clickHandler.onClickHandler(view,true)}"
                 android:padding="15dp"
-                android:text="On"
-                app:layout_constraintStart_toStartOf="@+id/radioGroup"
-                app:layout_constraintTop_toBottomOf="@+id/radioButtonOff" />
+                android:text="@string/ui_on"
+                app:layout_constraintStart_toStartOf="@+id/settings_vehicle_sport_mode_optimisation_on_off_radio_group_tvdpi"
+                app:layout_constraintTop_toBottomOf="@+id/settings_vehicle_sport_mode_optimisation_on_off_radio_button_off_tvdpi" />
 
             <RadioButton
-                android:id="@+id/radioButtonOff"
+                android:id="@+id/settings_vehicle_sport_mode_optimisation_on_off_radio_button_off_tvdpi"
                 style="?attr/settings_sounds_audio1_radiobutton"
                 android:checked="@{!dataPoolHandler.SETTINGS_SET_CLIMATE_INNER_STATE}"
                 android:onClick="@{(view) -> clickHandler.onClickHandler(view,false)}"
                 android:padding="15dp"
-                android:text="Off"
-                app:layout_constraintStart_toStartOf="@+id/radioGroup" />
+                android:text="@string/ui_off"
+                app:layout_constraintStart_toStartOf="@+id/settings_vehicle_sport_mode_optimisation_on_off_radio_group_tvdpi" />
 
 
         </RadioGroup>
 
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline_vertical"
+            android:id="@+id/settings_vehicle_sport_mode_optimisation_on_off_guideline_vertical_start_tvdpi"
             style="?attr/settings_layout_guideline_vertical"
             app:layout_constraintGuide_percent="0.55" />
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline_vertical_begin"
-            style="?attr/settings_set_audio_favorites_guideline_vertical"
-            app:layout_constraintGuide_percent="0.30" />
+
 
         <ScrollView
-            android:id="@+id/scrollView2"
+            android:id="@+id/settings_vehicle_sport_mode_optimisation_on_off_scrollView_tvdpi"
             style="?attr/settings_sounds_audio1_layout_zero_wrap"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/on_off_car_image"
+            app:layout_constraintBottom_toTopOf="@+id/settings_vehicle_sport_mode_optimisation_on_off_car_image_tvdpi"
             app:layout_constraintHeight_percent="0.43"
-            app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
-            app:layout_constraintTop_toBottomOf="@+id/topbar_settings_system"
+            app:layout_constraintStart_toEndOf="@+id/settings_vehicle_sport_mode_optimisation_on_off_guideline_vertical_start_tvdpi"
+            app:layout_constraintTop_toBottomOf="@+id/settings_vehicle_sport_mode_optimisation_on_off__top_bar_layout_tvdpi"
             app:layout_constraintWidth_percent="0.2">
 
             <com.gm.settingsapp.ui.customview.SkewTextView
-                android:id="@+id/ui_settings_information_text"
+                android:id="@+id/ui_settings_vehicle_sport_mode_optimisation_on_off_text_tvdpi"
                 style="?attr/settings_sounds_audio1_text"
                 android:text="@{dataPoolHandler.SETTINGS_SPORT_MODE_ON_OFF}"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -113,14 +110,14 @@
         </ScrollView>
 
         <com.gm.settingsapp.ui.customview.SkewImageView
-            android:id="@+id/on_off_car_image"
+            android:id="@+id/settings_vehicle_sport_mode_optimisation_on_off_car_image_tvdpi"
             style="?attr/settings_sounds_audio1_skewimag"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHeight_percent="0.35"
-            app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
-            app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+            app:layout_constraintStart_toEndOf="@+id/settings_vehicle_sport_mode_optimisation_on_off_guideline_vertical_start_tvdpi"
+            app:layout_constraintTop_toBottomOf="@+id/settings_vehicle_sport_mode_optimisation_on_off_scrollView_tvdpi"
             app:layout_constraintWidth_percent="0.2"
             app:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
 

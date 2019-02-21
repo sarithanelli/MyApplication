@@ -26,25 +26,24 @@
     </data>
 
     <com.gm.settingsapp.ui.customview.SkewConstraintLayout
-        android:id="@+id/ics_ta_settings_system_view"
+        android:id="@+id/settings_list_row_vehicle_sport_mode_customization_layout"
         style="?attr/settings_time_date_uil_layout"
         android:focusable="true"
         android:onClick="@{(view) -> clickHandler.onItemClickHandler(view,obj)}"
-        bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
+        bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}"
+        >
 
-        <com.gm.settingsapp.ui.customview.SkewConstraintLayout
-            android:id="@+id/settings_time_constraint_layout_id"
-            style="?attr/settings_time_date_uil_secondary"
-            app:layout_constraintStart_toStartOf="parent">
+
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                style="?attr/settings_wrap_wrap_style"
+                android:id="@+id/settings_list_row_vehicle_sport_mode_customization_lay_out"
+                style="?attr/settings_time_date_uil_secondary"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
-                    android:id="@+id/ics_ta_settings_primary_text"
+                    android:id="@+id/settings_list_row_vehicle_sport_mode_customization_primary_text"
                     style="?attr/settings_time_date_primary_txt"
                     android:text="@{obj.primaryData}"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -54,15 +53,15 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <ImageView
-                android:id="@+id/img_sub_list_header"
+                android:id="@+id/settings_list_row_vehicle_sport_mode_customization_img_view"
                 style="?attr/settings_time_date_image"
                 android:visibility="@{obj.isTogglevisible? View.VISIBLE : View.INVISIBLE}"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/switch_id_ta_settings_view"
+                app:layout_constraintEnd_toStartOf="@+id/settings_list_row_vehicle_sport_mode_customization_toggle_btn"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ToggleButton
-                android:id="@+id/switch_id_ta_settings_view"
+                android:id="@+id/settings_list_row_vehicle_sport_mode_customization_toggle_btn"
                 style="?attr/settings_time_date_tab_toggle_button"
                 android:checked="@{obj.isToggleState}"
                 android:onClick="@{(view) -> clickHandler.onItemClickHandler(view,obj)}"
@@ -72,6 +71,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
         </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
-    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+
+
 
 </layout>

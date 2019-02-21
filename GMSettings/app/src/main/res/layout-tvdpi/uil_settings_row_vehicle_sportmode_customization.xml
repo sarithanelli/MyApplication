@@ -27,7 +27,7 @@
 
 
     <com.gm.settingsapp.ui.customview.SkewConstraintLayout
-        android:id="@+id/ics_ta_settings_system_view"
+        android:id="@+id/settings_list_row_vehicle_sport_mode_customization_lay_out_tvdpi"
         style="?attr/settings_time_date_uil_layout"
         android:layout_height="@dimen/row_height_cadillac"
         android:background="@drawable/settings_list_selector"
@@ -37,7 +37,7 @@
         bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
 
         <TextView
-            android:id="@+id/ics_ta_settings_primary_text"
+            android:id="@+id/settings_list_row_vehicle_sport_mode_customization_primary_text_tvdpi"
             style="?attr/settings_layout_text"
             android:text="@{obj.primaryData}"
             app:layout_constraintBottom_toBottomOf="parent"

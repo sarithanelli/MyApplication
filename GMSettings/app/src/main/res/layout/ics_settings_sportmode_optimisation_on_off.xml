@@ -19,18 +19,19 @@
     </data>
 
     <com.gm.settingsapp.ui.customview.SkewConstraintLayout
-        android:id="@+id/system_sounds_maxstartvol_imglayout"
+        android:id="@+id/settings_vehicle_sport_mode_optimisation_on_off_layout"
         style="?attr/settings_layout_bg_style"
         app:layout_constraintStart_toStartOf="parent"
         bind:layoutDirection="@{dataPoolHandler.settingsConfiguration}"
         bind:skewValue="@{dataPoolHandler.isSkewEnabled}">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/topbar"
+            android:id="@+id/settings_vehicle_sport_mode_optimisation_on_off_card_view"
             style="?attr/settings_set_audio_favorites_MaterialCardView"
             app:cardElevation="@dimen/system_sounds_card_elevartion">
 
             <include
+                android:id="@+id/settings_vehicle_sport_mode_optimisation_on_off__top_bar_layout"
                 layout="@layout/uil_ta_hc_topbar_layout"
                 android:background="@android:color/transparent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -40,46 +41,40 @@
                 bind:dataPoolHandler="@{dataPoolHandler}" />
         </androidx.cardview.widget.CardView>
 
-        <com.gm.settingsapp.ui.customview.SkewConstraintLayout
-            android:id="@+id/system_sounds_maxstartvol_imglayout1"
-            style="?attr/settings_match_zero_style"
-            android:background="@drawable/img_settings_bg"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/topbar"
-            bind:layoutDirection="@{dataPoolHandler.settingsConfiguration}">
 
             <com.gm.settingsapp.ui.customview.SkewConstraintLayout
-                android:id="@+id/skew"
+                android:id="@+id/settings_vehicle_sport_mode_optimisation_on_off_radio"
                 style="?attr/settings_sounds_audio1_layout_zero_wrap"
-                app:layout_constraintEnd_toStartOf="@+id/guideline_vertical"
+                app:layout_constraintEnd_toStartOf="@+id/settings_vehicle_sport_mode_optimisation_on_off_guideline_vertical_start"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/settings_vehicle_sport_mode_optimisation_on_off_card_view"
                 bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
 
                 <RadioGroup
-                    android:id="@+id/radioGroup"
+                    android:id="@+id/settings_vehicle_sport_mode_optimisation_on_off_radio_group"
                     style="?attr/settings_sounds_audio1_radiogroup"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/topbar_layout">
+                    app:layout_constraintTop_toBottomOf="@+id/settings_vehicle_sport_mode_optimisation_on_off__top_bar_layout">
 
                     <RadioButton
-                        android:id="@+id/radioButtonOn"
+                        android:id="@+id/settings_vehicle_sport_mode_optimisation_on_off_radio_button_on"
                         style="?attr/settings_sounds_audio1_radiobutton"
                         android:checked="@{dataPoolHandler.SETTINGS_SET_CLIMATE_INNER_STATE}"
                         android:onClick="@{(view) -> clickHandler.onClickHandler(view,true)}"
                         android:tag="@{`eSportModeCustomizationToggleOnOff`}"
-                        android:text="On"
-                        app:layout_constraintStart_toStartOf="@+id/radioGroup"
-                        app:layout_constraintTop_toBottomOf="@+id/radioButtonOff" />
+                        android:text="@string/ui_on"
+                        app:layout_constraintTop_toBottomOf="@+id/settings_vehicle_sport_mode_optimisation_on_off_card_view"
+                        app:layout_constraintStart_toStartOf="@+id/settings_vehicle_sport_mode_optimisation_on_off_radio_group"
+                        />
 
                     <RadioButton
-                        android:id="@+id/radioButtonOff"
+                        android:id="@+id/settings_vehicle_sport_mode_optimisation_on_off_radio_button_off"
                         style="?attr/settings_sounds_audio1_radiobutton"
                         android:checked="@{!dataPoolHandler.SETTINGS_SET_CLIMATE_INNER_STATE}"
                         android:onClick="@{(view) -> clickHandler.onClickHandler(view,false)}"
                         android:tag="@{`eSportModeCustomizationToggleOnOff`}"
-                        android:text="Off"
-                        app:layout_constraintStart_toStartOf="@+id/radioGroup" />
+                        android:text="@string/ui_off"
+                        app:layout_constraintStart_toStartOf="@+id/settings_vehicle_sport_mode_optimisation_on_off_radio_group" />
 
 
                 </RadioGroup>
@@ -87,25 +82,25 @@
             </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
 
             <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline_horizontal"
+                android:id="@+id/settings_vehicle_sport_mode_optimisation_on_off_guideline_horizontal"
                 style="?attr/settings_layout_guideline_horizontal"
                 app:layout_constraintGuide_percent="@dimen/guideline_percent" />
 
             <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline_vertical"
+                android:id="@+id/settings_vehicle_sport_mode_optimisation_on_off_guideline_vertical_start"
                 style="?attr/settings_layout_guideline_vertical"
                 app:layout_constraintGuide_percent="@dimen/guideline_percent_vertical" />
 
             <ScrollView
-                android:id="@+id/scrollView2"
+                android:id="@+id/settings_vehicle_sport_mode_optimisation_on_off_scrollView"
                 style="?attr/settings_sounds_audio1_layout_zero_wrap"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
-                app:layout_constraintTop_toBottomOf="@+id/topbar">
+                app:layout_constraintStart_toEndOf="@+id/settings_vehicle_sport_mode_optimisation_on_off_guideline_vertical_start"
+                app:layout_constraintTop_toBottomOf="@+id/settings_vehicle_sport_mode_optimisation_on_off_card_view">
 
                 <com.gm.settingsapp.ui.customview.SkewTextView
-                    android:id="@+id/ui_settings_information_text"
+                    android:id="@+id/ui_settings_vehicle_sport_mode_optimisation_on_off_text"
                     style="?attr/settings_sounds_audio1_text"
                     android:text="@{dataPoolHandler.SETTINGS_SPORT_MODE_ON_OFF}"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -114,21 +109,20 @@
             </ScrollView>
 
             <com.gm.settingsapp.ui.customview.SkewImageView
-                android:id="@+id/on_off_car_image"
+                android:id="@+id/settings_vehicle_sport_mode_optimisation_on_off_car_image"
                 style="?attr/settings_sounds_audio1_skewimag"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHeight_percent="0.6"
-                app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
-                app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+                app:layout_constraintStart_toEndOf="@+id/settings_vehicle_sport_mode_optimisation_on_off_guideline_vertical_start"
+                app:layout_constraintTop_toBottomOf="@+id/settings_vehicle_sport_mode_optimisation_on_off_scrollView"
                 app:layout_constraintVertical_bias="@integer/system_sound_car_bias"
                 app:layout_constraintWidth_percent="0.25"
                 app:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
 
         </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
 
-    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
 
 </layout>

@@ -18,22 +18,23 @@
     </data>
 
     <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        android:id="@+id/settings_vehicle_sport_mode_customization_layout_uk"
         style="?attr/settings_layout_bg_style"
         app:layout_constraintStart_toStartOf="parent"
         bind:skewValue="@{dataPoolHandler.isSkewEnabled()}">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/settubgs_system_sound_materialcardview"
+            android:id="@+id/settings_vehicle_sport_mode_customization_card_view_uk"
             style="?attr/settings_language_card_style"
-            app:cardElevation="8dp">
+            app:cardElevation="@dimen/system_sounds_card_elevartion">
 
             <com.gm.settingsapp.ui.customview.SkewConstraintLayout style="?attr/settings_language_skewlayout_style">
 
                 <include
-                    android:id="@+id/topbar_settings_system"
+                    android:id="@+id/settings_vehicle_sport_mode_customization_top_bar_uk"
                     style="@style/Layout_Match_Wrap"
                     layout="@layout/uil_ta_hc_topbar_layout"
-                    app:layout_constraintBottom_toTopOf="@+id/settings_system_recycler_view"
+                    app:layout_constraintBottom_toTopOf="@+id/settings_vehicle_sport_mode_customization_recycler_view_uk"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -45,7 +46,7 @@
         </androidx.cardview.widget.CardView>
 
         <com.gm.uisdk.views.GMRecyclerView
-            android:id="@+id/settings_system_recycler_view"
+            android:id="@+id/settings_vehicle_sport_mode_customization_recycler_view_uk"
             style="?attr/settings_sounds_recyclerview"
             app:fastScrollArrowRadius="@integer/fastScrollArrowRadius"
             app:fastScrollBarBgColor="@android:color/transparent"
@@ -54,7 +55,7 @@
             app:fastScrollThumbColor="@color/thumb_color"
             app:fastScrollTrackColor="@color/track_color"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/settubgs_system_sound_materialcardview"
+            app:layout_constraintTop_toBottomOf="@+id/settings_vehicle_sport_mode_customization_card_view_uk"
             bind:childLayout="@{@layout/uil_settings_row_vehicle_sportmode_customization}"
             bind:items="@{dataPoolHandler.SETTINGS_SPORT_MODE_CUSTOMAIZATION}">
 
