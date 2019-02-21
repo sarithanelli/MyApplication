@@ -17,6 +17,7 @@
     </data>
 
     <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        android:id="@+id/settings_time_date_timezone_layout_tvdpi"
         style="?attr/settings_time_date_time_zone_layout"
         android:background="@android:color/transparent"
         bind:layoutDirection="@{dataPoolHandler.settingsConfiguration}"
@@ -24,7 +25,7 @@
         bind:slopedAngle="@{dataPoolHandler.SKEW_ANGLE_8}">
 
         <include
-            android:id="@+id/tabLayout"
+            android:id="@+id/settings_time_date_timezone_topbar_tvdpi"
             style="?attr/settings_match_wrap_style"
             layout="@layout/uil_ta_hc_topbar_layout"
             android:layout_width="0dp"
@@ -38,19 +39,19 @@
             bind:dataPoolHandler="@{dataPoolHandler}" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline"
+            android:id="@+id/settings_time_date_timezone_guideline_ver_tvdpi"
             style="?attr/settings_wrap_wrap_style"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.56" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline_vertical"
+            android:id="@+id/settings_time_date_timezone_guideline_ver_tvdpi_vertical"
             style="?attr/settings_wrap_wrap_style"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.17" />
 
         <com.gm.uisdk.views.GMRecyclerView
-            android:id="@+id/recycler_view_settings_language_view"
+            android:id="@+id/settings_time_date_timezone_recycler_view_tvdpi"
             style="@style/recycler_view_scroll_color"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -66,10 +67,10 @@
             app:fastScrollTrackColor="@color/track_color"
             app:fastScrollType="0"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintEnd_toStartOf="@+id/settings_time_date_timezone_guideline_ver_tvdpi"
             app:layout_constraintHeight_percent="0.8"
-            app:layout_constraintStart_toStartOf="@+id/guideline_vertical"
-            app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+            app:layout_constraintStart_toStartOf="@+id/settings_time_date_timezone_guideline_ver_tvdpi_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/settings_time_date_timezone_topbar_tvdpi"
             app:layout_constraintWidth_percent="0.26"
             bind:childLayout="@{@layout/uil_settings_list_row_timezone}"
             bind:items="@{dataPoolHandler.SETTINGS_TIMEZONE_VALUES}">
@@ -77,17 +78,17 @@
         </com.gm.uisdk.views.GMRecyclerView>
 
         <ScrollView
-            android:id="@+id/scrollView2"
+            android:id="@+id/settings_time_date_timezone_scroll_tvdpi"
             style="?attr/settings_scroll_view"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintHeight_percent="0.16"
-            app:layout_constraintStart_toEndOf="@+id/guideline"
-            app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+            app:layout_constraintStart_toEndOf="@+id/settings_time_date_timezone_guideline_ver_tvdpi"
+            app:layout_constraintTop_toBottomOf="@+id/settings_time_date_timezone_topbar_tvdpi"
             app:layout_constraintWidth_percent="0.18">
 
             <com.gm.settingsapp.ui.customview.SkewTextView
-                android:id="@+id/ui_settings_information_text"
+                android:id="@+id/settings_time_date_timezone_scroll_text_tvdpi"
                 style="?attr/settings_time_date_scroll_view_text"
                 app:layout_constraintBottom_toBottomOf="parent"
                 bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
@@ -95,18 +96,18 @@
         </ScrollView>
 
         <ImageView
-            android:id="@+id/img_settings_display"
+            android:id="@+id/settings_time_date_timezone_img_tvdpi"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:src="@drawable/img_auto_time"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHeight_percent="0.5"
-            app:layout_constraintStart_toEndOf="@+id/guideline"
-            app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+            app:layout_constraintStart_toEndOf="@+id/settings_time_date_timezone_guideline_ver_tvdpi"
+            app:layout_constraintTop_toBottomOf="@+id/settings_time_date_timezone_scroll_tvdpi"
             app:layout_constraintWidth_percent="0.16" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline_vertical_end"
+            android:id="@+id/settings_time_date_timezone_guideline_ver_tvdpi_vertical_end"
             style="?attr/settings_wrap_wrap_style"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.87" />

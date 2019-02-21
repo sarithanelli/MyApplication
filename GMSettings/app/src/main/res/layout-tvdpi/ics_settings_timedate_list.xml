@@ -22,6 +22,7 @@
 
 
     <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        android:id="@+id/settings_time_date_constraintlayout_tvdpi"
         style="?attr/settings_match_match_style"
         android:background="@android:color/transparent"
         bind:layoutDirection="@{dataPoolHandler.settingsConfiguration}"
@@ -30,7 +31,7 @@
 
 
         <include
-            android:id="@+id/topbar_include_time_date"
+            android:id="@+id/settings_time_date_topbar_tvdpi"
             style="@style/Layout_Match_Wrap"
             layout="@layout/uil_ta_hc_topbar_layout"
             android:layout_width="0dp"
@@ -48,7 +49,7 @@
 
 
         <com.gm.uisdk.views.GMRecyclerView
-            android:id="@+id/connections_phone_recycler_view"
+            android:id="@+id/settings_time_date_recycler_rhd_view"
             style="@style/recycler_view_scroll_color"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -58,29 +59,29 @@
             app:fastScrollArrowRadius="@integer/fastScrollArrowRadius"
             app:fastScrollType="0"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_recycler_view"
+            app:layout_constraintEnd_toStartOf="@+id/settings_time_date_guideline_vertical_tvdpi"
             app:layout_constraintHeight_percent="0.8"
-            app:layout_constraintStart_toEndOf="@+id/guideline_recycler_view_start"
-            app:layout_constraintTop_toBottomOf="@+id/topbar_include_time_date"
+            app:layout_constraintStart_toEndOf="@+id/settings_time_date_guideline_vertical_tvdpi_start"
+            app:layout_constraintTop_toBottomOf="@+id/settings_time_date_topbar_tvdpi"
             bind:childLayout="@{@layout/uil_settings_list_row_timedate_tab}"
             bind:items="@{dataPoolHandler.SETTINGS_SET_TIMEDATE_ROW}" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline_recycler_view"
+            android:id="@+id/settings_time_date_guideline_vertical_tvdpi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.55" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline_recycler_view_start"
+            android:id="@+id/settings_time_date_guideline_vertical_tvdpi_start"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.25" />
 
         <ImageView
-            android:id="@+id/img_time_date_list"
+            android:id="@+id/settings_time_date_guideline_tvdpi_image"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@drawable/img_auto_time"
@@ -88,7 +89,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent="0.5"
             app:layout_constraintHorizontal_bias="0.2"
-            app:layout_constraintStart_toEndOf="@+id/guideline_recycler_view"
+            app:layout_constraintStart_toEndOf="@+id/settings_time_date_guideline_vertical_tvdpi"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.6"
             app:layout_constraintWidth_percent="0.15" />
