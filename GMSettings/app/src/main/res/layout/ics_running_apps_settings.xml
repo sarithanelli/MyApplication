@@ -22,23 +22,23 @@
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/ics_ta_settings_view"
+        android:id="@+id/settings_running_apps"
         style="?attr/settings_layout_bg_style"
         bind:layoutDirection="@{dataPoolHandler.settingsConfiguration}">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/settings_favorates_materialcardview_id"
+            android:id="@+id/settings_running_apps_materialcardview"
             style="?attr/settings_language_card_style"
             app:cardElevation="8dp">
 
             <com.gm.settingsapp.ui.customview.SkewConstraintLayout style="?attr/settings_language_skewlayout_style">
 
                 <include
-                    android:id="@+id/topbar_settings_system"
+                    android:id="@+id/settings_running_apps_topbar"
                     style="@style/Layout_Match_Wrap"
                     layout="@layout/uil_ta_hc_topbar_layout"
                     android:background="@android:color/transparent"
-                    app:layout_constraintBottom_toTopOf="@+id/progressbar"
+                    app:layout_constraintBottom_toTopOf="@+id/settings_running_apps_progressbar"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -50,7 +50,7 @@
         </androidx.cardview.widget.CardView>
 
         <com.gm.uisdk.views.GMRecyclerView
-            android:id="@+id/recycler_view_settings_runningapps"
+            android:id="@+id/settings_running_apps_recycler_view"
             style="?attr/settings_sounds_recyclerview"
             app:fastScrollArrowRadius="@integer/fastScrollArrowRadius"
             app:fastScrollBarBgColor="@android:color/transparent"
@@ -59,42 +59,42 @@
             app:fastScrollThumbColor="@color/thumb_color"
             app:fastScrollTrackColor="@color/track_color"
             app:fastScrollType="@{dataPoolHandler.SETTINGS_RUNNINGAPPS_INFORMATION.size() > 6 ? 1 : 0}"
-            app:layout_constraintBottom_toTopOf="@id/progressbar"
+            app:layout_constraintBottom_toTopOf="@id/settings_running_apps_progressbar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/settings_favorates_materialcardview_id"
+            app:layout_constraintTop_toBottomOf="@id/settings_running_apps_materialcardview"
             bind:childLayout="@{@layout/uil_running_apps_settings_list_row}"
             bind:items="@{dataPoolHandler.SETTINGS_RUNNINGAPPS_INFORMATION}">
 
         </com.gm.uisdk.views.GMRecyclerView>
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline_horizontal_progress"
+            android:id="@+id/settings_running_apps_guideline_horizontal_progress"
             style="@style/settings_layout_guideline_horizontal_azure"
             app:layout_constraintGuide_percent="@integer/settings_running_apps_guideline_progress" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/progressbar"
+            android:id="@+id/settings_running_apps_progressbar"
             style="@style/settings_favorites_no_bg_main_azure"
             android:layout_width="match_parent"
             android:layout_height="@dimen/row_height"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/recycler_view_settings_runningapps">
+            app:layout_constraintTop_toBottomOf="@id/settings_running_apps_recycler_view">
 
             <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline_vertical"
+                android:id="@+id/settings_running_apps_guideline_vertical"
                 style="@style/settings_layout_guideline_vertical_azure"
                 app:layout_constraintGuide_percent="@integer/settings_running_apps_guideline" />
 
             <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline_vertical_end"
+                android:id="@+id/settings_running_apps_guideline_vertical_end"
                 style="@style/settings_layout_guideline_vertical_azure"
                 app:layout_constraintGuide_percent="@integer/settings_running_apps_guideline_end" />
 
             <SeekBar
-                android:id="@+id/pgbar"
+                android:id="@+id/settings_running_apps_pgbar"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:max="100"
@@ -106,34 +106,34 @@
                 android:progressDrawable="@drawable/custom_progress"
                 android:thumb="@drawable/ic_volume_indicator"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/pgtv2"
+                app:layout_constraintEnd_toStartOf="@+id/settings_running_apps_pgtv2"
                 app:layout_constraintHorizontal_weight="@integer/settings_running_apps_seekbar_weight"
-                app:layout_constraintStart_toEndOf="@+id/pgtv1"
+                app:layout_constraintStart_toEndOf="@+id/settings_running_apps_pgtv1"
                 app:layout_constraintTop_toTopOf="parent"
                 bind:seekbarTouch="@{1}" />
 
             <TextView
-                android:id="@+id/pgtv1"
+                android:id="@+id/settings_running_apps_pgtv1"
                 style="?attr/settings_time_date_primary_txt"
                 android:layout_width="0dp"
                 android:text="@{String.format(@string/settings_used_space,dataPoolHandler.SETTINGS_RUNNING_USEDMEMORY_SIZE)}"
                 android:textColor="@color/yellow"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/pgbar"
+                app:layout_constraintEnd_toStartOf="@+id/settings_running_apps_pgbar"
                 app:layout_constraintHorizontal_weight="@integer/settings_running_apps_text_weight_one"
-                app:layout_constraintStart_toStartOf="@id/guideline_vertical"
+                app:layout_constraintStart_toStartOf="@id/settings_running_apps_guideline_vertical"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/pgtv2"
+                android:id="@+id/settings_running_apps_pgtv2"
                 style="?attr/settings_time_date_primary_txt"
                 android:layout_width="0dp"
                 android:text="@{String.format(@string/settings_remaining_space,dataPoolHandler.SETTINGS_RUNNING_AVAILABLE_SIZE)}"
                 android:textColor="@color/yellow"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@id/guideline_vertical_end"
+                app:layout_constraintEnd_toEndOf="@id/settings_running_apps_guideline_vertical_end"
                 app:layout_constraintHorizontal_weight="@integer/settings_running_apps_text_weight_two"
-                app:layout_constraintStart_toEndOf="@+id/pgbar"
+                app:layout_constraintStart_toEndOf="@+id/settings_running_apps_pgbar"
                 app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

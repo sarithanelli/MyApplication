@@ -25,29 +25,30 @@
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/uil_settings_running_apps_traction_tvdpi"
         android:layout_width="match_parent"
         android:layout_height="@dimen/row_height_cadillac"
         android:background="@drawable/settings_list_selector">
 
         <TextView
-            android:id="@+id/primary_text"
+            android:id="@+id/uil_settings_running_apps_traction_tvdpi_primary_text"
             style="?attr/settings_layout_text"
             android:text="@{obj.appName}"
-            app:layout_constraintBottom_toTopOf="@id/secondary_text"
+            app:layout_constraintBottom_toTopOf="@id/uil_settings_running_apps_traction_tvdpi_secondary_text"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/secondary_text"
+            android:id="@+id/uil_settings_running_apps_traction_tvdpi_secondary_text"
             style="?attr/settings_layout_text_secondary"
             android:text="@{obj.appSize}"
             android:textColor="@color/np_unselect_color"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/primary_text" />
+            app:layout_constraintTop_toBottomOf="@id/uil_settings_running_apps_traction_tvdpi_primary_text" />
 
         <com.gm.settingsapp.ui.customview.SkewMaterialButton
-            android:id="@+id/btn"
+            android:id="@+id/uil_settings_running_apps_traction_tvdpi_btn"
             style="@style/btn_retry"
             android:layout_height="0dp"
             android:background="@android:color/transparent"

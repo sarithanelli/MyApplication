@@ -53,7 +53,7 @@
             android:layout_height="0dp"
             app:layout_constraintHeight_percent="0.85"
             android:layout_width="0dp"
-            app:layout_constraintWidth_percent="0.6"
+            app:layout_constraintWidth_percent="0.57"
             app:fastScrollType="@{dataPoolHandler.SETTINGS_PEDESTRIAN_DETECTION.size() > 6 ? 1 : 0}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/settings_rear_pedestrian_detection_guideline_vertical"
@@ -74,7 +74,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintWidth_percent="0.37"
-            app:layout_constraintHeight_percent="0.3"
+            app:layout_constraintHeight_percent="0.4"
             app:layout_constraintEnd_toStartOf="@+id/settings_rear_pedestrian_detection_guideline_vertical"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/settings_rear_pedestrian_detection_material_card_view">

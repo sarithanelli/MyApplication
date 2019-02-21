@@ -44,7 +44,9 @@ import javax.inject.Inject
  *  these funcs usually start after proxy constructor func in CAMFMProxy.cpp
  *  This should exclude all the functions under RecvData func, as the func in RecvData only corresponds to RES functions
  */
-class SDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHandler, val systemListener: SystemListener, val utility: Utility, val settingsManager: SettingsManager, val vehicleAudioManager: dagger.Lazy<VehicleAudioManager>, val context: Context, val mCustomization: Customization, val supportedLanguageListData: Lazy<SupportedLanguageListData>) : IManager, ApplicationsState.Callbacks {
+class SDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHandler, val systemListener: SystemListener, val  utility: Utility, val settingsManager: SettingsManager, val vehicleAudioManager: dagger.Lazy<VehicleAudioManager>, val context: Context, val mCustomization : Customization, val supportedLanguageListData: Lazy<SupportedLanguageListData>): IManager, ApplicationsState.Callbacks {
+    override fun onSETTINGS_REQ_SETPOWERLIFTGATETYPE(any: Any) {
+    }
 
 
     override fun SOUNDPARAMS_REQ_CHIMEVOLUMEDEC() {

@@ -8,6 +8,7 @@ import java.util.*
  * To Update [DataPoolDataHandler] variables in respective methods.
  */
 interface ISettingsManagerRes {
+    fun onSETTINGS_RES_SETPOWERLIFTGATETYPE(any: Any)
     fun onSETTINGS_RES__COMFORT_CONVENIENCE_MENU()
     fun onSETTINGS_RES_AUTOMATIC_ENTRY_EGRESS_ASSIST()
     fun SOUNDPARAMS_RES_CHIMEVOLUME()

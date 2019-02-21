@@ -8,6 +8,10 @@
         <import type="android.view.View" />
 
         <variable
+            name="obj"
+            type="com.gm.settingsservice.models.DriveModeCustomizationModel" />
+
+        <variable
             name="clickHandler"
             type="com.gm.settingsapp.viewmodels.EventHandler" />
 
@@ -44,6 +48,7 @@
             android:id="@+id/settings_visualization_img_layout"
             style="?attr/settings_match_zero_style"
             android:background="@drawable/img_settings_bg"
+            app:layout_constraintHeight_percent="0.8"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/settings_visualization_card_view"
             bind:layoutDirection="@{dataPoolHandler.settingsConfiguration}">
@@ -98,15 +103,13 @@
                 android:id="@+id/settings_visualization_scrollView"
                 style="?attr/settings_sounds_audio1_layout_zero_wrap"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/settings_visualization_guideline_vertical"
                 app:layout_constraintTop_toBottomOf="@+id/settings_visualization_card_view">
 
                 <com.gm.settingsapp.ui.customview.SkewTextView
                     android:id="@+id/ui_visualization_text"
                     style="?attr/settings_sounds_audio1_text"
-                    android:text="@{dataPoolHandler.SETTINGS_SET_CLIMATE_INNER_DES}"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:text="@string/setttings_vehicle_visualization_description"
                     bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
 
             </ScrollView>
@@ -118,7 +121,6 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/settings_visualization_guideline_vertical"
                 app:layout_constraintTop_toBottomOf="@+id/settings_visualization_scrollView"
-                app:layout_constraintVertical_bias="@integer/system_sound_car_bias"
                 app:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
 
         </com.gm.settingsapp.ui.customview.SkewConstraintLayout>

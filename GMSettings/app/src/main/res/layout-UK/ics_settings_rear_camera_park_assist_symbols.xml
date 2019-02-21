@@ -55,6 +55,7 @@
             style="?attr/settings_match_zero_style"
             android:background="@drawable/img_settings_bg"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/settings_rear_camera_park_assist_symbols_card_view"
             bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
 
@@ -94,10 +95,11 @@
             style="?attr/settings_zero_wrap_style"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            app:layout_constraintWidth_percent="0.37"
+            app:layout_constraintHeight_percent="0.4"
             app:layout_constraintEnd_toStartOf="@+id/settings_rear_camera_park_assist_symbols_guideline_vertical"
-            app:layout_constraintHeight_percent="0.3"
             app:layout_constraintTop_toBottomOf="@+id/settings_rear_camera_park_assist_symbols_card_view"
-            app:layout_constraintWidth_percent="0.37">
+          >
 
 
             <com.gm.settingsapp.ui.customview.SkewTextView
@@ -110,24 +112,25 @@
 
         </ScrollView>
 
-        <!-- <com.gm.settingsapp.ui.customview.SkewConstraintLayout
-             android:id="@+id/settings_rear_camera_park_assist_symbols_image_skew_constraint_layout"
-             style="?attr/settings_sounds_audio1_layout_zero_wrap"
-             app:layout_constraintBottom_toBottomOf="parent"
-             app:layout_constraintEnd_toStartOf="@+id/settings_rear_camera_park_assist_symbols_guideline_vertical"
-             app:layout_constraintStart_toStartOf="parent"
-             app:layout_constraintTop_toBottomOf="@+id/settings_rear_camera_park_assist_symbols_scrollView"
-             bind:slopedAngle="@{dataPoolHandler.SKEW_ANGLE_8}">
- -->
-        <com.gm.settingsapp.ui.customview.SkewImageView
-            android:id="@+id/settings_rear_camera_park_assist_symbols_car_image"
-            style="?attr/settings_sounds_audio1_skewimag"
+       <!-- <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+            android:id="@+id/settings_rear_camera_park_assist_symbols_image_skew_constraint_layout"
+            style="?attr/settings_sounds_audio1_layout_zero_wrap"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/settings_rear_camera_park_assist_symbols_guideline_vertical"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintVertical_bias="@integer/system_sound_car_bias"
-            bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
-    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+            app:layout_constraintTop_toBottomOf="@+id/settings_rear_camera_park_assist_symbols_scrollView"
+            bind:slopedAngle="@{dataPoolHandler.SKEW_ANGLE_8}">
+-->
+            <com.gm.settingsapp.ui.customview.SkewImageView
+                android:id="@+id/settings_rear_camera_park_assist_symbols_car_image"
+                style="?attr/settings_sounds_audio1_skewimag"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/settings_rear_camera_park_assist_symbols_scrollView"
+                app:layout_constraintEnd_toStartOf="@+id/settings_rear_camera_park_assist_symbols_guideline_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="@integer/system_sound_car_bias"
+                bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
+        </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
 
 
     <!-- </com.gm.settingsapp.ui.customview.SkewConstraintLayout>-->

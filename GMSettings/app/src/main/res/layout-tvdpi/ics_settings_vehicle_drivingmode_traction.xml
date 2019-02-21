@@ -18,7 +18,7 @@
     </data>
 
     <com.gm.settingsapp.ui.customview.SkewConstraintLayout
-        android:id="@+id/system_sounds_maxstartvol_imglayout"
+        android:id="@+id/settings_vehicle_driving_mode_traction_tvdpi"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@android:color/transparent"
@@ -27,14 +27,14 @@
         bind:skewValue="@{dataPoolHandler.isSkewEnabled}">
 
         <com.gm.settingsapp.ui.customview.SkewConstraintLayout
-            android:id="@+id/skewConstraintLayout2"
+            android:id="@+id/settings_vehicle_driving_mode_traction_tvdpi_skewConstraintLayout2"
             style="?attr/settings_set_audio_favorites_skewConstraintLayout_no_bg_match"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
 
             <include
-                android:id="@+id/topbar_settings_system"
+                android:id="@+id/settings_vehicle_driving_mode_traction_tvdpi_topbar"
                 style="@style/Layout_Match_Wrap"
                 layout="@layout/uil_ta_hc_topbar_layout"
                 android:layout_width="0dp"
@@ -51,18 +51,18 @@
 
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline_vertical_end"
+            android:id="@+id/settings_vehicle_driving_mode_traction_tvdpi_guideline_vertical_end"
             style="?attr/settings_wrap_wrap_style"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.87" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline_vertical_begin"
+            android:id="@+id/settings_vehicle_driving_mode_traction_tvdpi_guideline_vertical_begin"
             style="?attr/settings_set_audio_favorites_guideline_vertical"
             app:layout_constraintGuide_percent="0.2" />
 
         <com.gm.uisdk.views.GMRecyclerView
-            android:id="@+id/recycler_view_settings_engine_sound_view"
+            android:id="@+id/settings_vehicle_driving_mode_traction_tvdpi_recycler_view"
             style="@style/recycler_view_scroll_color"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -72,11 +72,11 @@
             app:fastScrollArrowRadius="@integer/fastScrollArrowRadius"
             app:fastScrollType="0"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical_middle"
+            app:layout_constraintEnd_toStartOf="@+id/settings_vehicle_driving_mode_traction_tvdpi_guideline_vertical_middle"
             app:layout_constraintHeight_percent="1"
             app:layout_constraintHorizontal_bias="0.26"
-            app:layout_constraintStart_toStartOf="@id/guideline_vertical_begin"
-            app:layout_constraintTop_toBottomOf="@id/skewConstraintLayout2"
+            app:layout_constraintStart_toStartOf="@id/settings_vehicle_driving_mode_traction_tvdpi_guideline_vertical_begin"
+            app:layout_constraintTop_toBottomOf="@id/settings_vehicle_driving_mode_traction_tvdpi_skewConstraintLayout2"
             app:layout_constraintVertical_bias="0.0"
             app:layout_constraintWidth_percent="0.25"
             bind:childLayout="@{@layout/uil_settings_list_row_drivemode_traction}"
@@ -86,31 +86,31 @@
 
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline3"
+            android:id="@+id/settings_vehicle_driving_mode_traction_tvdpi_guideline3"
             style="?attr/settings_wrap_wrap_style"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.98" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline_vertical_middle"
+            android:id="@+id/settings_vehicle_driving_mode_traction_tvdpi_guideline_vertical_middle"
             style="?attr/settings_wrap_wrap_style"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.65" />
 
         <ScrollView
-            android:id="@+id/scrollView"
+            android:id="@+id/settings_vehicle_driving_mode_traction_tvdpi_scrollView"
             style="?attr/settings_scroll_view"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical_end"
+            app:layout_constraintEnd_toStartOf="@+id/settings_vehicle_driving_mode_traction_tvdpi_guideline_vertical_end"
             app:layout_constraintHeight_percent="0.37"
             app:layout_constraintHorizontal_bias="0.24"
-            app:layout_constraintStart_toEndOf="@+id/recycler_view_settings_engine_sound_view"
-            app:layout_constraintTop_toBottomOf="@+id/skewConstraintLayout2"
+            app:layout_constraintStart_toEndOf="@+id/settings_vehicle_driving_mode_traction_tvdpi_recycler_view"
+            app:layout_constraintTop_toBottomOf="@+id/settings_vehicle_driving_mode_traction_tvdpi_skewConstraintLayout2"
             app:layout_constraintWidth_percent="0.25">
 
             <com.gm.settingsapp.ui.customview.SkewTextView
-                android:id="@+id/ui_settings_drivingmode_enginesound_text"
+                android:id="@+id/settings_vehicle_driving_mode_traction_tvdpi_text"
                 style="?attr/settings_time_date_scroll_view_text"
                 android:text="@string/settings_step_speed_traction_content"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -119,21 +119,21 @@
         </ScrollView>
 
         <ImageView
-            android:id="@+id/img_settings_vehicle_driving_mode"
+            android:id="@+id/settings_vehicle_driving_mode_traction_tvdpi_img"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@drawable/img_engine_sound"
-            app:layout_constraintBottom_toTopOf="@+id/guideline3"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_vertical_end"
+            app:layout_constraintBottom_toTopOf="@+id/settings_vehicle_driving_mode_traction_tvdpi_guideline3"
+            app:layout_constraintEnd_toStartOf="@+id/settings_vehicle_driving_mode_traction_tvdpi_guideline_vertical_end"
             app:layout_constraintHeight_percent="0.45"
             app:layout_constraintHorizontal_bias="0.15"
-            app:layout_constraintStart_toEndOf="@+id/recycler_view_settings_engine_sound_view"
-            app:layout_constraintTop_toBottomOf="@+id/scrollView"
+            app:layout_constraintStart_toEndOf="@+id/settings_vehicle_driving_mode_traction_tvdpi_recycler_view"
+            app:layout_constraintTop_toBottomOf="@+id/settings_vehicle_driving_mode_traction_tvdpi_scrollView"
             app:layout_constraintVertical_bias="0.26999998"
             app:layout_constraintWidth_percent="0.18" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline4"
+            android:id="@+id/settings_vehicle_driving_mode_traction_tvdpi_guideline4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical" />

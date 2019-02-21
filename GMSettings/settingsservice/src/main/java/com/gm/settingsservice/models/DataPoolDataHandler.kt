@@ -640,6 +640,7 @@ import androidx.databinding.ObservableField
 
    val SETTINGS_COLLISION_HEADER_TEXT = ObservableField <String>()
 
+val SETTINGS_POWER_LIFTGATE_TYPE=ObservableField<Int>()
 
    var SETTINGS_SET_COLLISION_INNER_STATE = ObservableField<Boolean>()
    var SETTINGS_SET_COLLISION_INNER_DES = ObservableField<String>()

@@ -26,7 +26,7 @@
     </data>
 
     <com.gm.settingsapp.ui.customview.SkewConstraintLayout
-        android:id="@+id/ics_ta_settings_system_view"
+        android:id="@+id/settings_list_row_language_tvdpi"
         style="@style/settings_language_layout_picker"
         android:background="@drawable/settings_list_selector"
         android:onClick="@{(view) -> clickHandler.onClickHandler(view,obj,position)}"
@@ -36,18 +36,18 @@
 
 
         <TextView
-            android:id="@+id/text"
+            android:id="@+id/settings_list_row_language_text_tvdpi"
             style="?attr/settings_layout_text"
             android:text="@{obj.toString()}"
-            app:layout_constraintBottom_toTopOf="@+id/text2"
+            app:layout_constraintBottom_toTopOf="@+id/settings_list_row_language_secondary_text_tvdpi"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.13"
-            app:layout_constraintStart_toEndOf="@+id/radio_button"
+            app:layout_constraintStart_toEndOf="@+id/settings_list_row_language_radio_button_tvdpi"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />
 
         <RadioButton
-            android:id="@+id/radio_button"
+            android:id="@+id/settings_list_row_language_radio_button_tvdpi"
             style="?attr/settings_time_zone_radio"
             android:checked="@{dataPoolHandler.SETTINGS_LANGUAGE_TYPE.equals(obj.toString())}"
             android:onClick="@{(view) -> clickHandler.onClickHandler(view,obj,position)}"
@@ -58,13 +58,13 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/text2"
+            android:id="@+id/settings_list_row_language_secondary_text_tvdpi"
             style="?attr/settings_layout_text_secondary"
             android:text="@{obj.toString()}"
             android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/radio_button"
-            app:layout_constraintTop_toBottomOf="@+id/text" />
+            app:layout_constraintStart_toEndOf="@+id/settings_list_row_language_radio_button_tvdpi"
+            app:layout_constraintTop_toBottomOf="@+id/settings_list_row_language_text_tvdpi" />
 
     </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
 

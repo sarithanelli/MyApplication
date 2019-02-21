@@ -2432,5 +2432,6 @@
 
     <string name="location_based_auto_lift_desc">Location Based Auto Lift changes the vehicle ride height based on GPS location.Use the Navigation system to specify locations where ride height should changed.</string>
     <string name="visualization">Visualization</string>
+    <string name="setttings_vehicle_visualization_description">Visualization shows handling and performance settings on the center display when you change drive modes. Drive modes tailor steering, suspension, and other factors to improve your ride under specific driving conditions</string>
 </resources>
 

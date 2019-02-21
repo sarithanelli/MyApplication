@@ -44,6 +44,25 @@
             app:layout_constraintWidth_percent="0.25" />
 
 <!--
+ <ToggleButton
+            android:id="@+id/settings_list_row_collision_systems_button"
+            style="?attr/settings_time_date_tab_toggle_button"
+            android:visibility="@{obj.isToggleVisible ? View.VISIBLE : View.GONE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="10:10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageButton
+            android:id="@+id/btn_id_hc_backarrow"
+            style="?attr/settings_button_backarrow"
+            android:visibility="@{obj.isArrowVisible ? View.VISIBLE : View.GONE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.92"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.12"
+            app:srcCompat="@drawable/ic_icn_next"
+            bind:ignore="ContentDescription" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/settings_comfort_convenience_guideline"
@@ -52,6 +71,7 @@
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.25" />
 -->
+
 
         <ImageButton
             android:id="@+id/settings_list_row_comfort_convenience_img_button"

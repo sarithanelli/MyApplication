@@ -67,7 +67,7 @@
                         android:id="@+id/settings_comfort_and_convenience_radioButtonOn"
                         style="?attr/settings_sounds_audio1_radiobutton"
                         android:onClick="@{(view) -> clickHandler.onClickHandler(view,true)}"
-                        android:text="On"
+                        android:text="@string/ui_on"
                         app:layout_constraintStart_toStartOf="@+id/settings_comfort_and_convenience_radio_group"
                         app:layout_constraintTop_toBottomOf="@+id/settings_comfort_and_convenience_radioButtonOff" />
 
@@ -75,7 +75,7 @@
                         android:id="@+id/settings_comfort_and_convenience_radioButtonOff"
                         style="?attr/settings_sounds_audio1_radiobutton"
                         android:onClick="@{(view) -> clickHandler.onClickHandler(view,false)}"
-                        android:text="Off"
+                        android:text="@string/ui_off"
                         app:layout_constraintStart_toStartOf="@+id/settings_comfort_and_convenience_radio_group" />
 
 

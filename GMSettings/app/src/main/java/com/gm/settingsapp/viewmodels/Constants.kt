@@ -232,11 +232,15 @@ object Constants {
     val COMFORT_AND_CONVENIENCE_TAG = "eComfort"
     val AUTOMATIC_RUNNING_BOARDS = "eAutoRunningBoards"
     val AUTOMATIC_ENTRY = "eAutomaticEntry"
+    val REVERSE_MIRROR = "eReverseTiltMirror"
+    val REMOTE_MIRROR_FOLDING = "eRemoteMirrorFolding"
+    val AUTO_WIPE_REVERSE_GEAR = "eAutoWipeReverseGear"
+
     val POWER_LIFTGATE = "ePowerLiftGate"
     val HANDFREELIFTGATE = "eHandFreeLiftGate"
     val RAINSENSEWIPER = "eRainSenseWiper"
     val REVERSETILTMIRROR = "eAutomaticEntry"
-
+    val CHIME_VOLUME = "eChimeVolume"
     val RIDE_HEIGHT_TAG = "evRideHeight"
     val RIDE_HEIGHT_ON_OFF_TAG = "evRideHeightOnOff"
 
@@ -300,7 +304,7 @@ object Constants {
     const val V_MODE_Z_MODE = 10010
     const val MY_MODE = 10011
     const val VISUALIZATION = 10012
-    val CHIME_VOLUME = "eChimeVolume"
+
     // val EXTENDED_HILL_START_ASSIST="eExtendedHillStartAssist"
     val DRIVE_MODE_CUSTOMIZATION_TAG = "eDriveModeCustomization"
 

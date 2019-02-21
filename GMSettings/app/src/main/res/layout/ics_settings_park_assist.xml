@@ -40,10 +40,8 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/settings_park_assist_top_bar"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginBottom="10dp"
-                app:cardElevation="8dp">
+                style="?attr/settings_set_audio_favorites_MaterialCardView"
+                app:cardElevation="@dimen/card_view_elevation">
 
                 <include
                     style="@style/Layout_Match_Wrap"
@@ -59,8 +57,8 @@
             <RadioGroup
                 android:id="@+id/settings_park_assist_radioGroup"
                 android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.57"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/radiogroup_margin_start"
                 android:divider="@drawable/seperator"
                 android:showDividers="end|middle"
                 app:layout_constraintStart_toStartOf="parent"
@@ -141,6 +139,9 @@
                 android:id="@+id/settings_park_assist_scrollView"
                 style="@style/Layout_Match_Wrap"
                 android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintWidth_percent="0.37"
+                app:layout_constraintHeight_percent="0.4"
                 app:layout_constraintStart_toEndOf="@+id/settings_park_assist_guideline_vertical"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/settings_park_assist_top_bar">
@@ -149,8 +150,7 @@
                     android:id="@+id/settings_park_assist_text"
                     style="?attr/text_material_content_text"
                     android:fontFamily="@font/gmsansui_regular"
-                    android:padding="@dimen/skewtext_padding"
-                    android:paddingStart="60dp"
+
                     android:text="@string/settings_mode_content"
                     android:textSize="@dimen/List_Secondary_text"
                     app:layout_constraintBottom_toBottomOf="parent"

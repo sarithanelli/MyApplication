@@ -17,6 +17,7 @@
     </data>
 
     <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        android:id="@+id/settings_time_date_timezone_layout"
         style="?attr/settings_time_date_time_zone_layout"
         android:background="@drawable/img_settings_bg"
         bind:layoutDirection="@{dataPoolHandler.settingsConfiguration}"
@@ -25,16 +26,17 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/settings_on_off_time_zone"
+            android:id="@+id/settings_time_date_timezone_card"
             style="?attr/settings_time_date_card"
             app:cardElevation="@dimen/settings_card_time_date_card_elevation">
 
             <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+                android:id="@+id/settings_time_date_timezone_topbar_layout"
                 style="?attr/settings_time_date_match_wrap_style"
                 bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
 
                 <include
-                    android:id="@+id/tabLayout"
+                    android:id="@+id/settings_time_date_timezone_topbar"
                     style="?attr/settings_match_wrap_style"
                     layout="@layout/uil_ta_hc_topbar_layout"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -46,13 +48,13 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline"
+            android:id="@+id/settings_time_date_timezone_ver_guideline"
             style="?attr/settings_wrap_wrap_style"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.6" />
 
         <com.gm.uisdk.views.GMRecyclerView
-            android:id="@+id/recycler_view_settings_language_view"
+            android:id="@+id/settings_time_date_timezone_recycler_view"
             style="?attr/settings_time_date_time_zone_recycler"
             android:tag=""
             app:fastScrollArrowRadius="@integer/fastScrollArrowRadius"
@@ -63,9 +65,9 @@
             app:fastScrollTrackColor="@color/track_color"
             app:fastScrollType="@{dataPoolHandler.SETTINGS_TIMEZONE_VALUES.size() > 6 ? 1 : 0}"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintEnd_toStartOf="@+id/settings_time_date_timezone_ver_guideline"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/settings_on_off_time_zone"
+            app:layout_constraintTop_toBottomOf="@id/settings_time_date_timezone_card"
             bind:childLayout="@{@layout/uil_settings_list_row_timezone}"
             bind:items="@{dataPoolHandler.SETTINGS_TIMEZONE_VALUES}">
 
@@ -73,18 +75,18 @@
 
 
         <ScrollView
-            android:id="@+id/scrollView2"
+            android:id="@+id/settings_time_date_timezone_scroll_view"
             style="?attr/settings_scroll_view"
             android:layout_height="0dp"
-            app:layout_constraintBottom_toTopOf="@+id/img_settings_display"
+            app:layout_constraintBottom_toTopOf="@+id/settings_time_date_timezone_img"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent="0.3"
-            app:layout_constraintStart_toEndOf="@+id/guideline"
-            app:layout_constraintTop_toBottomOf="@+id/settings_on_off_time_zone"
+            app:layout_constraintStart_toEndOf="@+id/settings_time_date_timezone_ver_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/settings_time_date_timezone_card"
             app:layout_constraintWidth_percent="0.34">
 
             <com.gm.settingsapp.ui.customview.SkewTextView
-                android:id="@+id/ui_settings_information_text"
+                android:id="@+id/settings_time_date_timezone_scroll_text"
                 style="?attr/text_material_content_text"
                 android:fontFamily="@font/gmsansui_regular"
                 android:textSize="@dimen/List_Secondary_text"
@@ -94,15 +96,15 @@
         </ScrollView>
 
         <ImageView
-            android:id="@+id/img_settings_display"
+            android:id="@+id/settings_time_date_timezone_img"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:src="@drawable/img_auto_time"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent="0.5"
-            app:layout_constraintStart_toEndOf="@+id/guideline"
-            app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+            app:layout_constraintStart_toEndOf="@+id/settings_time_date_timezone_ver_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/settings_time_date_timezone_scroll_view"
             app:layout_constraintWidth_percent="0.34" />
 
     </com.gm.settingsapp.ui.customview.SkewConstraintLayout>

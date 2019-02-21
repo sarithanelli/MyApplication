@@ -26,7 +26,6 @@ class SettingsVehicleComfortAndConvenienceOnOffActivity : BaseActivity() {
 
     override fun onResume() {
         super.onResume()
-        headerTitle(getString(R.string.settings_automatic_entry_egress_assist))
     }
 
     override fun onBackPressed() {

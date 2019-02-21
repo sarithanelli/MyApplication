@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.View
 import com.gm.settingsapp.R
 import com.gm.settingsapp.databinding.SettingPowerLiftgateBinding
-import com.gm.settingsapp.databinding.SettingautomaticrunningboardsBinding
 import com.gm.settingsapp.databinding.Settingsdisplaymodebinding
 import com.gm.settingsapp.viewmodels.Constants
 import dagger.android.AndroidInjection

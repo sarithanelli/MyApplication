@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.View
 import com.gm.settingsapp.R
 import com.gm.settingsapp.databinding.SettingautomaticrunningboardsBinding
-import com.gm.settingsapp.databinding.Settingsdisplaymodebinding
+
 import com.gm.settingsapp.viewmodels.Constants
 import dagger.android.AndroidInjection
 
@@ -18,7 +18,7 @@ class SettingsAutomaticRunningBoardsActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         AndroidInjection.inject(this)
         super.onCreate(savedInstanceState)
-        val binding = setContentSubView(R.layout.ics_settings_automatic_running_boards) as SettingautomaticrunningboardsBinding
+        val binding = setContentSubView(R.layout.ics_settings_automatic_running_boards) as com.gm.settingsapp.databinding.SettingautomaticrunningboardsBinding
         binding.let {
             it?.clickHandler = eventHandler
             it?.dataPoolHandler = dataPoolDataHandler
