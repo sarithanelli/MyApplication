@@ -34,6 +34,47 @@ import java.util.*
 import javax.inject.Inject
 import kotlin.collections.ArrayList
 
+   /* override fun onSETTINGS_RES__COMFORT_CONVENIENCE_MENU() {
+
+
+    }
+
+    override fun onSETTINGS_RES_AUTOMATIC_ENTRY_EGRESS_ASSIST() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun SOUNDPARAMS_RES_CHIMEVOLUME() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_RES_POWER_LIFTGATE() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_RES_HANDSFREE_LIFTGATE() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_RES_REVERSE_TILTMIRROR() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_RES_REMOTE_MIRRORFOLDING() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_RES_RAIN_SENSE_WIPERS() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_RES_AUTO_WIPE_REVERSEGEAR() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_RES_EXTENDED_HILL_START_ASSIST() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }*/
+
 class ResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Utility, serviceUtility: com.gm.settingsservice.utils.Utility, dataPoolDataHandler: DataPoolDataHandler, systemListener: SystemListener, context: Context)  {
 /*
     var utility: com.gm.settingsapp.utils.Utility = utility
@@ -388,6 +429,7 @@ class ResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Util
         }
         dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_collision))
         dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_comfort_and_convenience))
+        dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_ride_height))
     }
 
     init {

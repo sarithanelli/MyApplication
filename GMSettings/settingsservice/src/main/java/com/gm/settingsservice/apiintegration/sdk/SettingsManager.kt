@@ -138,21 +138,6 @@ class SettingsManager @Inject constructor(val systemListener: SystemListener, va
 
     fun initVehicleList() {
 
-        if (mCustomization.airQualitySensorCustomizationSettingAvailable ||
-                mCustomization.automaticFanCustomizationSettingAvailable ||
-                mCustomization.pollutionControlCustomizationSettingAvailable ||
-                mCustomization.automaticHeatedSeatCustomizationSettingAvailable ||
-                mCustomization.automaticCooledSeatCustomizationSettingAvailable ||
-                mCustomization.rearDefogStartupCustomizationSettingAvailable ||
-                mCustomization.rearZoneStartupCustomizationSettingAvailable ||
-                mCustomization.automaticDefogCustomizationSettingAvailable ||
-                mCustomization.elevatedIdleCustomizationSettingAvailable ||
-                mCustomization.automaticAirDistributionCustomizationSettingAvailable ||
-                mCustomization.ionizerControlCustomizationSettingAvailable) {
-            systemListener.onSETTINGS_RES_CLIMATE()
-        }
-
-
         systemListener.onSETTINGS_APPS_RES_DATA()
         listnerRegistrations(mCustomization.performanceModeMainMenuType)
         val mSettingsAvailibilityFlag_t = SettingsAvailibilityFlag_t()
@@ -335,6 +320,21 @@ class SettingsManager @Inject constructor(val systemListener: SystemListener, va
 
         }
         systemListener.onSETTINGS_RES_DRIVERSELECTEDMODESTATUS(SettingsDriverStatus)
+
+
+        if (mCustomization.airQualitySensorCustomizationSettingAvailable ||
+                mCustomization.automaticFanCustomizationSettingAvailable ||
+                mCustomization.pollutionControlCustomizationSettingAvailable ||
+                mCustomization.automaticHeatedSeatCustomizationSettingAvailable ||
+                mCustomization.automaticCooledSeatCustomizationSettingAvailable ||
+                mCustomization.rearDefogStartupCustomizationSettingAvailable ||
+                mCustomization.rearZoneStartupCustomizationSettingAvailable ||
+                mCustomization.automaticDefogCustomizationSettingAvailable ||
+                mCustomization.elevatedIdleCustomizationSettingAvailable ||
+                mCustomization.automaticAirDistributionCustomizationSettingAvailable ||
+                mCustomization.ionizerControlCustomizationSettingAvailable) {
+            systemListener.onSETTINGS_RES_CLIMATE()
+        }
 
     }
 

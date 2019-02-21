@@ -701,29 +701,58 @@
     "activityName": "SettingsVehicleComfortRainSenseWiperActivity",
     "isProcess": "false"
   },
-  "evGCollision":{
+  "evGCollision": {
     "eventType": "navigate",
     "eventName": "evGCollision",
     "activityName": "SettingsCollisionActivity",
     "isProcess": "false"
   },
-  "evGCollisionOnOff":{
+  "evGCollisionOnOff": {
     "eventType": "navigate",
     "eventName": "evGCollisionOnOff",
     "activityName": "CollisionOnOffActivity",
     "isProcess": "false"
   },
-  "evGParkAssist":{
+  "evGParkAssist": {
     "eventType": "navigate",
     "eventName": "evGParkAssist",
     "activityName": "SettingsParkAssistActivity",
     "isProcess": "false"
   },
-  "evGPedestrian":{
+  "evGPedestrian": {
     "eventType": "navigate",
     "eventName": "evGPedestrian",
     "activityName": "SettingsRearPedestrianDetectionActivity",
     "isProcess": "false"
+  },
+  "evRideHeight": {
+    "eventType": "navigate",
+    "eventName": "evRideHeight",
+    "activityName": "SettingsRideHeightActivity",
+    "isProcess": "false"
+  },
+  "evRideHeightOnOff": {
+    "eventType": "navigate",
+    "eventName": "evRideHeightOnOff",
+    "activityName": "SettingsRideHeightOnOffActivity",
+    "isProcess": "false"
+  },
+  "eHillStart": {
+    "eventType": "navigate",
+    "eventName": "eVGHillStart",
+    "activityName": "SettingsVehicleComfortAutomaticExtendedHillStartActivity",
+    "isProcess": "false"
+  },
+  "eDriveModeCustomization": {
+    "eventType": "navigate",
+    "eventName": "eVGDriveModeCustomization",
+    "activityName": "SettingsDriveModeCustomizationActivity",
+    "isProcess": "false"
+  },
+  "eVisualization": {
+    "eventType": "navigate",
+    "eventName": "eVGVisualization",
+    "activityName": "SettingsDriveModeVisualizationActivity",
+    "isProcess": "false"
   }
-
 }

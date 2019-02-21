@@ -54,8 +54,10 @@ class GMSettingsManager @Inject constructor(val systemListener: SystemListener, 
 
 
     fun initListeners() {
+        initVehicleList()
+
       //  EventBus.sub.attachConsumer(this,ConnectivityEvent::class.java, VehicleEvent::class.java,SystemEvents::class.java)
-        val setupAppRoutingUseCase = SetupDomainUseCase(SettingsService.appContext)
+       /* val setupAppRoutingUseCase = SetupDomainUseCase(SettingsService.appContext)
          setupAppRoutingUseCase.execute(object : Observer.Acceptor<Void> {
             override fun onReceived(data: Void) {
                 //Success
@@ -67,8 +69,8 @@ class GMSettingsManager @Inject constructor(val systemListener: SystemListener, 
             override fun onError(error: Throwable) {
                 throw RuntimeException("Application can't instantiate API", error)
             }
-        })
-       ClimateAndAirQuality.AUTO_DEFOG.ordinal
+        })*/
+       //ClimateAndAirQuality.AUTO_DEFOG.ordinal
         mCustomization.setOnPerformanceModeMainMenuTypeChangedListener(SettingsListenerManager(mCustomization, this, Constants.SETTINGS_MAINMENU_TYPE))
         mCustomization.setOnSoundPerformanceModeCustomizationCurrentSettingValueChangedListener(SettingsListenerManager(mCustomization, this, Constants.SETTINGS_VEHICLE_DRIVINGMODE_ENGINE_SOUND))
         mCustomization.setOnDriverSeatPerformanceModeCustomizationCurrentSettingValueChangedListener(SettingsListenerManager(mCustomization, this, Constants.SETTINGS_VEHICLE_SPORTMODE_DRIVERSEAT))
@@ -76,7 +78,7 @@ class GMSettingsManager @Inject constructor(val systemListener: SystemListener, 
         mCustomization.setOnPassengerSeatPerformanceModeCustomizationCurrentSettingValueChangedListener(SettingsListenerManager(mCustomization, this, Constants.SETTINGS_VEHICLE_SPORTMODE_PASSENGERSEAT))
         mCustomization.setOnAdaptiveCruiseControlPerformanceModeCustomizationCurrentSettingValueChangedListener(SettingsListenerManager(mCustomization, this, Constants.SETTINGS_VEHICLE_SPORTMODE_ADAPTIVECRUISECONTROL))
 
-        initVehicleList()
+
         mCustomization.setOnAirQualitySensorCustomizationCurrentSettingValueChangedListener(SettingsListenerManager(mCustomization, this, CLIMATE_AIR_QUALITY_SENSOR))
         mCustomization.setOnAutomaticFanCustomizationCurrentSettingValueChangedListener(SettingsListenerManager(mCustomization, this, CLIMATE_AUTO_FAN_SPEED))
         mCustomization.setOnPollutionControlCustomizationCurrentSettingValueChangedListener(SettingsListenerManager(mCustomization, this, CLIMATE_POLLUTION_CONTROL))
@@ -164,6 +166,8 @@ class GMSettingsManager @Inject constructor(val systemListener: SystemListener, 
     }
 
     fun initVehicleList() {
+
+        systemListener.onSETTINGS_RES_CLIMATE()
         systemListener.onSETTINGS_APPS_RES_DATA()
         listnerRegistrations(mCustomization.performanceModeMainMenuType)
         val mSettingsAvailibilityFlag_t = SettingsAvailibilityFlag_t()

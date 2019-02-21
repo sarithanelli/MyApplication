@@ -10,6 +10,7 @@ interface IManager : ISettingsManagerReq {
     /**
      * Initialize for settings main screen
      */
+
     override fun initListeners()
 override fun onSETTINGS_MANAGE_SET_FAV()
     override fun onSETTINGS_REQ_SETTIMEAM(any: Any)
@@ -111,5 +112,17 @@ override fun onSETTINGS_MANAGE_SET_FAV()
     override fun onSETTINGS_REQ_OPENSOURCE()
 
     override fun onSETTINGS_REQ_BUILDCLICK()
+    override fun onSETTINGS_REQ_AUTOMATIC_ENTRY_EGRESS_ASSIST()
+    override fun SOUNDPARAMS_REQ_CHIMEVOLUMEDEC()
+    override fun SOUNDPARAMS_REQ_CHIMEVOLUMEINC()
+    override fun SOUNDPARAMS_REQ_SETCHIMEVOLUME()
+    override fun SOUNDPARAMS_REQ_GETCHIMEVOLUME()
+    override fun onSETTINGS_REQ_POWER_LIFTGATE()
+    override fun onSETTINGS_REQ_HANDSFREE_LIFTGATE()
+    override fun onSETTINGS_REQ_REVERSE_TILTMIRROR()
+    override fun onSETTINGS_REQ_REMOTE_MIRRORFOLDING()
+    override fun onSETTINGS_REQ_RAIN_SENSE_WIPERS()
+    override fun onSETTINGS_REQ_AUTO_WIPE_REVERSEGEAR()
+    override fun onSETTINGS_REQ_EXTENDED_HILL_START_ASSIST()
 
 }

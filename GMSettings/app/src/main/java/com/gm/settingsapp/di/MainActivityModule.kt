@@ -143,37 +143,43 @@ abstract class MainActivityModule {
     abstract fun contributeRunningsAppsPopupSettingsActivity(): RunningsAppsPopupSettingsActivity
 
     @ContributesAndroidInjector
-    abstract fun contributeHTMLViewerActivity() :  HTMLViewerActivity
-    @ContributesAndroidInjector
-    abstract fun contributeAboutSettingsLauncherActivity() : AboutSettingsLauncherActivity
-    @ContributesAndroidInjector
-    abstract fun contributeSettingsAboutBuildNumberActivity() :SettingsAboutBuildNumberActivity
-    @ContributesAndroidInjector
-    abstract fun contributeSettingsAboutDeviceRegistrationActivity() :SettingsAboutDeviceRegistrationActivity
-    @ContributesAndroidInjector
-    abstract fun contributeSettingsAppsAudioActivity() :SettingsAppsAudioActivity
+    abstract fun contributeHTMLViewerActivity(): HTMLViewerActivity
 
     @ContributesAndroidInjector
-    abstract fun contributeSettingsAppsOnOffActivity() :SettingsAppsOnOffActivity
+    abstract fun contributeAboutSettingsLauncherActivity(): AboutSettingsLauncherActivity
 
     @ContributesAndroidInjector
-    abstract fun contributeSettingsAutoModeCustomizationActivity() :SettingsAutoModeCustomizationActivity
-    @ContributesAndroidInjector
-    abstract fun contributeSettingsClimateOnOffActivity() :SettingsClimateOnOffActivity
+    abstract fun contributeSettingsAboutBuildNumberActivity(): SettingsAboutBuildNumberActivity
 
     @ContributesAndroidInjector
-    abstract fun contributeSettingsDriveModeSteeringActivity() :SettingsDriveModeSteeringActivity
+    abstract fun contributeSettingsAboutDeviceRegistrationActivity(): SettingsAboutDeviceRegistrationActivity
 
     @ContributesAndroidInjector
-    abstract fun contributeSettingsDrivingModeSuspensionActivity() :SettingsDrivingModeSuspensionActivity
+    abstract fun contributeSettingsAppsAudioActivity(): SettingsAppsAudioActivity
 
     @ContributesAndroidInjector
-    abstract fun contributeSettingsDrivingModeTractionActivity() :SettingsDrivingModeTractionActivity
+    abstract fun contributeSettingsAppsOnOffActivity(): SettingsAppsOnOffActivity
 
     @ContributesAndroidInjector
-    abstract fun contributeSettingsSportModeCustomizationActivity() :SettingsSportModeCustomizationActivity
+    abstract fun contributeSettingsAutoModeCustomizationActivity(): SettingsAutoModeCustomizationActivity
+
     @ContributesAndroidInjector
-    abstract fun contributeSettingsSportModeCustomizationOnOffActivity() :SettingsSportModeCustomizationOnOffActivity
+    abstract fun contributeSettingsClimateOnOffActivity(): SettingsClimateOnOffActivity
+
+    @ContributesAndroidInjector
+    abstract fun contributeSettingsDriveModeSteeringActivity(): SettingsDriveModeSteeringActivity
+
+    @ContributesAndroidInjector
+    abstract fun contributeSettingsDrivingModeSuspensionActivity(): SettingsDrivingModeSuspensionActivity
+
+    @ContributesAndroidInjector
+    abstract fun contributeSettingsDrivingModeTractionActivity(): SettingsDrivingModeTractionActivity
+
+    @ContributesAndroidInjector
+    abstract fun contributeSettingsSportModeCustomizationActivity(): SettingsSportModeCustomizationActivity
+
+    @ContributesAndroidInjector
+    abstract fun contributeSettingsSportModeCustomizationOnOffActivity(): SettingsSportModeCustomizationOnOffActivity
 
 
     @ContributesAndroidInjector
@@ -193,37 +199,67 @@ abstract class MainActivityModule {
 
     @ContributesAndroidInjector
     abstract fun SettingsVModeActivity(): SettingsVModeActivity
+
     @ContributesAndroidInjector
     abstract fun SettingsVehicleVModeEngineActivity(): SettingsVehicleVModeEngineActivity
+
     @ContributesAndroidInjector
     abstract fun SettingsVehicleVModeSteeringActivity(): SettingsVehicleVModeSteeringActivity
+
     @ContributesAndroidInjector
     abstract fun SettingsVehicleVModeSuspensionActivity(): SettingsVehicleVModeSuspensionActivity
+
     @ContributesAndroidInjector
     abstract fun SettingsVehicleVModeBrakeActivity(): SettingsVehicleVModeBrakeActivity
+
     @ContributesAndroidInjector
     abstract fun SettingsVehicleVModePowertrainActivity(): SettingsVehicleVModePowertrainActivity
+
     @ContributesAndroidInjector
     abstract fun SettingsComfortAndConvenienceActivity(): SettingsComfortAndConvenienceActivity
+
     @ContributesAndroidInjector
     abstract fun SettingsAutomaticRunningBoardsActivity(): SettingsAutomaticRunningBoardsActivity
+
     @ContributesAndroidInjector
     abstract fun SettingsVehicleComfortAutomaticEntryActivity(): SettingsVehicleComfortAndConvenienceOnOffActivity
-       @ContributesAndroidInjector
+
+    @ContributesAndroidInjector
     abstract fun SettingsVehicleComfortPowerLiftgateActivity(): SettingsVehicleComfortPowerLiftgateActivity
+
     @ContributesAndroidInjector
     abstract fun SettingsVehicleHandFreeLiftgateActivity(): SettingsVehicleHandFreeLiftgateActivity
+
     @ContributesAndroidInjector
     abstract fun SettingsVehicleComfortRainSenseWiperActivity(): SettingsVehicleComfortRainSenseWiperActivity
 
 
     @ContributesAndroidInjector
     abstract fun SettingsCollisionActivity(): SettingsCollisionActivity
+
     @ContributesAndroidInjector
     abstract fun CollisionOnOffActivity(): CollisionOnOffActivity
 
     @ContributesAndroidInjector
     abstract fun SettingsParkAssistActivity(): SettingsParkAssistActivity
+
     @ContributesAndroidInjector
-    abstract fun SettingsRearPedestrianDetectionActivity(): SettingsRearPedestrianDetectionActivity
+    abstract fun SettingsVehicleChimeVolumeActivity(): SettingsVehicleChimeVolumeActivity
+
+    @ContributesAndroidInjector
+    abstract fun SettingsVehicleComfortAutomaticExtendedHillStartActivity(): SettingsVehicleComfortAutomaticExtendedHillStartActivity
+
+    @ContributesAndroidInjector
+    abstract fun SettingsDriveModeCustomizationActivity(): SettingsDriveModeCustomizationActivity
+
+    @ContributesAndroidInjector
+    abstract fun SettingsRideHeightActivity(): SettingsRideHeightActivity
+
+    @ContributesAndroidInjector
+    abstract fun SettingsRideHeightOnOffActivity(): SettingsRideHeightOnOffActivity
+
+    @ContributesAndroidInjector
+    abstract fun SettingsDriveModeVisualizationActivity(): SettingsDriveModeVisualizationActivity
+
+
 }

@@ -6,6 +6,21 @@ import androidx.databinding.ObservableField
 import com.gm.settingsapp.GMSettingsApp
 import com.gm.settingsapp.R
 import com.gm.settingsapp.utils.SubUtility
+import com.gm.settingsapp.viewmodels.Constants.C_AUTO_ENTRY
+import com.gm.settingsapp.viewmodels.Constants.C_AUTO_MEMORY_RECALL
+import com.gm.settingsapp.viewmodels.Constants.C_AUTO_RUNNING_BOARDS
+import com.gm.settingsapp.viewmodels.Constants.C_AUTO_WIPE_IN_REVERSE_GEAR
+import com.gm.settingsapp.viewmodels.Constants.C_CHIME_VOLUME
+import com.gm.settingsapp.viewmodels.Constants.C_EASY_EXIT_OPTIONS
+import com.gm.settingsapp.viewmodels.Constants.C_EASY_EXIT_SEAT
+import com.gm.settingsapp.viewmodels.Constants.C_EASY_EXIT_STEERING_COLUMN
+import com.gm.settingsapp.viewmodels.Constants.C_EXTENDED_HILL_START_ASSIST
+import com.gm.settingsapp.viewmodels.Constants.C_HANDSFREE_LIFTGATE
+import com.gm.settingsapp.viewmodels.Constants.C_PERSONALIZATION_BY_DRIVER
+import com.gm.settingsapp.viewmodels.Constants.C_POWER_LIFTGATE
+import com.gm.settingsapp.viewmodels.Constants.C_RAIN_SENSE_WIPERS
+import com.gm.settingsapp.viewmodels.Constants.C_REMOTE_MIRROR_FOLDING
+import com.gm.settingsapp.viewmodels.Constants.C_REVERSE_TILT_MIRROR
 import com.gm.settingsapp.viewmodels.Constants.DIFFUES_AIRFLOW_VALUE
 import com.gm.settingsapp.viewmodels.Constants.DIRECT_AIRFLOW_VALUE
 import com.gm.settingsapp.viewmodels.Constants.DISPLAY_TURN_OFF
@@ -35,6 +50,62 @@ import javax.inject.Inject
 import kotlin.collections.ArrayList
 
 class GMResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Utility, serviceUtility: com.gm.settingsservice.utils.Utility, dataPoolDataHandler: DataPoolDataHandler, systemListener: SystemListener, context: Context) : ISettingsManagerRes {
+    override fun onSETTINGS_RES_AUTOMATIC_ENTRY_EGRESS_ASSIST() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+    override fun onSETTINGS_RES__COMFORT_CONVENIENCE_MENU() {
+
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.clear()
+
+       // dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_automatic_running_boards_long),C_AUTO_RUNNING_BOARDS))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_automatic_entry_egress_assist),C_AUTO_ENTRY))
+       // dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_auto_memory_recall), C_AUTO_MEMORY_RECALL))
+        //dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_easy_exit_driver_seat), C_EASY_EXIT_SEAT))
+        //dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_easy_exit_steering_column), C_EASY_EXIT_STEERING_COLUMN))
+       // dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_easy_exit_options_big), C_EASY_EXIT_OPTIONS))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_chime_volume), C_CHIME_VOLUME))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_power_liftgate), C_POWER_LIFTGATE))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_handsfree_liftgate_trunk_control), C_HANDSFREE_LIFTGATE))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_reverse_tilt_mirror), C_REVERSE_TILT_MIRROR))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_remote_mirror_folding_short), C_REMOTE_MIRROR_FOLDING))
+      //  dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_personalization_by_driver_big), C_PERSONALIZATION_BY_DRIVER))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_rain_sense_wipers_big), C_RAIN_SENSE_WIPERS))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_auto_wipe_in_reverse_gear_big), C_AUTO_WIPE_IN_REVERSE_GEAR))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_automatic_vehicle_hold_long), com.gm.settingsapp.viewmodels.Constants.EXTENDED_HILL_START_ASSIST))
+
+
+    }
+    override fun SOUNDPARAMS_RES_CHIMEVOLUME() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_RES_POWER_LIFTGATE() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_RES_HANDSFREE_LIFTGATE() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_RES_REVERSE_TILTMIRROR() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_RES_REMOTE_MIRRORFOLDING() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_RES_RAIN_SENSE_WIPERS() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_RES_AUTO_WIPE_REVERSEGEAR() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_RES_EXTENDED_HILL_START_ASSIST() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
 
     var utility: com.gm.settingsapp.utils.Utility = utility
 
@@ -45,34 +116,34 @@ class GMResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Ut
     override fun onSETTINGS_APPS_RES_DATA() {
 
         dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.clear()
-        if (SettingsService.isSDKAvailable()) {
-            if (CalibrationSettings.getInstance(GMSettingsApp.appContext).doesNavigationExits() || CalibrationSettings.getInstance(GMSettingsApp.appContext).doesCarPlayEnabled())
-                dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_android_auto), true, dataPoolDataHandler.DEVICEPROJECTION_GOOGLEAUTOLINKENABLE.get() == 1, com.gm.settingsapp.viewmodels.Constants.ANDROID_AUTO, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.cm_enable_disable_android_auto_settings_content)))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_apple_carplay_short1), true, dataPoolDataHandler.DEVICEPROJECTION_APPLECARPLAYENABLE.get() == 1, com.gm.settingsapp.viewmodels.Constants.APPLE_CARPLAY, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.cm_enable_disable_apple_carplay_settings_content)))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_audio_small), false, false, com.gm.settingsapp.viewmodels.Constants.AUDIO, ""))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_Cameras), false, false, com.gm.settingsapp.viewmodels.Constants.CAMERA, ""))
-            if (dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.contains(GMSettingsApp.appContext.getString(R.string.settings_climate_app))) {
-                dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_climate), false, false, com.gm.settingsapp.viewmodels.Constants.CLIMATE, ""))
-            }
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_energy), false, false, com.gm.settingsapp.viewmodels.Constants.ENERGY, ""))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_mirrorlink), true, dataPoolDataHandler.DEVICEPROJECTION_GOOGLEAUTOLINKENABLE.get() == 1, com.gm.settingsapp.viewmodels.Constants.MIRROR_LINK, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.cm_enable_disable_mirror_link_settings_content)))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_navigation_short), false, false, com.gm.settingsapp.viewmodels.Constants.NAVIGATION, ""))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_phone_small2), false, false, com.gm.settingsapp.viewmodels.Constants.PHONE, ""))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_trailering), false, false, com.gm.settingsapp.viewmodels.Constants.TRAILERING, ""))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_video), true, true, com.gm.settingsapp.viewmodels.Constants.VIDEO, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_video_voice_content)))
-        } else {
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_android_auto), true, true, com.gm.settingsapp.viewmodels.Constants.ANDROID_AUTO, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.cm_enable_disable_android_auto_settings_content)))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_apple_carplay_short1), true, true, com.gm.settingsapp.viewmodels.Constants.APPLE_CARPLAY, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.cm_enable_disable_apple_carplay_settings_content)))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_audio_small), false, false, com.gm.settingsapp.viewmodels.Constants.AUDIO, ""))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_Cameras), false, false, com.gm.settingsapp.viewmodels.Constants.CAMERA, ""))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_climate), false, false, com.gm.settingsapp.viewmodels.Constants.CLIMATE, ""))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_energy), false, false, com.gm.settingsapp.viewmodels.Constants.ENERGY, ""))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_mirrorlink), true, true, com.gm.settingsapp.viewmodels.Constants.MIRROR_LINK, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.cm_enable_disable_mirror_link_settings_content)))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_navigation_short), false, false, com.gm.settingsapp.viewmodels.Constants.NAVIGATION, ""))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_phone_small2), false, false, com.gm.settingsapp.viewmodels.Constants.PHONE, ""))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_trailering), false, false, com.gm.settingsapp.viewmodels.Constants.TRAILERING, ""))
-            dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_video), true, true, com.gm.settingsapp.viewmodels.Constants.VIDEO, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_video_voice_content)))
-        }
+        /*   if (SettingsService.isSDKAvailable()) {
+               if (CalibrationSettings.getInstance(GMSettingsApp.appContext).doesNavigationExits() || CalibrationSettings.getInstance(GMSettingsApp.appContext).doesCarPlayEnabled())
+                   dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_android_auto), true, dataPoolDataHandler.DEVICEPROJECTION_GOOGLEAUTOLINKENABLE.get() == 1, com.gm.settingsapp.viewmodels.Constants.ANDROID_AUTO, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.cm_enable_disable_android_auto_settings_content)))
+               dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_apple_carplay_short1), true, dataPoolDataHandler.DEVICEPROJECTION_APPLECARPLAYENABLE.get() == 1, com.gm.settingsapp.viewmodels.Constants.APPLE_CARPLAY, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.cm_enable_disable_apple_carplay_settings_content)))
+               dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_audio_small), false, false, com.gm.settingsapp.viewmodels.Constants.AUDIO, ""))
+               dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_Cameras), false, false, com.gm.settingsapp.viewmodels.Constants.CAMERA, ""))
+               if (dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.contains(GMSettingsApp.appContext.getString(R.string.settings_climate_app))) {
+                   dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_climate), false, false, com.gm.settingsapp.viewmodels.Constants.CLIMATE, ""))
+               }
+               dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_energy), false, false, com.gm.settingsapp.viewmodels.Constants.ENERGY, ""))
+               dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_mirrorlink), true, dataPoolDataHandler.DEVICEPROJECTION_GOOGLEAUTOLINKENABLE.get() == 1, com.gm.settingsapp.viewmodels.Constants.MIRROR_LINK, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.cm_enable_disable_mirror_link_settings_content)))
+               dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_navigation_short), false, false, com.gm.settingsapp.viewmodels.Constants.NAVIGATION, ""))
+               dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_phone_small2), false, false, com.gm.settingsapp.viewmodels.Constants.PHONE, ""))
+               dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_trailering), false, false, com.gm.settingsapp.viewmodels.Constants.TRAILERING, ""))
+               dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_video), true, true, com.gm.settingsapp.viewmodels.Constants.VIDEO, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_video_voice_content)))
+           } else {*/
+        dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_android_auto), true, true, com.gm.settingsapp.viewmodels.Constants.ANDROID_AUTO, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.cm_enable_disable_android_auto_settings_content)))
+        dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_apple_carplay_short1), true, true, com.gm.settingsapp.viewmodels.Constants.APPLE_CARPLAY, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.cm_enable_disable_apple_carplay_settings_content)))
+        dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_audio_small), false, false, com.gm.settingsapp.viewmodels.Constants.AUDIO, ""))
+        dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_Cameras), false, false, com.gm.settingsapp.viewmodels.Constants.CAMERA, ""))
+        dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_climate), false, false, com.gm.settingsapp.viewmodels.Constants.CLIMATE, ""))
+        dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_energy), false, false, com.gm.settingsapp.viewmodels.Constants.ENERGY, ""))
+        dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_mirrorlink), true, true, com.gm.settingsapp.viewmodels.Constants.MIRROR_LINK, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.cm_enable_disable_mirror_link_settings_content)))
+        dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_navigation_short), false, false, com.gm.settingsapp.viewmodels.Constants.NAVIGATION, ""))
+        dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.ui_phone_small2), false, false, com.gm.settingsapp.viewmodels.Constants.PHONE, ""))
+        dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_trailering), false, false, com.gm.settingsapp.viewmodels.Constants.TRAILERING, ""))
+        dataPoolDataHandler.SETTINGS_REQ_APPS_LIST.add(AppsModeModel(GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_video), true, true, com.gm.settingsapp.viewmodels.Constants.VIDEO, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_video_voice_content)))
+        //}
     }
 
     //response for display status
@@ -190,7 +261,7 @@ class GMResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Ut
         var distributionTag: String? = null
 
 
-        if (SettingsService.isSDKAvailable()) {
+        /*if (SettingsService.isSDKAvailable()) {
             try {
                 if (AppSignal.getInstance(AppSignal.SignalKey.AutomaticFan).isAvailable) {
                     when (AppSignal.getInstance(AppSignal.SignalKey.AutomaticFan).signalValue) {
@@ -307,7 +378,7 @@ class GMResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Ut
             } catch (e: Exception) {
                 Log.i("", "Exception " + e.printStackTrace())
             }
-        } else {
+        } else {*/
 
             when (dataPoolDataHandler.SETTINGS_AIR_QUALITY_SENSOR_VALUE.get()) {
                 OFF_VALUE -> qualityTag = GMSettingsApp.appContext.resources.getString(R.string.ui_off)
@@ -340,7 +411,7 @@ class GMResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Ut
             dataPoolDataHandler.SETTINGS_SET_CLIMATE_ROW.add(ClimateModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_auto_air_distribution_big), distributionTag!!, false, false, com.gm.settingsapp.viewmodels.Constants.AUTO_AIR_DISTRIBUTION, ""))
             dataPoolDataHandler.SETTINGS_SET_CLIMATE_ROW.add(ClimateModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_ionizer), "", true, true, com.gm.settingsapp.viewmodels.Constants.IONIZER, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_ionizer_content)))
 
-        }
+       // }
 
     }
 
@@ -379,13 +450,31 @@ class GMResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Ut
 
 
     override fun onSETTINGS_RES_CLIMATE() {
-        dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_vmode))
-        dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_mymode))
+        if (!dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.contains(GMSettingsApp.appContext.getString(R.string.settings_drive_mode_customization))) {
+            dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_drive_mode_customization))
+        }
+
+        if (!dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.contains(GMSettingsApp.appContext.getString(R.string.settings_vmode))) {
+            dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_vmode))
+        }
+        if (!dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.contains(GMSettingsApp.appContext.getString(R.string.settings_mymode))) {
+            dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_mymode))
+        }
         if (!dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.contains(GMSettingsApp.appContext.getString(R.string.settings_climate_app))) {
             dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_climate_app))
         }
-        dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_collision))
-        dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_comfort_and_convenience))
+
+        if (!dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.contains(GMSettingsApp.appContext.getString(R.string.settings_collision))) {
+            dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_collision))
+        }
+
+        if (!dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.contains(GMSettingsApp.appContext.getString(R.string.settings_comfort_and_convenience))) {
+            dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_comfort_and_convenience))
+        }
+
+        if (!dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.contains(GMSettingsApp.appContext.getString(R.string.settings_ride_height))) {
+            dataPoolDataHandler.SETTINGS_REQ_VEHICLEDATA.add(GMSettingsApp.appContext.getString(R.string.settings_ride_height))
+        }
     }
 
     init {

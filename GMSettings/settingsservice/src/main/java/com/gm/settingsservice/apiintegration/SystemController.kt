@@ -27,7 +27,8 @@ class SystemController @Inject constructor(val sdkManager: Lazy<SDKManager>, val
     fun getSourceManager(): IManager {
         manager = when {
             isSDKAvailable() -> {
-                sdkManager.get()
+             //   sdkManager.get()
+                gmSdkManager.get()
             }
             else -> simulationManager.get()
         }

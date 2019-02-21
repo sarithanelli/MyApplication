@@ -27,9 +27,9 @@ class SettingsDriveModeCustomizationActivity : BaseActivity() {
         }
         dataPoolDataHandler.SETTINGS_DRIVEMODE_CUSTOMIZATION_MENU.clear()
 
-        dataPoolDataHandler.SETTINGS_DRIVEMODE_CUSTOMIZATION_MENU.add(DriveModeCustomizationModel(GMSettingsApp.appContext.resources.getString(R.string.settings_vmode),  V_MODE_Z_MODE))
-        dataPoolDataHandler.SETTINGS_DRIVEMODE_CUSTOMIZATION_MENU.add(DriveModeCustomizationModel(GMSettingsApp.appContext.resources.getString(R.string.settings_mymode),  MY_MODE))
-        dataPoolDataHandler.SETTINGS_DRIVEMODE_CUSTOMIZATION_MENU.add(DriveModeCustomizationModel(GMSettingsApp.appContext.resources.getString(R.string.visualization),  VISUALIZATION))
+        dataPoolDataHandler.SETTINGS_DRIVEMODE_CUSTOMIZATION_MENU.add(DriveModeCustomizationModel(GMSettingsApp.appContext.resources.getString(R.string.settings_vmode), V_MODE_Z_MODE,false,false))
+        dataPoolDataHandler.SETTINGS_DRIVEMODE_CUSTOMIZATION_MENU.add(DriveModeCustomizationModel(GMSettingsApp.appContext.resources.getString(R.string.settings_mymode), MY_MODE,false,false))
+        dataPoolDataHandler.SETTINGS_DRIVEMODE_CUSTOMIZATION_MENU.add(DriveModeCustomizationModel(GMSettingsApp.appContext.resources.getString(R.string.visualization), VISUALIZATION,true,true))
     }
 
 
@@ -40,5 +40,9 @@ class SettingsDriveModeCustomizationActivity : BaseActivity() {
 
     override fun onEventResponse(view: View, obj: Any?) {
 
+        when ((obj as DriveModeCustomizationModel).primaryData) {
+            GMSettingsApp.appContext.resources.getString(R.string.visualization) -> view.tag = "eVisualization"
         }
+
     }
+}

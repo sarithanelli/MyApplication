@@ -47,8 +47,56 @@ import gm.vehicle.DateAndTime
  *  these funcs usually start after proxy constructor func in CAMFMProxy.cpp
  *  This should exclude all the functions under RecvData func, as the func in RecvData only corresponds to RES functions
  */
+
 class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHandler, val systemListener: SystemListener, val utility: Utility, val gmsettingsManager: GMSettingsManager, val vehicleAudioManager: dagger.Lazy<VehicleAudioManager>, val context: Context, val mCustomization: Customization, val supportedLanguageListData: Lazy<SupportedLanguageListData>) : IManager, ApplicationsState.Callbacks {
 
+    override fun onSETTINGS_REQ_RAIN_SENSE_WIPERS() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_REQ_AUTO_WIPE_REVERSEGEAR() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_REQ_EXTENDED_HILL_START_ASSIST() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun SOUNDPARAMS_REQ_CHIMEVOLUMEDEC() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun SOUNDPARAMS_REQ_CHIMEVOLUMEINC() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun SOUNDPARAMS_REQ_SETCHIMEVOLUME() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun SOUNDPARAMS_REQ_GETCHIMEVOLUME() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_REQ_POWER_LIFTGATE() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_REQ_HANDSFREE_LIFTGATE() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_REQ_REVERSE_TILTMIRROR() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_REQ_REMOTE_MIRRORFOLDING() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_REQ_AUTOMATIC_ENTRY_EGRESS_ASSIST() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
     override fun onSETTINGS_MANAGE_SET_FAV() {
         systemListener.onSETTINGS_MANAGE_RES_FAV()
     }
@@ -110,55 +158,7 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
     }
 
 
-    /**
-     *Request for set engine sound type
-     */
-    override fun onSETTINGS_REQ_SETENGINESOUNDTYPE(any: Any) {
 
-        val getVehicleSettingsOptionsUseCase = GetVehicleSettingsOptionsUseCase()
-        getVehicleSettingsOptionsUseCase.execute(object : com.gm.settings.core.Observer.Acceptor<VehicleSettings> {
-            override fun onReceived(p0: VehicleSettings?) {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-
-            }
-
-            override fun onError(p0: Throwable?) {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-            }
-
-
-        })
-
-
-        val value = dataPoolDataHandler.ENGINESOUND_MAP.get(any.toString())!!
-        mCustomization.setSoundPerformanceModeCustomizationSettingRequest(value)
-    }
-
-    /**
-     *Request for set suspension type
-     */
-    override fun onSETTINGS_REQ_SETSUSPENSIONTYPE(any: Any) {
-        val value: Int = dataPoolDataHandler.SUSPENSION_MAP.get(any.toString())!!
-        Signals.PerformanceModeSuspensionSignal().setSignalValue(value)
-
-    }
-
-    /**
-     *Request for set steering type
-     */
-    override fun onSETTINGS_REQ_SETSTEERINGTYPE(any: Any) {
-
-        val value: Int = dataPoolDataHandler.STEERING_MAP.get(any.toString())!!
-        Signals.PerformanceModeSteeringSignal().setSignalValue(value)
-    }
-
-    /**
-     *Request for set traction type
-     */
-    override fun onSETTINGS_REQ_SETTRACTIONTYPE(any: Any) {
-        val value: Int = dataPoolDataHandler.TRACTION_MAP.get(any.toString())!!
-        Signals.PerformanceModeDrivelineSignal().setSignalValue(value)
-    }
 
     override fun onSETTINGS_REQ_SPORTMODESETTINGS(any: Any) {
         systemListener.onSETTINGS_RES_SPORTMODESETTINGS(any)
@@ -201,10 +201,10 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
     }
 
 
-    val getUpdatedClimateUseCase = GetVehicleSettingsOptionsUseCase()
+//    val getUpdatedClimateUseCase = GetVehicleSettingsOptionsUseCase()
     override fun onSETTINGS_REQ_CLIMATE_MENU_LIST(any: Any) {
-       // systemListener.onSETTINGS_RES_CLIMATE_MENU_LIST()
-        try {
+        systemListener.onSETTINGS_RES_CLIMATE_MENU_LIST()
+       /* try {
             val result = getUpdatedClimateUseCase.executeSync().availableOptions as List<ClimateAndAirQuality>
             result.forEach {
                 when (it) {
@@ -247,7 +247,7 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
 
         } catch (e: Exception) {
             e.printStackTrace()
-        }
+        }*/
 
 
     }
@@ -424,7 +424,72 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
 
 
     override fun initListeners() {
-        gmsettingsManager.initListeners()
+        systemListener.onSETTINGS_RES_GLOBALSUPPORTEDSETTINGS(GlobalSettingsAvailibilityFlag_t(drivingModeFlag = 1, autoModeCustomizationFlag = 1, sportsModeCustomizationFlag = 1))
+        val mSettingsAvailibilityFlag_t = SettingsAvailibilityFlag_t()
+        mSettingsAvailibilityFlag_t.SettingsChangePerfModeSoundCustomizationFlag = Constants.ENGINE_SOUND_AUTO
+        mSettingsAvailibilityFlag_t.settingsSteeringCustomizationFlag = Constants.STEERING_AUTO
+        mSettingsAvailibilityFlag_t.settingsSuspensionCustomizationFlag = Constants.SUSPENSION_MODE4
+        mSettingsAvailibilityFlag_t.settingsTractionCustomizationFlag = Constants.TRACTION_AUTO
+
+        systemListener.onSETTINGS_RES_SUPPORTEDSETTINGS(mSettingsAvailibilityFlag_t)
+        val SettingsDriverModeStatus_t = SettingsDriverModeStatus_t()
+        var SettingsDriverStatus = SettingsDriverStatus()
+
+
+        val arrayListSoundModes = ArrayList<ESettingsChangePerfModeSound>()
+        arrayListSoundModes.add(ESettingsChangePerfModeSound.SETTINGS_DRIVERMODE_ENGINESOUND_AUTO)
+        arrayListSoundModes.add(ESettingsChangePerfModeSound.SETTINGS_DRIVERMODE_ENGINESOUND_TOUR)
+        arrayListSoundModes.add(ESettingsChangePerfModeSound.SETTINGS_DRIVERMODE_ENGINESOUND_SPORT)
+        arrayListSoundModes.add(ESettingsChangePerfModeSound.SETTINGS_DRIVERMODE_ENGINESOUND_TRACK)
+        arrayListSoundModes.add(ESettingsChangePerfModeSound.SETTINGS_DRIVERMODE_ENGINESOUND_STEALTH)
+        arrayListSoundModes.add(ESettingsChangePerfModeSound.SETTINGS_DRIVERMODE_ENGINESOUND_CITY)
+        arrayListSoundModes.add(ESettingsChangePerfModeSound.SETTINGS_DRIVERMODE_ENGINESOUND_OFF)
+        systemListener.onSETTINGS_RES_PERFMODESOUNDCUSTOMIZATIONSETTING(arrayListSoundModes)
+        //SettingsDriverModeStatus_t.DriverSelectedMode1Status = DataPoolDataHandler.ENGINESOUND_MAP_STATE[Constants.ENGINE_SOUND_AUTO]!!
+        SettingsDriverStatus.enginesound = Constants.ENGINE_SOUND_AUTO
+
+
+        val arrayListSteeringModes = ArrayList<ESettingsSteeringCustomization>()
+        arrayListSteeringModes.add(ESettingsSteeringCustomization.SETTINGS_DRIVERMODE_STEERING_AUTO)
+        arrayListSteeringModes.add(ESettingsSteeringCustomization.SETTINGS_DRIVERMODE_STEERING_TOUR)
+        arrayListSteeringModes.add(ESettingsSteeringCustomization.SETTINGS_DRIVERMODE_STEERING_SPORT)
+        arrayListSteeringModes.add(ESettingsSteeringCustomization.SETTINGS_DRIVERMODE_STEERING_TRACK)
+        arrayListSteeringModes.add(ESettingsSteeringCustomization.SETTINGS_DRIVERMODE_STEERING_ECO)
+        arrayListSteeringModes.add(ESettingsSteeringCustomization.SETTINGS_DRIVERMODE_STEERING_CITY)
+        systemListener.onSETTINGS_RES_SPORTMODESPORTSTEERINGSETTINGS(arrayListSteeringModes)
+        SettingsDriverStatus.steering = Constants.STEERING_AUTO
+
+        // SettingsDriverModeStatus_t.DriverSelectedMode2Status = DataPoolDataHandler.STEERING_MAP_STATE[Constants.STEERING_AUTO]!!
+
+        val arrayListSuspensionModes = ArrayList<ESettingsSuspensionCustomization>()
+        arrayListSuspensionModes.add(ESettingsSuspensionCustomization.SETTINGS_DRIVERMODE_SUSPENSION_TOUR)
+        arrayListSuspensionModes.add(ESettingsSuspensionCustomization.SETTINGS_DRIVERMODE_SUSPENSION_SPORT)
+        arrayListSuspensionModes.add(ESettingsSuspensionCustomization.SETTINGS_DRIVERMODE_SUSPENSION_TRACK)
+        arrayListSuspensionModes.add(ESettingsSuspensionCustomization.SETTINGS_DRIVERMODE_SUSPENSION_AUTO)
+
+        systemListener.onSETTINGS_RES_SPORTMODESPORTSUSPENSIONSETTINGS(arrayListSuspensionModes)
+        SettingsDriverStatus.suspension = Constants.SUSPENSION_MODE4
+        //SettingsDriverModeStatus_t.DriverSelectedMode3Status = DataPoolDataHandler.SUSPENSION_MAP_STATE[Constants.SUSPENSION_MODE4]!!
+
+        val arrayListTractionModes = ArrayList<ESettingsTractionCustomization>()
+        arrayListTractionModes.add(ESettingsTractionCustomization.SETTINGS_DRIVERMODE_TRACTION_AUTO)
+        arrayListTractionModes.add(ESettingsTractionCustomization.SETTINGS_DRIVERMODE_TRACTION_TOUR)
+        arrayListTractionModes.add(ESettingsTractionCustomization.SETTINGS_DRIVERMODE_TRACTION_SPORT)
+        arrayListTractionModes.add(ESettingsTractionCustomization.SETTINGS_DRIVERMODE_TRACTION_TRACK)
+        arrayListTractionModes.add(ESettingsTractionCustomization.SETTINGS_DRIVERMODE_TRACTION_ECO)
+        arrayListTractionModes.add(ESettingsTractionCustomization.SETTINGS_DRIVERMODE_TRACTION_SNOW_ICE_WEATHER)
+        arrayListTractionModes.add(ESettingsTractionCustomization.SETTINGS_DRIVERMODE_TRACTION_TRACKASSISTOFF)
+
+
+        systemListener.onSETTINGS_RES_TRACTIONCONTROLSYSTEMSTATUS(arrayListTractionModes)
+        SettingsDriverStatus.traction = Constants.TRACTION_AUTO
+        // SettingsDriverModeStatus_t.DriverSelectedMode4Status = DataPoolDataHandler.TRACTION_MAP_STATE[Constants.TRACTION_AUTO]!!
+
+        systemListener.onSETTINGS_RES_DRIVERSELECTEDMODESTATUS(SettingsDriverStatus)
+        systemListener.onSETTINGS_RES_CLIMATE()
+        systemListener.onSETTINGS_APPS_RES_DATA()
+        //gmsettingsManager.initListeners()
+        systemListener.onSETTINGS_RES__COMFORT_CONVENIENCE_MENU()
     }
 
     private var mSupportedLanguageKeys: ArrayList<Int>? = null
@@ -444,6 +509,35 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
     override fun onSETTINGS_REQ_GETDATEINFO() {
         utility.setMinMaxLimits()
         systemListener.onSETTINGS_RES_DATEINFO(utility.getCurrentDate())
+    }
+    /**
+     *Request for set engine sound type
+     */
+    override fun onSETTINGS_REQ_SETENGINESOUNDTYPE(any: Any) {
+        systemListener.onSETTINGS_RES_SETMODESTATUS(SettingsDriverModeStatus_t(DriverSelectedMode1Status = dataPoolDataHandler.ENGINESOUND_MAP_STATE[dataPoolDataHandler.ENGINESOUND_MAP.get(any.toString())!!.toInt()]!!))
+    }
+
+    /**
+     *Request for set steering type
+     */
+    override fun onSETTINGS_REQ_SETSTEERINGTYPE(any: Any) {
+        systemListener.onSETTINGS_RES_SETMODESTATUS(SettingsDriverModeStatus_t(DriverSelectedMode2Status = dataPoolDataHandler.STEERING_MAP_STATE[dataPoolDataHandler.STEERING_MAP.get(any.toString())!!.toInt()]!!))
+    }
+
+    /**
+     *Request for set suspension type
+     */
+    override fun onSETTINGS_REQ_SETSUSPENSIONTYPE(any: Any) {
+        systemListener.onSETTINGS_RES_SETMODESTATUS(SettingsDriverModeStatus_t(DriverSelectedMode3Status = dataPoolDataHandler.SUSPENSION_MAP_STATE[dataPoolDataHandler.SUSPENSION_MAP.get(any.toString())!!.toInt()]!!))
+
+    }
+
+    /**
+     *Request for set traction type
+     */
+    override fun onSETTINGS_REQ_SETTRACTIONTYPE(any: Any) {
+        systemListener.onSETTINGS_RES_SETMODESTATUS(SettingsDriverModeStatus_t(DriverSelectedMode4Status = dataPoolDataHandler.TRACTION_MAP_STATE[dataPoolDataHandler.TRACTION_MAP.get(any.toString())!!.toInt()]!!))
+
     }
 
     override fun onSETTINGS_REQ_TIMEDATE() {

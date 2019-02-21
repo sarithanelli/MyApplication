@@ -27,12 +27,17 @@ class ServiceAppModule {
     }
 
 
-    @Provides
+    /*@Provides
     @Singleton
     fun provideSettingsManager(systemListener: SystemListener, customization: Customization): SettingsManager {
         return SettingsManager(systemListener, customization)
-    }
+    }*/
 
+    @Provides
+    @Singleton
+    fun provideGMSettingsManager(systemListener: SystemListener, customization: Customization): GMSettingsManager {
+        return GMSettingsManager(systemListener, customization)
+    }
     @Provides
     @Singleton
     fun provideSystemController(sdkManager: dagger.Lazy<SDKManager>, simulationManager: dagger.Lazy<SimulationManager>,gmSdkManager : dagger.Lazy<GMSDKManager>): SystemController {

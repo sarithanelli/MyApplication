@@ -719,10 +719,27 @@
 
             <intent-filter>
                 <action android:name="com.gm.settingsapp.action.evGPedestrian" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.activities.SettingsRideHeightActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.evRideHeight" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.activities.SettingsRideHeightOnOffActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.evRideHeightOnOff" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
 
         <activity
             android:name=".ui.activities.SettingsVehicleChimeVolumeActivity"
@@ -739,7 +756,7 @@
             android:clearTaskOnLaunch="true"
             android:configChanges="locale|orientation">
             <intent-filter>
-                <action android:name="com.gm.settingsapp.action.eExtendedHillStartAssist" />
+                <action android:name="com.gm.settingsapp.action.eVGHillStart" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -747,7 +764,15 @@
 
         <activity android:name=".ui.activities.SettingsDriveModeCustomizationActivity">
             <intent-filter>
-                <action android:name="com.gm.settingsapp.action.eDriveModeCustomization" />
+                <action android:name="com.gm.settingsapp.action.eVGDriveModeCustomization" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.activities.SettingsDriveModeVisualizationActivity">
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.eVGVisualization" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
