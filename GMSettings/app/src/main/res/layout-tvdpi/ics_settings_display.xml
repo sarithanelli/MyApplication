@@ -21,17 +21,18 @@
     </data>
 
     <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        android:id="@+id/settings_display_main_tvdpi"
         style="?attr/settings_layout_bg_style"
         app:layout_constraintStart_toStartOf="parent"
         bind:skewValue="@{dataPoolHandler.isSkewEnabled}">
 
         <include
-            android:id="@+id/topbar_settings_system"
+            android:id="@+id/settings_display_topbar_tvdpi"
             style="?attr/settings_match_wrap_style"
             layout="@layout/uil_ta_hc_topbar_layout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/settings_system_recycler_view"
+            app:layout_constraintBottom_toTopOf="@+id/settings_display_recycler_view_tvdpi"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -40,21 +41,22 @@
             bind:dataPoolHandler="@{dataPoolHandler}" />
 
         <com.gm.settingsapp.ui.customview.SkewConstraintLayout
-            style="?attr/settings_skewlayout_bg"
+            android:id="@+id/settings_display_main_layout_tvdpi"
+            android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/topbar_settings_system"
+            app:layout_constraintTop_toBottomOf="@id/settings_display_topbar_tvdpi"
             bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
 
             <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline_text_start"
+                android:id="@+id/settings_display_guideline_text_start_tvdpi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 app:layout_constraintGuide_percent="0.25" />
 
             <com.gm.uisdk.views.GMRecyclerView
-                android:id="@+id/settings_system_recycler_view"
+                android:id="@+id/settings_display_recycler_view_tvdpi"
                 style="?attr/settings_recyclerview"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -66,8 +68,8 @@
                 app:fastScrollArrowRadius="@integer/fastScrollArrowRadius"
                 app:fastScrollType="0"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/guideline_middle"
-                app:layout_constraintStart_toEndOf="@id/guideline_text_start"
+                app:layout_constraintEnd_toStartOf="@id/settings_display_guideline_middle_tvdpi"
+                app:layout_constraintStart_toEndOf="@id/settings_display_guideline_text_start_tvdpi"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintWidth_percent="0.23"
                 bind:childLayout="@{@layout/uil_settings_list_row_display}"
@@ -78,22 +80,23 @@
         </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
 
         <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+            android:id="@+id/settings_display_skew_layout_tvdpi"
             style="?attr/settings_skewlayout_bg"
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/topbar_settings_system"
+            app:layout_constraintTop_toBottomOf="@id/settings_display_topbar_tvdpi"
             app:layout_constraintVertical_bias="0.0"
             bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
 
             <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline_middle"
+                android:id="@+id/settings_display_guideline_middle_tvdpi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 app:layout_constraintGuide_percent="0.27" />
 
             <com.gm.uisdk.views.GMRecyclerView
-                android:id="@+id/settings_system_recycler_view_right"
+                android:id="@+id/settings_display_recycler_view_right_tvdpi"
                 style="@style/recycler_view_scroll_color"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -105,7 +108,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.43"
-                app:layout_constraintStart_toEndOf="@id/guideline_middle"
+                app:layout_constraintStart_toEndOf="@id/settings_display_guideline_middle_tvdpi"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintWidth_percent="0.25"
                 bind:childLayout="@{@layout/uil_settings_list_display}"
