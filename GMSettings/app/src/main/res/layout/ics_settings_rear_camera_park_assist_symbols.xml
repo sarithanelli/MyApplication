@@ -28,7 +28,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/settings_rear_camera_park_assist_symbols_card_view"
             style="?attr/settings_set_audio_favorites_MaterialCardView"
-            app:cardElevation="@dimen/card_view_elevation">
+            app:cardElevation="@dimen/settings_card_time_date_card_elevation">
 
             <include
                 layout="@layout/uil_ta_hc_topbar_layout"

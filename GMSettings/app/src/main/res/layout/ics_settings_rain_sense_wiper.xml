@@ -105,7 +105,6 @@
                 <com.gm.settingsapp.ui.customview.SkewTextView
                     android:id="@+id/settings_comfort_and_convenience_rain_sense_wiper_text"
                     style="?attr/settings_sounds_audio1_text"
-
                     android:text="@string/settings_automatic_entry_egress_assist_content"
                     app:layout_constraintBottom_toBottomOf="parent"
                     bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />

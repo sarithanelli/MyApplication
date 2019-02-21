@@ -26,48 +26,28 @@
     </data>
 
     <com.gm.settingsapp.ui.customview.SkewConstraintLayout
-        style="?attr/settings_skewlayout"
-        bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}"
-       >
-        <androidx.cardview.widget.CardView
-            android:id="@+id/settings_list_easy_exit_steering_column_cardview"
-            style="?attr/settings_cardview_style"
-            app:cardElevation="@dimen/system_sounds_card_elevartion">
+        android:id="@+id/ics_ta_settings_system_view"
+        style="?attr/settings_language_skewlayout_row"
+        app:layout_constraintStart_toStartOf="parent"
+        bind:skewValue="@{dataPoolHandler.isSkewEnabled}"
+        bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
 
-            <com.gm.settingsapp.ui.customview.SkewConstraintLayout
-                style="?attr/settings_skewlayout_bg"
-                bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
+        <TextView
+            android:id="@+id/text"
+            style="?attr/settings_language_text_medium"
+            android:text="@{obj.toString()}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/radio_button"
+            app:layout_constraintTop_toTopOf="parent" />
 
-                <include
-                    android:id="@+id/settings_list_easy_exit_steering_column_top_bar"
-                    style="?attr/settings_match_wrap_style"
-                    layout="@layout/uil_ta_hc_topbar_layout"
-                    app:layout_constraintBottom_toTopOf="@+id/settings_comfort_convenience_recycler_view"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    bind:clickHandler="@{clickHandler}"
-                    bind:dataPoolHandler="@{dataPoolHandler}" />
-            </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.appcompat.widget.AppCompatRadioButton
-            android:id="@+id/settings_list_easy_exit_steering_column_radio_btn"
-            style="?attr/settings_radiobutton_night"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:button="@null"
-            android:drawableStart="@drawable/img_ta_radiobutton_themeb"
-            android:drawablePadding="@dimen/onoffbutton_padding_end"
-            android:fontFamily="@font/gmsansui_medium"
-            android:padding="@dimen/onoffbutton_padding"
-            android:text="@string/settings_display_mode_night"
-            android:textAlignment="viewStart"
-            android:textSize="@dimen/radio_btn_text_size"
+        <RadioButton
+            android:id="@+id/radio_button"
+            style="?attr/settings_language_radio_button"
+            android:checked="@{dataPoolHandler.SETTINGS_LANGUAGE_TYPE.equals(obj.toString())}"
+            android:onClick="@{(view) -> clickHandler.onClickHandler(view,obj,position)}"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/settings_list_easy_exit_steering_column_cardview"
-            app:layout_constraintEnd_toEndOf="parent"
-           />
-    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
+            app:layout_constraintTop_toTopOf="parent" />
 
+    </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
 </layout>

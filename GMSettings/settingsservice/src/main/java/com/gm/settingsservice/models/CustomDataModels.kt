@@ -127,6 +127,8 @@ data class VModeModel(
 )
 
 data class ComfortAndConvenienceModel(
+        var isToggleVisible: Boolean,
+        var isToggleState: Boolean,
         var primaryData: String,
         var ref: Int
 )

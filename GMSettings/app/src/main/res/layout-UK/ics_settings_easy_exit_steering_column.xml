@@ -31,7 +31,7 @@
                 style="?attr/settings_language_skewlayout_style">
 
                 <include
-                    android:id="@+id/settings_easy_exit_steering_topbar"
+                    android:id="@+id/settings_easy_exit_steering_top_bar"
                     style="@style/Layout_Match_Wrap"
                     layout="@layout/uil_ta_hc_topbar_layout"
                     app:layout_constraintBottom_toTopOf="@+id/settings_easy_exit_steering_recycler_view"
@@ -53,6 +53,7 @@
             app:fastScrollType="@{dataPoolHandler.SETTINGS_REQ_SOUNDDATA.size() > 6 ? 1 : 0}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/settings_easy_exit_steering_material_card_view"
+
            >
 
         </com.gm.uisdk.views.GMRecyclerView>
