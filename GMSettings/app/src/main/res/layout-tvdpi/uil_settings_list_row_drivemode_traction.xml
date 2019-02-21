@@ -28,7 +28,7 @@
 
 
     <com.gm.settingsapp.ui.customview.SkewConstraintLayout
-        android:id="@+id/ics_ta_settings_system_view"
+        android:id="@+id/uil_settings_vehicle_drive_mode_traction_tvdpi"
         style="?attr/settings_time_date_picker"
         android:layout_height="@dimen/row_height_cadillac"
         android:background="@drawable/settings_list_selector"
@@ -37,17 +37,17 @@
         bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
 
         <TextView
-            android:id="@+id/ics_ta_settings_primary_text"
+            android:id="@+id/uil_settings_vehicle_drive_mode_traction_tvdpi_primary_text"
             style="?attr/settings_layout_text"
             android:layout_width="0dp"
             android:text="@{obj.toString()}"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/guideline_vertical_text"
+            app:layout_constraintStart_toEndOf="@+id/uil_settings_vehicle_drive_mode_traction_tvdpi_guideline_vertical_text"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintWidth_percent="0.7" />
 
         <RadioButton
-            android:id="@+id/radio_button"
+            android:id="@+id/uil_settings_vehicle_drive_mode_traction_tvdpi_radio_button"
             style="?attr/settings_time_zone_radio"
             android:checked="@{dataPoolHandler.SETTINGS_TRACTIONTYPE.equals(obj.toString())}"
             android:onClick="@{(view) -> clickHandler.onClickHandler(view,obj,position)}"
@@ -57,7 +57,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline_vertical_text"
+            android:id="@+id/uil_settings_vehicle_drive_mode_traction_tvdpi_guideline_vertical_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"

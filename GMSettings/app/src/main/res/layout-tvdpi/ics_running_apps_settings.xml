@@ -22,18 +22,18 @@
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/ics_ta_settings_view"
+        android:id="@+id/settings_running_apps_tvdpi"
         style="@style/settings_layout_bg"
         android:background="@android:color/transparent"
         bind:layoutDirection="@{dataPoolHandler.settingsConfiguration}">
 
         <include
-            android:id="@+id/topbar_settings_system"
+            android:id="@+id/settings_running_apps_tvdpi_topbar"
             style="?attr/settings_match_wrap_style"
             layout="@layout/uil_ta_hc_topbar_layout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/recycler_view_settings_runningapps"
+            app:layout_constraintBottom_toTopOf="@+id/settings_running_apps_tvdpi_recycler_view"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -42,7 +42,7 @@
             bind:dataPoolHandler="@{dataPoolHandler}" />
 
         <com.gm.uisdk.views.GMRecyclerView
-            android:id="@+id/recycler_view_settings_runningapps"
+            android:id="@+id/settings_running_apps_tvdpi_recycler_view"
             style="@style/recycler_view_scroll_color"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -51,11 +51,11 @@
             android:scrollbars="vertical"
             app:fastScrollArrowRadius="@integer/fastScrollArrowRadius"
             app:fastScrollType="0"
-            app:layout_constraintBottom_toTopOf="@+id/pgbar"
+            app:layout_constraintBottom_toTopOf="@+id/settings_running_apps_tvdpi_pgbar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent="0.55"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/topbar_settings_system"
+            app:layout_constraintTop_toBottomOf="@+id/settings_running_apps_tvdpi_topbar"
             app:layout_constraintWidth_percent="0.45"
             bind:childLayout="@{@layout/uil_running_apps_settings_list_row}"
             bind:items="@{dataPoolHandler.SETTINGS_RUNNINGAPPS_INFORMATION}">
@@ -63,22 +63,22 @@
         </com.gm.uisdk.views.GMRecyclerView>
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline_horizontal_progress"
+            android:id="@+id/settings_running_apps_tvdpi_guideline_horizontal_progress"
             style="@style/settings_layout_guideline_horizontal_azure"
             app:layout_constraintGuide_percent="@integer/settings_running_apps_guideline_progress" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline_vertical"
+            android:id="@+id/settings_running_apps_tvdpi_guideline_vertical"
             style="@style/settings_layout_guideline_vertical_azure"
             app:layout_constraintGuide_percent="@integer/settings_running_apps_guideline" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline_vertical_end"
+            android:id="@+id/settings_running_apps_tvdpi_guideline_vertical_end"
             style="@style/settings_layout_guideline_vertical_azure"
             app:layout_constraintGuide_percent="@integer/settings_running_apps_guideline_end" />
 
         <SeekBar
-            android:id="@+id/pgbar"
+            android:id="@+id/settings_running_apps_tvdpi_pgbar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:max="100"
@@ -86,31 +86,31 @@
             android:progressDrawable="@drawable/custom_progress"
             android:thumb="@drawable/ic_volume_indicator"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/pgtv2"
-            app:layout_constraintStart_toEndOf="@+id/pgtv1"
-            app:layout_constraintTop_toBottomOf="@+id/recycler_view_settings_runningapps"
+            app:layout_constraintEnd_toStartOf="@+id/settings_running_apps_tvdpi_pgtv2"
+            app:layout_constraintStart_toEndOf="@+id/settings_running_apps_tvdpi_pgtv1"
+            app:layout_constraintTop_toBottomOf="@+id/settings_running_apps_tvdpi_recycler_view"
             app:layout_constraintWidth_percent="0.36"
             bind:seekbarTouch="@{1}" />
 
         <TextView
-            android:id="@+id/pgtv1"
+            android:id="@+id/settings_running_apps_tvdpi_pgtv1"
             style="?attr/settings_time_date_primary_txt"
             android:text="@{String.format(@string/settings_used_space,dataPoolHandler.SETTINGS_RUNNING_USEDMEMORY_SIZE)}"
             android:textColor="@color/yellow"
-            app:layout_constraintBottom_toBottomOf="@+id/pgbar"
-            app:layout_constraintEnd_toStartOf="@+id/pgbar"
-            app:layout_constraintStart_toStartOf="@+id/recycler_view_settings_runningapps"
-            app:layout_constraintTop_toTopOf="@+id/pgbar" />
+            app:layout_constraintBottom_toBottomOf="@+id/settings_running_apps_tvdpi_pgbar"
+            app:layout_constraintEnd_toStartOf="@+id/settings_running_apps_tvdpi_pgbar"
+            app:layout_constraintStart_toStartOf="@+id/settings_running_apps_tvdpi_recycler_view"
+            app:layout_constraintTop_toTopOf="@+id/settings_running_apps_tvdpi_pgbar" />
 
         <TextView
-            android:id="@+id/pgtv2"
+            android:id="@+id/settings_running_apps_tvdpi_pgtv2"
             style="?attr/settings_time_date_primary_txt"
             android:text="@{String.format(@string/settings_remaining_space,dataPoolHandler.SETTINGS_RUNNING_AVAILABLE_SIZE)}"
             android:textColor="@color/yellow"
-            app:layout_constraintBottom_toBottomOf="@+id/pgbar"
-            app:layout_constraintEnd_toEndOf="@+id/recycler_view_settings_runningapps"
-            app:layout_constraintStart_toEndOf="@+id/pgbar"
-            app:layout_constraintTop_toTopOf="@+id/pgbar" />
+            app:layout_constraintBottom_toBottomOf="@+id/settings_running_apps_tvdpi_pgbar"
+            app:layout_constraintEnd_toEndOf="@+id/settings_running_apps_tvdpi_recycler_view"
+            app:layout_constraintStart_toEndOf="@+id/settings_running_apps_tvdpi_pgbar"
+            app:layout_constraintTop_toTopOf="@+id/settings_running_apps_tvdpi_pgbar" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

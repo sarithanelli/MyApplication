@@ -27,14 +27,14 @@
     </data>
 
     <com.gm.settingsapp.ui.customview.SkewConstraintLayout
-        android:id="@+id/ics_ta_settings_system_view"
+        android:id="@+id/uil_settings_list_driving_mode_suspension"
         style="?attr/settings_time_date_picker"
         android:onClick="@{(view) -> clickHandler.onClickHandler(view,obj,position)}"
         android:tag="eSuspensionType"
         bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
 
         <RadioButton
-            android:id="@+id/radio_button"
+            android:id="@+id/uil_settings_list_driving_mode_suspension_radio_button"
             style="?attr/settings_time_zone_radio"
             android:checked="@{dataPoolHandler.SETTINGS_SUSPENSIONTYPE.equals(obj.toString())}"
             android:onClick="@{(view) -> clickHandler.onClickHandler(view,obj,position)}"
@@ -44,11 +44,11 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/ics_ta_settings_primary_text"
+            android:id="@+id/uil_settings_list_driving_mode_suspension_primary_text"
             style="?attr/settings_language_text_medium"
             android:text="@{obj.toString()}"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/radio_button"
+            app:layout_constraintStart_toEndOf="@+id/uil_settings_list_driving_mode_suspension_radio_button"
             app:layout_constraintTop_toTopOf="parent" />
 
 

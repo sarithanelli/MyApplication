@@ -25,30 +25,31 @@
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/uil_settings_list_running_apps_rhd"
         android:layout_width="match_parent"
         android:layout_height="@dimen/running_apps_row_height"
         android:paddingEnd="@dimen/running_apps_padding_end">
 
         <TextView
-            android:id="@+id/primary_text"
+            android:id="@+id/settings_running_apps_primary_text_rhd"
             style="?attr/settings_time_date_primary_txt"
             android:text="@{obj.appName}"
-            app:layout_constraintBottom_toTopOf="@id/secondary_text"
+            app:layout_constraintBottom_toTopOf="@id/settings_running_apps_secondary_text_rhd"
             app:layout_constraintHorizontal_chainStyle="spread"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/secondary_text"
+            android:id="@+id/settings_running_apps_secondary_text_rhd"
             style="?attr/settings_time_date_primary_txt"
             android:text="@{obj.appSize}"
             android:textColor="@color/np_unselect_color"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/primary_text" />
+            app:layout_constraintTop_toBottomOf="@id/settings_running_apps_primary_text_rhd" />
 
         <com.gm.settingsapp.ui.customview.SkewMaterialButton
-            android:id="@+id/btn"
+            android:id="@+id/settings_running_apps_btn_rhd"
             style="@style/btn_retry"
             android:layout_width="0dp"
             android:layout_height="0dp"

@@ -28,18 +28,19 @@
     </data>
 
     <com.gm.settingsapp.ui.customview.SkewConstraintLayout
+        android:id="@+id/uil_settings_list_driving_mode_rhd"
         style="?attr/settings_skewlayout"
         android:onClick="@{(view) -> clickHandler.onClickHandler(view,obj)}"
         bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
 
         <TextView
-            android:id="@+id/txt_settings_system_speech"
+            android:id="@+id/uil_settings_list_driving_mode_primary_txt_rhd"
             style="?attr/settings_layout_text"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:text="@{obj.primaryData}"
-            app:layout_constraintBottom_toTopOf="@+id/txt_settings_system_speech_secondary"
-            app:layout_constraintEnd_toStartOf="@+id/guideline_text_start"
+            app:layout_constraintBottom_toTopOf="@+id/uil_settings_list_driving_mode_secondary_txt_rhd"
+            app:layout_constraintEnd_toStartOf="@+id/uil_settings_list_driving_mode_guideline_text_start_rhd"
             app:layout_constraintHeight_percent="0.6"
             app:layout_constraintHorizontal_chainStyle="spread"
             app:layout_constraintStart_toStartOf="parent"
@@ -47,19 +48,19 @@
             app:layout_constraintWidth_percent="0.25" />
 
         <TextView
-            android:id="@+id/txt_settings_system_speech_secondary"
+            android:id="@+id/uil_settings_list_driving_mode_secondary_txt_rhd"
             style="?attr/settings_layout_text_secondary"
             android:layout_width="0dp"
             android:text="@{obj.secondaryData}"
             android:textAlignment="viewStart"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_chainStyle="spread"
-            app:layout_constraintStart_toStartOf="@+id/txt_settings_system_speech"
-            app:layout_constraintTop_toBottomOf="@id/txt_settings_system_speech"
+            app:layout_constraintStart_toStartOf="@+id/uil_settings_list_driving_mode_primary_txt_rhd"
+            app:layout_constraintTop_toBottomOf="@id/uil_settings_list_driving_mode_primary_txt_rhd"
             app:layout_constraintWidth_percent="0.25" />
 
         <ImageButton
-            android:id="@+id/settings_list_row_drive_mode_img_btn"
+            android:id="@+id/uil_settings_list_driving_mode_img_btn_rhd"
             style="?attr/settings_button_backarrow"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -70,7 +71,7 @@
             bind:ignore="ContentDescription" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline_text_start"
+            android:id="@+id/uil_settings_list_driving_mode_guideline_text_start_rhd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
