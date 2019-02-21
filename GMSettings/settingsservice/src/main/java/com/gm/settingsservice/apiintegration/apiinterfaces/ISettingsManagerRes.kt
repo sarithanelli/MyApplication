@@ -382,4 +382,6 @@ interface ISettingsManagerRes {
     }
 
     fun onSETTINGS_APPS_RES_DATA()
+
+    fun onSETTINGS_RES_COLLISION_DATA()
 }

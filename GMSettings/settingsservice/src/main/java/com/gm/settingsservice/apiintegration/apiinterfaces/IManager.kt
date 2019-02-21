@@ -124,5 +124,6 @@ override fun onSETTINGS_MANAGE_SET_FAV()
     override fun onSETTINGS_REQ_RAIN_SENSE_WIPERS()
     override fun onSETTINGS_REQ_AUTO_WIPE_REVERSEGEAR()
     override fun onSETTINGS_REQ_EXTENDED_HILL_START_ASSIST()
+    override fun onSETTINGS_REQ_COLLISION()
 
 }

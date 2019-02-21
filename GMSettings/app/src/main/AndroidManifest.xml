@@ -689,16 +689,17 @@
 
 
         <activity
-            android:name=".ui.activities.SettingsCollisionActivity">
+            android:name=".ui.activities.SettingsCollisionActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|orientation">
             <intent-filter>
-                <action android:name="com.gm.settingsapp.action.evGCollision" />
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_REQ_COLLISION" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
             android:name=".ui.activities.CollisionOnOffActivity">
-
             <intent-filter>
                 <action android:name="com.gm.settingsapp.action.evGCollisionOnOff" />
 

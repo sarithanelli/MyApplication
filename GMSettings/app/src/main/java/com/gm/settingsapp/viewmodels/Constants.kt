@@ -290,7 +290,7 @@ object Constants {
     val REAR_PEDESTRAIN_DETECTION = 4018
 
     val PEDESTRIAN_FRIENDLY_ALERT_TAG = "evGCollisionOnOff"
-    val COLLISION_SYSTEMS_TAG = "evGCollision"
+    val COLLISION_SYSTEMS_TAG = "eCollision"
     val PEDESTRIAN_FRIENDLY_ALERT_SOUND_TAG = "evGParkAssist"
     val REAR_PEDESTRIAN_DETECTION_TAG = "evGPedestrian"
     const val C_EXTENDED_HILL_START_ASSIST = 10115

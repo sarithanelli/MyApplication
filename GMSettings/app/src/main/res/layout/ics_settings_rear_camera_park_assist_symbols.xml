@@ -67,7 +67,7 @@
                     <RadioButton
                         android:id="@+id/settings_rear_camera_park_assist_symbols_radioButtonOn"
                         style="?attr/settings_sounds_audio1_radiobutton"
-                        android:checked="@{dataPoolHandler.SETTINGS_SET_CLIMATE_INNER_STATE}"
+                        android:checked="@{dataPoolHandler.SETTINGS_SET_COLLISION_INNER_STATE}"
                         android:onClick="@{(view) -> clickHandler.onClickHandler(view,true)}"
                         android:text="@string/ui_on"
                         app:layout_constraintStart_toStartOf="@+id/settings_rear_camera_park_assist_symbols_radioGroup"
@@ -76,7 +76,7 @@
                     <RadioButton
                         android:id="@+id/settings_rear_camera_park_assist_symbols_radioButtonOff"
                         style="?attr/settings_sounds_audio1_radiobutton"
-                        android:checked="@{!dataPoolHandler.SETTINGS_SET_CLIMATE_INNER_STATE}"
+                        android:checked="@{!dataPoolHandler.SETTINGS_SET_COLLISION_INNER_STATE}"
                         android:onClick="@{(view) -> clickHandler.onClickHandler(view,false)}"
                         android:text="@string/ui_off"
                         app:layout_constraintStart_toStartOf="@+id/settings_rear_camera_park_assist_symbols_radioGroup" />
@@ -111,7 +111,7 @@
                 <com.gm.settingsapp.ui.customview.SkewTextView
                     android:id="@+id/settings_rear_camera_park_assist_symbols_text"
                     style="?attr/settings_sounds_audio1_text"
-                    android:text="@string/settings_front_pedestrian_detection_content"
+                    android:text="@{dataPoolHandler.SETTINGS_SET_COLLISION_INNER_DES}"
                     app:layout_constraintBottom_toBottomOf="parent"
                     bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
 

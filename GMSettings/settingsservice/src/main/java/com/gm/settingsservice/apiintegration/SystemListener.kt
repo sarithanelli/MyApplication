@@ -1665,4 +1665,8 @@ class SystemListener @Inject constructor(dataPoolDataHandler: DataPoolDataHandle
         mCallback?.onSETTINGS_APPS_RES_DATA()
     }
 
+    override fun onSETTINGS_RES_COLLISION_DATA() {
+        mCallback?.onSETTINGS_RES_COLLISION_DATA()
+    }
+
 }

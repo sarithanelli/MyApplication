@@ -50,6 +50,7 @@ import gm.vehicle.DateAndTime
 
 class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHandler, val systemListener: SystemListener, val utility: Utility, val gmsettingsManager: GMSettingsManager, val vehicleAudioManager: dagger.Lazy<VehicleAudioManager>, val context: Context, val mCustomization: Customization, val supportedLanguageListData: Lazy<SupportedLanguageListData>) : IManager, ApplicationsState.Callbacks {
 
+
     override fun onSETTINGS_REQ_RAIN_SENSE_WIPERS() {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
@@ -97,6 +98,7 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
     override fun onSETTINGS_REQ_AUTOMATIC_ENTRY_EGRESS_ASSIST() {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
+
     override fun onSETTINGS_MANAGE_SET_FAV() {
         systemListener.onSETTINGS_MANAGE_RES_FAV()
     }
@@ -158,8 +160,6 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
     }
 
 
-
-
     override fun onSETTINGS_REQ_SPORTMODESETTINGS(any: Any) {
         systemListener.onSETTINGS_RES_SPORTMODESETTINGS(any)
     }
@@ -201,17 +201,19 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
     }
 
 
-//    val getUpdatedClimateUseCase = GetVehicleSettingsOptionsUseCase()
+    val getUpdatedClimateUseCase = GetVehicleSettingsOptionsUseCase()
     override fun onSETTINGS_REQ_CLIMATE_MENU_LIST(any: Any) {
-        systemListener.onSETTINGS_RES_CLIMATE_MENU_LIST()
-       /* try {
+         systemListener.onSETTINGS_RES_CLIMATE_MENU_LIST()
+        try {
             val result = getUpdatedClimateUseCase.executeSync().availableOptions as List<ClimateAndAirQuality>
             result.forEach {
                 when (it) {
                     ClimateAndAirQuality.AUTO_FAN_SPEED -> {
+                        Log.d("CLIMATE", "AUTO_FAN_SPEED")
                         //avoid user access for example
                     }
                     ClimateAndAirQuality.AIR_QUALITY_SENSOR -> {
+                        Log.d("CLIMATE", "AIR_QUALITY_SENSOR")
                         //avoid user access for example
                     }
                     ClimateAndAirQuality.POLLUTION_CONTROL -> {
@@ -247,7 +249,7 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
 
         } catch (e: Exception) {
             e.printStackTrace()
-        }*/
+        }
 
 
     }
@@ -510,6 +512,7 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
         utility.setMinMaxLimits()
         systemListener.onSETTINGS_RES_DATEINFO(utility.getCurrentDate())
     }
+
     /**
      *Request for set engine sound type
      */
@@ -1153,6 +1156,11 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
         if (check)
             requestValue = 2
         mCustomization.setAdaptiveCruiseControlPerformanceModeCustomizationSettingRequest(requestValue)
+    }
+
+
+    override fun onSETTINGS_REQ_COLLISION() {
+        systemListener.onSETTINGS_RES_COLLISION_DATA()
     }
 
 

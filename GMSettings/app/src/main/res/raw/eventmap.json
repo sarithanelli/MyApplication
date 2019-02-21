@@ -701,9 +701,9 @@
     "activityName": "SettingsVehicleComfortRainSenseWiperActivity",
     "isProcess": "false"
   },
-  "evGCollision": {
+  "eCollision": {
     "eventType": "navigate",
-    "eventName": "evGCollision",
+    "eventName": "onSETTINGS_REQ_COLLISION",
     "activityName": "SettingsCollisionActivity",
     "isProcess": "false"
   },

@@ -47,7 +47,7 @@ class SettingsCollisionActivity : BaseActivity() {
 
         dataPoolDataHandler.SETTINGS_COLLISION_LIST.add(CollisionModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_pedestrian_friendly_alert_big), true, true, PEDESTRIAN_FRIENDLY_ALERT, GMSettingsApp.appContext.resources.getString(R.string.settings_pedestrian_friendly_alert_content), false))
         dataPoolDataHandler.SETTINGS_COLLISION_LIST.add(CollisionModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_pedestrian_alert_sound), false, false, PEDESTRIAN_FRIENDLY_ALERT_SOUND, "", true))
-        dataPoolDataHandler.SETTINGS_COLLISION_LIST.add(CollisionModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_alert_type), true, false, ALERT_TYPE, "", false))
+        dataPoolDataHandler.SETTINGS_COLLISION_LIST.add(CollisionModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_alert_type), true, true, ALERT_TYPE, GMSettingsApp.appContext.resources.getString(R.string.settings_alert_type_content), false))
         dataPoolDataHandler.SETTINGS_COLLISION_LIST.add(CollisionModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_forward_collision_system_short), false, false, FORWORD_COLLISION_SYSTEM, "", true))
         dataPoolDataHandler.SETTINGS_COLLISION_LIST.add(CollisionModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_front_pedestrian_detection), false, false, FRONT_PEDESTRIAN_DETECTION, "", true))
         dataPoolDataHandler.SETTINGS_COLLISION_LIST.add(CollisionModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_intersection_stop_alert), false, false, INTERSECTIONS_TOP_ALERT, "", true))
@@ -96,6 +96,9 @@ class SettingsCollisionActivity : BaseActivity() {
         }
         if (obj is CollisionModeModel)
             dataPoolDataHandler.SETTINGS_COLLISION_HEADER_TEXT.set(obj.primaryData)
+            dataPoolDataHandler.SETTINGS_SET_COLLISION_INNER_DES.set(obj.description)
+            dataPoolDataHandler.SETTINGS_SET_COLLISION_INNER_REF.set(obj.reference)
+            dataPoolDataHandler.SETTINGS_SET_COLLISION_INNER_STATE.set(obj.isToggleState)
     }
 }
 

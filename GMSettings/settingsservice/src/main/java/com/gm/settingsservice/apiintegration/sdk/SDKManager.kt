@@ -44,7 +44,7 @@ import javax.inject.Inject
  *  these funcs usually start after proxy constructor func in CAMFMProxy.cpp
  *  This should exclude all the functions under RecvData func, as the func in RecvData only corresponds to RES functions
  */
-class SDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHandler, val systemListener: SystemListener, val  utility: Utility, val settingsManager: SettingsManager, val vehicleAudioManager: dagger.Lazy<VehicleAudioManager>, val context: Context, val mCustomization : Customization, val supportedLanguageListData: Lazy<SupportedLanguageListData>): IManager, ApplicationsState.Callbacks {
+class SDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHandler, val systemListener: SystemListener, val utility: Utility, val settingsManager: SettingsManager, val vehicleAudioManager: dagger.Lazy<VehicleAudioManager>, val context: Context, val mCustomization: Customization, val supportedLanguageListData: Lazy<SupportedLanguageListData>) : IManager, ApplicationsState.Callbacks {
 
 
     override fun SOUNDPARAMS_REQ_CHIMEVOLUMEDEC() {
@@ -381,8 +381,6 @@ class SDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHandle
     }
 
 
-
-
     override fun initListeners() {
         settingsManager.initListeners()
     }
@@ -593,7 +591,7 @@ class SDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHandle
         systemListener.onSETTINGS_RES_AUTOMATICTIMEZONE()
     }
 
-   // var vehicleAudioManager: VehicleAudioManager = VehicleAudioManager(SettingsService.appContext)
+    // var vehicleAudioManager: VehicleAudioManager = VehicleAudioManager(SettingsService.appContext)
 
     override fun onSETTINGS_REQ_GETMAXSTARTUPVOLUME() {
         // for progress bar setMax value
@@ -1021,7 +1019,9 @@ class SDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHandle
         mCustomization.setAdaptiveCruiseControlPerformanceModeCustomizationSettingRequest(requestValue)
     }
 
-
+    override fun onSETTINGS_REQ_COLLISION() {
+        systemListener.onSETTINGS_RES_COLLISION_DATA()
+    }
 }
 
 

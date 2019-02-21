@@ -28,8 +28,8 @@
 
     <com.gm.settingsapp.ui.customview.SkewConstraintLayout
         style="?attr/settings_fragment_list_row_layout"
-        android:layout_height="wrap_content"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:onClick="@{(view) -> clickHandler.onClickHandler(view,obj)}"
         bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
 
@@ -64,15 +64,16 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/settings_list_row_collision_systems_button"
             app:layout_constraintTop_toTopOf="parent" />
+
         <ToggleButton
             android:id="@+id/settings_list_row_collision_systems_button"
             style="?attr/settings_time_date_tab_toggle_button"
+            android:checked="@{obj.toggleState}"
             android:visibility="@{obj.isToggleVisible ? View.VISIBLE : View.GONE}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintDimensionRatio="10:10"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
 
 
         <androidx.constraintlayout.widget.Guideline

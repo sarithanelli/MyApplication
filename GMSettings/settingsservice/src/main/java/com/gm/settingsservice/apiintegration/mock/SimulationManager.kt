@@ -29,6 +29,7 @@ import kotlin.collections.ArrayList
 class SimulationManager @Inject constructor(dataPoolDataHandler: DataPoolDataHandler, systemListener: SystemListener, utility: Utility, context: Context) : IManager, ApplicationsState.Callbacks {
 
 
+
     override fun onSETTINGS_REQ_AUTOMATIC_ENTRY_EGRESS_ASSIST() {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
@@ -1149,5 +1150,9 @@ class SimulationManager @Inject constructor(dataPoolDataHandler: DataPoolDataHan
         //   systemListener.onSETTINGS_RES_OPENSOURCE(path.absolutePath)
         dataPoolDataHandler.HTML_INTENT_VIEW_PATH_DATA.set(false)
 
+    }
+
+    override fun onSETTINGS_REQ_COLLISION() {
+        systemListener.onSETTINGS_RES_COLLISION_DATA()
     }
 }
