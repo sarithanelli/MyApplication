@@ -35,7 +35,7 @@
 
         <TextView
             android:id="@+id/settings_list_row_collision_systems_primary_text"
-            style="?attr/settings_favorites_list_row_text"
+            style="?attr/settings_sounds_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{obj.primaryData}"
