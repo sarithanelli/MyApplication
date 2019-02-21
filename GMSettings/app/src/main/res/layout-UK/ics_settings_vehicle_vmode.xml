@@ -33,7 +33,7 @@
             app:cardElevation="8dp">
 
             <com.gm.settingsapp.ui.customview.SkewConstraintLayout
-                android:id="@+id/settings_vehicle_v_mode_topbar_constraint_layout"
+                android:id="@+id/settings_vehicle_v_mode_top_bar_constraint_layout"
                 style="?attr/settings_skewlayout_bg"
                 bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
 
