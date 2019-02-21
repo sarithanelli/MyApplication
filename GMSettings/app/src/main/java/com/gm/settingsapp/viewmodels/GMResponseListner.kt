@@ -42,6 +42,10 @@ import kotlin.collections.ArrayList
 
 class GMResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Utility, serviceUtility: com.gm.settingsservice.utils.Utility, dataPoolDataHandler: DataPoolDataHandler, systemListener: SystemListener, context: Context) : ISettingsManagerRes {
 
+    override fun onSETTINGS_RES_FORWARDCOLLISIONALERTCUSTOMIZATIONSETTING(any: Any) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
 
     override fun onSETTINGS_RES_AUTOMATIC_ENTRY_EGRESS_ASSIST() {
         dataPoolDataHandler.SETTINGS_HEADERTITLE_NAME.set(getStringFromResource(R.string.settings_automatic_entry_egress_assist))

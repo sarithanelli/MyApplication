@@ -27,16 +27,23 @@ import kotlin.collections.ArrayList
  * To Perform functionalities when any event occurred and process the data and passing to [systemListener]
  */
 class SimulationManager @Inject constructor(dataPoolDataHandler: DataPoolDataHandler, systemListener: SystemListener, utility: Utility, context: Context) : IManager, ApplicationsState.Callbacks {
+
+
+    override fun onSETTINGS_REQ_CHANGEFORWARDCOLLISIONALERTCUSTOMIZATIONSETTING(any: Any) {
+        systemListener.onSETTINGS_RES_FORWARDCOLLISIONALERTCUSTOMIZATIONSETTING(any)
+    }
+
+
     override fun onSETTINGS_REQ_SETPOWERLIFTGATETYPE(any: Any) {
         systemListener.onSETTINGS_RES_SETPOWERLIFTGATETYPE(any)
     }
-
 
 
     override fun onSETTINGS_REQ_AUTOMATIC_ENTRY_EGRESS_ASSIST() {
         systemListener.onSETTINGS_RES_AUTOMATIC_ENTRY_EGRESS_ASSIST()
 
     }
+
     override fun onSETTINGS_REQ_POWER_LIFTGATE() {
         systemListener.onSETTINGS_RES_POWER_LIFTGATE()
 
@@ -46,6 +53,7 @@ class SimulationManager @Inject constructor(dataPoolDataHandler: DataPoolDataHan
         systemListener.onSETTINGS_RES_HANDSFREE_LIFTGATE()
 
     }
+
     override fun onSETTINGS_REQ_REVERSE_TILTMIRROR() {
         systemListener.onSETTINGS_RES_REVERSE_TILTMIRROR()
 
@@ -56,10 +64,12 @@ class SimulationManager @Inject constructor(dataPoolDataHandler: DataPoolDataHan
         systemListener.onSETTINGS_RES_REMOTE_MIRRORFOLDING()
 
     }
+
     override fun onSETTINGS_REQ_RAIN_SENSE_WIPERS() {
         systemListener.onSETTINGS_RES_RAIN_SENSE_WIPERS()
 
     }
+
     override fun onSETTINGS_REQ_AUTO_WIPE_REVERSEGEAR() {
         systemListener.onSETTINGS_RES_AUTO_WIPE_REVERSEGEAR()
 
@@ -69,6 +79,7 @@ class SimulationManager @Inject constructor(dataPoolDataHandler: DataPoolDataHan
         systemListener.onSETTINGS_RES_EXTENDED_HILL_START_ASSIST()
 
     }
+
     override fun SOUNDPARAMS_REQ_CHIMEVOLUMEDEC() {
     }
 
@@ -80,8 +91,6 @@ class SimulationManager @Inject constructor(dataPoolDataHandler: DataPoolDataHan
 
     override fun SOUNDPARAMS_REQ_GETCHIMEVOLUME() {
     }
-
-
 
 
     var dataPoolDataHandler: DataPoolDataHandler = dataPoolDataHandler

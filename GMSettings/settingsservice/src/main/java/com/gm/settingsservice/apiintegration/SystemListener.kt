@@ -18,6 +18,10 @@ import javax.inject.Inject
  * Updating the data to [dataPoolDataHandler] when UI event occurred
  */
 class SystemListener @Inject constructor(dataPoolDataHandler: DataPoolDataHandler) : ISettingsManagerRes {
+    override fun onSETTINGS_RES_FORWARDCOLLISIONALERTCUSTOMIZATIONSETTING(any: Any) {
+        dataPoolDataHandler.SETTINGS_COLLISION_RECYCLER_VIEW.set(any as Int)
+    }
+
     override fun onSETTINGS_RES_SETPOWERLIFTGATETYPE(any: Any) {
         dataPoolDataHandler.SETTINGS_POWER_LIFTGATE_TYPE.set(any as Int)
 
@@ -1682,5 +1686,7 @@ class SystemListener @Inject constructor(dataPoolDataHandler: DataPoolDataHandle
     override fun onSETTINGS_RES_COLLISION_DATA() {
         mCallback?.onSETTINGS_RES_COLLISION_DATA()
     }
+
+
 
 }

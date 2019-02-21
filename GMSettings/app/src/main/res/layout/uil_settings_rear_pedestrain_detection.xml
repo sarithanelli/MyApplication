@@ -26,9 +26,10 @@
 
     <com.gm.settingsapp.ui.customview.SkewConstraintLayout
         style="?attr/settings_favorites_no_bg_style"
-        android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:onClick="@{(view) -> clickHandler.onItemClickHandler(view,obj)}"
+        android:layout_height="wrap_content"
+        android:onClick="@{(view) -> clickHandler.onItemClickHandler(view,position)}"
+        android:tag="eRearPedestrianDetection"
         bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
 
         <RadioButton
@@ -46,8 +47,6 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/settings_rear_pedestrian_detection_radio_button"
             app:layout_constraintTop_toTopOf="parent" />
-
-
 
 
     </com.gm.settingsapp.ui.customview.SkewConstraintLayout>

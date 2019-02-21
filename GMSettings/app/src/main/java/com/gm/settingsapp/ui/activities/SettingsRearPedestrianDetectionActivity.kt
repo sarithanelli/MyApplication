@@ -5,9 +5,6 @@ import android.view.View
 import com.gm.settingsapp.GMSettingsApp
 import com.gm.settingsapp.R
 import com.gm.settingsapp.databinding.SettingsRearPedestrianDetectionActivityBinding
-import com.gm.settingsapp.viewmodels.Constants
-import com.gm.settingsservice.models.CollisionModeModel
-import com.gm.settingsservice.models.MyModeModel
 import dagger.android.AndroidInjection
 
 /**
@@ -15,9 +12,7 @@ import dagger.android.AndroidInjection
  */
 class SettingsRearPedestrianDetectionActivity : BaseActivity() {
     override fun onEventResponse(view: View, obj: Any?) {
-        if (obj is Int) {
-            dataPoolDataHandler.SETTINGS_COLLISION_RECYCLER_VIEW.set(obj)
-    }
+
     }
 
 
@@ -35,6 +30,7 @@ class SettingsRearPedestrianDetectionActivity : BaseActivity() {
             dataPoolDataHandler.SETTINGS_PEDESTRIAN_DETECTION.add(it)
         }
     }
+
     override fun onResume() {
         super.onResume()
         headerTitle(dataPoolDataHandler.SETTINGS_COLLISION_HEADER_TEXT.get()!!)
