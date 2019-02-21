@@ -115,7 +115,8 @@
     "evRideHeightOnOff" : "evRideHeightOnOff",
     "eVGHillStart" : "eVGHillStart",
     "onSETTINGS_REQ_EXTENDED_HILL_START_ASSIST" : "onSETTINGS_REQ_EXTENDED_HILL_START_ASSIST",
-    "eVGVisualization" : "eVGVisualization"
+    "eVGVisualization" : "eVGVisualization",
+    "onSETTINGS_REQ_HANDSFREE_LIFTGATE" : "onSETTINGS_REQ_HANDSFREE_LIFTGATE"
   },
   "events_activity_action_map_custom": {
     "evG_WiFiHotspot": "com.gm.connectionwifi.action.evG_WiFiHotspot",

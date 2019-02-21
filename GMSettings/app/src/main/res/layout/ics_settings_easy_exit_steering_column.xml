@@ -25,7 +25,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/settings_easy_exit_steering_material_card_view"
             style="?attr/settings_language_card_style"
-            app:cardElevation="8dp">
+            app:cardElevation="@dimen/system_sounds_card_elevartion">
 
             <com.gm.settingsapp.ui.customview.SkewConstraintLayout
                 style="?attr/settings_language_skewlayout_style">
@@ -53,6 +53,7 @@
             app:fastScrollType="@{dataPoolHandler.SETTINGS_REQ_SOUNDDATA.size() > 6 ? 1 : 0}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/settings_easy_exit_steering_material_card_view"
+
            >
 
         </com.gm.uisdk.views.GMRecyclerView>

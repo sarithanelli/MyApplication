@@ -38,7 +38,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/settings_comfort_and_convenience_power_liftgate_card_view"
                 style="?attr/settings_cardview_style"
-                app:cardElevation="8dp">
+                app:cardElevation="@dimen/settings_card_time_date_card_elevation">
 
                 <include
                     style="?attr/settings_match_wrap_style"
@@ -53,6 +53,8 @@
             <RadioGroup
                 android:id="@+id/settings_comfort_and_convenience_power_liftgate_radio_group"
                 style="?attr/settings_radiogroup"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.57"
                 android:onClick="@{(view) -> clickHandler.onItemClickHandler(view,position)}"
                 app:layout_constraintEnd_toStartOf="@+id/settings_comfort_and_convenience_power_liftgate_guideline_vertical"
                 app:layout_constraintStart_toStartOf="parent"
@@ -123,6 +125,9 @@
                 android:id="@+id/settings_comfort_and_convenience_power_liftgate_scrollView"
                 style="@style/Layout_Match_Wrap"
                 android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_percent="0.3"
+                app:layout_constraintWidth_percent="0.36"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/settings_comfort_and_convenience_power_liftgate_guideline_vertical"
                 app:layout_constraintTop_toBottomOf="@id/settings_comfort_and_convenience_power_liftgate_card_view">
@@ -131,7 +136,6 @@
                     android:id="@+id/settings_comfort_and_convenience_power_liftgate_text"
                     style="?attr/text_material_content_text"
                     android:fontFamily="@font/gmsansui_regular"
-                    android:padding="@dimen/skewtext_padding"
                     android:text="@string/settings_mode_content"
                     android:textSize="@dimen/List_Secondary_text"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -151,7 +155,6 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:src="@drawable/img_sensor"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHeight_percent="0.6"
                 app:layout_constraintStart_toEndOf="@+id/settings_comfort_and_convenience_power_liftgate_guideline"

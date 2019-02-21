@@ -45,5 +45,7 @@ class SettingsRideHeightActivity : BaseActivity() {
             Constants.AUTO_ENTRY_EGRESS -> view.tag = Constants.RIDE_HEIGHT_ON_OFF_TAG
 
         }
+        if (obj is RideHeightModel)
+            dataPoolDataHandler.SETTINGS_COLLISION_HEADER_TEXT.set(obj.primaryData)
     }
 }

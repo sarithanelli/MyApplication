@@ -48,38 +48,30 @@ class GMResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Ut
 
 
     override fun onSETTINGS_RES_AUTOMATIC_ENTRY_EGRESS_ASSIST() {
-        dataPoolDataHandler.SETTINGS_HEADERTITLE_NAME.set(getStringFromResource(R.string.settings_automatic_entry_egress_assist))
-    }
-    override fun onSETTINGS_RES_REVERSE_TILTMIRROR() {
-        dataPoolDataHandler.SETTINGS_HEADERTITLE_NAME.set(getStringFromResource(R.string.settings_reverse_tilt_mirror))
-    }
-
-    override fun onSETTINGS_RES_REMOTE_MIRRORFOLDING() {
-        dataPoolDataHandler.SETTINGS_HEADERTITLE_NAME.set(getStringFromResource(R.string.settings_remote_mirror_folding))
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
     override fun onSETTINGS_RES__COMFORT_CONVENIENCE_MENU() {
 
         dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.clear()
-        // dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_automatic_running_boards_long),C_AUTO_RUNNING_BOARDS))
-        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_automatic_entry_egress_assist), C_AUTO_ENTRY))
-        // dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_auto_memory_recall), C_AUTO_MEMORY_RECALL))
 
         // dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_automatic_running_boards_long),C_AUTO_RUNNING_BOARDS))
-        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_automatic_entry_egress_assist), C_AUTO_ENTRY))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(true,true,GMSettingsApp.appContext.resources.getString(R.string.settings_automatic_entry_egress_assist),C_AUTO_ENTRY))
         // dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_auto_memory_recall), C_AUTO_MEMORY_RECALL))
         //dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_easy_exit_driver_seat), C_EASY_EXIT_SEAT))
         //dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_easy_exit_steering_column), C_EASY_EXIT_STEERING_COLUMN))
         // dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_easy_exit_options_big), C_EASY_EXIT_OPTIONS))
-        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_chime_volume), C_CHIME_VOLUME))
-        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_power_liftgate), C_POWER_LIFTGATE))
-        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_handsfree_liftgate_trunk_control), C_HANDSFREE_LIFTGATE))
-        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_reverse_tilt_mirror), C_REVERSE_TILT_MIRROR))
-        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_remote_mirror_folding_short), C_REMOTE_MIRROR_FOLDING))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(false,false,GMSettingsApp.appContext.resources.getString(R.string.settings_chime_volume), C_CHIME_VOLUME))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(false,false,GMSettingsApp.appContext.resources.getString(R.string.settings_power_liftgate), C_POWER_LIFTGATE))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(false,false,GMSettingsApp.appContext.resources.getString(R.string.settings_handsfree_liftgate_trunk_control), C_HANDSFREE_LIFTGATE))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(true,true,GMSettingsApp.appContext.resources.getString(R.string.settings_reverse_tilt_mirror), C_REVERSE_TILT_MIRROR))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(true,true,GMSettingsApp.appContext.resources.getString(R.string.settings_remote_mirror_folding_short), C_REMOTE_MIRROR_FOLDING))
         //  dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_personalization_by_driver_big), C_PERSONALIZATION_BY_DRIVER))
-        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_rain_sense_wipers_big), C_RAIN_SENSE_WIPERS))
-        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_auto_wipe_in_reverse_gear_big), C_AUTO_WIPE_IN_REVERSE_GEAR))
-        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(GMSettingsApp.appContext.resources.getString(R.string.settings_automatic_vehicle_hold_long), com.gm.settingsapp.viewmodels.Constants.EXTENDED_HILL_START_ASSIST))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(true,true,GMSettingsApp.appContext.resources.getString(R.string.settings_rain_sense_wipers_big), C_RAIN_SENSE_WIPERS))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(true,true,GMSettingsApp.appContext.resources.getString(R.string.settings_auto_wipe_in_reverse_gear_big), C_AUTO_WIPE_IN_REVERSE_GEAR))
+        dataPoolDataHandler.SETTINGS_COMFORT_AND_CONVENIENCE.add(ComfortAndConvenienceModel(true,true,GMSettingsApp.appContext.resources.getString(R.string.settings_automatic_vehicle_hold_long), com.gm.settingsapp.viewmodels.Constants.EXTENDED_HILL_START_ASSIST))
+
+
     }
     override fun onSETTINGS_RES_RAIN_SENSE_WIPERS() {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
@@ -108,6 +100,14 @@ class GMResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Ut
     }
 
     override fun onSETTINGS_RES_HANDSFREE_LIFTGATE() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_RES_REVERSE_TILTMIRROR() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onSETTINGS_RES_REMOTE_MIRRORFOLDING() {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
@@ -386,38 +386,38 @@ class GMResponseListner @Inject constructor(utility: com.gm.settingsapp.utils.Ut
             }
         } else {*/
 
-        when (dataPoolDataHandler.SETTINGS_AIR_QUALITY_SENSOR_VALUE.get()) {
-            OFF_VALUE -> qualityTag = GMSettingsApp.appContext.resources.getString(R.string.ui_off)
-            LOW_SENSITIVITY_VALUE -> qualityTag = GMSettingsApp.appContext.resources.getString(R.string.settings_low_sensitivity)
-            HEIGH_SENSITIVITY_VALUE -> qualityTag = GMSettingsApp.appContext.resources.getString(R.string.settings_high_sensitivity)
-        }
+            when (dataPoolDataHandler.SETTINGS_AIR_QUALITY_SENSOR_VALUE.get()) {
+                OFF_VALUE -> qualityTag = GMSettingsApp.appContext.resources.getString(R.string.ui_off)
+                LOW_SENSITIVITY_VALUE -> qualityTag = GMSettingsApp.appContext.resources.getString(R.string.settings_low_sensitivity)
+                HEIGH_SENSITIVITY_VALUE -> qualityTag = GMSettingsApp.appContext.resources.getString(R.string.settings_high_sensitivity)
+            }
 
-        when (dataPoolDataHandler.SETTINGS_AUTO_FAN_SPEED_VALUE.get()) {
-            LOW_VALUE -> fanTag = GMSettingsApp.appContext.resources.getString(R.string.ui_low)
-            MEDIUM_VALUE -> fanTag = GMSettingsApp.appContext.resources.getString(R.string.ui_medium)
-            HEIGH_VALUE -> fanTag = GMSettingsApp.appContext.resources.getString(R.string.ui_high)
-        }
+            when (dataPoolDataHandler.SETTINGS_AUTO_FAN_SPEED_VALUE.get()) {
+                LOW_VALUE -> fanTag = GMSettingsApp.appContext.resources.getString(R.string.ui_low)
+                MEDIUM_VALUE -> fanTag = GMSettingsApp.appContext.resources.getString(R.string.ui_medium)
+                HEIGH_VALUE -> fanTag = GMSettingsApp.appContext.resources.getString(R.string.ui_high)
+            }
 
-        when (dataPoolDataHandler.SETTINGS_AUTO_AIR_DISTRIBUTION_VALUE.get()) {
-            DIFFUES_AIRFLOW_VALUE -> distributionTag = GMSettingsApp.appContext.resources.getString(R.string.settings_diffuse_airflow)
-            DIRECT_AIRFLOW_VALUE -> distributionTag = GMSettingsApp.appContext.resources.getString(R.string.settings_direct_airflow)
-            NORMAL_AIRFLOW_VALUE -> distributionTag = GMSettingsApp.appContext.resources.getString(R.string.settings_direct_normalflow)
-            OSCILLATING_AIRFLOW_VALUE -> distributionTag = GMSettingsApp.appContext.resources.getString(R.string.settings_oscillating_airflow)
-        }
+            when (dataPoolDataHandler.SETTINGS_AUTO_AIR_DISTRIBUTION_VALUE.get()) {
+                DIFFUES_AIRFLOW_VALUE -> distributionTag = GMSettingsApp.appContext.resources.getString(R.string.settings_diffuse_airflow)
+                DIRECT_AIRFLOW_VALUE -> distributionTag = GMSettingsApp.appContext.resources.getString(R.string.settings_direct_airflow)
+                NORMAL_AIRFLOW_VALUE -> distributionTag = GMSettingsApp.appContext.resources.getString(R.string.settings_direct_normalflow)
+                OSCILLATING_AIRFLOW_VALUE -> distributionTag = GMSettingsApp.appContext.resources.getString(R.string.settings_oscillating_airflow)
+            }
 
-        dataPoolDataHandler.SETTINGS_SET_CLIMATE_ROW.add(ClimateModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_auto_fan_max_speed), fanTag!!, false, false, com.gm.settingsapp.viewmodels.Constants.AUTO_FAN_SPEED, ""))
-        dataPoolDataHandler.SETTINGS_SET_CLIMATE_ROW.add(ClimateModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_air_quality_sensor), qualityTag!!, false, false, com.gm.settingsapp.viewmodels.Constants.AIR_QUALITY_SENSOR, ""))
-        dataPoolDataHandler.SETTINGS_SET_CLIMATE_ROW.add(ClimateModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_pollution_control), "", true, true, com.gm.settingsapp.viewmodels.Constants.POLLUTION_CONTROL, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_pollution_control_content)))
-        dataPoolDataHandler.SETTINGS_SET_CLIMATE_ROW.add(ClimateModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_auto_cooled_seats_big), "", true, true, com.gm.settingsapp.viewmodels.Constants.AUTO_COOLED_SEATS, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_auto_cool_seats_content)))
-        dataPoolDataHandler.SETTINGS_SET_CLIMATE_ROW.add(ClimateModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_auto_heated_seats_big), "", true, true, com.gm.settingsapp.viewmodels.Constants.AUTO_HEATED_SEATS, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_auto_heated_seats_content)))
-        dataPoolDataHandler.SETTINGS_SET_CLIMATE_ROW.add(ClimateModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_rear_zone_temp_big), GMSettingsApp.appContext.resources.getString(R.string.settings_rear_last_known), false, true, com.gm.settingsapp.viewmodels.Constants.REAR_ZONE, ""))
-        dataPoolDataHandler.SETTINGS_SET_CLIMATE_ROW.add(ClimateModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_auto_defog_big), "", true, true, com.gm.settingsapp.viewmodels.Constants.AUTO_DEFOG, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_auto_defog_content)))
-        dataPoolDataHandler.SETTINGS_SET_CLIMATE_ROW.add(ClimateModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_auto_rear_defog), "", true, true, com.gm.settingsapp.viewmodels.Constants.AUTO_REAR_DEFOG, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_auto_rear_defog_content)))
-        dataPoolDataHandler.SETTINGS_SET_CLIMATE_ROW.add(ClimateModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_elevated_idle_short), "", true, true, com.gm.settingsapp.viewmodels.Constants.ELEVATED_IDLE, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_elevated_idle_content)))
-        dataPoolDataHandler.SETTINGS_SET_CLIMATE_ROW.add(ClimateModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_auto_air_distribution_big), distributionTag!!, false, false, com.gm.settingsapp.viewmodels.Constants.AUTO_AIR_DISTRIBUTION, ""))
-        dataPoolDataHandler.SETTINGS_SET_CLIMATE_ROW.add(ClimateModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_ionizer), "", true, true, com.gm.settingsapp.viewmodels.Constants.IONIZER, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_ionizer_content)))
+            dataPoolDataHandler.SETTINGS_SET_CLIMATE_ROW.add(ClimateModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_auto_fan_max_speed), fanTag!!, false, false, com.gm.settingsapp.viewmodels.Constants.AUTO_FAN_SPEED, ""))
+            dataPoolDataHandler.SETTINGS_SET_CLIMATE_ROW.add(ClimateModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_air_quality_sensor), qualityTag!!, false, false, com.gm.settingsapp.viewmodels.Constants.AIR_QUALITY_SENSOR, ""))
+            dataPoolDataHandler.SETTINGS_SET_CLIMATE_ROW.add(ClimateModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_pollution_control), "", true, true, com.gm.settingsapp.viewmodels.Constants.POLLUTION_CONTROL, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_pollution_control_content)))
+            dataPoolDataHandler.SETTINGS_SET_CLIMATE_ROW.add(ClimateModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_auto_cooled_seats_big), "", true, true, com.gm.settingsapp.viewmodels.Constants.AUTO_COOLED_SEATS, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_auto_cool_seats_content)))
+            dataPoolDataHandler.SETTINGS_SET_CLIMATE_ROW.add(ClimateModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_auto_heated_seats_big), "", true, true, com.gm.settingsapp.viewmodels.Constants.AUTO_HEATED_SEATS, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_auto_heated_seats_content)))
+            dataPoolDataHandler.SETTINGS_SET_CLIMATE_ROW.add(ClimateModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_rear_zone_temp_big), GMSettingsApp.appContext.resources.getString(R.string.settings_rear_last_known), false, true, com.gm.settingsapp.viewmodels.Constants.REAR_ZONE, ""))
+            dataPoolDataHandler.SETTINGS_SET_CLIMATE_ROW.add(ClimateModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_auto_defog_big), "", true, true, com.gm.settingsapp.viewmodels.Constants.AUTO_DEFOG, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_auto_defog_content)))
+            dataPoolDataHandler.SETTINGS_SET_CLIMATE_ROW.add(ClimateModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_auto_rear_defog), "", true, true, com.gm.settingsapp.viewmodels.Constants.AUTO_REAR_DEFOG, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_auto_rear_defog_content)))
+            dataPoolDataHandler.SETTINGS_SET_CLIMATE_ROW.add(ClimateModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_elevated_idle_short), "", true, true, com.gm.settingsapp.viewmodels.Constants.ELEVATED_IDLE, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_elevated_idle_content)))
+            dataPoolDataHandler.SETTINGS_SET_CLIMATE_ROW.add(ClimateModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_auto_air_distribution_big), distributionTag!!, false, false, com.gm.settingsapp.viewmodels.Constants.AUTO_AIR_DISTRIBUTION, ""))
+            dataPoolDataHandler.SETTINGS_SET_CLIMATE_ROW.add(ClimateModeModel(GMSettingsApp.appContext.resources.getString(R.string.settings_ionizer), "", true, true, com.gm.settingsapp.viewmodels.Constants.IONIZER, GMSettingsApp.appContext.resources.getString(com.gm.settingsapp.R.string.settings_ionizer_content)))
 
-        // }
+       // }
 
     }
 

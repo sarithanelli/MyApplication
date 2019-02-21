@@ -22,10 +22,6 @@ import com.gm.settingsapp.viewmodels.Constants.C_RAIN_SENSE_WIPERS
 import com.gm.settingsapp.viewmodels.Constants.C_REMOTE_MIRROR_FOLDING
 import com.gm.settingsapp.viewmodels.Constants.C_REVERSE_TILT_MIRROR
 import com.gm.settingsapp.viewmodels.Constants.EXTENDED_HILL_START_ASSIST
-import com.gm.settingsapp.viewmodels.Constants.MY_MODE_BRAKE
-import com.gm.settingsapp.viewmodels.Constants.MY_MODE_ENGINE
-import com.gm.settingsapp.viewmodels.Constants.MY_MODE_STEERING
-import com.gm.settingsapp.viewmodels.Constants.MY_MODE_SUSPENSION
 import com.gm.settingsservice.models.ComfortAndConvenienceModel
 import com.gm.settingsservice.models.MyModeModel
 import dagger.android.AndroidInjection

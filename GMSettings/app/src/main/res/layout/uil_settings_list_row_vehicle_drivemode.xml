@@ -47,6 +47,7 @@
             android:id="@+id/settings_vehicle_drive_mode_customization_back_arrow"
             style="?attr/settings_button_backarrow"
             app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="@{obj.isToggleVisible ? View.GONE : View.VISIBLE}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent="0.92"
             app:layout_constraintTop_toTopOf="parent"

@@ -228,7 +228,7 @@ abstract class MainActivityModule {
     abstract fun SettingsVehicleComfortPowerLiftgateActivity(): SettingsVehicleComfortPowerLiftgateActivity
 
     @ContributesAndroidInjector
-    abstract fun SettingsVehicleHandFreeLiftgateActivity(): SettingsVehicleHandFreeLiftgateActivity
+    abstract fun SettingsVehicleHandFreeLiftGateActivity(): SettingsVehicleHandFreeLiftGateActivity
 
     @ContributesAndroidInjector
     abstract fun SettingsVehicleComfortRainSenseWiperActivity(): SettingsVehicleComfortRainSenseWiperActivity

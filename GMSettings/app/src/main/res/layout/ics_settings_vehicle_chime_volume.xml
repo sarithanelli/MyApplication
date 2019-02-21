@@ -17,14 +17,14 @@
     </data>
 
     <com.gm.settingsapp.ui.customview.SkewConstraintLayout
-        android:id="@+id/settings_vehicle_chime_volume"
+        android:id="@+id/system_sounds_maxstartvol_imglayout"
         style="?attr/settings_layout_bg_style"
         app:layout_constraintStart_toStartOf="parent"
         bind:layoutDirection="@{dataPoolHandler.settingsConfiguration}"
         bind:skewValue="@{dataPoolHandler.isSkewEnabled}">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/settings_vehicle_chime_volume_card_view"
+            android:id="@+id/topbar"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginBottom="10dp"
@@ -40,7 +40,7 @@
                 bind:dataPoolHandler="@{dataPoolHandler}" />
         </androidx.cardview.widget.CardView>
 
-<!--
+
         <SeekBar
             android:id="@+id/customSeekBar"
             android:layout_width="@dimen/system_progressbar_width"
@@ -136,7 +136,7 @@
             app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
             app:layout_constraintTop_toBottomOf="@+id/scrollView2"
             app:layout_constraintVertical_bias="@integer/system_sound_car_bias"
-            app:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />-->
+            app:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
 
     </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
 

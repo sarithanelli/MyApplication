@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:bind="http://schemas.android.com/tools">
 
-    <data class="SettingautomaticrunningboardsBinding">
+    <data class="SettingAutomaticRunningBoardsBinding">
 
         <import type="android.view.View" />
 
@@ -40,7 +40,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/settings_automatic_running_board_card_view"
                 style="?attr/settings_cardview_style"
-                app:cardElevation="8dp">
+                app:cardElevation="@dimen/settings_card_time_date_card_elevation">
 
                 <include
                     style="?attr/settings_match_wrap_style"
@@ -121,6 +121,9 @@
                 android:id="@+id/settings_automatic_running_board_scrollView"
                 style="@style/Layout_Match_Wrap"
                 android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_percent="0.5"
+                app:layout_constraintWidth_percent="0.4"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/settings_automatic_running_board_guideline_vertical"
                 app:layout_constraintTop_toBottomOf="@id/settings_automatic_running_board_card_view">
@@ -129,7 +132,6 @@
                     android:id="@+id/ui_settings_information_audio_text"
                     style="?attr/text_material_content_text"
                     android:fontFamily="@font/gmsansui_regular"
-                    android:padding="@dimen/skewtext_padding"
                     android:text="@string/settings_mode_content"
                     android:textSize="@dimen/List_Secondary_text"
                     app:layout_constraintBottom_toBottomOf="parent"
