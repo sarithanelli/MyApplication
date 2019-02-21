@@ -30,52 +30,55 @@ class SimulationManager @Inject constructor(dataPoolDataHandler: DataPoolDataHan
 
 
     override fun onSETTINGS_REQ_AUTOMATIC_ENTRY_EGRESS_ASSIST() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
+        systemListener.onSETTINGS_RES_AUTOMATIC_ENTRY_EGRESS_ASSIST()
 
-    override fun SOUNDPARAMS_REQ_CHIMEVOLUMEDEC() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
-
-    override fun SOUNDPARAMS_REQ_CHIMEVOLUMEINC() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
-    override fun SOUNDPARAMS_REQ_SETCHIMEVOLUME() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
-    override fun SOUNDPARAMS_REQ_GETCHIMEVOLUME() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
     override fun onSETTINGS_REQ_POWER_LIFTGATE() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        systemListener.onSETTINGS_RES_POWER_LIFTGATE()
+
     }
 
     override fun onSETTINGS_REQ_HANDSFREE_LIFTGATE() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        systemListener.onSETTINGS_RES_HANDSFREE_LIFTGATE()
+
+    }
+    override fun onSETTINGS_REQ_REVERSE_TILTMIRROR() {
+        systemListener.onSETTINGS_RES_REVERSE_TILTMIRROR()
+
     }
 
-    override fun onSETTINGS_REQ_REVERSE_TILTMIRROR() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
 
     override fun onSETTINGS_REQ_REMOTE_MIRRORFOLDING() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
+        systemListener.onSETTINGS_RES_REMOTE_MIRRORFOLDING()
 
+    }
     override fun onSETTINGS_REQ_RAIN_SENSE_WIPERS() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
+        systemListener.onSETTINGS_RES_RAIN_SENSE_WIPERS()
 
+    }
     override fun onSETTINGS_REQ_AUTO_WIPE_REVERSEGEAR() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        systemListener.onSETTINGS_RES_AUTO_WIPE_REVERSEGEAR()
+
     }
 
     override fun onSETTINGS_REQ_EXTENDED_HILL_START_ASSIST() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        systemListener.onSETTINGS_RES_EXTENDED_HILL_START_ASSIST()
+
     }
+    override fun SOUNDPARAMS_REQ_CHIMEVOLUMEDEC() {
+    }
+
+    override fun SOUNDPARAMS_REQ_CHIMEVOLUMEINC() {
+    }
+
+    override fun SOUNDPARAMS_REQ_SETCHIMEVOLUME() {
+    }
+
+    override fun SOUNDPARAMS_REQ_GETCHIMEVOLUME() {
+    }
+
+
+
 
     var dataPoolDataHandler: DataPoolDataHandler = dataPoolDataHandler
 

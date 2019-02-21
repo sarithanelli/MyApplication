@@ -679,28 +679,46 @@
   },
   "eAutomaticEntry": {
     "eventType": "navigate",
-    "eventName": "eAutomaticEntry",
+    "eventName": "onSETTINGS_REQ_AUTOMATIC_ENTRY_EGRESS_ASSIST",
     "activityName": "SettingsVehicleComfortAutomaticEntryActivity",
-    "isProcess": "false"
+    "isProcess": "true"
+  },
+  "eReverseTiltMirror": {
+    "eventType": "navigate",
+    "eventName": "onSETTINGS_REQ_REVERSE_TILTMIRROR",
+    "activityName": "SettingsVehicleComfortAutomaticEntryActivity",
+    "isProcess": "true"
+  },
+  "eRemoteMirrorFolding": {
+    "eventType": "navigate",
+    "eventName": "onSETTINGS_REQ_REMOTE_MIRRORFOLDING",
+    "activityName": "SettingsVehicleComfortAutomaticEntryActivity",
+    "isProcess": "true"
   },
   "ePowerLiftGate": {
     "eventType": "navigate",
-    "eventName": "ePowerLiftGate",
+    "eventName": "onSETTINGS_REQ_POWER_LIFTGATE",
     "activityName": "SettingsVehicleComfortAutomaticEntryActivity",
-    "isProcess": "false"
+    "isProcess": "true"
   },
   "eHandFreeLiftGate": {
     "eventType": "navigate",
-    "eventName": "eHandFreeLiftGate",
+    "eventName": "onSETTINGS_REQ_HANDSFREE_LIFTGATE",
     "activityName": "SettingsVehicleHandFreeLiftgateActivity",
-    "isProcess": "false"
+    "isProcess": "true"
   },
   "eRainSenseWiper": {
     "eventType": "navigate",
-    "eventName": "eRainSenseWiper",
+    "eventName": "onSETTINGS_REQ_RAIN_SENSE_WIPERS",
     "activityName": "SettingsVehicleComfortRainSenseWiperActivity",
-    "isProcess": "false"
+    "isProcess": "true"
   },
+  "eAutoWipeReverseGear":{
+  "eventType": "navigate",
+  "eventName": "onSETTINGS_REQ_AUTO_WIPE_REVERSEGEAR",
+  "activityName": "SettingsVehicleComfortAutomaticEntryActivity",
+  "isProcess": "true"
+},
   "evGCollision": {
     "eventType": "navigate",
     "eventName": "evGCollision",
@@ -739,9 +757,9 @@
   },
   "eHillStart": {
     "eventType": "navigate",
-    "eventName": "eVGHillStart",
+    "eventName": "onSETTINGS_REQ_EXTENDED_HILL_START_ASSIST",
     "activityName": "SettingsVehicleComfortAutomaticExtendedHillStartActivity",
-    "isProcess": "false"
+    "isProcess": "true"
   },
   "eDriveModeCustomization": {
     "eventType": "navigate",

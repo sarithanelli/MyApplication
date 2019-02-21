@@ -49,54 +49,59 @@ import gm.vehicle.DateAndTime
  */
 
 class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHandler, val systemListener: SystemListener, val utility: Utility, val gmsettingsManager: GMSettingsManager, val vehicleAudioManager: dagger.Lazy<VehicleAudioManager>, val context: Context, val mCustomization: Customization, val supportedLanguageListData: Lazy<SupportedLanguageListData>) : IManager, ApplicationsState.Callbacks {
+    override fun onSETTINGS_REQ_AUTOMATIC_ENTRY_EGRESS_ASSIST() {
+        systemListener.onSETTINGS_RES_AUTOMATIC_ENTRY_EGRESS_ASSIST()
 
-    override fun onSETTINGS_REQ_RAIN_SENSE_WIPERS() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
-    override fun onSETTINGS_REQ_AUTO_WIPE_REVERSEGEAR() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
-    override fun onSETTINGS_REQ_EXTENDED_HILL_START_ASSIST() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
-    override fun SOUNDPARAMS_REQ_CHIMEVOLUMEDEC() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
-    override fun SOUNDPARAMS_REQ_CHIMEVOLUMEINC() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
-    override fun SOUNDPARAMS_REQ_SETCHIMEVOLUME() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
-    override fun SOUNDPARAMS_REQ_GETCHIMEVOLUME() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
     override fun onSETTINGS_REQ_POWER_LIFTGATE() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        systemListener.onSETTINGS_RES_POWER_LIFTGATE()
+
     }
 
     override fun onSETTINGS_REQ_HANDSFREE_LIFTGATE() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        systemListener.onSETTINGS_RES_HANDSFREE_LIFTGATE()
+
     }
 
     override fun onSETTINGS_REQ_REVERSE_TILTMIRROR() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        systemListener.onSETTINGS_RES_REVERSE_TILTMIRROR()
+
     }
+
 
     override fun onSETTINGS_REQ_REMOTE_MIRRORFOLDING() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        systemListener.onSETTINGS_RES_REMOTE_MIRRORFOLDING()
+
     }
 
-    override fun onSETTINGS_REQ_AUTOMATIC_ENTRY_EGRESS_ASSIST() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    override fun onSETTINGS_REQ_RAIN_SENSE_WIPERS() {
+        systemListener.onSETTINGS_RES_RAIN_SENSE_WIPERS()
+
     }
+
+    override fun onSETTINGS_REQ_AUTO_WIPE_REVERSEGEAR() {
+        systemListener.onSETTINGS_RES_AUTO_WIPE_REVERSEGEAR()
+
+    }
+
+    override fun onSETTINGS_REQ_EXTENDED_HILL_START_ASSIST() {
+        systemListener.onSETTINGS_RES_EXTENDED_HILL_START_ASSIST()
+
+    }
+
+    override fun SOUNDPARAMS_REQ_CHIMEVOLUMEDEC() {
+    }
+
+    override fun SOUNDPARAMS_REQ_CHIMEVOLUMEINC() {
+    }
+
+    override fun SOUNDPARAMS_REQ_SETCHIMEVOLUME() {
+    }
+
+    override fun SOUNDPARAMS_REQ_GETCHIMEVOLUME() {
+    }
+
     override fun onSETTINGS_MANAGE_SET_FAV() {
         systemListener.onSETTINGS_MANAGE_RES_FAV()
     }
@@ -158,8 +163,6 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
     }
 
 
-
-
     override fun onSETTINGS_REQ_SPORTMODESETTINGS(any: Any) {
         systemListener.onSETTINGS_RES_SPORTMODESETTINGS(any)
     }
@@ -201,53 +204,53 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
     }
 
 
-//    val getUpdatedClimateUseCase = GetVehicleSettingsOptionsUseCase()
+    //    val getUpdatedClimateUseCase = GetVehicleSettingsOptionsUseCase()
     override fun onSETTINGS_REQ_CLIMATE_MENU_LIST(any: Any) {
         systemListener.onSETTINGS_RES_CLIMATE_MENU_LIST()
-       /* try {
-            val result = getUpdatedClimateUseCase.executeSync().availableOptions as List<ClimateAndAirQuality>
-            result.forEach {
-                when (it) {
-                    ClimateAndAirQuality.AUTO_FAN_SPEED -> {
-                        //avoid user access for example
-                    }
-                    ClimateAndAirQuality.AIR_QUALITY_SENSOR -> {
-                        //avoid user access for example
-                    }
-                    ClimateAndAirQuality.POLLUTION_CONTROL -> {
-                        //avoid user access for example
-                    }
-                    ClimateAndAirQuality.AUTO_COOLED_SEATS -> {
-                        //avoid user access for example
-                    }
-                    ClimateAndAirQuality.AUTO_HEATED_SEATS -> {
-                        //avoid user access for example
-                    }
-                    ClimateAndAirQuality.REAR_CLIMATE_ON_STARTUP -> {
-                        //avoid user access for example
-                    }
-                    ClimateAndAirQuality.AUTO_DEFOG -> {
-                        //avoid user access for example
-                    }
-                    ClimateAndAirQuality.AUTO_REAR_DEFOG -> {
-                        //avoid user access for example
-                    }
-                    ClimateAndAirQuality.RAPID_HEAT_ELEVATED_IDLE -> {
-                        //avoid user access for example
-                    }
-                    ClimateAndAirQuality.AUTO_AIR_DISTRIBUTION -> {
-                        //avoid user access for example
-                    }
-                    ClimateAndAirQuality.IONIZER -> {
-                        //avoid user access for example
-                    }
-                }
-            }
+        /* try {
+             val result = getUpdatedClimateUseCase.executeSync().availableOptions as List<ClimateAndAirQuality>
+             result.forEach {
+                 when (it) {
+                     ClimateAndAirQuality.AUTO_FAN_SPEED -> {
+                         //avoid user access for example
+                     }
+                     ClimateAndAirQuality.AIR_QUALITY_SENSOR -> {
+                         //avoid user access for example
+                     }
+                     ClimateAndAirQuality.POLLUTION_CONTROL -> {
+                         //avoid user access for example
+                     }
+                     ClimateAndAirQuality.AUTO_COOLED_SEATS -> {
+                         //avoid user access for example
+                     }
+                     ClimateAndAirQuality.AUTO_HEATED_SEATS -> {
+                         //avoid user access for example
+                     }
+                     ClimateAndAirQuality.REAR_CLIMATE_ON_STARTUP -> {
+                         //avoid user access for example
+                     }
+                     ClimateAndAirQuality.AUTO_DEFOG -> {
+                         //avoid user access for example
+                     }
+                     ClimateAndAirQuality.AUTO_REAR_DEFOG -> {
+                         //avoid user access for example
+                     }
+                     ClimateAndAirQuality.RAPID_HEAT_ELEVATED_IDLE -> {
+                         //avoid user access for example
+                     }
+                     ClimateAndAirQuality.AUTO_AIR_DISTRIBUTION -> {
+                         //avoid user access for example
+                     }
+                     ClimateAndAirQuality.IONIZER -> {
+                         //avoid user access for example
+                     }
+                 }
+             }
 
 
-        } catch (e: Exception) {
-            e.printStackTrace()
-        }*/
+         } catch (e: Exception) {
+             e.printStackTrace()
+         }*/
 
 
     }
@@ -510,6 +513,7 @@ class GMSDKManager @Inject constructor(val dataPoolDataHandler: DataPoolDataHand
         utility.setMinMaxLimits()
         systemListener.onSETTINGS_RES_DATEINFO(utility.getCurrentDate())
     }
+
     /**
      *Request for set engine sound type
      */

@@ -35,7 +35,6 @@ import dagger.android.AndroidInjection
  */
 class SettingsComfortAndConvenienceActivity : BaseActivity() {
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         AndroidInjection.inject(this)
         super.onCreate(savedInstanceState)
@@ -55,20 +54,12 @@ class SettingsComfortAndConvenienceActivity : BaseActivity() {
             C_CHIME_VOLUME -> view.tag = Constants.AUTOMATIC_RUNNING_BOARDS
             C_AUTO_ENTRY -> view.tag = Constants.AUTOMATIC_ENTRY
             C_POWER_LIFTGATE -> view.tag = Constants.POWER_LIFTGATE
-            C_REVERSE_TILT_MIRROR -> view.tag = Constants.AUTOMATIC_ENTRY
-            C_REMOTE_MIRROR_FOLDING -> view.tag = Constants.AUTOMATIC_ENTRY
-            C_AUTO_WIPE_IN_REVERSE_GEAR -> view.tag = Constants.AUTOMATIC_ENTRY
+            C_REVERSE_TILT_MIRROR -> view.tag = Constants.REVERSE_MIRROR
+            C_REMOTE_MIRROR_FOLDING -> view.tag = Constants.REMOTE_MIRROR_FOLDING
+            C_AUTO_WIPE_IN_REVERSE_GEAR -> view.tag = Constants.AUTO_WIPE_REVERSE_GEAR
             C_RAIN_SENSE_WIPERS -> view.tag = Constants.RAINSENSEWIPER
             C_HANDSFREE_LIFTGATE -> view.tag = Constants.HANDFREELIFTGATE
             EXTENDED_HILL_START_ASSIST -> view.tag = Constants.EXTENDED_HILL_START_ASSIST_TAG
-
-            /*  C_EASY_EXIT_SEAT -> view.tag = Constants.AUTOMATIC_ENTRY
-           C_EASY_EXIT_OPTIONS -> view.tag = Constants.AUTOMATIC_ENTRY
-           C_PERSONALIZATION_BY_DRIVER -> view.tag = Constants.AUTOMATIC_ENTRY
-         C_EASY_EXIT_STEERING_COLUMN -> view.tag = Constants.AUTOMATIC_RUNNING_BOARDS
-           C_AUTO_RUNNING_BOARDS -> view.tag = Constants.AUTOMATIC_RUNNING_BOARDS
-           C_AUTO_MEMORY_RECALL -> view.tag = Constants.AUTOMATIC_ENTRY*/
-
         }
     }
 }
