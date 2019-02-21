@@ -27,13 +27,13 @@
     </data>
 
     <com.gm.settingsapp.ui.customview.SkewConstraintLayout
-        android:id="@+id/settings_list_row_vmode_engine_sound_layout"
+        android:id="@+id/settings_list_row_v_mode_engine_sound_layout"
         style="?attr/settings_time_date_picker"
         android:onClick="@{(view) -> clickHandler.onItemClickHandler(view,position)}"
         bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
 
         <RadioButton
-            android:id="@+id/settings_list_row_vmode_engine_sound_radio_button"
+            android:id="@+id/settings_list_row_v_mode_engine_sound_radio_button"
             style="?attr/settings_time_zone_radio"
             android:checked="@{position==dataPoolHandler.SETTINGS_MYMODE_ENGINE_POS}"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -45,7 +45,7 @@
             style="?attr/settings_language_text_medium"
             android:text="@{obj.toString()}"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/settings_list_row_vmode_engine_sound_radio_button"
+            app:layout_constraintStart_toEndOf="@+id/settings_list_row_v_mode_engine_sound_radio_button"
             app:layout_constraintTop_toTopOf="parent" />
 
 

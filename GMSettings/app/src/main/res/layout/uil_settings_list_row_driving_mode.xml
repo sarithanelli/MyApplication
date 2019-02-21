@@ -58,6 +58,17 @@
             app:layout_constraintTop_toBottomOf="@id/txt_settings_system_speech"
             app:layout_constraintWidth_percent="0.25" />
 
+        <ImageButton
+            android:id="@+id/settings_list_row_drive_mode_img_btn"
+            style="?attr/settings_button_backarrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.92"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.12"
+            app:srcCompat="@drawable/ic_icn_next"
+            bind:ignore="ContentDescription" />
+
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline_text_start"
             android:layout_width="wrap_content"

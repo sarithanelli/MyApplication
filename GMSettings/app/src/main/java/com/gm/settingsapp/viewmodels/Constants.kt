@@ -232,6 +232,10 @@ object Constants {
     val COMFORT_AND_CONVENIENCE_TAG = "eComfort"
     val AUTOMATIC_RUNNING_BOARDS = "eAutoRunningBoards"
     val AUTOMATIC_ENTRY = "eAutomaticEntry"
+    val REVERSE_MIRROR = "eReverseTiltMirror"
+    val REMOTE_MIRROR_FOLDING = "eRemoteMirrorFolding"
+    val AUTO_WIPE_REVERSE_GEAR = "eAutoWipeReverseGear"
+
     val POWER_LIFTGATE = "ePowerLiftGate"
     val HANDFREELIFTGATE = "eHandFreeLiftGate"
     val RAINSENSEWIPER = "eRainSenseWiper"

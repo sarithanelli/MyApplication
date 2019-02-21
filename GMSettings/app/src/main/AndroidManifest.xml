@@ -651,17 +651,33 @@
             android:clearTaskOnLaunch="true"
             android:configChanges="locale|orientation">
             <intent-filter>
-                <action android:name="com.gm.settingsapp.action.eAutomaticEntry" />
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_REQ_AUTOMATIC_ENTRY_EGRESS_ASSIST" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_REQ_REVERSE_TILTMIRROR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_REQ_REMOTE_MIRRORFOLDING" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_REQ_AUTO_WIPE_REVERSEGEAR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
         </activity>
         <activity
             android:name=".ui.activities.SettingsVehicleComfortPowerLiftgateActivity"
             android:clearTaskOnLaunch="true"
             android:configChanges="locale|orientation">
             <intent-filter>
-                <action android:name="com.gm.settingsapp.action.ePowerLiftGate" />
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_REQ_POWER_LIFTGATE" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -671,7 +687,7 @@
             android:clearTaskOnLaunch="true"
             android:configChanges="locale|orientation">
             <intent-filter>
-                <action android:name="com.gm.settingsapp.action.eHandFreeLiftGate" />
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_REQ_HANDSFREE_LIFTGATE" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -681,7 +697,7 @@
             android:clearTaskOnLaunch="true"
             android:configChanges="locale|orientation">
             <intent-filter>
-                <action android:name="com.gm.settingsapp.action.eRainSenseWiper" />
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_REQ_RAIN_SENSE_WIPERS" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -756,7 +772,7 @@
             android:clearTaskOnLaunch="true"
             android:configChanges="locale|orientation">
             <intent-filter>
-                <action android:name="com.gm.settingsapp.action.eVGHillStart" />
+                <action android:name="com.gm.settingsapp.action.onSETTINGS_REQ_EXTENDED_HILL_START_ASSIST" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

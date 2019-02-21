@@ -95,10 +95,7 @@
             <com.gm.settingsapp.ui.customview.SkewTextView
                 android:id="@+id/settings_visualization_text"
                 style="?attr/settings_sounds_audio1_text"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/settings_visualization_scrollView"
-                app:layout_constraintTop_toBottomOf="@+id/settings_visualization_card_view"
-                bind:sideDescText="@{dataPoolHandler.SETTINGS_CHILD_CURRENT_SCREEN}"
+                android:text="@string/setttings_vehicle_visualization_description"
                 bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
 
 
@@ -120,7 +117,6 @@
                 app:layout_constraintEnd_toStartOf="@+id/settings_visualization_guideline_vertical"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/settings_visualization_scrollView"
-                app:layout_constraintVertical_bias="@integer/system_sound_car_bias"
                 bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}" />
         </com.gm.settingsapp.ui.customview.SkewConstraintLayout>
 

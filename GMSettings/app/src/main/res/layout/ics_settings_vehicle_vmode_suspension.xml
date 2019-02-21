@@ -31,12 +31,12 @@
             app:cardElevation="@dimen/settings_card_time_date_card_elevation">
 
             <com.gm.settingsapp.ui.customview.SkewConstraintLayout
-                android:id="@+id/settings_vehicle_v_mode_suspension_topbar_constraint_layout"
+                android:id="@+id/settings_vehicle_v_mode_suspension_top_bar_constraint_layout"
                 style="?attr/settings_time_date_match_wrap_style"
                 bind:slopedAngle="@{-dataPoolHandler.SKEW_MAIN_ANGLE_8}">
 
                 <include
-                    android:id="@+id/settings_vehicle_v_mode_suspension_topbar"
+                    android:id="@+id/settings_vehicle_v_mode_suspension_top_bar"
                     style="?attr/settings_match_wrap_style"
                     layout="@layout/uil_ta_hc_topbar_layout"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -107,6 +107,7 @@
         </ScrollView>
 
         <ImageView
+            android:id="@+id/settings_vehicle_v_mode_suspension_image_view"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:src="@drawable/img_engine_sound"
